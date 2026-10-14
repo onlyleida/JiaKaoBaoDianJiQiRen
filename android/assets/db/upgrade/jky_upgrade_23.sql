@@ -1,0 +1,1 @@
+alter table t_face_label add column create_time INTEGER;

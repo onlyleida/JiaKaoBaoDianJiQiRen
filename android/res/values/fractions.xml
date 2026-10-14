@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <fraction name="glideBitmapPoolScreens">0.0%</fraction>
+    <fraction name="glideLowMemoryMaxSizeMultiplier">0.0%</fraction>
+    <fraction name="glideMaxSizeMultiplier">0.0%</fraction>
+    <fraction name="glideMemoryCacheScreens">0.0%</fraction>
+</resources>

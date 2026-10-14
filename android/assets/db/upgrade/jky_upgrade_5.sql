@@ -1,0 +1,6 @@
+CREATE TABLE "t_upload_log"(
+"_id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
+"type" INTEGER,
+"log" TEXT,
+"time_stamp" INTEGER
+);

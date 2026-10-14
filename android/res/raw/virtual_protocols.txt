@@ -1,0 +1,7 @@
+{
+	"/car-series/view": "http://bitauto.nav.mucang.cn/car-serial/view",
+	"/car-type/view": "http://bitauto.nav.mucang.cn/car/view",
+	"/car-price/inquiry": "http://bitauto.nav.mucang.cn/car-serial/price",
+	"/car-dna/view": "http://bitauto.nav.mucang.cn/dna/view",
+	"/car-image/list": "http://bitauto.nav.mucang.cn/car-serial/list-images"
+}
