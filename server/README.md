@@ -119,3 +119,9 @@ PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s server -v
 完整已实现列表见 [CONTRACTS.md](CONTRACTS.md)。静态候选接口清单见 [endpoint-inventory.json](endpoint-inventory.json)，它包含未实现路由，也可能遗漏动态拼接路径；不能把候选数当成可用接口数。
 
 当前未实现原厂设备激活、SSO、人脸比对、短信、支付/计费、完整地图编辑/教学评分/路径规划、硬件升级和机器人控制。请求未知接口会收到明确的 501 失败信封，便于按请求记录继续补实现。协议兼容与局部持久化已测试，原系统完整业务恢复尚未完成。
+
+## 2026-10-14 模拟器实跑补充
+
+已在云端 Android 11 x86/ARM32 转译模拟器运行本地调试 APK，使用的文件与交付 APK SHA256 完全相同。安装成功、模拟器到同机服务端的健康检查成功，但应用启动即发生 SIGSEGV，45 秒时进程不存在且屏幕回到桌面；没有观察到业务 API 请求。堆栈位于 libndk_translation.so，具体触发的原生调用仍待定位。完整教学与登录联调仍未通过。
+
+证据见 [实跑复核报告](../reports/local-backend-runtime-review.json)、[崩溃日志](../reports/local-backend-runtime-crash.txt) 和 [云端运行记录](https://github.com/onlyleida/JiaKaoBaoDianJiQiRen/actions/runs/38579243751)。手动工作流 `Run exact local backend APK` 会用原 Release APK 加校验补丁恢复精确的调试 APK，通过 SHA256 后再安装；会保留独立证据，不覆盖原 APK 的运行报告。

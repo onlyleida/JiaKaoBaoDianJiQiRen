@@ -1,0 +1,74 @@
+{
+  "run_url": "https://github.com/onlyleida/JiaKaoBaoDianJiQiRen/actions/runs/38579243751",
+  "raw_report": {
+    "status": "evidence_collected",
+    "source_commit": "6ee6e1efa70982198100c362410d6780fa4ee0ee",
+    "image": "system-images;android-30;google_apis;x86",
+    "serial": "emulator-5562",
+    "package": "cn.mucang.android.jiakaoyi.teachingk2",
+    "apk_sha256": "16d0c167b5509609fb795cab3a6271aa76b03a82333da1f5d2ffb3fdf08560ea",
+    "screenshots_saved": [
+      "screen-after-10s.png",
+      "screen-after-45s.png"
+    ],
+    "screenshot_errors": [],
+    "first_screen_verified": false,
+    "full_teaching_functionality_tested": false,
+    "local_backend_requested": true,
+    "abis": [
+      "x86",
+      "armeabi-v7a",
+      "armeabi"
+    ],
+    "network_controls": [
+      "guest IPv4/IPv6 non-loopback OUTPUT rejected before APK installation",
+      "only loopback backend via adb reverse; other guest egress blocked"
+    ],
+    "backend_health": {
+      "success": true,
+      "errorCode": 0,
+      "message": "Local compatibility server",
+      "data": {
+        "mode": "local",
+        "implementedRoutes": 40,
+        "missingUnityTypes": [
+          100,
+          101
+        ]
+      }
+    },
+    "guest_backend_reachable": true,
+    "installation_success": true,
+    "launch_command_exit_code": 0,
+    "launch_accepted": true,
+    "app_pid_after_45s": "",
+    "process_alive_after_45s": false,
+    "resumed_activity_lines": [
+      "mResumedActivity: ActivityRecord{7a3e0e0 u0 com.google.android.apps.nexuslauncher/.NexusLauncherActivity t8}",
+      "ResumedActivity: ActivityRecord{7a3e0e0 u0 com.google.android.apps.nexuslauncher/.NexusLauncherActivity t8}"
+    ],
+    "app_resumed_after_45s": false,
+    "crash_buffer_contains_package": true,
+    "process_death_lines": [
+      "10-14 14:20:09.377   486  2469 I ActivityManager: Process cn.mucang.android.jiakaoyi.teachingk2 (pid 4710) has died: fg  TOP "
+    ]
+  },
+  "installation_verified": true,
+  "normal_startup_verified": false,
+  "full_teaching_functionality_tested": false,
+  "screen_45s_visually_reviewed": true,
+  "observed_screen": "Android launcher, app not visible",
+  "crash": "SIGSEGV in libndk_translation.so TableOfTables::GetPointer / ExecuteGuest / RunGuestCall",
+  "root_cause_confirmed": false,
+  "guest_backend_reachable": true,
+  "application_api_requests_observed": 0,
+  "backend_health_requests_observed": 2,
+  "local_mac_incompatible": "Installed API34 arm64 image advertises only arm64-v8a; APK is armeabi-v7a",
+  "prior_attempt": {
+    "run_id": 38578309867,
+    "apk_installed": false,
+    "result": "Connection probe closed stdin early and lost response; corrected for actual run"
+  },
+  "timezone": "Asia/Shanghai",
+  "crash_time_local": "2026-10-14 22:20:08"
+}

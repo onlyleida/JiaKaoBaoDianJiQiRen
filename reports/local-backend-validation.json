@@ -173,5 +173,11 @@
     "Original native startup failures unresolved",
     "Only explicit listed API contracts implemented; unsupported paths fail 501"
   ],
-  "vendor_requests_performed": false
+  "vendor_requests_performed": false,
+  "emulator_follow_up": {
+    "review": "local-backend-runtime-review.json",
+    "installation_success": true,
+    "normal_startup_verified": false,
+    "run_url": "https://github.com/onlyleida/JiaKaoBaoDianJiQiRen/actions/runs/38579243751"
+  }
 }
