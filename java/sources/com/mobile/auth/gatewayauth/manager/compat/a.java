@@ -1,0 +1,85 @@
+package com.mobile.auth.gatewayauth.manager.compat;
+
+import com.mobile.auth.gatewayauth.Constant;
+import com.mobile.auth.gatewayauth.ResultCode;
+import com.mobile.auth.gatewayauth.model.TokenRet;
+
+/* JADX INFO: loaded from: classes4.dex */
+public class a implements ResultCodeProcessor {
+    public String a(String str, String str2) {
+        if (str == null) {
+            return str2;
+        }
+        byte b = -1;
+        try {
+            if (str.hashCode() == 1591780832 && str.equals(ResultCode.CODE_ERROR_ANALYZE_SDK_INFO)) {
+                b = 0;
+            }
+            return b != 0 ? str2 : "获取运营商配置信息失败";
+        } catch (Throwable th) {
+            try {
+                com.mobile.auth.gatewayauth.a.a(th);
+                return null;
+            } catch (Throwable th2) {
+                com.mobile.auth.gatewayauth.a.a(th2);
+                return null;
+            }
+        }
+    }
+
+    @Override // com.mobile.auth.gatewayauth.manager.compat.ResultCodeProcessor
+    public String convertCode(String str) {
+        if (str == null) {
+            return Constant.CODE_ERROR_UNKNOWN_FAIL;
+        }
+        try {
+            byte b = -1;
+            if (str.hashCode() == 1591780832 && str.equals(ResultCode.CODE_ERROR_ANALYZE_SDK_INFO)) {
+                b = 0;
+            }
+            return b != 0 ? str : Constant.CODE_ERROR_GET_CONFIG_FAIL;
+        } catch (Throwable th) {
+            try {
+                com.mobile.auth.gatewayauth.a.a(th);
+                return null;
+            } catch (Throwable th2) {
+                com.mobile.auth.gatewayauth.a.a(th2);
+                return null;
+            }
+        }
+    }
+
+    @Override // com.mobile.auth.gatewayauth.manager.compat.ResultCodeProcessor
+    public TokenRet convertErrorInfo(String str, String str2, String str3) {
+        try {
+            TokenRet tokenRet = new TokenRet();
+            tokenRet.setCode(convertCode(str));
+            tokenRet.setMsg(a(str, str2));
+            tokenRet.setVendorName(str3);
+            return tokenRet;
+        } catch (Throwable th) {
+            try {
+                com.mobile.auth.gatewayauth.a.a(th);
+                return null;
+            } catch (Throwable th2) {
+                com.mobile.auth.gatewayauth.a.a(th2);
+                return null;
+            }
+        }
+    }
+
+    @Override // com.mobile.auth.gatewayauth.manager.compat.ResultCodeProcessor
+    public String getApiLevel() {
+        try {
+            return String.valueOf(0);
+        } catch (Throwable th) {
+            try {
+                com.mobile.auth.gatewayauth.a.a(th);
+                return null;
+            } catch (Throwable th2) {
+                com.mobile.auth.gatewayauth.a.a(th2);
+                return null;
+            }
+        }
+    }
+}
