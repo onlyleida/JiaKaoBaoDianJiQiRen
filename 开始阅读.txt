@@ -1,0 +1,18 @@
+驾考宝典 AI 教练 11.6.5 反编译与重建
+
+请从 README.md 开始阅读。
+
+android/ 包含实际构建用的清单、6 份 Smali、全部包内资源、42 个原生库、105 个托管 DLL。
+java/sources/ 包含 17450 个 Java 阅读文件；java-fallback/ 提供 124 个问题文件的备用反编译。
+unity-csharp/ 包含全部 105 个托管程序集的 C# 导出，共 15202 个 C# 文件。
+
+已经实际运行 scripts/build.py 完成 APK 重建、调试签名、对齐与内容校验。
+运行验证的准确范围请看 docs/VALIDATION.md。
+动态 Unity 资源、场地数据、设备通信和后台依赖请看 docs/RUNTIME_DEPENDENCIES.md。
+
+仓库：https://github.com/onlyleida/JiaKaoBaoDianJiQiRen
+安装包：https://github.com/onlyleida/JiaKaoBaoDianJiQiRen/releases
+
+Java/C# 是阅读用的反编译表示，未经源码工程构建验证。
+原生库保留二进制；这不是原厂 Android Studio/Unity 源码工程。
+用户确认没有已运行设备，当前交付范围为 APK 内可取得的内容。
