@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/shape_e6ecf2_ffffff_r24" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/rootLayout" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/text_40" android:textStyle="bold" android:textColor="#000" android:id="@id/titleTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/rpx_40" android:text="@string/teachbase_sel_teach_type" />
+        <TextView android:textSize="@dimen/text_30" android:textColor="#fff" android:gravity="center" android:id="@id/singleTv" android:background="@drawable/shape_0da2ff_0095ff" android:layout_width="@dimen/rpx_300" android:layout_height="@dimen/rpx_80" android:layout_marginTop="@dimen/rpx_40" android:text="@string/teachbase_single_proj_teach" />
+        <TextView android:textSize="@dimen/text_30" android:textColor="#fff" android:gravity="center" android:id="@id/routeTv" android:background="@drawable/shape_0da2ff_0095ff" android:layout_width="@dimen/rpx_300" android:layout_height="@dimen/rpx_80" android:layout_marginTop="@dimen/rpx_30" android:layout_marginBottom="@dimen/rpx_40" android:text="@string/teachbase_full_route_teaching" />
+    </LinearLayout>
+</LinearLayout>

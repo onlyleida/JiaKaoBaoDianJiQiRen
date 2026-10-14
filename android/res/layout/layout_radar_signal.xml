@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <cn.mucang.android.jiakaoyi.teachingk2.safe.ui.signal.RadarSignalView android:layout_gravity="center_horizontal" android:id="@id/frontRadar" android:background="@android:color/transparent" android:layout_width="@dimen/rpx_528" android:layout_height="@dimen/rpx_528" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <cn.mucang.android.jiakaoyi.teachingk2.safe.ui.signal.RadarSignalView android:layout_gravity="center_horizontal" android:id="@id/backRadar" android:background="@android:color/transparent" android:layout_width="@dimen/rpx_528" android:layout_height="@dimen/rpx_528" android:layout_marginTop="@dimen/rpx_260" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <ImageView android:id="@id/car" android:layout_width="@dimen/rpx_134" android:layout_height="@dimen/rpx_290" android:src="@drawable/ic_car_for_radar" android:alpha="0.5" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
