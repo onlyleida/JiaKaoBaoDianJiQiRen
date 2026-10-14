@@ -1,0 +1,90 @@
+package org.apache.commons.math3.optim.nonlinear.scalar.noderiv;
+
+import java.util.Comparator;
+import org.apache.commons.math3.analysis.MultivariateFunction;
+import org.apache.commons.math3.exception.MathUnsupportedOperationException;
+import org.apache.commons.math3.exception.NullArgumentException;
+import org.apache.commons.math3.exception.util.LocalizedFormats;
+import org.apache.commons.math3.optim.ConvergenceChecker;
+import org.apache.commons.math3.optim.OptimizationData;
+import org.apache.commons.math3.optim.PointValuePair;
+import org.apache.commons.math3.optim.SimpleValueChecker;
+import org.apache.commons.math3.optim.nonlinear.scalar.GoalType;
+import org.apache.commons.math3.optim.nonlinear.scalar.MultivariateOptimizer;
+
+/* JADX INFO: loaded from: classes6.dex */
+public class SimplexOptimizer extends MultivariateOptimizer {
+    private AbstractSimplex simplex;
+
+    public SimplexOptimizer(ConvergenceChecker<PointValuePair> convergenceChecker) {
+        super(convergenceChecker);
+    }
+
+    private void checkParameters() {
+        if (this.simplex == null) {
+            throw new NullArgumentException();
+        }
+        if (getLowerBound() != null || getUpperBound() != null) {
+            throw new MathUnsupportedOperationException(LocalizedFormats.CONSTRAINT, new Object[0]);
+        }
+    }
+
+    @Override // org.apache.commons.math3.optim.nonlinear.scalar.MultivariateOptimizer, org.apache.commons.math3.optim.BaseMultivariateOptimizer, org.apache.commons.math3.optim.BaseOptimizer
+    protected void parseOptimizationData(OptimizationData... optimizationDataArr) {
+        super.parseOptimizationData(optimizationDataArr);
+        for (OptimizationData optimizationData : optimizationDataArr) {
+            if (optimizationData instanceof AbstractSimplex) {
+                this.simplex = (AbstractSimplex) optimizationData;
+                return;
+            }
+        }
+    }
+
+    public SimplexOptimizer(double d2, double d3) {
+        this(new SimpleValueChecker(d2, d3));
+    }
+
+    /* JADX INFO: Access modifiers changed from: protected */
+    @Override // org.apache.commons.math3.optim.BaseOptimizer
+    public PointValuePair doOptimize() {
+        checkParameters();
+        MultivariateFunction multivariateFunction = new MultivariateFunction() { // from class: org.apache.commons.math3.optim.nonlinear.scalar.noderiv.SimplexOptimizer.1
+            @Override // org.apache.commons.math3.analysis.MultivariateFunction
+            public double value(double[] dArr) {
+                return SimplexOptimizer.this.computeObjectiveValue(dArr);
+            }
+        };
+        final boolean z = getGoalType() == GoalType.MINIMIZE;
+        Comparator<PointValuePair> comparator = new Comparator<PointValuePair>() { // from class: org.apache.commons.math3.optim.nonlinear.scalar.noderiv.SimplexOptimizer.2
+            @Override // java.util.Comparator
+            public int compare(PointValuePair pointValuePair, PointValuePair pointValuePair2) {
+                double dDoubleValue = pointValuePair.getValue().doubleValue();
+                double dDoubleValue2 = pointValuePair2.getValue().doubleValue();
+                return z ? Double.compare(dDoubleValue, dDoubleValue2) : Double.compare(dDoubleValue2, dDoubleValue);
+            }
+        };
+        this.simplex.build(getStartPoint());
+        this.simplex.evaluate(multivariateFunction, comparator);
+        PointValuePair[] points = null;
+        ConvergenceChecker<PointValuePair> convergenceChecker = getConvergenceChecker();
+        while (true) {
+            if (getIterations() > 0) {
+                boolean z2 = true;
+                for (int i = 0; i < this.simplex.getSize(); i++) {
+                    z2 = z2 && convergenceChecker.converged(0, points[i], this.simplex.getPoint(i));
+                }
+                if (z2) {
+                    return this.simplex.getPoint(0);
+                }
+            }
+            points = this.simplex.getPoints();
+            this.simplex.iterate(multivariateFunction, comparator);
+            incrementIterationCount();
+        }
+    }
+
+    @Override // org.apache.commons.math3.optim.nonlinear.scalar.MultivariateOptimizer, org.apache.commons.math3.optim.BaseMultivariateOptimizer, org.apache.commons.math3.optim.BaseOptimizer
+    public PointValuePair optimize(OptimizationData... optimizationDataArr) {
+        return super.optimize(optimizationDataArr);
+    }
+}
