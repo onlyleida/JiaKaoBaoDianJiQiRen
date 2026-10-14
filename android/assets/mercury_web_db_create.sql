@@ -1,0 +1,1 @@
+create table if not exists t_mercury_message (_id integer primary key autoincrement,group_type integer not null,show_type integer not null,post_time integer default 0,counter_url text default null,item_id text not null ,extra text not null,unread_count integer default null,user_id text default null,event_name text default null);
