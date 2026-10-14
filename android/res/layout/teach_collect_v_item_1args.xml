@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/rpx_18" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/teach_collect_v_item_title" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/text_18" android:textColor="#808080" android:id="@id/inputDesc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/rpx_30" android:text="角度范围:" />
+        <EditText android:textSize="@dimen/text_18" android:textColor="#ccc" android:textColorHint="#ccc" android:gravity="center" android:id="@id/input" android:background="@drawable/selector_32c5ff" android:layout_width="@dimen/rpx_135" android:layout_height="@dimen/rpx_42" android:text="20" android:maxLength="4" android:inputType="number" android:imeOptions="actionDone" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/text_15" android:textColor="#ccc" android:id="@id/desc" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/rpx_9" />
+    <View android:background="#222529" android:layout_width="match_parent" android:layout_height="@dimen/rpx_2" android:layout_marginTop="@dimen/rpx_18" android:layout_marginRight="@dimen/rpx_18" />
+</LinearLayout>

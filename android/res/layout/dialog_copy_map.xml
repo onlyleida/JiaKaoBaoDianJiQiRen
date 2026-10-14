@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/rootLayout" android:background="@drawable/shape_ffffff_r2" android:paddingLeft="@dimen/dp_30" android:paddingTop="@dimen/dp_26" android:paddingRight="@dimen/dp_30" android:paddingBottom="@dimen/dp_26" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/dp_22" android:textColor="#333" android:layout_gravity="center_horizontal" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_20" android:text="请输入考场地图名称" />
+        <EditText android:textSize="@dimen/dp_20" android:textColor="#464646" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/examMapNameEt" android:background="#f2f5fa" android:layout_width="match_parent" android:layout_height="@dimen/dp_45" android:layout_marginBottom="@dimen/dp_30" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/dp_54">
+            <TextView android:textSize="@dimen/dp_23" android:textColor="#008aff" android:gravity="center" android:id="@id/leftTv" android:background="@drawable/shape_r100_s1_008aff" android:layout_width="@dimen/dp_172" android:layout_height="match_parent" android:text="取消" />
+            <TextView android:textSize="@dimen/dp_23" android:textColor="#fff" android:gravity="center" android:id="@id/rightTv" android:background="@drawable/shape_008aff_r100" android:layout_width="@dimen/dp_172" android:layout_height="match_parent" android:layout_marginLeft="@dimen/dp_40" android:text="确定" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

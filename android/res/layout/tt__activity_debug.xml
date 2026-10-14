@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:background="@drawable/tt__bg_round_white" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:padding="16.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <Button android:textSize="@dimen/tt__text_size_button" android:id="@id/force_checkout_coach" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="强制签退教练" />
+            <Button android:textSize="@dimen/tt__text_size_button" android:id="@id/force_checkout_student" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="强制签退学员" />
+            <Button android:textSize="@dimen/tt__text_size_button" android:id="@id/test_camera" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="测试摄像头" />
+            <Button android:textSize="@dimen/tt__text_size_button" android:id="@id/restore_system_launcher" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="恢复系统桌面，可关闭计时终端" />
+        </LinearLayout>
+    </ScrollView>
+    <View android:layout_gravity="right|center" android:id="@id/debug2" android:layout_width="100.0dp" android:layout_height="100.0dp" />
+    <TextView android:textSize="@dimen/tt__text_size_button" android:textColor="#222222" android:layout_gravity="end" android:id="@id/vendor" android:paddingTop="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:paddingEnd="14.0dp" />
+</FrameLayout>

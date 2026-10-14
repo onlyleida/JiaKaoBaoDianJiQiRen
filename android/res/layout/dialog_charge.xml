@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:background="@android:color/white" android:layout_width="@dimen/dp_300" android:layout_height="@dimen/dp_350">
+            <FrameLayout android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="center_horizontal" android:id="@id/img_qr_code" android:layout_width="@dimen/dp_240" android:layout_height="@dimen/dp_240" android:layout_marginTop="@dimen/dp_20" />
+                <ProgressBar android:layout_gravity="center" android:id="@id/progress" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textSize="@dimen/dp_16" android:textColor="#666666" android:layout_gravity="center" android:id="@id/tv_error" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="加载充值二维码失败" />
+            </FrameLayout>
+            <TextView android:textSize="@dimen/dp_17" android:textColor="#464646" android:layout_gravity="center_horizontal" android:id="@id/charge_desc" android:paddingLeft="@dimen/dp_10" android:paddingRight="@dimen/dp_10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_20" android:text="练车币不足, 请充值" />
+        </LinearLayout>
+        <ImageView android:layout_gravity="right" android:id="@id/closeIv" android:layout_width="@dimen/dp_30" android:layout_height="@dimen/dp_30" android:src="@drawable/ic_dialog_close" />
+    </FrameLayout>
+</LinearLayout>

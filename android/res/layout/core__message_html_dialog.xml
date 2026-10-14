@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="#ffffff" android:paddingBottom="15.0dp" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/title_content" android:background="#388fe7" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="18.0sp" android:textColor="#ffffff" android:id="@id/title" android:padding="15.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="标题" />
+    </RelativeLayout>
+    <WebView android:id="@id/webview" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_above="@id/bottom_btn" android:layout_below="@id/title_content" android:layerType="software" />
+    <LinearLayout android:id="@id/bottom_btn" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dp" android:layout_alignParentBottom="true">
+        <LinearLayout android:gravity="center" android:layout_width="0.0px" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginRight="10.0dp" android:layout_weight="1.0">
+            <Button android:textSize="16.0sp" android:textColor="#ffffff" android:id="@id/ok" android:background="@drawable/core__btn_html_n" android:layout_width="match_parent" android:layout_height="40.0dp" android:text="确定" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_width="0.0px" android:layout_height="wrap_content" android:layout_marginRight="10.0dp" android:layout_weight="1.0">
+            <Button android:textSize="16.0sp" android:textColor="#636364" android:id="@id/cancel" android:background="@drawable/core__btn_html_s" android:layout_width="match_parent" android:layout_height="40.0dp" android:text="取消" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

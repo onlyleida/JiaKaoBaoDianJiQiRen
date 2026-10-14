@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/shape_e6ecf2_ffffff_r15" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/font_28" android:textStyle="bold" android:textColor="#000" android:gravity="center_horizontal" android:id="@id/titleTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_38" android:text="@string/framework_switch_lang" />
+    <RadioGroup android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_16">
+        <RadioButton android:textSize="@dimen/font_22" android:textColor="@color/selector_color_language" android:gravity="center" android:id="@id/chineseRb" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/selector_collect_radio" android:text="@string/framework_chinese" android:paddingStart="@dimen/dp_7" />
+        <RadioButton android:textSize="@dimen/font_22" android:textColor="@color/selector_color_language" android:gravity="center" android:id="@id/enRb" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/selector_collect_radio" android:text="@string/framework_english" android:paddingStart="@dimen/dp_7" android:layout_marginStart="@dimen/dp_50" />
+        <RadioButton android:textSize="@dimen/font_22" android:textColor="@color/selector_color_language" android:gravity="center" android:id="@id/uighurRb" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/selector_collect_radio" android:text="@string/framework_ug" android:paddingStart="@dimen/dp_7" android:layout_marginStart="@dimen/dp_50" />
+    </RadioGroup>
+    <TextView android:textSize="@dimen/dp_24" android:textStyle="bold" android:textColor="#fff" android:gravity="center" android:id="@id/saveTv" android:background="@drawable/shape_008aff_r100" android:layout_width="match_parent" android:layout_height="@dimen/dp_56" android:layout_margin="@dimen/dp_38" android:text="@string/framework_save" />
+</LinearLayout>
