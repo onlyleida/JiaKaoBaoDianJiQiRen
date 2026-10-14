@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#fff" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="#e8e8e8" android:layout_width="match_parent" android:layout_height="@dimen/dp_1" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/deductTitle" android:background="@drawable/shape_f2f6ff_rect" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/dp_40">
+        <TextView android:textSize="@dimen/dp_18" android:textColor="#333" android:layout_width="@dimen/dp_110" android:layout_height="wrap_content" android:text="@string/uilib_time" android:layout_marginStart="@dimen/dp_16" />
+        <TextView android:textSize="@dimen/dp_18" android:textColor="#333" android:layout_width="@dimen/dp_150" android:layout_height="wrap_content" android:text="@string/uilib_step" android:layout_marginStart="@dimen/dp_16" />
+        <TextView android:textSize="@dimen/dp_18" android:textColor="#333" android:layout_width="@dimen/dp_80" android:layout_height="wrap_content" android:text="@string/uilib_deduct_score" android:layout_marginStart="@dimen/dp_24" />
+        <TextView android:textSize="@dimen/dp_18" android:textColor="#333" android:id="@id/deductReason" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/uilib_deduct_reason" android:layout_weight="1.0" android:layout_marginStart="@dimen/dp_30" android:layout_marginEnd="@dimen/rpx_24" />
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/deductDetailList" android:layout_width="match_parent" android:layout_height="match_parent" />
+</LinearLayout>

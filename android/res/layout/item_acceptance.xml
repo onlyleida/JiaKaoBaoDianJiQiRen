@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="#fff" android:layout_width="match_parent" android:layout_height="@dimen/rpx_150" android:layoutDirection="ltr"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/text_28" android:textColor="#fff" android:gravity="center" android:id="@id/btnTv" android:background="@drawable/shape_008aff_r100" android:layout_width="@dimen/rpx_300" android:layout_height="@dimen/rpx_80" android:layout_marginLeft="@dimen/rpx_115" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:textSize="@dimen/text_28" android:id="@id/statusTv" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:textSize="@dimen/text_28" android:textColor="#707c8c" android:id="@id/timeTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/rpx_115" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <View android:background="#d7dade" android:layout_width="0.0dp" android:layout_height="@dimen/rpx_1" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="@id/btnTv" app:layout_constraintRight_toRightOf="@id/timeTv" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#f2f5fa" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/titleLayout" layout="@layout/common_title" />
+    <TextView android:textSize="@dimen/dp_18" android:textColor="#ff333333" android:gravity="center_vertical" android:paddingLeft="@dimen/dp_16" android:paddingTop="@dimen/dp_8" android:layout_width="match_parent" android:layout_height="@dimen/dp_49" android:text="勾选表示该信号反转，请谨慎操作" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/recyclerView" android:background="#fff" android:paddingTop="@dimen/dp_8" android:paddingBottom="@dimen/dp_8" android:layout_width="match_parent" android:layout_height="wrap_content" app:layoutManager="androidx.recyclerview.widget.GridLayoutManager" app:spanCount="4" />
+</LinearLayout>

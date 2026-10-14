@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="#f5f7fa" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/faceLayout" android:layout_width="@dimen/rpx_753" android:layout_height="@dimen/rpx_753" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" layout="@layout/layout_login_face" />
+    <TextView android:textSize="@dimen/rpx_40" android:textColor="#fff" android:gravity="center" android:id="@id/btnRegister" android:background="@drawable/bg_login_btn" android:layout_width="@dimen/rpx_253" android:layout_height="@dimen/rpx_80" android:layout_marginTop="@dimen/rpx_40" android:text="注册人脸" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/faceLayout" />
+    <TextView android:textSize="@dimen/rpx_40" android:textColor="#333" android:gravity="center" android:id="@id/tvName" android:layout_width="@dimen/rpx_253" android:layout_height="@dimen/rpx_80" android:layout_marginTop="@dimen/rpx_40" app:layout_constraintBottom_toTopOf="@id/faceLayout" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

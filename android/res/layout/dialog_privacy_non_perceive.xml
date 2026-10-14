@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="无感登录是学员快捷登录设备的一种方式，主要用于学员上车后精准同步更新练车数据。 \n\n您同意后将会在练车过程中会采集您的人脸数字化特征，人脸数字化特征只用于设备无感登录，并且会在设备端进行匿名化处理，不会侵犯您的个人隐私。" style="@style/privacy_agreement_content" />
+</LinearLayout>

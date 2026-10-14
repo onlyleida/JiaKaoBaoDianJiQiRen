@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:layout_gravity="center_vertical" android:background="@drawable/shape_circle_333" android:layout_width="@dimen/dp_5" android:layout_height="@dimen/dp_5" android:layout_marginStart="@dimen/dp_24" />
+    <TextView android:textSize="@dimen/dp_18" android:textColor="#333" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="教学语音" android:layout_marginStart="@dimen/dp_40" />
+    <EditText android:textSize="@dimen/dp_18" android:textColor="@color/color_333_ccc" android:layout_gravity="center_vertical" android:id="@id/et_teach_voice" android:background="#fff2f5fa" android:paddingLeft="@dimen/dp_16" android:paddingTop="@dimen/dp_8" android:paddingRight="@dimen/dp_16" android:paddingBottom="@dimen/dp_9" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_12" android:layout_marginBottom="@dimen/dp_12" android:layout_marginStart="@dimen/dp_195" android:layout_marginEnd="@dimen/dp_20" />
+    <View android:layout_gravity="bottom" android:background="#eee" android:layout_width="match_parent" android:layout_height="@dimen/dp_1" android:layout_marginStart="@dimen/dp_24" android:layout_marginEnd="@dimen/dp_20" />
+</FrameLayout>

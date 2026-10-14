@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/rpx_18" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/teach_collect_v_item_title" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RadioGroup android:orientation="horizontal" android:id="@id/gearRadio" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <RadioButton android:textSize="@dimen/text_21" android:textColor="#808080" android:id="@id/equal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/rpx_23" android:checked="true" android:button="@drawable/selector_collect_radio" android:text=" 等于" />
+            <RadioButton android:textSize="@dimen/text_21" android:textColor="#808080" android:id="@id/notEqual" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/selector_collect_radio" android:text=" 不等于" />
+        </RadioGroup>
+    </LinearLayout>
+    <View android:background="#222529" android:layout_width="match_parent" android:layout_height="@dimen/rpx_2" android:layout_marginTop="@dimen/rpx_18" android:layout_marginRight="@dimen/rpx_18" />
+</LinearLayout>

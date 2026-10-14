@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/title" android:background="#fff" android:layout_width="match_parent" android:layout_height="@dimen/rpx_102"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:gravity="center_vertical" android:id="@id/backIv" android:padding="@dimen/rpx_15" android:layout_width="@dimen/rpx_66" android:layout_height="@dimen/rpx_66" android:layout_marginLeft="@dimen/rpx_33" android:src="@drawable/ic_home_back" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:textSize="@dimen/text_33" android:textColor="#333" android:id="@id/titleTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="训练场管理" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <View android:background="@color/origin_color_gray_ebf2" android:layout_width="match_parent" android:layout_height="1.0dp" app:layout_constraintBottom_toBottomOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

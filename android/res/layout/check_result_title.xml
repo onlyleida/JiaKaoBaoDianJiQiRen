@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/text_36" android:textStyle="bold" android:textColor="#fff" android:gravity="center_vertical" android:id="@id/titleTv" android:background="@drawable/shape_ff4d4d_r45" android:layout_width="@dimen/rpx_240" android:layout_height="@dimen/rpx_69" android:layout_marginTop="@dimen/rpx_30" android:text="严重故障" android:drawableLeft="@drawable/shape_white_dot" android:drawablePadding="@dimen/rpx_10" android:paddingStart="@dimen/rpx_30" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <View android:background="#e6e6e6" android:layout_width="@dimen/rpx_6" android:layout_height="@dimen/rpx_15" android:layout_marginStart="@dimen/rpx_37" app:layout_constraintStart_toStartOf="@id/titleTv" app:layout_constraintTop_toBottomOf="@id/titleTv" />
+</androidx.constraintlayout.widget.ConstraintLayout>

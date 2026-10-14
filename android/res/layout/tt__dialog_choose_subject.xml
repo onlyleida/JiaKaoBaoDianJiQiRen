@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/tt__bg_round_white" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/tt__text_size_dialog_title" android:textColor="#ff333333" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25.0dp" android:text="请选择培训科目" />
+    <LinearLayout android:gravity="center_horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="25.0dp">
+        <TextView android:textSize="@dimen/tt__text_size_dialog_button" android:textColor="#ffffffff" android:gravity="center" android:id="@id/subject_2" android:background="@drawable/tt__bg_btn_blue_2_corner" android:layout_width="@dimen/tt__button_width_dialog" android:layout_height="@dimen/tt__button_height_dialog" android:layout_marginRight="19.0dp" android:text="科目二" />
+        <TextView android:textSize="@dimen/tt__text_size_dialog_button" android:textColor="#ffffffff" android:gravity="center" android:id="@id/subject_3" android:background="@drawable/tt__bg_btn_green_2_corner" android:layout_width="@dimen/tt__button_width_dialog" android:layout_height="@dimen/tt__button_height_dialog" android:layout_marginLeft="19.0dp" android:text="科目三" />
+    </LinearLayout>
+</LinearLayout>
