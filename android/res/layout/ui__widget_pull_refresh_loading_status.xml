@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:id="@id/loading_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar android:id="@id/progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminateDrawable="@drawable/ui__widget_pull_refresh_loading_progress" android:indeterminateDuration="1000" android:indeterminateBehavior="repeat" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="14.0sp" android:textColor="#999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:text="正在加载" android:layout_below="@id/progress" android:layout_centerHorizontal="true" />
+</RelativeLayout>

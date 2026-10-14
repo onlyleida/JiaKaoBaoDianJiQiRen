@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="60.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:auto="http://schemas.android.com/apk/res-auto">
+    <cn.mucang.android.ui.framework.widget.loading.ProgressWheelLoadingView android:layout_gravity="center_vertical" android:id="@id/progress_loading_view" android:layout_width="40.0dp" android:layout_height="40.0dp" auto:matProg_barColor="@color/ui_framework__progress_theme_blue" auto:matProg_progressIndeterminate="true" />
+    <TextView android:textSize="18.0sp" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:text="@string/ui_framework__loading_more_tips" />
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/bottom_layout" android:layout_width="match_parent" android:layout_height="@dimen/alert_dialog_bottom_height" android:layout_alignParentBottom="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0sp" android:textColor="#666666" android:gravity="center" android:id="@id/btn_left" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/ui__dialog_secondary_operating_text" android:layout_weight="1.0" />
+    <View android:background="#e0e0e0" android:layout_width="1.0px" android:layout_height="match_parent" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/ui__alert_dialog_primary_button_text_color" android:gravity="center" android:id="@id/btn_right" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/ui__dialog_primary_operating_text" android:layout_weight="1.0" />
+</LinearLayout>

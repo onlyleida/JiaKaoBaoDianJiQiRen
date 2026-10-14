@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="@dimen/dp_98" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="@dimen/dp_98" android:layout_height="match_parent">
+        <ImageView android:id="@id/icon" android:layout_width="@dimen/dp_28" android:layout_height="@dimen/dp_28" android:src="@drawable/select_tab_rule" android:layout_marginStart="@dimen/dp_11" android:layout_marginEnd="@dimen/dp_8" />
+        <TextView android:textSize="@dimen/dp_18" android:textColor="#ff333333" android:id="@id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="指令\n设置" android:layout_marginEnd="@dimen/dp_15" />
+    </LinearLayout>
+    <View android:layout_gravity="bottom" android:background="#e8e8e8" android:layout_width="wrap_content" android:layout_height="@dimen/dp_1" />
+</FrameLayout>
