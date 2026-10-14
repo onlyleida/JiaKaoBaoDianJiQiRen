@@ -1,0 +1,8 @@
+package kotlin.reflect.jvm.internal.impl.descriptors;
+
+/* JADX INFO: loaded from: classes6.dex */
+public interface i0 extends u {
+    boolean E();
+
+    j0 T();
+}
