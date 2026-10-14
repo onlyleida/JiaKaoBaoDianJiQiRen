@@ -145,6 +145,9 @@ def main():
             run(adb + ["shell", "cmd", "connectivity", "airplane-mode", "enable"], check=False)
             run(adb + ["shell", "svc", "wifi", "disable"])
             run(adb + ["shell", "svc", "data", "disable"])
+        run(adb + ["shell", "wm", "size", "1280x720"], "display-size")
+        run(adb + ["shell", "wm", "density", "160"], "display-density")
+        report["display"] = {"size": "1280x720", "density": 160}
         run(adb + ["shell", "input", "keyevent", "82"])
         for tool in ["iptables", "ip6tables"]:
             run(adb + ["shell", tool, "-I", "OUTPUT", "1", "!", "-o", "lo",
@@ -286,6 +289,31 @@ def main():
                                              same_process=pid == report["app_pid_after_45s"] and bool(pid),
                                              resumed_lines=[line.strip() for line in after.splitlines()
                                                             if "ResumedActivity" in line])
+            try:
+                settings_tree = ET.fromstring((out / "native-settings-ui.xml").read_text())
+                for node in settings_tree.iter("node"):
+                    if node.get("package") != PACKAGE or node.get("text") != "语音设置":
+                        continue
+                    bounds = re.fullmatch(r"\[(\d+),(\d+)\]\[(\d+),(\d+)\]", node.get("bounds", ""))
+                    if not bounds:
+                        continue
+                    x1, y1, x2, y2 = map(int, bounds.groups())
+                    run(adb + ["shell", "input", "tap", str((x1 + x2) // 2), str((y1 + y2) // 2)])
+                    time.sleep(5)
+                    screenshot("screen-native-voice-settings.png")
+                    run(adb + ["shell", "uiautomator", "dump", "/sdcard/ci-voice.xml"], check=False, timeout=25)
+                    run(adb + ["pull", "/sdcard/ci-voice.xml", str(out / "native-voice-ui.xml")], check=False)
+                    voice_activity = run(adb + ["shell", "dumpsys", "activity", "activities"],
+                                         "native-voice-activity", check=False).stdout
+                    report["native_settings"]["interaction"] = dict(tapped="语音设置", resumed_lines=[
+                        line.strip() for line in voice_activity.splitlines() if "ResumedActivity" in line])
+                    run(adb + ["shell", "input", "keyevent", "4"])
+                    time.sleep(2)
+                    screenshot("screen-native-settings-returned.png")
+                    break
+            except (OSError, ET.ParseError) as error:
+                report["native_settings"]["interaction_error"] = str(error)
+            report["native_settings"]["pid_after_interaction"] = run(adb + ["shell", "pidof", PACKAGE], check=False).stdout.strip()
             run(adb + ["logcat", "-b", "crash", "-d", "-v", "threadtime"], "crash-after-native-settings", check=False)
         report["status"] = "evidence_collected"
     except (OSError, RuntimeError, subprocess.TimeoutExpired) as error:

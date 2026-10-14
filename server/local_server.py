@@ -52,6 +52,7 @@ for path, handler, description in [
     ("/api/open/device/get-paas-info.htm", "paas", "PaaS disabled local fixture"),
     ("/api/open/device/get-device-config.htm", "configs", "device-scoped string config list"),
     ("/api/open/user-config/get-login-config.htm", "login_config", "local account login only"),
+    ("/api/open/route/get-area-code.htm", "area_code", "empty local area code; no location invented"),
     ("/api/open/user/check-logout.htm", "check_login", "validate local session"),
     ("/api/open/login/logout.htm", "logout", "revoke local session"),
     ("/api/open/user/logout-notice.htm", "logout_notice", "record notice, optionally revoke"),
@@ -278,6 +279,8 @@ class Backend:
                 db.executemany("INSERT OR REPLACE INTO configs VALUES (?,?,?)",
                                [(device, x["code"], x["value"]) for x in body])
                 return True
+            if action == "area_code":
+                return {"areaCode": ""}
             if action == "login_config":
                 return {"configs": [{"loginMethod": "MOBILE_OR_IDCARD", "enabled": True}]}
             if action == "login":

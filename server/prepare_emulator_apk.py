@@ -22,7 +22,7 @@ CERT_SLOT_BYTES = 1755
 ORIGINAL_DEBUG_CERT = "c9911ef8e4a38b748d914688866a82e68577d0a1ec89450e9f39dc2c24059695"
 
 
-def prepare_emulator(output, root=ROOT):
+def prepare_emulator(output, root=ROOT, disable_speech=False):
     output = Path(output).resolve()
     original = (Path(root) / "android" / LIB).read_bytes()
     if hashlib.sha256(original).hexdigest() != ORIGINAL or original[0x8f630:0x8f634].hex() != "30482de9":
@@ -40,13 +40,14 @@ def prepare_emulator(output, root=ROOT):
     keytool = shutil.which("keytool")
     if not keytool:
         raise ValueError("JDK keytool is required before preparing the emulator variant")
-    # Only this explicit emulator variant disables unsupported speech and uses
-    # the application's existing hardware simulation preference by default.
+    # API28 runs the original speech SDK. Optional speech disabling is retained
+    # for API30 diagnosis; use the existing hardware simulation preference.
     changes = []
-    for relative, signature in [
+    speech_methods = [
         (FW + "tts/d.smali", "public final c(Landroid/content/Context;)V"),
         ("smali_classes3/cn/mucang/android/jiakaoyi/speech/utils/f.smali", "public final a(Landroid/content/Context;)V"),
-    ]:
+    ] if disable_speech else []
+    for relative, signature in speech_methods:
         before = (Path(root) / "android" / relative).read_text()
         after = replace_method(before, signature, "    return-void")
         if relative == FW + "tts/d.smali":
@@ -126,13 +127,14 @@ def prepare_emulator(output, root=ROOT):
                  reason="Emulator CPU compatibility and the local build certificate; retain native verification and crypto")
     (output / "reports/payload-overrides.json").write_text(json.dumps({LIB: entry}, indent=2) + "\n")
     report = dict(base="local-backend overlay", originalModified=False, files=[dict(file="android/" + LIB, **entry)] + java_manifest,
-                  scope="Native CPU/certificate compatibility; speech disabled; loopback ping; existing Bluetooth simulation default enabled",
-                  voiceAvailable=False, hardwareSimulationDefault=True, networkProbe="127.0.0.1",
+                  scope="Native CPU/certificate compatibility; loopback ping; existing Bluetooth simulation default enabled",
+                  speechInitializationDisabled=disable_speech, hardwareSimulationDefault=True, networkProbe="127.0.0.1",
                   nativeLibrariesUnchanged=False, nativeMethodsUnchanged=True,
                   limits=["CPU acceleration and timestamp probing disabled; runtime validation still required",
                           "All other original native bytes and packaged resources remain unchanged",
                           "Private debug key stays in this build directory and is never published",
-                          "Speech synthesis/recognition unavailable; original SDK libraries remain packaged",
+                          ("Speech synthesis/recognition unavailable; original SDK libraries remain packaged" if disable_speech else
+                           "Original speech initialization retained; spoken output and cloud recognition unverified"),
                           "Built-in Bluetooth simulation replaces physical signal-box startup; real hardware untested",
                           "Original login and external Unity resource checks remain",
                           "Use local backend and guest network isolation for testing"])
@@ -143,6 +145,7 @@ def prepare_emulator(output, root=ROOT):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--output", required=True, type=Path)
+    parser.add_argument("--disable-speech", action="store_true", help="Experimental API30 speech fallback; unnecessary on validated API28")
     args = parser.parse_args()
-    prepare_emulator(args.output)
+    prepare_emulator(args.output, disable_speech=args.disable_speech)
     print("Prepared portable ARM emulator variant in", args.output.resolve())

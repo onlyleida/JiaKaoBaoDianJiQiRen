@@ -94,6 +94,13 @@ class Contracts(unittest.TestCase):
         self.assertTrue(self.ok("/api/open/device/get-device-info.htm")["payFirst"])
         self.assertFalse(self.ok("/api/open/device/get-paas-info.htm")["passEnabled"])
 
+    def test_area_code_matches_client_object_shape_without_inventing_location(self):
+        area = self.ok("/api/open/route/get-area-code.htm")
+        self.assertIsInstance(area, dict)
+        self.assertEqual(area["areaCode"], "")
+        status, _, _ = self.request("/api/open/route/get-area-code.htm", "POST")
+        self.assertEqual(status, 405)
+
     def test_login_notice_before_tokens_are_installed_and_revocation(self):
         config = self.ok("/api/open/user-config/get-login-config.htm")
         self.assertEqual(config["configs"][0]["loginMethod"], "MOBILE_OR_IDCARD")
