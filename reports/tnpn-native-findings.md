@@ -139,3 +139,91 @@
 - 原库其余字节、native方法、算法实现和静态导出仍应完整保留。静态证据不能证明模拟器所有后续代码均兼容或密码计算输出等价；还需实际加载、签名/编解码调用和界面进度验证。
 
 实施门槛建议：若父任务决定采用，只在独立本地覆盖副本上同时核对原完整SHA256、文件大小、offset处原4字节；修改后核对预计完整SHA256并记录仅4字节变化。不要在未知版本库上按固定offset盲改，不应覆盖原件。此子调查未应用该补丁，也未重开REA native session。
+
+## 7. 重签名后 exit(1)：Riddle 证书允许列表
+
+补充日期2026-10-15。父任务反馈portable CPU变体已经越过上述SIGSEGV，随后反复clean exit(1)。本节仅分析原libtnpn静态调用链，不把父任务的运行反馈误作由此子任务采集的native断点证据；静态发现与该现象高度一致，但首次queued-work mutex异常是否是exit清理副作用尚未证明。
+
+### Riddle.c() 是检查入口，不是通用初始化
+
+应用 `java/sources/cn/mucang/android/core/config/p.java:59-63,81-85` 在Application.onCreate早期调用Riddle.c；唯一找到的对应Smali调用为 `android/smali/cn/mucang/android/core/config/p.smali:153`。
+
+原SO导出 `Java_cn_mucang_android_core_jni_Riddle_c` 的ELF st_value=0x61379（Thumb标记），实际代码offset0x61378长4字节；REA地址0x71378是一条Thumb b.w，经Thumb/ARM veneer跳入 `block01_f7_m1`。共同检查函数真实ELF地址0x6134c（REA0x7134c）：
+
+```text
+if (result == 2)
+    result = block01_f7_m4(JNIEnv);
+if (result != 1)
+    exit(1);
+return 1;
+```
+
+`result`为原ELF VA0x21600c/file offset0x21500c处的32位全局，原值**2**。检查返回1表示匹配，0表示所有已安装签名均未匹配；结果被缓存。这里的exit参数明确是整数1。
+
+**只跳过Java Riddle.c调用不够**：`Java_cn_mucang_android_core_jni_Riddle_s`（ELF0x60090/REA0x70090）在真实计算前也直接调用相同block01_f7_m1。Riddle_d与Riddle_e已检查的入口没有这次共同证书检查，仍有各自其他逻辑；没有据此声称所有native功能已完整分析。
+
+### 实际检查字段：完整签名证书DER的十六进制
+
+`block01_f7_m4`（ELF0x610c0/REA0x710c0）调用顺序如下。JNI名称存于int数组，由block01_f7_m2取每个int的低字节并补NUL；以下名称已按原字节解码，不是仅由变量名字猜测：
+
+1. `cn/mucang/android/core/config/MucangConfig.getContext(): android.app.Application`。
+2. `android.content.Context.getPackageName(): String` 和 `getPackageManager(): PackageManager`。
+3. `PackageManager.getPackageInfo(packageName, 0x40): PackageInfo`。
+4. 读取 `PackageInfo.signatures: android.content.pm.Signature[]`。
+5. 逐个调用 `Signature.toCharsString(): String`，通过JNI GetStringUTFChars取得C字符串。
+6. 用strcmp依次和RELEASE_SIGN_1、RELEASE_SIGN_2、DEBUG_SIGN比较；任意一个完全相等就返回1，全部不相等返回0。
+
+三个原常量都是可解析X.509 DER证书的**小写hex字符串**。本地替换内容应为本次签名证书的完整`DER.hex()`，不是SHA256/SHA1指纹、证书主题、PEM文本或原始二进制DER。该函数没有观察到DEX、APK ZIP、资源或文件hash完整性检查。
+
+### DEBUG_SIGN 无额外 debuggable 条件
+
+**在已完整分析的共同检查函数和证书比较函数内，DEBUG_SIGN与两条RELEASE_SIGN是平级的第三个允许值，不受manifest debuggable、BuildConfig.DEBUG、包名分支或环境变量开关保护。**
+
+具体控制流（REA地址）：0x712b4 strcmp(RELEASE_SIGN_1)后0x712b8相等跳0x712ea；不相等继续0x712c0 strcmp(RELEASE_SIGN_2)，0x712c4相等跳同一点；再不相等就0x712c6..0x712d0直接取得DEBUG_SIGN并strcmp，0x712d4相等也跳同一点。0x712ea..0x712fa释放UTF字符串并返回1。这三次比较之间无额外debug判定。外层只检查缓存result是否为2/1，不提供debug条件。
+
+因此把独立本地变体的DEBUG_SIGN替换成本次调试证书即可允许它；不需要把Application标记为debuggable才能让这个比较生效。名称DEBUG_SIGN仅说明开发者原始命名，不能当作条件证据。边界：这是对当前两个函数的完整控制流结论，不声称应用别处不存在任何debug检查。
+
+### 常量位置与容量
+
+原库SHA256仍为 `a644d6800f2732798185741da30d8ced39c6f0d7acb67192d384cee6e425dd44`。
+
+| 名称 | 指针变量ELF VA / file offset | 指向的字符串ELF VA=file offset | ASCII字符数 | DER字节数 |
+|---|---|---|---:|---:|
+| RELEASE_SIGN_1 | 0x216000 / 0x215000 | 0x1baa1b | 1166 | 583 |
+| RELEASE_SIGN_2 | 0x216004 / 0x215004 | 0x1baeaa | 1870 | 935 |
+| DEBUG_SIGN | 0x216008 / 0x215008 | **0x1bb5f9** | **1754** | **877** |
+
+DEBUG_SIGN变量本身仅4字节（dynsym index3087，GLOBAL/OBJECT），不能把证书写到指针变量位置。其字符串NUL在**0x1bbcd3**，下一字节**0x1bbcd4**已经是`mc_video_decoder`字符串。可原位使用的范围是 **[0x1bb5f9,0x1bbcd4)**，共1755字节，包含终止NUL。`0x216008`有R_ARM_RELATIVE重定位；GOT槽0x2134c0有对应DEBUG_SIGN的动态重定位；原位替换字符串无需改这些指针或重定位。
+
+原DEBUG证书DER SHA256为 `c9911ef8e4a38b748d914688866a82e68577d0a1ec89450e9f39dc2c24059695`，仅用作原常量身份核对，不能把该hash当比较字符串。其DER已通过本机OpenSSL x509只读解析。
+
+### 保留校验的本地重签名方案
+
+优先方案是替换该独立本地变体的DEBUG_SIGN槽，保留Riddle.c和Riddle.s共同检查，保留两条原发布证书和所有签名/编解码算法：
+
+1. 在prepare阶段生成或明确复用调试keystore及alias。与现有build.py约定一致时是输出项目`.cache/reconstruction-debug.p12`、alias `reconstruction`。
+2. 用keytool exportcert导出同一alias的DER，不带-rfc；或用其他严格DER证书导出方式。取得完整DER后转小写hex。
+3. 检查hex仅含0-9a-f、长度为偶数且不超过1754；检查该DER证书与即将用于APK签名的证书完全相同。
+4. 只在独立覆盖SO中，把0x1bb5f9开始的1755字节替换为 `cert_hex_ascii + NUL + 零填充`；短于原长度补零，**超过容量则失败，不能截断或覆盖下一字符串**。可生成较短subject的调试证书以适应容量。
+5. build必须复用同一keystore与alias，不能另一个CI步骤重新生成密钥。校验最终APK签名证书DER与槽内容匹配，而不只确认apksigner显示签名有效。
+6. 记录原/新整库SHA256、精确修改区间与签名证书SHA256；若同一副本还有CPU兼容4字节修改，两种差异分开列出。
+
+这比将共同门改成恒成功更能保留原校验语义。替换DEBUG_SIGN意味着该**本地变体**的第三个允许证书由原开发证书换成本次调试证书；原厂认证、服务端权限、硬件/教学状态没有因此获得或恢复。此子任务未修改任何APK源或SO。
+
+### 本次证据档案与可复核ID
+
+档案：`/Users/leida/Documents/Codex/2026-10-14/ne/work/tnpn-certificate-gate-records.json`，包含9个原REA工具调用返回的完整structuredContent Evidence record，保留各自subject、provider、analysis_profile、raw_result、normalized_result、limitations和ID。
+
+会话在本次整理要求前已经按要求关闭；关闭后再调用REA canonical export返回0条，因此没有把空导出误当成功证据。此档案从本会话保留的**原完整工具结果**封装，无重新反编译，也未伪称为REA canonical bundle；顶层format为`retained-rea-tool-evidence-records`。可直接读取records数组审查，但不保证REA inspect-evidence-bundle接受这个封装。之前CPU分析canonical bundle仍保存在`work/tnpn-native-evidence.json`。
+
+| 主题 | Evidence ID |
+|---|---|
+| Riddle.c导出跳转 | ev_fc3927d99d99f913343674130c8767a3a0cbf1ce86090c9d74600c8f0fe6121d |
+| Thumb/ARM veneer | ev_87fcb6dbbab75270fa148184fdcf7f63b85a5cadfc56eaa167579f8df977f8e7 |
+| 共同门/缓存/exit(1) | ev_d67bad063f00afffaa4d7adae78d0dd7819b48e1cdc34beb785869fed3c314b4 |
+| 证书比较完整函数 | ev_7e6e70ee5f072e6c803eda0066c942b0507183a23026710c88241509159f1d50 |
+| int数组字符串还原函数 | ev_46af91cf50e1c03efed68bc63909f80c496dad6b2857d1b734159c6584f93749 |
+| MucangConfig上下文取得 | ev_c6a1f1a72594d96e9b629b020a011a08178c2c2ce5405db27cade32033562f67 |
+| Riddle.s入口也检查 | ev_d21cbd06bf0424653a7662673b63423d6107f422b94261644a52df49f34adb80 |
+| Riddle.d入口边界 | ev_c8758db678e80833b1b6c04f7dd9b309d2e9fd65710496b892d50339847b7424 |
+| Riddle.e入口边界 | ev_66515a61bd03b37be16f559d647ad1fbb17128c725f284e5355f476d8a21b5d7 |

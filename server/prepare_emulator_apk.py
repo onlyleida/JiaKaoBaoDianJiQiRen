@@ -1,14 +1,16 @@
 #!/usr/bin/env python3
 """Create an isolated local-backend APK using portable ARM OpenSSL routines."""
 import argparse
+import difflib
 import hashlib
 import json
 import os
+import re
 import shutil
 import subprocess
 from pathlib import Path
 
-from prepare_local_apk import ROOT, prepare
+from prepare_local_apk import ROOT, FW, prepare, replace_method
 
 LIB = "lib/armeabi-v7a/libtnpn.so"
 ORIGINAL = "a644d6800f2732798185741da30d8ced39c6f0d7acb67192d384cee6e425dd44"
@@ -38,7 +40,57 @@ def prepare_emulator(output, root=ROOT):
     keytool = shutil.which("keytool")
     if not keytool:
         raise ValueError("JDK keytool is required before preparing the emulator variant")
+    # Only this explicit emulator variant disables unsupported speech and uses
+    # the application's existing hardware simulation preference by default.
+    changes = []
+    for relative, signature in [
+        (FW + "tts/d.smali", "public final c(Landroid/content/Context;)V"),
+        ("smali_classes3/cn/mucang/android/jiakaoyi/speech/utils/f.smali", "public final a(Landroid/content/Context;)V"),
+    ]:
+        before = (Path(root) / "android" / relative).read_text()
+        after = replace_method(before, signature, "    return-void")
+        if relative == FW + "tts/d.smali":
+            # Complete queued TTS requests with the SDK's explicit uninitialized
+            # error; a silent return would leave TtsSynchronizer waiting forever.
+            for method, callback in [
+                ("public final f(Ljava/lang/String;Lcom/iflytek/cloud/SynthesizerListener;)V", "p2"),
+                ("public final h(Ljava/lang/String;Ljava/lang/String;Lcom/iflytek/cloud/SynthesizerListener;)V", "p3"),
+            ]:
+                pattern = r"(?m)^\.method " + re.escape(method) + r"\n[\s\S]*?^\.end method"
+                matches = list(re.finditer(pattern, after))
+                if len(matches) != 1:
+                    raise ValueError("Unexpected TTS callback method")
+                match = matches[0]
+                body = match.group()
+                if body.count("    goto :goto_0") != 1 or body.count("    .locals 1") != 1:
+                    raise ValueError("Unexpected TTS null branch")
+                failure = ("    new-instance v0, Lcom/iflytek/cloud/SpeechError;\n"
+                           "    const/16 v1, 0x5dc7\n"
+                           "    invoke-direct {v0, v1}, Lcom/iflytek/cloud/SpeechError;-><init>(I)V\n"
+                           "    invoke-interface {" + callback + ", v0}, Lcom/iflytek/cloud/SynthesizerListener;->onCompleted(Lcom/iflytek/cloud/SpeechError;)V\n"
+                           "    return-void")
+                body = body.replace("    .locals 1", "    .locals 2", 1).replace("    goto :goto_0", failure, 1)
+                after = after[:match.start()] + body + after[match.end():]
+        changes.append((relative, before, after))
+    for relative, before_text, after_text in [
+        (FW + "utils/JNet.smali", 'const-string v0, "1234.kakamobi.cn"', 'const-string v0, "127.0.0.1"'),
+        (FW + "utils/n.smali", 'const/4 v0, 0x0\n\n    const-string v1, "debugKeyBlueTooth"',
+         'const/4 v0, 0x1\n\n    const-string v1, "debugKeyBlueTooth"'),
+    ]:
+        before = (Path(root) / "android" / relative).read_text()
+        if before.count(before_text) != 1:
+            raise ValueError("Unexpected emulator setting: " + relative)
+        changes.append((relative, before, before.replace(before_text, after_text, 1)))
     prepare(output, "http://127.0.0.1:8765", root)
+    java_manifest, patch = [], []
+    for relative, before, after in changes:
+        (output / "android" / relative).write_text(after)
+        java_manifest.append(dict(file="android/" + relative,
+                                  originalSha256=hashlib.sha256(before.encode()).hexdigest(),
+                                  patchedSha256=hashlib.sha256(after.encode()).hexdigest()))
+        patch.extend(difflib.unified_diff(before.splitlines(True), after.splitlines(True),
+                                         "original/android/" + relative, "emulator/android/" + relative))
+    (output / "emulator-java.patch").write_text("".join(patch))
     cache = output / ".cache"
     cache.mkdir(mode=0o700)
     keystore = cache / "reconstruction-debug.p12"
@@ -73,13 +125,16 @@ def prepare_emulator(output, root=ROOT):
                                reason="Allow this build's debug certificate using the existing DEBUG_SIGN slot")],
                  reason="Emulator CPU compatibility and the local build certificate; retain native verification and crypto")
     (output / "reports/payload-overrides.json").write_text(json.dumps({LIB: entry}, indent=2) + "\n")
-    report = dict(base="local-backend overlay", originalModified=False, files=[dict(file="android/" + LIB, **entry)],
-                  scope="CPU-probe entry and DEBUG_SIGN certificate data; original release certificates and native verification retained",
+    report = dict(base="local-backend overlay", originalModified=False, files=[dict(file="android/" + LIB, **entry)] + java_manifest,
+                  scope="Native CPU/certificate compatibility; speech disabled; loopback ping; existing Bluetooth simulation default enabled",
+                  voiceAvailable=False, hardwareSimulationDefault=True, networkProbe="127.0.0.1",
                   nativeLibrariesUnchanged=False, nativeMethodsUnchanged=True,
                   limits=["CPU acceleration and timestamp probing disabled; runtime validation still required",
                           "All other original native bytes and packaged resources remain unchanged",
                           "Private debug key stays in this build directory and is never published",
-                          "Original activation, hardware and external resource checks remain",
+                          "Speech synthesis/recognition unavailable; original SDK libraries remain packaged",
+                          "Built-in Bluetooth simulation replaces physical signal-box startup; real hardware untested",
+                          "Original login and external Unity resource checks remain",
                           "Use local backend and guest network isolation for testing"])
     (output / "emulator-overlay.json").write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n")
     return report

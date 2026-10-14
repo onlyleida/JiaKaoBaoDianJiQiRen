@@ -76,7 +76,7 @@ def main():
 
     def startup_clicks():
         # Match observed UI nodes; never guess coordinates or tap other dialogs.
-        report["startup_ui_actions"] = []
+        report.setdefault("startup_ui_actions", [])
         allowed = {(PACKAGE, "同意并使用"), ("com.android.systemui", "Start now"),
                    ("com.android.systemui", "START NOW"), ("com.android.systemui", "立即开始")}
         for index in range(6):
@@ -264,6 +264,10 @@ def main():
         run(adb + ["shell", "uiautomator", "dump", "/sdcard/ci-window.xml"],
             "ui-dump", timeout=30, check=False)
         run(adb + ["pull", "/sdcard/ci-window.xml", str(out / "ui.xml")], check=False)
+        if report["stable_process_observed"]:
+            maps = run(adb + ["shell", "cat", "/proc/" + report["app_pid_after_45s"] + "/maps"],
+                       "application-memory-maps", check=False).stdout
+            report["speech_native_loaded"] = "/libmsc.so" in maps
         if os.environ.get("JIAKAO_NATIVE_PAGES") == "1" and report["stable_process_observed"]:
             # Inspect an existing native page independently of the unavailable
             # Unity assets. This is diagnostic navigation, not normal startup.
