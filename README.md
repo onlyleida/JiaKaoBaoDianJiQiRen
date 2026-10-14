@@ -44,6 +44,8 @@ python3 scripts/build.py
 
 macOS 的 SDK 通常位于 `$HOME/Library/Android/sdk`。也可传入 `--sdk`、`--java-home`、`--build-tools` 和 `--output-dir`。默认产物在 `dist/`：签名 APK、SHA256、打包日志和验证报告。
 
+仓库 Actions 中的 `Build reconstructed APK` 可以手动运行同一脚本，并将结果附到现有 `apk-11.6.5-rebuild` Release。工作流没有定时或 push 触发器。每次使用新调试密钥，云端 APK 与本地 APK 的证书和 SHA256 可不同；下载文件以同名 `.sha256` 和 Release 内的 `ci-build-verification.json` 为准。
+
 脚本重新汇编全部 6 份 Smali、编译 Android 资源、打包所有 assets/lib/unknown 文件，完成 zipalign、调试签名与 apksigner 验证，再对照原包清单逐项校验 490 个原样保留文件。调试密钥在 `.cache/` 本地生成，不提交 Git；不同机器新生成的密钥不同。产物包含时间与签名差异，不保证每次构建的 APK 哈希相同。
 
 ## 目录
