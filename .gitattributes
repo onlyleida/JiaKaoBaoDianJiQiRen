@@ -1,0 +1,9 @@
+*.so binary
+*.dll binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.webp binary
+*.mp3 binary
+*.wav binary
+*.tflite binary
