@@ -1,0 +1,94 @@
+.class public Lcn/mucang/android/jiakaoyi/examk2/rule/shihualumian/K2_ShiHuaLuMian_311103_Event;
+.super Lcn/mucang/android/jiakaoyi/engine/processor/exam/step/e/d;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lcn/mucang/android/jiakaoyi/engine/processor/exam/step/e/d<",
+        "Lcn/mucang/android/jiakaoyi/examk2/config/K2ShiHuaLuMianConfig;",
+        ">;"
+    }
+.end annotation
+
+
+# direct methods
+.method public constructor <init>(Lcn/mucang/android/jiakaoyi/examk2/config/K2ShiHuaLuMianConfig;Lcn/mucang/android/jiakaoyi/engine/model/Deduct;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0, p1, p2}, Lcn/mucang/android/jiakaoyi/engine/processor/exam/step/e/d;-><init>(Lcn/mucang/android/jiakaoyi/engine/config/BaseStepConfig;Lcn/mucang/android/jiakaoyi/engine/model/Deduct;)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method protected handleSuccess(Lcn/mucang/android/jiakaoyi/signal/c/e;Lcn/mucang/android/jiakaoyi/engine/processor/exam/ExamProcessor;Lcn/mucang/android/jiakaoyi/engine/processor/exam/step/b;)Z
+    .locals 1
+
+    .line 1
+    invoke-virtual {p3}, Lcn/mucang/android/jiakaoyi/engine/processor/exam/step/b;->f()Lcn/mucang/android/jiakaoyi/engine/processor/exam/step/d;
+
+    move-result-object p2
+
+    check-cast p2, Lcn/mucang/android/jiakaoyi/examk2/b/e;
+
+    .line 2
+    iget-object p3, p2, Lcn/mucang/android/jiakaoyi/examk2/b/g;->a:Lcn/mucang/android/jiakaoyi/hpmap/collision/k2/checker/b;
+
+    check-cast p3, Lcn/mucang/android/jiakaoyi/examk2/collision/d;
+
+    iget-boolean p3, p3, Lcn/mucang/android/jiakaoyi/examk2/collision/d;->z:Z
+
+    const/4 v0, 0x1
+
+    if-eqz p3, :cond_1
+
+    .line 3
+    invoke-virtual {p0, v0}, Lcn/mucang/android/jiakaoyi/engine/processor/exam/step/e/d;->setDoNotExecute(Z)V
+
+    .line 4
+    iget-object p2, p2, Lcn/mucang/android/jiakaoyi/examk2/b/g;->a:Lcn/mucang/android/jiakaoyi/hpmap/collision/k2/checker/b;
+
+    check-cast p2, Lcn/mucang/android/jiakaoyi/examk2/collision/d;
+
+    iget-boolean p2, p2, Lcn/mucang/android/jiakaoyi/examk2/collision/d;->s:Z
+
+    if-eqz p2, :cond_0
+
+    invoke-interface {p1}, Lcn/mucang/android/jiakaoyi/signal/c/e;->d()Lcn/mucang/android/jiakaoyi/signal/center/model/CarModel;
+
+    move-result-object p1
+
+    iget p1, p1, Lcn/mucang/android/jiakaoyi/signal/center/model/CarModel;->c:F
+
+    iget-object p2, p0, Lcn/mucang/android/jiakaoyi/engine/processor/exam/step/e/d;->config:Lcn/mucang/android/jiakaoyi/engine/config/BaseStepConfig;
+
+    check-cast p2, Lcn/mucang/android/jiakaoyi/examk2/config/K2ShiHuaLuMianConfig;
+
+    iget-object p2, p2, Lcn/mucang/android/jiakaoyi/examk2/config/K2ShiHuaLuMianConfig;->p411106:Lcn/mucang/android/jiakaoyi/engine/config/route/value/IntegerValue;
+
+    iget-object p2, p2, Lcn/mucang/android/jiakaoyi/engine/config/route/RuleConfig;->value:Ljava/lang/Object;
+
+    check-cast p2, Ljava/lang/Integer;
+
+    invoke-virtual {p2}, Ljava/lang/Integer;->intValue()I
+
+    move-result p2
+
+    int-to-float p2, p2
+
+    cmpl-float p1, p1, p2
+
+    if-ltz p1, :cond_1
+
+    :cond_0
+    const/4 p1, 0x0
+
+    return p1
+
+    :cond_1
+    return v0
+.end method
