@@ -11,6 +11,7 @@ import subprocess
 import sys
 import time
 import urllib.request
+import xml.etree.ElementTree as ET
 
 ROOT = Path(__file__).resolve().parents[1]
 PACKAGE = "cn.mucang.android.jiakaoyi.teachingk2"
@@ -21,6 +22,7 @@ if API not in {"28", "30"}:
 IMAGE = f"system-images;android-{API};google_apis;x86"
 SERIAL = "emulator-5562"
 LOCAL_BACKEND = os.environ.get("JIAKAO_LOCAL_BACKEND") == "1"
+INTERACT = os.environ.get("JIAKAO_STARTUP_INTERACT") == "1"
 
 
 def main():
@@ -69,6 +71,36 @@ def main():
         else:
             report["screenshot_errors"].append({"file": name, "exit_code": result.returncode,
                                                 "stderr": result.stderr.decode(errors="replace")[-600:]})
+
+    def startup_clicks():
+        # Match observed UI nodes; never guess coordinates or tap other dialogs.
+        report["startup_ui_actions"] = []
+        allowed = {(PACKAGE, "同意并使用"), ("com.android.systemui", "Start now"),
+                   ("com.android.systemui", "START NOW"), ("com.android.systemui", "立即开始")}
+        for index in range(6):
+            run(adb + ["shell", "uiautomator", "dump", "/sdcard/ci-step.xml"], check=False, timeout=25)
+            xml = run(adb + ["shell", "cat", "/sdcard/ci-step.xml"], check=False).stdout
+            (out / ("ui-step-%d.xml" % index)).write_text(xml)
+            try:
+                tree = ET.fromstring(xml)
+            except ET.ParseError:
+                return
+            match = None
+            for node in tree.iter("node"):
+                if (node.get("package"), node.get("text")) in allowed and node.get("enabled") == "true":
+                    bounds = re.fullmatch(r"\[(\d+),(\d+)\]\[(\d+),(\d+)\]", node.get("bounds", ""))
+                    if bounds:
+                        x1, y1, x2, y2 = map(int, bounds.groups())
+                        if x2 > x1 and y2 > y1:
+                            match = node, (x1 + x2) // 2, (y1 + y2) // 2
+                            break
+            if match is None:
+                return
+            node, x, y = match
+            screenshot("screen-before-action-%d.png" % index)
+            run(adb + ["shell", "input", "tap", str(x), str(y)])
+            report["startup_ui_actions"].append(dict(text=node.get("text"), package=node.get("package"), x=x, y=y))
+            time.sleep(4)
 
     try:
         run([sdk / "emulator/emulator", "-version"], "emulator-version", check=False)
@@ -173,6 +205,10 @@ def main():
             report["status"] = "installation_failed"
             return
         run(adb + ["shell", "dumpsys", "package", PACKAGE], "installed-package")
+        if INTERACT:
+            for permission in ("MANAGE_EXTERNAL_STORAGE", "SYSTEM_ALERT_WINDOW"):
+                run(adb + ["shell", "appops", "set", "--uid", PACKAGE, permission, "allow"],
+                    "appop-" + permission, check=False)
         run(adb + ["logcat", "-c"])
         try:
             launch = run(adb + ["shell", "am", "start", "-W", "-n", COMPONENT],
@@ -190,6 +226,8 @@ def main():
             (out / "launch.txt").write_text(partial + "\nHost wait timed out; collecting device state.\n")
         time.sleep(10)
         screenshot("screen-after-10s.png")
+        if INTERACT:
+            startup_clicks()
         time.sleep(35)
         report["app_pid_after_45s"] = run(adb + ["shell", "pidof", PACKAGE],
                                              check=False).stdout.strip()

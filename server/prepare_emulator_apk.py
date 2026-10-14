@@ -12,36 +12,31 @@ from prepare_local_apk import ROOT, prepare
 def prepare_emulator(output, root=ROOT):
     output = Path(output).resolve()
     prepare(output, "http://127.0.0.1:8765", root)
-    relative = "smali/cn/mucang/android/core/jni/Riddle.smali"
+    relative = "AndroidManifest.xml"
     path = output / "android" / relative
     before = path.read_text()
-    old = '.method static constructor <clinit>()V\n    .locals 1\n\n    const-string v0, "tnpn"'
-    new = '''.method static constructor <clinit>()V
-    .locals 3
-
-    # Use OpenSSL's portable ARM path; avoid SIGILL CPU probing in translation.
-    const-string v0, "OPENSSL_armcap"
-    const-string v1, "0"
-    const/4 v2, 0x1
-    invoke-static {v0, v1, v2}, Landroid/system/Os;->setenv(Ljava/lang/String;Ljava/lang/String;Z)V
-
-    const-string v0, "JiaKaoLocal"
-    const-string v1, "ARM emulator compatibility: OPENSSL_armcap=0"
-    invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
-
-    const-string v0, "tnpn"'''
-    if before.count(old) != 1:
-        raise ValueError("Unexpected Riddle library loader")
-    after = before.replace(old, new)
+    if before.count('<application ') != 1 or 'android:debuggable=' in before or 'android:extractNativeLibs=' in before:
+        raise ValueError("Unexpected application manifest")
+    after = before.replace('<application ', '<application android:debuggable="true" android:extractNativeLibs="true" ', 1)
     path.write_text(after)
+    # Set the environment before native bridge initialization. Os.setenv in a
+    # Java class initializer was observed too late for this emulator's ARM getenv.
+    wrapper = output / "android/lib/armeabi-v7a/wrap.sh"
+    wrapper.write_text('#!/system/bin/sh\nexport OPENSSL_armcap=0\n'
+                       '/system/bin/log -t JiaKaoLocal "Process wrapper: OPENSSL_armcap=0"\nexec "$@"\n')
+    wrapper.chmod(0o755)
     patch = ''.join(difflib.unified_diff(before.splitlines(True), after.splitlines(True),
                                        "local/android/" + relative, "emulator/android/" + relative))
+    patch += ''.join(difflib.unified_diff([], wrapper.read_text().splitlines(True),
+                                        "/dev/null", "emulator/android/lib/armeabi-v7a/wrap.sh"))
     (output / "emulator.patch").write_text(patch)
     report = dict(base="local-backend overlay", originalModified=False,
                   files=[dict(file="android/" + relative,
                               originalSha256=hashlib.sha256(before.encode()).hexdigest(),
-                              patchedSha256=hashlib.sha256(after.encode()).hexdigest())],
-                  scope="Set OPENSSL_armcap=0 before loading libtnpn to avoid ARM CPU probes",
+                              patchedSha256=hashlib.sha256(after.encode()).hexdigest()),
+                         dict(file="android/lib/armeabi-v7a/wrap.sh", originalSha256=None,
+                              patchedSha256=hashlib.sha256(wrapper.read_bytes()).hexdigest())],
+                  scope="Debug process wrapper sets OPENSSL_armcap=0 before native bridge initialization",
                   nativeLibrariesUnchanged=True, nativeMethodsUnchanged=True,
                   limits=["Compatibility setting still requires runtime verification",
                           "CPU acceleration disabled for process OpenSSL ARM routines",

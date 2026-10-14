@@ -1,6 +1,6 @@
 # 已实现接口与证据
 
-当前共 40 条显式业务路由。本文的“实现”指本地契约和所列行为，未验证 APK 完整启动；未列出的请求返回 HTTP 501 + success:false。
+当前共 41 条显式业务路由。本文的“实现”指本地契约和所列行为，未验证 APK 完整启动；未列出的请求返回 HTTP 501 + success:false。
 
 公共信封/编码/签名/Smali 覆盖见 [基础协议证据](evidence/protocol.md)，资源和配置模型见 [资源证据](evidence/resources.md)。下表源码路径相对于仓库根。列表固定 data.itemList；login-config 为 data.configs；login-notice 为课时对象；settings 为布尔 data。
 
@@ -39,6 +39,7 @@
 | GET | `/api/open/train-record/get-user-train-list.htm` | none | fixture list; no grading/statistics calculation | [UserRecordApi.java:42](../java/sources/cn/mucang/android/jiakaoyi/teachingk2/record/UserRecordApi.java#L42) |
 | GET | `/api/open/train-step/get-user-train-list.htm` | none | fixture list; no grading/statistics calculation | [UserRecordApi.java:70](../java/sources/cn/mucang/android/jiakaoyi/teachingk2/record/UserRecordApi.java#L70) |
 | POST | `/api/open/upgrade/check-upgrade.htm` | json | registered Unity 100/101 only | [c.java:19](../java/sources/cn/mucang/jiakaoyi/uilib/upgrade/c.java#L19) |
+| POST | `/api/open/update/check-update.htm` | json | 固件/APP 更新查询返回空 itemList；与 Unity type101 隔离 | [d.java:17](../java/sources/cn/mucang/jiakaoyi/uilib/upgrade/d.java#L17) |
 | GET | `/api/open/user-config/get-login-config.htm` | none | local account login only | [LoginConfigApi.java:28](../java/sources/cn/mucang/jiakaoyi/uilib/login/api/LoginConfigApi.java#L28) |
 | POST | `/api/open/user-mission/upload-robot-data.htm` | form | persist upload only; no billing/control/grading | [UserRecordApi.java:95](../java/sources/cn/mucang/android/jiakaoyi/teachingk2/record/UserRecordApi.java#L95) |
 | POST | `/api/open/user-train-course/saveData.htm` | form | persist upload only; no billing/control/grading | [UserRecordApi.java:87](../java/sources/cn/mucang/android/jiakaoyi/teachingk2/record/UserRecordApi.java#L87) |

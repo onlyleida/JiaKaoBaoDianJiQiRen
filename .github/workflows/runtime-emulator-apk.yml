@@ -19,6 +19,7 @@ jobs:
     env:
       JIAKAO_RUNTIME_API: ${{ inputs.api }}
       JIAKAO_LOCAL_BACKEND: '1'
+      JIAKAO_STARTUP_INTERACT: '1'
       JIAKAO_RUNTIME_APK: dist/jiakaoyi-coach-11.6.5-emulator-debug.apk
     steps:
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
@@ -42,21 +43,17 @@ jobs:
           echo "$sdk_root/platform-tools" >> "$GITHUB_PATH"
           printf 'y\n%.0s' {1..100} > "$RUNNER_TEMP/android-license-answers"
           "$sdk_root/cmdline-tools/latest/bin/sdkmanager" --sdk_root="$sdk_root" --licenses < "$RUNNER_TEMP/android-license-answers" > /dev/null
-      - name: Restore and verify the exact delivered APK
+      - name: Build and verify the isolated emulator APK
         id: apk
-        env:
-          GH_TOKEN: ${{ github.token }}
         run: |
-          gh release download apk-11.6.5-rebuild --dir dist/base \
-            --pattern 'jiakaoyi-coach-11.6.5-rebuilt-debug.apk*'
-          (cd dist/base && sha256sum --check jiakaoyi-coach-11.6.5-rebuilt-debug.apk.sha256)
-          python3 -m venv .cache/delta-venv
-          .cache/delta-venv/bin/pip install --disable-pip-version-check bsdiff4==1.2.6
-          .cache/delta-venv/bin/python scripts/restore_local_apk.py \
-            --base dist/base/jiakaoyi-coach-11.6.5-rebuilt-debug.apk \
-            --delta reports/emulator-armcap-apk-delta.zip \
-            --output "$JIAKAO_RUNTIME_APK" \
-            --expected-sha256 f1e56f113ec2dad7ffb6e2831d77cfd6274bf0879ce6c38e73f20ee7e79c8619
+          sdkmanager 'build-tools;35.0.0' > /dev/null
+          python3 server/prepare_emulator_apk.py --output .cache/emulator-build
+          python3 .cache/emulator-build/scripts/build.py
+          mkdir -p dist
+          cp .cache/emulator-build/dist/jiakaoyi-coach-11.6.5-rebuilt-debug.apk "$JIAKAO_RUNTIME_APK"
+          cp .cache/emulator-build/dist/build-verification.json dist/emulator-build-verification.json
+          cp .cache/emulator-build/emulator-overlay.json dist/emulator-overlay.json
+          sha256sum "$JIAKAO_RUNTIME_APK" > "$JIAKAO_RUNTIME_APK.sha256"
       - name: Install official ARM translation emulator
         run: sdkmanager 'platform-tools' 'emulator' "system-images;android-$JIAKAO_RUNTIME_API;google_apis;x86" > /dev/null
       - name: Run with loopback backend and collect screenshots
@@ -71,6 +68,8 @@ jobs:
           if [ ! -f dist/runtime/ci-runtime-verification.json ]; then
             echo '{"status":"runtime_evidence_unavailable","first_screen_verified":false}' > dist/runtime/ci-runtime-verification.json
           fi
+          cp dist/emulator-build-verification.json dist/emulator-overlay.json dist/runtime/
+          gh release upload apk-11.6.5-rebuild "$JIAKAO_RUNTIME_APK" "$JIAKAO_RUNTIME_APK.sha256" --clobber
           evidence="emulator-api$JIAKAO_RUNTIME_API-runtime"
           (cd dist/runtime && zip -q -r "../$evidence-evidence.zip" . -x 'backend-data/*')
           cp dist/runtime/ci-runtime-verification.json "dist/$evidence-verification.json"
