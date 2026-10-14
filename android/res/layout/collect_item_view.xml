@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:paddingTop="@dimen/dp_12" android:paddingBottom="@dimen/dp_12" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="right|center" android:orientation="horizontal" android:id="@id/action_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true">
+        <TextView android:textColor="#008aff" android:gravity="center" android:id="@id/uploadImage" android:padding="@dimen/dp_10" android:layout_width="wrap_content" android:layout_height="@dimen/dp_40" android:layout_margin="@dimen/dp_4" android:text="上传图片" />
+        <ImageView android:id="@id/delete" android:layout_width="@dimen/dp_40" android:layout_height="@dimen/dp_40" android:layout_margin="@dimen/dp_6" android:src="@drawable/collect__delete_item" android:scaleType="centerInside" />
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_16" android:layout_marginRight="@dimen/dp_10" android:layout_centerVertical="true" android:layout_toStartOf="@id/action_container">
+        <TextView android:textSize="@dimen/dp_16" android:textColor="#333" android:ellipsize="end" android:id="@id/name" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="名称" android:maxLines="1" />
+        <TextView android:textSize="@dimen/dp_14" android:textColor="#333" android:ellipsize="end" android:id="@id/text" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="描述" android:maxLines="2" />
+    </LinearLayout>
+</RelativeLayout>

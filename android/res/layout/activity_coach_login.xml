@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="#f5f7fa" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/statusBar" layout="@layout/robot_status_bar" />
+    <TextView android:textSize="@dimen/text_30" android:textStyle="bold" android:textColor="#000000" android:gravity="center_vertical" android:id="@id/closeIv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/rpx_68" android:text="@string/teachbase_back" android:drawablePadding="@dimen/rpx_12" android:layout_marginStart="@dimen/rpx_30" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:textSize="@dimen/text_40" android:textStyle="bold" android:textColor="#000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/teachbase_coach_login" app:layout_constraintBottom_toBottomOf="@id/closeIv" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="@id/closeIv" />
+    <include android:id="@id/callIv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/rpx_10" android:src="@drawable/ic_call" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" layout="@layout/robot_extra_view" />
+    <include android:id="@id/scanLayout" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" layout="@layout/layout_login_scan" />
+</androidx.constraintlayout.widget.ConstraintLayout>
