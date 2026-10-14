@@ -1,0 +1,3193 @@
+{
+  "complete": true,
+  "tool": "ilspycmd 11.1.0.9782",
+  "scope": "All managed DLL files embedded in the supplied APK; C# projects are decompiler output and were not build-verified. Original DLLs remain the runtime inputs for the APK rebuild.",
+  "assemblies_total": 105,
+  "previous_exports_preserved": 6,
+  "new_exports_succeeded": 99,
+  "failures": 0,
+  "cs_files_total": 15202,
+  "project_count": 105,
+  "project_paths_rewritten": 86,
+  "hint_path_count": 334,
+  "hint_paths_missing": 0,
+  "hint_paths_absolute": 0,
+  "assemblies": [
+    {
+      "assembly": "Accessibility.dll",
+      "input_sha256": "c36813bdf03fbad922e6558756c3cc2956e6f74457003947fa4e91952445e19f",
+      "size_bytes": 12288,
+      "directory": "unity-csharp/Accessibility",
+      "status": "exported",
+      "exit_code": 0,
+      "elapsed_seconds": 5.86,
+      "cs_files": 4,
+      "projects": 1
+    },
+    {
+      "assembly": "Assembly-CSharp.dll",
+      "input_sha256": "3c8a216c7c42ce48755d54d720ce59c254f96d33c547d1aedd9b55b32b17c21e",
+      "size_bytes": 9216,
+      "directory": "unity-csharp/Assembly-CSharp",
+      "status": "previous_export_preserved",
+      "exit_code": 0,
+      "elapsed_seconds": 0,
+      "cs_files": 6,
+      "projects": 1
+    },
+    {
+      "assembly": "MC.MeshMaker.dll",
+      "input_sha256": "ce5808d485d5664231a812914e34c3d95750b4f09cf730231250e1dda8bf947e",
+      "size_bytes": 154624,
+      "directory": "unity-csharp/MC.MeshMaker",
+      "status": "previous_export_preserved",
+      "exit_code": 0,
+      "elapsed_seconds": 0,
+      "cs_files": 155,
+      "projects": 1
+    },
+    {
+      "assembly": "Mono.Data.Sqlite.dll",
+      "input_sha256": "5cfd7d5e444ec8d53755d4d82220524aa455f34b87a6f740b984d50465d76d4b",
+      "size_bytes": 166912,
+      "directory": "unity-csharp/Mono.Data.Sqlite",
+      "status": "exported",
+      "exit_code": 0,
+      "elapsed_seconds": 5.89,
+      "cs_files": 56,
+      "projects": 1
+    },
+    {
+      "assembly": "Mono.Posix.dll",
+      "input_sha256": "a33abceffeaa6b6d5dbd2cf77210daddfe331ed40eeae4cea3c5efb0c0db2cc0",
+      "size_bytes": 212480,
+      "directory": "unity-csharp/Mono.Posix",
+      "status": "exported",
+      "exit_code": 0,
+      "elapsed_seconds": 5.74,
+      "cs_files": 158,
+      "projects": 1
+    },
+    {
+      "assembly": "Mono.Security.dll",
+      "input_sha256": "2b7651b398dc63af0dbc0038758981c29238a495681a7ed487357a464ad4de15",
+      "size_bytes": 309248,
+      "directory": "unity-csharp/Mono.Security",
+      "status": "exported",
+      "exit_code": 0,
+      "elapsed_seconds": 5.55,
+      "cs_files": 175,
+      "projects": 1
+    },
+    {
+      "assembly": "Mono.WebBrowser.dll",
+      "input_sha256": "7d2eb49a5120d9b1f3eb3c6501d4eed6cacf81f921fbf5c248aab5f0d093f2ee",
+      "size_bytes": 166912,
+      "directory": "unity-csharp/Mono.WebBrowser",
+      "status": "exported",
+      "exit_code": 0,
+      "elapsed_seconds": 5.56,
+      "cs_files": 326,
+      "projects": 1
+    },
+    {
+      "assembly": "Novell.Directory.Ldap.dll",
+      "input_sha256": "c1f304fdfd658594fc353dc6cfb5593cef32c0623fbfb6f26acc5e0d40877552",
+      "size_bytes": 247296,
+      "directory": "unity-csharp/Novell.Directory.Ldap",
+      "status": "exported",
+      "exit_code": 0,
+      "elapsed_seconds": 5.84,
+      "cs_files": 225,
+      "projects": 1
+    },
+    {
+      "assembly": "System.ComponentModel.Composition.dll",
+      "input_sha256": "9bdc792fab55d5820bc9157258c322e447b103e4078dbcb3849ffe0a17e54f17",
+      "size_bytes": 256512,
+      "directory": "unity-csharp/System.ComponentModel.Composition",
+      "status": "exported",
+      "exit_code": 0,
+      "elapsed_seconds": 5.77,
+      "cs_files": 151,
+      "projects": 1
+    },
+    {
+      "assembly": "System.ComponentModel.DataAnnotations.dll",
+      "input_sha256": "4b2b8f7b2eebff970ef247ec94d271d6664514dee62a0a97f03b03dbe589f357",
+      "size_bytes": 84480,
+      "directory": "unity-csharp/System.ComponentModel.DataAnnotations",
+      "status": "exported",
+      "exit_code": 0,
+      "elapsed_seconds": 5.77,
+      "cs_files": 53,
+      "projects": 1
+    },
+    {
+      "assembly": "System.Configuration.dll",
+      "input_sha256": "cd5793957604e1448443da0d703f29a31100d4a7030c140121c7ddf6b2027d94",
+      "size_bytes": 124928,
+      "directory": "unity-csharp/System.Configuration",
+      "status": "exported",
+      "exit_code": 0,
+      "elapsed_seconds": 5.78,
+      "cs_files": 139,
+      "projects": 1
+    },
+    {
+      "assembly": "System.Core.dll",
+      "input_sha256": "d982f54622edc2ed4637fe547b70907f589a2ae4de4b6d604c54ee35f97dca03",
+      "size_bytes": 1046016,
+      "directory": "unity-csharp/System.Core",
+      "status": "exported",
+      "exit_code": 0,
+      "elapsed_seconds": 6.0,
+      "cs_files": 587,
+      "projects": 1
+    },
+    {
+      "assembly": "System.Data.dll",
+      "input_sha256": "5d846f404b74488136627e4df414bff9fc24457735373b6184746b69900d00be",
+      "size_bytes": 2081280,
+      "directory": "unity-csharp/System.Data",
+      "status": "exported",
+      "exit_code": 0,
+      "elapsed_seconds": 5.64,
+      "cs_files": 686,
+      "projects": 1
+    },
+    {
+      "assembly": "System.Design.dll",
+      "input_sha256": "97cd25614c48832b2c655b30ed3d93c3d4b2336514235a5c010a5e64017a6ee7",
+      "size_bytes": 282112,
+      "directory": "unity-csharp/System.Design",
+      "status": "exported",
+      "exit_code": 0,
+      "elapsed_seconds": 5.69,
+      "cs_files": 420,
+      "projects": 1
+    },
+    {
+      "assembly": "System.Diagnostics.StackTrace.dll",
+      "input_sha256": "926d996abd199c8b3a51b837095251d98a3f539a8a678ca37cf8c14f46a279fb",
+      "size_bytes": 6656,
+      "directory": "unity-csharp/System.Diagnostics.StackTrace",
+      "status": "exported",
+      "exit_code": 0,
+      "elapsed_seconds": 5.68,
+      "cs_files": 8,
+      "projects": 1
+    },
+    {
+      "assembly": "System.DirectoryServices.dll",
+      "input_sha256": "33acfaa5891c91fc3bc3e4f8429a205a417f74fab67c052473c3a98f3b3b9396",
+      "size_bytes": 93184,
+      "directory": "unity-csharp/System.DirectoryServices",
+      "status": "exported",
+      "exit_code": 0,
+      "elapsed_seconds": 5.74,
+      "cs_files": 152,
+      "projects": 1
+    },
+    {
+      "assembly": "System.Drawing.Design.dll",
+      "input_sha256": "314ab8e4bb900f2fa02303b0bcb557627c6dc668dd3e6cc6b735a6c1c943968d",
+      "size_bytes": 29696,
+      "directory": "unity-csharp/System.Drawing.Design",
+      "status": "exported",
+      "exit_code": 0,
+      "elapsed_seconds": 5.68,
+      "cs_files": 21,
+      "projects": 1
+    },
+    {
+      "assembly": "System.Drawing.dll",
+      "input_sha256": "a90e6dde6bb97560564adb30f084194bade099f202a115cca16d740f216371ee",
+      "size_bytes": 481280,
+      "directory": "unity-csharp/System.Drawing",
+      "status": "exported",
+      "exit_code": 0,
+      "elapsed_seconds": 5.6,
+      "cs_files": 253,
+      "projects": 1
+    },
+    {
+      "assembly": "System.EnterpriseServices.dll",
+      "input_sha256": "aa83ea4a85632d8c10c0cddc44771fb06339198a05c96bb516101cf5d7584e36",
+      "size_bytes": 44544,
+      "directory": "unity-csharp/System.EnterpriseServices",
+      "status": "exported",
+      "exit_code": 0,
+      "elapsed_seconds": 5.86,
+      "cs_files": 120,
+      "projects": 1
+    },
+    {
+      "assembly": "System.Globalization.Extensions.dll",
+      "input_sha256": "c4f15bbff3e54178a8b2f10d7ff85a8827c37ebbc47b6794cf3fbde9f89ff483",
+      "size_bytes": 6144,
+      "directory": "unity-csharp/System.Globalization.Extensions",
+      "status": "exported",
+      "exit_code": 0,
+      "elapsed_seconds": 5.72,
+      "cs_files": 5,
+      "projects": 1
+    },
+    {
+      "assembly": "System.IO.Compression.FileSystem.dll",
+      "input_sha256": "fc1595f8e0164010c2ac441266bc532f39e914f4f894d09fdfcfcf262c48e4b9",
+      "size_bytes": 23040,
+      "directory": "unity-csharp/System.IO.Compression.FileSystem",
+      "status": "exported",
+      "exit_code": 0,
+      "elapsed_seconds": 5.69,
+      "cs_files": 10,
+      "projects": 1
+    },
+    {
+      "assembly": "System.IO.Compression.dll",
+      "input_sha256": "c457ab509c57506c08c52d23ff0581ba677f2af930efc882c8ce8b03e1eb46ec",
+      "size_bytes": 98816,
+      "directory": "unity-csharp/System.IO.Compression",
+      "status": "exported",
+      "exit_code": 0,
+      "elapsed_seconds": 5.83,
+      "cs_files": 42,
+      "projects": 1
+    },
+    {
+      "assembly": "System.Net.Http.dll",
+      "input_sha256": "8af926f1069ee346eeab9008e71da39c7f54d2839469b61ae33d0571c6956c76",
+      "size_bytes": 114688,
+      "directory": "unity-csharp/System.Net.Http",
+      "status": "exported",
+      "exit_code": 0,
+      "elapsed_seconds": 5.6,
+      "cs_files": 59,
+      "projects": 1
+    },
+    {
+      "assembly": "System.Numerics.dll",
+      "input_sha256": "8633ce312516585bd70dd5b4213363cb1e581a75a76cf7a4ea3bfdb4f4bca85d",
+      "size_bytes": 114176,
+      "directory": "unity-csharp/System.Numerics",
+      "status": "exported",
+      "exit_code": 0,
+      "elapsed_seconds": 5.62,
+      "cs_files": 22,
+      "projects": 1
+    },
+    {
+      "assembly": "System.Runtime.Serialization.Formatters.Soap.dll",
+      "input_sha256": "3001400f6799cfb47f0eb098b13c96c8ec4f5d46626f91d6035953f80367286e",
+      "size_bytes": 38400,
+      "directory": "unity-csharp/System.Runtime.Serialization.Formatters.Soap",
+      "status": "exported",
+      "exit_code": 0,
+      "elapsed_seconds": 5.49,
+      "cs_files": 16,
+      "projects": 1
+    },
+    {
+      "assembly": "System.Runtime.Serialization.Xml.dll",
+      "input_sha256": "8b4739ee253bd0af984ad069ce2fce0f8f69a0051e501ade202bd7c96ca7aadd",
+      "size_bytes": 7168,
+      "directory": "unity-csharp/System.Runtime.Serialization.Xml",
+      "status": "exported",
+      "exit_code": 0,
+      "elapsed_seconds": 5.85,
+      "cs_files": 3,
+      "projects": 1
+    },
+    {
+      "assembly": "System.Runtime.Serialization.dll",
+      "input_sha256": "c5998c329e93930241728eef8370496d60a44a3945589320402db0223c6ef527",
+      "size_bytes": 928256,
+      "directory": "unity-csharp/System.Runtime.Serialization",
+      "status": "exported",
+      "exit_code": 0,
+      "elapsed_seconds": 5.75,
+      "cs_files": 299,
+      "projects": 1
+    },
+    {
+      "assembly": "System.Security.dll",
+      "input_sha256": "c931417eb4690730438d7c93d1cf6e1864695d8d90a5833fe83298802a84ee58",
+      "size_bytes": 184320,
+      "directory": "unity-csharp/System.Security",
+      "status": "exported",
+      "exit_code": 0,
+      "elapsed_seconds": 5.77,
+      "cs_files": 137,
+      "projects": 1
+    },
+    {
+      "assembly": "System.ServiceModel.Internals.dll",
+      "input_sha256": "44ba40965149ae2cc0021100ca6f5157346d8df8a88fdaf76489b208f163e933",
+      "size_bytes": 214528,
+      "directory": "unity-csharp/System.ServiceModel.Internals",
+      "status": "exported",
+      "exit_code": 0,
+      "elapsed_seconds": 5.89,
+      "cs_files": 82,
+      "projects": 1
+    },
+    {
+      "assembly": "System.Transactions.dll",
+      "input_sha256": "b77cde418aed34056fbf0b5f8593857335200c64ce2142ffc17f6b7426f81833",
+      "size_bytes": 34304,
+      "directory": "unity-csharp/System.Transactions",
+      "status": "exported",
+      "exit_code": 0,
+      "elapsed_seconds": 5.94,
+      "cs_files": 49,
+      "projects": 1
+    },
+    {
+      "assembly": "System.Web.ApplicationServices.dll",
+      "input_sha256": "7bbfd2c7d4c33b4ff969c5ce6ab27ed3d91e85bd0f181d9263bcab37c98051d8",
+      "size_bytes": 33792,
+      "directory": "unity-csharp/System.Web.ApplicationServices",
+      "status": "exported",
+      "exit_code": 0,
+      "elapsed_seconds": 5.69,
+      "cs_files": 27,
+      "projects": 1
+    },
+    {
+      "assembly": "System.Web.Services.dll",
+      "input_sha256": "e6da8dd0b4c174093dbb86005c881f36d3a4594b1e8868b28b08ac838eac01cb",
+      "size_bytes": 727040,
+      "directory": "unity-csharp/System.Web.Services",
+      "status": "exported",
+      "exit_code": 0,
+      "elapsed_seconds": 5.58,
+      "cs_files": 309,
+      "projects": 1
+    },
+    {
+      "assembly": "System.Web.dll",
+      "input_sha256": "0a8e8068e7e7d53ed418f1a61c490ac6d1dfd162b213f72026818fea76446226",
+      "size_bytes": 3154944,
+      "directory": "unity-csharp/System.Web",
+      "status": "exported",
+      "exit_code": 0,
+      "elapsed_seconds": 5.83,
+      "cs_files": 1801,
+      "projects": 1
+    },
+    {
+      "assembly": "System.Windows.Forms.dll",
+      "input_sha256": "e92fb95c51684a122842227a9cb4dfa39561527860712a67099325c3ff476498",
+      "size_bytes": 2879488,
+      "directory": "unity-csharp/System.Windows.Forms",
+      "status": "exported",
+      "exit_code": 0,
+      "elapsed_seconds": 6.82,
+      "cs_files": 1192,
+      "projects": 1
+    },
+    {
+      "assembly": "System.Xml.Linq.dll",
+      "input_sha256": "5fa26c37af7ed3c73c2909c95406f91dad5bd366bff822a640142b9c556020c8",
+      "size_bytes": 119296,
+      "directory": "unity-csharp/System.Xml.Linq",
+      "status": "exported",
+      "exit_code": 0,
+      "elapsed_seconds": 5.69,
+      "cs_files": 58,
+      "projects": 1
+    },
+    {
+      "assembly": "System.Xml.XPath.XDocument.dll",
+      "input_sha256": "da7398fd5892e2288997968e82892dbd776f96f5e0ee38d7b8b5205f335ade08",
+      "size_bytes": 5120,
+      "directory": "unity-csharp/System.Xml.XPath.XDocument",
+      "status": "exported",
+      "exit_code": 0,
+      "elapsed_seconds": 5.69,
+      "cs_files": 2,
+      "projects": 1
+    },
+    {
+      "assembly": "System.Xml.dll",
+      "input_sha256": "f37fa3ad6135a3bd298e7e6196debd1629891723767263d6fe80359f71ee6edd",
+      "size_bytes": 3138048,
+      "directory": "unity-csharp/System.Xml",
+      "status": "exported",
+      "exit_code": 0,
+      "elapsed_seconds": 6.01,
+      "cs_files": 1080,
+      "projects": 1
+    },
+    {
+      "assembly": "System.dll",
+      "input_sha256": "0cbaa8d813e2652700bb7803744ea9c4eaf66070b6428fa2624c1e4ef2b2010f",
+      "size_bytes": 2715136,
+      "directory": "unity-csharp/System",
+      "status": "exported",
+      "exit_code": 0,
+      "elapsed_seconds": 5.74,
+      "cs_files": 1566,
+      "projects": 1
+    },
+    {
+      "assembly": "Unity.TextMeshPro.dll",
+      "input_sha256": "be2e5c1415ca05a6749ca2d6773598ea2b0cdab722fb666f202cf1b7ed941d62",
+      "size_bytes": 368128,
+      "directory": "unity-csharp/Unity.TextMeshPro",
+      "status": "exported",
+      "exit_code": 0,
+      "elapsed_seconds": 5.68,
+      "cs_files": 113,
+      "projects": 1
+    },
+    {
+      "assembly": "Unity.Timeline.dll",
+      "input_sha256": "62ddad109cde906a4c4b7593e95b0dfd4bc11541eb1bf9d748c0997177f55a92",
+      "size_bytes": 109056,
+      "directory": "unity-csharp/Unity.Timeline",
+      "status": "exported",
+      "exit_code": 0,
+      "elapsed_seconds": 5.92,
+      "cs_files": 80,
+      "projects": 1
+    },
+    {
+      "assembly": "UnityEngine.AIModule.dll",
+      "input_sha256": "40c6a214f8a93ec41c9bb06d2d777f70211ffc7044e565a8f4a029c0aaa22627",
+      "size_bytes": 44032,
+      "directory": "unity-csharp/UnityEngine.AIModule",
+      "status": "exported",
+      "exit_code": 0,
+      "elapsed_seconds": 5.54,
+      "cs_files": 32,
+      "projects": 1
+    },
+    {
+      "assembly": "UnityEngine.ARModule.dll",
+      "input_sha256": "d29499a7dcb1306ec4065c50eae2ec1bc5a4a9560bed06102fb09ac3439c9ed7",
+      "size_bytes": 12800,
+      "directory": "unity-csharp/UnityEngine.ARModule",
+      "status": "exported",
+      "exit_code": 0,
+      "elapsed_seconds": 5.52,
+      "cs_files": 6,
+      "projects": 1
+    },
+    {
+      "assembly": "UnityEngine.AccessibilityModule.dll",
+      "input_sha256": "dfc1239e102ec9064ba7caa15d386ae640e2ade08390a67d65b0f6d7aa94b55b",
+      "size_bytes": 12288,
+      "directory": "unity-csharp/UnityEngine.AccessibilityModule",
+      "status": "exported",
+      "exit_code": 0,
+      "elapsed_seconds": 5.92,
+      "cs_files": 2,
+      "projects": 1
+    },
+    {
+      "assembly": "UnityEngine.AndroidJNIModule.dll",
+      "input_sha256": "c9629653980d30a742b46d64b5c9367e9c69911a28a14a768521aace8cf53bfe",
+      "size_bytes": 56832,
+      "directory": "unity-csharp/UnityEngine.AndroidJNIModule",
+      "status": "exported",
+      "exit_code": 0,
+      "elapsed_seconds": 5.59,
+      "cs_files": 14,
+      "projects": 1
+    },
+    {
+      "assembly": "UnityEngine.AnimationModule.dll",
+      "input_sha256": "295bac400fdac73da226687d5c139821b4b71faebbc63c2e4dc8ed4b3165a48e",
+      "size_bytes": 145408,
+      "directory": "unity-csharp/UnityEngine.AnimationModule",
+      "status": "exported",
+      "exit_code": 0,
+      "elapsed_seconds": 5.83,
+      "cs_files": 100,
+      "projects": 1
+    },
+    {
+      "assembly": "UnityEngine.AssetBundleModule.dll",
+      "input_sha256": "9845703e53ee9d60c661ba7944bbc163ed27df337b2c5d4636d14ffb31780c46",
+      "size_bytes": 20992,
+      "directory": "unity-csharp/UnityEngine.AssetBundleModule",
+      "status": "exported",
+      "exit_code": 0,
+      "elapsed_seconds": 5.78,
+      "cs_files": 11,
+      "projects": 1
+    },
+    {
+      "assembly": "UnityEngine.AudioModule.dll",
+      "input_sha256": "0c799446ed914cbabef579182abd5c0f2be157f7658d3c2e18308f5d3d886153",
+      "size_bytes": 56832,
+      "directory": "unity-csharp/UnityEngine.AudioModule",
+      "status": "exported",
+      "exit_code": 0,
+      "elapsed_seconds": 5.67,
+      "cs_files": 43,
+      "projects": 1
+    },
+    {
+      "assembly": "UnityEngine.ClothModule.dll",
+      "input_sha256": "8e5b34becfdf4618586dbf346d4e925d09dcd1fa5abaeadb160e4ddcc76a5d42",
+      "size_bytes": 15360,
+      "directory": "unity-csharp/UnityEngine.ClothModule",
+      "status": "exported",
+      "exit_code": 0,
+      "elapsed_seconds": 5.55,
+      "cs_files": 4,
+      "projects": 1
+    },
+    {
+      "assembly": "UnityEngine.CoreModule.dll",
+      "input_sha256": "09868846c53d620a562920c887cdbb003a7cc2b7925b389224c6df8045d8eb58",
+      "size_bytes": 982016,
+      "directory": "unity-csharp/UnityEngine.CoreModule",
+      "status": "exported",
+      "exit_code": 0,
+      "elapsed_seconds": 5.75,
+      "cs_files": 716,
+      "projects": 1
+    },
+    {
+      "assembly": "UnityEngine.CrashReportingModule.dll",
+      "input_sha256": "64b9a238262625240392d5193d60de50ab8852377ba38d71811879d036b42f8c",
+      "size_bytes": 9216,
+      "directory": "unity-csharp/UnityEngine.CrashReportingModule",
+      "status": "exported",
+      "exit_code": 0,
+      "elapsed_seconds": 5.74,
+      "cs_files": 2,
+      "projects": 1
+    },
+    {
+      "assembly": "UnityEngine.DSPGraphModule.dll",
+      "input_sha256": "bd2943c9aa2e9bac47c9870b0cc40724b78eaf9b776bbe2271aea3c965fc8a50",
+      "size_bytes": 17920,
+      "directory": "unity-csharp/UnityEngine.DSPGraphModule",
+      "status": "exported",
+      "exit_code": 0,
+      "elapsed_seconds": 5.74,
+      "cs_files": 10,
+      "projects": 1
+    },
+    {
+      "assembly": "UnityEngine.DirectorModule.dll",
+      "input_sha256": "e99115d7e02e445ecc81333b07c094a432aa50f69a55c6f26c44809fa7b96b80",
+      "size_bytes": 13312,
+      "directory": "unity-csharp/UnityEngine.DirectorModule",
+      "status": "exported",
+      "exit_code": 0,
+      "elapsed_seconds": 5.53,
+      "cs_files": 2,
+      "projects": 1
+    },
+    {
+      "assembly": "UnityEngine.GameCenterModule.dll",
+      "input_sha256": "8926ee2e9bc19fead521dcd3f6e56d6afdf3b4ccfd6c3dac8fead6c09f7aae7b",
+      "size_bytes": 27136,
+      "directory": "unity-csharp/UnityEngine.GameCenterModule",
+      "status": "exported",
+      "exit_code": 0,
+      "elapsed_seconds": 5.57,
+      "cs_files": 21,
+      "projects": 1
+    },
+    {
+      "assembly": "UnityEngine.GridModule.dll",
+      "input_sha256": "107511ca9965969e1d9d04f8ee1a31ed78b8cd28b8838728a239590a9baffc05",
+      "size_bytes": 13824,
+      "directory": "unity-csharp/UnityEngine.GridModule",
+      "status": "exported",
+      "exit_code": 0,
+      "elapsed_seconds": 5.5,
+      "cs_files": 3,
+      "projects": 1
+    },
+    {
+      "assembly": "UnityEngine.HotReloadModule.dll",
+      "input_sha256": "a1fd5906fd27ec566d54c50d291ec3ab4ec38cda8955155a914a95898340158b",
+      "size_bytes": 8704,
+      "directory": "unity-csharp/UnityEngine.HotReloadModule",
+      "status": "exported",
+      "exit_code": 0,
+      "elapsed_seconds": 5.58,
+      "cs_files": 1,
+      "projects": 1
+    },
+    {
+      "assembly": "UnityEngine.IMGUIModule.dll",
+      "input_sha256": "67aafb1eb798aad5b4a6dc3503eca6bb9f8200b38f9255f69ad149e0b3573026",
+      "size_bytes": 156160,
+      "directory": "unity-csharp/UnityEngine.IMGUIModule",
+      "status": "exported",
+      "exit_code": 0,
+      "elapsed_seconds": 5.6,
+      "cs_files": 41,
+      "projects": 1
+    },
+    {
+      "assembly": "UnityEngine.ImageConversionModule.dll",
+      "input_sha256": "310ed62758c4e46d186083f8d20a164eaafe9c6249cc5ed668aa9634c0189b53",
+      "size_bytes": 12800,
+      "directory": "unity-csharp/UnityEngine.ImageConversionModule",
+      "status": "exported",
+      "exit_code": 0,
+      "elapsed_seconds": 5.61,
+      "cs_files": 2,
+      "projects": 1
+    },
+    {
+      "assembly": "UnityEngine.InputLegacyModule.dll",
+      "input_sha256": "eaf953ddb70f2fe0b63f72dccbcb435ee1c90029bca483e2f6e74b5c39125822",
+      "size_bytes": 26112,
+      "directory": "unity-csharp/UnityEngine.InputLegacyModule",
+      "status": "exported",
+      "exit_code": 0,
+      "elapsed_seconds": 5.56,
+      "cs_files": 16,
+      "projects": 1
+    },
+    {
+      "assembly": "UnityEngine.InputModule.dll",
+      "input_sha256": "118fe61fa6c1e1c598bfc746e894437dd88670cb915363dbcf0e23ba816e5a49",
+      "size_bytes": 11776,
+      "directory": "unity-csharp/UnityEngine.InputModule",
+      "status": "exported",
+      "exit_code": 0,
+      "elapsed_seconds": 5.52,
+      "cs_files": 7,
+      "projects": 1
+    },
+    {
+      "assembly": "UnityEngine.JSONSerializeModule.dll",
+      "input_sha256": "cdd4210a4b8c4dc5c083e86383605ee2f14c6bb6458ce5dc8a5248c116b3a748",
+      "size_bytes": 10752,
+      "directory": "unity-csharp/UnityEngine.JSONSerializeModule",
+      "status": "exported",
+      "exit_code": 0,
+      "elapsed_seconds": 5.72,
+      "cs_files": 2,
+      "projects": 1
+    },
+    {
+      "assembly": "UnityEngine.LocalizationModule.dll",
+      "input_sha256": "cadb1ee09f265d46a6e19977b26ebf7f238b89d5ace0a4e3412e82b546d5b3c9",
+      "size_bytes": 9728,
+      "directory": "unity-csharp/UnityEngine.LocalizationModule",
+      "status": "exported",
+      "exit_code": 0,
+      "elapsed_seconds": 5.74,
+      "cs_files": 2,
+      "projects": 1
+    },
+    {
+      "assembly": "UnityEngine.ParticleSystemModule.dll",
+      "input_sha256": "5aae450d6bef08f882635d0d22ca1d374b2559739b496f6eb0ea97e0b235eee8",
+      "size_bytes": 134656,
+      "directory": "unity-csharp/UnityEngine.ParticleSystemModule",
+      "status": "exported",
+      "exit_code": 0,
+      "elapsed_seconds": 5.8,
+      "cs_files": 58,
+      "projects": 1
+    },
+    {
+      "assembly": "UnityEngine.PerformanceReportingModule.dll",
+      "input_sha256": "cdb611044fa7ad1ead53590c218613fa2a80b2b821200f41acecb2e94cc8714c",
+      "size_bytes": 9216,
+      "directory": "unity-csharp/UnityEngine.PerformanceReportingModule",
+      "status": "exported",
+      "exit_code": 0,
+      "elapsed_seconds": 5.86,
+      "cs_files": 2,
+      "projects": 1
+    },
+    {
+      "assembly": "UnityEngine.Physics2DModule.dll",
+      "input_sha256": "6c401c49b013d311b0c88871498b04486d3ab7739b02ebf52e2ed45c20a5bc3e",
+      "size_bytes": 105472,
+      "directory": "unity-csharp/UnityEngine.Physics2DModule",
+      "status": "exported",
+      "exit_code": 0,
+      "elapsed_seconds": 5.66,
+      "cs_files": 53,
+      "projects": 1
+    },
+    {
+      "assembly": "UnityEngine.PhysicsModule.dll",
+      "input_sha256": "9dc51f9255e849820eb28b6780804bea1c0d1c211ed870e697787c4514af8db8",
+      "size_bytes": 87040,
+      "directory": "unity-csharp/UnityEngine.PhysicsModule",
+      "status": "exported",
+      "exit_code": 0,
+      "elapsed_seconds": 5.64,
+      "cs_files": 46,
+      "projects": 1
+    },
+    {
+      "assembly": "UnityEngine.ProfilerModule.dll",
+      "input_sha256": "a4a0342430d754a8e5bfde41dacc77efa0b767312124445ef5c7eb0d606bcc80",
+      "size_bytes": 8704,
+      "directory": "unity-csharp/UnityEngine.ProfilerModule",
+      "status": "exported",
+      "exit_code": 0,
+      "elapsed_seconds": 5.82,
+      "cs_files": 1,
+      "projects": 1
+    },
+    {
+      "assembly": "UnityEngine.ScreenCaptureModule.dll",
+      "input_sha256": "24d636df50c0001e2d7bd886d686a40320f1dc97c4c777af786bb82c5011aecd",
+      "size_bytes": 9728,
+      "directory": "unity-csharp/UnityEngine.ScreenCaptureModule",
+      "status": "exported",
+      "exit_code": 0,
+      "elapsed_seconds": 5.46,
+      "cs_files": 2,
+      "projects": 1
+    },
+    {
+      "assembly": "UnityEngine.SharedInternalsModule.dll",
+      "input_sha256": "c324edf93bbe15535c17fd0b94cad5734c4d8e45ce7118c5b73dc91f1e192cf5",
+      "size_bytes": 19456,
+      "directory": "unity-csharp/UnityEngine.SharedInternalsModule",
+      "status": "exported",
+      "exit_code": 0,
+      "elapsed_seconds": 5.51,
+      "cs_files": 40,
+      "projects": 1
+    },
+    {
+      "assembly": "UnityEngine.SpriteMaskModule.dll",
+      "input_sha256": "46f3822083ac1e838f7de572219a44a70486252ae9327fc10b8ce1150c9f10d8",
+      "size_bytes": 10240,
+      "directory": "unity-csharp/UnityEngine.SpriteMaskModule",
+      "status": "exported",
+      "exit_code": 0,
+      "elapsed_seconds": 5.53,
+      "cs_files": 2,
+      "projects": 1
+    },
+    {
+      "assembly": "UnityEngine.SpriteShapeModule.dll",
+      "input_sha256": "b0369bc8e985709f849cc275687f3c8378626c6520121e94a427ec4d8ec27e95",
+      "size_bytes": 13824,
+      "directory": "unity-csharp/UnityEngine.SpriteShapeModule",
+      "status": "exported",
+      "exit_code": 0,
+      "elapsed_seconds": 5.62,
+      "cs_files": 9,
+      "projects": 1
+    },
+    {
+      "assembly": "UnityEngine.StreamingModule.dll",
+      "input_sha256": "7aaf1607f61bb6c2dec3729a14de9bef7bfb3c715405f92a23f68d125f808a52",
+      "size_bytes": 9216,
+      "directory": "unity-csharp/UnityEngine.StreamingModule",
+      "status": "exported",
+      "exit_code": 0,
+      "elapsed_seconds": 5.4,
+      "cs_files": 2,
+      "projects": 1
+    },
+    {
+      "assembly": "UnityEngine.SubstanceModule.dll",
+      "input_sha256": "234bf8133d27c51a3c3c454ef58147477ccefba9f35e2c5163f1ec6e138ac239",
+      "size_bytes": 13312,
+      "directory": "unity-csharp/UnityEngine.SubstanceModule",
+      "status": "exported",
+      "exit_code": 0,
+      "elapsed_seconds": 5.37,
+      "cs_files": 9,
+      "projects": 1
+    },
+    {
+      "assembly": "UnityEngine.SubsystemsModule.dll",
+      "input_sha256": "731e8b43e0f11fbe7d8fe716e0e73c1b4589e15a6c4ad1156ce57b852824dcd2",
+      "size_bytes": 16896,
+      "directory": "unity-csharp/UnityEngine.SubsystemsModule",
+      "status": "exported",
+      "exit_code": 0,
+      "elapsed_seconds": 5.63,
+      "cs_files": 13,
+      "projects": 1
+    },
+    {
+      "assembly": "UnityEngine.TLSModule.dll",
+      "input_sha256": "822779c318c3ce3a5fb037c02f406d0b5e7e0d0b1de6f31c731474c14c0f7072",
+      "size_bytes": 8704,
+      "directory": "unity-csharp/UnityEngine.TLSModule",
+      "status": "exported",
+      "exit_code": 0,
+      "elapsed_seconds": 5.78,
+      "cs_files": 1,
+      "projects": 1
+    },
+    {
+      "assembly": "UnityEngine.TerrainModule.dll",
+      "input_sha256": "55c7f2d48f79fde19995d78a53644891c717c262434be465b52357a8b2decd79",
+      "size_bytes": 80384,
+      "directory": "unity-csharp/UnityEngine.TerrainModule",
+      "status": "exported",
+      "exit_code": 0,
+      "elapsed_seconds": 5.67,
+      "cs_files": 21,
+      "projects": 1
+    },
+    {
+      "assembly": "UnityEngine.TerrainPhysicsModule.dll",
+      "input_sha256": "b3558887a8bec32d10d958ed2e9c3c2b6ae4940984a72b6bc9e8e0d6fa772abb",
+      "size_bytes": 9728,
+      "directory": "unity-csharp/UnityEngine.TerrainPhysicsModule",
+      "status": "exported",
+      "exit_code": 0,
+      "elapsed_seconds": 5.77,
+      "cs_files": 2,
+      "projects": 1
+    },
+    {
+      "assembly": "UnityEngine.TextCoreModule.dll",
+      "input_sha256": "eade9a04c1cdc31b9210f25a84cbc1730cb28329eae4262b815f526ec62b6287",
+      "size_bytes": 184320,
+      "directory": "unity-csharp/UnityEngine.TextCoreModule",
+      "status": "exported",
+      "exit_code": 0,
+      "elapsed_seconds": 5.48,
+      "cs_files": 73,
+      "projects": 1
+    },
+    {
+      "assembly": "UnityEngine.TextRenderingModule.dll",
+      "input_sha256": "e05b4cedef820cb8fae88238f7ede6e4abfe09cd63c672997ce9ed2b56384614",
+      "size_bytes": 27648,
+      "directory": "unity-csharp/UnityEngine.TextRenderingModule",
+      "status": "exported",
+      "exit_code": 0,
+      "elapsed_seconds": 5.44,
+      "cs_files": 16,
+      "projects": 1
+    },
+    {
+      "assembly": "UnityEngine.TilemapModule.dll",
+      "input_sha256": "f0d14d51535de64b538ddecb58e5b5192c4bfc7b2e0df9c52259c7bb7667510e",
+      "size_bytes": 25088,
+      "directory": "unity-csharp/UnityEngine.TilemapModule",
+      "status": "exported",
+      "exit_code": 0,
+      "elapsed_seconds": 5.45,
+      "cs_files": 12,
+      "projects": 1
+    },
+    {
+      "assembly": "UnityEngine.UI.dll",
+      "input_sha256": "a130289a35c1ad4b23e1185ed31a340567563922f050d48d85db582a02b61a43",
+      "size_bytes": 225792,
+      "directory": "unity-csharp/UnityEngine.UI",
+      "status": "exported",
+      "exit_code": 0,
+      "elapsed_seconds": 5.71,
+      "cs_files": 114,
+      "projects": 1
+    },
+    {
+      "assembly": "UnityEngine.UIElementsModule.dll",
+      "input_sha256": "a1e384d22376c06a3f6c85efc7c02332712613b4f8fe35d85e6c9b37c45c39b7",
+      "size_bytes": 726016,
+      "directory": "unity-csharp/UnityEngine.UIElementsModule",
+      "status": "exported",
+      "exit_code": 0,
+      "elapsed_seconds": 5.57,
+      "cs_files": 460,
+      "projects": 1
+    },
+    {
+      "assembly": "UnityEngine.UIModule.dll",
+      "input_sha256": "b97115d3f21ef5aef40f362af822a7047eb270f3aa541bd6e4642fd8951e7f8a",
+      "size_bytes": 23040,
+      "directory": "unity-csharp/UnityEngine.UIModule",
+      "status": "exported",
+      "exit_code": 0,
+      "elapsed_seconds": 5.56,
+      "cs_files": 9,
+      "projects": 1
+    },
+    {
+      "assembly": "UnityEngine.UNETModule.dll",
+      "input_sha256": "102bde8b18cde28d7984bec7cba0d04a4984aa4c5ff6a6ba44e0c07626aa5ea3",
+      "size_bytes": 77312,
+      "directory": "unity-csharp/UnityEngine.UNETModule",
+      "status": "exported",
+      "exit_code": 0,
+      "elapsed_seconds": 5.7,
+      "cs_files": 44,
+      "projects": 1
+    },
+    {
+      "assembly": "UnityEngine.UmbraModule.dll",
+      "input_sha256": "685a0e6d4799508cee352c4002efc1e8198af993bbbbe95df99118618d1f5f44",
+      "size_bytes": 8704,
+      "directory": "unity-csharp/UnityEngine.UmbraModule",
+      "status": "exported",
+      "exit_code": 0,
+      "elapsed_seconds": 5.78,
+      "cs_files": 1,
+      "projects": 1
+    },
+    {
+      "assembly": "UnityEngine.UnityAnalyticsModule.dll",
+      "input_sha256": "73186b8af702f3ebaaab70b5a1894d76221d9936f9e6bec1ab54c3e9cc457200",
+      "size_bytes": 32768,
+      "directory": "unity-csharp/UnityEngine.UnityAnalyticsModule",
+      "status": "exported",
+      "exit_code": 0,
+      "elapsed_seconds": 5.76,
+      "cs_files": 12,
+      "projects": 1
+    },
+    {
+      "assembly": "UnityEngine.UnityConnectModule.dll",
+      "input_sha256": "2ae60c92b1f339c211567111b76b6558241f4210457748475a5bd9752edfb15a",
+      "size_bytes": 10240,
+      "directory": "unity-csharp/UnityEngine.UnityConnectModule",
+      "status": "exported",
+      "exit_code": 0,
+      "elapsed_seconds": 5.67,
+      "cs_files": 3,
+      "projects": 1
+    },
+    {
+      "assembly": "UnityEngine.UnityTestProtocolModule.dll",
+      "input_sha256": "24d4dde058187ef18a2395586b399c64732b0660b5128e229abe8aa287b78d48",
+      "size_bytes": 8704,
+      "directory": "unity-csharp/UnityEngine.UnityTestProtocolModule",
+      "status": "exported",
+      "exit_code": 0,
+      "elapsed_seconds": 5.79,
+      "cs_files": 1,
+      "projects": 1
+    },
+    {
+      "assembly": "UnityEngine.UnityWebRequestAssetBundleModule.dll",
+      "input_sha256": "c7ad02849c477cf03384088bc5db3e0c466f9ba33d37ea821a16ae6319fbf258",
+      "size_bytes": 11264,
+      "directory": "unity-csharp/UnityEngine.UnityWebRequestAssetBundleModule",
+      "status": "exported",
+      "exit_code": 0,
+      "elapsed_seconds": 5.73,
+      "cs_files": 3,
+      "projects": 1
+    },
+    {
+      "assembly": "UnityEngine.UnityWebRequestAudioModule.dll",
+      "input_sha256": "3263835b52504bafc4427a893cc8fcfd2b58d683ad6f85b025d82a175228c8aa",
+      "size_bytes": 10752,
+      "directory": "unity-csharp/UnityEngine.UnityWebRequestAudioModule",
+      "status": "exported",
+      "exit_code": 0,
+      "elapsed_seconds": 5.77,
+      "cs_files": 4,
+      "projects": 1
+    },
+    {
+      "assembly": "UnityEngine.UnityWebRequestModule.dll",
+      "input_sha256": "70b7b151d595cf9760818659b2c4c445a019ed3945407c72c6cc87171e9db104",
+      "size_bytes": 43008,
+      "directory": "unity-csharp/UnityEngine.UnityWebRequestModule",
+      "status": "exported",
+      "exit_code": 0,
+      "elapsed_seconds": 5.82,
+      "cs_files": 17,
+      "projects": 1
+    },
+    {
+      "assembly": "UnityEngine.UnityWebRequestTextureModule.dll",
+      "input_sha256": "c1d33111f13509aee36c58e28bcc0fdbced9ba81766a49234fde409354f711fb",
+      "size_bytes": 10752,
+      "directory": "unity-csharp/UnityEngine.UnityWebRequestTextureModule",
+      "status": "exported",
+      "exit_code": 0,
+      "elapsed_seconds": 5.7,
+      "cs_files": 3,
+      "projects": 1
+    },
+    {
+      "assembly": "UnityEngine.UnityWebRequestWWWModule.dll",
+      "input_sha256": "95a4532e6ee36e74ec6a3c1db691aa547cf98754479758b9a901ef3e6962d688",
+      "size_bytes": 19456,
+      "directory": "unity-csharp/UnityEngine.UnityWebRequestWWWModule",
+      "status": "exported",
+      "exit_code": 0,
+      "elapsed_seconds": 5.74,
+      "cs_files": 4,
+      "projects": 1
+    },
+    {
+      "assembly": "UnityEngine.VFXModule.dll",
+      "input_sha256": "0370ea48e064e428e17e95f9a0cdfef0ac817d5f8c24c59876eb55111c9aa444",
+      "size_bytes": 38400,
+      "directory": "unity-csharp/UnityEngine.VFXModule",
+      "status": "exported",
+      "exit_code": 0,
+      "elapsed_seconds": 5.81,
+      "cs_files": 23,
+      "projects": 1
+    },
+    {
+      "assembly": "UnityEngine.VRModule.dll",
+      "input_sha256": "a3e180bbb43c20812029ea0b8035539ddf68eebac304b38a2cfc81e1619426cf",
+      "size_bytes": 34816,
+      "directory": "unity-csharp/UnityEngine.VRModule",
+      "status": "exported",
+      "exit_code": 0,
+      "elapsed_seconds": 5.92,
+      "cs_files": 39,
+      "projects": 1
+    },
+    {
+      "assembly": "UnityEngine.VehiclesModule.dll",
+      "input_sha256": "240d38fc62e11418d0bad6b70059ce1c7c2d59ee01bcb247abca7ec8bdcbef96",
+      "size_bytes": 12288,
+      "directory": "unity-csharp/UnityEngine.VehiclesModule",
+      "status": "exported",
+      "exit_code": 0,
+      "elapsed_seconds": 5.71,
+      "cs_files": 3,
+      "projects": 1
+    },
+    {
+      "assembly": "UnityEngine.VideoModule.dll",
+      "input_sha256": "472dd3691203f27c16850d84a2a80551684ab39fcbe9dfc228a4e02ae44c9a7b",
+      "size_bytes": 28672,
+      "directory": "unity-csharp/UnityEngine.VideoModule",
+      "status": "exported",
+      "exit_code": 0,
+      "elapsed_seconds": 5.73,
+      "cs_files": 17,
+      "projects": 1
+    },
+    {
+      "assembly": "UnityEngine.WindModule.dll",
+      "input_sha256": "bd0784b21cc984fd53c036816592b8e14c44007bda8a7deea262404b9f54fe7a",
+      "size_bytes": 9728,
+      "directory": "unity-csharp/UnityEngine.WindModule",
+      "status": "exported",
+      "exit_code": 0,
+      "elapsed_seconds": 5.74,
+      "cs_files": 3,
+      "projects": 1
+    },
+    {
+      "assembly": "UnityEngine.XRModule.dll",
+      "input_sha256": "093569d04616515937fbb03f6da8cdad3ccff7d1cb44bc4cecc9702f44aa063f",
+      "size_bytes": 53760,
+      "directory": "unity-csharp/UnityEngine.XRModule",
+      "status": "exported",
+      "exit_code": 0,
+      "elapsed_seconds": 5.71,
+      "cs_files": 38,
+      "projects": 1
+    },
+    {
+      "assembly": "UnityEngine.dll",
+      "input_sha256": "efec97118212170401996cd356a7b77541555202493efac48aafb10c7aa59afa",
+      "size_bytes": 83456,
+      "directory": "unity-csharp/UnityEngine",
+      "status": "exported",
+      "exit_code": 0,
+      "elapsed_seconds": 5.4,
+      "cs_files": 23,
+      "projects": 1
+    },
+    {
+      "assembly": "mct.dll",
+      "input_sha256": "5f3f99bb7f2e4170cd02f09c6fe1a628f38111a4a80a06ddd6decc49317d4887",
+      "size_bytes": 10240,
+      "directory": "unity-csharp/mct",
+      "status": "previous_export_preserved",
+      "exit_code": 0,
+      "elapsed_seconds": 0,
+      "cs_files": 10,
+      "projects": 1
+    },
+    {
+      "assembly": "mscorlib.dll",
+      "input_sha256": "d435ef1f6c2bd55d1010cf0ac8e0ec5c83f33284af1b472310a9576d104a0f85",
+      "size_bytes": 4072448,
+      "directory": "unity-csharp/mscorlib",
+      "status": "exported",
+      "exit_code": 0,
+      "elapsed_seconds": 5.72,
+      "cs_files": 2292,
+      "projects": 1
+    },
+    {
+      "assembly": "netstandard.dll",
+      "input_sha256": "fada723de68eca78dc6e4279ebf1c886810dcd7b4a970290cb7ac068ef04b766",
+      "size_bytes": 84992,
+      "directory": "unity-csharp/netstandard",
+      "status": "exported",
+      "exit_code": 0,
+      "elapsed_seconds": 5.79,
+      "cs_files": 1,
+      "projects": 1
+    },
+    {
+      "assembly": "simple-json.dll",
+      "input_sha256": "506a871ad6ee6c0c2651f40dad8f786afb3699ab9445d7f853c22628f052c394",
+      "size_bytes": 52736,
+      "directory": "unity-csharp/simple-json",
+      "status": "previous_export_preserved",
+      "exit_code": 0,
+      "elapsed_seconds": 0,
+      "cs_files": 23,
+      "projects": 1
+    },
+    {
+      "assembly": "simple-messge.dll",
+      "input_sha256": "cd6d4a360b197cb4c4124b977a5f484388cf046ea708cd6fed8a660528225354",
+      "size_bytes": 11264,
+      "directory": "unity-csharp/simple-messge",
+      "status": "previous_export_preserved",
+      "exit_code": 0,
+      "elapsed_seconds": 0,
+      "cs_files": 4,
+      "projects": 1
+    },
+    {
+      "assembly": "simple-touch.dll",
+      "input_sha256": "a44a0a8c4a0b66215f30ecb6b1296508836bf5371c0f78be770cd2a2f1e906b3",
+      "size_bytes": 5632,
+      "directory": "unity-csharp/simple-touch",
+      "status": "previous_export_preserved",
+      "exit_code": 0,
+      "elapsed_seconds": 0,
+      "cs_files": 5,
+      "projects": 1
+    }
+  ],
+  "references": [
+    {
+      "project": "unity-csharp/Assembly-CSharp/Assembly-CSharp.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.CoreModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/Assembly-CSharp/Assembly-CSharp.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.UI.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/Assembly-CSharp/Assembly-CSharp.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/mct.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/Assembly-CSharp/Assembly-CSharp.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/simple-messge.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/Assembly-CSharp/Assembly-CSharp.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/simple-json.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/MC.MeshMaker/MC.MeshMaker.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.CoreModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/MC.MeshMaker/MC.MeshMaker.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.PhysicsModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/MC.MeshMaker/MC.MeshMaker.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.TextRenderingModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/MC.MeshMaker/MC.MeshMaker.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.UI.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/MC.MeshMaker/MC.MeshMaker.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.UIModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/Mono.Data.Sqlite/Mono.Data.Sqlite.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/System.Data.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/Mono.Data.Sqlite/Mono.Data.Sqlite.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/System.Transactions.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/System/System.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/Mono.Security.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/System/System.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/System.Configuration.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/System/System.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/System.Xml.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/System.ComponentModel.Composition/System.ComponentModel.Composition.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/System.Core.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/System.ComponentModel.DataAnnotations/System.ComponentModel.DataAnnotations.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/System.Core.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/System.Configuration/System.Configuration.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/System.Xml.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/System.Configuration/System.Configuration.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/System.Security.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/System.Core/System.Core.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/Mono.Posix.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/System.Data/System.Data.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/System.Xml.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/System.Data/System.Data.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/System.Configuration.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/System.Data/System.Data.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/System.Numerics.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/System.Data/System.Data.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/System.Core.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/System.Data/System.Data.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/System.EnterpriseServices.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/System.Data/System.Data.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/System.Transactions.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/System.Design/System.Design.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/System.Data.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/System.Design/System.Design.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/System.Web.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/System.Design/System.Design.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/System.Configuration.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/System.Design/System.Design.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/System.Xml.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/System.Design/System.Design.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/System.Drawing.Design.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/System.DirectoryServices/System.DirectoryServices.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/Novell.Directory.Ldap.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/System.EnterpriseServices/System.EnterpriseServices.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/System.Transactions.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/System.IO.Compression.FileSystem/System.IO.Compression.FileSystem.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/System.IO.Compression.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/System.Net.Http/System.Net.Http.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/System.Core.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/System.Runtime.Serialization/System.Runtime.Serialization.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/System.Xml.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/System.Runtime.Serialization/System.Runtime.Serialization.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/System.ServiceModel.Internals.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/System.Runtime.Serialization/System.Runtime.Serialization.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/System.Configuration.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/System.Runtime.Serialization/System.Runtime.Serialization.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/System.Core.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/System.Runtime.Serialization.Formatters.Soap/System.Runtime.Serialization.Formatters.Soap.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/System.Xml.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/System.Runtime.Serialization.Xml/System.Runtime.Serialization.Xml.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/System.Runtime.Serialization.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/System.Security/System.Security.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/Mono.Security.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/System.Security/System.Security.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/System.Xml.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/System.ServiceModel.Internals/System.ServiceModel.Internals.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/System.Xml.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/System.Transactions/System.Transactions.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/System.Configuration.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/System.Web/System.Web.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/System.Configuration.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/System.Web/System.Web.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/System.Xml.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/System.Web/System.Web.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/System.Runtime.Serialization.Formatters.Soap.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/System.Web/System.Web.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/System.Data.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/System.Web/System.Web.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/System.Core.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/System.Web/System.Web.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/System.EnterpriseServices.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/System.Web/System.Web.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/System.Web.ApplicationServices.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/System.Web/System.Web.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/System.ComponentModel.DataAnnotations.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/System.Web/System.Web.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/Mono.Data.Sqlite.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/System.Web/System.Web.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/System.Web.Services.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/System.Web.ApplicationServices/System.Web.ApplicationServices.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/System.Configuration.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/System.Web.Services/System.Web.Services.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/System.Configuration.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/System.Web.Services/System.Web.Services.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/System.EnterpriseServices.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/System.Web.Services/System.Web.Services.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/System.Xml.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/System.Web.Services/System.Web.Services.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/System.Web.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/System.Web.Services/System.Web.Services.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/System.DirectoryServices.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/System.Web.Services/System.Web.Services.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/System.Design.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/System.Web.Services/System.Web.Services.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/System.Data.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/System.Windows.Forms/System.Windows.Forms.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/System.Xml.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/System.Windows.Forms/System.Windows.Forms.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/System.Runtime.Serialization.Formatters.Soap.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/System.Windows.Forms/System.Windows.Forms.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/Accessibility.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/System.Windows.Forms/System.Windows.Forms.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/Mono.WebBrowser.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/System.Windows.Forms/System.Windows.Forms.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/System.Configuration.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/System.Windows.Forms/System.Windows.Forms.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/Mono.Posix.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/System.Windows.Forms/System.Windows.Forms.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/System.Data.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/System.Xml/System.Xml.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/System.Configuration.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/System.Xml.Linq/System.Xml.Linq.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/System.Xml.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/System.Xml.Linq/System.Xml.Linq.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/System.Runtime.Serialization.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/System.Xml.Linq/System.Xml.Linq.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/System.Core.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/System.Xml.XPath.XDocument/System.Xml.XPath.XDocument.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/System.Xml.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/System.Xml.XPath.XDocument/System.Xml.XPath.XDocument.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/System.Xml.Linq.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/Unity.TextMeshPro/Unity.TextMeshPro.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.CoreModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/Unity.TextMeshPro/Unity.TextMeshPro.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.TextCoreModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/Unity.TextMeshPro/Unity.TextMeshPro.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.UI.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/Unity.TextMeshPro/Unity.TextMeshPro.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.UIModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/Unity.TextMeshPro/Unity.TextMeshPro.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.TextRenderingModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/Unity.TextMeshPro/Unity.TextMeshPro.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/System.Core.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/Unity.TextMeshPro/Unity.TextMeshPro.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.IMGUIModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/Unity.TextMeshPro/Unity.TextMeshPro.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.InputLegacyModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/Unity.Timeline/Unity.Timeline.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.CoreModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/Unity.Timeline/Unity.Timeline.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.DirectorModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/Unity.Timeline/Unity.Timeline.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.AnimationModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/Unity.Timeline/Unity.Timeline.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.AudioModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/Unity.Timeline/Unity.Timeline.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.ParticleSystemModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/Unity.Timeline/Unity.Timeline.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/System.Core.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/Unity.Timeline/Unity.Timeline.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.SharedInternalsModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine/UnityEngine.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.CoreModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine/UnityEngine.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.DSPGraphModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine/UnityEngine.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.AudioModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine/UnityEngine.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.AndroidJNIModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine/UnityEngine.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.InputLegacyModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine/UnityEngine.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.AccessibilityModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine/UnityEngine.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.UIModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine/UnityEngine.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.UnityConnectModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine/UnityEngine.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.AIModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine/UnityEngine.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.UnityAnalyticsModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine/UnityEngine.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.PerformanceReportingModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine/UnityEngine.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.Physics2DModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine/UnityEngine.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.AnimationModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine/UnityEngine.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.AssetBundleModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine/UnityEngine.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.SharedInternalsModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine/UnityEngine.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.PhysicsModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine/UnityEngine.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.TextRenderingModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine/UnityEngine.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.ClothModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine/UnityEngine.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.CrashReportingModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine/UnityEngine.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.TilemapModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine/UnityEngine.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.TerrainModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine/UnityEngine.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.IMGUIModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine/UnityEngine.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.VFXModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine/UnityEngine.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.VideoModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine/UnityEngine.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.VRModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine/UnityEngine.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.GridModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine/UnityEngine.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.ImageConversionModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine/UnityEngine.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.SubsystemsModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine/UnityEngine.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.JSONSerializeModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine/UnityEngine.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.LocalizationModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine/UnityEngine.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.UnityWebRequestModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine/UnityEngine.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.UNETModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine/UnityEngine.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine/UnityEngine.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine/UnityEngine.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine/UnityEngine.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine/UnityEngine.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.ParticleSystemModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine/UnityEngine.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.DirectorModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine/UnityEngine.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.ScreenCaptureModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine/UnityEngine.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.GameCenterModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine/UnityEngine.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.SpriteMaskModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine/UnityEngine.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.StreamingModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine/UnityEngine.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.TerrainPhysicsModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine/UnityEngine.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.TextCoreModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine/UnityEngine.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.SpriteShapeModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine/UnityEngine.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.UIElementsModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine/UnityEngine.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.VehiclesModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine/UnityEngine.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.WindModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine/UnityEngine.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.ARModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine/UnityEngine.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.XRModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine/UnityEngine.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.InputModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.AIModule/UnityEngine.AIModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.SharedInternalsModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.AIModule/UnityEngine.AIModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.CoreModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.ARModule/UnityEngine.ARModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.SharedInternalsModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.ARModule/UnityEngine.ARModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/System.Core.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.ARModule/UnityEngine.ARModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.CoreModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.AccessibilityModule/UnityEngine.AccessibilityModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.SharedInternalsModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.AccessibilityModule/UnityEngine.AccessibilityModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.CoreModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.AccessibilityModule/UnityEngine.AccessibilityModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/System.Core.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.AndroidJNIModule/UnityEngine.AndroidJNIModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.SharedInternalsModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.AndroidJNIModule/UnityEngine.AndroidJNIModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.CoreModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.AnimationModule/UnityEngine.AnimationModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/System.Core.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.AnimationModule/UnityEngine.AnimationModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.SharedInternalsModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.AnimationModule/UnityEngine.AnimationModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.CoreModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.AssetBundleModule/UnityEngine.AssetBundleModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.SharedInternalsModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.AssetBundleModule/UnityEngine.AssetBundleModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.CoreModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.AudioModule/UnityEngine.AudioModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/System.Core.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.AudioModule/UnityEngine.AudioModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.SharedInternalsModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.AudioModule/UnityEngine.AudioModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.CoreModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.ClothModule/UnityEngine.ClothModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.SharedInternalsModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.ClothModule/UnityEngine.ClothModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.PhysicsModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.ClothModule/UnityEngine.ClothModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.CoreModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.CoreModule/UnityEngine.CoreModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/System.Core.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.CoreModule/UnityEngine.CoreModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.SharedInternalsModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.CrashReportingModule/UnityEngine.CrashReportingModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.SharedInternalsModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.DSPGraphModule/UnityEngine.DSPGraphModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.SharedInternalsModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.DSPGraphModule/UnityEngine.DSPGraphModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.AudioModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.DSPGraphModule/UnityEngine.DSPGraphModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.CoreModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.DirectorModule/UnityEngine.DirectorModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.SharedInternalsModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.DirectorModule/UnityEngine.DirectorModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.CoreModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.GameCenterModule/UnityEngine.GameCenterModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.SharedInternalsModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.GameCenterModule/UnityEngine.GameCenterModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/System.Core.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.GameCenterModule/UnityEngine.GameCenterModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.CoreModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.GridModule/UnityEngine.GridModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.SharedInternalsModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.GridModule/UnityEngine.GridModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.CoreModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.HotReloadModule/UnityEngine.HotReloadModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.SharedInternalsModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.IMGUIModule/UnityEngine.IMGUIModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.SharedInternalsModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.IMGUIModule/UnityEngine.IMGUIModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.CoreModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.IMGUIModule/UnityEngine.IMGUIModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.TextRenderingModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.IMGUIModule/UnityEngine.IMGUIModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/System.Core.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.ImageConversionModule/UnityEngine.ImageConversionModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/System.Core.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.ImageConversionModule/UnityEngine.ImageConversionModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.SharedInternalsModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.ImageConversionModule/UnityEngine.ImageConversionModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.CoreModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.InputLegacyModule/UnityEngine.InputLegacyModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.SharedInternalsModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.InputLegacyModule/UnityEngine.InputLegacyModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.CoreModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.InputModule/UnityEngine.InputModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.SharedInternalsModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.InputModule/UnityEngine.InputModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/System.Core.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.InputModule/UnityEngine.InputModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.CoreModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.JSONSerializeModule/UnityEngine.JSONSerializeModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.SharedInternalsModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.JSONSerializeModule/UnityEngine.JSONSerializeModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.CoreModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.LocalizationModule/UnityEngine.LocalizationModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.SharedInternalsModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.LocalizationModule/UnityEngine.LocalizationModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.CoreModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.ParticleSystemModule/UnityEngine.ParticleSystemModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/System.Core.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.ParticleSystemModule/UnityEngine.ParticleSystemModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.SharedInternalsModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.ParticleSystemModule/UnityEngine.ParticleSystemModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.CoreModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.PerformanceReportingModule/UnityEngine.PerformanceReportingModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.SharedInternalsModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.Physics2DModule/UnityEngine.Physics2DModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/System.Core.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.Physics2DModule/UnityEngine.Physics2DModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.SharedInternalsModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.Physics2DModule/UnityEngine.Physics2DModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.CoreModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.PhysicsModule/UnityEngine.PhysicsModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/System.Core.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.PhysicsModule/UnityEngine.PhysicsModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.SharedInternalsModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.PhysicsModule/UnityEngine.PhysicsModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.CoreModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.ProfilerModule/UnityEngine.ProfilerModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.SharedInternalsModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.ScreenCaptureModule/UnityEngine.ScreenCaptureModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.SharedInternalsModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.ScreenCaptureModule/UnityEngine.ScreenCaptureModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.CoreModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.SpriteMaskModule/UnityEngine.SpriteMaskModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.SharedInternalsModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.SpriteMaskModule/UnityEngine.SpriteMaskModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.CoreModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.SpriteShapeModule/UnityEngine.SpriteShapeModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.SharedInternalsModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.SpriteShapeModule/UnityEngine.SpriteShapeModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.CoreModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.StreamingModule/UnityEngine.StreamingModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.SharedInternalsModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.StreamingModule/UnityEngine.StreamingModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.CoreModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.SubstanceModule/UnityEngine.SubstanceModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.SharedInternalsModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.SubstanceModule/UnityEngine.SubstanceModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.CoreModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.SubsystemsModule/UnityEngine.SubsystemsModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.SharedInternalsModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.SubsystemsModule/UnityEngine.SubsystemsModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/System.Core.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.TLSModule/UnityEngine.TLSModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.SharedInternalsModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.TerrainModule/UnityEngine.TerrainModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/System.Core.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.TerrainModule/UnityEngine.TerrainModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.SharedInternalsModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.TerrainModule/UnityEngine.TerrainModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.CoreModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.TerrainPhysicsModule/UnityEngine.TerrainPhysicsModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.SharedInternalsModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.TerrainPhysicsModule/UnityEngine.TerrainPhysicsModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.PhysicsModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.TerrainPhysicsModule/UnityEngine.TerrainPhysicsModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.TerrainModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.TerrainPhysicsModule/UnityEngine.TerrainPhysicsModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.CoreModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.TextCoreModule/UnityEngine.TextCoreModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.SharedInternalsModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.TextCoreModule/UnityEngine.TextCoreModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.CoreModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.TextCoreModule/UnityEngine.TextCoreModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.TextRenderingModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.TextCoreModule/UnityEngine.TextCoreModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/System.Core.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.TextRenderingModule/UnityEngine.TextRenderingModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.SharedInternalsModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.TextRenderingModule/UnityEngine.TextRenderingModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.CoreModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.TilemapModule/UnityEngine.TilemapModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.SharedInternalsModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.TilemapModule/UnityEngine.TilemapModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.CoreModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.TilemapModule/UnityEngine.TilemapModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.GridModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.TilemapModule/UnityEngine.TilemapModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.Physics2DModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.UI/UnityEngine.UI.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.CoreModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.UI/UnityEngine.UI.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.UIModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.UI/UnityEngine.UI.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.TextRenderingModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.UI/UnityEngine.UI.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/System.Core.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.UI/UnityEngine.UI.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.PhysicsModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.UI/UnityEngine.UI.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.Physics2DModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.UI/UnityEngine.UI.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.IMGUIModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.UI/UnityEngine.UI.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.AnimationModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.UI/UnityEngine.UI.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.InputLegacyModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.UIElementsModule/UnityEngine.UIElementsModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/System.Core.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.UIElementsModule/UnityEngine.UIElementsModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.SharedInternalsModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.UIElementsModule/UnityEngine.UIElementsModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.CoreModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.UIElementsModule/UnityEngine.UIElementsModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.IMGUIModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.UIElementsModule/UnityEngine.UIElementsModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.TextRenderingModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.UIElementsModule/UnityEngine.UIElementsModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.TextCoreModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.UIElementsModule/UnityEngine.UIElementsModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.InputLegacyModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.UIModule/UnityEngine.UIModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.SharedInternalsModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.UIModule/UnityEngine.UIModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.CoreModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.UIModule/UnityEngine.UIModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.TextRenderingModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.UNETModule/UnityEngine.UNETModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.SharedInternalsModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.UNETModule/UnityEngine.UNETModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.CoreModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.UNETModule/UnityEngine.UNETModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/System.Core.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.UNETModule/UnityEngine.UNETModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.UnityWebRequestModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.UNETModule/UnityEngine.UNETModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.JSONSerializeModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.UmbraModule/UnityEngine.UmbraModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.SharedInternalsModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.UnityAnalyticsModule/UnityEngine.UnityAnalyticsModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.SharedInternalsModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.UnityAnalyticsModule/UnityEngine.UnityAnalyticsModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/System.Core.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.UnityAnalyticsModule/UnityEngine.UnityAnalyticsModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.CoreModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.UnityConnectModule/UnityEngine.UnityConnectModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.SharedInternalsModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.UnityConnectModule/UnityEngine.UnityConnectModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.CoreModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.UnityTestProtocolModule/UnityEngine.UnityTestProtocolModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.SharedInternalsModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.UnityWebRequestAssetBundleModule/UnityEngine.UnityWebRequestAssetBundleModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.SharedInternalsModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.UnityWebRequestAssetBundleModule/UnityEngine.UnityWebRequestAssetBundleModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.UnityWebRequestModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.UnityWebRequestAssetBundleModule/UnityEngine.UnityWebRequestAssetBundleModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.CoreModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.UnityWebRequestAssetBundleModule/UnityEngine.UnityWebRequestAssetBundleModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.AssetBundleModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.UnityWebRequestAudioModule/UnityEngine.UnityWebRequestAudioModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.SharedInternalsModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.UnityWebRequestAudioModule/UnityEngine.UnityWebRequestAudioModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.UnityWebRequestModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.UnityWebRequestAudioModule/UnityEngine.UnityWebRequestAudioModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.CoreModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.UnityWebRequestAudioModule/UnityEngine.UnityWebRequestAudioModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.AudioModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.UnityWebRequestModule/UnityEngine.UnityWebRequestModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.SharedInternalsModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.UnityWebRequestModule/UnityEngine.UnityWebRequestModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.CoreModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.UnityWebRequestTextureModule/UnityEngine.UnityWebRequestTextureModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.SharedInternalsModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.UnityWebRequestTextureModule/UnityEngine.UnityWebRequestTextureModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.UnityWebRequestModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.UnityWebRequestTextureModule/UnityEngine.UnityWebRequestTextureModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.CoreModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.UnityWebRequestTextureModule/UnityEngine.UnityWebRequestTextureModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.ImageConversionModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.UnityWebRequestWWWModule/UnityEngine.UnityWebRequestWWWModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/System.Core.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.UnityWebRequestWWWModule/UnityEngine.UnityWebRequestWWWModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.SharedInternalsModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.UnityWebRequestWWWModule/UnityEngine.UnityWebRequestWWWModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.CoreModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.UnityWebRequestWWWModule/UnityEngine.UnityWebRequestWWWModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.UnityWebRequestModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.UnityWebRequestWWWModule/UnityEngine.UnityWebRequestWWWModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.AssetBundleModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.UnityWebRequestWWWModule/UnityEngine.UnityWebRequestWWWModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.UnityWebRequestWWWModule/UnityEngine.UnityWebRequestWWWModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.AudioModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.UnityWebRequestWWWModule/UnityEngine.UnityWebRequestWWWModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.ImageConversionModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.VFXModule/UnityEngine.VFXModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.SharedInternalsModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.VFXModule/UnityEngine.VFXModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.CoreModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.VRModule/UnityEngine.VRModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.SharedInternalsModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.VRModule/UnityEngine.VRModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.XRModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.VRModule/UnityEngine.VRModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.CoreModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.VehiclesModule/UnityEngine.VehiclesModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.SharedInternalsModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.VehiclesModule/UnityEngine.VehiclesModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.CoreModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.VehiclesModule/UnityEngine.VehiclesModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.PhysicsModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.VideoModule/UnityEngine.VideoModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/System.Core.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.VideoModule/UnityEngine.VideoModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.SharedInternalsModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.VideoModule/UnityEngine.VideoModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.CoreModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.VideoModule/UnityEngine.VideoModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.AudioModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.WindModule/UnityEngine.WindModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.SharedInternalsModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.WindModule/UnityEngine.WindModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.CoreModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.XRModule/UnityEngine.XRModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.SharedInternalsModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.XRModule/UnityEngine.XRModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.CoreModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.XRModule/UnityEngine.XRModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.SubsystemsModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/UnityEngine.XRModule/UnityEngine.XRModule.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.PhysicsModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/mct/mct.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.UI.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/mct/mct.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.CoreModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/mct/mct.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/simple-json.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/mct/mct.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.UnityWebRequestModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/mct/mct.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.AndroidJNIModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/mct/mct.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/simple-messge.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/mct/mct.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/mct/mct.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.AssetBundleModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/mct/mct.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/netstandard/netstandard.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/System.Core.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/netstandard/netstandard.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/System.Data.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/netstandard/netstandard.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/System.Diagnostics.StackTrace.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/netstandard/netstandard.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/System.Globalization.Extensions.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/netstandard/netstandard.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/System.IO.Compression.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/netstandard/netstandard.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/System.IO.Compression.FileSystem.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/netstandard/netstandard.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/System.ComponentModel.Composition.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/netstandard/netstandard.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/System.Net.Http.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/netstandard/netstandard.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/System.Numerics.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/netstandard/netstandard.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/System.Runtime.Serialization.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/netstandard/netstandard.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/System.Runtime.Serialization.Xml.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/netstandard/netstandard.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/System.Transactions.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/netstandard/netstandard.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/System.Web.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/netstandard/netstandard.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/System.Xml.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/netstandard/netstandard.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/System.Xml.Linq.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/netstandard/netstandard.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/System.Xml.XPath.XDocument.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/simple-json/simple-json.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.CoreModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/simple-messge/simple-messge.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.CoreModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/simple-touch/simple-touch.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.CoreModule.dll",
+      "exists": true,
+      "absolute": false
+    },
+    {
+      "project": "unity-csharp/simple-touch/simple-touch.csproj",
+      "hint_path": "../../android/assets/bin/Data/Managed/UnityEngine.InputLegacyModule.dll",
+      "exists": true,
+      "absolute": false
+    }
+  ],
+  "diagnostic_marker_scan": {
+    "markers": [
+      "Error decompiling",
+      "Could not decompile",
+      "DecompilerException",
+      "Unknown result type"
+    ],
+    "matches": [],
+    "interpretation": "No matches is a narrow text scan, not proof of source equivalence or successful compilation."
+  },
+  "nonempty_export_logs": [],
+  "project_absolute_local_path_hits": [],
+  "export_total_files": 15449,
+  "export_total_bytes": 54192173,
+  "export_command_template": "ilspycmd -p -r <all-original-managed-dlls> -o unity-csharp/<assembly-name> <assembly.dll>"
+}
