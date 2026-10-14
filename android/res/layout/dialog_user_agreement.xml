@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/shape_privacy_agreement" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:layout_gravity="center_horizontal" android:id="@id/tvTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="路考仪产品使用协议" android:layout_centerHorizontal="true" android:layout_centerVertical="true" style="@style/privacy_agreement_title" />
+    <View android:id="@id/line" android:background="#e8e8e8" android:layout_width="match_parent" android:layout_height="@dimen/dp_1" android:layout_marginBottom="@dimen/dp_30" />
+    <TextView android:layout_gravity="center_horizontal" android:id="@id/app_name" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="教练你好，在使用本产品前请仔细阅读并同意此协议" style="@style/privacy_agreement_content" />
+    <FrameLayout android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0">
+        <cn.mucang.android.core.webview.core.MucangWebView android:id="@id/web_view" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <ProgressBar android:layout_gravity="center" android:id="@id/progressBar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </FrameLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="match_parent" style="@style/privacy_agreement_bottom">
+        <TextView android:textColor="#008aff" android:gravity="center" android:id="@id/exit" android:background="@drawable/shape_r100_s1_008aff" android:text="放弃并退出" android:layout_marginEnd="@dimen/dp_15" style="@style/privacy_agreement_button" />
+        <TextView android:textColor="#ffffff" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/agree" android:background="@drawable/shape_8fccff_r100" android:paddingLeft="@dimen/dp_20" android:paddingRight="@dimen/dp_20" android:layout_width="wrap_content" android:layout_marginTop="@dimen/dp_16" android:text="请上滑完整阅读后并同意" android:layout_marginStart="@dimen/dp_15" style="@style/privacy_agreement_button" />
+    </LinearLayout>
+</LinearLayout>

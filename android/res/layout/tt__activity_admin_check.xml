@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="horizontal" android:background="@drawable/tt__bg_round_white" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/tt__include_bottom_mountain" />
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:paddingStart="@dimen/tt__main_coach_padding" android:paddingEnd="@dimen/tt__main_coach_padding">
+        <TextView android:textSize="@dimen/tt__text_size_title" android:textColor="#ff333333" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dp" android:text="维护人员验证" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/tt__input_height" android:layout_marginTop="19.0dp" android:layout_below="@id/title">
+            <EditText android:textSize="@dimen/tt__text_size_input" android:textColor="#ff333333" android:textColorHint="#ffa0a0a0" android:id="@id/password" android:background="@drawable/tt__bg_input" android:paddingLeft="10.0dp" android:paddingRight="10.0dp" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_marginRight="19.0dp" android:hint="输入密码" android:maxLines="1" android:layout_weight="1.0" android:inputType="numberDecimal" />
+            <TextView android:textSize="@dimen/tt__text_size_button" android:textColor="#ffffffff" android:gravity="center" android:id="@id/check_password" android:background="@drawable/tt__bg_btn_blue_2_corner" android:layout_width="@dimen/tt__button_width_right_of_input" android:layout_height="match_parent" android:text="验证" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/tt__text_size_button" android:textColor="#ffffffff" android:gravity="center" android:id="@id/back" android:background="@drawable/tt__bg_btn_green_2_corner" android:layout_width="@dimen/tt__button_width_register" android:layout_height="@dimen/tt__button_height_register" android:layout_marginBottom="19.0dp" android:text="返回主页" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</FrameLayout>

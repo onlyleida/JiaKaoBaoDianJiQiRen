@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/shape_e6ecf2_ffffff_r24" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/rootLayout" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:paddingBottom="@dimen/dp_37" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/dp_27" android:textColor="@color/dialog_title_color" android:gravity="center_horizontal" android:id="@id/titleTv" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dialog_title_margin" android:layout_marginTop="@dimen/dp_37" android:layout_marginRight="@dimen/dialog_title_margin" android:text="这是标题" />
+            <TextView android:textSize="@dimen/dp_21" android:textColor="@color/dialog_desc_color" android:gravity="start" android:layout_gravity="center_horizontal" android:id="@id/descTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dialog_desc_margin" android:layout_marginTop="@dimen/dp_14" android:layout_marginRight="@dimen/dialog_desc_margin" android:maxHeight="@dimen/dp_200" android:text="这是标题" />
+            <ImageView android:layout_gravity="center_horizontal" android:id="@id/picture" android:visibility="gone" android:layout_width="@dimen/dp_150" android:layout_height="@dimen/dp_150" android:layout_marginTop="@dimen/dp_14" />
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/btnLl" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_37" android:minHeight="@dimen/dp_54" android:layout_marginStart="@dimen/dp_37" android:layout_marginEnd="@dimen/dp_37">
+                <TextView android:textSize="@dimen/dp_23" android:textColor="@color/dialog_button_second_color" android:gravity="center" android:id="@id/leftTv" android:background="@drawable/shape_r100_s1_008aff" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="左边的按钮" android:layout_weight="1.0" />
+                <TextView android:textSize="@dimen/dp_23" android:textColor="@color/dialog_button_main_color" android:gravity="center" android:id="@id/rightTv" android:background="@drawable/shape_008aff_r100" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="右边的按钮" android:layout_weight="1.0" android:layout_marginStart="@dimen/dp_11" />
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView android:layout_gravity="end" android:id="@id/closeIv" android:padding="@dimen/dp_14" android:visibility="gone" android:layout_width="@dimen/dp_51" android:layout_height="@dimen/dp_51" android:src="@drawable/ic_black_close" />
+    </FrameLayout>
+</LinearLayout>
