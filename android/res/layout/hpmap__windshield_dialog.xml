@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#fff" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/dp_24" android:textColor="#333" android:gravity="center" android:id="@id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/dp_30" android:text="前挡风玻璃" />
+    <EditText android:textSize="@dimen/font_20" android:textColor="#333" android:textColorHint="#aaa" android:id="@id/input" android:background="@drawable/drawable_f2f5fa_4" android:paddingLeft="@dimen/dp_10" android:paddingRight="@dimen/dp_10" android:layout_width="match_parent" android:layout_height="@dimen/dp_50" android:layout_marginLeft="@dimen/dp_20" android:layout_marginRight="@dimen/dp_20" android:hint="单位:厘米" android:inputType="numberDecimal" />
+    <TextView android:textSize="@dimen/dp_18" android:textColor="#fff" android:gravity="center" android:id="@id/make_sure" android:background="@drawable/selector_008aff_2" android:layout_width="match_parent" android:layout_height="@dimen/dp_50" android:layout_margin="@dimen/dp_12" android:layout_marginTop="@dimen/dp_16" android:text="确定" />
+</LinearLayout>
