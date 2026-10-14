@@ -13,7 +13,10 @@ import time
 ROOT = Path(__file__).resolve().parents[1]
 PACKAGE = "cn.mucang.android.jiakaoyi.teachingk2"
 COMPONENT = PACKAGE + "/cn.mucang.android.jiakaoyi.teachingk2.ui.splash.TeachSplashActivity"
-IMAGE = "system-images;android-30;google_apis;x86"
+API = os.environ.get("JIAKAO_RUNTIME_API", "30")
+if API not in {"28", "30"}:
+    raise SystemExit("Supported runtime check API levels: 28, 30")
+IMAGE = f"system-images;android-{API};google_apis;x86"
 SERIAL = "emulator-5562"
 
 
@@ -63,7 +66,7 @@ def main():
 
     try:
         run([sdk / "emulator/emulator", "-version"], "emulator-version", check=False)
-        properties = sdk / "system-images/android-30/google_apis/x86/source.properties"
+        properties = sdk / f"system-images/android-{API}/google_apis/x86/source.properties"
         if properties.is_file():
             shutil.copyfile(properties, out / "system-image-source.properties")
         if Path("/dev/kvm").exists():
