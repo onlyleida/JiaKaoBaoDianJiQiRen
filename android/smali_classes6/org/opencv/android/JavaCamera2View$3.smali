@@ -1,0 +1,160 @@
+.class Lorg/opencv/android/JavaCamera2View$3;
+.super Landroid/hardware/camera2/CameraCaptureSession$StateCallback;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lorg/opencv/android/JavaCamera2View;->createCameraPreviewSession()V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
+
+
+# instance fields
+.field final synthetic this$0:Lorg/opencv/android/JavaCamera2View;
+
+
+# direct methods
+.method constructor <init>(Lorg/opencv/android/JavaCamera2View;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lorg/opencv/android/JavaCamera2View$3;->this$0:Lorg/opencv/android/JavaCamera2View;
+
+    invoke-direct {p0}, Landroid/hardware/camera2/CameraCaptureSession$StateCallback;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public onConfigureFailed(Landroid/hardware/camera2/CameraCaptureSession;)V
+    .locals 1
+
+    const-string p1, "JavaCamera2View"
+
+    const-string v0, "createCameraPreviewSession failed"
+
+    .line 1
+    invoke-static {p1, v0}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    return-void
+.end method
+
+.method public onConfigured(Landroid/hardware/camera2/CameraCaptureSession;)V
+    .locals 4
+
+    const-string v0, "JavaCamera2View"
+
+    const-string v1, "createCaptureSession::onConfigured"
+
+    .line 1
+    invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 2
+    iget-object v1, p0, Lorg/opencv/android/JavaCamera2View$3;->this$0:Lorg/opencv/android/JavaCamera2View;
+
+    invoke-static {v1}, Lorg/opencv/android/JavaCamera2View;->access$000(Lorg/opencv/android/JavaCamera2View;)Landroid/hardware/camera2/CameraDevice;
+
+    move-result-object v1
+
+    if-nez v1, :cond_0
+
+    return-void
+
+    .line 3
+    :cond_0
+    iget-object v1, p0, Lorg/opencv/android/JavaCamera2View$3;->this$0:Lorg/opencv/android/JavaCamera2View;
+
+    invoke-static {v1, p1}, Lorg/opencv/android/JavaCamera2View;->access$302(Lorg/opencv/android/JavaCamera2View;Landroid/hardware/camera2/CameraCaptureSession;)Landroid/hardware/camera2/CameraCaptureSession;
+
+    .line 4
+    :try_start_0
+    iget-object p1, p0, Lorg/opencv/android/JavaCamera2View$3;->this$0:Lorg/opencv/android/JavaCamera2View;
+
+    invoke-static {p1}, Lorg/opencv/android/JavaCamera2View;->access$400(Lorg/opencv/android/JavaCamera2View;)Landroid/hardware/camera2/CaptureRequest$Builder;
+
+    move-result-object p1
+
+    sget-object v1, Landroid/hardware/camera2/CaptureRequest;->CONTROL_AF_MODE:Landroid/hardware/camera2/CaptureRequest$Key;
+
+    const/4 v2, 0x4
+
+    .line 5
+    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v2
+
+    .line 6
+    invoke-virtual {p1, v1, v2}, Landroid/hardware/camera2/CaptureRequest$Builder;->set(Landroid/hardware/camera2/CaptureRequest$Key;Ljava/lang/Object;)V
+
+    .line 7
+    iget-object p1, p0, Lorg/opencv/android/JavaCamera2View$3;->this$0:Lorg/opencv/android/JavaCamera2View;
+
+    invoke-static {p1}, Lorg/opencv/android/JavaCamera2View;->access$400(Lorg/opencv/android/JavaCamera2View;)Landroid/hardware/camera2/CaptureRequest$Builder;
+
+    move-result-object p1
+
+    sget-object v1, Landroid/hardware/camera2/CaptureRequest;->CONTROL_AE_MODE:Landroid/hardware/camera2/CaptureRequest$Key;
+
+    const/4 v2, 0x2
+
+    .line 8
+    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v2
+
+    .line 9
+    invoke-virtual {p1, v1, v2}, Landroid/hardware/camera2/CaptureRequest$Builder;->set(Landroid/hardware/camera2/CaptureRequest$Key;Ljava/lang/Object;)V
+
+    .line 10
+    iget-object p1, p0, Lorg/opencv/android/JavaCamera2View$3;->this$0:Lorg/opencv/android/JavaCamera2View;
+
+    invoke-static {p1}, Lorg/opencv/android/JavaCamera2View;->access$300(Lorg/opencv/android/JavaCamera2View;)Landroid/hardware/camera2/CameraCaptureSession;
+
+    move-result-object p1
+
+    iget-object v1, p0, Lorg/opencv/android/JavaCamera2View$3;->this$0:Lorg/opencv/android/JavaCamera2View;
+
+    invoke-static {v1}, Lorg/opencv/android/JavaCamera2View;->access$400(Lorg/opencv/android/JavaCamera2View;)Landroid/hardware/camera2/CaptureRequest$Builder;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Landroid/hardware/camera2/CaptureRequest$Builder;->build()Landroid/hardware/camera2/CaptureRequest;
+
+    move-result-object v1
+
+    const/4 v2, 0x0
+
+    iget-object v3, p0, Lorg/opencv/android/JavaCamera2View$3;->this$0:Lorg/opencv/android/JavaCamera2View;
+
+    invoke-static {v3}, Lorg/opencv/android/JavaCamera2View;->access$500(Lorg/opencv/android/JavaCamera2View;)Landroid/os/Handler;
+
+    move-result-object v3
+
+    invoke-virtual {p1, v1, v2, v3}, Landroid/hardware/camera2/CameraCaptureSession;->setRepeatingRequest(Landroid/hardware/camera2/CaptureRequest;Landroid/hardware/camera2/CameraCaptureSession$CaptureCallback;Landroid/os/Handler;)I
+
+    const-string p1, "CameraPreviewSession has been started"
+
+    .line 11
+    invoke-static {v0, p1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    goto :goto_0
+
+    :catch_0
+    move-exception p1
+
+    const-string v1, "createCaptureSession failed"
+
+    .line 12
+    invoke-static {v0, v1, p1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
+
+    :goto_0
+    return-void
+.end method
