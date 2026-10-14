@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/root" android:background="@color/select_city__line_item_background_color_normal" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include layout="@layout/select_city__top_bar" />
+        <cn.mucang.android.selectcity.ui.SectionHeaderView android:id="@id/selected_cities_info" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="已选城市" />
+        <HorizontalScrollView android:id="@id/horizontal_scrollview" android:visibility="gone" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:id="@id/selected_cities_content" android:paddingLeft="5.0dp" android:paddingTop="10.0dp" android:paddingRight="5.0dp" android:paddingBottom="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </HorizontalScrollView>
+        <RelativeLayout android:id="@id/search_layout" android:background="@color/select_city__list_section_header_background_color" android:layout_width="match_parent" android:layout_height="48.0dp">
+            <EditText android:textSize="14.0dp" android:textColor="#333333" android:textColorHint="#666666" android:id="@id/edt_search_q" android:background="@drawable/core__round_corner_white_shape" android:paddingLeft="12.0dp" android:layout_width="match_parent" android:layout_height="30.0dp" android:layout_marginLeft="10.0dp" android:layout_marginRight="10.0dp" android:hint="请输入城市名称" android:singleLine="true" android:maxLength="5" android:drawableLeft="@drawable/core__ic_search" android:drawablePadding="9.0dp" android:layout_centerVertical="true" android:textCursorDrawable="@null" />
+        </RelativeLayout>
+        <cn.mucang.android.selectcity.ui.SectionHeaderView android:id="@id/gps_locating_header" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="自动定位" />
+        <include android:id="@id/gps_locating_row" layout="@layout/select_city__gps_locating_row" />
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <cn.mucang.android.wuhan.widget.PinnedHeaderListView android:scrollbarThumbVertical="@drawable/select_city__icon_list_scroll" android:id="@id/provinces" android:descendantFocusability="afterDescendants" android:layout_width="match_parent" android:layout_height="match_parent" />
+            <cn.mucang.android.selectcity.ui.LetterIndexBar android:id="@id/letter_index_bar" android:layout_width="20.0dp" android:layout_height="match_parent" android:layout_marginTop="100.0dp" android:layout_marginRight="9.0dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <include android:id="@id/empty_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" layout="@layout/ui_framework__view_empty" />
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>
