@@ -1,0 +1,27 @@
+{
+  "apk_abi": "armeabi-v7a",
+  "api34": {
+    "abi_list": "arm64-v8a",
+    "install_success": false,
+    "error": "INSTALL_FAILED_NO_MATCHING_ABIS",
+    "network_disabled_before_attempt": true,
+    "dedicated_avd": true,
+    "app_executed": false
+  },
+  "api30_official_image": {
+    "url": "https://dl.google.com/android/repository/sys-img/google_apis/arm64-v8a-30_r16.zip",
+    "sha1_verified": "0e66987d6b4db2e278af83d453ce5d74a7e6ced3",
+    "build_prop": {
+      "ro.build.version.release": "11",
+      "ro.product.cpu.abi": "arm64-v8a",
+      "ro.product.cpu.abilist": "arm64-v8a",
+      "ro.product.cpu.abilist32": "",
+      "ro.product.cpu.abilist64": "arm64-v8a"
+    },
+    "emulator_started": false,
+    "reason": "Static build.prop also has empty 32-bit ABI list; incompatible image was not booted"
+  },
+  "runtime_verified": false,
+  "required_environment": "Android device/system with armeabi-v7a support; original device unavailable per user",
+  "scope": "Build/signature/content verified; app startup and teaching flows not verified."
+}
