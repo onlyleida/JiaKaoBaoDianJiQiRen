@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cn.mucang.android.ui.framework.fragment.viewpager.tabhost.bubble.BubbleView android:orientation="vertical" android:layout_width="100.0dp" android:layout_height="48.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="15.0sp" android:textColor="@color/ui_framework__tab_bubble_text_selector" android:id="@id/tab_bubble" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="48.0dp" />
+</cn.mucang.android.ui.framework.fragment.viewpager.tabhost.bubble.BubbleView>

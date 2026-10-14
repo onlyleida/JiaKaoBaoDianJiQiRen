@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:background="#fff" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:layout_width="match_parent" android:layout_height="42.0dp">
+        <EditText android:id="@id/edit" android:paddingLeft="2.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="输入关键词过滤" />
+    </LinearLayout>
+    <ListView android:id="@id/list_view" android:layout_width="match_parent" android:layout_height="match_parent" />
+</LinearLayout>

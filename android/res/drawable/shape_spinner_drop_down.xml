@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <solid android:color="#dbdddf" />
+            <corners android:radius="@dimen/dp_2" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#f2f5fa" />
+            <corners android:radius="@dimen/dp_2" />
+        </shape>
+    </item>
+    <item android:gravity="right|center" android:right="6.0dp">
+        <bitmap android:gravity="end" android:src="@mipmap/spinner_arrow_dowm" />
+    </item>
+</layer-list>

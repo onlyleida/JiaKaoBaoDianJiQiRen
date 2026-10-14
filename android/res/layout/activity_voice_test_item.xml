@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:padding="@dimen/dp_20" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/grade_name" android:padding="@dimen/dp_20" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/voice_list" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/voice1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="语音1" />
+        <Button android:id="@id/voice2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="语音2" />
+        <Button android:id="@id/voice3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="语音3" />
+        <Button android:id="@id/voice4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="语音4" />
+        <Button android:id="@id/voice5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="语音5" />
+    </LinearLayout>
+</LinearLayout>

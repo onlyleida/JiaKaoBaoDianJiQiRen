@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="@dimen/dp_88"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/dp_22" android:textColor="@color/color_008aff" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/stepName" android:background="@drawable/selector_e5f3ff_without_corner" android:layout_width="match_parent" android:layout_height="match_parent" android:text="我的路线" android:drawableLeft="@drawable/selector_008affx5x88_without_corner" />
+</FrameLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/dp_16" android:paddingTop="@dimen/dp_8" android:paddingBottom="@dimen/dp_8" android:layout_width="match_parent" android:layout_height="wrap_content" android:layoutDirection="ltr"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/dp_18" android:textColor="#ff333333" android:id="@id/nameTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="车型：" />
+    <TextView android:textSize="@dimen/dp_18" android:textColor="#ff333333" android:id="@id/valueTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1.09" />
+</LinearLayout>

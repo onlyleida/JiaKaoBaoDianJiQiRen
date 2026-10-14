@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <cn.mucang.android.ui.widget.pulltorefresh.PullToRefreshListView android:orientation="vertical" android:id="@id/common_fragment_listview" android:background="@color/ui_framework__async_load_list_bg_color" android:layout_width="match_parent" android:layout_height="match_parent" android:divider="@color/ui_framework__async_load_list_divider" android:dividerHeight="1.0dp" />
+    <FrameLayout android:id="@id/ui_framework__loading_container" android:background="@color/ui_framework__async_load_list_bg_color" android:layout_width="match_parent" android:layout_height="match_parent" />
+</FrameLayout>

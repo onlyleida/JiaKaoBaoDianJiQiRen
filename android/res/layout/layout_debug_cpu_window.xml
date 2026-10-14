@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/ivBg" android:layout_width="100.0dp" android:layout_height="100.0dp" android:src="@drawable/shape_debug_cpu_float_w" />
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="16.0sp" android:textColor="#fff" android:gravity="center" android:id="@id/tvNetMs" android:visibility="gone" android:layout_width="100.0dp" android:layout_height="wrap_content" android:lines="1" />
+        <TextView android:textSize="16.0sp" android:textColor="#fff" android:gravity="center" android:id="@id/tvCpu" android:layout_width="100.0dp" android:layout_height="wrap_content" android:lines="1" />
+        <TextView android:textSize="16.0sp" android:textColor="#fff" android:gravity="center" android:id="@id/tvMem" android:layout_width="100.0dp" android:layout_height="wrap_content" android:lines="1" />
+    </LinearLayout>
+</FrameLayout>

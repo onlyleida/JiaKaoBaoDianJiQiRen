@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/image" android:layout_width="@dimen/rpx_180" android:layout_height="@dimen/rpx_180" android:layout_marginLeft="@dimen/rpx_50" android:layout_marginRight="@dimen/rpx_50" />
+    <TextView android:textSize="@dimen/text_36" android:textColor="#707c8c" android:id="@id/text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/rpx_24" android:text="@string/teachbase_engine_start" />
+</LinearLayout>
