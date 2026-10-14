@@ -1,0 +1,24 @@
+.class public Lcn/mucang/jiakaoyi/uilib/socket/model/LogUploadRequest;
+.super Lcn/mucang/jiakaoyi/uilib/socket/SocketModel;
+.source "SourceFile"
+
+
+# instance fields
+.field public cmdType:B
+
+.field public endTime:J
+
+.field public startTime:J
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 1
+
+    const/16 v0, 0xb0
+
+    .line 1
+    invoke-direct {p0, v0}, Lcn/mucang/jiakaoyi/uilib/socket/SocketModel;-><init>(I)V
+
+    return-void
+.end method
