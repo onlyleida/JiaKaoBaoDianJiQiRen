@@ -51,6 +51,8 @@ def main():
     log = None
     backend = None
     backend_log = None
+    live_log = None
+    logcat_process = None
 
     def run(args, label=None, timeout=60, check=True, stdin=None):
         result = subprocess.run([str(a) for a in args], env=env, input=stdin,
@@ -210,6 +212,10 @@ def main():
                 run(adb + ["shell", "appops", "set", "--uid", PACKAGE, permission, "allow"],
                     "appop-" + permission, check=False)
         run(adb + ["logcat", "-c"])
+        live_log = (out / "logcat-live.txt").open("w")
+        logcat_process = subprocess.Popen(adb + ["logcat", "-v", "threadtime"], env=env,
+                                         stdout=live_log, stderr=subprocess.STDOUT)
+        launch_started = time.monotonic()
         try:
             launch = run(adb + ["shell", "am", "start", "-W", "-n", COMPONENT],
                          "launch", check=False)
@@ -226,6 +232,7 @@ def main():
             (out / "launch.txt").write_text(partial + "\nHost wait timed out; collecting device state.\n")
         time.sleep(10)
         screenshot("screen-after-10s.png")
+        report["app_pid_at_first_capture"] = run(adb + ["shell", "pidof", PACKAGE], check=False).stdout.strip()
         if INTERACT:
             startup_clicks()
         time.sleep(35)
@@ -241,20 +248,55 @@ def main():
                     "crash-log", check=False).stdout
         report["crash_buffer_contains_package"] = PACKAGE in crash
         run(adb + ["logcat", "-d", "-v", "threadtime", "-t", "5000"], "logcat", check=False)
-        logcat = (out / "logcat.txt").read_text()
-        report["process_death_lines"] = [line for line in logcat.splitlines()
-                                          if "Process " + PACKAGE in line and "has died" in line]
+        logcat = (out / "logcat-live.txt").read_text()
+        deaths = [line for line in logcat.splitlines() if "Process " + PACKAGE in line and "has died" in line]
+        report["process_death_count"] = len(deaths)
+        report["process_death_lines"] = deaths[-50:]
+        report["observed_seconds_since_launch"] = round(time.monotonic() - launch_started, 1)
+        report["same_process_across_captures"] = bool(report["app_pid_after_45s"]) and (
+            report["app_pid_after_45s"] == report["app_pid_at_first_capture"])
+        report["stable_process_observed"] = (report["same_process_across_captures"]
+                                               and not report["process_death_lines"]
+                                               and not report["crash_buffer_contains_package"])
         screenshot("screen-after-45s.png")
         run(adb + ["pull", "/data/tombstones", str(out / "tombstones")],
             "tombstones-pull", timeout=30, check=False)
         run(adb + ["shell", "uiautomator", "dump", "/sdcard/ci-window.xml"],
             "ui-dump", timeout=30, check=False)
         run(adb + ["pull", "/sdcard/ci-window.xml", str(out / "ui.xml")], check=False)
+        if os.environ.get("JIAKAO_NATIVE_PAGES") == "1" and report["stable_process_observed"]:
+            # Inspect an existing native page independently of the unavailable
+            # Unity assets. This is diagnostic navigation, not normal startup.
+            settings_component = PACKAGE + "/cn.mucang.jiakaoyi.uilib.ui.setting.SettingActivity"
+            result = run(adb + ["shell", "am", "start", "-W", "-n", settings_component,
+                                "--ei", "key.loadType", "0"], "native-settings-launch", check=False)
+            time.sleep(10)
+            screenshot("screen-native-settings.png")
+            run(adb + ["shell", "uiautomator", "dump", "/sdcard/ci-settings.xml"],
+                "native-settings-dump", check=False, timeout=25)
+            run(adb + ["pull", "/sdcard/ci-settings.xml", str(out / "native-settings-ui.xml")], check=False)
+            after = run(adb + ["shell", "dumpsys", "activity", "activities"], "native-settings-activity", check=False).stdout
+            pid = run(adb + ["shell", "pidof", PACKAGE], check=False).stdout.strip()
+            report["native_settings"] = dict(navigation="explicit root adb activity start for native UI debugging",
+                                             launch_exit_code=result.returncode, pid=pid,
+                                             same_process=pid == report["app_pid_after_45s"] and bool(pid),
+                                             resumed_lines=[line.strip() for line in after.splitlines()
+                                                            if "ResumedActivity" in line])
+            run(adb + ["logcat", "-b", "crash", "-d", "-v", "threadtime"], "crash-after-native-settings", check=False)
         report["status"] = "evidence_collected"
     except (OSError, RuntimeError, subprocess.TimeoutExpired) as error:
         report["status"] = "check_error"
         report["error"] = str(error)
     finally:
+        if logcat_process is not None:
+            logcat_process.terminate()
+            try:
+                logcat_process.wait(timeout=5)
+            except subprocess.TimeoutExpired:
+                logcat_process.kill()
+                logcat_process.wait(timeout=5)
+        if live_log is not None:
+            live_log.close()
         if backend is not None:
             backend.terminate()
             try:

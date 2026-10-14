@@ -20,6 +20,7 @@ jobs:
       JIAKAO_RUNTIME_API: ${{ inputs.api }}
       JIAKAO_LOCAL_BACKEND: '1'
       JIAKAO_STARTUP_INTERACT: '1'
+      JIAKAO_NATIVE_PAGES: '1'
       JIAKAO_RUNTIME_APK: dist/jiakaoyi-coach-11.6.5-emulator-debug.apk
     steps:
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
@@ -74,7 +75,7 @@ jobs:
           (cd dist/runtime && zip -q -r "../$evidence-evidence.zip" . -x 'backend-data/*')
           cp dist/runtime/ci-runtime-verification.json "dist/$evidence-verification.json"
           gh release upload apk-11.6.5-rebuild "dist/$evidence-evidence.zip" "dist/$evidence-verification.json" --clobber
-          for shot in dist/runtime/screen-after-*.png; do
+          for shot in dist/runtime/screen-*.png; do
             if [ -f "$shot" ]; then
               target="dist/emulator-api$JIAKAO_RUNTIME_API-$(basename "$shot")"
               cp "$shot" "$target"

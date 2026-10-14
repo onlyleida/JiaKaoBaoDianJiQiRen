@@ -4,6 +4,7 @@ import argparse
 import hashlib
 import json
 import os
+import re
 from pathlib import Path
 import shutil
 import subprocess
@@ -105,6 +106,13 @@ def main():
             raise ValueError(f"Unexpected DEX files: {dex}")
         coverage = json.loads((ROOT / "reports" / "apk-entry-coverage.json").read_text())
         overrides = json.loads(args.payload_overrides.read_text()) if args.payload_overrides else {}
+        signature_text = (output / "signature.txt").read_text()
+        certificate_match = re.search(r"Signer #1 certificate SHA-256 digest: ([0-9a-fA-F]+)", signature_text)
+        signer_sha = certificate_match.group(1).lower() if certificate_match else None
+        for name, override in overrides.items():
+            expected_cert = override.get("debugCertificateSha256")
+            if expected_cert and signer_sha != expected_cert:
+                raise ValueError(f"APK signer does not match embedded debug certificate: {name}")
         applied = []
         changed = []
         for entry in coverage["entries"]:
@@ -126,7 +134,7 @@ def main():
     (output / (APK_NAME + ".sha256")).write_text(f"{sha}  {APK_NAME}\n")
     report = {"apk": APK_NAME, "sha256": sha, "bytes": signed.stat().st_size,
               "apktool": APKTOOL_VERSION, "build_tools": args.build_tools,
-              "signature_verified": True, "zip_alignment_verified": True,
+              "signature_verified": True, "signer_certificate_sha256": signer_sha, "zip_alignment_verified": True,
               "packaged_files_byte_identical_to_extraction": counts, "dex_files": dex,
               "original_preserved_payload_verified": not bool(applied),
               "intentional_payload_patches_verified": overrides,
