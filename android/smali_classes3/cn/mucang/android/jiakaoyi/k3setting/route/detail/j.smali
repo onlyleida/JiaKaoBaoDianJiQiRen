@@ -1,0 +1,42 @@
+.class public final synthetic Lcn/mucang/android/jiakaoyi/k3setting/route/detail/j;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Landroidx/lifecycle/a0;
+
+
+# instance fields
+.field public final synthetic a:Lcn/mucang/android/jiakaoyi/k3setting/route/detail/RouteGatherMapFragment;
+
+.field public final synthetic b:Lcn/mucang/android/jiakaoyi/k3setting/route/detail/RouteMapViewModel;
+
+
+# direct methods
+.method public synthetic constructor <init>(Lcn/mucang/android/jiakaoyi/k3setting/route/detail/RouteGatherMapFragment;Lcn/mucang/android/jiakaoyi/k3setting/route/detail/RouteMapViewModel;)V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lcn/mucang/android/jiakaoyi/k3setting/route/detail/j;->a:Lcn/mucang/android/jiakaoyi/k3setting/route/detail/RouteGatherMapFragment;
+
+    iput-object p2, p0, Lcn/mucang/android/jiakaoyi/k3setting/route/detail/j;->b:Lcn/mucang/android/jiakaoyi/k3setting/route/detail/RouteMapViewModel;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final onChanged(Ljava/lang/Object;)V
+    .locals 2
+
+    iget-object v0, p0, Lcn/mucang/android/jiakaoyi/k3setting/route/detail/j;->a:Lcn/mucang/android/jiakaoyi/k3setting/route/detail/RouteGatherMapFragment;
+
+    iget-object v1, p0, Lcn/mucang/android/jiakaoyi/k3setting/route/detail/j;->b:Lcn/mucang/android/jiakaoyi/k3setting/route/detail/RouteMapViewModel;
+
+    check-cast p1, Ljava/util/List;
+
+    invoke-static {v0, v1, p1}, Lcn/mucang/android/jiakaoyi/k3setting/route/detail/RouteGatherMapFragment;->N(Lcn/mucang/android/jiakaoyi/k3setting/route/detail/RouteGatherMapFragment;Lcn/mucang/android/jiakaoyi/k3setting/route/detail/RouteMapViewModel;Ljava/util/List;)V
+
+    return-void
+.end method
