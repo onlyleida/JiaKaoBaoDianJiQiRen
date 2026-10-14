@@ -23,5 +23,32 @@
   },
   "runtime_verified": false,
   "required_environment": "Android device/system with armeabi-v7a support; original device unavailable per user",
-  "scope": "Build/signature/content verified; app startup and teaching flows not verified."
+  "scope": "Build/signature/content and installation verified; normal startup and teaching flows not achieved. See ci-runtime-review.json and raw reports.",
+  "cloud_apk_sha256": "a11eee996432ec7748761c684f223d3ba7eb2fb399d76a5b14dde4588d4e5180",
+  "cloud_api30": {
+    "run_url": "https://github.com/onlyleida/JiaKaoBaoDianJiQiRen/actions/runs/38519265729",
+    "installation_success": true,
+    "screenshot_45s_visually_reviewed": true,
+    "observed_screen": "Android launcher",
+    "process_alive_after_observation": false,
+    "failure": "SIGSEGV with libndk_translation.so ExecuteGuest/RunGuestCall in native stack",
+    "root_cause_confirmed": false
+  },
+  "cloud_api28": {
+    "run_url": "https://github.com/onlyleida/JiaKaoBaoDianJiQiRen/actions/runs/38520513285",
+    "installation_success": true,
+    "screenshot_45s_visually_reviewed": true,
+    "observed_screen": "Blank white screen and Android navigation bar",
+    "launch_command_timed_out": true,
+    "process_deaths_in_collected_log": 420,
+    "raw_pid_snapshot_does_not_establish_stable_process": true,
+    "evidence_excerpt": [
+      "10-14 06:11:39.001  2003  4644 I ActivityManager: Process cn.mucang.android.jiakaoyi.teachingk2 (pid 5332) has died: fore TOP ",
+      "10-14 06:11:39.232  2003  4407 I ActivityManager: Process cn.mucang.android.jiakaoyi.teachingk2 (pid 5360) has died: fore TOP ",
+      "10-14 06:13:15.891  2003  4649 I ActivityManager: Process cn.mucang.android.jiakaoyi.teachingk2 (pid 14736) has died: fore TOP ",
+      "10-14 06:13:16.111  2003  4649 I ActivityManager: Process cn.mucang.android.jiakaoyi.teachingk2 (pid 14758) has died: fore TOP "
+    ],
+    "root_cause_confirmed": false
+  },
+  "installation_verified": true
 }

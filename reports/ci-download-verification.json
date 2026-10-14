@@ -1,0 +1,20 @@
+{
+  "cloud_apk_sha256": "a11eee996432ec7748761c684f223d3ba7eb2fb399d76a5b14dde4588d4e5180",
+  "cloud_apk_bytes": 111994225,
+  "build_report_checksum_matches": true,
+  "checksum_file_matches": true,
+  "zip_crc_verified": true,
+  "original_payload_files_sha256_verified": 490,
+  "dex_byte_identical_to_verified_local_build": {
+    "classes.dex": true,
+    "classes2.dex": true,
+    "classes3.dex": true,
+    "classes4.dex": true,
+    "classes5.dex": true,
+    "classes6.dex": true
+  },
+  "resource_table_byte_identical_to_verified_local_build": true,
+  "manifest_byte_identical_to_verified_local_build": true,
+  "downloaded_apk_signature_verified_locally": true,
+  "downloaded_apk_zip_alignment_verified_locally": true
+}

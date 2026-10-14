@@ -15,7 +15,7 @@
 | 托管程序集 | 105/105 个 DLL 已导出 C#，0 次导出失败；334 条显式 DLL 引用存在且为相对路径 | `reports/managed-full-export.json` |
 | 对齐与签名 | zipalign 检查成功、apksigner 验证通过 | `reports/rebuilt-alignment.txt`，`reports/rebuilt-signature.txt` |
 
-签名 APK：`jiakaoyi-coach-11.6.5-rebuilt-debug.apk`，111,990,129 字节。
+本地签名 APK：`jiakaoyi-coach-11.6.5-rebuilt-debug.apk`，111,990,129 字节。
 
 SHA256：`a9e04523d27a7ffc58d87e7988fa49463764a9cf4ea12935e223f3986d1b2acb`。
 
@@ -27,9 +27,35 @@ SHA256：`a9e04523d27a7ffc58d87e7988fa49463764a9cf4ea12935e223f3986d1b2acb`。
 
 随后下载了 Google 官方 Android 11 / API 30 ARM64 r16 镜像，并核对官方 SHA1 `0e66987d6b4db2e278af83d453ce5d74a7e6ced3`。镜像的 `build.prop` 同样声明 `ro.product.cpu.abilist=arm64-v8a`、`ro.product.cpu.abilist32=`，因此没有启动这个同样不兼容的镜像。
 
-**最终运行结论：重建和签名成功，尚未验证安装成功或启动首屏。** 本次唯一安装尝试在 API 34 的纯 64 位环境被系统拒绝，目标 App 未执行。需要另有支持 `armeabi-v7a` 的安卓设备或系统；用户目前没有原运行设备。没有通过伪造 ABI 或删除原生库掩盖兼容问题。记录见 `reports/runtime-validation.json`。
+**本机测试结论：纯 ARM64 系统不兼容，未进入启动检查。** 本机安装尝试在 API 34 的纯 64 位环境被系统拒绝，目标 App 未执行。需要另有支持 `armeabi-v7a` 的安卓设备或系统；用户目前没有原运行设备。没有通过伪造 ABI 或删除原生库掩盖兼容问题。记录见 `reports/runtime-validation.json`。
 
 Android 官方说明 API 31 及以上的模拟器系统镜像仅支持 64 位，见 [Support 64-bit architectures](https://developer.android.com/games/optimize/64-bit)。更早的 ARM64 镜像也必须检查其实际 ABI 列表，不能仅凭 Android 版本认定支持 ARM32。
+
+## 云端重建与交付 APK
+
+[构建运行 38519265729](https://github.com/onlyleida/JiaKaoBaoDianJiQiRen/actions/runs/38519265729) 使用提交 `52da4050a610ee243863fbfb64991d43f2d3596b`、Ubuntu 24.04 和 JDK 21 成功执行同一构建脚本。SDK 命令行工具从 [Android 官方下载页](https://developer.android.com/studio) 对应的固定版本下载并校验 SHA256。
+
+Release 中的云端 APK 为 111,994,225 字节，SHA256：`a11eee996432ec7748761c684f223d3ba7eb2fb399d76a5b14dde4588d4e5180`。它使用云端新生成的调试证书，因此哈希和本地 APK 不同。
+
+下载后再次验证 ZIP CRC、校验值、签名和 zipalign；490 个原始载荷 SHA256 均一致。六个 DEX、`resources.arsc` 和 `AndroidManifest.xml` 与本地已验证重建版本逐字节一致，因此上表的 DEX/资源内容校验也适用于本次云端文件。证据：`reports/ci-build-verification.json`、`reports/ci-download-verification.json`、`reports/ci-build-run.json`。
+
+## 云端 Android 11 安装与启动
+
+官方 `system-images;android-30;google_apis;x86` r16 实测 ABI 为 `x86,armeabi-v7a,armeabi`。在全新 AVD 中，安装前关闭无线网络并设置 IPv4/IPv6 OUTPUT 拒绝非 loopback 流量；安装返回 Success。
+
+启动命令被系统接收，但目标进程随即 SIGSEGV。原生栈包含 `libndk_translation.so` 的 `ExecuteGuest`/`RunGuestCall`；45 秒后目标进程已不存在，前台为系统桌面。已查看 45 秒截图，未观察到应用正常首屏。仅凭此栈不能确定具体 ARM 库或把问题完全归因于模拟器；[Android 官方已记录部分 ARMv7 二进制在 Android 11 转译镜像上失败](https://developer.android.com/studio/releases/emulator#support_for_arm_binaries_on_android_9_and_11_system_images)。
+
+报告和原生崩溃栈：`reports/ci-runtime-api30-verification.json`、`reports/ci-runtime-api30-crash.txt`。完整日志和截图在 Release 的 `ci-runtime-evidence.zip`。`evidence_collected` / 绿色工作流表示采集完成，不代表启动或完整教学功能通过。
+
+## 云端 Android 9 对照检查
+
+[最终检查 38520513285](https://github.com/onlyleida/JiaKaoBaoDianJiQiRen/actions/runs/38520513285) 复用上述同一 APK，不重新打包。官方 API 28 Google APIs x86 镜像实测同样包含 `armeabi-v7a`；安装返回 Success。启动命令等待 60 秒超时，随后继续采集。
+
+已查看截图：只有白色画面和 Android 导航栏。原始报告虽然在采样瞬间获得 PID，并记录目标 Activity 为 resumed，但日志显示目标进程反复退出（Zygote 退出码 1）并被重新拉起，因此不能把单次 PID/前台状态当作稳定运行。该轮 crash buffer 没有目标包记录，也不能据此声称应用正常；捕获的 tombstone 属于系统 SurfaceFlinger，不能归为目标应用崩溃。
+
+`screen-after-10s/45s` 的时间以启动命令返回或超时后开始计算。报告：`reports/ci-runtime-api28-verification.json`；综合判读：`reports/ci-runtime-review.json`。完整原始证据和截图在 Release 的 `ci-runtime-api28-evidence.zip`。
+
+**最终结论：APK 内部内容已完整提取并重建，签名、资源/DEX 内容和安装通过；两个云端转译环境均未进入正常应用首屏，完整教学功能未验证。** 当前证据不足以判定具体原生库、签名检查或转译兼容问题的根因。用户没有原运行设备，后续仍需真正支持 ARM32 的设备或可正常执行这些原生库的环境，以及包外资源/硬件/后台才能继续功能验证。
 
 ## 保留的边界
 

@@ -1,0 +1,36 @@
+{
+  "status": "evidence_collected",
+  "source_commit": "105bd67ade5475b03fee749f46c184a15970783b",
+  "image": "system-images;android-28;google_apis;x86",
+  "serial": "emulator-5562",
+  "package": "cn.mucang.android.jiakaoyi.teachingk2",
+  "apk_sha256": "a11eee996432ec7748761c684f223d3ba7eb2fb399d76a5b14dde4588d4e5180",
+  "screenshots_saved": [
+    "screen-after-10s.png",
+    "screen-after-45s.png"
+  ],
+  "screenshot_errors": [],
+  "first_screen_verified": false,
+  "full_teaching_functionality_tested": false,
+  "abis": [
+    "x86",
+    "armeabi-v7a",
+    "armeabi"
+  ],
+  "network_controls": [
+    "airplane mode",
+    "wifi/mobile data disabled",
+    "guest IPv4/IPv6 non-loopback OUTPUT rejected before APK installation"
+  ],
+  "installation_success": true,
+  "launch_command_timed_out": true,
+  "launch_accepted": false,
+  "app_pid_after_45s": "14780",
+  "process_alive_after_45s": true,
+  "resumed_activity_lines": [
+    "mResumedActivity: ActivityRecord{9b611ed u0 cn.mucang.android.jiakaoyi.teachingk2/.ui.splash.TeachSplashActivity t6}",
+    "ResumedActivity: ActivityRecord{9b611ed u0 cn.mucang.android.jiakaoyi.teachingk2/.ui.splash.TeachSplashActivity t6}"
+  ],
+  "app_resumed_after_45s": true,
+  "crash_buffer_contains_package": false
+}

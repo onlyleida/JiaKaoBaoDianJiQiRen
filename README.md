@@ -19,14 +19,14 @@
 
 ## 下载与运行
 
-重建 APK 和 SHA256 文件放在 [Releases](https://github.com/onlyleida/JiaKaoBaoDianJiQiRen/releases)。这是使用本地调试证书重新签名的测试安装包，和原厂签名不同，不能直接覆盖原厂安装。请使用独立测试设备或干净模拟器，不要为了安装而删除已有设备数据。
+重建 APK 和 SHA256 文件放在 [Releases](https://github.com/onlyleida/JiaKaoBaoDianJiQiRen/releases)。这是使用新调试证书重新签名的测试安装包，和原厂签名不同，不能直接覆盖原厂安装。请使用独立测试设备或干净模拟器，不要为了安装而删除已有设备数据。
 
 ```sh
 adb -s YOUR_DEVICE_SERIAL install jiakaoyi-coach-11.6.5-rebuilt-debug.apk
 adb -s YOUR_DEVICE_SERIAL shell am start -n cn.mucang.android.jiakaoyi.teachingk2/cn.mucang.android.jiakaoyi.teachingk2.ui.splash.TeachSplashActivity
 ```
 
-先用 `adb -s YOUR_DEVICE_SERIAL shell getprop ro.product.cpu.abilist` 确认其中包含 `armeabi-v7a`。仅 ARM64 的系统不能加载这些 32 位原生库。**本机模拟器因 ABI 不匹配拒绝安装，尚未验证安装成功或启动成功。** 详细结果见 [docs/VALIDATION.md](docs/VALIDATION.md)。
+先用 `adb -s YOUR_DEVICE_SERIAL shell getprop ro.product.cpu.abilist` 确认其中包含 `armeabi-v7a`。仅 ARM64 的系统不能加载这些 32 位原生库。**已在云端 Android 9/11 ARM 转译模拟器成功安装，但正常运行未通过：Android 11 启动后崩溃，Android 9 白屏且进程反复退出、重启。** 详细结果见 [docs/VALIDATION.md](docs/VALIDATION.md)。
 
 完整教学流程依赖机器人硬件通信、设备绑定、后台服务和另行下载的 Unity/场地资源。用户目前没有已运行设备，因此本仓库交付范围为 **原 APK 内的全部内容及可重建安装包**，不能据此宣称完整教学功能已经运行。详细缺失项与代码位置见 [docs/RUNTIME_DEPENDENCIES.md](docs/RUNTIME_DEPENDENCIES.md)。
 
@@ -44,7 +44,7 @@ python3 scripts/build.py
 
 macOS 的 SDK 通常位于 `$HOME/Library/Android/sdk`。也可传入 `--sdk`、`--java-home`、`--build-tools` 和 `--output-dir`。默认产物在 `dist/`：签名 APK、SHA256、打包日志和验证报告。
 
-仓库 Actions 中的 `Build reconstructed APK` 可以手动运行同一脚本，并将结果附到现有 `apk-11.6.5-rebuild` Release。工作流没有定时或 push 触发器。每次使用新调试密钥，云端 APK 与本地 APK 的证书和 SHA256 可不同；下载文件以同名 `.sha256` 和 Release 内的 `ci-build-verification.json` 为准。
+仓库 Actions 中的 `Build reconstructed APK` 可以手动运行同一脚本，并将结果附到现有 `apk-11.6.5-rebuild` Release。`Check release APK runtime` 使用 Release 内同一 APK，在 Android 9 或 11 的新建模拟器中收集离线安装、启动、崩溃与截图证据。工作流显示成功代表构建/证据采集步骤完成，必须查看运行报告才能判断应用是否启动成功。工作流没有定时或 push 触发器。每次使用新调试密钥，云端 APK 与本地 APK 的证书和 SHA256 可不同；下载文件以同名 `.sha256` 和 Release 内的 `ci-build-verification.json` 为准。
 
 脚本重新汇编全部 6 份 Smali、编译 Android 资源、打包所有 assets/lib/unknown 文件，完成 zipalign、调试签名与 apksigner 验证，再对照原包清单逐项校验 490 个原样保留文件。调试密钥在 `.cache/` 本地生成，不提交 Git；不同机器新生成的密钥不同。产物包含时间与签名差异，不保证每次构建的 APK 哈希相同。
 
@@ -57,6 +57,7 @@ macOS 的 SDK 通常位于 `$HOME/Library/Android/sdk`。也可传入 `--sdk`、
 | `java-fallback/` | 124 个有反编译问题的文件的 simple 模式补充 |
 | `unity-csharp/` | 全部 105 个托管程序集的 C# 参考代码与项目文件 |
 | `scripts/build.py` | 实际验证过的打包、签名、内容校验脚本 |
+| `scripts/runtime_smoke.py` | 专用云端模拟器中的安装、启动与截图证据采集 |
 | `reports/` | 原包/重建包覆盖率、签名、工具结果和完整 REA 证据 |
 | `docs/` | 验证范围、运行依赖和入口索引 |
 

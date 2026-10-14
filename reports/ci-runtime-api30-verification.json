@@ -1,0 +1,36 @@
+{
+  "status": "evidence_collected",
+  "source_commit": "52da4050a610ee243863fbfb64991d43f2d3596b",
+  "image": "system-images;android-30;google_apis;x86",
+  "serial": "emulator-5562",
+  "package": "cn.mucang.android.jiakaoyi.teachingk2",
+  "apk_sha256": "a11eee996432ec7748761c684f223d3ba7eb2fb399d76a5b14dde4588d4e5180",
+  "screenshots_saved": [
+    "screen-after-10s.png",
+    "screen-after-45s.png"
+  ],
+  "screenshot_errors": [],
+  "first_screen_verified": false,
+  "full_teaching_functionality_tested": false,
+  "abis": [
+    "x86",
+    "armeabi-v7a",
+    "armeabi"
+  ],
+  "network_controls": [
+    "airplane mode",
+    "wifi/mobile data disabled",
+    "guest IPv4/IPv6 non-loopback OUTPUT rejected before APK installation"
+  ],
+  "installation_success": true,
+  "launch_command_exit_code": 0,
+  "launch_accepted": true,
+  "app_pid_after_45s": "",
+  "process_alive_after_45s": false,
+  "resumed_activity_lines": [
+    "mResumedActivity: ActivityRecord{91dfe45 u0 com.google.android.apps.nexuslauncher/.NexusLauncherActivity t8}",
+    "ResumedActivity: ActivityRecord{91dfe45 u0 com.google.android.apps.nexuslauncher/.NexusLauncherActivity t8}"
+  ],
+  "app_resumed_after_45s": false,
+  "crash_buffer_contains_package": true
+}

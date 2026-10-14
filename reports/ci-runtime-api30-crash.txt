@@ -1,0 +1,18 @@
+--------- beginning of crash
+10-14 05:58:03.236  3969  3969 F libc    : Fatal signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr 0x123928 in tid 3969 (aoyi.teachingk2), pid 3969 (aoyi.teachingk2)
+10-14 05:58:03.295  4018  4018 F DEBUG   : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+10-14 05:58:03.295  4018  4018 F DEBUG   : Build fingerprint: 'google/sdk_gphone_x86/generic_x86_arm:11/RSR1.240422.006/12134477:userdebug/dev-keys'
+10-14 05:58:03.295  4018  4018 F DEBUG   : Revision: '0'
+10-14 05:58:03.295  4018  4018 F DEBUG   : ABI: 'x86'
+10-14 05:58:03.295  4018  4018 F DEBUG   : Timestamp: 2026-10-14 05:58:03+0000
+10-14 05:58:03.295  4018  4018 F DEBUG   : pid: 3969, tid: 3969, name: aoyi.teachingk2  >>> cn.mucang.android.jiakaoyi.teachingk2 <<<
+10-14 05:58:03.295  4018  4018 F DEBUG   : uid: 10167
+10-14 05:58:03.295  4018  4018 F DEBUG   : signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr 0x123928
+10-14 05:58:03.295  4018  4018 F DEBUG   :     eax 00123928  ebx e12f7034  ecx 00003718  edx e1137110
+10-14 05:58:03.295  4018  4018 F DEBUG   :     edi ef3f7030  esi bcbd3718
+10-14 05:58:03.295  4018  4018 F DEBUG   :     ebp ffbe9c68  esp ffbe9c00  eip e1192040
+10-14 05:58:03.393  4018  4018 F DEBUG   : backtrace:
+10-14 05:58:03.393  4018  4018 F DEBUG   :       #00 pc 000cb040  /system/lib/libndk_translation.so (ndk_translation::ExecuteGuest(ndk_translation::ProcessState*)+288) (BuildId: 32b46cd169ee83519dc60c614f156edb)
+10-14 05:58:03.393  4018  4018 F DEBUG   :       #01 pc 000cb27a  /system/lib/libndk_translation.so (ndk_translation::(anonymous namespace)::RunGuestCall(unsigned int, int, int, unsigned int*)+266) (BuildId: 32b46cd169ee83519dc60c614f156edb)
+10-14 05:58:03.394  4018  4018 F DEBUG   :       #02 pc 000cb3da  /system/lib/libndk_translation.so (ndk_translation::RunGuestCall(unsigned int, ndk_translation::GuestArgumentBuffer*)+42) (BuildId: 32b46cd169ee83519dc60c614f156edb)
+10-14 05:58:03.394  4018  4018 F DEBUG   :       #03 pc 0000024b  <anonymous:c161c000>
