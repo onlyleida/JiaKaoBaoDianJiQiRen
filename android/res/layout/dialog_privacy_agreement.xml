@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/shape_privacy_agreement" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="温馨提示" android:layout_centerInParent="true" style="@style/privacy_agreement_title" />
+        <ImageView android:id="@id/closeIv" android:padding="@dimen/dp_18" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/dialog_close" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:id="@id/line" android:background="#e8e8e8" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/dp_1" android:layout_marginBottom="@dimen/dp_30" />
+    <FrameLayout android:id="@id/container" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="match_parent" style="@style/privacy_agreement_bottom">
+        <TextView android:textColor="#008aff" android:gravity="center" android:id="@id/exit" android:background="@drawable/shape_r100_s1_008aff" android:text="放弃并退出" style="@style/privacy_agreement_button" />
+        <TextView android:textColor="#ffffff" android:gravity="center" android:id="@id/agree" android:background="@drawable/shape_008aff_r100" android:layout_marginLeft="@dimen/dp_40" android:text="同意并使用" style="@style/privacy_agreement_button" />
+    </LinearLayout>
+</LinearLayout>

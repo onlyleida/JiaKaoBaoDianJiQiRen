@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/dp_20" android:textStyle="bold" android:textColor="#333" android:id="@id/tv_step_name" android:paddingLeft="@dimen/dp_24" android:paddingTop="@dimen/dp_22" android:paddingBottom="@dimen/dp_22" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <LinearLayout android:layout_gravity="right|center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/dp_24">
+        <TextView android:textSize="@dimen/dp_18" android:textColor="@color/color_464646_ccc" android:layout_gravity="center_vertical" android:id="@id/orderTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_16" android:layout_marginRight="@dimen/dp_16" android:src="@drawable/common_toggle_selector" android:text="是否顺序执行" android:drawableLeft="@drawable/common_toggle_selector" android:drawablePadding="@dimen/dp_2" />
+        <TextView android:textSize="@dimen/dp_20" android:textColor="#ff008aff" android:gravity="center_vertical" android:id="@id/tv_delete" android:layout_width="wrap_content" android:layout_height="wrap_content" android:foreground="?selectableItemBackground" android:text="删除" android:drawablePadding="@dimen/dp_5" android:drawableStart="@drawable/item_delete_blue" />
+    </LinearLayout>
+    <View android:layout_gravity="bottom" android:background="#eee" android:layout_width="match_parent" android:layout_height="@dimen/dp_1" android:layout_marginStart="@dimen/dp_24" android:layout_marginEnd="@dimen/dp_20" />
+</FrameLayout>

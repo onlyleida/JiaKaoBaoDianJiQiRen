@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#f2f5fa" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tab="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/titleLayout" layout="@layout/common_title" />
+    <TextView android:textSize="@dimen/dp_15" android:textColor="#ffff2e2e" android:gravity="center_vertical" android:id="@id/tv_hint" android:background="#ffffe8e8" android:layout_width="match_parent" android:layout_height="@dimen/dp_38" android:text="备注：本次报备内容与上次报备内容评判规则有xxxx条差异，请再次确认，报备后，将覆盖上一次报备内容，且无法撤回，请谨慎操作。" android:paddingStart="@dimen/dp_16" android:paddingEnd="@dimen/dp_9" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/stepRecyclerView" android:visibility="visible" android:layout_width="@dimen/dp_168" android:layout_height="match_parent" />
+        <cn.mucang.android.core.widget.StateLayout android:id="@id/stateLayout" android:layout_width="match_parent" android:layout_height="match_parent">
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/recyclerView" android:background="#fff" android:layout_width="match_parent" android:layout_height="match_parent" />
+        </cn.mucang.android.core.widget.StateLayout>
+    </LinearLayout>
+</LinearLayout>

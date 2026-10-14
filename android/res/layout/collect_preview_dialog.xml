@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:paddingLeft="@dimen/dp_160" android:paddingTop="@dimen/dp_60" android:paddingRight="@dimen/dp_160" android:paddingBottom="@dimen/dp_60" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="@dimen/font_23" android:textColor="#333" android:gravity="center" android:id="@id/titleTv" android:background="#fff" android:layout_width="match_parent" android:layout_height="@dimen/dp_64" android:text="请输入手机号" app:layout_constraintTop_toTopOf="parent" />
+        <ImageView android:id="@id/closeIv" android:padding="@dimen/dp_18" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_dialog_close" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <View android:background="#f5f8fa" android:layout_width="match_parent" android:layout_height="0.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@id/titleTv" />
+        <TextView android:textSize="@dimen/font_16" android:textColor="#464646" android:gravity="center" android:id="@id/tipTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_12" android:layout_marginTop="@dimen/dp_12" android:text="注意：采集内边线的点" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toBottomOf="@id/titleTv" />
+        <ImageView android:id="@id/imageIv" android:layout_width="0.0dp" android:layout_height="0.0dp" android:layout_marginLeft="@dimen/dp_50" android:layout_marginTop="@dimen/dp_50" android:layout_marginRight="@dimen/dp_50" android:layout_marginBottom="@dimen/dp_20" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toBottomOf="@id/titleTv" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

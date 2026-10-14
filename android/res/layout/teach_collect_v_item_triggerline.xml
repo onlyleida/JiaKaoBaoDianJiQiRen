@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/rpx_18" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/teach_collect_v_item_title" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/text_18" android:textColor="#808080" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="是否需要和线相交 :  " />
+        <RadioGroup android:orientation="horizontal" android:id="@id/crossLayout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <RadioButton android:textSize="@dimen/text_21" android:textColor="#808080" android:id="@id/need" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/rpx_23" android:checked="true" android:button="@drawable/selector_collect_radio" android:text=" 需要" />
+            <RadioButton android:textSize="@dimen/text_21" android:textColor="#808080" android:id="@id/noNeed" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/rpx_23" android:checked="false" android:button="@drawable/selector_collect_radio" android:text=" 不需要" />
+        </RadioGroup>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/rpx_6">
+        <TextView android:textSize="@dimen/text_18" android:textColor="#808080" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="相交是否包括延长线 :  " />
+        <RadioGroup android:orientation="horizontal" android:id="@id/extendLayout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <RadioButton android:textSize="@dimen/text_21" android:textColor="#808080" android:id="@id/needExt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/rpx_23" android:checked="false" android:button="@drawable/selector_collect_radio" android:text=" 包括" />
+            <RadioButton android:textSize="@dimen/text_21" android:textColor="#808080" android:id="@id/noNeedExt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/rpx_23" android:checked="true" android:button="@drawable/selector_collect_radio" android:text=" 不包括" />
+        </RadioGroup>
+    </LinearLayout>
+    <View android:background="#222529" android:layout_width="match_parent" android:layout_height="@dimen/rpx_2" android:layout_marginTop="@dimen/rpx_18" android:layout_marginRight="@dimen/rpx_18" />
+</LinearLayout>
