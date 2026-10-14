@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#f2f5fa" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/titleLayout" layout="@layout/common_title" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:background="#fff" android:paddingBottom="@dimen/dp_4" android:layout_width="match_parent" android:layout_height="@dimen/dp_200">
+        <ImageView android:id="@id/iconIv" android:layout_width="@dimen/dp_72" android:layout_height="@dimen/dp_72" android:src="@drawable/setting_launcher" android:scaleType="fitCenter" />
+        <TextView android:textSize="@dimen/dp_20" android:textStyle="bold" android:textColor="#464646" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_8" android:text="@string/jkbd_app_name" />
+        <TextView android:textSize="@dimen/dp_12" android:textColor="#333" android:gravity="center_horizontal" android:id="@id/versionTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_4" android:lineSpacingMultiplier="1.2" />
+        <TextView android:textSize="@dimen/dp_20" android:textColor="#008aff" android:gravity="center_horizontal" android:id="@id/betaVersionTv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10" android:text="@string/uilib_download_beta_version" android:lineSpacingMultiplier="1.2" />
+    </LinearLayout>
+    <View android:layout_width="match_parent" android:layout_height="@dimen/dp_8" />
+    <FrameLayout android:background="#fff" android:layout_width="match_parent" android:layout_height="@dimen/dp_64" android:paddingStart="@dimen/dp_16" android:paddingEnd="@dimen/dp_16">
+        <TextView android:textSize="@dimen/dp_20" android:textColor="#333" android:layout_gravity="start|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/uilib_contact_number" />
+        <TextView android:textSize="@dimen/dp_20" android:textColor="#333" android:layout_gravity="end|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mc_contact_number" />
+        <ImageView android:layout_gravity="bottom" android:background="#e8e8e8" android:layout_width="match_parent" android:layout_height="@dimen/dp_divider" />
+    </FrameLayout>
+    <FrameLayout android:background="#fff" android:layout_width="match_parent" android:layout_height="@dimen/dp_64" android:paddingStart="@dimen/dp_16" android:paddingEnd="@dimen/dp_16">
+        <TextView android:textSize="@dimen/dp_20" android:textColor="#333" android:layout_gravity="start|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/uilib_contact_qq" />
+        <TextView android:textSize="@dimen/dp_20" android:textColor="#333" android:layout_gravity="end|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/uilib_official_qq" />
+        <ImageView android:layout_gravity="bottom" android:background="#e8e8e8" android:layout_width="match_parent" android:layout_height="@dimen/dp_divider" />
+    </FrameLayout>
+    <FrameLayout android:background="#fff" android:layout_width="match_parent" android:layout_height="@dimen/dp_64" android:paddingStart="@dimen/dp_16" android:paddingEnd="@dimen/dp_16">
+        <TextView android:textSize="@dimen/dp_20" android:textColor="#333" android:layout_gravity="start|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/uilib_wechat_official_account" />
+        <TextView android:textSize="@dimen/dp_20" android:textColor="#008aff" android:layout_gravity="end|center" android:id="@id/qrScan" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/uilib_click_scan_code" />
+        <ImageView android:layout_gravity="bottom" android:background="#e8e8e8" android:layout_width="match_parent" android:layout_height="@dimen/dp_divider" />
+    </FrameLayout>
+    <FrameLayout android:background="#fff" android:layout_width="match_parent" android:layout_height="@dimen/dp_64" android:paddingStart="@dimen/dp_16" android:paddingEnd="@dimen/dp_16">
+        <TextView android:textSize="@dimen/dp_20" android:textColor="#333" android:layout_gravity="start|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/uilib_privacy_policy" />
+        <TextView android:textSize="@dimen/dp_20" android:textColor="#008aff" android:layout_gravity="end|center" android:id="@id/tvPolicy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/uilib_click_look" />
+        <ImageView android:layout_gravity="bottom" android:background="#e8e8e8" android:layout_width="match_parent" android:layout_height="@dimen/dp_divider" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/faceRecordFl" android:background="#fff" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/dp_64" android:paddingStart="@dimen/dp_16" android:paddingEnd="@dimen/dp_16">
+        <TextView android:textSize="@dimen/dp_20" android:textColor="#333" android:layout_gravity="start|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/uilib_video_auth" />
+        <ImageView android:layout_gravity="end|center" android:id="@id/recordIv" android:layout_width="@dimen/dp_50" android:layout_height="@dimen/dp_30" android:src="@drawable/common_toggle_selector" />
+        <ImageView android:layout_gravity="bottom" android:background="#e8e8e8" android:layout_width="match_parent" android:layout_height="@dimen/dp_divider" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/actionLogLayout" android:background="#fff" android:layout_width="match_parent" android:layout_height="@dimen/dp_64" android:paddingStart="@dimen/dp_16" android:paddingEnd="@dimen/dp_16">
+        <TextView android:textSize="@dimen/dp_20" android:textColor="#333" android:layout_gravity="start|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/uilib_operate_log" />
+        <TextView android:textSize="@dimen/dp_20" android:textColor="#008aff" android:layout_gravity="end|center" android:id="@id/actionLog" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/uilib_click_look_operate_log" />
+    </FrameLayout>
+</LinearLayout>

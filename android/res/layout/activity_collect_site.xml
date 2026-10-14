@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="@dimen/dp_72">
+        <ImageView android:id="@id/back" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/ic_back" android:scaleType="fitCenter" android:paddingStart="@dimen/dp_28" android:paddingEnd="@dimen/dp_28" />
+        <TextView android:textSize="@dimen/font_23" android:textColor="#333" android:layout_gravity="center" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="考场采集" />
+        <TextView android:textSize="@dimen/font_20" android:textColor="#fff" android:gravity="center" android:layout_gravity="right|center" android:id="@id/top_right_action" android:background="@drawable/selector_02ccb4_4" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/dp_40" android:text="采集完成" android:paddingStart="16.0px" android:paddingEnd="16.0px" android:layout_marginEnd="@dimen/dp_16" />
+    </FrameLayout>
+    <View android:background="#efefef" android:layout_width="match_parent" android:layout_height="1.0px" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/dp_36">
+        <TextView android:textSize="12.0px" android:textColor="#333" android:gravity="center_vertical" android:id="@id/gps_info" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingStart="16.0px" android:paddingEnd="16.0px" />
+    </LinearLayout>
+    <View android:background="#efefef" android:layout_width="match_parent" android:layout_height="1.0px" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0">
+            <cn.mucang.android.jiakaoyi.hpmap.view.MapView android:id="@id/mapView" android:layout_width="match_parent" android:layout_height="match_parent" />
+            <TextView android:textSize="@dimen/font_18" android:textColor="@android:color/white" android:layout_gravity="right|bottom" android:id="@id/collect_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_10" android:layout_marginEnd="@dimen/dp_10" />
+        </FrameLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="@dimen/dp_320" android:layout_height="match_parent">
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/itemList" android:padding="@dimen/dp_4" android:layout_width="match_parent" android:layout_height="0.0px" android:layout_weight="1.0" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10" android:layout_marginBottom="@dimen/dp_10">
+                <Button android:textSize="@dimen/font_18" android:textColor="#fff" android:id="@id/collectPoint" android:background="@drawable/selector_008aff_2" android:layout_width="match_parent" android:layout_height="50.0px" android:text="采集点" android:layout_weight="1.0" android:layout_marginStart="@dimen/dp_12" android:layout_marginEnd="@dimen/dp_6" />
+                <Button android:textSize="@dimen/font_18" android:textColor="#fff" android:id="@id/finishItem" android:background="@drawable/selector_008aff_2" android:layout_width="match_parent" android:layout_height="50.0px" android:text="完成采集" android:layout_weight="1.0" android:layout_marginStart="@dimen/dp_6" android:layout_marginEnd="@dimen/dp_12" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
