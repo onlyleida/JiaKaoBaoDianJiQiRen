@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <cn.mucang.android.jiakaoyi.hpmap.view.MapView android:id="@id/mapView" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <ImageView android:id="@id/back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="15.0dp" android:src="@drawable/core__ic_back" />
+    <Button android:layout_gravity="right|top" android:id="@id/collectBrakeDistance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="采集刹车距离" />
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textColor="#000" android:id="@id/info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="方向盘" />
+        <TextView android:textColor="#000" android:gravity="center" android:layout_gravity="bottom" android:id="@id/triggerInfo" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/dp_10" android:text="触发内容" />
+    </LinearLayout>
+    <TextView android:textSize="19.0sp" android:textStyle="bold" android:textColor="#034c76" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_60" android:text="车辆真实位置: 绿色\n中间预测位置: 紫色\n最终预测位置: 橙色" android:layout_marginStart="20.0dp" />
+    <View android:background="#168f03" android:visibility="gone" android:layout_width="100.0dp" android:layout_height="100.0dp" />
+    <View android:background="#8207ee" android:visibility="gone" android:layout_width="100.0dp" android:layout_height="100.0dp" android:layout_marginTop="100.0dp" />
+    <View android:background="#d94a09" android:visibility="gone" android:layout_width="100.0dp" android:layout_height="100.0dp" android:layout_marginTop="200.0dp" />
+</FrameLayout>

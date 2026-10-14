@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="15.0dp" android:src="@drawable/core__ic_back" />
+    <TextView android:textSize="18.0sp" android:textColor="#333" android:layout_gravity="center|top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="15.0dp" android:text="刹车参数学习" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/brakeData" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="50.0dp" />
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <Button android:id="@id/brake" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="开始刹车" />
+            <Button android:id="@id/unbrake" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="解除刹车" />
+            <Button android:id="@id/finishBrake" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="完成刹车测试" android:layout_marginStart="20.0dp" />
+            <Button android:id="@id/clearArguments" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="一键清空刹车参数" />
+        </LinearLayout>
+        <TextView android:textColor="#333" android:gravity="center" android:layout_gravity="bottom" android:id="@id/info" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/dp_10" android:text="触发内容" />
+        <TextView android:textColor="#800" android:gravity="center" android:layout_gravity="bottom" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/dp_10" android:text="在车速低于8码时，分别在不同的速度下，点开始刹车按钮，至少测试5次" />
+    </LinearLayout>
+</FrameLayout>

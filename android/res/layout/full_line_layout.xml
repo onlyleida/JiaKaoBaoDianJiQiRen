@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_shape" android:layout_width="match_parent" android:layout_height="@dimen/dp_40" android:layout_marginTop="@dimen/dp_12" android:layout_marginStart="@dimen/dp_12" android:layout_marginEnd="@dimen/dp_12">
+        <TextView android:gravity="center_vertical" android:id="@id/tvShape" android:text="形状" android:layout_marginEnd="@dimen/dp_12" style="@style/k3_collect_pos_tv_style" />
+        <Spinner android:id="@id/spShapeTypeList" android:background="@drawable/shape_spinner_drop_down" android:layout_width="@dimen/dp_0" android:layout_height="@dimen/dp_40" android:popupBackground="#f2f5fa" android:layout_weight="1.0" android:spinnerMode="dropdown" android:layout_marginEnd="@dimen/dp_12" />
+        <TextView android:gravity="center_vertical" android:id="@id/tvLineWidth" android:layout_height="@dimen/dp_40" android:text="线宽" android:layout_marginEnd="@dimen/dp_12" style="@style/k3_collect_pos_tv_style" />
+        <EditText android:id="@id/etLineWidth" android:layout_width="@dimen/dp_70" android:layout_height="@dimen/dp_40" style="@style/k3_collect_pos_et_style" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_color" android:layout_width="match_parent" android:layout_height="@dimen/dp_40" android:layout_marginTop="@dimen/dp_12" android:layout_marginStart="@dimen/dp_12" android:layout_marginEnd="@dimen/dp_12">
+        <TextView android:gravity="center_vertical" android:id="@id/tvColor" android:layout_height="@dimen/dp_40" android:text="颜色" style="@style/k3_collect_pos_tv_style" />
+        <Spinner android:id="@id/spColors" android:background="@drawable/shape_spinner_drop_down" android:layout_width="@dimen/dp_100" android:layout_height="@dimen/dp_40" android:popupBackground="#f2f5fa" android:spinnerMode="dropdown" android:layout_marginStart="@dimen/dp_12" android:layout_marginEnd="@dimen/dp_12" />
+    </LinearLayout>
+    <TextView android:id="@id/tvCollectStart" android:layout_width="match_parent" android:layout_marginTop="@dimen/dp_12" android:text="采集" android:layout_marginStart="@dimen/dp_12" android:layout_marginEnd="@dimen/dp_12" style="@style/k3_collect_pos_tv_click_style" />
+    <TextView android:id="@id/tvCollectEnd" android:layout_width="match_parent" android:layout_marginTop="@dimen/dp_12" android:text="采集终点" android:layout_marginStart="@dimen/dp_12" android:layout_marginEnd="@dimen/dp_12" style="@style/k3_collect_pos_tv_click_style" />
+    <TextView android:id="@id/tvMove" android:visibility="gone" android:layout_width="match_parent" android:layout_marginTop="@dimen/dp_12" android:text="移动起点或终点" android:layout_marginStart="@dimen/dp_12" android:layout_marginEnd="@dimen/dp_12" style="@style/k3_collect_pos_tv_click_style" />
+    <TextView android:textSize="@dimen/dp_16" android:textColor="#008aff" android:layout_gravity="center_horizontal" android:id="@id/tvExample" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_22" android:text="查看示例" />
+</LinearLayout>

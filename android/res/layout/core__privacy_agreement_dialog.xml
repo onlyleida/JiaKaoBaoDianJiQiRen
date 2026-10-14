@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/core__round_corner_white_shape" android:paddingLeft="20.0dp" android:paddingTop="25.0dp" android:paddingRight="20.0dp" android:paddingBottom="30.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="28.0dp" android:layout_centerInParent="true">
+        <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="#333333" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/core__privacy_agreement_dialog_title" />
+        <ScrollView android:scrollbars="none" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dp" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/core__privacy_agreement_content_text_size" android:textColor="#666666" android:id="@id/content" android:paddingBottom="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:lineSpacingExtra="8.0dp" />
+        </ScrollView>
+        <TextView android:textSize="@dimen/core__privacy_agreement_tip_text_size" android:textColor="#666666" android:id="@id/privacy_agreement" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dp" android:lineSpacingExtra="4.0dp" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="40.0dp" android:layout_marginTop="20.0dp">
+            <TextView android:textSize="@dimen/core__privacy_agreement_button_text_size" android:textColor="#42bafb" android:gravity="center" android:id="@id/btn_disagree" android:background="@drawable/core__bg_privacy_agreement_disagree" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="@string/core__privacy_agreement_disagree" android:layout_weight="1.0" />
+            <View android:layout_width="20.0dp" android:layout_height="0.0dp" />
+            <TextView android:textSize="@dimen/core__privacy_agreement_button_text_size" android:textColor="@color/white" android:gravity="center" android:id="@id/btn_agree" android:background="@drawable/core__btn_permission_guide_dialog" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="@string/core__privacy_agreement_agree" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

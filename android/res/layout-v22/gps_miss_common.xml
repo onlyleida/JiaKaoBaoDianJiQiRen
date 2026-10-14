@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/shape_e6ecf2_ffffff_r15" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/rootLayout" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/dialog_title_font_size" android:textColor="@color/dialog_title_color" android:gravity="center_horizontal" android:id="@id/titleTv" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dialog_title_margin" android:layout_marginTop="@dimen/dialog_title_top" android:layout_marginRight="@dimen/dialog_title_margin" android:text="主标题" android:layout_marginHorizontal="@dimen/dialog_title_margin" />
+            <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dialog_desc_margin" android:layout_marginTop="@dimen/dialog_desc_top" android:layout_marginRight="@dimen/dialog_desc_margin" android:layout_marginHorizontal="@dimen/dialog_desc_margin">
+                <TextView android:textSize="@dimen/dialog_countdown_time_font_size" android:textColor="#ff8040" android:id="@id/second_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="10" />
+                <TextView android:textSize="@dimen/dialog_desc_font_size" android:textColor="@color/dialog_desc_color" android:id="@id/rightTitleTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="秒后自动结束" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/dialog_button_height" android:layout_marginTop="@dimen/dialog_button_top" android:layout_marginBottom="@dimen/dialog_button_bottom">
+                <TextView android:textSize="@dimen/dialog_button_font_size" android:textColor="@color/dialog_button_second_color" android:gravity="center" android:id="@id/leftTv" android:background="@drawable/shape_r100_s1_008aff" android:layout_width="@dimen/dialog_button_width" android:layout_height="match_parent" android:text="继续考试" />
+                <TextView android:textSize="@dimen/dialog_button_font_size" android:textColor="@color/dialog_button_main_color" android:gravity="center" android:id="@id/rightTv" android:background="@drawable/shape_008aff_r100" android:layout_width="@dimen/dialog_button_width" android:layout_height="match_parent" android:text="结束" android:layout_marginStart="@dimen/dialog_button_margin" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

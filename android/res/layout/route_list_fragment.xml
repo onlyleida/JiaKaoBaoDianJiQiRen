@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="#e8e8e8" android:layout_width="match_parent" android:layout_height="@dimen/dp_1" />
+    <LinearLayout android:orientation="vertical" android:id="@id/menuLl" android:layout_width="@dimen/dp_168" android:layout_height="match_parent">
+        <TextView android:textSize="@dimen/dp_22" android:textColor="@color/color_008aff" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/myRoute" android:tag="1" android:background="@drawable/selector_e5f3ff_without_corner" android:layout_width="match_parent" android:layout_height="@dimen/dp_88" android:text="我的路线" android:drawableLeft="@drawable/selector_008affx5x88_without_corner" />
+        <TextView android:textSize="@dimen/dp_22" android:textColor="@color/color_008aff" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/commendRoute" android:tag="2" android:background="@drawable/selector_e5f3ff_without_corner" android:layout_width="match_parent" android:layout_height="@dimen/dp_88" android:text="代理路线" android:drawableLeft="@drawable/selector_008affx5x88_without_corner" />
+        <TextView android:textSize="@dimen/dp_22" android:textColor="@color/color_008aff" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/nearRoute" android:tag="4" android:background="@drawable/selector_e5f3ff_without_corner" android:layout_width="match_parent" android:layout_height="@dimen/dp_88" android:text="附近路线" android:drawableLeft="@drawable/selector_008affx5x88_without_corner" />
+    </LinearLayout>
+    <cn.mucang.android.core.widget.StateLayout android:id="@id/stateLayout" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginStart="@dimen/dp_168">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/recyclerView" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </cn.mucang.android.core.widget.StateLayout>
+    <View android:id="@id/divider" android:background="#e8e8e8" android:layout_width="@dimen/dp_1" android:layout_height="match_parent" android:layout_marginStart="@dimen/dp_168" />
+    <LinearLayout android:layout_gravity="center|bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_24">
+        <TextView android:textSize="@dimen/dp_23" android:textColor="#fff" android:gravity="center" android:id="@id/resetRouteTv" android:background="@drawable/shape_008aff_r100" android:paddingLeft="@dimen/dp_28" android:paddingRight="@dimen/dp_28" android:layout_width="wrap_content" android:layout_height="@dimen/dp_54" android:layout_marginLeft="@dimen/dp_20" android:layout_marginRight="@dimen/dp_20" android:text="全部重置" />
+        <TextView android:textSize="@dimen/dp_23" android:textColor="#fff" android:gravity="center" android:id="@id/newRouteTv" android:background="@drawable/shape_008aff_r100" android:paddingLeft="@dimen/dp_28" android:paddingRight="@dimen/dp_28" android:layout_width="wrap_content" android:layout_height="@dimen/dp_54" android:layout_marginLeft="@dimen/dp_20" android:layout_marginRight="@dimen/dp_20" android:text="采集新路线" />
+    </LinearLayout>
+</FrameLayout>

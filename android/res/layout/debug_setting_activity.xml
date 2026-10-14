@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#f2f5fa" android:layout_width="match_parent" android:layout_height="match_parent" android:layoutDirection="ltr"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/titleLayout" layout="@layout/common_title" />
+    <RelativeLayout android:id="@id/rlBlueTooth" android:background="#fff" android:paddingLeft="@dimen/dp_16" android:paddingRight="@dimen/dp_16" android:layout_width="match_parent" android:layout_height="@dimen/dp_64">
+        <TextView android:textSize="@dimen/dp_20" android:textColor="#333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="是否启用蓝牙模拟" android:layout_centerVertical="true" />
+        <CheckBox android:id="@id/blueToothCb" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/common_toggle_selector" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <ImageView android:background="#ffe8e8e8" android:layout_width="match_parent" android:layout_height="@dimen/dp_divider" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/rlOldPro" android:background="#fff" android:paddingLeft="@dimen/dp_16" android:paddingRight="@dimen/dp_16" android:layout_width="match_parent" android:layout_height="@dimen/dp_64">
+        <TextView android:textSize="@dimen/font_20" android:textColor="#333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="是否启用旧协议" android:layout_centerVertical="true" />
+        <CheckBox android:id="@id/oldPro" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/common_toggle_selector" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <ImageView android:background="#ffe8e8e8" android:layout_width="match_parent" android:layout_height="@dimen/dp_divider" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/rlEncrypted" android:background="#fff" android:paddingLeft="@dimen/dp_16" android:paddingRight="@dimen/dp_16" android:layout_width="match_parent" android:layout_height="@dimen/dp_64">
+        <TextView android:textSize="@dimen/font_20" android:textColor="#333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="接口是否加密" android:layout_centerVertical="true" />
+        <CheckBox android:id="@id/encryptedCb" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/common_toggle_selector" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <ImageView android:background="#ffe8e8e8" android:layout_width="match_parent" android:layout_height="@dimen/dp_divider" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/rlEngineDebug" android:background="#fff" android:paddingLeft="@dimen/dp_16" android:paddingRight="@dimen/dp_16" android:layout_width="match_parent" android:layout_height="@dimen/dp_64">
+        <TextView android:textSize="@dimen/font_20" android:textColor="#333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="是否考试引擎调试模式" android:layout_centerVertical="true" />
+        <CheckBox android:id="@id/cbEngineDebug" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/common_toggle_selector" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <ImageView android:background="#ffe8e8e8" android:layout_width="match_parent" android:layout_height="@dimen/dp_divider" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/rlDebugLog" android:background="#fff" android:paddingLeft="@dimen/dp_16" android:paddingRight="@dimen/dp_16" android:layout_width="match_parent" android:layout_height="@dimen/dp_64">
+        <TextView android:textSize="@dimen/font_20" android:textColor="#333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="点击查看本地日志" android:layout_centerVertical="true" />
+        <ImageView android:background="#ffe8e8e8" android:layout_width="match_parent" android:layout_height="@dimen/dp_divider" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</LinearLayout>

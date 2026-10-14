@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/menu" android:layout_width="match_parent" android:layout_height="@dimen/rpx_132"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <cn.mucang.android.image.view.MucangCircleImageView android:id="@id/avatarIv" android:layout_width="@dimen/rpx_54" android:layout_height="@dimen/rpx_54" android:layout_marginEnd="@dimen/rpx_60" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/llBack" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginStart="@dimen/rpx_60" app:layout_constraintStart_toStartOf="parent">
+        <ImageView android:layout_width="@dimen/rpx_48" android:layout_height="@dimen/rpx_48" android:src="@drawable/selector_menu_back" />
+        <TextView android:textSize="@dimen/text_30" android:textColor="@color/color_fff_06162d" android:gravity="center" android:id="@id/backTv" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="返回首页" android:layout_marginStart="@dimen/rpx_6" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/text_30" android:textColor="@color/color_fff_06162d" android:id="@id/nameTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/rpx_18" app:layout_constraintBottom_toBottomOf="@id/avatarIv" app:layout_constraintEnd_toStartOf="@id/avatarIv" app:layout_constraintTop_toTopOf="@id/avatarIv" />
+    <TextView android:textSize="@dimen/text_33" android:textColor="@color/color_fff_06162d" android:id="@id/timeTv" android:layout_width="@dimen/rpx_420" android:layout_height="wrap_content" android:text="本次练习时长 00:00:00" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <View android:id="@id/divider" android:background="#e6e6e6" android:layout_width="match_parent" android:layout_height="@dimen/rpx_2" app:layout_constraintBottom_toBottomOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

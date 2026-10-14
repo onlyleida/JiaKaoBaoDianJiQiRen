@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/cameraContainer" android:background="#000" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="@id/circleIv" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="@id/circleIv">
+        <com.serenegiant.usb.widget.UVCCameraTextureView android:id="@id/camera" android:layout_width="@dimen/rpx_300" android:layout_height="@dimen/rpx_200" />
+        <org.webrtc.SurfaceViewRenderer android:id="@id/aiCamera" android:visibility="gone" android:layout_width="@dimen/rpx_300" android:layout_height="@dimen/rpx_200" />
+    </FrameLayout>
+    <ImageView android:id="@id/mask" android:layout_width="@dimen/rpx_349" android:layout_height="@dimen/rpx_200" android:src="@drawable/ic_login_mask" android:scaleType="fitXY" app:layout_constraintBottom_toBottomOf="@id/circleIv" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="@id/circleIv" />
+    <ImageView android:id="@id/circleIv" android:layout_width="@dimen/rpx_290" android:layout_height="@dimen/rpx_290" android:src="@drawable/ic_login_face" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:textSize="@dimen/text_32" android:textColor="#008aff" android:id="@id/faceTipTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/teachbase_face_recognition" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/circleIv" />
+    <androidx.cardview.widget.CardView android:id="@id/scanCard" android:layout_width="@dimen/rpx_290" android:layout_height="@dimen/rpx_290" app:cardBackgroundColor="@color/TRANSPARENT" app:cardCornerRadius="@dimen/rpx_200" app:cardElevation="0.0dp" app:layout_constraintBottom_toBottomOf="@id/circleIv" app:layout_constraintEnd_toEndOf="@id/circleIv" app:layout_constraintStart_toStartOf="@id/circleIv" app:layout_constraintTop_toTopOf="@id/circleIv">
+        <View android:id="@id/scanView" android:background="@drawable/shape_login_scan" android:layout_width="match_parent" android:layout_height="@dimen/rpx_0" />
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
