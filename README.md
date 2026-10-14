@@ -26,7 +26,7 @@ adb -s YOUR_DEVICE_SERIAL install jiakaoyi-coach-11.6.5-rebuilt-debug.apk
 adb -s YOUR_DEVICE_SERIAL shell am start -n cn.mucang.android.jiakaoyi.teachingk2/cn.mucang.android.jiakaoyi.teachingk2.ui.splash.TeachSplashActivity
 ```
 
-先用 `adb -s YOUR_DEVICE_SERIAL shell getprop ro.product.cpu.abilist` 确认其中包含 `armeabi-v7a`。仅 ARM64 的系统不能加载这些 32 位原生库。运行测试的实际结果见 [docs/VALIDATION.md](docs/VALIDATION.md)。
+先用 `adb -s YOUR_DEVICE_SERIAL shell getprop ro.product.cpu.abilist` 确认其中包含 `armeabi-v7a`。仅 ARM64 的系统不能加载这些 32 位原生库。**本机模拟器因 ABI 不匹配拒绝安装，尚未验证安装成功或启动成功。** 详细结果见 [docs/VALIDATION.md](docs/VALIDATION.md)。
 
 完整教学流程依赖机器人硬件通信、设备绑定、后台服务和另行下载的 Unity/场地资源。用户目前没有已运行设备，因此本仓库交付范围为 **原 APK 内的全部内容及可重建安装包**，不能据此宣称完整教学功能已经运行。详细缺失项与代码位置见 [docs/RUNTIME_DEPENDENCIES.md](docs/RUNTIME_DEPENDENCIES.md)。
 

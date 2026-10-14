@@ -25,7 +25,11 @@ SHA256：`a9e04523d27a7ffc58d87e7988fa49463764a9cf4ea12935e223f3986d1b2acb`。
 
 在本次新建、已关闭网络的 Android 14 / API 34 ARM64 模拟器中，安装返回 `INSTALL_FAILED_NO_MATCHING_ABIS`。该模拟器的 `ro.product.cpu.abilist` 为 `arm64-v8a`，而原包的 42 个库全部为 `armeabi-v7a`。测试没有修改或使用用户现有 AVD。
 
-Android 官方说明 API 31 及以上的模拟器系统镜像仅支持 64 位，见 [Support 64-bit architectures](https://developer.android.com/games/optimize/64-bit)。因此正在使用兼容版本进行补充测试；最终结果以本页后续记录为准。
+随后下载了 Google 官方 Android 11 / API 30 ARM64 r16 镜像，并核对官方 SHA1 `0e66987d6b4db2e278af83d453ce5d74a7e6ced3`。镜像的 `build.prop` 同样声明 `ro.product.cpu.abilist=arm64-v8a`、`ro.product.cpu.abilist32=`，因此没有启动这个同样不兼容的镜像。
+
+**最终运行结论：重建和签名成功，尚未验证安装成功或启动首屏。** 本次唯一安装尝试在 API 34 的纯 64 位环境被系统拒绝，目标 App 未执行。需要另有支持 `armeabi-v7a` 的安卓设备或系统；用户目前没有原运行设备。没有通过伪造 ABI 或删除原生库掩盖兼容问题。记录见 `reports/runtime-validation.json`。
+
+Android 官方说明 API 31 及以上的模拟器系统镜像仅支持 64 位，见 [Support 64-bit architectures](https://developer.android.com/games/optimize/64-bit)。更早的 ARM64 镜像也必须检查其实际 ABI 列表，不能仅凭 Android 版本认定支持 ARM32。
 
 ## 保留的边界
 

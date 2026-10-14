@@ -18,5 +18,5 @@
   "managed_assemblies_decompiled": 105,
   "apk_rebuilt": true,
   "rebuilt_signature_verified": true,
-  "runtime_validation": "See docs/VALIDATION.md; API 34 installation fails due to 64-bit-only emulator ABI"
+  "runtime_validation": "Not executed: API34 install rejected with NO_MATCHING_ABIS; official API30 ARM64 r16 also has empty 32-bit ABI list."
 }
