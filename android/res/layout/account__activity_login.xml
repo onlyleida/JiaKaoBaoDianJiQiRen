@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@drawable/core__bg_login" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/title_bar" layout="@layout/account__include_title_bar" />
+    <RelativeLayout android:id="@id/phone_login_mask" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/title_bar">
+        <LinearLayout android:orientation="vertical" android:background="@null" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentLeft="true">
+            <TextView android:textSize="30.0sp" android:textColor="@color/core_account_login_text_normal_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dp" android:layout_marginTop="30.0dp" android:layout_marginBottom="25.0dp" android:text="您好，请登录" />
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="46.5dp" android:layout_marginLeft="20.0dp" android:layout_marginTop="30.0dp" android:layout_marginRight="20.0dp">
+                <View android:id="@id/username_panel_bg" android:background="#d8d8d8" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_alignParentBottom="true" />
+                <ImageView android:id="@id/iv_phone_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dp" android:src="@drawable/core__ic_login_shouji" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <EditText android:textSize="16.0sp" android:textColor="#333333" android:textColorHint="#999999" android:gravity="left|center" android:id="@id/username" android:background="@null" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="22.0dp" android:button="@null" android:hint="请输入手机号" android:maxLength="11" android:layout_toRightOf="@id/iv_phone_number" android:layout_centerVertical="true" android:inputType="numberDecimal" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="46.5dp" android:layout_marginLeft="20.0dp" android:layout_marginRight="20.0dp">
+                <View android:id="@id/password_panel_bg" android:background="#d8d8d8" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_alignParentBottom="true" />
+                <ImageView android:id="@id/iv_password" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dp" android:src="@drawable/core__ic_login_mima" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <EditText android:textSize="16.0sp" android:textColor="#000000" android:textColorHint="#999999" android:id="@id/password" android:background="@null" android:longClickable="false" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="22.0dp" android:button="@null" android:hint="请输入密码" android:maxLength="20" android:layout_toRightOf="@id/iv_password" android:layout_centerVertical="true" android:inputType="textPassword" />
+            </RelativeLayout>
+            <include android:id="@id/account__protocol_in" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dp" android:layout_marginTop="15.0dp" android:layout_marginRight="20.0dp" layout="@layout/account__include_protocol" />
+            <Button android:textSize="18.0sp" android:textColor="#ffffff" android:id="@id/btn_ok" android:background="@drawable/account__login_querenqian" android:layout_width="match_parent" android:layout_height="47.0dp" android:layout_marginLeft="20.0dp" android:layout_marginTop="30.0dp" android:layout_marginRight="20.0dp" android:text="登录" />
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginRight="10.0dp">
+                <TextView android:textSize="14.0sp" android:textColor="#666666" android:id="@id/login_sms" android:paddingLeft="20.0dp" android:paddingTop="17.0dp" android:paddingRight="15.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp" android:layout_marginBottom="16.0dp" android:text="手机验证码登录" android:layout_alignParentLeft="true" />
+                <TextView android:textSize="14.0sp" android:textColor="#666666" android:id="@id/can_not_login" android:paddingTop="17.0dp" android:paddingRight="35.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="忘记密码" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+            <include android:id="@id/account__login_third_layout_in" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="20.0dp" android:layout_marginEnd="20.0dp" layout="@layout/account__activity_login_third_layout" />
+            <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="42.0dp" android:layout_marginBottom="15.0dp">
+                <TextView android:textSize="12.0sp" android:textColor="@color/core_account_login_text_hint_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="如无法登录，请点击" />
+                <TextView android:textSize="12.0sp" android:textColor="#333" android:id="@id/account_appeal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="账户申诉" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/core_account_login_text_hint_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="申请客服协助" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>
