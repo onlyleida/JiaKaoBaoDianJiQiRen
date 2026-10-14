@@ -1,0 +1,250 @@
+{
+  "path": "/Users/leida/Desktop/jiakaoyi_coach_080359.apk.1.1",
+  "sha256": "a52da069ad1fa88a35923b003b68f4d9c240679d4cde386985999dff133a7349",
+  "bytes": 111646477,
+  "entries": 3408,
+  "expanded_bytes": 197349448,
+  "dex": [
+    {
+      "name": "classes4.dex",
+      "bytes": 6510956
+    },
+    {
+      "name": "classes3.dex",
+      "bytes": 5215984
+    },
+    {
+      "name": "classes.dex",
+      "bytes": 5148548
+    },
+    {
+      "name": "classes6.dex",
+      "bytes": 8806920
+    },
+    {
+      "name": "classes2.dex",
+      "bytes": 3399940
+    },
+    {
+      "name": "classes5.dex",
+      "bytes": 7822484
+    }
+  ],
+  "native_libraries": [
+    {
+      "name": "lib/armeabi-v7a/libsecsdk.so",
+      "bytes": 505688
+    },
+    {
+      "name": "lib/armeabi-v7a/libglide-webp.so",
+      "bytes": 227092
+    },
+    {
+      "name": "lib/armeabi-v7a/libmsc.so",
+      "bytes": 5954032
+    },
+    {
+      "name": "lib/armeabi-v7a/libsixents-core-sdk.so",
+      "bytes": 46696
+    },
+    {
+      "name": "lib/armeabi-v7a/libagora-rtc-sdk.so",
+      "bytes": 6895180
+    },
+    {
+      "name": "lib/armeabi-v7a/libunity.so",
+      "bytes": 16502492
+    },
+    {
+      "name": "lib/armeabi-v7a/libsoundtouch.so",
+      "bytes": 325268
+    },
+    {
+      "name": "lib/armeabi-v7a/libagora-soundtouch.so",
+      "bytes": 112268
+    },
+    {
+      "name": "lib/armeabi-v7a/libopencv_java4.so",
+      "bytes": 9814612
+    },
+    {
+      "name": "lib/armeabi-v7a/libcrc-lib.so",
+      "bytes": 13904
+    },
+    {
+      "name": "lib/armeabi-v7a/libagora-fdkaac.so",
+      "bytes": 387008
+    },
+    {
+      "name": "lib/armeabi-v7a/libRtsSDK.so",
+      "bytes": 1891044
+    },
+    {
+      "name": "lib/armeabi-v7a/libtensorflowlite_jni.so",
+      "bytes": 1649880
+    },
+    {
+      "name": "lib/armeabi-v7a/libUVCCamera.so",
+      "bytes": 154724
+    },
+    {
+      "name": "lib/armeabi-v7a/libBugly-ext.so",
+      "bytes": 169768
+    },
+    {
+      "name": "lib/armeabi-v7a/libmain.so",
+      "bytes": 18464
+    },
+    {
+      "name": "lib/armeabi-v7a/libmp3lame.so",
+      "bytes": 165344
+    },
+    {
+      "name": "lib/armeabi-v7a/liblive-pusher.so",
+      "bytes": 1802036
+    },
+    {
+      "name": "lib/armeabi-v7a/libc++_shared.so",
+      "bytes": 554808
+    },
+    {
+      "name": "lib/armeabi-v7a/libpag.so",
+      "bytes": 1788144
+    },
+    {
+      "name": "lib/armeabi-v7a/libMonoPosixHelper.so",
+      "bytes": 326948
+    },
+    {
+      "name": "lib/armeabi-v7a/libmcSpeex.so",
+      "bytes": 67096
+    },
+    {
+      "name": "lib/armeabi-v7a/libUtils.so",
+      "bytes": 13460
+    },
+    {
+      "name": "lib/armeabi-v7a/libw_ivw.so",
+      "bytes": 1957648
+    },
+    {
+      "name": "lib/armeabi-v7a/libDeviceAPI.so",
+      "bytes": 252652
+    },
+    {
+      "name": "lib/armeabi-v7a/libjpeg-turbo1500.so",
+      "bytes": 317220
+    },
+    {
+      "name": "lib/armeabi-v7a/libserial_port.so",
+      "bytes": 13996
+    },
+    {
+      "name": "lib/armeabi-v7a/liblive-rtmp.so",
+      "bytes": 62948
+    },
+    {
+      "name": "lib/armeabi-v7a/libtensorflowlite_gpu_jni.so",
+      "bytes": 1630592
+    },
+    {
+      "name": "lib/armeabi-v7a/libtnpn.so",
+      "bytes": 2188028
+    },
+    {
+      "name": "lib/armeabi-v7a/libAMapSDK_MAP_v7_4_0.so",
+      "bytes": 2280233
+    },
+    {
+      "name": "lib/armeabi-v7a/libagora-mpg123.so",
+      "bytes": 157620
+    },
+    {
+      "name": "lib/armeabi-v7a/libusb100.so",
+      "bytes": 108168
+    },
+    {
+      "name": "lib/armeabi-v7a/libalicomphonenumberauthsdk_core.so",
+      "bytes": 9648
+    },
+    {
+      "name": "lib/armeabi-v7a/libTxtOverlay.so",
+      "bytes": 447956
+    },
+    {
+      "name": "lib/armeabi-v7a/libmonobdwgc-2.0.so",
+      "bytes": 5490348
+    },
+    {
+      "name": "lib/armeabi-v7a/liblive-fdkaac.so",
+      "bytes": 534228
+    },
+    {
+      "name": "lib/armeabi-v7a/libauth_number_product-2.12.1.2-log-online-standard-release_alijtca_plus.so",
+      "bytes": 506824
+    },
+    {
+      "name": "lib/armeabi-v7a/libjingle_peerconnection_so.so",
+      "bytes": 4414340
+    },
+    {
+      "name": "lib/armeabi-v7a/libuvc.so",
+      "bytes": 104304
+    },
+    {
+      "name": "lib/armeabi-v7a/libffavc.so",
+      "bytes": 939844
+    },
+    {
+      "name": "lib/armeabi-v7a/libface_detector_v2_jni.so",
+      "bytes": 4849820
+    }
+  ],
+  "asset_examples": [
+    "assets/bin/Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll",
+    "assets/map_assets/roadarrow.data",
+    "assets/amap_sdk_shaders/point.glsl",
+    "assets/amap_sdk_shaders/texture_normal.glsl",
+    "assets/k3/sdata/rv_90.data",
+    "assets/YELLOW.png",
+    "assets/bin/Data/Managed/System.ComponentModel.DataAnnotations.dll",
+    "assets/db/upgrade/jky_upgrade_9.sql",
+    "assets/core/error_page/prompt.png",
+    "assets/map_custom/particle/fog.png",
+    "assets/4µîíσ¡ªΣ╣áσ«îµêÉ∩╝îΦ»╖σ£¿10sσåàσ░åµîíΣ╜ìµîéσê░5µîí.mp3",
+    "assets/bin/Data/Managed/UnityEngine.AudioModule.dll",
+    "assets/bin/Data/Managed/System.ComponentModel.Composition.dll",
+    "assets/map_indoor_select.png",
+    "assets/mercury_upgrade_2.sql",
+    "assets/db/upgrade/jky_upgrade_17.sql",
+    "assets/bin/Data/Managed/UnityEngine.UnityConnectModule.dll",
+    "assets/bin/Data/Managed/Accessibility.dll",
+    "assets/bin/Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll",
+    "assets/map_assets/style_0_16_1561381751.data",
+    "assets/bin/Data/Managed/UnityEngine.VFXModule.dll",
+    "assets/bin/Data/Managed/System.Design.dll",
+    "assets/bin/Data/Managed/System.Numerics.dll",
+    "assets/bin/Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll",
+    "assets/models_bundled/fssd_medium_8bit_v5.tflite",
+    "assets/bin/Data/Managed/Assembly-CSharp.dll",
+    "assets/db/upgrade/jky_upgrade_5.sql",
+    "assets/bin/Data/Managed/Unity.TextMeshPro.dll",
+    "assets/map_assets/style_50_16_1501671321.data",
+    "assets/map_assets/style_100_16_1561026477.data",
+    "assets/map_assets/icons_9_16_1560344664.data",
+    "assets/RED.png",
+    "assets/5µîíσ¡ªΣ╣áσ«îµêÉ∩╝îΦ»╖σ£¿10sσåàσ░åµîíΣ╜ìµîéσê░σÇÆµîí.mp3",
+    "assets/zoomout_selected.png",
+    "assets/arrow/arrow_line_shadow.png",
+    "assets/bin/Data/Managed/UnityEngine.UIModule.dll",
+    "assets/map_assets/config_1_16_1560339683.data",
+    "assets/zoomout_unselected.png",
+    "assets/models_bundled/blazeface.tfl",
+    "assets/bin/Data/Managed/UnityEngine.WindModule.dll",
+    "assets/tts/common.jet",
+    "assets/σ╝Çσºïµáçσ«Ü.mp3",
+    "assets/bin/Data/Managed/UnityEngine.SpriteMaskModule.dll",
+    "assets/bin/Data/Managed/UnityEngine.ProfilerModule.dll",
+    "assets/bin/Data/Managed/UnityEngine.AssetBundleModule.dll"
+  ]
+}
