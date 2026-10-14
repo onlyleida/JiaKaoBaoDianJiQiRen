@@ -151,6 +151,16 @@ class Contracts(unittest.TestCase):
             self.backend.add_resource(source, "site", 2, 3, "52")
         self.assertEqual(self.request(url)[1], payload)
 
+    def test_device_update_does_not_return_unity_resource_with_same_type(self):
+        source = self.directory / "unity-test.bin"
+        source.write_bytes(b"contract fixture, not an APK")
+        self.backend.add_resource(source, "upgrade", 101, 2)
+        path = "/api/open/update/check-update.htm"
+        result = self.ok(path, "POST", body=[{"type": 101, "version": 0}],
+                         query={"hardwareVersion": "local", "modelCode": "", "stable": "false"})
+        self.assertEqual(result["itemList"], [])
+        self.assertEqual(self.request(path, "POST", body={"type": 101})[0], 400)
+
     def test_group_and_tile_resources_resolve_real_files(self):
         path = "/api/open/owner/group-config/update.htm"
         values = dict(groupId=52, type=2, configId=9, configName="Local voice")

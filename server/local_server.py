@@ -85,6 +85,7 @@ for path, codec, handler, description in [
     ("/api/open/user/admin-login.htm", "form", "admin_login", "local loginInfo fixture only"),
     ("/api/open/user/login-notice.htm", "form", "login_notice", "confirm pending local login; class time object"),
     ("/api/open/upgrade/check-upgrade.htm", "json", "upgrade", "registered Unity 100/101 only"),
+    ("/api/open/update/check-update.htm", "json", "device_update", "no local firmware or APK updates"),
     ("/api/open/owner/group-config/update.htm", "form", "save_group", "persist group config choice"),
 ]:
     route("POST", path, codec, handler, description)
@@ -314,6 +315,12 @@ class Backend:
                 return True
             if action == "fixture":
                 return item_list(self.fixture[LIST_FIXTURES[path]])
+            if action == "device_update":
+                if not isinstance(body, list) or any(not isinstance(x, dict) for x in body):
+                    raise ApiError(400, "Expected a device update parameter list")
+                # Device-update type101 is an APK, not Unity UI resource101.
+                # No firmware/APK update payloads are supplied by this backend.
+                return item_list([])
             if action in ("site", "sites", "tile"):
                 sites = self.fixture["examSites"]
                 if action == "tile":
