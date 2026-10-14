@@ -119,12 +119,20 @@ def main():
             return
         run(adb + ["shell", "dumpsys", "package", PACKAGE], "installed-package")
         run(adb + ["logcat", "-c"])
-        launch = run(adb + ["shell", "am", "start", "-W", "-n", COMPONENT],
-                     "launch", check=False)
-        report["launch_command_exit_code"] = launch.returncode
-        report["launch_accepted"] = (launch.returncode == 0
-                                     and bool(re.search(r"^Status:\s*ok\s*$", launch.stdout, re.M))
-                                     and "Error:" not in launch.stdout)
+        try:
+            launch = run(adb + ["shell", "am", "start", "-W", "-n", COMPONENT],
+                         "launch", check=False)
+            report["launch_command_exit_code"] = launch.returncode
+            report["launch_accepted"] = (launch.returncode == 0
+                                         and bool(re.search(r"^Status:\s*ok\s*$", launch.stdout, re.M))
+                                         and "Error:" not in launch.stdout)
+        except subprocess.TimeoutExpired as error:
+            report["launch_command_timed_out"] = True
+            report["launch_accepted"] = False
+            partial = error.stdout or b""
+            if isinstance(partial, bytes):
+                partial = partial.decode(errors="replace")
+            (out / "launch.txt").write_text(partial + "\nHost wait timed out; collecting device state.\n")
         time.sleep(10)
         screenshot("screen-after-10s.png")
         time.sleep(35)
@@ -141,6 +149,8 @@ def main():
         report["crash_buffer_contains_package"] = PACKAGE in crash
         run(adb + ["logcat", "-d", "-v", "threadtime", "-t", "5000"], "logcat", check=False)
         screenshot("screen-after-45s.png")
+        run(adb + ["pull", "/data/tombstones", str(out / "tombstones")],
+            "tombstones-pull", timeout=30, check=False)
         run(adb + ["shell", "uiautomator", "dump", "/sdcard/ci-window.xml"],
             "ui-dump", timeout=30, check=False)
         run(adb + ["pull", "/sdcard/ci-window.xml", str(out / "ui.xml")], check=False)
