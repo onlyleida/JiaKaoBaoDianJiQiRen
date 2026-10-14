@@ -32,6 +32,8 @@ adb -s YOUR_DEVICE_SERIAL shell am start -n cn.mucang.android.jiakaoyi.teachingk
 
 ## 从仓库重建 APK
 
+新增的 [本地兼容服务端](server/README.md) 使用 Python 3.9+ 和 SQLite，支持 40 条已核对的设备、配置、调试登录、记录与资源接口。运行 `python3 server/local_server.py serve` 即可启动；配套脚本可生成指向本机的独立 APK 构建副本。它根据客户端协议重写，不能替代缺失的 Unity 动态文件、机器人硬件或原厂完整业务。
+
 需要 Python 3、JDK（已用 21 验证）、Android SDK Build-Tools 35.0.0。脚本自动下载并校验 Apktool 3.0.3；也可以通过 `--apktool /path/to/apktool_3.0.3.jar` 使用已有 JAR。
 
 ```sh

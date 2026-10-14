@@ -1,0 +1,2009 @@
+{
+  "scope": "Java string literals under jiakaoyi and uilib; candidates only, not complete runtime traffic or endpoint coverage",
+  "uniqueCandidates": 265,
+  "occurrences": [
+    {
+      "path": "/api/open/safe-config/get-safe-config.htm",
+      "literal": "/api/open/safe-config/get-safe-config.htm?examSiteId=",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/teachingk2/safe/api/SafeApi.java",
+      "line": 17,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/brake/record-reason.htm",
+      "literal": "/api/open/brake/record-reason.htm",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/teachingk2/safe/api/DeviceReportApi.java",
+      "line": 34,
+      "implemented": true
+    },
+    {
+      "path": "/api/open/fault-code/upload.htm",
+      "literal": "/api/open/fault-code/upload.htm",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/teachingk2/safe/api/DeviceReportApi.java",
+      "line": 41,
+      "implemented": true
+    },
+    {
+      "path": "/api/open/video/list.htm",
+      "literal": "/api/open/video/list.htm?carType=",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/teachingk2/unity/api/VideoListApi.java",
+      "line": 24,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/behavior-stat/get-top.htm",
+      "literal": "/api/open/behavior-stat/get-top.htm?latestDay=1&range=1&top=5&product=",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/teachingk2/unity/api/UserDataApi.java",
+      "line": 30,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/behav…(UserAIModel::class.java)",
+      "literal": "/api/open/behav…(UserAIModel::class.java)",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/teachingk2/unity/api/UserDataApi.java",
+      "line": 31,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/deduct-stat/get-top.htm",
+      "literal": "/api/open/deduct-stat/get-top.htm?latestDay=1&range=0&top=5&product=",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/teachingk2/unity/api/UserDataApi.java",
+      "line": 38,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/deduc…erErrorModel::class.java)",
+      "literal": "/api/open/deduc…erErrorModel::class.java)",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/teachingk2/unity/api/UserDataApi.java",
+      "line": 39,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/summary-stat/get.htm",
+      "literal": "/api/open/summary-stat/get.htm?latestDay=1&product=",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/teachingk2/unity/api/UserDataApi.java",
+      "line": 46,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/summa…verviewModel::class.java)",
+      "literal": "/api/open/summa…verviewModel::class.java)",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/teachingk2/unity/api/UserDataApi.java",
+      "line": 47,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/summary-stat/get-all.htm",
+      "literal": "/api/open/summary-stat/get-all.htm?latestDay=1",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/teachingk2/unity/api/UserDataApi.java",
+      "line": 54,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/step-stat/get2.htm",
+      "literal": "/api/open/step-stat/get2.htm?latestDay=1&product=",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/teachingk2/unity/api/UserDataApi.java",
+      "line": 62,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/step-…erTrainModel::class.java)",
+      "literal": "/api/open/step-…erTrainModel::class.java)",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/teachingk2/unity/api/UserDataApi.java",
+      "line": 63,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/step-level/get.htm",
+      "literal": "/api/open/step-level/get.htm",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/teachingk2/unity/api/UserDataApi.java",
+      "line": 71,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/step…ainStepLevel::class.java)",
+      "literal": "/api/open/step…ainStepLevel::class.java)",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/teachingk2/unity/api/UserDataApi.java",
+      "line": 72,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/step-stat/count-list.htm",
+      "literal": "/api/open/step-stat/count-list.htm",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/teachingk2/unity/api/UserDataApi.java",
+      "line": 79,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/user-train-guide/list.htm",
+      "literal": "/api/open/user-train-guide/list.htm",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/teachingk2/unity/api/UserDataApi.java",
+      "line": 88,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/user…serLevelData::class.java)",
+      "literal": "/api/open/user…serLevelData::class.java)",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/teachingk2/unity/api/UserDataApi.java",
+      "line": 89,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/fault-config/save.htm",
+      "literal": "/api/open/fault-config/save.htm",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/teachingk2/ui/settings/CheckModuleManager.java",
+      "line": 30,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/device/bind-car.htm",
+      "literal": "/api/open/device/bind-car.htm",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/teachingk2/ui/car/CarBindApi.java",
+      "line": 15,
+      "implemented": true
+    },
+    {
+      "path": "/api/open/device/query-device-info.htm",
+      "literal": "/api/open/device/query-device-info.htm",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/teachingk2/ui/car/CarBindApi.java",
+      "line": 21,
+      "implemented": true
+    },
+    {
+      "path": "/api/open/devic…(CarBindInfo::class.java)",
+      "literal": "/api/open/devic…(CarBindInfo::class.java)",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/teachingk2/ui/car/CarBindApi.java",
+      "line": 22,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/scene-trigger/create.htm",
+      "literal": "/api/open/scene-trigger/create.htm",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/teachingk2/collect/monitor/MonitorApi.java",
+      "line": 31,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/scene-trigger/find-by-teach-model-id.htm",
+      "literal": "/api/open/scene-trigger/find-by-teach-model-id.htm?programmeId=",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/teachingk2/collect/monitor/MonitorApi.java",
+      "line": 37,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/scene-trigger/scene-point.htm",
+      "literal": "/api/open/scene-trigger/scene-point.htm?examSiteId=",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/teachingk2/collect/monitor/MonitorApi.java",
+      "line": 41,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/scene…nePointModel::class.java)",
+      "literal": "/api/open/scene…nePointModel::class.java)",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/teachingk2/collect/monitor/MonitorApi.java",
+      "line": 42,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/scene-trigger/update.htm",
+      "literal": "/api/open/scene-trigger/update.htm",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/teachingk2/collect/monitor/MonitorApi.java",
+      "line": 51,
+      "implemented": false
+    },
+    {
+      "path": "/api/admin/teach-model/add-new-step.htm",
+      "literal": "/api/admin/teach-model/add-new-step.htm",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/teachingk2/collect/render/api/b.java",
+      "line": 40,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/owner/teach-model/create-new.htm",
+      "literal": "/api/open/owner/teach-model/create-new.htm",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/teachingk2/collect/render/api/b.java",
+      "line": 44,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/owner/teach-model/delete-new.htm",
+      "literal": "/api/open/owner/teach-model/delete-new.htm",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/teachingk2/collect/render/api/b.java",
+      "line": 55,
+      "implemented": false
+    },
+    {
+      "path": "/api/admin/teach-model/batch-delete.htm",
+      "literal": "/api/admin/teach-model/batch-delete.htm",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/teachingk2/collect/render/api/b.java",
+      "line": 62,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/owner/teach-model/list-new.htm",
+      "literal": "/api/open/owner/teach-model/list-new.htm?programmeId=",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/teachingk2/collect/render/api/b.java",
+      "line": 66,
+      "implemented": false
+    },
+    {
+      "path": "/api/admin/teach-model/get-all-group.htm",
+      "literal": "/api/admin/teach-model/get-all-group.htm?programmeId=",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/teachingk2/collect/render/api/b.java",
+      "line": 75,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/owner/teach-model/copy.htm",
+      "literal": "/api/open/owner/teach-model/copy.htm?programmeId=",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/teachingk2/collect/render/api/b.java",
+      "line": 79,
+      "implemented": false
+    },
+    {
+      "path": "/api/admin/teach-model/bind-park-space.htm",
+      "literal": "/api/admin/teach-model/bind-park-space.htm",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/teachingk2/collect/render/api/b.java",
+      "line": 88,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/owner/teach-model/update-new.htm",
+      "literal": "/api/open/owner/teach-model/update-new.htm",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/teachingk2/collect/render/api/b.java",
+      "line": 92,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/owner/teach-model/update-position.htm",
+      "literal": "/api/open/owner/teach-model/update-position.htm",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/teachingk2/collect/render/api/b.java",
+      "line": 96,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/owner/teach-material/list.htm",
+      "literal": "/api/open/owner/teach-material/list.htm?materialType=",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/teachingk2/collect/render/api/MaterialApi.java",
+      "line": 15,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/owner/resource-manager/query-new.htm",
+      "literal": "/api/open/owner/resource-manager/query-new.htm?examSiteId=",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/teachingk2/res/ResApi.java",
+      "line": 18,
+      "implemented": true
+    },
+    {
+      "path": "/api/open/owner/map-tile/get-by-map.htm",
+      "literal": "/api/open/owner/map-tile/get-by-map.htm?examSiteId=",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/teachingk2/res/ResApi.java",
+      "line": 30,
+      "implemented": true
+    },
+    {
+      "path": "/api/open/owner/teach-programme-voice/get-voices.htm",
+      "literal": "/api/open/owner/teach-programme-voice/get-voices.htm?examSiteId=",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/teachingk2/res/voice/a.java",
+      "line": 12,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/track/seek",
+      "literal": "/api/open/track/seek?trackId=",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/teachingk2/trace/TraceApi.java",
+      "line": 21,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/track…aceMenuModel::class.java)",
+      "literal": "/api/open/track…aceMenuModel::class.java)",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/teachingk2/trace/TraceApi.java",
+      "line": 22,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/train/list-summary.htm",
+      "literal": "/api/open/train/list-summary.htm?type=12&examSiteId=",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/teachingk2/trace/TraceApi.java",
+      "line": 29,
+      "implemented": false
+    },
+    {
+      "path": "/api/op…aceMenuModel::class.java)",
+      "literal": "/api/op…aceMenuModel::class.java)",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/teachingk2/trace/TraceApi.java",
+      "line": 30,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/train/list",
+      "literal": "/api/open/train/list?type=0&examSiteId=",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/teachingk2/trace/TraceApi.java",
+      "line": 37,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/track/seek",
+      "literal": "/api/open/track/seek?id=",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/teachingk2/trace/TraceApi.java",
+      "line": 54,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/track…aceMenuModel::class.java)",
+      "literal": "/api/open/track…aceMenuModel::class.java)",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/teachingk2/trace/TraceApi.java",
+      "line": 55,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/train-deduct/get-error-point-list.htm",
+      "literal": "/api/open/train-deduct/get-error-point-list.htm",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/teachingk2/record/UserRecordApi.java",
+      "line": 34,
+      "implemented": true
+    },
+    {
+      "path": "/api/open/train-record/get-user-train-list.htm",
+      "literal": "/api/open/train-record/get-user-train-list.htm?type=12&",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/teachingk2/record/UserRecordApi.java",
+      "line": 42,
+      "implemented": true
+    },
+    {
+      "path": "/api/open/train-deduct/get-error-area-list.htm",
+      "literal": "/api/open/train-deduct/get-error-area-list.htm",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/teachingk2/record/UserRecordApi.java",
+      "line": 52,
+      "implemented": true
+    },
+    {
+      "path": "/api/open/train-deduct/get-error-stat-list.htm",
+      "literal": "/api/open/train-deduct/get-error-stat-list.htm",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/teachingk2/record/UserRecordApi.java",
+      "line": 62,
+      "implemented": true
+    },
+    {
+      "path": "/api/open/train-step/get-user-train-list.htm",
+      "literal": "/api/open/train-step/get-user-train-list.htm?",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/teachingk2/record/UserRecordApi.java",
+      "line": 70,
+      "implemented": true
+    },
+    {
+      "path": "/api/open/login-time/report.htm",
+      "literal": "/api/open/login-time/report.htm?startTime=",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/teachingk2/record/UserRecordApi.java",
+      "line": 76,
+      "implemented": true
+    },
+    {
+      "path": "/api/open/user-train-course/saveData.htm",
+      "literal": "/api/open/user-train-course/saveData.htm",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/teachingk2/record/UserRecordApi.java",
+      "line": 87,
+      "implemented": true
+    },
+    {
+      "path": "/api/open/user-mission/upload-robot-data.htm",
+      "literal": "/api/open/user-mission/upload-robot-data.htm",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/teachingk2/record/UserRecordApi.java",
+      "line": 95,
+      "implemented": true
+    },
+    {
+      "path": "/api/open/behavior/uploadData",
+      "literal": "/api/open/behavior/uploadData",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/teachingk2/record/UserRecordApi.java",
+      "line": 104,
+      "implemented": true
+    },
+    {
+      "path": "/api/open/car-resource-mapping/find-owner-config.htm",
+      "literal": "/api/open/car-resource-mapping/find-owner-config.htm",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/teachingk2/config/JxConfigApi.java",
+      "line": 16,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/track/upload-highlights.htm",
+      "literal": "/api/open/track/upload-highlights.htm",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/teachingk2/highlight/UploadVideoApi.java",
+      "line": 82,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/exam-site-route/get-routes.htm",
+      "literal": "/api/open/exam-site-route/get-routes.htm?examSiteId=",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/teachingk2/r0/api/TeachRouteApi.java",
+      "line": 18,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/owner/teach-level-config/list.htm",
+      "literal": "/api/open/owner/teach-level-config/list.htm?examSiteId=",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/teachingk2/grade/GradeApi.java",
+      "line": 14,
+      "implemented": true
+    },
+    {
+      "path": "/api/open/application-config/video-config.htm",
+      "literal": "/api/open/application-config/video-config.htm?content=",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/teachingk2/push/PushApi.java",
+      "line": 15,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/control-center/get-push-url.htm",
+      "literal": "/api/open/control-center/get-push-url.htm",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/teachingk2/push/PushApi.java",
+      "line": 27,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/control-center/camera-error-upload.htm",
+      "literal": "/api/open/control-center/camera-error-upload.htm?errorCode=",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/teachingk2/push/PushApi.java",
+      "line": 34,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/control-center/call.htm",
+      "literal": "/api/open/control-center/call.htm",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/teachingk2/audio/AudioApi.java",
+      "line": 14,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/control-center/hang-up.htm",
+      "literal": "/api/open/control-center/hang-up.htm",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/teachingk2/audio/AudioApi.java",
+      "line": 18,
+      "implemented": false
+    },
+    {
+      "path": "/api/admin/acceptance-result/get-project-list.htm",
+      "literal": "/api/admin/acceptance-result/get-project-list.htm",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/teachingk2/acceptance/AcceptanceApi.java",
+      "line": 40,
+      "implemented": false
+    },
+    {
+      "path": "/api/admin/acceptance-result/find-by-type.htm",
+      "literal": "/api/admin/acceptance-result/find-by-type.htm?type=",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/teachingk2/acceptance/AcceptanceApi.java",
+      "line": 50,
+      "implemented": false
+    },
+    {
+      "path": "/api/admin/acceptance-result/get-acceptance-work-order-list.htm",
+      "literal": "/api/admin/acceptance-result/get-acceptance-work-order-list.htm",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/teachingk2/acceptance/AcceptanceApi.java",
+      "line": 56,
+      "implemented": false
+    },
+    {
+      "path": "/api/admin/acceptance-result/submit.htm",
+      "literal": "/api/admin/acceptance-result/submit.htm?type=",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/teachingk2/acceptance/AcceptanceApi.java",
+      "line": 74,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/owner/exam-site-map/set-origin-gps.htm",
+      "literal": "/api/open/owner/exam-site-map/set-origin-gps.htm",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/teachingk2/collectsite/v/b.java",
+      "line": 19,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/owner/electric-fence/delete.htm",
+      "literal": "/api/open/owner/electric-fence/delete.htm",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/teachingk2/collectsite/v/a.java",
+      "line": 28,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/owner/site-special-region/delete.htm",
+      "literal": "/api/open/owner/site-special-region/delete.htm",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/teachingk2/collectsite/v/a.java",
+      "line": 30,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/owner/site-object/delete.htm",
+      "literal": "/api/open/owner/site-object/delete.htm",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/teachingk2/collectsite/v/a.java",
+      "line": 30,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/owner/electric-fence/list.htm",
+      "literal": "/api/open/owner/electric-fence/list.htm",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/teachingk2/collectsite/v/a.java",
+      "line": 41,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/owner/site-special-region/list.htm",
+      "literal": "/api/open/owner/site-special-region/list.htm",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/teachingk2/collectsite/v/a.java",
+      "line": 43,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/owner/site-object/list.htm",
+      "literal": "/api/open/owner/site-object/list.htm",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/teachingk2/collectsite/v/a.java",
+      "line": 43,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/owner/electric-fence/save.htm",
+      "literal": "/api/open/owner/electric-fence/save.htm",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/teachingk2/collectsite/v/a.java",
+      "line": 65,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/owner/site-special-region/save.htm",
+      "literal": "/api/open/owner/site-special-region/save.htm",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/teachingk2/collectsite/v/a.java",
+      "line": 67,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/owner/site-object/save.htm",
+      "literal": "/api/open/owner/site-object/save.htm",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/teachingk2/collectsite/v/a.java",
+      "line": 67,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/owner/site-special-region/update-safe-data.htm",
+      "literal": "/api/open/owner/site-special-region/update-safe-data.htm",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/teachingk2/collectsite/v/a.java",
+      "line": 83,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/owner/teach-programme/list.htm",
+      "literal": "/api/open/owner/teach-programme/list.htm?examSiteId=",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/teachingk2/teachplan/b/b.java",
+      "line": 13,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/owner/teach-programme/get-template-programmes.htm",
+      "literal": "/api/open/owner/teach-programme/get-template-programmes.htm?version=2",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/teachingk2/teachplan/b/b.java",
+      "line": 17,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/car/set-teach-program-id.htm",
+      "literal": "/api/open/car/set-teach-program-id.htm?teachProgramId=",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/teachingk2/teachplan/b/a.java",
+      "line": 11,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/owner/customs-pass/get-config-v2.htm",
+      "literal": "/api/open/owner/customs-pass/get-config-v2.htm?courseId=",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/teachingk2/level/DeviceSettingApi.java",
+      "line": 25,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/car-resource-mapping/find-ready-in-car.htm",
+      "literal": "/api/open/car-resource-mapping/find-ready-in-car.htm?modelNum=",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/teachingk2/level/DeviceSettingApi.java",
+      "line": 44,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/path/find.htm",
+      "literal": "/api/open/path/find.htm",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/teachingk2/nav/NavigationApi.java",
+      "line": 29,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/error-analysis/list.htm",
+      "literal": "/api/open/error-analysis/list.htm?type=",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/teachingk2/p007unity/analysis/AnalysisApi.java",
+      "line": 16,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/error…nalysisModel::class.java)",
+      "literal": "/api/open/error…nalysisModel::class.java)",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/teachingk2/p007unity/analysis/AnalysisApi.java",
+      "line": 17,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/voice-rule-record/list.htm",
+      "literal": "/api/open/voice-rule-record/list.htm?studentId=",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/teachingk2/w0/api/VoiceTipsApi.java",
+      "line": 18,
+      "implemented": false
+    },
+    {
+      "path": "/api/op…serTipsTimes::class.java)",
+      "literal": "/api/op…serTipsTimes::class.java)",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/teachingk2/w0/api/VoiceTipsApi.java",
+      "line": 19,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/voice-rule/list.htm",
+      "literal": "/api/open/voice-rule/list.htm?schoolId=",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/teachingk2/w0/api/VoiceTipsApi.java",
+      "line": 24,
+      "implemented": false
+    },
+    {
+      "path": "/api/op…oiceTipsRule::class.java)",
+      "literal": "/api/op…oiceTipsRule::class.java)",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/teachingk2/w0/api/VoiceTipsApi.java",
+      "line": 25,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/voice-rule/update-times.htm",
+      "literal": "/api/open/voice-rule/update-times.htm?ruleId=",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/teachingk2/w0/api/VoiceTipsApi.java",
+      "line": 30,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/voice-rule-record/update-times.htm",
+      "literal": "/api/open/voice-rule-record/update-times.htm?ruleCode=",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/teachingk2/w0/api/VoiceTipsApi.java",
+      "line": 35,
+      "implemented": false
+    },
+    {
+      "path": "/api/admin/owner/teach-programme/copy.htm",
+      "literal": "/api/admin/owner/teach-programme/copy.htm",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/teachingk2/login/api/TeachProgrammeApi.java",
+      "line": 30,
+      "implemented": false
+    },
+    {
+      "path": "/api/admin/owner/teach-programme/create.htm",
+      "literal": "/api/admin/owner/teach-programme/create.htm",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/teachingk2/login/api/TeachProgrammeApi.java",
+      "line": 42,
+      "implemented": false
+    },
+    {
+      "path": "/api/admin/owner/teach-programme/delete.htm",
+      "literal": "/api/admin/owner/teach-programme/delete.htm?id=",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/teachingk2/login/api/TeachProgrammeApi.java",
+      "line": 46,
+      "implemented": false
+    },
+    {
+      "path": "/api/admin/owner/teach-programme/update.htm",
+      "literal": "/api/admin/owner/teach-programme/update.htm?id=",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/teachingk2/login/api/TeachProgrammeApi.java",
+      "line": 51,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/exam-site-navigation/view.htm",
+      "literal": "/api/open/exam-site-navigation/view.htm?examSiteId=",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/teachingk2/login/api/NavigationConfigApi.java",
+      "line": 17,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/exam-….getExamSiteId(0)}\\",
+      "literal": "/api/open/exam-….getExamSiteId(0)}\\",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/teachingk2/login/api/NavigationConfigApi.java",
+      "line": 18,
+      "implemented": false
+    },
+    {
+      "path": "/api/admin/car-body/add-to-my-car.htm",
+      "literal": "/api/admin/car-body/add-to-my-car.htm?id=",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/teachingk2/login/api/RobotAdminApi.java",
+      "line": 18,
+      "implemented": false
+    },
+    {
+      "path": "/api/admin/car-body/list-car-body.htm",
+      "literal": "/api/admin/car-body/list-car-body.htm?modelCode=",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/teachingk2/login/api/RobotAdminApi.java",
+      "line": 22,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/train-program-config/list.htm",
+      "literal": "/api/open/train-program-config/list.htm",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/teachingk2/login/api/ConfigApi.java",
+      "line": 14,
+      "implemented": true
+    },
+    {
+      "path": "/api/op…peratorModel::class.java)",
+      "literal": "/api/op…peratorModel::class.java)",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/teachingk2/login/api/ConfigApi.java",
+      "line": 15,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/user/check-logout.htm",
+      "literal": "/api/open/user/check-logout.htm",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/teachingk2/login/api/RobotBusinessLoginApi.java",
+      "line": 22,
+      "implemented": true
+    },
+    {
+      "path": "/api/open/user/admin-login.htm",
+      "literal": "/api/open/user/admin-login.htm",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/teachingk2/login/api/RobotBusinessLoginApi.java",
+      "line": 26,
+      "implemented": true
+    },
+    {
+      "path": "/api/open/user/login-notice.htm",
+      "literal": "/api/open/user/login-notice.htm",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/teachingk2/login/api/RobotBusinessLoginApi.java",
+      "line": 34,
+      "implemented": true
+    },
+    {
+      "path": "/api/open/user/logout-notice.htm",
+      "literal": "/api/open/user/logout-notice.htm?logout=",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/teachingk2/login/api/RobotBusinessLoginApi.java",
+      "line": 41,
+      "implemented": true
+    },
+    {
+      "path": "/api/open/car-body/add-to-my-car.htm",
+      "literal": "/api/open/car-body/add-to-my-car.htm?id=",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/mapcollect/collect/w0/a.java",
+      "line": 16,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/owner/car-body/save.htm",
+      "literal": "/api/open/owner/car-body/save.htm",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/mapcollect/collect/w0/a.java",
+      "line": 29,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/owner/car-body/delete-by-id.htm",
+      "literal": "/api/open/owner/car-body/delete-by-id.htm",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/mapcollect/collect/w0/a.java",
+      "line": 35,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/car-body/delete.htm",
+      "literal": "/api/open/car-body/delete.htm",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/mapcollect/collect/w0/a.java",
+      "line": 41,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/owner/car-body/add-to-my-car.htm",
+      "literal": "/api/open/owner/car-body/add-to-my-car.htm?id=",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/mapcollect/collect/w0/a.java",
+      "line": 45,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/owner/car-body/list.htm",
+      "literal": "/api/open/owner/car-body/list.htm?status=",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/mapcollect/collect/w0/a.java",
+      "line": 51,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/owner/car-body/my-car-data.htm",
+      "literal": "/api/open/owner/car-body/my-car-data.htm",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/mapcollect/collect/w0/a.java",
+      "line": 55,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/car-body/list.htm",
+      "literal": "/api/open/car-body/list.htm?status=",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/mapcollect/collect/w0/a.java",
+      "line": 61,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/car-body/set-official-data.htm",
+      "literal": "/api/open/car-body/set-official-data.htm?id=",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/mapcollect/collect/w0/a.java",
+      "line": 65,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/gps-base/list.htm",
+      "literal": "/api/open/gps-base/list.htm",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/mapcollect/manager/map/gpsbase/GpsBaseApi.java",
+      "line": 23,
+      "implemented": false
+    },
+    {
+      "path": "/api/op…ms\\",
+      "literal": "/api/op…ms\\",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/mapcollect/manager/map/gpsbase/GpsBaseApi.java",
+      "line": 24,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/base-station/move.htm",
+      "literal": "/api/open/base-station/move.htm",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/mapcollect/migrate/o.java",
+      "line": 26,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/brand-series/get-all-brand.htm",
+      "literal": "/api/open/brand-series/get-all-brand.htm",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/mapcollect/select/SelectApi.java",
+      "line": 20,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/brand…tSelectModel::class.java)",
+      "literal": "/api/open/brand…tSelectModel::class.java)",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/mapcollect/select/SelectApi.java",
+      "line": 21,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/car/list.htm",
+      "literal": "/api/open/car/list.htm",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/mapcollect/select/SelectApi.java",
+      "line": 27,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/drive-school/list.htm",
+      "literal": "/api/open/drive-school/list.htm",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/mapcollect/select/SelectApi.java",
+      "line": 34,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/brand-series/get-series-by-brand.htm",
+      "literal": "/api/open/brand-series/get-series-by-brand.htm?brandId=",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/mapcollect/select/SelectApi.java",
+      "line": 40,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/brand…tSelectModel::class.java)",
+      "literal": "/api/open/brand…tSelectModel::class.java)",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/mapcollect/select/SelectApi.java",
+      "line": 41,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/exam-site/get-share-step.htm",
+      "literal": "/api/open/exam-site/get-share-step.htm?examSiteId=",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/mapcollect/b/a/a.java",
+      "line": 16,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/exam-site/save-share-step.htm",
+      "literal": "/api/open/exam-site/save-share-step.htm",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/mapcollect/b/a/a.java",
+      "line": 23,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/car-body/save.htm",
+      "literal": "/api/open/car-body/save.htm",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/framework/p002e/n.java",
+      "line": 27,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/car-body/update.htm",
+      "literal": "/api/open/car-body/update.htm",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/framework/p002e/n.java",
+      "line": 27,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/judge-rule/get-inc-rules.htm",
+      "literal": "/api/open/judge-rule/get-inc-rules.htm",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/framework/p002e/n.java",
+      "line": 27,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/judge-rule/get-exam-site-rules.htm",
+      "literal": "/api/open/judge-rule/get-exam-site-rules.htm",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/framework/p002e/n.java",
+      "line": 27,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/instruction-rule/get-inc-rules.htm",
+      "literal": "/api/open/instruction-rule/get-inc-rules.htm",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/framework/p002e/n.java",
+      "line": 27,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/instruction-rule/get-exam-site-rules.htm",
+      "literal": "/api/open/instruction-rule/get-exam-site-rules.htm",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/framework/p002e/n.java",
+      "line": 27,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/base-station/move.htm",
+      "literal": "/api/open/base-station/move.htm",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/framework/p002e/n.java",
+      "line": 27,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/resource/get-resource.htm",
+      "literal": "/api/open/resource/get-resource.htm?type=",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/framework/tts/h/b.java",
+      "line": 14,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/voice/get-voice.htm",
+      "literal": "/api/open/voice/get-voice.htm?key=",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/framework/tts/h/a.java",
+      "line": 25,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/voice/add-voice.htm",
+      "literal": "/api/open/voice/add-voice.htm?key=",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/framework/tts/h/a.java",
+      "line": 31,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/route/get-area-code.htm",
+      "literal": "/api/open/route/get-area-code.htm",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/framework/api/citycode/b.java",
+      "line": 11,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/client-upload-log/upload-log.htm",
+      "literal": "/api/open/client-upload-log/upload-log.htm",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/framework/log/k/b.java",
+      "line": 147,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/error-info/add-error-info.htm",
+      "literal": "/api/open/error-info/add-error-info.htm",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/framework/base/ExceptionReporter.java",
+      "line": 26,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/voice/handle.htm",
+      "literal": "/api/open/voice/handle.htm",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/speech/semantic/e.java",
+      "line": 32,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/voice/response-lib.htm",
+      "literal": "/api/open/voice/response-lib.htm",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/speech/semantic/e.java",
+      "line": 36,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/voice/callback.htm",
+      "literal": "/api/open/voice/callback.htm",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/speech/semantic/e.java",
+      "line": 45,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/voice-wake-times/update-times.htm",
+      "literal": "/api/open/voice-wake-times/update-times.htm",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/speech/semantic/e.java",
+      "line": 49,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/voice/upload.htm",
+      "literal": "/api/open/voice/upload.htm",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/speech/semantic/e.java",
+      "line": 71,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/voice-file-record/upload-file-record.htm",
+      "literal": "/api/open/voice-file-record/upload-file-record.htm?deviceType=2",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/speech/semantic/g.java",
+      "line": 50,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/owner/exam-site/reset.htm",
+      "literal": "/api/open/owner/exam-site/reset.htm",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/k3setting/order/LightApi.java",
+      "line": 66,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/owner/light-exam-program/sort.htm",
+      "literal": "/api/open/owner/light-exam-program/sort.htm",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/k3setting/order/LightApi.java",
+      "line": 71,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/owner/light-combination/add.htm",
+      "literal": "/api/open/owner/light-combination/add.htm",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/k3setting/order/LightApi.java",
+      "line": 77,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/owner/light-exam-program/add.htm",
+      "literal": "/api/open/owner/light-exam-program/add.htm",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/k3setting/order/LightApi.java",
+      "line": 82,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/owner/light-combination/delete.htm",
+      "literal": "/api/open/owner/light-combination/delete.htm",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/k3setting/order/LightApi.java",
+      "line": 86,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/owner/light-exam-program/delete.htm",
+      "literal": "/api/open/owner/light-exam-program/delete.htm",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/k3setting/order/LightApi.java",
+      "line": 90,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/owner/light-combination/edit.htm",
+      "literal": "/api/open/owner/light-combination/edit.htm",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/k3setting/order/LightApi.java",
+      "line": 96,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/owner/light-exam-program/edit.htm",
+      "literal": "/api/open/owner/light-exam-program/edit.htm",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/k3setting/order/LightApi.java",
+      "line": 101,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/owner/light-combination/list.htm",
+      "literal": "/api/open/owner/light-combination/list.htm?examSiteId=",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/k3setting/order/LightApi.java",
+      "line": 113,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/owner/light-exam-program/list-light-configs.htm",
+      "literal": "/api/open/owner/light-exam-program/list-light-configs.htm?examSiteId=",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/k3setting/order/LightApi.java",
+      "line": 120,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/owner/light-exam-program/get-light-exam-programs.htm",
+      "literal": "/api/open/owner/light-exam-program/get-light-exam-programs.htm",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/k3setting/order/LightApi.java",
+      "line": 132,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/owner/light-combination/sort.htm",
+      "literal": "/api/open/owner/light-combination/sort.htm",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/k3setting/order/LightApi.java",
+      "line": 139,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/owner/kemu-instruction-config/batch-save-exam-site-config.htm",
+      "literal": "/api/open/owner/kemu-instruction-config/batch-save-exam-site-config.htm",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/k3setting/order/api/K3StepOrderApi.java",
+      "line": 56,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/owner/kemu-instruction-config/batch-save.htm",
+      "literal": "/api/open/owner/kemu-instruction-config/batch-save.htm",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/k3setting/order/api/K3StepOrderApi.java",
+      "line": 56,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/owner/kemu-instruction-config/delete-exam-site-config.htm",
+      "literal": "/api/open/owner/kemu-instruction-config/delete-exam-site-config.htm",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/k3setting/order/api/K3StepOrderApi.java",
+      "line": 61,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/owner/kemu-instruction-config/delete.htm",
+      "literal": "/api/open/owner/kemu-instruction-config/delete.htm",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/k3setting/order/api/K3StepOrderApi.java",
+      "line": 61,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/owner/kemu-instruction-config/init.htm",
+      "literal": "/api/open/owner/kemu-instruction-config/init.htm",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/k3setting/order/api/K3StepOrderApi.java",
+      "line": 66,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/owner/kemu-instruction-config/get-config-list.htm",
+      "literal": "/api/open/owner/kemu-instruction-config/get-config-list.htm?examSiteId=",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/k3setting/order/api/K3StepOrderApi.java",
+      "line": 75,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/owner/kemu-instruction-config/get.htm",
+      "literal": "/api/open/owner/kemu-instruction-config/get.htm?examSiteId=",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/k3setting/order/api/K3StepOrderApi.java",
+      "line": 79,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/owner/exam-site/reset.htm",
+      "literal": "/api/open/owner/exam-site/reset.htm",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/k3setting/order/api/K3StepOrderApi.java",
+      "line": 89,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/owner/kemu-instruction-config/save-exam-site-config.htm",
+      "literal": "/api/open/owner/kemu-instruction-config/save-exam-site-config.htm",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/k3setting/order/api/K3StepOrderApi.java",
+      "line": 95,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/owner/kemu-instruction-config/save.htm",
+      "literal": "/api/open/owner/kemu-instruction-config/save.htm",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/k3setting/order/api/K3StepOrderApi.java",
+      "line": 95,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/owner/route/add-gps.htm",
+      "literal": "/api/open/owner/route/add-gps.htm",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/k3setting/route/RouteApi.java",
+      "line": 32,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/owner/route/add-to-my-route.htm",
+      "literal": "/api/open/owner/route/add-to-my-route.htm",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/k3setting/route/RouteApi.java",
+      "line": 39,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/owner/route/clean-gps.htm",
+      "literal": "/api/open/owner/route/clean-gps.htm",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/k3setting/route/RouteApi.java",
+      "line": 47,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/owner/route/delete-exam-site-route.htm",
+      "literal": "/api/open/owner/route/delete-exam-site-route.htm",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/k3setting/route/RouteApi.java",
+      "line": 54,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/owner/route/delete.htm",
+      "literal": "/api/open/owner/route/delete.htm",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/k3setting/route/RouteApi.java",
+      "line": 54,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/owner/route/save-exam-site-route.htm",
+      "literal": "/api/open/owner/route/save-exam-site-route.htm",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/k3setting/route/RouteApi.java",
+      "line": 66,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/owner/route/edit.htm",
+      "literal": "/api/open/owner/route/edit.htm",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/k3setting/route/RouteApi.java",
+      "line": 66,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/owner/route/exam-site-list.htm",
+      "literal": "/api/open/owner/route/exam-site-list.htm?examSiteId=",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/k3setting/route/RouteApi.java",
+      "line": 70,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/owner/route/get-by-route-id.htm",
+      "literal": "/api/open/owner/route/get-by-route-id.htm?routeId=",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/k3setting/route/RouteApi.java",
+      "line": 77,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/owner/route/list.htm",
+      "literal": "/api/open/owner/route/list.htm?examSiteId=",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/k3setting/route/RouteApi.java",
+      "line": 88,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/owner/route/save-exam-site-route.htm",
+      "literal": "/api/open/owner/route/save-exam-site-route.htm",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/k3setting/route/RouteApi.java",
+      "line": 103,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/owner/route/save.htm",
+      "literal": "/api/open/owner/route/save.htm",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/k3setting/route/RouteApi.java",
+      "line": 103,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/owner/k3-teach/save-more-step.htm",
+      "literal": "/api/open/owner/k3-teach/save-more-step.htm",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/k3setting/teach/K3TeachApi.java",
+      "line": 32,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/owner/k3-teach/delete.htm",
+      "literal": "/api/open/owner/k3-teach/delete.htm",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/k3setting/teach/K3TeachApi.java",
+      "line": 38,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/owner/k3-teach/delete-more-step.htm",
+      "literal": "/api/open/owner/k3-teach/delete-more-step.htm",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/k3setting/teach/K3TeachApi.java",
+      "line": 47,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/owner/k3-teach/list.htm",
+      "literal": "/api/open/owner/k3-teach/list.htm?examSiteId=",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/k3setting/teach/K3TeachApi.java",
+      "line": 52,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/owner/k3-teach/save.htm",
+      "literal": "/api/open/owner/k3-teach/save.htm",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/k3setting/teach/K3TeachApi.java",
+      "line": 62,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/track/upload",
+      "literal": "/api/open/track/upload",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/engine/trace/upload/UploadTraceApi.java",
+      "line": 99,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/track/map/check",
+      "literal": "/api/open/track/map/check",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/engine/trace/upload/c.java",
+      "line": 26,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/device/report-device-info.htm",
+      "literal": "/api/open/device/report-device-info.htm",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/signal/communicate/AiCommandAdapter.java",
+      "line": 29,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/update/check-update.htm",
+      "literal": "/api/open/update/check-update.htm",
+      "source": "java/sources/cn/mucang/android/jiakaoyi/signal/ai/ota/f.java",
+      "line": 27,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/study-record-open/create.htm",
+      "literal": "/api/open/study-record-open/create.htm",
+      "source": "java/sources/cn/mucang/jiakaoyi/uilib/ui/setting/gear/q0.java",
+      "line": 15,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/manager-password/check-manager-password.htm",
+      "literal": "/api/open/manager-password/check-manager-password.htm",
+      "source": "java/sources/cn/mucang/jiakaoyi/uilib/ui/backup/BackupApi.java",
+      "line": 18,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/user/verify-proxy-pwd.htm",
+      "literal": "/api/open/user/verify-proxy-pwd.htm",
+      "source": "java/sources/cn/mucang/jiakaoyi/uilib/ui/backup/BackupApi.java",
+      "line": 23,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/user/quit-device.htm",
+      "literal": "/api/open/user/quit-device.htm",
+      "source": "java/sources/cn/mucang/jiakaoyi/uilib/ui/login/k/a.java",
+      "line": 11,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/upgrade/check-upgrade.htm",
+      "literal": "/api/open/upgrade/check-upgrade.htm",
+      "source": "java/sources/cn/mucang/jiakaoyi/uilib/upgrade/c.java",
+      "line": 19,
+      "implemented": true
+    },
+    {
+      "path": "/api/open/update/check-update.htm",
+      "literal": "/api/open/update/check-update.htm",
+      "source": "java/sources/cn/mucang/jiakaoyi/uilib/upgrade/d.java",
+      "line": 18,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/update/check-update.htm",
+      "literal": "/api/open/update/check-update.htm?hardwareVersion=",
+      "source": "java/sources/cn/mucang/jiakaoyi/uilib/upgrade/d.java",
+      "line": 20,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/worker/device-config/get-config.htm",
+      "literal": "/api/open/worker/device-config/get-config.htm?examSiteId=",
+      "source": "java/sources/cn/mucang/jiakaoyi/uilib/siterule/RobotSiteInstructApi.java",
+      "line": 16,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/worker/device-config/save.htm",
+      "literal": "/api/open/worker/device-config/save.htm",
+      "source": "java/sources/cn/mucang/jiakaoyi/uilib/siterule/RobotSiteInstructApi.java",
+      "line": 25,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/owner/exam-site/report.htm",
+      "literal": "/api/open/owner/exam-site/report.htm",
+      "source": "java/sources/cn/mucang/jiakaoyi/uilib/siterule/SiteApi.java",
+      "line": 23,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/owner/rule-group/create.htm",
+      "literal": "/api/open/owner/rule-group/create.htm",
+      "source": "java/sources/cn/mucang/jiakaoyi/uilib/siterule/SiteApi.java",
+      "line": 30,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/owner/rule-group/list.htm",
+      "literal": "/api/open/owner/rule-group/list.htm",
+      "source": "java/sources/cn/mucang/jiakaoyi/uilib/siterule/SiteApi.java",
+      "line": 34,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/owner/rule-group/list.htm",
+      "literal": "/api/open/owner/rule-group/list.htm",
+      "source": "java/sources/cn/mucang/jiakaoyi/uilib/siterule/SiteApi.java",
+      "line": 47,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/owner/exam-site/list.htm",
+      "literal": "/api/open/owner/exam-site/list.htm?pageSize=100",
+      "source": "java/sources/cn/mucang/jiakaoyi/uilib/siterule/SiteApi.java",
+      "line": 58,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/owner/rule-group/create.htm",
+      "literal": "/api/open/owner/rule-group/create.htm",
+      "source": "java/sources/cn/mucang/jiakaoyi/uilib/siterule/SiteApi.java",
+      "line": 70,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/owner/exam-site/report.htm",
+      "literal": "/api/open/owner/exam-site/report.htm",
+      "source": "java/sources/cn/mucang/jiakaoyi/uilib/siterule/SiteApi.java",
+      "line": 76,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/owner/device-config/get-config.htm",
+      "literal": "/api/open/owner/device-config/get-config.htm?type=",
+      "source": "java/sources/cn/mucang/jiakaoyi/uilib/siterule/SiteInstructApi.java",
+      "line": 18,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/owner/device-config/save.htm",
+      "literal": "/api/open/owner/device-config/save.htm",
+      "source": "java/sources/cn/mucang/jiakaoyi/uilib/siterule/SiteInstructApi.java",
+      "line": 28,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/exam-record/save-exam-result.htm",
+      "literal": "/api/open/exam-record/save-exam-result.htm",
+      "source": "java/sources/cn/mucang/jiakaoyi/uilib/record/UploadRecordApi.java",
+      "line": 22,
+      "implemented": true
+    },
+    {
+      "path": "/api/open/device-runtime/report.htm",
+      "literal": "/api/open/device-runtime/report.htm",
+      "source": "java/sources/cn/mucang/jiakaoyi/uilib/n/b.java",
+      "line": 41,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/message/confirm.htm",
+      "literal": "/api/open/message/confirm.htm",
+      "source": "java/sources/cn/mucang/jiakaoyi/uilib/message/DialogMessageApi.java",
+      "line": 36,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/message/list.htm",
+      "literal": "/api/open/message/list.htm",
+      "source": "java/sources/cn/mucang/jiakaoyi/uilib/message/DialogMessageApi.java",
+      "line": 40,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/owner/exam-site/check-diff-data.htm",
+      "literal": "/api/open/owner/exam-site/check-diff-data.htm?examSiteId=",
+      "source": "java/sources/cn/mucang/jiakaoyi/uilib/diff/RuleDeductDiffApi.java",
+      "line": 28,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/owner…ype}&type=${value}\\",
+      "literal": "/api/open/owner…ype}&type=${value}\\",
+      "source": "java/sources/cn/mucang/jiakaoyi/uilib/diff/RuleDeductDiffApi.java",
+      "line": 29,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/login/check.htm",
+      "literal": "/api/open/login/check.htm?token=",
+      "source": "java/sources/cn/mucang/jiakaoyi/uilib/sso/SsoLoginApi.java",
+      "line": 13,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/login…SsoUserModel::class.java)",
+      "literal": "/api/open/login…SsoUserModel::class.java)",
+      "source": "java/sources/cn/mucang/jiakaoyi/uilib/sso/SsoLoginApi.java",
+      "line": 14,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/login/prepare.htm",
+      "literal": "/api/open/login/prepare.htm?ssoName=robot-teach",
+      "source": "java/sources/cn/mucang/jiakaoyi/uilib/sso/SsoLoginApi.java",
+      "line": 19,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/login…soLoginModel::class.java)",
+      "literal": "/api/open/login…soLoginModel::class.java)",
+      "source": "java/sources/cn/mucang/jiakaoyi/uilib/sso/SsoLoginApi.java",
+      "line": 20,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/device/query-status.htm",
+      "literal": "/api/open/device/query-status.htm",
+      "source": "java/sources/cn/mucang/jiakaoyi/uilib/api/CacheDeviceApi.java",
+      "line": 24,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/device/get-paas-info.htm",
+      "literal": "/api/open/device/get-paas-info.htm",
+      "source": "java/sources/cn/mucang/jiakaoyi/uilib/api/CacheDeviceApi.java",
+      "line": 30,
+      "implemented": true
+    },
+    {
+      "path": "/api/open/owner/exam-site/report.htm",
+      "literal": "/api/open/owner/exam-site/report.htm",
+      "source": "java/sources/cn/mucang/jiakaoyi/uilib/api/n.java",
+      "line": 26,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/owner/instruction-rule/list.htm",
+      "literal": "/api/open/owner/instruction-rule/list.htm?examSiteId=",
+      "source": "java/sources/cn/mucang/jiakaoyi/uilib/api/n.java",
+      "line": 30,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/owner/exam-site/reset.htm",
+      "literal": "/api/open/owner/exam-site/reset.htm",
+      "source": "java/sources/cn/mucang/jiakaoyi/uilib/api/n.java",
+      "line": 38,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/owner/exam-site/reset.htm",
+      "literal": "/api/open/owner/exam-site/reset.htm",
+      "source": "java/sources/cn/mucang/jiakaoyi/uilib/api/n.java",
+      "line": 42,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/owner/instruction-rule/reset-teach-rule.htm",
+      "literal": "/api/open/owner/instruction-rule/reset-teach-rule.htm",
+      "source": "java/sources/cn/mucang/jiakaoyi/uilib/api/n.java",
+      "line": 48,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/owner/instruction-rule/save.htm",
+      "literal": "/api/open/owner/instruction-rule/save.htm",
+      "source": "java/sources/cn/mucang/jiakaoyi/uilib/api/n.java",
+      "line": 55,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/owner/exam-site-map/create-map-and-site.htm",
+      "literal": "/api/open/owner/exam-site-map/create-map-and-site.htm",
+      "source": "java/sources/cn/mucang/jiakaoyi/uilib/api/GeneralBusinessApi.java",
+      "line": 37,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/owne…xamSiteModel::class.java)",
+      "literal": "/api/open/owne…xamSiteModel::class.java)",
+      "source": "java/sources/cn/mucang/jiakaoyi/uilib/api/GeneralBusinessApi.java",
+      "line": 38,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/owner/exam-site-map/create-map-and-site.htm",
+      "literal": "/api/open/owner/exam-site-map/create-map-and-site.htm",
+      "source": "java/sources/cn/mucang/jiakaoyi/uilib/api/GeneralBusinessApi.java",
+      "line": 55,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/owne…xamSiteModel::class.java)",
+      "literal": "/api/open/owne…xamSiteModel::class.java)",
+      "source": "java/sources/cn/mucang/jiakaoyi/uilib/api/GeneralBusinessApi.java",
+      "line": 56,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/owner/exam-site-map/delete.htm",
+      "literal": "/api/open/owner/exam-site-map/delete.htm",
+      "source": "java/sources/cn/mucang/jiakaoyi/uilib/api/GeneralBusinessApi.java",
+      "line": 63,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/owner/model/list-obd-models.htm",
+      "literal": "/api/open/owner/model/list-obd-models.htm",
+      "source": "java/sources/cn/mucang/jiakaoyi/uilib/api/GeneralBusinessApi.java",
+      "line": 67,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/owner…rSelectModel::class.java)",
+      "literal": "/api/open/owner…rSelectModel::class.java)",
+      "source": "java/sources/cn/mucang/jiakaoyi/uilib/api/GeneralBusinessApi.java",
+      "line": 68,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/owner/exam-site-map/get-map.htm",
+      "literal": "/api/open/owner/exam-site-map/get-map.htm?examSiteId=",
+      "source": "java/sources/cn/mucang/jiakaoyi/uilib/api/GeneralBusinessApi.java",
+      "line": 73,
+      "implemented": true
+    },
+    {
+      "path": "/api/open/owner/exam-site-map/list.htm",
+      "literal": "/api/open/owner/exam-site-map/list.htm?onlyPublic=",
+      "source": "java/sources/cn/mucang/jiakaoyi/uilib/api/GeneralBusinessApi.java",
+      "line": 81,
+      "implemented": true
+    },
+    {
+      "path": "/api/open/owner/model-universal/list.htm",
+      "literal": "/api/open/owner/model-universal/list.htm",
+      "source": "java/sources/cn/mucang/jiakaoyi/uilib/api/GeneralBusinessApi.java",
+      "line": 87,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/owner…rSelectModel::class.java)",
+      "literal": "/api/open/owner…rSelectModel::class.java)",
+      "source": "java/sources/cn/mucang/jiakaoyi/uilib/api/GeneralBusinessApi.java",
+      "line": 88,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/owner/exam-site/list-public-site.htm",
+      "literal": "/api/open/owner/exam-site/list-public-site.htm?areaCode=",
+      "source": "java/sources/cn/mucang/jiakaoyi/uilib/api/GeneralBusinessApi.java",
+      "line": 97,
+      "implemented": true
+    },
+    {
+      "path": "/api/open/owner/exam-site-map/collect-map.htm",
+      "literal": "/api/open/owner/exam-site-map/collect-map.htm?&examSiteId=",
+      "source": "java/sources/cn/mucang/jiakaoyi/uilib/api/GeneralBusinessApi.java",
+      "line": 109,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/owner/exam-site-map/set-origin-gps.htm",
+      "literal": "/api/open/owner/exam-site-map/set-origin-gps.htm",
+      "source": "java/sources/cn/mucang/jiakaoyi/uilib/api/GeneralBusinessApi.java",
+      "line": 120,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/owner/exam-site-map/update.htm",
+      "literal": "/api/open/owner/exam-site-map/update.htm",
+      "source": "java/sources/cn/mucang/jiakaoyi/uilib/api/GeneralBusinessApi.java",
+      "line": 137,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/device-signal/save-car-default-signal.htm",
+      "literal": "/api/open/device-signal/save-car-default-signal.htm",
+      "source": "java/sources/cn/mucang/jiakaoyi/uilib/api/SignalReverseUpApi.java",
+      "line": 36,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/owner/exam-site/report.htm",
+      "literal": "/api/open/owner/exam-site/report.htm",
+      "source": "java/sources/cn/mucang/jiakaoyi/uilib/api/d.java",
+      "line": 25,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/owner/judge-rule/list.htm",
+      "literal": "/api/open/owner/judge-rule/list.htm?examSiteId=",
+      "source": "java/sources/cn/mucang/jiakaoyi/uilib/api/d.java",
+      "line": 29,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/owner/exam-site/reset.htm",
+      "literal": "/api/open/owner/exam-site/reset.htm",
+      "source": "java/sources/cn/mucang/jiakaoyi/uilib/api/d.java",
+      "line": 36,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/owner/judge-rule/save.htm",
+      "literal": "/api/open/owner/judge-rule/save.htm",
+      "source": "java/sources/cn/mucang/jiakaoyi/uilib/api/d.java",
+      "line": 43,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/config/get-config.htm",
+      "literal": "/api/open/config/get-config.htm?key=",
+      "source": "java/sources/cn/mucang/jiakaoyi/uilib/api/RemoteConfigApi.java",
+      "line": 18,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/device/get-device-config.htm",
+      "literal": "/api/open/device/get-device-config.htm?examSiteId=",
+      "source": "java/sources/cn/mucang/jiakaoyi/uilib/api/DeviceConfigApi.java",
+      "line": 28,
+      "implemented": true
+    },
+    {
+      "path": "/api/open/device/save-device-config.htm",
+      "literal": "/api/open/device/save-device-config.htm?isFull=",
+      "source": "java/sources/cn/mucang/jiakaoyi/uilib/api/DeviceConfigApi.java",
+      "line": 35,
+      "implemented": true
+    },
+    {
+      "path": "/api/open/device/record-sim-info.htm",
+      "literal": "/api/open/device/record-sim-info.htm",
+      "source": "java/sources/cn/mucang/jiakaoyi/uilib/api/DeviceConfigApi.java",
+      "line": 42,
+      "implemented": true
+    },
+    {
+      "path": "/api/open/owner/group-config/get-group-config.htm",
+      "literal": "/api/open/owner/group-config/get-group-config.htm?groupId=",
+      "source": "java/sources/cn/mucang/jiakaoyi/uilib/api/ResConfigApi.java",
+      "line": 19,
+      "implemented": true
+    },
+    {
+      "path": "/api/open/owner/group-config/update.htm",
+      "literal": "/api/open/owner/group-config/update.htm",
+      "source": "java/sources/cn/mucang/jiakaoyi/uilib/api/ResConfigApi.java",
+      "line": 33,
+      "implemented": true
+    },
+    {
+      "path": "/api/open/update/sync-result-or-rollback.htm",
+      "literal": "/api/open/update/sync-result-or-rollback.htm",
+      "source": "java/sources/cn/mucang/jiakaoyi/uilib/api/OnlyJkyApi.java",
+      "line": 38,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/device/save-gear-learning.htm",
+      "literal": "/api/open/device/save-gear-learning.htm",
+      "source": "java/sources/cn/mucang/jiakaoyi/uilib/api/r.java",
+      "line": 20,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/user-privacy-agreement/confirm.htm",
+      "literal": "/api/open/user-privacy-agreement/confirm.htm",
+      "source": "java/sources/cn/mucang/jiakaoyi/uilib/api/PrivacyAgreementApi.java",
+      "line": 22,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/coach-disclaimer/confirm.htm",
+      "literal": "/api/open/coach-disclaimer/confirm.htm",
+      "source": "java/sources/cn/mucang/jiakaoyi/uilib/api/PrivacyAgreementApi.java",
+      "line": 26,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/user-privacy-agreement/is-confirm.htm",
+      "literal": "/api/open/user-privacy-agreement/is-confirm.htm",
+      "source": "java/sources/cn/mucang/jiakaoyi/uilib/api/PrivacyAgreementApi.java",
+      "line": 33,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/user-privacy-agreement/refuse.htm",
+      "literal": "/api/open/user-privacy-agreement/refuse.htm",
+      "source": "java/sources/cn/mucang/jiakaoyi/uilib/api/PrivacyAgreementApi.java",
+      "line": 42,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/debug-tool-management/list.htm",
+      "literal": "/api/open/debug-tool-management/list.htm",
+      "source": "java/sources/cn/mucang/jiakaoyi/uilib/api/DebugToolsApi.java",
+      "line": 28,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/base-study-hour/query-receive-status.htm",
+      "literal": "/api/open/base-study-hour/query-receive-status.htm?uuid=",
+      "source": "java/sources/cn/mucang/jiakaoyi/uilib/api/ChargeApi.java",
+      "line": 15,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/model/get-signal-config-by-model-num.htm",
+      "literal": "/api/open/model/get-signal-config-by-model-num.htm",
+      "source": "java/sources/cn/mucang/jiakaoyi/uilib/api/SignalReverseDownApi.java",
+      "line": 15,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/judge-rule/share-rule.htm",
+      "literal": "/api/open/judge-rule/share-rule.htm",
+      "source": "java/sources/cn/mucang/jiakaoyi/uilib/api/ShareApi.java",
+      "line": 23,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/device/get-paas-info.htm",
+      "literal": "/api/open/device/get-paas-info.htm",
+      "source": "java/sources/cn/mucang/jiakaoyi/uilib/api/DeviceApi.java",
+      "line": 21,
+      "implemented": true
+    },
+    {
+      "path": "/api/open/devic…(DeviceAgent::class.java)",
+      "literal": "/api/open/devic…(DeviceAgent::class.java)",
+      "source": "java/sources/cn/mucang/jiakaoyi/uilib/api/DeviceApi.java",
+      "line": 22,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/device/get-device-info.htm",
+      "literal": "/api/open/device/get-device-info.htm",
+      "source": "java/sources/cn/mucang/jiakaoyi/uilib/api/DeviceApi.java",
+      "line": 27,
+      "implemented": true
+    },
+    {
+      "path": "/api/open/device/report.htm",
+      "literal": "/api/open/device/report.htm",
+      "source": "java/sources/cn/mucang/jiakaoyi/uilib/api/DeviceApi.java",
+      "line": 32,
+      "implemented": true
+    },
+    {
+      "path": "/api/open/device/user-heartbeat.htm",
+      "literal": "/api/open/device/user-heartbeat.htm",
+      "source": "java/sources/cn/mucang/jiakaoyi/uilib/api/DeviceApi.java",
+      "line": 46,
+      "implemented": true
+    },
+    {
+      "path": "/api/open/device/settings.htm",
+      "literal": "/api/open/device/settings.htm",
+      "source": "java/sources/cn/mucang/jiakaoyi/uilib/api/DeviceApi.java",
+      "line": 54,
+      "implemented": true
+    },
+    {
+      "path": "/api/open/device/save-use-record.htm",
+      "literal": "/api/open/device/save-use-record.htm?type=",
+      "source": "java/sources/cn/mucang/jiakaoyi/uilib/api/DeviceApi.java",
+      "line": 62,
+      "implemented": true
+    },
+    {
+      "path": "/api/open/factory/bind-factory-device.htm",
+      "literal": "/api/open/factory/bind-factory-device.htm",
+      "source": "java/sources/cn/mucang/jiakaoyi/uilib/activate/ActivateApi.java",
+      "line": 20,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/device/get-bind-qr-code.htm",
+      "literal": "/api/open/device/get-bind-qr-code.htm",
+      "source": "java/sources/cn/mucang/jiakaoyi/uilib/activate/ActivateApi.java",
+      "line": 24,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/login/submit.htm",
+      "literal": "/api/open/login/submit.htm",
+      "source": "java/sources/cn/mucang/jiakaoyi/uilib/login/api/XyLoginApi.java",
+      "line": 35,
+      "implemented": true
+    },
+    {
+      "path": "/api/open/login/logout.htm",
+      "literal": "/api/open/login/logout.htm",
+      "source": "java/sources/cn/mucang/jiakaoyi/uilib/login/api/XyLoginApi.java",
+      "line": 41,
+      "implemented": true
+    },
+    {
+      "path": "/api/open/user-config/get-login-config.htm",
+      "literal": "/api/open/user-config/get-login-config.htm",
+      "source": "java/sources/cn/mucang/jiakaoyi/uilib/login/api/LoginConfigApi.java",
+      "line": 28,
+      "implemented": true
+    },
+    {
+      "path": "/api/open/user-…figLoginItem::class.java)",
+      "literal": "/api/open/user-…figLoginItem::class.java)",
+      "source": "java/sources/cn/mucang/jiakaoyi/uilib/login/api/LoginConfigApi.java",
+      "line": 29,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/face/create-token.htm",
+      "literal": "/api/open/face/create-token.htm?sessionId=",
+      "source": "java/sources/cn/mucang/jiakaoyi/uilib/login/api/FaceCheckApi.java",
+      "line": 35,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/face/match-by-features.htm",
+      "literal": "/api/open/face/match-by-features.htm",
+      "source": "java/sources/cn/mucang/jiakaoyi/uilib/login/api/FaceCheckApi.java",
+      "line": 49,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/face/clear-nonstandard-face.htm",
+      "literal": "/api/open/face/clear-nonstandard-face.htm",
+      "source": "java/sources/cn/mucang/jiakaoyi/uilib/login/api/FaceCheckApi.java",
+      "line": 80,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/face/compare-current.htm",
+      "literal": "/api/open/face/compare-current.htm",
+      "source": "java/sources/cn/mucang/jiakaoyi/uilib/login/api/FaceCheckApi.java",
+      "line": 103,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/face/add-face-features.htm",
+      "literal": "/api/open/face/add-face-features.htm",
+      "source": "java/sources/cn/mucang/jiakaoyi/uilib/login/api/FaceCheckApi.java",
+      "line": 118,
+      "implemented": false
+    },
+    {
+      "path": "/api/admin/user/constructors-login.htm",
+      "literal": "/api/admin/user/constructors-login.htm",
+      "source": "java/sources/cn/mucang/jiakaoyi/uilib/login/api/BaseBusinessLoginApi.java",
+      "line": 17,
+      "implemented": false
+    },
+    {
+      "path": "/api/admin/user…(XyUserModel::class.java)",
+      "literal": "/api/admin/user…(XyUserModel::class.java)",
+      "source": "java/sources/cn/mucang/jiakaoyi/uilib/login/api/BaseBusinessLoginApi.java",
+      "line": 18,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/device/get-rent-expired-time.htm",
+      "literal": "/api/open/device/get-rent-expired-time.htm",
+      "source": "java/sources/cn/mucang/jiakaoyi/uilib/k/b/a.java",
+      "line": 19,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/auth/login-gps.htm",
+      "literal": "/api/open/auth/login-gps.htm",
+      "source": "java/sources/cn/mucang/jiakaoyi/uilib/socket/v/a.java",
+      "line": 35,
+      "implemented": false
+    },
+    {
+      "path": "/api/open/auth/login.htm",
+      "literal": "/api/open/auth/login.htm",
+      "source": "java/sources/cn/mucang/jiakaoyi/uilib/socket/v/a.java",
+      "line": 35,
+      "implemented": false
+    }
+  ],
+  "implementedRoutes": 40
+}

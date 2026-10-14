@@ -1,0 +1,585 @@
+--- original/android/smali_classes2/cn/mucang/android/jiakaoyi/framework/e/n.smali
++++ local/android/smali_classes2/cn/mucang/android/jiakaoyi/framework/e/n.smali
+@@ -590,26 +590,7 @@
+ .method protected getApiHost()Ljava/lang/String;
+     .locals 1
+ 
+-    .line 1
+-    invoke-direct {p0}, Lcn/mucang/android/jiakaoyi/framework/e/n;->l()Z
+-
+-    move-result v0
+-
+-    if-eqz v0, :cond_0
+-
+-    .line 2
+-    invoke-direct {p0}, Lcn/mucang/android/jiakaoyi/framework/e/n;->d()Ljava/lang/String;
+-
+-    move-result-object v0
+-
+-    return-object v0
+-
+-    .line 3
+-    :cond_0
+-    invoke-direct {p0}, Lcn/mucang/android/jiakaoyi/framework/e/n;->e()Ljava/lang/String;
+-
+-    move-result-object v0
+-
++    const-string v0, "http://127.0.0.1:8765"
+     return-object v0
+ .end method
+ 
+--- original/android/smali_classes2/cn/mucang/android/jiakaoyi/framework/e/d.smali
++++ local/android/smali_classes2/cn/mucang/android/jiakaoyi/framework/e/d.smali
+@@ -42,21 +42,7 @@
+ .method protected getApiHost()Ljava/lang/String;
+     .locals 1
+ 
+-    .line 1
+-    invoke-static {}, Lcn/mucang/android/core/config/MucangConfig;->v()Z
+-
+-    move-result v0
+-
+-    if-eqz v0, :cond_0
+-
+-    const-string v0, "https://device-manager.ttt.mucang.cn"
+-
+-    goto :goto_0
+-
+-    :cond_0
+-    const-string v0, "https://device-manager.kakamobi.cn"
+-
+-    :goto_0
++    const-string v0, "http://127.0.0.1:8765"
+     return-object v0
+ .end method
+ 
+--- original/android/smali_classes2/cn/mucang/android/jiakaoyi/framework/e/e.smali
++++ local/android/smali_classes2/cn/mucang/android/jiakaoyi/framework/e/e.smali
+@@ -42,21 +42,7 @@
+ .method protected getApiHost()Ljava/lang/String;
+     .locals 1
+ 
+-    .line 1
+-    invoke-static {}, Lcn/mucang/android/core/config/MucangConfig;->v()Z
+-
+-    move-result v0
+-
+-    if-eqz v0, :cond_0
+-
+-    const-string v0, "https://device-monitor.ttt.mucang.cn"
+-
+-    goto :goto_0
+-
+-    :cond_0
+-    const-string v0, "https://device-monitor.kakamobi.cn"
+-
+-    :goto_0
++    const-string v0, "http://127.0.0.1:8765"
+     return-object v0
+ .end method
+ 
+--- original/android/smali_classes2/cn/mucang/android/jiakaoyi/framework/e/f.smali
++++ local/android/smali_classes2/cn/mucang/android/jiakaoyi/framework/e/f.smali
+@@ -42,21 +42,7 @@
+ .method protected getApiHost()Ljava/lang/String;
+     .locals 1
+ 
+-    .line 1
+-    invoke-static {}, Lcn/mucang/android/core/config/MucangConfig;->v()Z
+-
+-    move-result v0
+-
+-    if-eqz v0, :cond_0
+-
+-    const-string v0, "https://device-update.ttt.mucang.cn"
+-
+-    goto :goto_0
+-
+-    :cond_0
+-    const-string v0, "https://device-update.kakamobi.cn"
+-
+-    :goto_0
++    const-string v0, "http://127.0.0.1:8765"
+     return-object v0
+ .end method
+ 
+--- original/android/smali_classes2/cn/mucang/android/jiakaoyi/framework/e/h.smali
++++ local/android/smali_classes2/cn/mucang/android/jiakaoyi/framework/e/h.smali
+@@ -42,21 +42,7 @@
+ .method protected getApiHost()Ljava/lang/String;
+     .locals 1
+ 
+-    .line 1
+-    invoke-static {}, Lcn/mucang/android/core/config/MucangConfig;->v()Z
+-
+-    move-result v0
+-
+-    if-eqz v0, :cond_0
+-
+-    const-string v0, "https://path-planing.ttt.mucang.cn"
+-
+-    goto :goto_0
+-
+-    :cond_0
+-    const-string v0, "https://path-planing.kakamobi.cn"
+-
+-    :goto_0
++    const-string v0, "http://127.0.0.1:8765"
+     return-object v0
+ .end method
+ 
+--- original/android/smali_classes2/cn/mucang/android/jiakaoyi/framework/e/i.smali
++++ local/android/smali_classes2/cn/mucang/android/jiakaoyi/framework/e/i.smali
+@@ -42,8 +42,7 @@
+ .method protected getApiHost()Ljava/lang/String;
+     .locals 1
+ 
+-    const-string v0, "https://xy-privacy-agreement.kakamobi.cn"
+-
++    const-string v0, "http://127.0.0.1:8765"
+     return-object v0
+ .end method
+ 
+--- original/android/smali_classes2/cn/mucang/android/jiakaoyi/framework/e/j.smali
++++ local/android/smali_classes2/cn/mucang/android/jiakaoyi/framework/e/j.smali
+@@ -42,20 +42,7 @@
+ .method protected getApiHost()Ljava/lang/String;
+     .locals 1
+ 
+-    .line 1
+-    invoke-static {}, Lcn/mucang/android/core/config/MucangConfig;->v()Z
+-
+-    move-result v0
+-
+-    if-eqz v0, :cond_0
+-
+-    const-string v0, "https://user-data-collection.ttt.mucang.cn"
+-
+-    return-object v0
+-
+-    :cond_0
+-    const-string v0, "https://udc.kakamobi.cn"
+-
++    const-string v0, "http://127.0.0.1:8765"
+     return-object v0
+ .end method
+ 
+--- original/android/smali_classes2/cn/mucang/android/jiakaoyi/framework/e/k.smali
++++ local/android/smali_classes2/cn/mucang/android/jiakaoyi/framework/e/k.smali
+@@ -42,20 +42,7 @@
+ .method protected getApiHost()Ljava/lang/String;
+     .locals 1
+ 
+-    .line 1
+-    invoke-static {}, Lcn/mucang/android/core/config/MucangConfig;->v()Z
+-
+-    move-result v0
+-
+-    if-eqz v0, :cond_0
+-
+-    const-string v0, "https://user-data.ttt.mucang.cn"
+-
+-    return-object v0
+-
+-    :cond_0
+-    const-string v0, "https://user-data.kakamobi.cn"
+-
++    const-string v0, "http://127.0.0.1:8765"
+     return-object v0
+ .end method
+ 
+--- original/android/smali_classes2/cn/mucang/android/jiakaoyi/framework/e/l.smali
++++ local/android/smali_classes2/cn/mucang/android/jiakaoyi/framework/e/l.smali
+@@ -42,20 +42,7 @@
+ .method protected getApiHost()Ljava/lang/String;
+     .locals 1
+ 
+-    .line 1
+-    invoke-static {}, Lcn/mucang/android/core/config/MucangConfig;->v()Z
+-
+-    move-result v0
+-
+-    if-eqz v0, :cond_0
+-
+-    const-string v0, "https://work-order.ttt.mucang.cn"
+-
+-    return-object v0
+-
+-    :cond_0
+-    const-string v0, "https://work-order.kakamobi.cn"
+-
++    const-string v0, "http://127.0.0.1:8765"
+     return-object v0
+ .end method
+ 
+--- original/android/smali_classes5/cn/mucang/jiakaoyi/uilib/i/i.smali
++++ local/android/smali_classes5/cn/mucang/jiakaoyi/uilib/i/i.smali
+@@ -67,21 +67,7 @@
+ .method protected getApiHost()Ljava/lang/String;
+     .locals 1
+ 
+-    .line 1
+-    invoke-static {}, Lcn/mucang/android/core/config/MucangConfig;->v()Z
+-
+-    move-result v0
+-
+-    if-eqz v0, :cond_0
+-
+-    const-string v0, "https://lukaoyi.ttt.mucang.cn"
+-
+-    goto :goto_0
+-
+-    :cond_0
+-    const-string v0, "https://lukaoyi.kakamobi.cn"
+-
+-    :goto_0
++    const-string v0, "http://127.0.0.1:8765"
+     return-object v0
+ .end method
+ 
+--- original/android/smali_classes5/cn/mucang/jiakaoyi/uilib/i/h.smali
++++ local/android/smali_classes5/cn/mucang/jiakaoyi/uilib/i/h.smali
+@@ -25,20 +25,7 @@
+ .method protected getApiHost()Ljava/lang/String;
+     .locals 1
+ 
+-    .line 1
+-    invoke-static {}, Lcn/mucang/android/core/config/MucangConfig;->v()Z
+-
+-    move-result v0
+-
+-    if-eqz v0, :cond_0
+-
+-    const-string v0, "https://lukaoyi.ttt.mucang.cn"
+-
+-    return-object v0
+-
+-    :cond_0
+-    const-string v0, "https://lukaoyi.kakamobi.cn"
+-
++    const-string v0, "http://127.0.0.1:8765"
+     return-object v0
+ .end method
+ 
+--- original/android/smali_classes5/cn/mucang/jiakaoyi/uilib/i/c.smali
++++ local/android/smali_classes5/cn/mucang/jiakaoyi/uilib/i/c.smali
+@@ -45,21 +45,7 @@
+ .method protected getApiHost()Ljava/lang/String;
+     .locals 1
+ 
+-    .line 1
+-    invoke-static {}, Lcn/mucang/android/core/config/MucangConfig;->v()Z
+-
+-    move-result v0
+-
+-    if-eqz v0, :cond_0
+-
+-    const-string v0, "https://device-administration.ttt.mucang.cn"
+-
+-    goto :goto_0
+-
+-    :cond_0
+-    const-string v0, "https://device-administration.kakamobi.cn"
+-
+-    :goto_0
++    const-string v0, "http://127.0.0.1:8765"
+     return-object v0
+ .end method
+ 
+--- original/android/smali_classes5/cn/mucang/jiakaoyi/uilib/i/q.smali
++++ local/android/smali_classes5/cn/mucang/jiakaoyi/uilib/i/q.smali
+@@ -47,21 +47,7 @@
+ .method protected getApiHost()Ljava/lang/String;
+     .locals 1
+ 
+-    .line 1
+-    invoke-static {}, Lcn/mucang/android/core/config/MucangConfig;->v()Z
+-
+-    move-result v0
+-
+-    if-eqz v0, :cond_0
+-
+-    const-string v0, "https://device-administration.ttt.mucang.cn"
+-
+-    goto :goto_0
+-
+-    :cond_0
+-    const-string v0, "https://device-administration.kakamobi.cn"
+-
+-    :goto_0
++    const-string v0, "http://127.0.0.1:8765"
+     return-object v0
+ .end method
+ 
+--- original/android/smali_classes5/cn/mucang/jiakaoyi/uilib/login/o/b.smali
++++ local/android/smali_classes5/cn/mucang/jiakaoyi/uilib/login/o/b.smali
+@@ -65,20 +65,7 @@
+ .method protected getApiHost()Ljava/lang/String;
+     .locals 1
+ 
+-    .line 1
+-    invoke-static {}, Lcn/mucang/android/core/config/MucangConfig;->v()Z
+-
+-    move-result v0
+-
+-    if-eqz v0, :cond_0
+-
+-    const-string v0, "https://face-recognition.ttt.mucang.cn"
+-
+-    return-object v0
+-
+-    :cond_0
+-    const-string v0, "https://face-recognition.kakamobi.cn"
+-
++    const-string v0, "http://127.0.0.1:8765"
+     return-object v0
+ .end method
+ 
+--- original/android/smali_classes5/cn/mucang/jiakaoyi/uilib/login/o/c.smali
++++ local/android/smali_classes5/cn/mucang/jiakaoyi/uilib/login/o/c.smali
+@@ -45,21 +45,7 @@
+ .method protected getApiHost()Ljava/lang/String;
+     .locals 1
+ 
+-    .line 1
+-    invoke-static {}, Lcn/mucang/android/core/config/MucangConfig;->v()Z
+-
+-    move-result v0
+-
+-    if-eqz v0, :cond_0
+-
+-    const-string v0, "https://xy-biz-user.ttt.mucang.cn"
+-
+-    goto :goto_0
+-
+-    :cond_0
+-    const-string v0, "https://xy-biz-user.kakamobi.cn"
+-
+-    :goto_0
++    const-string v0, "http://127.0.0.1:8765"
+     return-object v0
+ .end method
+ 
+--- original/android/smali_classes5/cn/mucang/jiakaoyi/uilib/login/o/d.smali
++++ local/android/smali_classes5/cn/mucang/jiakaoyi/uilib/login/o/d.smali
+@@ -52,21 +52,7 @@
+ .method protected getApiHost()Ljava/lang/String;
+     .locals 1
+ 
+-    .line 1
+-    invoke-static {}, Lcn/mucang/android/core/config/MucangConfig;->v()Z
+-
+-    move-result v0
+-
+-    if-eqz v0, :cond_0
+-
+-    const-string v0, "https://xy-user-login.ttt.mucang.cn"
+-
+-    goto :goto_0
+-
+-    :cond_0
+-    const-string v0, "https://xy-user-login.kakamobi.cn"
+-
+-    :goto_0
++    const-string v0, "http://127.0.0.1:8765"
+     return-object v0
+ .end method
+ 
+--- original/android/smali_classes2/cn/mucang/android/jiakaoyi/engine/trace/upload/UploadTraceApi.smali
++++ local/android/smali_classes2/cn/mucang/android/jiakaoyi/engine/trace/upload/UploadTraceApi.smali
+@@ -466,20 +466,7 @@
+ .method protected getApiHost()Ljava/lang/String;
+     .locals 1
+ 
+-    .line 1
+-    invoke-static {}, Lcn/mucang/android/core/config/MucangConfig;->v()Z
+-
+-    move-result v0
+-
+-    if-eqz v0, :cond_0
+-
+-    const-string v0, "https://user-data-collection.ttt.mucang.cn"
+-
+-    return-object v0
+-
+-    :cond_0
+-    const-string v0, "https://udc.kakamobi.cn"
+-
++    const-string v0, "http://127.0.0.1:8765"
+     return-object v0
+ .end method
+ 
+--- original/android/smali_classes4/cn/mucang/android/jiakaoyi/teachingk2/highlight/UploadVideoApi.smali
++++ local/android/smali_classes4/cn/mucang/android/jiakaoyi/teachingk2/highlight/UploadVideoApi.smali
+@@ -265,21 +265,7 @@
+ .method protected getApiHost()Ljava/lang/String;
+     .locals 1
+ 
+-    .line 1
+-    invoke-static {}, Lcn/mucang/android/core/config/MucangConfig;->v()Z
+-
+-    move-result v0
+-
+-    if-eqz v0, :cond_0
+-
+-    const-string v0, "https://user-data-collection.ttt.mucang.cn"
+-
+-    goto :goto_0
+-
+-    :cond_0
+-    const-string v0, "https://udc.kakamobi.cn"
+-
+-    :goto_0
++    const-string v0, "http://127.0.0.1:8765"
+     return-object v0
+ .end method
+ 
+--- original/android/smali_classes3/cn/mucang/android/jiakaoyi/speech/semantic/e.smali
++++ local/android/smali_classes3/cn/mucang/android/jiakaoyi/speech/semantic/e.smali
+@@ -256,20 +256,7 @@
+ .method protected getApiHost()Ljava/lang/String;
+     .locals 1
+ 
+-    .line 1
+-    invoke-static {}, Lcn/mucang/android/core/config/MucangConfig;->v()Z
+-
+-    move-result v0
+-
+-    if-eqz v0, :cond_0
+-
+-    const-string v0, "https://robot-teach.ttt.mucang.cn"
+-
+-    return-object v0
+-
+-    :cond_0
+-    const-string v0, "https://robot-teach.kakamobi.cn"
+-
++    const-string v0, "http://127.0.0.1:8765"
+     return-object v0
+ .end method
+ 
+--- original/android/smali_classes3/cn/mucang/android/jiakaoyi/speech/semantic/g.smali
++++ local/android/smali_classes3/cn/mucang/android/jiakaoyi/speech/semantic/g.smali
+@@ -83,20 +83,7 @@
+ .method protected getApiHost()Ljava/lang/String;
+     .locals 1
+ 
+-    .line 1
+-    invoke-static {}, Lcn/mucang/android/core/config/MucangConfig;->v()Z
+-
+-    move-result v0
+-
+-    if-eqz v0, :cond_0
+-
+-    const-string v0, "https://device-monitor.ttt.mucang.cn"
+-
+-    return-object v0
+-
+-    :cond_0
+-    const-string v0, "https://device-monitor.kakamobi.cn"
+-
++    const-string v0, "http://127.0.0.1:8765"
+     return-object v0
+ .end method
+ 
+--- original/android/smali_classes3/cn/mucang/android/jiakaoyi/signal/ai/ota/f.smali
++++ local/android/smali_classes3/cn/mucang/android/jiakaoyi/signal/ai/ota/f.smali
+@@ -18,20 +18,7 @@
+ .method protected getApiHost()Ljava/lang/String;
+     .locals 1
+ 
+-    .line 1
+-    invoke-static {}, Lcn/mucang/android/core/config/MucangConfig;->v()Z
+-
+-    move-result v0
+-
+-    if-eqz v0, :cond_0
+-
+-    const-string v0, "https://device-update.ttt.mucang.cn"
+-
+-    return-object v0
+-
+-    :cond_0
+-    const-string v0, "https://device-update.kakamobi.cn"
+-
++    const-string v0, "http://127.0.0.1:8765"
+     return-object v0
+ .end method
+ 
+--- original/android/smali_classes5/cn/mucang/jiakaoyi/uilib/k/b/a.smali
++++ local/android/smali_classes5/cn/mucang/jiakaoyi/uilib/k/b/a.smali
+@@ -18,20 +18,7 @@
+ .method protected getApiHost()Ljava/lang/String;
+     .locals 1
+ 
+-    .line 1
+-    invoke-static {}, Lcn/mucang/android/core/config/MucangConfig;->v()Z
+-
+-    move-result v0
+-
+-    if-eqz v0, :cond_0
+-
+-    const-string v0, "https://lukaoyi-cost.ttt.mucang.cn"
+-
+-    return-object v0
+-
+-    :cond_0
+-    const-string v0, "https://lukaoyi-cost.kakamobi.cn"
+-
++    const-string v0, "http://127.0.0.1:8765"
+     return-object v0
+ .end method
+ 
+--- original/android/smali_classes5/cn/mucang/jiakaoyi/uilib/n/b$a.smali
++++ local/android/smali_classes5/cn/mucang/jiakaoyi/uilib/n/b$a.smali
+@@ -29,8 +29,7 @@
+ .method protected getApiHost()Ljava/lang/String;
+     .locals 1
+ 
+-    const-string v0, "https://device-monitor.kakamobi.cn"
+-
++    const-string v0, "http://127.0.0.1:8765"
+     return-object v0
+ .end method
+ 
+--- original/android/smali_classes2/cn/mucang/android/jiakaoyi/framework/utils/c0.smali
++++ local/android/smali_classes2/cn/mucang/android/jiakaoyi/framework/utils/c0.smali
+@@ -15,36 +15,9 @@
+ .end method
+ 
+ .method public static a()Z
+-    .locals 2
++    .locals 1
+ 
+-    .line 1
+-    sget-object v0, Lcn/mucang/android/jiakaoyi/framework/utils/c0;->a:Ljava/lang/Boolean;
+-
+-    if-nez v0, :cond_0
+-
+-    const/4 v0, 0x1
+-
+-    const-string v1, "debugNeedEncrypted"
+-
+-    .line 2
+-    invoke-static {v1, v0}, Lcn/mucang/android/jiakaoyi/framework/utils/i0;->b(Ljava/lang/String;Z)Z
+-
+-    move-result v0
+-
+-    invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+-
+-    move-result-object v0
+-
+-    sput-object v0, Lcn/mucang/android/jiakaoyi/framework/utils/c0;->a:Ljava/lang/Boolean;
+-
+-    .line 3
+-    :cond_0
+-    sget-object v0, Lcn/mucang/android/jiakaoyi/framework/utils/c0;->a:Ljava/lang/Boolean;
+-
+-    invoke-virtual {v0}, Ljava/lang/Boolean;->booleanValue()Z
+-
+-    move-result v0
+-
++    const/4 v0, 0x0
+     return v0
+ .end method
+ 

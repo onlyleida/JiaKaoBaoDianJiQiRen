@@ -1,0 +1,177 @@
+{
+  "implementation": "Local compatibility backend, not recovered vendor server",
+  "business_routes": 40,
+  "local_tests": {
+    "python": "3.9.6",
+    "scenarios": 8,
+    "result": "passed",
+    "transport": "temporary loopback HTTP",
+    "apk_runtime": false
+  },
+  "client_variant": {
+    "apk": "jiakaoyi-coach-11.6.5-rebuilt-debug.apk",
+    "sha256": "16d0c167b5509609fb795cab3a6271aa76b03a82333da1f5d2ffb3fdf08560ea",
+    "bytes": 111990129,
+    "apktool": "3.0.3",
+    "build_tools": "35.0.0",
+    "signature_verified": true,
+    "zip_alignment_verified": true,
+    "packaged_files_byte_identical_to_extraction": {
+      "assets": 309,
+      "lib": 42
+    },
+    "dex_files": [
+      "classes.dex",
+      "classes2.dex",
+      "classes3.dex",
+      "classes4.dex",
+      "classes5.dex",
+      "classes6.dex"
+    ],
+    "original_preserved_payload_verified": true,
+    "signing": "local debug key; different from original vendor certificate",
+    "runtime_test": "not performed by this build script"
+  },
+  "overlay": {
+    "baseUrl": "http://127.0.0.1:8765",
+    "files": [
+      {
+        "file": "android/smali_classes2/cn/mucang/android/jiakaoyi/framework/e/n.smali",
+        "originalSha256": "c374b675245410ba4a029dd5b3c62950a92c41f260aa04d159f432d8a64db68c",
+        "patchedSha256": "6702f77ae64ca52d381fc4f5cae87905094d73a817eb38309eef3e2121ff2507"
+      },
+      {
+        "file": "android/smali_classes2/cn/mucang/android/jiakaoyi/framework/e/d.smali",
+        "originalSha256": "f65c43b811c48eb102859e05e0384513b7421cc7d2866908dfbb099ed3790765",
+        "patchedSha256": "5154171076d9df515fb392ef6af1fae36186d44437e6e2a38ba4787684c84690"
+      },
+      {
+        "file": "android/smali_classes2/cn/mucang/android/jiakaoyi/framework/e/e.smali",
+        "originalSha256": "b0ddc1e6c5eb81d0dcaf5413636712d985a0ff5a7abbe5931afe2e2204d98cad",
+        "patchedSha256": "160b0fea29e0165c7afe318577346c147c1c7d906d0f1d06bf329d8dbcd4113e"
+      },
+      {
+        "file": "android/smali_classes2/cn/mucang/android/jiakaoyi/framework/e/f.smali",
+        "originalSha256": "3773aaa7a44f0706ac2b60889bbdac5d59cb82a84997928c28dcbd4c43d6c6bd",
+        "patchedSha256": "cd0ceb8cbd943e99b4787e29f198454ea11dce4257fa517f25f534ed87a0d62e"
+      },
+      {
+        "file": "android/smali_classes2/cn/mucang/android/jiakaoyi/framework/e/h.smali",
+        "originalSha256": "071d11f7be2543657427b20fe5c7344aef81f33f08bebf8ef339291e41be3e86",
+        "patchedSha256": "630d739f50769fbbaab200ee0957f74f132eac455780b279fb28f253017a6427"
+      },
+      {
+        "file": "android/smali_classes2/cn/mucang/android/jiakaoyi/framework/e/i.smali",
+        "originalSha256": "05d7a1f1083f294fe4ac49dc8a9f13ab9f129cfe123b6b38f773fa4f68fa00ba",
+        "patchedSha256": "36db4920cd9c6edacfea6a2dc50633c596787555fd53b44a8f4f1c41510edf3e"
+      },
+      {
+        "file": "android/smali_classes2/cn/mucang/android/jiakaoyi/framework/e/j.smali",
+        "originalSha256": "c41f5162b3e50834c951fcb2d9aa7feaaa9c203acd5975bc7d2b5c331579027d",
+        "patchedSha256": "c520abcaa35f7cc518635f47e437ad61eff9554fe2f4bcc7f8a96a1a9d0b5e2d"
+      },
+      {
+        "file": "android/smali_classes2/cn/mucang/android/jiakaoyi/framework/e/k.smali",
+        "originalSha256": "56937410cad5ff0489166a70e58507b64ccf8b16d3ce330b07d5864d89966f48",
+        "patchedSha256": "ac5eb18a6b17f58d19d1825655af00f9bcf326fd75418b359c86569832e10cd2"
+      },
+      {
+        "file": "android/smali_classes2/cn/mucang/android/jiakaoyi/framework/e/l.smali",
+        "originalSha256": "62f3ffeaeb4c43fbd63c67e24c200a9c5d05814e12e4857e6d6576120863c676",
+        "patchedSha256": "9df631b81731859825bec8f14ec06ddf47b404481781d9965c1184e5b6dbf039"
+      },
+      {
+        "file": "android/smali_classes5/cn/mucang/jiakaoyi/uilib/i/i.smali",
+        "originalSha256": "ec11285ab5937b583e5340964a0f95664bf88748447a26c4c16708d0a3bf1155",
+        "patchedSha256": "030437af4c4b5e03f4f9b8081858626a9d5b16d3c0dd711dd2607e9ea9910dcb"
+      },
+      {
+        "file": "android/smali_classes5/cn/mucang/jiakaoyi/uilib/i/h.smali",
+        "originalSha256": "27719490f96473472038197e0e4f52d69b03c9ef061f1aa70b7c12243a15fe05",
+        "patchedSha256": "e59ab38126979f57800387d09be25688c825a69b69757099609c18f4af322a6d"
+      },
+      {
+        "file": "android/smali_classes5/cn/mucang/jiakaoyi/uilib/i/c.smali",
+        "originalSha256": "d8cd20514bd0897fac79e857cdc32ea3d1d28ec13b948975e8833920f136ac69",
+        "patchedSha256": "8fed6e0393bae3c06a0bb3dbc60088ef96d52aaf3beef7dea1d784959791c0dc"
+      },
+      {
+        "file": "android/smali_classes5/cn/mucang/jiakaoyi/uilib/i/q.smali",
+        "originalSha256": "35411e39bde320c1dba6841d7546e164a0417da5013401455259f1aac8236a5c",
+        "patchedSha256": "80461917c3721c3bd2bd3c1a113d9e8e0f978d0ebcdfa2ec85472c75166ad95d"
+      },
+      {
+        "file": "android/smali_classes5/cn/mucang/jiakaoyi/uilib/login/o/b.smali",
+        "originalSha256": "cbd348688132e4fd39dd462d723eda735e8f7a3e2dbc0f5697c67ceaf6b897d2",
+        "patchedSha256": "3b7038d7ec2d96f9f75b98357f9bea17ed0f572d5263ccba925a41b99d332f70"
+      },
+      {
+        "file": "android/smali_classes5/cn/mucang/jiakaoyi/uilib/login/o/c.smali",
+        "originalSha256": "c8e02ffd4cef09777f01dc34a4cd537a13ca5a58a18e2f44528f2b6b796d16a1",
+        "patchedSha256": "f9f3b38fb1555b33307daca4e80bf1a00b6b7759fe0da2d0f80e52daee1329ad"
+      },
+      {
+        "file": "android/smali_classes5/cn/mucang/jiakaoyi/uilib/login/o/d.smali",
+        "originalSha256": "2294d088accc47f7c8869d2a002445e4d9fe9098e1710f8804f7f3ddc9e937d9",
+        "patchedSha256": "d915345c41be174d016b88769038f3af1eced930de2c4621f9dac28b9bff14c7"
+      },
+      {
+        "file": "android/smali_classes2/cn/mucang/android/jiakaoyi/engine/trace/upload/UploadTraceApi.smali",
+        "originalSha256": "75d9bd554c4bc57c09c9a916da2e975908e95aa8065339616d7b81092842135c",
+        "patchedSha256": "48a9a93f7a64f86d3052cb5ff7541bdd64d93bce929f872dc4e40be01709567a"
+      },
+      {
+        "file": "android/smali_classes4/cn/mucang/android/jiakaoyi/teachingk2/highlight/UploadVideoApi.smali",
+        "originalSha256": "ec3fadd708d3fe266dab3f6a0f02990f85626098261f27e5bfb86f3ca75143aa",
+        "patchedSha256": "da49f120a84cc9dbfa7315f0ea59e458bd129eed7da6ce7fec0c6c5a3d71ade7"
+      },
+      {
+        "file": "android/smali_classes3/cn/mucang/android/jiakaoyi/speech/semantic/e.smali",
+        "originalSha256": "c6903fdffcc251e094cde749fa5b506901c57357e9e4067cd03483fab5e591d6",
+        "patchedSha256": "c5ae9125e370f2d351b5aca65aef41c96dcf4dda2913a1130a15efc642f6f7e2"
+      },
+      {
+        "file": "android/smali_classes3/cn/mucang/android/jiakaoyi/speech/semantic/g.smali",
+        "originalSha256": "37d9f84859915c1d5a5025748118c4fb06e4feb83a807ef112a03fd29505681b",
+        "patchedSha256": "4e3b9dfa1d73b094a761755aaf602b97499847e1ead508d492390eae4c843cfe"
+      },
+      {
+        "file": "android/smali_classes3/cn/mucang/android/jiakaoyi/signal/ai/ota/f.smali",
+        "originalSha256": "a97b0c4116b9870523c9b3e7e18d1eb36c227495d25110cc3f9a1f70bb9fddf4",
+        "patchedSha256": "ed42ba75b672b911ddc0e735c3ad8c03a22ffcd46569736e2e5421b7f3ca6077"
+      },
+      {
+        "file": "android/smali_classes5/cn/mucang/jiakaoyi/uilib/k/b/a.smali",
+        "originalSha256": "79731c230efe8e7581fcc53196a1e1d7b88d739d892a816b6d0da4785e958033",
+        "patchedSha256": "a5a429c64809dc555518be118ff04bccd5dbce08eca81f63f8c3af5b0b49f0d0"
+      },
+      {
+        "file": "android/smali_classes5/cn/mucang/jiakaoyi/uilib/n/b$a.smali",
+        "originalSha256": "4f8d5f9e0016334b0586cb4647893f26e6a20a5e31bd8ba9b0c30e02d33b1bdc",
+        "patchedSha256": "871443de93ad8d49134921d04f00b1c388be9f65dccbf32f698f15a18c611a48"
+      },
+      {
+        "file": "android/smali_classes2/cn/mucang/android/jiakaoyi/framework/utils/c0.smali",
+        "originalSha256": "084e2f6b12efeb1356a4114414c7f3c4c29e1a13b392b5f710ca43bb79f28521",
+        "patchedSha256": "b5b19aa21cdd6b36d4f97145b0b629f08a87e4877a50b63a9f8ae731869aaf0b"
+      }
+    ],
+    "originalModified": false,
+    "scope": "23 audited business API host methods and ordinary form encryption switch",
+    "limits": [
+      "Explicit encrypted APIs remain unsupported",
+      "Native signing code is unchanged",
+      "SDK/WebView/Unity/media traffic is not fully redirected; this is not network isolation",
+      "No startup, hardware, activation or teaching checks are removed"
+    ]
+  },
+  "original_android_unchanged": true,
+  "remaining_limits": [
+    "No real Android device E2E login/teaching test",
+    "Unity external 100/101 files absent",
+    "Robot hardware absent",
+    "Original native startup failures unresolved",
+    "Only explicit listed API contracts implemented; unsupported paths fail 501"
+  ],
+  "vendor_requests_performed": false
+}

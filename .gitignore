@@ -8,3 +8,5 @@ android/dist/
 *.p12
 *.idsig
 __pycache__/
+server/data/
+server/*.sqlite3*

@@ -1,0 +1,45 @@
+{
+  "description": "Synthetic local fixtures, not recovered vendor data",
+  "loginCode": "local-demo",
+  "user": {
+    "name": "本地调试学员",
+    "studentId": -1,
+    "mucangId": "local-student",
+    "tenantId": 0,
+    "courseId": 0,
+    "loginMode": "STUDENT",
+    "driveLicenseType": "C1",
+    "gender": 0
+  },
+  "device": {
+    "id": 1,
+    "needLogin": true,
+    "needScan": false,
+    "faceLoginFlag": false,
+    "charge": false,
+    "payFirst": false,
+    "forceEnd": false,
+    "enableSundialEntrance": false,
+    "canReceive": false,
+    "updateExam": false,
+    "lightCostTime": false,
+    "stopCost": false,
+    "stopFreeTime": 0,
+    "revenueType": ""
+  },
+  "car": {
+    "cityCode": "",
+    "cityName": "本地调试",
+    "driveSchoolId": 0,
+    "driveSchoolName": "本地调试驾校",
+    "plateNum": ""
+  },
+  "examSites": [],
+  "trainPrograms": [],
+  "teachLevels": [],
+  "trainRecords": [],
+  "trainSteps": [],
+  "errorPoints": [],
+  "errorAreas": [],
+  "errorStats": []
+}
