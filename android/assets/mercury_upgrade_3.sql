@@ -1,0 +1,1 @@
+ALTER TABLE `t_message_item` ADD COLUMN `counter_url_rename` text;

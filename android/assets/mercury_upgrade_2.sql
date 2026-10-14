@@ -1,0 +1,1 @@
+ALTER TABLE `t_message_group` ADD COLUMN `expired_date` integer;

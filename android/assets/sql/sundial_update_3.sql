@@ -1,0 +1,1 @@
+ALTER TABLE "t_student_info" ADD COLUMN "drive_licence" text;

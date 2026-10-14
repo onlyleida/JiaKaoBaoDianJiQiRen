@@ -1,0 +1,1 @@
+alter table t_cost add column type INTEGER;
