@@ -1,0 +1,40 @@
+.class public final synthetic Lcn/mucang/jiakaoyi/uilib/ui/setting/gear/j0;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Landroid/view/View$OnClickListener;
+
+
+# instance fields
+.field public final synthetic a:Lcn/mucang/jiakaoyi/uilib/ui/setting/gear/GearLearnActivity$b;
+
+.field public final synthetic b:Lcn/mucang/jiakaoyi/uilib/ui/setting/gear/GearLearnActivity;
+
+
+# direct methods
+.method public synthetic constructor <init>(Lcn/mucang/jiakaoyi/uilib/ui/setting/gear/GearLearnActivity$b;Lcn/mucang/jiakaoyi/uilib/ui/setting/gear/GearLearnActivity;)V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lcn/mucang/jiakaoyi/uilib/ui/setting/gear/j0;->a:Lcn/mucang/jiakaoyi/uilib/ui/setting/gear/GearLearnActivity$b;
+
+    iput-object p2, p0, Lcn/mucang/jiakaoyi/uilib/ui/setting/gear/j0;->b:Lcn/mucang/jiakaoyi/uilib/ui/setting/gear/GearLearnActivity;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final onClick(Landroid/view/View;)V
+    .locals 2
+
+    iget-object v0, p0, Lcn/mucang/jiakaoyi/uilib/ui/setting/gear/j0;->a:Lcn/mucang/jiakaoyi/uilib/ui/setting/gear/GearLearnActivity$b;
+
+    iget-object v1, p0, Lcn/mucang/jiakaoyi/uilib/ui/setting/gear/j0;->b:Lcn/mucang/jiakaoyi/uilib/ui/setting/gear/GearLearnActivity;
+
+    invoke-static {v0, v1, p1}, Lcn/mucang/jiakaoyi/uilib/ui/setting/gear/GearLearnActivity$b;->h(Lcn/mucang/jiakaoyi/uilib/ui/setting/gear/GearLearnActivity$b;Lcn/mucang/jiakaoyi/uilib/ui/setting/gear/GearLearnActivity;Landroid/view/View;)V
+
+    return-void
+.end method
