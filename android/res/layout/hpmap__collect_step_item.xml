@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:paddingTop="@dimen/dp_12" android:paddingBottom="@dimen/dp_12" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/select_this" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_4" android:src="@drawable/drawable_green_dot" />
+    <TextView android:textSize="16.0px" android:textColor="#333" android:layout_gravity="center_vertical" android:id="@id/text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_16" android:layout_marginRight="@dimen/dp_90" android:text="采集" />
+    <LinearLayout android:layout_gravity="right|center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/changOrientation" android:layout_width="@dimen/dp_40" android:layout_height="@dimen/dp_40" android:layout_margin="@dimen/dp_4" android:src="@drawable/hpmap__change_orientation" android:scaleType="centerInside" />
+        <ImageView android:id="@id/copy_turn" android:layout_width="@dimen/dp_40" android:layout_height="@dimen/dp_40" android:layout_margin="@dimen/dp_4" android:src="@drawable/hpmap_copy_turn_item" android:scaleType="centerInside" />
+        <ImageView android:id="@id/delete" android:layout_width="@dimen/dp_40" android:layout_height="@dimen/dp_40" android:layout_margin="@dimen/dp_4" android:src="@drawable/hpmap__delete_item" android:scaleType="centerInside" />
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="@dimen/rpx_80" android:layoutDirection="ltr"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/text_27" android:textColor="#35383d" android:gravity="center" android:id="@id/titleTv" android:layout_width="0.0dp" android:layout_height="@dimen/rpx_80" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_constraintWidth_percent="0.33" />
+    <Space android:id="@id/space" android:layout_width="0.0dp" android:layout_height="0.0dp" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_constraintWidth_percent="0.33" />
+    <ImageView android:id="@id/checkCb" android:padding="@dimen/rpx_10" android:layout_width="@dimen/rpx_50" android:layout_height="@dimen/rpx_50" android:src="@drawable/selector_check_setting" app:layout_constraintBottom_toBottomOf="@id/titleTv" app:layout_constraintEnd_toEndOf="@id/space" app:layout_constraintStart_toStartOf="@id/space" app:layout_constraintTop_toTopOf="@id/titleTv" />
+    <View android:background="#e8e8e8" android:layout_width="match_parent" android:layout_height="1.0dp" android:layout_marginLeft="@dimen/rpx_50" android:layout_marginRight="@dimen/rpx_50" android:layout_marginHorizontal="@dimen/rpx_50" app:layout_constraintBottom_toBottomOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

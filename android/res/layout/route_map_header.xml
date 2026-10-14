@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="#fff" android:paddingLeft="@dimen/dp_16" android:paddingRight="@dimen/dp_16" android:layout_width="match_parent" android:layout_height="@dimen/dp_50"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/dp_19" android:textColor="#333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="路线名称：" />
+    <TextView android:textSize="@dimen/dp_19" android:textColor="#333333" android:ellipsize="marquee" android:id="@id/nameTv" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="未命名" android:singleLine="true" android:layout_weight="1.0" android:layout_marginEnd="@dimen/dp_16" />
+    <TextView android:textSize="@dimen/dp_17" android:textColor="#fff" android:gravity="center" android:id="@id/openTv" android:background="@drawable/selector_ff7d3c_3cd2ff_r2" android:paddingLeft="@dimen/dp_4" android:paddingRight="@dimen/dp_4" android:layout_width="wrap_content" android:layout_height="@dimen/dp_23" android:text="公开" android:layout_marginEnd="@dimen/dp_16" />
+    <TextView android:textSize="@dimen/dp_20" android:textColor="#333" android:gravity="center" android:id="@id/editTv" android:layout_width="wrap_content" android:layout_height="@dimen/dp_23" android:text="编辑" android:drawableLeft="@drawable/ic_item_edit" android:drawablePadding="@dimen/dp_7" />
+</LinearLayout>

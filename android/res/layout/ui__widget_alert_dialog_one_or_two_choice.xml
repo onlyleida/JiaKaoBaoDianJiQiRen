@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/ui__widget_alert_dialog_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="30.0dp" android:layout_marginRight="30.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:textColor="#333333" android:gravity="center" android:id="@id/alert_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:layout_marginTop="16.0dp" android:layout_marginRight="16.0dp" android:text="@string/ui__dialog_title" />
+    <TextView android:textSize="14.0sp" android:textColor="#333333" android:gravity="left" android:id="@id/alert_content" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:layout_marginTop="16.0dp" android:layout_marginRight="16.0dp" android:text="@string/ui__dialog_message" />
+    <View android:background="#e0e0e0" android:layout_width="match_parent" android:layout_height="1.0px" android:layout_marginTop="16.0dp" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="48.0dp">
+        <TextView android:textSize="14.0sp" android:textColor="#666666" android:gravity="center" android:id="@id/button1" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/ui__dialog_secondary_operating_text" android:layout_weight="1.0" />
+        <View android:background="#e0e0e0" android:layout_width="1.0px" android:layout_height="match_parent" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/ui__alert_dialog_primary_button_text_color" android:gravity="center" android:id="@id/button2" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/ui__dialog_primary_operating_text" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#fff" android:paddingLeft="@dimen/dp_32" android:paddingRight="@dimen/dp_32" android:layout_width="match_parent" android:layout_height="@dimen/dp_64" android:layoutDirection="ltr"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iconIv" android:layout_width="@dimen/dp_24" android:layout_height="@dimen/dp_24" android:layout_centerVertical="true" />
+    <TextView android:textSize="@dimen/dp_20" android:textColor="#333" android:id="@id/titleTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_6" android:layout_toRightOf="@id/iconIv" android:layout_centerVertical="true" />
+    <TextView android:textSize="@dimen/dp_18" android:textColor="#ff464646" android:id="@id/descTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_40" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <TextView android:textSize="@dimen/dp_18" android:textColor="#fff" android:gravity="center" android:id="@id/resetTv" android:background="#ff02ccb4" android:paddingLeft="@dimen/dp_16" android:paddingRight="@dimen/dp_16" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/dp_40" android:layout_marginRight="@dimen/dp_40" android:text="重置" android:includeFontPadding="false" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/arrowIv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_arrow_right" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/dividerIv" android:background="#ffe8e8e8" android:layout_width="match_parent" android:layout_height="@dimen/dp_divider" android:layout_alignParentBottom="true" />
+</RelativeLayout>

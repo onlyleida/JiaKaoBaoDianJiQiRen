@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@drawable/shape_ffffff_r4" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/font_24" android:textColor="#333" android:ellipsize="end" android:gravity="center" android:id="@id/dialog_title_tv" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:layout_width="match_parent" android:layout_height="@dimen/dp_64" android:maxLines="2" />
+    <ImageView android:id="@id/closeIv" android:layout_width="@dimen/dp_64" android:layout_height="@dimen/dp_64" android:src="@drawable/dialog_close" android:scaleType="centerInside" android:layout_alignParentRight="true" />
+    <View android:id="@id/dialog_title_divider" android:background="#e8e8e8" android:layout_width="match_parent" android:layout_height="@dimen/dp_divider" android:layout_below="@id/dialog_title_tv" />
+    <ListView android:gravity="center" android:orientation="vertical" android:id="@id/dialog_btn_box" android:scrollbars="none" android:persistentDrawingCache="none" android:alwaysDrawnWithCache="false" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content" android:listSelector="@null" android:divider="@null" android:layout_below="@id/dialog_title_divider" />
+</RelativeLayout>

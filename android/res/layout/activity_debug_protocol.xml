@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="@dimen/rpx_20" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:id="@id/tv_signal_info" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <Button android:id="@id/btn_req_fault_code" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/rpx_20" android:text="请求机器人故障码" />
+    <TextView android:id="@id/tv_req_ret" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/rpx_10" />
+    <Button android:id="@id/btn_clear_fault_code" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/rpx_20" android:text="清除机器人故障码" />
+    <TextView android:id="@id/tv_clear_ret" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/rpx_10" />
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="雨天模式调试" />
+    <EditText android:textSize="18.0sp" android:id="@id/et_rain_value" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="请输入数值（0-100）" android:inputType="number" />
+    <Button android:id="@id/btn_rain_done" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="下发" />
+</LinearLayout>
