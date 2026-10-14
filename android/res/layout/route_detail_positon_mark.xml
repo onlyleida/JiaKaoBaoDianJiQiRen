@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/dp_14" android:textColor="#333" android:gravity="center" android:id="@id/descTv" android:background="#fff" android:paddingLeft="@dimen/dp_4" android:paddingRight="@dimen/dp_4" android:layout_width="wrap_content" android:layout_height="@dimen/dp_24" android:text="直线行驶" android:includeFontPadding="false" />
+    <ImageView android:id="@id/iconIv" android:background="@drawable/route_ic_mark_arrow" android:layout_width="@dimen/dp_28" android:layout_height="@dimen/dp_28" android:layout_marginTop="@dimen/dp_8" />
+</LinearLayout>

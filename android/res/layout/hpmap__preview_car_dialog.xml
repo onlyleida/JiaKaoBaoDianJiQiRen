@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#fff" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/dp_30" android:textColor="#333" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/dp_20" android:text="车辆效果预览" />
+    <View android:background="#e8e8e8" android:layout_width="match_parent" android:layout_height="1.0px" />
+    <cn.mucang.android.jiakaoyi.hpmap.view.MapView android:layout_gravity="center" android:id="@id/car_view" android:layout_width="562.0px" android:layout_height="420.0px" />
+</LinearLayout>

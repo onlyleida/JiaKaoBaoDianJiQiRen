@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="@dimen/dp_400" android:layout_height="@dimen/dp_300"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <cn.mucang.android.jiakaoyi.hpmap.view.MapView android:id="@id/mapView" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <ImageView android:id="@id/closeIv" android:paddingLeft="@dimen/dp_70" android:paddingBottom="@dimen/dp_70" android:layout_width="@dimen/dp_100" android:layout_height="@dimen/dp_100" android:src="@drawable/app_ic_close" android:layout_alignParentRight="true" />
+    <ProgressBar android:id="@id/progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+</RelativeLayout>
