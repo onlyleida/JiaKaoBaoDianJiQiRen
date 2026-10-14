@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="account__scan_login_app_name">
+        <item>驾考宝典AI教练</item>
+        <item>驾考宝典路考仪</item>
+        <item>驾考宝典模拟器</item>
+    </string-array>
+    <string-array name="account__scan_login_app_privacy_protocol">
+        <item>https://laofuzi.kakamobi.com/protocol/protocol.html?protocolKey=jkAIcoachPrivateAgreement</item>
+        <item>https://laofuzi.kakamobi.com/protocol/protocol.html?protocolKey=jklkyPrivateAgreement</item>
+        <item>https://laofuzi.kakamobi.com/protocol/protocol.html?protocolKey=jkmnqPrivateAgreement</item>
+    </string-array>
+    <string-array name="account__scan_login_app_user_protocol">
+        <item>https://laofuzi.kakamobi.com/protocol/protocol.html?protocolKey=jkAIcoachUserAgreement</item>
+        <item>https://laofuzi.kakamobi.com/protocol/protocol.html?protocolKey=jklkyUserAgreement</item>
+        <item>https://laofuzi.kakamobi.com/protocol/protocol.html?protocolKey=jkmnqUserAgreement</item>
+    </string-array>
+    <string-array name="app_mutex">
+        <item>cn.mucang.android.jiakaoyi</item>
+        <item>cn.mucang.android.jiakaoyi.k2</item>
+        <item>cn.mucang.android.jiakaoyi.moto</item>
+        <item>cn.mucang.android.jiakaoyi.b2</item>
+        <item>cn.mucang.gears.linker</item>
+        <item>cn.mucang.android.devicetest</item>
+    </string-array>
+    <string-array name="core__host_white_list">
+        <item>^10\\.[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}$</item>
+        <item>^172\\.(1[6-9]|2[0-9]|3[0-1])\\.[0-9]{1,3}\\.[0-9]{1,3}$</item>
+        <item>^192\\.168\\.[0-9]{1,3}\\.[0-9]{1,3}$</item>
+    </string-array>
+    <string-array name="day_of_week">
+        <item>周日</item>
+        <item>周一</item>
+        <item>周二</item>
+        <item>周三</item>
+        <item>周四</item>
+        <item>周五</item>
+        <item>周六</item>
+    </string-array>
+    <string-array name="day_of_week2">
+        <item>星期日</item>
+        <item>星期一</item>
+        <item>星期二</item>
+        <item>星期三</item>
+        <item>星期四</item>
+        <item>星期五</item>
+        <item>星期六</item>
+    </string-array>
+    <string-array name="exo_playback_speeds">
+        <item>0.25x</item>
+        <item>0.5x</item>
+        <item>0.75x</item>
+        <item>@string/exo_controls_playback_speed_normal</item>
+        <item>1.25x</item>
+        <item>1.5x</item>
+        <item>2x</item>
+    </string-array>
+    <integer-array name="exo_speed_multiplied_by_100">
+        <item>25</item>
+        <item>50</item>
+        <item>75</item>
+        <item>100</item>
+        <item>125</item>
+        <item>150</item>
+        <item>200</item>
+    </integer-array>
+    <string-array name="rule_keys">
+        <item>挡位</item>
+        <item>速度</item>
+        <item>转速</item>
+        <item>熄火</item>
+        <item>离合</item>
+        <item>转向灯</item>
+    </string-array>
+    <string-array name="safe_system_switcher">
+        <item>开启</item>
+        <item>关闭</item>
+        <item>关闭60秒</item>
+    </string-array>
+    <string-array name="voice__robot_tips">
+        <item>\"声音大一点\"</item>
+        <item>\"呼叫控制中心\"</item>
+        <item>\"打开专项练习\"</item>
+    </string-array>
+    <string-array name="voice__wake_up_words">
+        <item>您说</item>
+        <item>您好</item>
+        <item>请说</item>
+        <item>来了</item>
+    </string-array>
+</resources>

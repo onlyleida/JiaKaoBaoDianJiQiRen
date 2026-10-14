@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/title_bar" android:layout_width="match_parent" android:layout_height="48.0dp" android:layout_alignParentTop="true" layout="@layout/account__include_title_bar" />
+    <LinearLayout android:orientation="vertical" android:id="@id/account__qrcode_top" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/title_bar">
+        <LinearLayout android:gravity="center_vertical" android:id="@id/account__qrcode_app_tip" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="36.0dp" android:layout_marginStart="20.0dp">
+            <ImageView android:id="@id/account__qrcode_logo" android:layout_width="24.0dp" android:layout_height="24.0dp" android:src="@drawable/account_qrcode_empty_logo" />
+            <TextView android:textSize="14.0sp" android:textColor="#333333" android:id="@id/account__qrcode_apply" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="8.0dp" />
+        </LinearLayout>
+        <TextView android:textSize="20.0sp" android:textColor="#333333" android:id="@id/account__qrcode_security_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="26.0dp" android:layout_marginStart="20.0dp" android:layout_marginEnd="20.0dp" />
+        <TextView android:textSize="14.0sp" android:textColor="#999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="48.0dp" android:text="登录用户" android:layout_marginStart="20.0dp" android:layout_marginEnd="20.0dp" />
+        <LinearLayout android:gravity="center_vertical" android:id="@id/account__qrcode_app_info" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" android:layout_marginStart="20.0dp">
+            <ImageView android:id="@id/account__qrcode_user_avatar" android:layout_width="48.0dp" android:layout_height="48.0dp" android:src="@drawable/account__qrcode_default_avatar" />
+            <TextView android:textSize="14.0sp" android:textColor="#333333" android:id="@id/account__qrcode_user_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="未登录" android:layout_marginStart="8.0dp" />
+        </LinearLayout>
+    </LinearLayout>
+    <include android:id="@id/account__qrcode_error" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" layout="@layout/account__activity_qrcode_auth_error" />
+    <LinearLayout android:orientation="vertical" android:id="@id/account__qrcode_bottom" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <include android:id="@id/account_protocol" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="49.0dp" android:layout_marginRight="48.0dp" layout="@layout/account__include_protocol" />
+        <Button android:textSize="16.0sp" android:textColor="@color/white" android:id="@id/account__qrcode_login" android:background="@drawable/account__qrcode_login_bg" android:layout_width="match_parent" android:layout_height="54.0dp" android:layout_marginBottom="24.0dp" android:text="授权登录" android:layout_marginStart="20.0dp" android:layout_marginEnd="20.0dp" />
+        <TextView android:textSize="14.0sp" android:textColor="#999999" android:gravity="center_horizontal" android:id="@id/account__qrcode_cancel" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="30.0dp" android:text="取消登录" />
+    </LinearLayout>
+</RelativeLayout>

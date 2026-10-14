@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@drawable/core__bg_login" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/title_bar" layout="@layout/account__include_title_bar" />
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/title_bar">
+        <TextView android:textSize="30.0sp" android:textColor="@color/core_account_login_text_normal_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dp" android:layout_marginTop="30.0dp" android:layout_marginBottom="25.0dp" android:text="您好，请登录" />
+        <include android:id="@id/sms_common" layout="@layout/account__login_sms_common" />
+        <RelativeLayout android:layout_gravity="center_horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="12.0sp" android:textColor="@color/core_account_login_text_normal_color" android:id="@id/login_by_account" android:paddingLeft="20.0dp" android:paddingTop="15.0dp" android:paddingRight="30.0dp" android:paddingBottom="15.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="手机号密码登录" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="70.0dp">
+            <TextView android:textSize="14.0sp" android:textColor="#666" android:gravity="center" android:layout_gravity="center" android:id="@id/btn_send_voice_code" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <include android:id="@id/account__login_third_layout_in" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="20.0dp" android:layout_marginEnd="20.0dp" layout="@layout/account__activity_login_third_layout" />
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="42.0dp" android:layout_marginBottom="15.0dp">
+            <TextView android:textSize="12.0sp" android:textColor="@color/core_account_login_text_hint_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="如无法登录，请点击" />
+            <TextView android:textSize="12.0sp" android:textColor="#333" android:id="@id/account_appeal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="账户申诉" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/core_account_login_text_hint_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="申请客服协助" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

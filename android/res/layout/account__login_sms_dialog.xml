@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cn.mucang.android.account.ui.LoginSmsDialogView android:gravity="center" android:background="@null" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/account__login_sms_dialog_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="60.0dp" android:layout_marginLeft="20.0dp" android:layout_marginTop="30.0dp" android:layout_marginRight="20.0dp">
+            <View android:background="#d8d8d8" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_alignParentBottom="true" />
+            <ImageView android:id="@id/iv_phone_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dp" android:src="@drawable/core__ic_login_shouji" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <EditText android:textSize="16.0sp" android:textColor="#333333" android:textColorHint="#999999" android:gravity="left|center" android:id="@id/username_input" android:background="@null" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="22.0dp" android:button="@null" android:hint="请输入手机号" android:maxLength="11" android:layout_toRightOf="@id/iv_phone_number" android:layout_centerVertical="true" android:inputType="numberDecimal" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="60.0dp" android:layout_marginLeft="20.0dp" android:layout_marginRight="20.0dp">
+            <View android:background="#d8d8d8" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_alignParentBottom="true" />
+            <ImageView android:id="@id/iv_phone_code" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dp" android:src="@drawable/core__ic_login_yanzheng" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <EditText android:textSize="16.0sp" android:textColor="#333333" android:textColorHint="#999999" android:gravity="left|center" android:id="@id/code_input" android:background="@null" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="22.0dp" android:layout_marginRight="10.0dp" android:button="@null" android:hint="请输入验证码" android:maxLength="11" android:layout_toLeftOf="@id/code_divider_line" android:layout_toRightOf="@id/iv_phone_code" android:layout_centerVertical="true" android:inputType="numberDecimal" />
+            <View android:id="@id/code_divider_line" android:background="#e6e6e6" android:layout_width="0.5dp" android:layout_height="20.0dp" android:layout_toLeftOf="@id/btn_resend_input" android:layout_centerVertical="true" />
+            <Button android:textSize="14.0sp" android:textColor="@color/account__selector_btn_resend_color" android:id="@id/btn_resend_input" android:background="@null" android:layout_width="88.0dp" android:layout_height="33.0dp" android:text="发送验证码" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <Button android:textSize="16.0sp" android:textColor="#ffffff" android:id="@id/btn_ok" android:background="@drawable/account__login_sms_dialog_ok" android:layout_width="match_parent" android:layout_height="44.0dp" android:layout_marginLeft="20.0dp" android:layout_marginTop="30.0dp" android:layout_marginRight="20.0dp" android:layout_marginBottom="30.0dp" android:text="提交" />
+    </LinearLayout>
+</cn.mucang.android.account.ui.LoginSmsDialogView>
