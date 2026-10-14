@@ -1,0 +1,597 @@
+.class public Lcn/mucang/android/jiakaoyi/mapcollect/collect/x0/b/g;
+.super Lcn/mucang/android/jiakaoyi/mapcollect/collect/u0;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lcn/mucang/android/jiakaoyi/mapcollect/collect/u0<",
+        "Lcn/mucang/android/jiakaoyi/mapcollect/collect/source/c2/C2CeFangSrcData;",
+        ">;"
+    }
+.end annotation
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 1
+
+    .line 1
+    new-instance v0, Lcn/mucang/android/jiakaoyi/mapcollect/collect/source/c2/C2CeFangSrcData;
+
+    invoke-direct {v0}, Lcn/mucang/android/jiakaoyi/mapcollect/collect/source/c2/C2CeFangSrcData;-><init>()V
+
+    invoke-direct {p0, v0}, Lcn/mucang/android/jiakaoyi/mapcollect/collect/u0;-><init>(Lcn/mucang/android/jiakaoyi/mapcollect/collect/data/SourceData;)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public b()Z
+    .locals 3
+
+    .line 1
+    iget-object v0, p0, Lcn/mucang/android/jiakaoyi/mapcollect/collect/u0;->a:Lcn/mucang/android/jiakaoyi/mapcollect/collect/data/SourceData;
+
+    move-object v1, v0
+
+    check-cast v1, Lcn/mucang/android/jiakaoyi/mapcollect/collect/source/c2/C2CeFangSrcData;
+
+    iget-object v1, v1, Lcn/mucang/android/jiakaoyi/mapcollect/collect/source/c2/C2CeFangSrcData;->gps1:Lcn/mucang/android/jiakaoyi/signal/pos/Gps;
+
+    const/4 v2, 0x0
+
+    if-nez v1, :cond_0
+
+    const-string v0, "\u70b91\u6ca1\u6709\u91c7\u96c6"
+
+    .line 2
+    invoke-virtual {p0, v0}, Lcn/mucang/android/jiakaoyi/mapcollect/collect/u0;->e(Ljava/lang/String;)V
+
+    return v2
+
+    .line 3
+    :cond_0
+    move-object v1, v0
+
+    check-cast v1, Lcn/mucang/android/jiakaoyi/mapcollect/collect/source/c2/C2CeFangSrcData;
+
+    iget-object v1, v1, Lcn/mucang/android/jiakaoyi/mapcollect/collect/source/c2/C2CeFangSrcData;->gps2:Lcn/mucang/android/jiakaoyi/signal/pos/Gps;
+
+    if-nez v1, :cond_1
+
+    const-string v0, "\u70b92\u6ca1\u6709\u91c7\u96c6"
+
+    .line 4
+    invoke-virtual {p0, v0}, Lcn/mucang/android/jiakaoyi/mapcollect/collect/u0;->e(Ljava/lang/String;)V
+
+    return v2
+
+    .line 5
+    :cond_1
+    move-object v1, v0
+
+    check-cast v1, Lcn/mucang/android/jiakaoyi/mapcollect/collect/source/c2/C2CeFangSrcData;
+
+    iget-object v1, v1, Lcn/mucang/android/jiakaoyi/mapcollect/collect/source/c2/C2CeFangSrcData;->gps3:Lcn/mucang/android/jiakaoyi/signal/pos/Gps;
+
+    if-nez v1, :cond_2
+
+    const-string v0, "\u70b93\u6ca1\u6709\u91c7\u96c6"
+
+    .line 6
+    invoke-virtual {p0, v0}, Lcn/mucang/android/jiakaoyi/mapcollect/collect/u0;->e(Ljava/lang/String;)V
+
+    return v2
+
+    .line 7
+    :cond_2
+    move-object v1, v0
+
+    check-cast v1, Lcn/mucang/android/jiakaoyi/mapcollect/collect/source/c2/C2CeFangSrcData;
+
+    iget-object v1, v1, Lcn/mucang/android/jiakaoyi/mapcollect/collect/source/c2/C2CeFangSrcData;->gps4:Lcn/mucang/android/jiakaoyi/signal/pos/Gps;
+
+    if-nez v1, :cond_3
+
+    const-string v0, "\u70b94\u6ca1\u6709\u91c7\u96c6"
+
+    .line 8
+    invoke-virtual {p0, v0}, Lcn/mucang/android/jiakaoyi/mapcollect/collect/u0;->e(Ljava/lang/String;)V
+
+    return v2
+
+    .line 9
+    :cond_3
+    move-object v1, v0
+
+    check-cast v1, Lcn/mucang/android/jiakaoyi/mapcollect/collect/source/c2/C2CeFangSrcData;
+
+    iget-object v1, v1, Lcn/mucang/android/jiakaoyi/mapcollect/collect/source/c2/C2CeFangSrcData;->gps5:Lcn/mucang/android/jiakaoyi/signal/pos/Gps;
+
+    if-nez v1, :cond_4
+
+    const-string v0, "\u70b95\u6ca1\u6709\u91c7\u96c6"
+
+    .line 10
+    invoke-virtual {p0, v0}, Lcn/mucang/android/jiakaoyi/mapcollect/collect/u0;->e(Ljava/lang/String;)V
+
+    return v2
+
+    .line 11
+    :cond_4
+    move-object v1, v0
+
+    check-cast v1, Lcn/mucang/android/jiakaoyi/mapcollect/collect/source/c2/C2CeFangSrcData;
+
+    iget-object v1, v1, Lcn/mucang/android/jiakaoyi/mapcollect/collect/source/c2/C2CeFangSrcData;->gps6:Lcn/mucang/android/jiakaoyi/signal/pos/Gps;
+
+    if-nez v1, :cond_5
+
+    const-string v0, "\u70b96\u6ca1\u6709\u91c7\u96c6"
+
+    .line 12
+    invoke-virtual {p0, v0}, Lcn/mucang/android/jiakaoyi/mapcollect/collect/u0;->e(Ljava/lang/String;)V
+
+    return v2
+
+    .line 13
+    :cond_5
+    move-object v1, v0
+
+    check-cast v1, Lcn/mucang/android/jiakaoyi/mapcollect/collect/source/c2/C2CeFangSrcData;
+
+    iget-object v1, v1, Lcn/mucang/android/jiakaoyi/mapcollect/collect/source/c2/C2CeFangSrcData;->gps7:Lcn/mucang/android/jiakaoyi/signal/pos/Gps;
+
+    if-nez v1, :cond_6
+
+    const-string v0, "\u70b97\u6ca1\u6709\u91c7\u96c6"
+
+    .line 14
+    invoke-virtual {p0, v0}, Lcn/mucang/android/jiakaoyi/mapcollect/collect/u0;->e(Ljava/lang/String;)V
+
+    return v2
+
+    .line 15
+    :cond_6
+    check-cast v0, Lcn/mucang/android/jiakaoyi/mapcollect/collect/source/c2/C2CeFangSrcData;
+
+    iget-object v0, v0, Lcn/mucang/android/jiakaoyi/mapcollect/collect/source/c2/C2CeFangSrcData;->gps8:Lcn/mucang/android/jiakaoyi/signal/pos/Gps;
+
+    if-nez v0, :cond_7
+
+    const-string v0, "\u70b98\u6ca1\u6709\u91c7\u96c6"
+
+    .line 16
+    invoke-virtual {p0, v0}, Lcn/mucang/android/jiakaoyi/mapcollect/collect/u0;->e(Ljava/lang/String;)V
+
+    return v2
+
+    :cond_7
+    const/4 v0, 0x1
+
+    return v0
+.end method
+
+.method public c()Z
+    .locals 1
+
+    .line 1
+    iget-boolean v0, p0, Lcn/mucang/android/jiakaoyi/mapcollect/collect/u0;->c:Z
+
+    return v0
+.end method
+
+.method public d()V
+    .locals 3
+
+    .line 1
+    iget-object v0, p0, Lcn/mucang/android/jiakaoyi/mapcollect/collect/u0;->a:Lcn/mucang/android/jiakaoyi/mapcollect/collect/data/SourceData;
+
+    move-object v1, v0
+
+    check-cast v1, Lcn/mucang/android/jiakaoyi/mapcollect/collect/source/c2/C2CeFangSrcData;
+
+    const/4 v2, 0x0
+
+    iput-object v2, v1, Lcn/mucang/android/jiakaoyi/mapcollect/collect/source/c2/C2CeFangSrcData;->gps1:Lcn/mucang/android/jiakaoyi/signal/pos/Gps;
+
+    .line 2
+    move-object v1, v0
+
+    check-cast v1, Lcn/mucang/android/jiakaoyi/mapcollect/collect/source/c2/C2CeFangSrcData;
+
+    iput-object v2, v1, Lcn/mucang/android/jiakaoyi/mapcollect/collect/source/c2/C2CeFangSrcData;->gps2:Lcn/mucang/android/jiakaoyi/signal/pos/Gps;
+
+    .line 3
+    move-object v1, v0
+
+    check-cast v1, Lcn/mucang/android/jiakaoyi/mapcollect/collect/source/c2/C2CeFangSrcData;
+
+    iput-object v2, v1, Lcn/mucang/android/jiakaoyi/mapcollect/collect/source/c2/C2CeFangSrcData;->gps3:Lcn/mucang/android/jiakaoyi/signal/pos/Gps;
+
+    .line 4
+    move-object v1, v0
+
+    check-cast v1, Lcn/mucang/android/jiakaoyi/mapcollect/collect/source/c2/C2CeFangSrcData;
+
+    iput-object v2, v1, Lcn/mucang/android/jiakaoyi/mapcollect/collect/source/c2/C2CeFangSrcData;->gps4:Lcn/mucang/android/jiakaoyi/signal/pos/Gps;
+
+    .line 5
+    move-object v1, v0
+
+    check-cast v1, Lcn/mucang/android/jiakaoyi/mapcollect/collect/source/c2/C2CeFangSrcData;
+
+    iput-object v2, v1, Lcn/mucang/android/jiakaoyi/mapcollect/collect/source/c2/C2CeFangSrcData;->gps5:Lcn/mucang/android/jiakaoyi/signal/pos/Gps;
+
+    .line 6
+    move-object v1, v0
+
+    check-cast v1, Lcn/mucang/android/jiakaoyi/mapcollect/collect/source/c2/C2CeFangSrcData;
+
+    iput-object v2, v1, Lcn/mucang/android/jiakaoyi/mapcollect/collect/source/c2/C2CeFangSrcData;->gps6:Lcn/mucang/android/jiakaoyi/signal/pos/Gps;
+
+    .line 7
+    move-object v1, v0
+
+    check-cast v1, Lcn/mucang/android/jiakaoyi/mapcollect/collect/source/c2/C2CeFangSrcData;
+
+    iput-object v2, v1, Lcn/mucang/android/jiakaoyi/mapcollect/collect/source/c2/C2CeFangSrcData;->gps7:Lcn/mucang/android/jiakaoyi/signal/pos/Gps;
+
+    .line 8
+    move-object v1, v0
+
+    check-cast v1, Lcn/mucang/android/jiakaoyi/mapcollect/collect/source/c2/C2CeFangSrcData;
+
+    iput-object v2, v1, Lcn/mucang/android/jiakaoyi/mapcollect/collect/source/c2/C2CeFangSrcData;->gps8:Lcn/mucang/android/jiakaoyi/signal/pos/Gps;
+
+    .line 9
+    move-object v1, v0
+
+    check-cast v1, Lcn/mucang/android/jiakaoyi/mapcollect/collect/source/c2/C2CeFangSrcData;
+
+    iput-object v2, v1, Lcn/mucang/android/jiakaoyi/mapcollect/collect/source/c2/C2CeFangSrcData;->start1:Lcn/mucang/android/jiakaoyi/signal/pos/Gps;
+
+    .line 10
+    move-object v1, v0
+
+    check-cast v1, Lcn/mucang/android/jiakaoyi/mapcollect/collect/source/c2/C2CeFangSrcData;
+
+    iput-object v2, v1, Lcn/mucang/android/jiakaoyi/mapcollect/collect/source/c2/C2CeFangSrcData;->start2:Lcn/mucang/android/jiakaoyi/signal/pos/Gps;
+
+    .line 11
+    check-cast v0, Lcn/mucang/android/jiakaoyi/mapcollect/collect/source/c2/C2CeFangSrcData;
+
+    iput-object v2, v0, Lcn/mucang/android/jiakaoyi/mapcollect/collect/source/K2SrcData;->name:Ljava/lang/String;
+
+    const/4 v0, 0x0
+
+    .line 12
+    iput-boolean v0, p0, Lcn/mucang/android/jiakaoyi/mapcollect/collect/u0;->c:Z
+
+    return-void
+.end method
+
+.method public f()V
+    .locals 10
+
+    .line 1
+    iget-object v0, p0, Lcn/mucang/android/jiakaoyi/mapcollect/collect/u0;->a:Lcn/mucang/android/jiakaoyi/mapcollect/collect/data/SourceData;
+
+    move-object v1, v0
+
+    check-cast v1, Lcn/mucang/android/jiakaoyi/mapcollect/collect/source/c2/C2CeFangSrcData;
+
+    iget-object v2, v1, Lcn/mucang/android/jiakaoyi/mapcollect/collect/source/c2/C2CeFangSrcData;->gps1:Lcn/mucang/android/jiakaoyi/signal/pos/Gps;
+
+    move-object v1, v0
+
+    check-cast v1, Lcn/mucang/android/jiakaoyi/mapcollect/collect/source/c2/C2CeFangSrcData;
+
+    iget-object v3, v1, Lcn/mucang/android/jiakaoyi/mapcollect/collect/source/c2/C2CeFangSrcData;->gps2:Lcn/mucang/android/jiakaoyi/signal/pos/Gps;
+
+    move-object v1, v0
+
+    check-cast v1, Lcn/mucang/android/jiakaoyi/mapcollect/collect/source/c2/C2CeFangSrcData;
+
+    iget-object v4, v1, Lcn/mucang/android/jiakaoyi/mapcollect/collect/source/c2/C2CeFangSrcData;->gps3:Lcn/mucang/android/jiakaoyi/signal/pos/Gps;
+
+    move-object v1, v0
+
+    check-cast v1, Lcn/mucang/android/jiakaoyi/mapcollect/collect/source/c2/C2CeFangSrcData;
+
+    iget-object v5, v1, Lcn/mucang/android/jiakaoyi/mapcollect/collect/source/c2/C2CeFangSrcData;->gps4:Lcn/mucang/android/jiakaoyi/signal/pos/Gps;
+
+    move-object v1, v0
+
+    check-cast v1, Lcn/mucang/android/jiakaoyi/mapcollect/collect/source/c2/C2CeFangSrcData;
+
+    iget-object v6, v1, Lcn/mucang/android/jiakaoyi/mapcollect/collect/source/c2/C2CeFangSrcData;->gps5:Lcn/mucang/android/jiakaoyi/signal/pos/Gps;
+
+    move-object v1, v0
+
+    check-cast v1, Lcn/mucang/android/jiakaoyi/mapcollect/collect/source/c2/C2CeFangSrcData;
+
+    iget-object v7, v1, Lcn/mucang/android/jiakaoyi/mapcollect/collect/source/c2/C2CeFangSrcData;->gps6:Lcn/mucang/android/jiakaoyi/signal/pos/Gps;
+
+    move-object v1, v0
+
+    check-cast v1, Lcn/mucang/android/jiakaoyi/mapcollect/collect/source/c2/C2CeFangSrcData;
+
+    iget-object v8, v1, Lcn/mucang/android/jiakaoyi/mapcollect/collect/source/c2/C2CeFangSrcData;->gps7:Lcn/mucang/android/jiakaoyi/signal/pos/Gps;
+
+    check-cast v0, Lcn/mucang/android/jiakaoyi/mapcollect/collect/source/c2/C2CeFangSrcData;
+
+    iget-object v9, v0, Lcn/mucang/android/jiakaoyi/mapcollect/collect/source/c2/C2CeFangSrcData;->gps8:Lcn/mucang/android/jiakaoyi/signal/pos/Gps;
+
+    invoke-static/range {v2 .. v9}, Lcn/mucang/android/jiakaoyi/mapcollect/collect/c1/a;->a(Lcn/mucang/android/jiakaoyi/signal/pos/Gps;Lcn/mucang/android/jiakaoyi/signal/pos/Gps;Lcn/mucang/android/jiakaoyi/signal/pos/Gps;Lcn/mucang/android/jiakaoyi/signal/pos/Gps;Lcn/mucang/android/jiakaoyi/signal/pos/Gps;Lcn/mucang/android/jiakaoyi/signal/pos/Gps;Lcn/mucang/android/jiakaoyi/signal/pos/Gps;Lcn/mucang/android/jiakaoyi/signal/pos/Gps;)[Lcn/mucang/android/jiakaoyi/signal/pos/Gps;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_0
+
+    .line 2
+    iget-object v1, p0, Lcn/mucang/android/jiakaoyi/mapcollect/collect/u0;->a:Lcn/mucang/android/jiakaoyi/mapcollect/collect/data/SourceData;
+
+    move-object v2, v1
+
+    check-cast v2, Lcn/mucang/android/jiakaoyi/mapcollect/collect/source/c2/C2CeFangSrcData;
+
+    const/4 v3, 0x0
+
+    aget-object v3, v0, v3
+
+    iput-object v3, v2, Lcn/mucang/android/jiakaoyi/mapcollect/collect/source/c2/C2CeFangSrcData;->gps1:Lcn/mucang/android/jiakaoyi/signal/pos/Gps;
+
+    .line 3
+    move-object v2, v1
+
+    check-cast v2, Lcn/mucang/android/jiakaoyi/mapcollect/collect/source/c2/C2CeFangSrcData;
+
+    const/4 v3, 0x1
+
+    aget-object v3, v0, v3
+
+    iput-object v3, v2, Lcn/mucang/android/jiakaoyi/mapcollect/collect/source/c2/C2CeFangSrcData;->gps2:Lcn/mucang/android/jiakaoyi/signal/pos/Gps;
+
+    .line 4
+    move-object v2, v1
+
+    check-cast v2, Lcn/mucang/android/jiakaoyi/mapcollect/collect/source/c2/C2CeFangSrcData;
+
+    const/4 v3, 0x2
+
+    aget-object v3, v0, v3
+
+    iput-object v3, v2, Lcn/mucang/android/jiakaoyi/mapcollect/collect/source/c2/C2CeFangSrcData;->gps7:Lcn/mucang/android/jiakaoyi/signal/pos/Gps;
+
+    .line 5
+    check-cast v1, Lcn/mucang/android/jiakaoyi/mapcollect/collect/source/c2/C2CeFangSrcData;
+
+    const/4 v2, 0x3
+
+    aget-object v0, v0, v2
+
+    iput-object v0, v1, Lcn/mucang/android/jiakaoyi/mapcollect/collect/source/c2/C2CeFangSrcData;->gps8:Lcn/mucang/android/jiakaoyi/signal/pos/Gps;
+
+    const-string v0, "\u70b9\u4f4d\u5df2\u8865\u5168"
+
+    .line 6
+    invoke-virtual {p0, v0}, Lcn/mucang/android/jiakaoyi/mapcollect/collect/u0;->e(Ljava/lang/String;)V
+
+    :cond_0
+    return-void
+.end method
+
+.method public g(ILcn/mucang/android/jiakaoyi/signal/pos/Gps;)V
+    .locals 2
+
+    packed-switch p1, :pswitch_data_0
+
+    goto :goto_0
+
+    .line 1
+    :pswitch_0
+    iget-object v0, p0, Lcn/mucang/android/jiakaoyi/mapcollect/collect/u0;->a:Lcn/mucang/android/jiakaoyi/mapcollect/collect/data/SourceData;
+
+    check-cast v0, Lcn/mucang/android/jiakaoyi/mapcollect/collect/source/c2/C2CeFangSrcData;
+
+    new-instance v1, Lcn/mucang/android/jiakaoyi/signal/pos/Gps;
+
+    invoke-direct {v1, p2}, Lcn/mucang/android/jiakaoyi/signal/pos/Gps;-><init>(Lcn/mucang/android/jiakaoyi/signal/pos/Gps;)V
+
+    iput-object v1, v0, Lcn/mucang/android/jiakaoyi/mapcollect/collect/source/c2/C2CeFangSrcData;->gps8:Lcn/mucang/android/jiakaoyi/signal/pos/Gps;
+
+    goto :goto_0
+
+    .line 2
+    :pswitch_1
+    iget-object v0, p0, Lcn/mucang/android/jiakaoyi/mapcollect/collect/u0;->a:Lcn/mucang/android/jiakaoyi/mapcollect/collect/data/SourceData;
+
+    check-cast v0, Lcn/mucang/android/jiakaoyi/mapcollect/collect/source/c2/C2CeFangSrcData;
+
+    new-instance v1, Lcn/mucang/android/jiakaoyi/signal/pos/Gps;
+
+    invoke-direct {v1, p2}, Lcn/mucang/android/jiakaoyi/signal/pos/Gps;-><init>(Lcn/mucang/android/jiakaoyi/signal/pos/Gps;)V
+
+    iput-object v1, v0, Lcn/mucang/android/jiakaoyi/mapcollect/collect/source/c2/C2CeFangSrcData;->gps7:Lcn/mucang/android/jiakaoyi/signal/pos/Gps;
+
+    goto :goto_0
+
+    .line 3
+    :pswitch_2
+    iget-object v0, p0, Lcn/mucang/android/jiakaoyi/mapcollect/collect/u0;->a:Lcn/mucang/android/jiakaoyi/mapcollect/collect/data/SourceData;
+
+    check-cast v0, Lcn/mucang/android/jiakaoyi/mapcollect/collect/source/c2/C2CeFangSrcData;
+
+    new-instance v1, Lcn/mucang/android/jiakaoyi/signal/pos/Gps;
+
+    invoke-direct {v1, p2}, Lcn/mucang/android/jiakaoyi/signal/pos/Gps;-><init>(Lcn/mucang/android/jiakaoyi/signal/pos/Gps;)V
+
+    iput-object v1, v0, Lcn/mucang/android/jiakaoyi/mapcollect/collect/source/c2/C2CeFangSrcData;->gps6:Lcn/mucang/android/jiakaoyi/signal/pos/Gps;
+
+    goto :goto_0
+
+    .line 4
+    :pswitch_3
+    iget-object v0, p0, Lcn/mucang/android/jiakaoyi/mapcollect/collect/u0;->a:Lcn/mucang/android/jiakaoyi/mapcollect/collect/data/SourceData;
+
+    check-cast v0, Lcn/mucang/android/jiakaoyi/mapcollect/collect/source/c2/C2CeFangSrcData;
+
+    new-instance v1, Lcn/mucang/android/jiakaoyi/signal/pos/Gps;
+
+    invoke-direct {v1, p2}, Lcn/mucang/android/jiakaoyi/signal/pos/Gps;-><init>(Lcn/mucang/android/jiakaoyi/signal/pos/Gps;)V
+
+    iput-object v1, v0, Lcn/mucang/android/jiakaoyi/mapcollect/collect/source/c2/C2CeFangSrcData;->gps5:Lcn/mucang/android/jiakaoyi/signal/pos/Gps;
+
+    goto :goto_0
+
+    .line 5
+    :pswitch_4
+    iget-object v0, p0, Lcn/mucang/android/jiakaoyi/mapcollect/collect/u0;->a:Lcn/mucang/android/jiakaoyi/mapcollect/collect/data/SourceData;
+
+    check-cast v0, Lcn/mucang/android/jiakaoyi/mapcollect/collect/source/c2/C2CeFangSrcData;
+
+    new-instance v1, Lcn/mucang/android/jiakaoyi/signal/pos/Gps;
+
+    invoke-direct {v1, p2}, Lcn/mucang/android/jiakaoyi/signal/pos/Gps;-><init>(Lcn/mucang/android/jiakaoyi/signal/pos/Gps;)V
+
+    iput-object v1, v0, Lcn/mucang/android/jiakaoyi/mapcollect/collect/source/c2/C2CeFangSrcData;->gps4:Lcn/mucang/android/jiakaoyi/signal/pos/Gps;
+
+    goto :goto_0
+
+    .line 6
+    :pswitch_5
+    iget-object v0, p0, Lcn/mucang/android/jiakaoyi/mapcollect/collect/u0;->a:Lcn/mucang/android/jiakaoyi/mapcollect/collect/data/SourceData;
+
+    check-cast v0, Lcn/mucang/android/jiakaoyi/mapcollect/collect/source/c2/C2CeFangSrcData;
+
+    new-instance v1, Lcn/mucang/android/jiakaoyi/signal/pos/Gps;
+
+    invoke-direct {v1, p2}, Lcn/mucang/android/jiakaoyi/signal/pos/Gps;-><init>(Lcn/mucang/android/jiakaoyi/signal/pos/Gps;)V
+
+    iput-object v1, v0, Lcn/mucang/android/jiakaoyi/mapcollect/collect/source/c2/C2CeFangSrcData;->gps3:Lcn/mucang/android/jiakaoyi/signal/pos/Gps;
+
+    goto :goto_0
+
+    .line 7
+    :pswitch_6
+    iget-object v0, p0, Lcn/mucang/android/jiakaoyi/mapcollect/collect/u0;->a:Lcn/mucang/android/jiakaoyi/mapcollect/collect/data/SourceData;
+
+    check-cast v0, Lcn/mucang/android/jiakaoyi/mapcollect/collect/source/c2/C2CeFangSrcData;
+
+    new-instance v1, Lcn/mucang/android/jiakaoyi/signal/pos/Gps;
+
+    invoke-direct {v1, p2}, Lcn/mucang/android/jiakaoyi/signal/pos/Gps;-><init>(Lcn/mucang/android/jiakaoyi/signal/pos/Gps;)V
+
+    iput-object v1, v0, Lcn/mucang/android/jiakaoyi/mapcollect/collect/source/c2/C2CeFangSrcData;->gps2:Lcn/mucang/android/jiakaoyi/signal/pos/Gps;
+
+    goto :goto_0
+
+    .line 8
+    :pswitch_7
+    iget-object v0, p0, Lcn/mucang/android/jiakaoyi/mapcollect/collect/u0;->a:Lcn/mucang/android/jiakaoyi/mapcollect/collect/data/SourceData;
+
+    check-cast v0, Lcn/mucang/android/jiakaoyi/mapcollect/collect/source/c2/C2CeFangSrcData;
+
+    new-instance v1, Lcn/mucang/android/jiakaoyi/signal/pos/Gps;
+
+    invoke-direct {v1, p2}, Lcn/mucang/android/jiakaoyi/signal/pos/Gps;-><init>(Lcn/mucang/android/jiakaoyi/signal/pos/Gps;)V
+
+    iput-object v1, v0, Lcn/mucang/android/jiakaoyi/mapcollect/collect/source/c2/C2CeFangSrcData;->gps1:Lcn/mucang/android/jiakaoyi/signal/pos/Gps;
+
+    .line 9
+    :goto_0
+    new-instance p2, Ljava/lang/StringBuilder;
+
+    invoke-direct {p2}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v0, "\u91c7\u96c6\u70b9"
+
+    invoke-virtual {p2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p2, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-virtual {p0, p1}, Lcn/mucang/android/jiakaoyi/mapcollect/collect/u0;->e(Ljava/lang/String;)V
+
+    const/4 p1, 0x1
+
+    .line 10
+    iput-boolean p1, p0, Lcn/mucang/android/jiakaoyi/mapcollect/collect/u0;->c:Z
+
+    return-void
+
+    nop
+
+    :pswitch_data_0
+    .packed-switch 0x1
+        :pswitch_7
+        :pswitch_6
+        :pswitch_5
+        :pswitch_4
+        :pswitch_3
+        :pswitch_2
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
+.end method
+
+.method public h(Lcn/mucang/android/jiakaoyi/signal/pos/Gps;)V
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Lcn/mucang/android/jiakaoyi/mapcollect/collect/u0;->a:Lcn/mucang/android/jiakaoyi/mapcollect/collect/data/SourceData;
+
+    check-cast v0, Lcn/mucang/android/jiakaoyi/mapcollect/collect/source/c2/C2CeFangSrcData;
+
+    new-instance v1, Lcn/mucang/android/jiakaoyi/signal/pos/Gps;
+
+    invoke-direct {v1, p1}, Lcn/mucang/android/jiakaoyi/signal/pos/Gps;-><init>(Lcn/mucang/android/jiakaoyi/signal/pos/Gps;)V
+
+    iput-object v1, v0, Lcn/mucang/android/jiakaoyi/mapcollect/collect/source/c2/C2CeFangSrcData;->start1:Lcn/mucang/android/jiakaoyi/signal/pos/Gps;
+
+    const-string p1, "\u91c7\u96c6\u9884\u62a5\u70b91"
+
+    .line 2
+    invoke-virtual {p0, p1}, Lcn/mucang/android/jiakaoyi/mapcollect/collect/u0;->e(Ljava/lang/String;)V
+
+    const/4 p1, 0x1
+
+    .line 3
+    iput-boolean p1, p0, Lcn/mucang/android/jiakaoyi/mapcollect/collect/u0;->c:Z
+
+    return-void
+.end method
+
+.method public i(Lcn/mucang/android/jiakaoyi/signal/pos/Gps;)V
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Lcn/mucang/android/jiakaoyi/mapcollect/collect/u0;->a:Lcn/mucang/android/jiakaoyi/mapcollect/collect/data/SourceData;
+
+    check-cast v0, Lcn/mucang/android/jiakaoyi/mapcollect/collect/source/c2/C2CeFangSrcData;
+
+    new-instance v1, Lcn/mucang/android/jiakaoyi/signal/pos/Gps;
+
+    invoke-direct {v1, p1}, Lcn/mucang/android/jiakaoyi/signal/pos/Gps;-><init>(Lcn/mucang/android/jiakaoyi/signal/pos/Gps;)V
+
+    iput-object v1, v0, Lcn/mucang/android/jiakaoyi/mapcollect/collect/source/c2/C2CeFangSrcData;->start2:Lcn/mucang/android/jiakaoyi/signal/pos/Gps;
+
+    const-string p1, "\u91c7\u96c6\u9884\u62a5\u70b92"
+
+    .line 2
+    invoke-virtual {p0, p1}, Lcn/mucang/android/jiakaoyi/mapcollect/collect/u0;->e(Ljava/lang/String;)V
+
+    const/4 p1, 0x1
+
+    .line 3
+    iput-boolean p1, p0, Lcn/mucang/android/jiakaoyi/mapcollect/collect/u0;->c:Z
+
+    return-void
+.end method
