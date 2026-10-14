@@ -1,0 +1,146 @@
+[
+  {
+    "dex": "classes.dex",
+    "class_definitions": {
+      "original": 4996,
+      "rebuilt": 4996,
+      "same_identities": true,
+      "removed": 0,
+      "added": 0
+    },
+    "method_references": {
+      "original": 33808,
+      "rebuilt": 33808,
+      "same_identities": true,
+      "removed": 0,
+      "added": 0
+    },
+    "field_references": {
+      "original": 64209,
+      "rebuilt": 64209,
+      "same_identities": true,
+      "removed": 0,
+      "added": 0
+    }
+  },
+  {
+    "dex": "classes2.dex",
+    "class_definitions": {
+      "original": 3187,
+      "rebuilt": 3187,
+      "same_identities": true,
+      "removed": 0,
+      "added": 0
+    },
+    "method_references": {
+      "original": 14990,
+      "rebuilt": 14990,
+      "same_identities": true,
+      "removed": 0,
+      "added": 0
+    },
+    "field_references": {
+      "original": 65535,
+      "rebuilt": 65535,
+      "same_identities": true,
+      "removed": 0,
+      "added": 0
+    }
+  },
+  {
+    "dex": "classes3.dex",
+    "class_definitions": {
+      "original": 4473,
+      "rebuilt": 4473,
+      "same_identities": true,
+      "removed": 0,
+      "added": 0
+    },
+    "method_references": {
+      "original": 33643,
+      "rebuilt": 33643,
+      "same_identities": true,
+      "removed": 0,
+      "added": 0
+    },
+    "field_references": {
+      "original": 65411,
+      "rebuilt": 65411,
+      "same_identities": true,
+      "removed": 0,
+      "added": 0
+    }
+  },
+  {
+    "dex": "classes4.dex",
+    "class_definitions": {
+      "original": 6019,
+      "rebuilt": 6019,
+      "same_identities": true,
+      "removed": 0,
+      "added": 0
+    },
+    "method_references": {
+      "original": 38029,
+      "rebuilt": 38029,
+      "same_identities": true,
+      "removed": 0,
+      "added": 0
+    },
+    "field_references": {
+      "original": 65356,
+      "rebuilt": 65356,
+      "same_identities": true,
+      "removed": 0,
+      "added": 0
+    }
+  },
+  {
+    "dex": "classes5.dex",
+    "class_definitions": {
+      "original": 7185,
+      "rebuilt": 7185,
+      "same_identities": true,
+      "removed": 0,
+      "added": 0
+    },
+    "method_references": {
+      "original": 50708,
+      "rebuilt": 50708,
+      "same_identities": true,
+      "removed": 0,
+      "added": 0
+    },
+    "field_references": {
+      "original": 64213,
+      "rebuilt": 64213,
+      "same_identities": true,
+      "removed": 0,
+      "added": 0
+    }
+  },
+  {
+    "dex": "classes6.dex",
+    "class_definitions": {
+      "original": 7438,
+      "rebuilt": 7438,
+      "same_identities": true,
+      "removed": 0,
+      "added": 0
+    },
+    "method_references": {
+      "original": 59894,
+      "rebuilt": 59894,
+      "same_identities": true,
+      "removed": 0,
+      "added": 0
+    },
+    "field_references": {
+      "original": 40959,
+      "rebuilt": 40959,
+      "same_identities": true,
+      "removed": 0,
+      "added": 0
+    }
+  }
+]

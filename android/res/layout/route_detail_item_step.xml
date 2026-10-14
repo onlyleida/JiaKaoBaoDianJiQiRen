@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:paddingTop="@dimen/dp_17" android:paddingBottom="@dimen/dp_9" android:layout_width="match_parent" android:layout_height="@dimen/dp_136"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iconIv" android:paddingLeft="@dimen/dp_8" android:paddingRight="@dimen/dp_8" android:layout_width="@dimen/dp_70" android:layout_height="@dimen/dp_70" />
+    <TextView android:textSize="@dimen/dp_16" android:textColor="#333" android:gravity="center" android:id="@id/nameTv" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="上车准备" />
+</LinearLayout>
