@@ -1,0 +1,11 @@
+{
+  "apk_sha256": "bbc2b51c01f57fba8f50ec8fd688cbf42baddb153eade0f5dd3c27bb253e49ac",
+  "bytes": 111990129,
+  "zip_crc_verified": true,
+  "signature_verified": true,
+  "zip_alignment_verified": true,
+  "original_payloads_unchanged": 489,
+  "intentional_native_overrides": 1,
+  "native_unmodified_ranges_verified": true,
+  "embedded_certificate_matches_apk_signer": true
+}

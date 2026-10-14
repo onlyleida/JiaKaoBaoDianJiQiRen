@@ -125,3 +125,10 @@ PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s server -v
 已在云端 Android 11 x86/ARM32 转译模拟器运行本地调试 APK，使用的文件与交付 APK SHA256 完全相同。安装成功、模拟器到同机服务端的健康检查成功，但应用启动即发生 SIGSEGV，45 秒时进程不存在且屏幕回到桌面；没有观察到业务 API 请求。堆栈位于 libndk_translation.so，具体触发的原生调用仍待定位。完整教学与登录联调仍未通过。
 
 证据见 [实跑复核报告](../reports/local-backend-runtime-review.json)、[崩溃日志](../reports/local-backend-runtime-crash.txt) 和 [云端运行记录](https://github.com/onlyleida/JiaKaoBaoDianJiQiRen/actions/runs/38579243751)。手动工作流 `Run exact local backend APK` 会用原 Release APK 加校验补丁恢复精确的调试 APK，通过 SHA256 后再安装；会保留独立证据，不覆盖原 APK 的运行报告。
+
+
+## 2026-10-15 兼容版联调结果
+
+模拟器兼容版现已在 Android 9 原生界面稳定运行，实际完成设置到语音设置再返回。服务收到12条业务请求：11条200，未登录会话检查1条401，未发现其他错误。新增地区代码对象接口返回空字符串，APP/固件更新和Unity更新分别处理；当前42条业务路由，10项本地契约测试通过。
+
+使用 `server/prepare_emulator_apk.py` 生成兼容变体；旧 `prepare_local_apk.py` 只负责后端覆盖，不包含 native 兼容修复。正常启动仍停在Unity包加载失败，原生设置通过调试入口进入。完整步骤和实测APK见 [模拟器说明](../docs/EMULATOR.md)。

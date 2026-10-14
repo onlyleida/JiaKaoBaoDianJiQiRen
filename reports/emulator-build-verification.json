@@ -1,0 +1,47 @@
+{
+  "apk": "jiakaoyi-coach-11.6.5-rebuilt-debug.apk",
+  "sha256": "bbc2b51c01f57fba8f50ec8fd688cbf42baddb153eade0f5dd3c27bb253e49ac",
+  "bytes": 111990129,
+  "apktool": "3.0.3",
+  "build_tools": "35.0.0",
+  "signature_verified": true,
+  "signer_certificate_sha256": "282fdbfec01cd0d99aeb8fda3a807301b77e42c8f6cbbd894e4753c211cdec84",
+  "zip_alignment_verified": true,
+  "packaged_files_byte_identical_to_extraction": {
+    "assets": 309,
+    "lib": 42
+  },
+  "dex_files": [
+    "classes.dex",
+    "classes2.dex",
+    "classes3.dex",
+    "classes4.dex",
+    "classes5.dex",
+    "classes6.dex"
+  ],
+  "original_preserved_payload_verified": false,
+  "intentional_payload_patches_verified": {
+    "lib/armeabi-v7a/libtnpn.so": {
+      "originalSha256": "a644d6800f2732798185741da30d8ced39c6f0d7acb67192d384cee6e425dd44",
+      "patchedSha256": "26dfe812376c7ef2a83b6993c514f459a80707cdff09f9443d654804522e27f7",
+      "debugCertificateSha256": "282fdbfec01cd0d99aeb8fda3a807301b77e42c8f6cbbd894e4753c211cdec84",
+      "patches": [
+        {
+          "offset": 587312,
+          "bytes": 4,
+          "before": "30482de9",
+          "after": "1eff2fe1",
+          "reason": "Keep portable ARM routines without CPU probes under native translation"
+        },
+        {
+          "offset": 1816057,
+          "bytes": 1755,
+          "reason": "Allow this build's debug certificate using the existing DEBUG_SIGN slot"
+        }
+      ],
+      "reason": "Emulator CPU compatibility and the local build certificate; retain native verification and crypto"
+    }
+  },
+  "signing": "local debug key; different from original vendor certificate",
+  "runtime_test": "not performed by this build script"
+}

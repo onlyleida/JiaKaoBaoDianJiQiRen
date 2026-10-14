@@ -55,8 +55,33 @@ Release 中的云端 APK 为 111,994,225 字节，SHA256：`a11eee996432ec774876
 
 `screen-after-10s/45s` 的时间以启动命令返回或超时后开始计算。报告：`reports/ci-runtime-api28-verification.json`；综合判读：`reports/ci-runtime-review.json`。完整原始证据和截图在 Release 的 `ci-runtime-api28-evidence.zip`。
 
-**最终结论：APK 内部内容已完整提取并重建，签名、资源/DEX 内容和安装通过；两个云端转译环境均未进入正常应用首屏，完整教学功能未验证。** 当前证据不足以判定具体原生库、签名检查或转译兼容问题的根因。用户没有原运行设备，后续仍需真正支持 ARM32 的设备或可正常执行这些原生库的环境，以及包外资源/硬件/后台才能继续功能验证。
+**2026-10-14 普通重建包结论：APK 内部内容已完整提取并重建，签名、资源/DEX 内容和安装通过；两个云端转译环境均未进入正常应用首屏，完整教学功能未验证。** 当前证据不足以判定具体原生库、签名检查或转译兼容问题的根因。用户没有原运行设备，后续仍需真正支持 ARM32 的设备或可正常执行这些原生库的环境，以及包外资源/硬件/后台才能继续功能验证。
 
 ## 保留的边界
 
 Java 导出不是经过修复的可编译源码；C# 项目没有源码构建验证；原生库保留二进制。原厂签名私钥、服务端和包外 Unity/场地资源未取得。运行依赖见 [RUNTIME_DEPENDENCIES.md](RUNTIME_DEPENDENCIES.md)。
+
+
+## 2026-10-15 模拟器兼容修复及真实页面验证
+
+[运行 38597306444](https://github.com/onlyleida/JiaKaoBaoDianJiQiRen/actions/runs/38597306444) 使用提交 `5b71a1893782008016c9aa76e67d79a0f09a3758`，环境为 Android 9 / API 28 Google APIs x86，实际具备 ARM32 转译。安装包为 `jiakaoyi-coach-11.6.5-emulator-api28-debug.apk`，111,990,129 字节，SHA256：
+
+`bbc2b51c01f57fba8f50ec8fd688cbf42baddb153eade0f5dd3c27bb253e49ac`
+
+已实际修复 OpenSSL CPU 探测和重签名后的 native 证书允许列表问题。API 30 后续仍分别在讯飞语音和 PAG 动画转译中崩溃，因此最终采用 API 28，保留原语音 SDK 初始化。只在独立覆盖副本修改 1 个 SO 的两个范围、23 个 API 主机方法、普通表单开关、本地 ping 目标及原有蓝牙模拟开关缺省值；仓库原始 `android/` 树与最初导入逐项 Git 比较无差异。
+
+实际结果：
+
+- 安装、签名、ZIP CRC、对齐及下载 SHA256 复核通过。489 个原始保留载荷仍逐字节一致；1 个 native 库的声明修改范围及证书匹配单独验证，不误称全部 490 项未修改。
+- 完成隐私确认及系统录屏确认。同一主进程 PID 4652 在首次与 67.7 秒采样一致；随后打开设置、点击语音设置并返回，PID 仍一致。完整日志无该进程退出，两次 crash buffer 均为空。
+- 已人工查看真实截图：原生设置菜单、原生语音设置页和返回后的设置页均正常显示。设置通过 root ADB 显式启动原有 SettingActivity，菜单点击则打开原有 TtsSettingActivity。
+- 原 `libmsc.so` 确实加载，未停用语音初始化；未点击试听、下载语音包或验证识别结果，不能据此声称语音效果可用。
+- 12 条实际业务请求中 11 条 HTTP 200；唯一 401 是未登录会话检查（客户端错误码44），没有其他业务错误。包括配置保存、登录配置、地区代码、APP/固件更新、Unity更新及日志记录。
+- 正常启动到达“Unity包加载失败”对话框；源码对应 type100 / 80% 阶段。后台明确没有100/101包，无法进入完整教学首页。没有用假文件或删除检查掩盖缺失资源。
+- 全程阻止 guest 非回环 IPv4/IPv6，只允许通过 adb reverse 访问本地服务，未访问原厂服务。真实车辆硬件和完整登录/教学业务未验证。
+
+完整判读见 `reports/emulator-runtime-review.json`；原始自动报告保留 `first_screen_verified=false` 的未人工判读缺省值，人工截图判断单独记录，不篡改原始证据。Release 中 `emulator-api28-runtime-evidence.zip` 保存本轮完整日志、XML、截图和构建记录。
+
+![原生设置页](../reports/emulator-screen-native-settings.png)
+
+复现和完整兼容变体边界见 [EMULATOR.md](EMULATOR.md)。

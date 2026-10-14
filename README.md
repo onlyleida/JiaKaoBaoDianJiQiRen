@@ -26,13 +26,15 @@ adb -s YOUR_DEVICE_SERIAL install jiakaoyi-coach-11.6.5-rebuilt-debug.apk
 adb -s YOUR_DEVICE_SERIAL shell am start -n cn.mucang.android.jiakaoyi.teachingk2/cn.mucang.android.jiakaoyi.teachingk2.ui.splash.TeachSplashActivity
 ```
 
-先用 `adb -s YOUR_DEVICE_SERIAL shell getprop ro.product.cpu.abilist` 确认其中包含 `armeabi-v7a`。仅 ARM64 的系统不能加载这些 32 位原生库。**已在云端 Android 9/11 ARM 转译模拟器成功安装，但正常运行未通过：Android 11 启动后崩溃，Android 9 白屏且进程反复退出、重启。** 详细结果见 [docs/VALIDATION.md](docs/VALIDATION.md)。
+先用 `adb -s YOUR_DEVICE_SERIAL shell getprop ro.product.cpu.abilist` 确认其中包含 `armeabi-v7a`。仅 ARM64 的系统不能加载这些 32 位原生库。**普通重建包在云端 Android 9/11 可以安装，但原生初始化/证书检查导致运行失败。2026-10-15 新增模拟器兼容版已在 Android 9 稳定显示原生界面，并完成“设置 → 语音设置 → 返回”操作；正常启动仍因包外 Unity 动态资源缺失而停止。** 详细结果见 [docs/VALIDATION.md](docs/VALIDATION.md)。
+
+模拟器测试请使用 Release 中的 **`jiakaoyi-coach-11.6.5-emulator-api28-debug.apk`**；构建与复现方法见 [docs/EMULATOR.md](docs/EMULATOR.md)。原生设置是通过 root ADB 调试入口打开，不代表已经进入完整教学首页。
 
 完整教学流程依赖机器人硬件通信、设备绑定、后台服务和另行下载的 Unity/场地资源。用户目前没有已运行设备，因此本仓库交付范围为 **原 APK 内的全部内容及可重建安装包**，不能据此宣称完整教学功能已经运行。详细缺失项与代码位置见 [docs/RUNTIME_DEPENDENCIES.md](docs/RUNTIME_DEPENDENCIES.md)。
 
 ## 从仓库重建 APK
 
-新增的 [本地兼容服务端](server/README.md) 使用 Python 3.9+ 和 SQLite，支持 40 条已核对的设备、配置、调试登录、记录与资源接口。运行 `python3 server/local_server.py serve` 即可启动；配套脚本可生成指向本机的独立 APK 构建副本。它根据客户端协议重写，不能替代缺失的 Unity 动态文件、机器人硬件或原厂完整业务。
+新增的 [本地兼容服务端](server/README.md) 使用 Python 3.9+ 和 SQLite，支持 42 条已核对的设备、配置、调试登录、记录与资源接口。运行 `python3 server/local_server.py serve` 即可启动；配套脚本可生成指向本机的独立 APK 构建副本。它根据客户端协议重写，不能替代缺失的 Unity 动态文件、机器人硬件或原厂完整业务。
 
 需要 Python 3、JDK（已用 21 验证）、Android SDK Build-Tools 35.0.0。脚本自动下载并校验 Apktool 3.0.3；也可以通过 `--apktool /path/to/apktool_3.0.3.jar` 使用已有 JAR。
 

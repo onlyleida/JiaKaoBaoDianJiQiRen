@@ -1,0 +1,52 @@
+{
+  "base": "local-backend overlay",
+  "originalModified": false,
+  "files": [
+    {
+      "file": "android/lib/armeabi-v7a/libtnpn.so",
+      "originalSha256": "a644d6800f2732798185741da30d8ced39c6f0d7acb67192d384cee6e425dd44",
+      "patchedSha256": "26dfe812376c7ef2a83b6993c514f459a80707cdff09f9443d654804522e27f7",
+      "debugCertificateSha256": "282fdbfec01cd0d99aeb8fda3a807301b77e42c8f6cbbd894e4753c211cdec84",
+      "patches": [
+        {
+          "offset": 587312,
+          "bytes": 4,
+          "before": "30482de9",
+          "after": "1eff2fe1",
+          "reason": "Keep portable ARM routines without CPU probes under native translation"
+        },
+        {
+          "offset": 1816057,
+          "bytes": 1755,
+          "reason": "Allow this build's debug certificate using the existing DEBUG_SIGN slot"
+        }
+      ],
+      "reason": "Emulator CPU compatibility and the local build certificate; retain native verification and crypto"
+    },
+    {
+      "file": "android/smali_classes2/cn/mucang/android/jiakaoyi/framework/utils/JNet.smali",
+      "originalSha256": "1099bcdc70771944cee7ba7bf88e754ca38c08864001370a4155d1f4a2c2b1a1",
+      "patchedSha256": "915b9fe0eec145f2d8f08a5bd2cd33f61a2f3edbe6958cd06a6ba211fe915e63"
+    },
+    {
+      "file": "android/smali_classes2/cn/mucang/android/jiakaoyi/framework/utils/n.smali",
+      "originalSha256": "5e7dae6f6cbf352f5b4715a19f2cb838629139fd05f06e171c57bdbde6d1eaf7",
+      "patchedSha256": "16bf6e5e3158564d0b89f67a397811725d2ea06cd65efaddabf64541e45ccb75"
+    }
+  ],
+  "scope": "Native CPU/certificate compatibility; loopback ping; existing Bluetooth simulation default enabled",
+  "speechInitializationDisabled": false,
+  "hardwareSimulationDefault": true,
+  "networkProbe": "127.0.0.1",
+  "nativeLibrariesUnchanged": false,
+  "nativeMethodsUnchanged": true,
+  "limits": [
+    "CPU acceleration and timestamp probing disabled; runtime validation still required",
+    "All other original native bytes and packaged resources remain unchanged",
+    "Private debug key stays in this build directory and is never published",
+    "Original speech initialization retained; spoken output and cloud recognition unverified",
+    "Built-in Bluetooth simulation replaces physical signal-box startup; real hardware untested",
+    "Original login and external Unity resource checks remain",
+    "Use local backend and guest network isolation for testing"
+  ]
+}
