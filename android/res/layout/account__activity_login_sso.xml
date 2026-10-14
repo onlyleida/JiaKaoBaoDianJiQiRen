@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/title_bar" layout="@layout/account__include_title_bar" />
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/title_bar">
+        <LinearLayout android:orientation="vertical" android:id="@id/step1_panel" android:layout_width="match_parent" android:layout_height="match_parent">
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="48.0dp" android:layout_marginLeft="10.0dp" android:layout_marginTop="12.0dp" android:layout_marginRight="10.0dp">
+                <View android:id="@id/username_panel_bg" android:background="@drawable/account__edit_text_bg_normal" android:layout_width="match_parent" android:layout_height="4.0dp" android:layout_alignParentBottom="true" />
+                <TextView android:textSize="15.0sp" android:textColor="#373737" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="13.0dp" android:text="账号" android:maxLength="11" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <RelativeLayout android:id="@id/username_clear" android:visibility="invisible" android:layout_width="48.0dp" android:layout_height="48.0dp" android:layout_alignParentRight="true">
+                    <ImageView android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/account__password_clear" android:layout_centerInParent="true" />
+                </RelativeLayout>
+                <EditText android:textSize="15.0sp" android:textColor="#373737" android:id="@id/username" android:background="@null" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="102.0dp" android:hint="请输入sso账号" android:maxLength="32" android:layout_toLeftOf="@id/username_clear" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="48.0dp" android:layout_marginLeft="10.0dp" android:layout_marginRight="10.0dp">
+                <View android:id="@id/password_panel_bg" android:background="@drawable/account__edit_text_bg_active" android:layout_width="match_parent" android:layout_height="4.0dp" android:layout_alignParentBottom="true" />
+                <TextView android:textSize="15.0sp" android:textColor="#373737" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="13.0dp" android:text="密码" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <RelativeLayout android:id="@id/password_clear" android:visibility="invisible" android:layout_width="48.0dp" android:layout_height="48.0dp" android:layout_alignParentRight="true">
+                    <ImageView android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/account__password_clear" android:layout_centerInParent="true" />
+                </RelativeLayout>
+                <EditText android:textSize="15.0sp" android:textColor="#000000" android:id="@id/password" android:background="@null" android:longClickable="false" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="102.0dp" android:hint="请输入密码" android:maxLength="32" android:layout_toLeftOf="@id/password_clear" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:inputType="textPassword" />
+            </RelativeLayout>
+            <LinearLayout android:orientation="horizontal" android:paddingLeft="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dp">
+                <CheckBox android:textSize="15.0sp" android:textColor="#373737" android:id="@id/remember_username" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/account__check_box" android:text="记住账号" />
+                <CheckBox android:textSize="15.0sp" android:textColor="#373737" android:id="@id/remember_password" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:button="@drawable/account__check_box" android:text="记住密码" />
+            </LinearLayout>
+        </LinearLayout>
+        <RelativeLayout android:id="@id/step2_panel" android:visibility="gone" android:layout_width="match_parent" android:layout_height="48.0dp" android:layout_marginLeft="10.0dp" android:layout_marginTop="12.0dp" android:layout_marginRight="10.0dp">
+            <View android:id="@id/code_panel_bg" android:background="@drawable/account__edit_text_bg_active" android:layout_width="match_parent" android:layout_height="4.0dp" android:layout_alignParentBottom="true" />
+            <TextView android:textSize="15.0sp" android:textColor="#373737" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="13.0dp" android:text="验证码" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <RelativeLayout android:id="@id/code_input_clear" android:visibility="invisible" android:layout_width="48.0dp" android:layout_height="48.0dp" android:layout_alignParentRight="true">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/account__password_clear" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <EditText android:textSize="15.0sp" android:textColor="#000000" android:id="@id/code_input" android:background="@null" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="102.0dp" android:hint="请输入验证码" android:maxLength="6" android:layout_toLeftOf="@id/code_input_clear" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:inputType="numberDecimal" />
+        </RelativeLayout>
+        <Button android:textSize="17.0sp" android:textColor="#ffffff" android:id="@id/btn_ok" android:background="@drawable/account__selector_btn_bg" android:layout_width="match_parent" android:layout_height="48.0dp" android:layout_marginLeft="10.0dp" android:layout_marginTop="24.0dp" android:layout_marginRight="10.0dp" android:text="下一步" />
+    </LinearLayout>
+</RelativeLayout>

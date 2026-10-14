@@ -1,0 +1,1 @@
+alter table t_deduct add column rule_ids INTEGER;

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/rootLayout" android:background="@drawable/shape_ffffff_r2" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/dp_24" android:paddingTop="@dimen/dp_24" android:paddingRight="@dimen/dp_24" android:paddingBottom="@dimen/dp_24" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/dp_24" android:textColor="#333" android:layout_gravity="center_horizontal" android:id="@id/titleTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_16" />
+            <TextView android:textSize="@dimen/dp_20" android:textColor="#333" android:layout_gravity="center_horizontal" android:id="@id/descTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_24" />
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/dp_54">
+                <TextView android:textSize="@dimen/dp_23" android:textColor="#fff" android:gravity="center" android:id="@id/leftTv" android:background="@drawable/shape_008aff_r100" android:layout_width="@dimen/dp_172" android:layout_height="match_parent" />
+                <TextView android:textSize="@dimen/dp_23" android:textColor="#008aff" android:gravity="center" android:id="@id/rightTv" android:background="@drawable/shape_r100_s1_008aff" android:layout_width="@dimen/dp_172" android:layout_height="match_parent" android:layout_marginLeft="@dimen/dp_40" />
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView android:layout_gravity="right" android:id="@id/closeIv" android:padding="@dimen/dp_8" android:layout_width="@dimen/dp_44" android:layout_height="@dimen/dp_44" android:src="@drawable/dialog_close" />
+    </FrameLayout>
+</LinearLayout>

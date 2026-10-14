@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="#fff" android:layout_width="match_parent" android:layout_height="match_parent" android:layoutDirection="ltr"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/title" layout="@layout/teaching_title" />
+    <TextView android:textSize="@dimen/text_30" android:textColor="#333" android:id="@id/temp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/rpx_24" android:text="模块错误状态：" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/title" />
+    <TextView android:textSize="@dimen/text_30" android:textColor="@color/RED" android:id="@id/errorTv" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginStart="@dimen/rpx_12" android:layout_marginEnd="@dimen/rpx_24" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/temp" app:layout_constraintTop_toTopOf="@id/temp" />
+    <TextView android:textSize="@dimen/text_30" android:textColor="#333" android:id="@id/temp1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/rpx_24" android:text="模块通信状态：" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/errorTv" />
+    <TextView android:textSize="@dimen/text_30" android:textColor="@color/RED" android:id="@id/communicationTv" android:paddingBottom="@dimen/rpx_24" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="不可用" android:layout_marginStart="@dimen/rpx_12" android:layout_marginEnd="@dimen/rpx_24" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/temp1" app:layout_constraintTop_toTopOf="@id/temp1" />
+    <View android:background="#e8e8e8" android:layout_width="match_parent" android:layout_height="@dimen/dp_divider" app:layout_constraintBottom_toBottomOf="@id/communicationTv" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/dataRcv" android:layout_width="0.0dp" android:layout_height="@dimen/dp_0" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/communicationTv" app:layout_constraintWidth_percent="0.5" />
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="0.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/dataRcv" app:layout_constraintTop_toTopOf="@id/dataRcv">
+        <CheckBox android:textSize="@dimen/rpx_20" android:id="@id/cbEnableCover" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="是否打开遮挡检测" />
+        <TextView android:textSize="@dimen/text_30" android:textColor="#333" android:id="@id/tvCoverEnable" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="是否开启遮挡检测：" />
+        <TextView android:textSize="@dimen/text_30" android:textColor="#333" android:id="@id/tvCoverType" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="遮挡状态：" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/rpx_30">
+            <TextView android:textSize="@dimen/text_30" android:textColor="#333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="统计范围：" />
+            <CheckBox android:textSize="@dimen/rpx_20" android:id="@id/cbMask" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:text="口罩" />
+            <CheckBox android:textSize="@dimen/rpx_20" android:id="@id/cbSunglasses" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:text="墨镜" />
+            <CheckBox android:textSize="@dimen/rpx_20" android:id="@id/cbElse" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="手部或帽子" />
+        </LinearLayout>
+        <CheckBox android:textSize="@dimen/rpx_20" android:id="@id/cbStatistic" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="占比测试" />
+        <TextView android:textSize="@dimen/text_30" android:textColor="#333" android:id="@id/tvCoverCount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="总计：" />
+    </LinearLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/rpx_150" app:layout_constraintBottom_toBottomOf="parent">
+        <Button android:textSize="@dimen/text_24" android:textColor="#333" android:id="@id/btnOtaStart" android:layout_width="@dimen/rpx_150" android:layout_height="@dimen/rpx_75" android:layout_marginTop="@dimen/rpx_32" android:text="升级OTA" android:layout_marginStart="@dimen/rpx_50" />
+        <Button android:textSize="@dimen/text_24" android:textColor="#333" android:id="@id/btnOtaVer" android:layout_width="@dimen/rpx_175" android:layout_height="@dimen/rpx_75" android:layout_marginTop="@dimen/rpx_32" android:text="查询版本号" android:layout_marginStart="@dimen/rpx_240" />
+        <TextView android:textSize="@dimen/text_27" android:textColor="#333" android:gravity="center_vertical" android:id="@id/tvVersion" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/rpx_40" android:text="内部版本号: " android:layout_marginStart="@dimen/rpx_420" />
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

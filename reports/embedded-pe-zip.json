@@ -1,0 +1,17 @@
+[
+  {
+    "path": "assets/amap_resource1_0_0.png",
+    "magic": "504b0304",
+    "size": 24691
+  },
+  {
+    "path": "assets/map_assets/icons-for_custom_5_14.data",
+    "magic": "504b0304",
+    "size": 2628
+  },
+  {
+    "path": "assets/ae/res.zip",
+    "magic": "504b0304",
+    "size": 344054
+  }
+]

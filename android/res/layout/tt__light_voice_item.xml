@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/llLayout" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/icon" android:layout_width="@dimen/tt__voice_icon_width" android:layout_height="@dimen/tt__voice_icon_width" android:layout_marginTop="@dimen/tt__voice_light_top" android:layout_marginBottom="@dimen/tt__voice_light_bottom" android:layout_marginStart="4.0dp" android:layout_marginEnd="16.0dp" />
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/tt__text_size_qr_invalid" android:textStyle="bold" android:textColor="#ff333333" android:id="@id/name" android:paddingTop="@dimen/tt__voice_light_top" android:paddingBottom="2.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="@dimen/tt__light_desc_text" android:textColor="#ff969696" android:id="@id/desc" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="10.0dp" android:text="下面将进行模拟夜间行驶场景灯光使用的的考试，请按语音指令在5秒内做出相应的灯光操作：请开启前照灯" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="@drawable/tt__bg_divider" android:layout_width="match_parent" android:layout_height="1.0px" />
+</LinearLayout>

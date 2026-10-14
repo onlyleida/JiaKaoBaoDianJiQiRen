@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="@dimen/rpx_1060" android:layout_height="@dimen/rpx_86">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_account" android:background="@drawable/bg_login_account_edit" android:layout_width="0.0dp" android:layout_height="match_parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_constraintWidth_percent="0.77">
+            <EditText android:textSize="@dimen/text_30" android:textColor="#40464d" android:textColorHint="#707c8c" android:gravity="start|center" android:id="@id/idEt" android:background="@null" android:layout_width="0.0dp" android:layout_height="wrap_content" android:hint="@string/teachbase_input_phone_id_login" android:singleLine="true" android:maxLength="18" android:layout_weight="1.0" android:inputType="textPassword" android:imeOptions="actionDone" android:textCursorDrawable="@drawable/shape_edit_cursor" android:textAlignment="viewStart" android:layout_marginStart="@dimen/rpx_30" android:layout_marginEnd="@dimen/rpx_15" android:letterSpacing="0.1" />
+            <ImageView android:id="@id/eyeIv" android:layout_width="@dimen/rpx_50" android:layout_height="@dimen/rpx_50" android:src="@drawable/selector_login_eye" android:layout_marginEnd="@dimen/rpx_25" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/text_36" android:textColor="@android:color/white" android:gravity="center" android:id="@id/loginTv" android:background="@drawable/bg_login_btn" android:layout_width="0.0dp" android:layout_height="0.0dp" android:text="@string/teachbase_login" app:layout_constraintBottom_toBottomOf="@id/ll_account" app:layout_constraintStart_toEndOf="@id/ll_account" app:layout_constraintTop_toTopOf="@id/ll_account" app:layout_constraintWidth_percent="0.23" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView android:textSize="@dimen/rpx_30" android:textColor="#ff4a40" android:id="@id/tv_err_tip" android:layout_width="@dimen/rpx_1060" android:layout_height="@dimen/rpx_132" android:layout_marginTop="@dimen/rpx_28" android:layout_marginBottom="@dimen/rpx_28" android:paddingStart="@dimen/rpx_24" android:paddingEnd="@dimen/rpx_24" />
+    <cn.mucang.android.jiakaoyi.teachingk2.login.ui.widget.NumKeyBoardView android:id="@id/num_keyboard" android:layout_width="@dimen/rpx_1060" android:layout_height="match_parent" />
+</LinearLayout>

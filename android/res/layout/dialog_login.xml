@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="#fff" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:layout_width="match_parent" android:layout_height="@dimen/dp_64">
+            <TextView android:textSize="@dimen/dp_23" android:textColor="#333" android:layout_gravity="center" android:id="@id/dialog_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="学员登录" />
+            <ImageView android:layout_gravity="right" android:id="@id/close_dialog" android:layout_width="@dimen/dp_64" android:layout_height="match_parent" android:src="@drawable/dialog_close" android:scaleType="centerInside" />
+            <TextView android:textSize="@dimen/dp_18" android:textColor="#008aff" android:gravity="center" android:layout_gravity="right" android:id="@id/weixin_login" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="@dimen/dp_80" android:text="微信登录" />
+            <TextView android:textSize="@dimen/dp_18" android:textColor="#008aff" android:gravity="center" android:layout_gravity="right" android:id="@id/phone_login" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="@dimen/dp_80" android:text="短信登录" />
+            <TextView android:textSize="@dimen/dp_18" android:textColor="#008aff" android:gravity="center" android:layout_gravity="right" android:id="@id/login_out" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="@dimen/dp_80" android:text="退出登录" />
+        </FrameLayout>
+        <View android:background="#e8e8e8" android:layout_width="match_parent" android:layout_height="@dimen/dp_1" />
+        <FrameLayout android:id="@id/web_view_container" android:layout_width="match_parent" android:layout_height="@dimen/dp_0" android:layout_weight="1.0">
+            <cn.mucang.android.core.webview.core.MucangWebView android:id="@id/web_view" android:layout_width="match_parent" android:layout_height="match_parent" />
+        </FrameLayout>
+        <TextView android:textSize="@dimen/dp_25" android:textColor="#333" android:layout_gravity="center" android:id="@id/wxTip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_20" android:layout_marginBottom="@dimen/dp_40" android:text="使用微信扫码登录" />
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,69 @@
+package com.serenegiant.media;
+
+import android.annotation.TargetApi;
+import android.media.MediaCodec;
+import android.media.MediaCrypto;
+import android.media.MediaFormat;
+import android.view.Surface;
+import java.nio.ByteBuffer;
+import java.nio.ByteOrder;
+
+/* JADX INFO: loaded from: classes6.dex */
+@TargetApi(16)
+public abstract class AbstractAudioEncoder extends AbstractEncoder implements IAudioEncoder {
+    public static final int DEFAULT_BIT_RATE = 64000;
+    public static final int DEFAULT_SAMPLE_RATE = 44100;
+    public static final int FRAMES_PER_BUFFER = 25;
+    public static final int SAMPLES_PER_FRAME = 1024;
+    protected int mAudioSource;
+    protected int mBitRate;
+    protected int mChannelCount;
+    protected int mSampleRate;
+
+    public AbstractAudioEncoder(IRecorder iRecorder, EncoderListener encoderListener, int i, int i2) {
+        this(iRecorder, encoderListener, i, i2, 44100, DEFAULT_BIT_RATE);
+    }
+
+    @Override // com.serenegiant.media.AbstractEncoder
+    protected MediaFormat createOutputFormat(byte[] bArr, int i, int i2, int i3, int i4) {
+        MediaFormat mediaFormatCreateAudioFormat = MediaFormat.createAudioFormat(this.MIME_TYPE, this.mSampleRate, this.mChannelCount);
+        ByteBuffer byteBufferOrder = ByteBuffer.allocateDirect(i).order(ByteOrder.nativeOrder());
+        byteBufferOrder.put(bArr, 0, i);
+        byteBufferOrder.flip();
+        mediaFormatCreateAudioFormat.setByteBuffer("csd-0", byteBufferOrder);
+        return mediaFormatCreateAudioFormat;
+    }
+
+    @Override // com.serenegiant.media.AbstractEncoder
+    protected boolean internalPrepare() throws Exception {
+        this.mTrackIndex = -1;
+        this.mIsEOS = false;
+        this.mRecorderStarted = false;
+        if (MediaCodecHelper.selectAudioEncoder(this.MIME_TYPE) == null) {
+            return true;
+        }
+        MediaFormat mediaFormatCreateAudioFormat = MediaFormat.createAudioFormat(this.MIME_TYPE, this.mSampleRate, this.mChannelCount);
+        mediaFormatCreateAudioFormat.setInteger("aac-profile", 2);
+        mediaFormatCreateAudioFormat.setInteger("channel-mask", this.mChannelCount == 1 ? 16 : 12);
+        mediaFormatCreateAudioFormat.setInteger("bitrate", this.mBitRate);
+        mediaFormatCreateAudioFormat.setInteger("channel-count", this.mChannelCount);
+        MediaCodec mediaCodecCreateEncoderByType = MediaCodec.createEncoderByType(this.MIME_TYPE);
+        this.mMediaCodec = mediaCodecCreateEncoderByType;
+        mediaCodecCreateEncoderByType.configure(mediaFormatCreateAudioFormat, (Surface) null, (MediaCrypto) null, 1);
+        this.mMediaCodec.start();
+        return false;
+    }
+
+    @Override // com.serenegiant.media.Encoder
+    public final boolean isAudio() {
+        return true;
+    }
+
+    public AbstractAudioEncoder(IRecorder iRecorder, EncoderListener encoderListener, int i, int i2, int i3, int i4) {
+        super("audio/mp4a-latm", iRecorder, encoderListener);
+        this.mAudioSource = i;
+        this.mChannelCount = i2;
+        this.mSampleRate = i3;
+        this.mBitRate = i4;
+    }
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/fl_inner" android:background="@color/pull_refresh_header_color" android:layout_width="match_parent" android:layout_height="48.0dp">
+        <RelativeLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:layout_gravity="center" android:id="@id/pull_to_refresh_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ui__widget_pull_refresh_pulldown_arrow" />
+            <ProgressBar android:layout_gravity="center" android:id="@id/pull_to_refresh_progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminateDrawable="@drawable/ui__widget_pull_refresh_header_loading_progress" android:indeterminateDuration="1000" android:indeterminateBehavior="repeat" style="?android:progressBarStyleSmall" />
+            <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/pull_to_refresh_image">
+                <TextView android:textSize="14.0sp" android:textColor="#999999" android:id="@id/pull_to_refresh_text" android:paddingLeft="6.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="下拉刷新" android:singleLine="true" />
+                <TextView android:textAppearance="?android:textAppearanceSmall" android:id="@id/pull_to_refresh_sub_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:singleLine="true" />
+            </LinearLayout>
+        </RelativeLayout>
+    </FrameLayout>
+</merge>

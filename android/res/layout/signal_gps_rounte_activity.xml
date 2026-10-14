@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#f2f5fa" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/titleLayout" layout="@layout/common_title" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/dp_40">
+        <TextView android:textSize="@dimen/dp_16" android:textColor="#333" android:gravity="center" android:layout_width="@dimen/dp_0" android:layout_height="match_parent" android:text="发送GGA(云)" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/dp_16" android:textColor="#333" android:gravity="center" android:layout_width="@dimen/dp_0" android:layout_height="match_parent" android:text="收到RTCM" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/dp_16" android:textColor="#333" android:gravity="center" android:layout_width="@dimen/dp_0" android:layout_height="match_parent" android:text="发送RTCM" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/dp_16" android:textColor="#333" android:gravity="center" android:layout_width="@dimen/dp_0" android:layout_height="match_parent" android:text="底层响应" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/toGGa" android:layout_width="@dimen/dp_0" android:layout_height="match_parent" android:layout_weight="1.0" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/fromServer" android:layout_width="@dimen/dp_0" android:layout_height="match_parent" android:layout_weight="1.0" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/toHardware" android:layout_width="@dimen/dp_0" android:layout_height="match_parent" android:layout_weight="1.0" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/fromHardware" android:layout_width="@dimen/dp_0" android:layout_height="match_parent" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

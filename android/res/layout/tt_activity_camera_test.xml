@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="@drawable/tt__bg_round_white" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <cn.mucang.sundial.library.widget.CornerPathFrameLayout android:id="@id/camera_container" android:background="@drawable/tt__bg_black_margin_5" android:layout_width="0.0dp" android:layout_height="0.0dp" android:layout_margin="31.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintDimensionRatio="w,204:115" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <TextureView android:id="@id/camera_view" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </cn.mucang.sundial.library.widget.CornerPathFrameLayout>
+    <FrameLayout android:id="@id/cameraLayout" android:layout_width="0.0dp" android:layout_height="0.0dp" android:layout_margin="31.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintDimensionRatio="w,204:115" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:textSize="@dimen/tt__text_size_title" android:textColor="#ff333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="调\n试\n摄\n像\n头" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toRightOf="@id/camera_container" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

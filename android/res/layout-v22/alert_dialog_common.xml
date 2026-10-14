@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/shape_e6ecf2_ffffff_r24" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/rootLayout" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="right" android:id="@id/closeIv" android:padding="@dimen/dp_14" android:visibility="gone" android:layout_width="@dimen/dp_51" android:layout_height="@dimen/dp_51" android:src="@drawable/ic_black_close" />
+        <TextView android:textSize="@dimen/dp_27" android:textColor="@color/dialog_title_color" android:gravity="center_horizontal" android:id="@id/titleTv" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dialog_title_margin" android:layout_marginTop="@dimen/dp_36" android:layout_marginRight="@dimen/dialog_title_margin" android:text="这是标题" android:layout_marginHorizontal="@dimen/dialog_title_margin" />
+        <TextView android:textSize="@dimen/dp_21" android:textColor="@color/dialog_desc_color" android:gravity="left" android:layout_gravity="center_horizontal" android:id="@id/descTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dialog_desc_margin" android:layout_marginTop="@dimen/dp_14" android:layout_marginRight="@dimen/dialog_desc_margin" android:text="这是描述这是描述这是描述这是\n描述这是描述这是描述这是描述\n这是描述这是描述" android:lineSpacingMultiplier="1.3" android:layout_marginHorizontal="@dimen/dialog_desc_margin" />
+        <TextView android:textSize="@dimen/dialog_button_font_size" android:textColor="@color/dialog_button_main_color" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/btnTv" android:background="@drawable/shape_008aff_r100" android:layout_width="match_parent" android:layout_height="@dimen/dp_54" android:layout_margin="@dimen/dp_37" android:text="按钮" />
+    </LinearLayout>
+</LinearLayout>

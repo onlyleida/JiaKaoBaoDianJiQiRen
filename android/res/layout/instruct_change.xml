@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/titleLayout" app:layout_constraintTop_toTopOf="parent" layout="@layout/common_title" />
+    <cn.mucang.android.core.widget.StateLayout android:id="@id/stateLayout" android:layout_width="match_parent" android:layout_height="@dimen/dp_0" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/titleLayout">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/instruct_rv" android:layout_width="match_parent" android:layout_height="match_parent" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+    </cn.mucang.android.core.widget.StateLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

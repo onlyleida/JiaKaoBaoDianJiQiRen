@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:auto="http://schemas.android.com/apk/res-auto">
+    <cn.mucang.android.ui.framework.widget.loading.ProgressWheelLoadingView android:layout_gravity="center" android:id="@id/ui_framework__progress_loading_view" android:layout_width="80.0dp" android:layout_height="80.0dp" auto:matProg_barColor="@color/ui_framework__progress_theme_blue" auto:matProg_progressIndeterminate="true" />
+</FrameLayout>

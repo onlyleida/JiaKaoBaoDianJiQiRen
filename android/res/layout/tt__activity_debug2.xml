@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:background="@drawable/tt__bg_round_white" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:padding="16.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <Button android:textSize="@dimen/tt__text_size_button" android:id="@id/clear_debug_log" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="清除日志" />
+            <Button android:textSize="@dimen/tt__text_size_button" android:id="@id/system_debug" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="系统调试开关" />
+            <CheckBox android:textSize="@dimen/tt__text_size_button" android:id="@id/use_debug_camera" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dp" android:text="使用测试照片，不拍照" />
+            <CheckBox android:textSize="@dimen/tt__text_size_button" android:id="@id/use_debug_loc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dp" android:text="使用测试定位" />
+            <CheckBox android:textSize="@dimen/tt__text_size_button" android:id="@id/use_location_data" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dp" android:text="使用模拟OBD数据（需要重启生效）" />
+            <CheckBox android:textSize="@dimen/tt__text_size_button" android:id="@id/use_obd_location" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dp" android:text="使用OBD定位（需要重启生效）" />
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

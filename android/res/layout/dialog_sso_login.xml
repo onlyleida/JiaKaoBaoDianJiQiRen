@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:background="#fff" android:layout_width="@dimen/dp_704" android:layout_height="@dimen/dp_440">
+        <FrameLayout android:layout_width="match_parent" android:layout_height="@dimen/dp_60">
+            <TextView android:textSize="@dimen/dp_23" android:textColor="#333" android:layout_gravity="center" android:id="@id/dialog_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="管理员登录" />
+            <TextView android:textSize="@dimen/dp_18" android:textColor="#008aff" android:layout_gravity="right|center" android:id="@id/refresh" android:padding="@dimen/dp_10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_80" android:text="刷新" />
+            <ImageView android:layout_gravity="right" android:id="@id/close_dialog" android:layout_width="@dimen/dp_64" android:layout_height="match_parent" android:src="@drawable/ic_dialog_close" android:scaleType="centerInside" />
+        </FrameLayout>
+        <View android:background="#e8e8e8" android:layout_width="match_parent" android:layout_height="@dimen/dp_1" />
+        <FrameLayout android:layout_gravity="center" android:id="@id/qrCodeFl" android:layout_width="match_parent" android:layout_height="@dimen/dp_320">
+            <ImageView android:layout_gravity="center" android:id="@id/qrCodeIv" android:layout_width="@dimen/dp_240" android:layout_height="@dimen/dp_240" />
+            <LinearLayout android:gravity="center_vertical" android:layout_gravity="center" android:orientation="vertical" android:id="@id/qrCodeErrorFl" android:background="#99000000" android:visibility="gone" android:layout_width="@dimen/dp_240" android:layout_height="@dimen/dp_240">
+                <ImageView android:layout_gravity="center_horizontal" android:layout_width="@dimen/dp_30" android:layout_height="@dimen/dp_30" android:src="@drawable/login_ic_refresh" />
+                <TextView android:textSize="@dimen/dp_14" android:textColor="#fff" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/login_timeout" />
+            </LinearLayout>
+        </FrameLayout>
+        <TextView android:textSize="@dimen/dp_25" android:textColor="#333" android:layout_gravity="center" android:id="@id/tipTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="请使用微信或钉钉扫码" />
+    </LinearLayout>
+</FrameLayout>

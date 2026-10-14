@@ -1,0 +1,1118 @@
+[
+  {
+    "file": "androidx/exifinterface/media/ExifInterface.java",
+    "failed_methods": 1,
+    "error_comments": 1,
+    "simple_fallback_exported": true,
+    "simple_failed_methods": 0,
+    "simple_error_comments": 0,
+    "fallback_source_file": "androidx/exifinterface/media/ExifInterface.java"
+  },
+  {
+    "file": "androidx/core/view/ViewGroupKt$descendants$1.java",
+    "failed_methods": 1,
+    "error_comments": 0,
+    "simple_fallback_exported": true,
+    "simple_failed_methods": 0,
+    "simple_error_comments": 0,
+    "fallback_source_file": "androidx/core/view/ViewGroupKt$descendants$1.java"
+  },
+  {
+    "file": "androidx/lifecycle/FlowLiveDataConversions$asFlow$1.java",
+    "failed_methods": 1,
+    "error_comments": 1,
+    "simple_fallback_exported": true,
+    "simple_failed_methods": 0,
+    "simple_error_comments": 0,
+    "fallback_source_file": "androidx/lifecycle/FlowLiveDataConversions$asFlow$1.java"
+  },
+  {
+    "file": "androidx/recyclerview/widget/GridLayoutManager.java",
+    "failed_methods": 2,
+    "error_comments": 1,
+    "simple_fallback_exported": true,
+    "simple_failed_methods": 0,
+    "simple_error_comments": 0,
+    "fallback_source_file": "androidx/recyclerview/widget/GridLayoutManager.java"
+  },
+  {
+    "file": "cn/mucang/sundial/library/activity/FaceCheckActivity.java",
+    "failed_methods": 1,
+    "error_comments": 0,
+    "simple_fallback_exported": true,
+    "simple_failed_methods": 0,
+    "simple_error_comments": 0,
+    "fallback_source_file": "cn/mucang/sundial/library/activity/FaceCheckActivity.java"
+  },
+  {
+    "file": "cn/mucang/sundial/library/sdk/coach/CoachFaceCheckActivity.java",
+    "failed_methods": 1,
+    "error_comments": 0,
+    "simple_fallback_exported": true,
+    "simple_failed_methods": 0,
+    "simple_error_comments": 0,
+    "fallback_source_file": "cn/mucang/sundial/library/sdk/coach/CoachFaceCheckActivity.java"
+  },
+  {
+    "file": "cn/mucang/jiakaoyi/sundial/client/CameraActivity$startTimer$1.java",
+    "failed_methods": 1,
+    "error_comments": 1,
+    "simple_fallback_exported": true,
+    "simple_failed_methods": 0,
+    "simple_error_comments": 0,
+    "fallback_source_file": "cn/mucang/jiakaoyi/sundial/client/CameraActivity$startTimer$1.java"
+  },
+  {
+    "file": "cn/mucang/jiakaoyi/uilib/ui/widget/CommonMainTitleBar$onAttachedToWindow$1.java",
+    "failed_methods": 1,
+    "error_comments": 1,
+    "simple_fallback_exported": true,
+    "simple_failed_methods": 0,
+    "simple_error_comments": 0,
+    "fallback_source_file": "cn/mucang/jiakaoyi/uilib/ui/widget/CommonMainTitleBar$onAttachedToWindow$1.java"
+  },
+  {
+    "file": "cn/mucang/jiakaoyi/uilib/login/ClassTimeManager$start$1.java",
+    "failed_methods": 1,
+    "error_comments": 1,
+    "simple_fallback_exported": true,
+    "simple_failed_methods": 0,
+    "simple_error_comments": 0,
+    "fallback_source_file": "cn/mucang/jiakaoyi/uilib/login/ClassTimeManager$start$1.java"
+  },
+  {
+    "file": "cn/mucang/jiakaoyi/uilib/login/face/FaceLoginPresenter$onFrame$1.java",
+    "failed_methods": 1,
+    "error_comments": 0,
+    "simple_fallback_exported": true,
+    "simple_failed_methods": 0,
+    "simple_error_comments": 0,
+    "fallback_source_file": "cn/mucang/jiakaoyi/uilib/login/face/FaceLoginPresenter$onFrame$1.java"
+  },
+  {
+    "file": "cn/mucang/android/jiakaoyi/teachingk2/AppTeachExtensionsKt$exitCountDown$1.java",
+    "failed_methods": 1,
+    "error_comments": 1,
+    "simple_fallback_exported": true,
+    "simple_failed_methods": 0,
+    "simple_error_comments": 0,
+    "fallback_source_file": "cn/mucang/android/jiakaoyi/teachingk2/AppTeachExtensionsKt$exitCountDown$1.java"
+  },
+  {
+    "file": "cn/mucang/android/jiakaoyi/teachingk2/ui/CheckActivity$showResult$3.java",
+    "failed_methods": 1,
+    "error_comments": 1,
+    "simple_fallback_exported": true,
+    "simple_failed_methods": 0,
+    "simple_error_comments": 0,
+    "fallback_source_file": "cn/mucang/android/jiakaoyi/teachingk2/ui/CheckActivity$showResult$3.java"
+  },
+  {
+    "file": "cn/mucang/android/jiakaoyi/teachingk2/ui/TeachTipsDialog$showMediaTip$1.java",
+    "failed_methods": 1,
+    "error_comments": 1,
+    "simple_fallback_exported": true,
+    "simple_failed_methods": 0,
+    "simple_error_comments": 0,
+    "fallback_source_file": "cn/mucang/android/jiakaoyi/teachingk2/ui/TeachTipsDialog$showMediaTip$1.java"
+  },
+  {
+    "file": "cn/mucang/android/jiakaoyi/teachingk2/ui/splash/TimeReporter$startReport$1.java",
+    "failed_methods": 1,
+    "error_comments": 1,
+    "simple_fallback_exported": true,
+    "simple_failed_methods": 0,
+    "simple_error_comments": 0,
+    "fallback_source_file": "cn/mucang/android/jiakaoyi/teachingk2/ui/splash/TimeReporter$startReport$1.java"
+  },
+  {
+    "file": "cn/mucang/android/jiakaoyi/teachingk2/collect/render/ErrorFragment.java",
+    "failed_methods": 1,
+    "error_comments": 0,
+    "simple_fallback_exported": true,
+    "simple_failed_methods": 0,
+    "simple_error_comments": 0,
+    "fallback_source_file": "cn/mucang/android/jiakaoyi/teachingk2/collect/render/ErrorFragment.java"
+  },
+  {
+    "file": "cn/mucang/android/jiakaoyi/teachingk2/collect/v2/StepTeachModelActivity.java",
+    "failed_methods": 1,
+    "error_comments": 1,
+    "simple_fallback_exported": true,
+    "simple_failed_methods": 0,
+    "simple_error_comments": 0,
+    "fallback_source_file": "cn/mucang/android/jiakaoyi/teachingk2/collect/v2/StepTeachModelActivity.java"
+  },
+  {
+    "file": "cn/mucang/android/jiakaoyi/teachingk2/collect/v2/TeachPictureDialog$showMediaTip$1.java",
+    "failed_methods": 1,
+    "error_comments": 1,
+    "simple_fallback_exported": true,
+    "simple_failed_methods": 0,
+    "simple_error_comments": 0,
+    "fallback_source_file": "cn/mucang/android/jiakaoyi/teachingk2/collect/v2/TeachPictureDialog$showMediaTip$1.java"
+  },
+  {
+    "file": "cn/mucang/android/jiakaoyi/teachingk2/res/boundary/SwitchSiteDialog$setData$3.java",
+    "failed_methods": 1,
+    "error_comments": 1,
+    "simple_fallback_exported": true,
+    "simple_failed_methods": 0,
+    "simple_error_comments": 0,
+    "fallback_source_file": "cn/mucang/android/jiakaoyi/teachingk2/res/boundary/SwitchSiteDialog$setData$3.java"
+  },
+  {
+    "file": "cn/mucang/android/jiakaoyi/teachingk2/push/PusherManager.java",
+    "failed_methods": 1,
+    "error_comments": 1,
+    "simple_fallback_exported": true,
+    "simple_failed_methods": 0,
+    "simple_error_comments": 0,
+    "fallback_source_file": "cn/mucang/android/jiakaoyi/teachingk2/push/PusherManager.java"
+  },
+  {
+    "file": "cn/mucang/android/jiakaoyi/teachingk2/push/PusherManager$Traffic$start$1.java",
+    "failed_methods": 1,
+    "error_comments": 1,
+    "simple_fallback_exported": true,
+    "simple_failed_methods": 0,
+    "simple_error_comments": 0,
+    "fallback_source_file": "cn/mucang/android/jiakaoyi/teachingk2/push/PusherManager$Traffic$start$1.java"
+  },
+  {
+    "file": "cn/mucang/android/jiakaoyi/teachingk2/autoteach/dialog/TeachResumeDialog$init$1.java",
+    "failed_methods": 1,
+    "error_comments": 0,
+    "simple_fallback_exported": true,
+    "simple_failed_methods": 0,
+    "simple_error_comments": 0,
+    "fallback_source_file": "cn/mucang/android/jiakaoyi/teachingk2/autoteach/dialog/TeachResumeDialog$init$1.java"
+  },
+  {
+    "file": "cn/mucang/android/jiakaoyi/teachingk2/level/NextLevelDialog.java",
+    "failed_methods": 1,
+    "error_comments": 0,
+    "simple_fallback_exported": true,
+    "simple_failed_methods": 0,
+    "simple_error_comments": 0,
+    "fallback_source_file": "cn/mucang/android/jiakaoyi/teachingk2/level/NextLevelDialog.java"
+  },
+  {
+    "file": "cn/mucang/android/jiakaoyi/teachingk2/p007unity/dialog/SwitchKeMuDialog.java",
+    "failed_methods": 1,
+    "error_comments": 0,
+    "simple_fallback_exported": true,
+    "fallback_source_file": "cn/mucang/android/jiakaoyi/teachingk2/unity/dialog/SwitchKeMuDialog.java",
+    "simple_failed_methods": 0,
+    "simple_error_comments": 0
+  },
+  {
+    "file": "cn/mucang/android/jiakaoyi/teachingk2/p007unity/dialog/StepResultDialog.java",
+    "failed_methods": 1,
+    "error_comments": 0,
+    "simple_fallback_exported": true,
+    "fallback_source_file": "cn/mucang/android/jiakaoyi/teachingk2/unity/dialog/StepResultDialog.java",
+    "simple_failed_methods": 0,
+    "simple_error_comments": 0
+  },
+  {
+    "file": "cn/mucang/android/jiakaoyi/teachingk2/autopilot/e.java",
+    "failed_methods": 1,
+    "error_comments": 0,
+    "simple_fallback_exported": true,
+    "simple_failed_methods": 0,
+    "simple_error_comments": 0,
+    "fallback_source_file": "cn/mucang/android/jiakaoyi/teachingk2/autopilot/e.java"
+  },
+  {
+    "file": "cn/mucang/android/jiakaoyi/teachingk2/login/ui/AutoLogoutDialog.java",
+    "failed_methods": 1,
+    "error_comments": 1,
+    "simple_fallback_exported": true,
+    "simple_failed_methods": 0,
+    "simple_error_comments": 0,
+    "fallback_source_file": "cn/mucang/android/jiakaoyi/teachingk2/login/ui/AutoLogoutDialog.java"
+  },
+  {
+    "file": "cn/mucang/android/jiakaoyi/mapcollect/manager/map/MapManagerActivity.java",
+    "failed_methods": 2,
+    "error_comments": 2,
+    "simple_fallback_exported": true,
+    "simple_failed_methods": 0,
+    "simple_error_comments": 0,
+    "fallback_source_file": "cn/mucang/android/jiakaoyi/mapcollect/manager/map/MapManagerActivity.java"
+  },
+  {
+    "file": "cn/mucang/android/jiakaoyi/framework/utils/TrafficHelper$init$1.java",
+    "failed_methods": 1,
+    "error_comments": 1,
+    "simple_fallback_exported": true,
+    "simple_failed_methods": 0,
+    "simple_error_comments": 0,
+    "fallback_source_file": "cn/mucang/android/jiakaoyi/framework/utils/TrafficHelper$init$1.java"
+  },
+  {
+    "file": "cn/mucang/android/jiakaoyi/framework/log/l/g.java",
+    "failed_methods": 1,
+    "error_comments": 0,
+    "simple_fallback_exported": true,
+    "simple_failed_methods": 0,
+    "simple_error_comments": 0,
+    "fallback_source_file": "cn/mucang/android/jiakaoyi/framework/log/l/g.java"
+  },
+  {
+    "file": "cn/mucang/android/jiakaoyi/framework/base/dialog/CountDownDialog$setData$7.java",
+    "failed_methods": 1,
+    "error_comments": 0,
+    "simple_fallback_exported": true,
+    "simple_failed_methods": 0,
+    "simple_error_comments": 0,
+    "fallback_source_file": "cn/mucang/android/jiakaoyi/framework/base/dialog/CountDownDialog$setData$7.java"
+  },
+  {
+    "file": "cn/mucang/android/jiakaoyi/k3setting/p003route/edit/RouteTeachPointItemBinder.java",
+    "failed_methods": 1,
+    "error_comments": 0,
+    "simple_fallback_exported": true,
+    "fallback_source_file": "cn/mucang/android/jiakaoyi/k3setting/route/edit/RouteTeachPointItemBinder.java",
+    "simple_failed_methods": 0,
+    "simple_error_comments": 0
+  },
+  {
+    "file": "cn/mucang/android/jiakaoyi/exam/k3/rule/lukouyouzhuan/K3_LuKouYouZhuan_109116_Event.java",
+    "failed_methods": 1,
+    "error_comments": 0,
+    "simple_fallback_exported": true,
+    "simple_failed_methods": 0,
+    "simple_error_comments": 0,
+    "fallback_source_file": "cn/mucang/android/jiakaoyi/exam/k3/rule/lukouyouzhuan/K3_LuKouYouZhuan_109116_Event.java"
+  },
+  {
+    "file": "cn/mucang/android/jiakaoyi/exam/k3/rule/lukouzuozhuan/K3_LuKouZuoZhuan_108117_Event.java",
+    "failed_methods": 1,
+    "error_comments": 0,
+    "simple_fallback_exported": true,
+    "simple_failed_methods": 0,
+    "simple_error_comments": 0,
+    "fallback_source_file": "cn/mucang/android/jiakaoyi/exam/k3/rule/lukouzuozhuan/K3_LuKouZuoZhuan_108117_Event.java"
+  },
+  {
+    "file": "cn/mucang/android/jiakaoyi/exam/k3/rule/diaotou/K3_DiaoTou_110116_Event.java",
+    "failed_methods": 1,
+    "error_comments": 0,
+    "simple_fallback_exported": true,
+    "simple_failed_methods": 0,
+    "simple_error_comments": 0,
+    "fallback_source_file": "cn/mucang/android/jiakaoyi/exam/k3/rule/diaotou/K3_DiaoTou_110116_Event.java"
+  },
+  {
+    "file": "cn/mucang/android/jiakaoyi/signal/d/g.java",
+    "failed_methods": 1,
+    "error_comments": 1,
+    "simple_fallback_exported": true,
+    "simple_failed_methods": 1,
+    "simple_error_comments": 2,
+    "fallback_source_file": "cn/mucang/android/jiakaoyi/signal/d/g.java"
+  },
+  {
+    "file": "cn/mucang/android/jiakaoyi/signal/com/v/impl/f/b.java",
+    "failed_methods": 1,
+    "error_comments": 0,
+    "simple_fallback_exported": true,
+    "fallback_source_file": "cn/mucang/android/jiakaoyi/signal/com/v/c/f/b.java",
+    "simple_failed_methods": 0,
+    "simple_error_comments": 0
+  },
+  {
+    "file": "cn/mucang/android/jky/camera/UsbCameraManager.java",
+    "failed_methods": 2,
+    "error_comments": 0,
+    "simple_fallback_exported": true,
+    "simple_failed_methods": 0,
+    "simple_error_comments": 0,
+    "fallback_source_file": "cn/mucang/android/jky/camera/UsbCameraManager.java"
+  },
+  {
+    "file": "org/apache/commons/math3/dfp/Dfp.java",
+    "failed_methods": 1,
+    "error_comments": 0,
+    "simple_fallback_exported": true,
+    "simple_failed_methods": 0,
+    "simple_error_comments": 0,
+    "fallback_source_file": "org/apache/commons/math3/dfp/Dfp.java"
+  },
+  {
+    "file": "kotlinx/coroutines/JobSupport$children$1.java",
+    "failed_methods": 1,
+    "error_comments": 1,
+    "simple_fallback_exported": true,
+    "simple_failed_methods": 0,
+    "simple_error_comments": 0,
+    "fallback_source_file": "kotlinx/coroutines/JobSupport$children$1.java"
+  },
+  {
+    "file": "kotlinx/coroutines/d0.java",
+    "failed_methods": 1,
+    "error_comments": 0,
+    "simple_fallback_exported": true,
+    "simple_failed_methods": 0,
+    "simple_error_comments": 0,
+    "fallback_source_file": "kotlinx/coroutines/d0.java"
+  },
+  {
+    "file": "kotlinx/coroutines/l0.java",
+    "failed_methods": 1,
+    "error_comments": 0,
+    "simple_fallback_exported": true,
+    "simple_failed_methods": 0,
+    "simple_error_comments": 0,
+    "fallback_source_file": "kotlinx/coroutines/l0.java"
+  },
+  {
+    "file": "kotlinx/coroutines/AwaitKt.java",
+    "failed_methods": 1,
+    "error_comments": 1,
+    "simple_fallback_exported": true,
+    "simple_failed_methods": 0,
+    "simple_error_comments": 0,
+    "fallback_source_file": "kotlinx/coroutines/AwaitKt.java"
+  },
+  {
+    "file": "kotlinx/coroutines/selects/WhileSelectKt.java",
+    "failed_methods": 1,
+    "error_comments": 1,
+    "simple_fallback_exported": true,
+    "simple_failed_methods": 0,
+    "simple_error_comments": 0,
+    "fallback_source_file": "kotlinx/coroutines/selects/WhileSelectKt.java"
+  },
+  {
+    "file": "kotlinx/coroutines/internal/g.java",
+    "failed_methods": 1,
+    "error_comments": 1,
+    "simple_fallback_exported": true,
+    "simple_failed_methods": 0,
+    "simple_error_comments": 0,
+    "fallback_source_file": "kotlinx/coroutines/internal/g.java"
+  },
+  {
+    "file": "kotlinx/coroutines/channels/ChannelsKt__Channels_commonKt.java",
+    "failed_methods": 65,
+    "error_comments": 65,
+    "simple_fallback_exported": true,
+    "simple_failed_methods": 0,
+    "simple_error_comments": 0,
+    "fallback_source_file": "kotlinx/coroutines/channels/ChannelsKt__Channels_commonKt.java"
+  },
+  {
+    "file": "kotlinx/coroutines/channels/ChannelsKt__Channels_commonKt$map$1.java",
+    "failed_methods": 1,
+    "error_comments": 1,
+    "simple_fallback_exported": true,
+    "simple_failed_methods": 0,
+    "simple_error_comments": 0,
+    "fallback_source_file": "kotlinx/coroutines/channels/ChannelsKt__Channels_commonKt$map$1.java"
+  },
+  {
+    "file": "kotlinx/coroutines/channels/ChannelsKt__Channels_commonKt$take$1.java",
+    "failed_methods": 1,
+    "error_comments": 1,
+    "simple_fallback_exported": true,
+    "simple_failed_methods": 0,
+    "simple_error_comments": 0,
+    "fallback_source_file": "kotlinx/coroutines/channels/ChannelsKt__Channels_commonKt$take$1.java"
+  },
+  {
+    "file": "kotlinx/coroutines/channels/TickerChannelsKt.java",
+    "failed_methods": 2,
+    "error_comments": 2,
+    "simple_fallback_exported": true,
+    "simple_failed_methods": 0,
+    "simple_error_comments": 0,
+    "fallback_source_file": "kotlinx/coroutines/channels/TickerChannelsKt.java"
+  },
+  {
+    "file": "kotlinx/coroutines/channels/ChannelsKt__Channels_commonKt$zip$2.java",
+    "failed_methods": 1,
+    "error_comments": 1,
+    "simple_fallback_exported": true,
+    "simple_failed_methods": 0,
+    "simple_error_comments": 0,
+    "fallback_source_file": "kotlinx/coroutines/channels/ChannelsKt__Channels_commonKt$zip$2.java"
+  },
+  {
+    "file": "kotlinx/coroutines/channels/ChannelsKt__Channels_commonKt$takeWhile$1.java",
+    "failed_methods": 1,
+    "error_comments": 1,
+    "simple_fallback_exported": true,
+    "simple_failed_methods": 0,
+    "simple_error_comments": 0,
+    "fallback_source_file": "kotlinx/coroutines/channels/ChannelsKt__Channels_commonKt$takeWhile$1.java"
+  },
+  {
+    "file": "kotlinx/coroutines/channels/ChannelsKt__Channels_commonKt$flatMap$1.java",
+    "failed_methods": 1,
+    "error_comments": 1,
+    "simple_fallback_exported": true,
+    "simple_failed_methods": 0,
+    "simple_error_comments": 0,
+    "fallback_source_file": "kotlinx/coroutines/channels/ChannelsKt__Channels_commonKt$flatMap$1.java"
+  },
+  {
+    "file": "kotlinx/coroutines/channels/ChannelsKt__Channels_commonKt$dropWhile$1.java",
+    "failed_methods": 1,
+    "error_comments": 1,
+    "simple_fallback_exported": true,
+    "simple_failed_methods": 0,
+    "simple_error_comments": 0,
+    "fallback_source_file": "kotlinx/coroutines/channels/ChannelsKt__Channels_commonKt$dropWhile$1.java"
+  },
+  {
+    "file": "kotlinx/coroutines/channels/ChannelsKt__Channels_commonKt$withIndex$1.java",
+    "failed_methods": 1,
+    "error_comments": 1,
+    "simple_fallback_exported": true,
+    "simple_failed_methods": 0,
+    "simple_error_comments": 0,
+    "fallback_source_file": "kotlinx/coroutines/channels/ChannelsKt__Channels_commonKt$withIndex$1.java"
+  },
+  {
+    "file": "kotlinx/coroutines/channels/ChannelsKt__Channels_commonKt$mapIndexed$1.java",
+    "failed_methods": 1,
+    "error_comments": 1,
+    "simple_fallback_exported": true,
+    "simple_failed_methods": 0,
+    "simple_error_comments": 0,
+    "fallback_source_file": "kotlinx/coroutines/channels/ChannelsKt__Channels_commonKt$mapIndexed$1.java"
+  },
+  {
+    "file": "kotlinx/coroutines/channels/ChannelsKt__Channels_commonKt$distinctBy$1.java",
+    "failed_methods": 1,
+    "error_comments": 1,
+    "simple_fallback_exported": true,
+    "simple_failed_methods": 0,
+    "simple_error_comments": 0,
+    "fallback_source_file": "kotlinx/coroutines/channels/ChannelsKt__Channels_commonKt$distinctBy$1.java"
+  },
+  {
+    "file": "kotlinx/coroutines/channels/ChannelsKt__Channels_commonKt$filterIndexed$1.java",
+    "failed_methods": 1,
+    "error_comments": 1,
+    "simple_fallback_exported": true,
+    "simple_failed_methods": 0,
+    "simple_error_comments": 0,
+    "fallback_source_file": "kotlinx/coroutines/channels/ChannelsKt__Channels_commonKt$filterIndexed$1.java"
+  },
+  {
+    "file": "kotlinx/coroutines/channels/BroadcastKt$broadcast$2.java",
+    "failed_methods": 1,
+    "error_comments": 1,
+    "simple_fallback_exported": true,
+    "simple_failed_methods": 0,
+    "simple_error_comments": 0,
+    "fallback_source_file": "kotlinx/coroutines/channels/BroadcastKt$broadcast$2.java"
+  },
+  {
+    "file": "kotlinx/coroutines/channels/ChannelsKt__Channels_commonKt$filter$1.java",
+    "failed_methods": 1,
+    "error_comments": 1,
+    "simple_fallback_exported": true,
+    "simple_failed_methods": 0,
+    "simple_error_comments": 0,
+    "fallback_source_file": "kotlinx/coroutines/channels/ChannelsKt__Channels_commonKt$filter$1.java"
+  },
+  {
+    "file": "kotlinx/coroutines/channels/ChannelsKt__Channels_commonKt$drop$1.java",
+    "failed_methods": 1,
+    "error_comments": 1,
+    "simple_fallback_exported": true,
+    "simple_failed_methods": 0,
+    "simple_error_comments": 0,
+    "fallback_source_file": "kotlinx/coroutines/channels/ChannelsKt__Channels_commonKt$drop$1.java"
+  },
+  {
+    "file": "kotlinx/coroutines/flow/FlowKt__ErrorsKt$catchImpl$$inlined$collect$1.java",
+    "failed_methods": 1,
+    "error_comments": 1,
+    "simple_fallback_exported": true,
+    "simple_failed_methods": 0,
+    "simple_error_comments": 0,
+    "fallback_source_file": "kotlinx/coroutines/flow/FlowKt__ErrorsKt$catchImpl$$inlined$collect$1.java"
+  },
+  {
+    "file": "kotlinx/coroutines/flow/FlowKt__DelayKt$debounceInternal$1.java",
+    "failed_methods": 1,
+    "error_comments": 1,
+    "simple_fallback_exported": true,
+    "simple_failed_methods": 0,
+    "simple_error_comments": 0,
+    "fallback_source_file": "kotlinx/coroutines/flow/FlowKt__DelayKt$debounceInternal$1.java"
+  },
+  {
+    "file": "kotlinx/coroutines/flow/FlowKt__ErrorsKt$retryWhen$$inlined$unsafeFlow$1.java",
+    "failed_methods": 1,
+    "error_comments": 1,
+    "simple_fallback_exported": true,
+    "simple_failed_methods": 0,
+    "simple_error_comments": 0,
+    "fallback_source_file": "kotlinx/coroutines/flow/FlowKt__ErrorsKt$retryWhen$$inlined$unsafeFlow$1.java"
+  },
+  {
+    "file": "kotlinx/coroutines/flow/FlowKt__DelayKt$fixedPeriodTicker$3.java",
+    "failed_methods": 1,
+    "error_comments": 1,
+    "simple_fallback_exported": true,
+    "simple_failed_methods": 0,
+    "simple_error_comments": 0,
+    "fallback_source_file": "kotlinx/coroutines/flow/FlowKt__DelayKt$fixedPeriodTicker$3.java"
+  },
+  {
+    "file": "kotlinx/coroutines/flow/StateFlowImpl.java",
+    "failed_methods": 1,
+    "error_comments": 1,
+    "simple_fallback_exported": true,
+    "simple_failed_methods": 0,
+    "simple_error_comments": 0,
+    "fallback_source_file": "kotlinx/coroutines/flow/StateFlowImpl.java"
+  },
+  {
+    "file": "kotlinx/coroutines/flow/FlowKt__DelayKt$sample$2.java",
+    "failed_methods": 1,
+    "error_comments": 1,
+    "simple_fallback_exported": true,
+    "simple_failed_methods": 0,
+    "simple_error_comments": 0,
+    "fallback_source_file": "kotlinx/coroutines/flow/FlowKt__DelayKt$sample$2.java"
+  },
+  {
+    "file": "kotlinx/coroutines/flow/FlowKt__ChannelsKt.java",
+    "failed_methods": 1,
+    "error_comments": 1,
+    "simple_fallback_exported": true,
+    "simple_failed_methods": 0,
+    "simple_error_comments": 0,
+    "fallback_source_file": "kotlinx/coroutines/flow/FlowKt__ChannelsKt.java"
+  },
+  {
+    "file": "kotlinx/coroutines/flow/internal/ChannelFlowTransformLatest$flowCollect$3.java",
+    "failed_methods": 1,
+    "error_comments": 1,
+    "simple_fallback_exported": true,
+    "simple_failed_methods": 0,
+    "simple_error_comments": 1,
+    "fallback_source_file": "kotlinx/coroutines/flow/internal/ChannelFlowTransformLatest$flowCollect$3.java"
+  },
+  {
+    "file": "kotlinx/coroutines/flow/internal/CombineKt$combineInternal$2.java",
+    "failed_methods": 1,
+    "error_comments": 1,
+    "simple_fallback_exported": true,
+    "simple_failed_methods": 0,
+    "simple_error_comments": 0,
+    "fallback_source_file": "kotlinx/coroutines/flow/internal/CombineKt$combineInternal$2.java"
+  },
+  {
+    "file": "io/agora/rtc/video/GLTextureView.java",
+    "failed_methods": 1,
+    "error_comments": 0,
+    "simple_fallback_exported": true,
+    "simple_failed_methods": 0,
+    "simple_error_comments": 0,
+    "fallback_source_file": "io/agora/rtc/video/GLTextureView.java"
+  },
+  {
+    "file": "kotlin/reflect/jvm/internal/q.java",
+    "failed_methods": 1,
+    "error_comments": 0,
+    "simple_fallback_exported": true,
+    "simple_failed_methods": 0,
+    "simple_error_comments": 0,
+    "fallback_source_file": "kotlin/reflect/jvm/internal/q.java"
+  },
+  {
+    "file": "kotlin/reflect/jvm/internal/impl/load/java/structure/p.java",
+    "failed_methods": 1,
+    "error_comments": 0,
+    "simple_fallback_exported": true,
+    "simple_failed_methods": 0,
+    "simple_error_comments": 0,
+    "fallback_source_file": "kotlin/reflect/jvm/internal/impl/load/java/structure/p.java"
+  },
+  {
+    "file": "kotlin/reflect/jvm/internal/impl/protobuf/e.java",
+    "failed_methods": 2,
+    "error_comments": 0,
+    "simple_fallback_exported": true,
+    "simple_failed_methods": 0,
+    "simple_error_comments": 0,
+    "fallback_source_file": "kotlin/reflect/jvm/internal/impl/protobuf/e.java"
+  },
+  {
+    "file": "kotlin/reflect/jvm/internal/impl/protobuf/u.java",
+    "failed_methods": 1,
+    "error_comments": 0,
+    "simple_fallback_exported": true,
+    "simple_failed_methods": 0,
+    "simple_error_comments": 0,
+    "fallback_source_file": "kotlin/reflect/jvm/internal/impl/protobuf/u.java"
+  },
+  {
+    "file": "kotlin/io/FileTreeWalk.java",
+    "failed_methods": 1,
+    "error_comments": 0,
+    "simple_fallback_exported": true,
+    "fallback_source_file": "kotlin/io/e.java",
+    "simple_failed_methods": 0,
+    "simple_error_comments": 0
+  },
+  {
+    "file": "kotlin/collections/SlidingWindowKt$windowedIterator$1.java",
+    "failed_methods": 1,
+    "error_comments": 1,
+    "simple_fallback_exported": true,
+    "simple_failed_methods": 0,
+    "simple_error_comments": 0,
+    "fallback_source_file": "kotlin/collections/SlidingWindowKt$windowedIterator$1.java"
+  },
+  {
+    "file": "okhttp3/internal/cache/CacheStrategy.java",
+    "failed_methods": 1,
+    "error_comments": 0,
+    "simple_fallback_exported": true,
+    "simple_failed_methods": 0,
+    "simple_error_comments": 0,
+    "fallback_source_file": "okhttp3/internal/cache/CacheStrategy.java"
+  },
+  {
+    "file": "com/loc/z.java",
+    "failed_methods": 1,
+    "error_comments": 1,
+    "simple_fallback_exported": true,
+    "simple_failed_methods": 0,
+    "simple_error_comments": 0,
+    "fallback_source_file": "com/loc/z.java"
+  },
+  {
+    "file": "com/loc/af.java",
+    "failed_methods": 1,
+    "error_comments": 0,
+    "simple_fallback_exported": true,
+    "simple_failed_methods": 0,
+    "simple_error_comments": 0,
+    "fallback_source_file": "com/loc/af.java"
+  },
+  {
+    "file": "com/loc/bh.java",
+    "failed_methods": 2,
+    "error_comments": 0,
+    "simple_fallback_exported": true,
+    "simple_failed_methods": 0,
+    "simple_error_comments": 0,
+    "fallback_source_file": "com/loc/bh.java"
+  },
+  {
+    "file": "com/loc/ee.java",
+    "failed_methods": 1,
+    "error_comments": 0,
+    "simple_fallback_exported": true,
+    "simple_failed_methods": 0,
+    "simple_error_comments": 0,
+    "fallback_source_file": "com/loc/ee.java"
+  },
+  {
+    "file": "com/google/mlkit/common/internal/model/ModelUtils.java",
+    "failed_methods": 1,
+    "error_comments": 0,
+    "simple_fallback_exported": true,
+    "simple_failed_methods": 0,
+    "simple_error_comments": 0,
+    "fallback_source_file": "com/google/mlkit/common/internal/model/ModelUtils.java"
+  },
+  {
+    "file": "com/google/common/util/concurrent/SequentialExecutor.java",
+    "failed_methods": 1,
+    "error_comments": 0,
+    "simple_fallback_exported": true,
+    "simple_failed_methods": 0,
+    "simple_error_comments": 0,
+    "fallback_source_file": "com/google/common/util/concurrent/SequentialExecutor.java"
+  },
+  {
+    "file": "com/google/common/util/concurrent/ListenerCallQueue.java",
+    "failed_methods": 1,
+    "error_comments": 0,
+    "simple_fallback_exported": true,
+    "simple_failed_methods": 0,
+    "simple_error_comments": 0,
+    "fallback_source_file": "com/google/common/util/concurrent/ListenerCallQueue.java"
+  },
+  {
+    "file": "com/google/android/exoplayer2/ExoPlayerImplInternal.java",
+    "failed_methods": 1,
+    "error_comments": 0,
+    "simple_fallback_exported": true,
+    "simple_failed_methods": 0,
+    "simple_error_comments": 0,
+    "fallback_source_file": "com/google/android/exoplayer2/ExoPlayerImplInternal.java"
+  },
+  {
+    "file": "com/google/android/exoplayer2/video/MediaCodecVideoRenderer.java",
+    "failed_methods": 1,
+    "error_comments": 1,
+    "simple_fallback_exported": true,
+    "simple_failed_methods": 0,
+    "simple_error_comments": 0,
+    "fallback_source_file": "com/google/android/exoplayer2/video/MediaCodecVideoRenderer.java"
+  },
+  {
+    "file": "com/google/android/exoplayer2/source/ProgressiveMediaPeriod.java",
+    "failed_methods": 1,
+    "error_comments": 0,
+    "simple_fallback_exported": true,
+    "simple_failed_methods": 0,
+    "simple_error_comments": 0,
+    "fallback_source_file": "com/google/android/exoplayer2/source/ProgressiveMediaPeriod.java"
+  },
+  {
+    "file": "com/google/android/exoplayer2/extractor/wav/WavExtractor.java",
+    "failed_methods": 1,
+    "error_comments": 1,
+    "simple_fallback_exported": true,
+    "simple_failed_methods": 0,
+    "simple_error_comments": 0,
+    "fallback_source_file": "com/google/android/exoplayer2/extractor/wav/WavExtractor.java"
+  },
+  {
+    "file": "com/google/android/exoplayer2/audio/DefaultAudioSink.java",
+    "failed_methods": 1,
+    "error_comments": 1,
+    "simple_fallback_exported": true,
+    "simple_failed_methods": 0,
+    "simple_error_comments": 0,
+    "fallback_source_file": "com/google/android/exoplayer2/audio/DefaultAudioSink.java"
+  },
+  {
+    "file": "com/google/android/exoplayer2/offline/SegmentDownloader.java",
+    "failed_methods": 1,
+    "error_comments": 0,
+    "simple_fallback_exported": true,
+    "simple_failed_methods": 0,
+    "simple_error_comments": 0,
+    "fallback_source_file": "com/google/android/exoplayer2/offline/SegmentDownloader.java"
+  },
+  {
+    "file": "com/google/android/exoplayer2/upstream/ContentDataSource.java",
+    "failed_methods": 1,
+    "error_comments": 0,
+    "simple_fallback_exported": true,
+    "simple_failed_methods": 0,
+    "simple_error_comments": 0,
+    "fallback_source_file": "com/google/android/exoplayer2/upstream/ContentDataSource.java"
+  },
+  {
+    "file": "com/google/android/exoplayer2/upstream/RawResourceDataSource.java",
+    "failed_methods": 1,
+    "error_comments": 0,
+    "simple_fallback_exported": true,
+    "simple_failed_methods": 0,
+    "simple_error_comments": 0,
+    "fallback_source_file": "com/google/android/exoplayer2/upstream/RawResourceDataSource.java"
+  },
+  {
+    "file": "com/google/android/exoplayer2/upstream/AssetDataSource.java",
+    "failed_methods": 1,
+    "error_comments": 0,
+    "simple_fallback_exported": true,
+    "simple_failed_methods": 0,
+    "simple_error_comments": 0,
+    "fallback_source_file": "com/google/android/exoplayer2/upstream/AssetDataSource.java"
+  },
+  {
+    "file": "com/google/android/exoplayer2/upstream/FileDataSource.java",
+    "failed_methods": 1,
+    "error_comments": 0,
+    "simple_fallback_exported": true,
+    "simple_failed_methods": 0,
+    "simple_error_comments": 0,
+    "fallback_source_file": "com/google/android/exoplayer2/upstream/FileDataSource.java"
+  },
+  {
+    "file": "com/google/android/gms/common/api/internal/zah.java",
+    "failed_methods": 1,
+    "error_comments": 1,
+    "simple_fallback_exported": true,
+    "simple_failed_methods": 1,
+    "simple_error_comments": 2,
+    "fallback_source_file": "com/google/android/gms/common/api/internal/zah.java"
+  },
+  {
+    "file": "com/google/android/gms/common/api/internal/NonGmsServiceBrokerClient.java",
+    "failed_methods": 1,
+    "error_comments": 0,
+    "simple_fallback_exported": true,
+    "simple_failed_methods": 0,
+    "simple_error_comments": 0,
+    "fallback_source_file": "com/google/android/gms/common/api/internal/NonGmsServiceBrokerClient.java"
+  },
+  {
+    "file": "com/google/zxing/oned/Code128Reader.java",
+    "failed_methods": 1,
+    "error_comments": 1,
+    "simple_fallback_exported": true,
+    "simple_failed_methods": 0,
+    "simple_error_comments": 0,
+    "fallback_source_file": "com/google/zxing/oned/Code128Reader.java"
+  },
+  {
+    "file": "com/serenegiant/media/AudioEncoderBuffered.java",
+    "failed_methods": 1,
+    "error_comments": 0,
+    "simple_fallback_exported": true,
+    "simple_failed_methods": 0,
+    "simple_error_comments": 0,
+    "fallback_source_file": "com/serenegiant/media/AudioEncoderBuffered.java"
+  },
+  {
+    "file": "com/alibaba/fastjson/serializer/JSONSerializer.java",
+    "failed_methods": 1,
+    "error_comments": 0,
+    "simple_fallback_exported": true,
+    "simple_failed_methods": 0,
+    "simple_error_comments": 0,
+    "fallback_source_file": "com/alibaba/fastjson/serializer/JSONSerializer.java"
+  },
+  {
+    "file": "com/alibaba/fastjson/parser/JSONLexerBase.java",
+    "failed_methods": 1,
+    "error_comments": 1,
+    "simple_fallback_exported": true,
+    "simple_failed_methods": 0,
+    "simple_error_comments": 0,
+    "fallback_source_file": "com/alibaba/fastjson/parser/JSONLexerBase.java"
+  },
+  {
+    "file": "com/alibaba/fastjson/parser/deserializer/JavaBeanDeserializer.java",
+    "failed_methods": 1,
+    "error_comments": 1,
+    "simple_fallback_exported": true,
+    "simple_failed_methods": 1,
+    "simple_error_comments": 2,
+    "fallback_source_file": "com/alibaba/fastjson/parser/deserializer/JavaBeanDeserializer.java"
+  },
+  {
+    "file": "com/mobile/auth/gatewayauth/PhoneNumberAuthHelperProxy.java",
+    "failed_methods": 1,
+    "error_comments": 1,
+    "simple_fallback_exported": true,
+    "simple_failed_methods": 0,
+    "simple_error_comments": 0,
+    "fallback_source_file": "com/mobile/auth/gatewayauth/PhoneNumberAuthHelperProxy.java"
+  },
+  {
+    "file": "com/mobile/auth/gatewayauth/manager/d.java",
+    "failed_methods": 1,
+    "error_comments": 1,
+    "simple_fallback_exported": true,
+    "simple_failed_methods": 0,
+    "simple_error_comments": 0,
+    "fallback_source_file": "com/mobile/auth/gatewayauth/manager/d.java"
+  },
+  {
+    "file": "com/mobile/auth/d/b.java",
+    "failed_methods": 1,
+    "error_comments": 1,
+    "simple_fallback_exported": true,
+    "simple_failed_methods": 0,
+    "simple_error_comments": 0,
+    "fallback_source_file": "com/mobile/auth/d/b.java"
+  },
+  {
+    "file": "com/mobile/auth/d/d.java",
+    "failed_methods": 1,
+    "error_comments": 0,
+    "simple_fallback_exported": true,
+    "simple_failed_methods": 0,
+    "simple_error_comments": 0,
+    "fallback_source_file": "com/mobile/auth/d/d.java"
+  },
+  {
+    "file": "com/mobile/auth/q/a.java",
+    "failed_methods": 1,
+    "error_comments": 0,
+    "simple_fallback_exported": true,
+    "simple_failed_methods": 0,
+    "simple_error_comments": 0,
+    "fallback_source_file": "com/mobile/auth/q/a.java"
+  },
+  {
+    "file": "com/amap/api/maps/utils/overlay/MovingPointOverlay.java",
+    "failed_methods": 1,
+    "error_comments": 0,
+    "simple_fallback_exported": true,
+    "simple_failed_methods": 0,
+    "simple_error_comments": 0,
+    "fallback_source_file": "com/amap/api/maps/utils/overlay/MovingPointOverlay.java"
+  },
+  {
+    "file": "com/amap/api/maps/utils/overlay/SmoothMoveMarker.java",
+    "failed_methods": 1,
+    "error_comments": 0,
+    "simple_fallback_exported": true,
+    "simple_failed_methods": 0,
+    "simple_error_comments": 0,
+    "fallback_source_file": "com/amap/api/maps/utils/overlay/SmoothMoveMarker.java"
+  },
+  {
+    "file": "com/amap/api/maps/model/Polyline.java",
+    "failed_methods": 1,
+    "error_comments": 0,
+    "simple_fallback_exported": true,
+    "simple_failed_methods": 0,
+    "simple_error_comments": 0,
+    "fallback_source_file": "com/amap/api/maps/model/Polyline.java"
+  },
+  {
+    "file": "com/amap/api/mapcore/util/z.java",
+    "failed_methods": 1,
+    "error_comments": 0,
+    "simple_fallback_exported": true,
+    "simple_failed_methods": 0,
+    "simple_error_comments": 0,
+    "fallback_source_file": "com/amap/api/mapcore/util/z.java"
+  },
+  {
+    "file": "com/amap/api/mapcore/util/f6.java",
+    "failed_methods": 1,
+    "error_comments": 0,
+    "simple_fallback_exported": true,
+    "simple_failed_methods": 0,
+    "simple_error_comments": 0,
+    "fallback_source_file": "com/amap/api/mapcore/util/f6.java"
+  },
+  {
+    "file": "com/amap/api/mapcore/util/t9.java",
+    "failed_methods": 1,
+    "error_comments": 0,
+    "simple_fallback_exported": true,
+    "simple_failed_methods": 0,
+    "simple_error_comments": 0,
+    "fallback_source_file": "com/amap/api/mapcore/util/t9.java"
+  },
+  {
+    "file": "com/amap/api/mapcore/util/r5.java",
+    "failed_methods": 1,
+    "error_comments": 1,
+    "simple_fallback_exported": true,
+    "simple_failed_methods": 0,
+    "simple_error_comments": 0,
+    "fallback_source_file": "com/amap/api/mapcore/util/r5.java"
+  },
+  {
+    "file": "com/amap/api/mapcore/util/d2.java",
+    "failed_methods": 1,
+    "error_comments": 0,
+    "simple_fallback_exported": true,
+    "simple_failed_methods": 0,
+    "simple_error_comments": 0,
+    "fallback_source_file": "com/amap/api/mapcore/util/d2.java"
+  },
+  {
+    "file": "com/amap/api/mapcore/util/ab.java",
+    "failed_methods": 1,
+    "error_comments": 0,
+    "simple_fallback_exported": true,
+    "simple_failed_methods": 1,
+    "simple_error_comments": 1,
+    "fallback_source_file": "com/amap/api/mapcore/util/ab.java"
+  },
+  {
+    "file": "com/iflytek/cloud/SpeechError.java",
+    "failed_methods": 1,
+    "error_comments": 0,
+    "simple_fallback_exported": true,
+    "simple_failed_methods": 0,
+    "simple_error_comments": 0,
+    "fallback_source_file": "com/iflytek/cloud/SpeechError.java"
+  },
+  {
+    "file": "com/iflytek/cloud/a/d/e/b/c.java",
+    "failed_methods": 1,
+    "error_comments": 1,
+    "simple_fallback_exported": true,
+    "simple_failed_methods": 0,
+    "simple_error_comments": 0,
+    "fallback_source_file": "com/iflytek/cloud/a/d/e/b/c.java"
+  },
+  {
+    "file": "com/iflytek/cloud/a/d/e/b/a.java",
+    "failed_methods": 2,
+    "error_comments": 0,
+    "simple_fallback_exported": true,
+    "simple_failed_methods": 0,
+    "simple_error_comments": 0,
+    "fallback_source_file": "com/iflytek/cloud/a/d/e/b/a.java"
+  },
+  {
+    "file": "com/iflytek/cloud/msc/ist/MscTranscripter.java",
+    "failed_methods": 1,
+    "error_comments": 0,
+    "simple_fallback_exported": true,
+    "simple_failed_methods": 0,
+    "simple_error_comments": 0,
+    "fallback_source_file": "com/iflytek/cloud/msc/ist/MscTranscripter.java"
+  },
+  {
+    "file": "com/tencent/bugly/crashreport/crash/b.java",
+    "failed_methods": 1,
+    "error_comments": 0,
+    "simple_fallback_exported": true,
+    "simple_failed_methods": 0,
+    "simple_error_comments": 0,
+    "fallback_source_file": "com/tencent/bugly/crashreport/crash/b.java"
+  },
+  {
+    "file": "com/tencent/bugly/crashreport/crash/BuglyBroadcastReceiver.java",
+    "failed_methods": 1,
+    "error_comments": 0,
+    "simple_fallback_exported": true,
+    "simple_failed_methods": 0,
+    "simple_error_comments": 0,
+    "fallback_source_file": "com/tencent/bugly/crashreport/crash/BuglyBroadcastReceiver.java"
+  },
+  {
+    "file": "com/tencent/bugly/proguard/o.java",
+    "failed_methods": 1,
+    "error_comments": 0,
+    "simple_fallback_exported": true,
+    "simple_failed_methods": 0,
+    "simple_error_comments": 0,
+    "fallback_source_file": "com/tencent/bugly/proguard/o.java"
+  },
+  {
+    "file": "com/bumptech/glide/integration/webp/decoder/WebpDownsampler.java",
+    "failed_methods": 1,
+    "error_comments": 0,
+    "simple_fallback_exported": true,
+    "simple_failed_methods": 0,
+    "simple_error_comments": 0,
+    "fallback_source_file": "com/bumptech/glide/integration/webp/decoder/WebpDownsampler.java"
+  },
+  {
+    "file": "com/bumptech/glide/load/resource/bitmap/Downsampler.java",
+    "failed_methods": 1,
+    "error_comments": 0,
+    "simple_fallback_exported": true,
+    "simple_failed_methods": 0,
+    "simple_error_comments": 0,
+    "fallback_source_file": "com/bumptech/glide/load/resource/bitmap/Downsampler.java"
+  },
+  {
+    "file": "com/bumptech/glide/request/SingleRequest.java",
+    "failed_methods": 1,
+    "error_comments": 0,
+    "simple_fallback_exported": true,
+    "simple_failed_methods": 0,
+    "simple_error_comments": 0,
+    "fallback_source_file": "com/bumptech/glide/request/SingleRequest.java"
+  }
+]

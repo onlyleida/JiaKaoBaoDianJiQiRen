@@ -1,0 +1,37 @@
+package kotlin.reflect.full;
+
+import kotlin.Metadata;
+import kotlin.jvm.internal.PropertyReference1;
+import kotlin.jvm.internal.v;
+import kotlin.reflect.KClass;
+import kotlin.reflect.KDeclarationContainer;
+import kotlin.reflect.KProperty1;
+
+/* JADX INFO: loaded from: classes6.dex */
+@Metadata(k = 3, mv = {1, 5, 1})
+final /* synthetic */ class KClasses$isSubclassOf$1 extends PropertyReference1 {
+    public static final KProperty1 INSTANCE = new KClasses$isSubclassOf$1();
+
+    KClasses$isSubclassOf$1() {
+    }
+
+    @Override // kotlin.jvm.internal.PropertyReference1
+    public Object get(Object obj) {
+        return a.a((KClass) obj);
+    }
+
+    @Override // kotlin.jvm.internal.CallableReference, kotlin.reflect.KCallable
+    public String getName() {
+        return "superclasses";
+    }
+
+    @Override // kotlin.jvm.internal.CallableReference
+    public KDeclarationContainer getOwner() {
+        return v.d(a.class, "kotlin-reflection");
+    }
+
+    @Override // kotlin.jvm.internal.CallableReference
+    public String getSignature() {
+        return "getSuperclasses(Lkotlin/reflect/KClass;)Ljava/util/List;";
+    }
+}

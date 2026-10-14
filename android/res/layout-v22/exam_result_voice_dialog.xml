@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/shape_e6ecf2_ffffff_r24" android:layout_width="match_parent" android:layout_height="wrap_content" android:layoutDirection="ltr"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/rootLayout" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="@dimen/dp_166" android:layout_marginTop="@dimen/dp_18">
+                <ImageView android:id="@id/left" android:layout_width="@dimen/dp_116" android:layout_height="match_parent" android:src="@drawable/exam_score_left_bg" android:layout_alignParentTop="true" android:layout_alignParentStart="true" />
+                <TextView android:textSize="@dimen/dp_71" android:textColor="#02c8b7" android:gravity="center_horizontal" android:id="@id/exam_score" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_30" android:minWidth="@dimen/dp_93" android:text="100" android:layout_marginStart="@dimen/dialog_exam_result_score_margin" android:layout_toEndOf="@id/left" />
+                <ImageView android:layout_width="@dimen/dp_116" android:layout_height="match_parent" android:src="@drawable/exam_score_right_bg" android:layout_alignParentTop="true" android:layout_marginStart="@dimen/dialog_exam_result_score_margin" android:layout_toEndOf="@id/exam_score" />
+                <TextView android:textSize="@dimen/dp_19" android:textColor="#363b40" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/framework_test_score" android:layout_below="@id/exam_score" android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+            <TextView android:textSize="@dimen/dp_27" android:textColor="@color/dialog_title_color" android:gravity="center_horizontal" android:id="@id/titleTv" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dialog_title_margin" android:layout_marginRight="@dimen/dialog_title_margin" android:text="@string/framework_playing_deduct_reason" android:layout_marginHorizontal="@dimen/dialog_title_margin" />
+            <TextView android:textSize="@dimen/dp_21" android:textColor="@color/dialog_desc_color" android:gravity="left" android:layout_gravity="center_horizontal" android:id="@id/descTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dialog_title_margin" android:layout_marginTop="@dimen/dp_14" android:layout_marginRight="@dimen/dialog_title_margin" android:text="这是标题" android:layout_marginHorizontal="@dimen/dialog_title_margin" />
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/dp_54" android:layout_marginTop="@dimen/dp_37" android:layout_marginBottom="@dimen/dp_37">
+                <TextView android:textSize="@dimen/dp_23" android:textColor="@color/dialog_button_second_color" android:gravity="center" android:id="@id/closeTV" android:background="@drawable/shape_r100_s1_008aff" android:layout_width="@dimen/dp_252" android:layout_height="match_parent" android:text="@string/framework_close" android:layout_marginStart="@dimen/dialog_button_margin" />
+                <TextView android:textSize="@dimen/dp_23" android:textColor="@color/dialog_button_main_color" android:gravity="center" android:id="@id/traceTV" android:background="@drawable/shape_008aff_r100" android:layout_width="@dimen/dp_252" android:layout_height="match_parent" android:text="@string/framework_trace_back_see" android:layout_marginStart="@dimen/dp_17" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

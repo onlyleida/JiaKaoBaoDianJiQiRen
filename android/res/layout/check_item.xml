@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="@drawable/selector_check_bg" android:layout_width="match_parent" android:layout_height="@dimen/rpx_278" android:layout_marginStart="@dimen/rpx_27"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/iconIv" android:layout_width="@dimen/rpx_90" android:layout_height="@dimen/rpx_90" android:layout_marginTop="@dimen/rpx_48" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:textSize="@dimen/text_30" android:textColor="#40464d" android:gravity="center" android:id="@id/nameTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/rpx_168" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <ImageView android:id="@id/errorIv" android:layout_width="@dimen/rpx_57" android:layout_height="@dimen/rpx_57" android:src="@drawable/ic_check_error" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

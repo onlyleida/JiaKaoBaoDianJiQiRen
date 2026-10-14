@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/tt__bg_round_white" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/tt__text_size_dialog_title" android:textColor="#ff333333" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25.0dp" android:text="人脸验证失败！\n是否强制签退？" />
+    <LinearLayout android:gravity="center_horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="25.0dp" android:layout_marginBottom="25.0dp">
+        <TextView android:textSize="@dimen/tt__text_size_dialog_button" android:textColor="#008aff" android:gravity="center" android:id="@id/subject_2" android:background="@drawable/tt__bg_btn_blue_2_border" android:layout_width="@dimen/tt__button_width_dialog" android:layout_height="@dimen/tt__button_height_dialog" android:layout_marginRight="13.0dp" android:text="强制签退" />
+        <TextView android:textSize="@dimen/tt__text_size_dialog_button" android:textColor="#ffffffff" android:gravity="center" android:id="@id/subject_3" android:background="@drawable/tt__bg_btn_blue_2_corner" android:layout_width="@dimen/tt__button_width_dialog" android:layout_height="@dimen/tt__button_height_dialog" android:layout_marginLeft="13.0dp" android:text="再试一次" />
+    </LinearLayout>
+</LinearLayout>

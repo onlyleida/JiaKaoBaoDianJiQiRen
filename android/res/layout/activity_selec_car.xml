@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/titleLayout" layout="@layout/common_title" />
+    <cn.mucang.android.core.widget.StateLayout android:id="@id/stateLayout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/modelRv" android:layout_width="@dimen/dp_168" android:layout_height="match_parent" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" app:layout_constraintLeft_toLeftOf="parent" />
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/configRv" android:layout_width="@dimen/dp_0" android:layout_height="match_parent" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" app:layout_constraintLeft_toRightOf="@id/modelRv" app:layout_constraintRight_toRightOf="parent" />
+            <View android:background="#e8e8e8" android:layout_width="@dimen/dp_1" android:layout_height="match_parent" app:layout_constraintRight_toRightOf="@id/modelRv" />
+            <TextView android:textSize="@dimen/dp_23" android:textColor="#ffffff" android:gravity="center" android:id="@id/saveTv" android:background="@drawable/shape_008aff_r100" android:layout_width="@dimen/dp_172" android:layout_height="@dimen/dp_54" android:layout_marginBottom="@dimen/dp_36" android:text="保存" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </cn.mucang.android.core.widget.StateLayout>
+</LinearLayout>

@@ -1,0 +1,85 @@
+package kotlin.sequences;
+
+import androidx.exifinterface.media.ExifInterface;
+import java.util.Iterator;
+import java.util.NoSuchElementException;
+import kotlin.Metadata;
+import kotlin.jvm.functions.Function1;
+import kotlin.jvm.internal.markers.KMappedMarker;
+import kotlin.jvm.internal.r;
+
+/* JADX INFO: renamed from: kotlin.sequences.p, reason: from Kotlin metadata */
+/* JADX INFO: loaded from: classes6.dex */
+@Metadata(d1 = {"\u0000 \n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0010(\n\u0000\b\u0000\u0018\u0000*\u0004\b\u0000\u0010\u00012\b\u0012\u0004\u0012\u0002H\u00010\u0002B'\u0012\f\u0010\u0003\u001a\b\u0012\u0004\u0012\u00028\u00000\u0002\u0012\u0012\u0010\u0004\u001a\u000e\u0012\u0004\u0012\u00028\u0000\u0012\u0004\u0012\u00020\u00060\u0005¢\u0006\u0002\u0010\u0007J\u000f\u0010\b\u001a\b\u0012\u0004\u0012\u00028\u00000\tH\u0096\u0002R\u001a\u0010\u0004\u001a\u000e\u0012\u0004\u0012\u00028\u0000\u0012\u0004\u0012\u00020\u00060\u0005X\u0082\u0004¢\u0006\u0002\n\u0000R\u0014\u0010\u0003\u001a\b\u0012\u0004\u0012\u00028\u00000\u0002X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\n"}, d2 = {"Lkotlin/sequences/TakeWhileSequence;", ExifInterface.GPS_DIRECTION_TRUE, "Lkotlin/sequences/Sequence;", "sequence", "predicate", "Lkotlin/Function1;", "", "(Lkotlin/sequences/Sequence;Lkotlin/jvm/functions/Function1;)V", "iterator", "", "kotlin-stdlib"}, k = 1, mv = {1, 5, 1})
+public final class TakeWhileSequence<T> implements Sequence<T> {
+
+    /* JADX INFO: renamed from: a, reason: collision with root package name */
+    private final Sequence<T> f15804a;
+    private final Function1<T, Boolean> b;
+
+    /* JADX INFO: renamed from: kotlin.sequences.p$a */
+    @Metadata(d1 = {"\u0000#\n\u0000\n\u0002\u0010(\n\u0002\b\n\n\u0002\u0010\b\n\u0002\b\u0005\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0002*\u0001\u0000\b\n\u0018\u00002\b\u0012\u0004\u0012\u00028\u00000\u0001J\b\u0010\u0011\u001a\u00020\u0012H\u0002J\t\u0010\u0013\u001a\u00020\u0014H\u0096\u0002J\u000e\u0010\u0015\u001a\u00028\u0000H\u0096\u0002¢\u0006\u0002\u0010\u0007R\u0017\u0010\u0002\u001a\b\u0012\u0004\u0012\u00028\u00000\u0001¢\u0006\b\n\u0000\u001a\u0004\b\u0003\u0010\u0004R\u001e\u0010\u0005\u001a\u0004\u0018\u00018\u0000X\u0086\u000e¢\u0006\u0010\n\u0002\u0010\n\u001a\u0004\b\u0006\u0010\u0007\"\u0004\b\b\u0010\tR\u001a\u0010\u000b\u001a\u00020\fX\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\r\u0010\u000e\"\u0004\b\u000f\u0010\u0010¨\u0006\u0016"}, d2 = {"kotlin/sequences/TakeWhileSequence$iterator$1", "", "iterator", "getIterator", "()Ljava/util/Iterator;", "nextItem", "getNextItem", "()Ljava/lang/Object;", "setNextItem", "(Ljava/lang/Object;)V", "Ljava/lang/Object;", "nextState", "", "getNextState", "()I", "setNextState", "(I)V", "calcNext", "", "hasNext", "", "next", "kotlin-stdlib"}, k = 1, mv = {1, 5, 1})
+    public static final class a implements Iterator<T>, KMappedMarker {
+
+        /* JADX INFO: renamed from: a, reason: collision with root package name */
+        private final Iterator<T> f15805a;
+        private int b = -1;
+        private T c;
+
+        a() {
+            this.f15805a = TakeWhileSequence.this.f15804a.iterator();
+        }
+
+        private final void c() {
+            if (this.f15805a.hasNext()) {
+                T next = this.f15805a.next();
+                if (((Boolean) TakeWhileSequence.this.b.invoke(next)).booleanValue()) {
+                    this.b = 1;
+                    this.c = next;
+                    return;
+                }
+            }
+            this.b = 0;
+        }
+
+        @Override // java.util.Iterator
+        public boolean hasNext() {
+            if (this.b == -1) {
+                c();
+            }
+            return this.b == 1;
+        }
+
+        @Override // java.util.Iterator
+        public T next() {
+            if (this.b == -1) {
+                c();
+            }
+            if (this.b == 0) {
+                throw new NoSuchElementException();
+            }
+            T t = this.c;
+            this.c = null;
+            this.b = -1;
+            return t;
+        }
+
+        @Override // java.util.Iterator
+        public void remove() {
+            throw new UnsupportedOperationException("Operation is not supported for read-only collection");
+        }
+    }
+
+    /* JADX WARN: Multi-variable type inference failed */
+    public TakeWhileSequence(Sequence<? extends T> sequence, Function1<? super T, Boolean> predicate) {
+        r.e(sequence, "sequence");
+        r.e(predicate, "predicate");
+        this.f15804a = sequence;
+        this.b = predicate;
+    }
+
+    @Override // kotlin.sequences.Sequence
+    public Iterator<T> iterator() {
+        return new a();
+    }
+}

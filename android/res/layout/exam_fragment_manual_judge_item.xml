@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/dp_88"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/dp_20" android:textColor="#333" android:id="@id/deductId" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="011100" android:layout_centerVertical="true" android:layout_marginStart="@dimen/dp_24" android:layout_marginEnd="@dimen/dp_24" />
+    <TextView android:textSize="@dimen/dp_20" android:textColor="#008aff" android:gravity="center" android:id="@id/deductAction" android:background="@drawable/selector_008aff_rect" android:layout_width="@dimen/dp_72" android:layout_height="wrap_content" android:minHeight="@dimen/dp_40" android:text="@string/k3setting_deduct" android:layout_centerVertical="true" android:layout_marginStart="@dimen/dp_16" android:layout_marginEnd="@dimen/dp_16" android:layout_alignParentEnd="true" />
+    <TextView android:textSize="@dimen/dp_20" android:textColor="#ff7d3c" android:gravity="center" android:id="@id/deductScore" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="10" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/dp_24" android:layout_toStartOf="@id/deductAction" />
+    <TextView android:textSize="@dimen/dp_20" android:textColor="#333" android:id="@id/deductName" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="照明不好" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/dp_12" android:layout_toStartOf="@id/deductScore" android:layout_toEndOf="@id/deductId" />
+    <View android:background="#e8e8e8" android:layout_width="match_parent" android:layout_height="@dimen/dp_1" android:layout_alignParentBottom="true" />
+</RelativeLayout>

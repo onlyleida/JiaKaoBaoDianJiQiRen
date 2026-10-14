@@ -1,0 +1,1 @@
+ALTER TABLE "t_device_info" ADD COLUMN "platform_host" text;

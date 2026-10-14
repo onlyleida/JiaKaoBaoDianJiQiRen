@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/titleLayout" layout="@layout/common_title" />
+    <RelativeLayout android:id="@id/carModelManager" android:layout_width="match_parent" android:layout_height="@dimen/dp_60">
+        <TextView android:textSize="@dimen/font_20" android:textColor="#333333" android:paddingTop="@dimen/dp_18" android:paddingBottom="@dimen/dp_18" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="车型数据库管理" android:paddingStart="@dimen/dp_16" android:paddingEnd="@dimen/dp_16" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_arrow_right" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/dp_16" />
+        <ImageView android:background="#ffe8e8e8" android:layout_width="match_parent" android:layout_height="@dimen/dp_divider" android:layout_alignParentBottom="true" android:layout_marginStart="@dimen/dp_16" android:layout_marginEnd="@dimen/dp_16" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/agencyCarDataManager" android:layout_width="match_parent" android:layout_height="@dimen/dp_60">
+        <TextView android:textSize="@dimen/font_20" android:textColor="#333333" android:paddingTop="@dimen/dp_18" android:paddingBottom="@dimen/dp_18" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="代理车身数据管理" android:paddingStart="@dimen/dp_16" android:paddingEnd="@dimen/dp_16" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_arrow_right" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/dp_16" />
+        <ImageView android:background="#ffe8e8e8" android:layout_width="match_parent" android:layout_height="@dimen/dp_divider" android:layout_alignParentBottom="true" android:layout_marginStart="@dimen/dp_16" android:layout_marginEnd="@dimen/dp_16" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/siteDataSave" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/dp_60">
+        <TextView android:textSize="@dimen/font_20" android:textColor="#333333" android:paddingTop="@dimen/dp_18" android:paddingBottom="@dimen/dp_18" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="考场数据报备" android:paddingStart="@dimen/dp_16" android:paddingEnd="@dimen/dp_16" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_arrow_right" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/dp_16" />
+        <ImageView android:background="#ffe8e8e8" android:layout_width="match_parent" android:layout_height="@dimen/dp_divider" android:layout_alignParentBottom="true" android:layout_marginStart="@dimen/dp_16" android:layout_marginEnd="@dimen/dp_16" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/hpMapManager" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/dp_60">
+        <TextView android:textSize="@dimen/font_20" android:textColor="#333333" android:paddingTop="@dimen/dp_18" android:paddingBottom="@dimen/dp_18" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="高精度地图管理" android:paddingStart="@dimen/dp_16" android:paddingEnd="@dimen/dp_16" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_arrow_right" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/dp_16" />
+        <ImageView android:background="#ffe8e8e8" android:layout_width="match_parent" android:layout_height="@dimen/dp_divider" android:layout_alignParentBottom="true" android:layout_marginStart="@dimen/dp_16" android:layout_marginEnd="@dimen/dp_16" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/examSiteManager" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/dp_60">
+        <TextView android:textSize="@dimen/font_20" android:textColor="#333333" android:paddingTop="@dimen/dp_18" android:paddingBottom="@dimen/dp_18" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="考场管理" android:paddingStart="@dimen/dp_16" android:paddingEnd="@dimen/dp_16" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_arrow_right" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/dp_16" />
+        <ImageView android:background="#ffe8e8e8" android:layout_width="match_parent" android:layout_height="@dimen/dp_divider" android:layout_alignParentBottom="true" android:layout_marginStart="@dimen/dp_16" android:layout_marginEnd="@dimen/dp_16" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/costDisplaySetting" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/dp_60">
+        <TextView android:textSize="@dimen/font_20" android:textColor="#333333" android:paddingTop="@dimen/dp_18" android:paddingBottom="@dimen/dp_18" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="收费/显示设置" android:paddingStart="@dimen/dp_16" android:paddingEnd="@dimen/dp_16" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_arrow_right" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/dp_16" />
+        <ImageView android:background="#ffe8e8e8" android:layout_width="match_parent" android:layout_height="@dimen/dp_divider" android:layout_alignParentBottom="true" android:layout_marginStart="@dimen/dp_16" android:layout_marginEnd="@dimen/dp_16" />
+    </RelativeLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>

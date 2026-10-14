@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>Mono.Data.Sqlite</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>net40</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>14.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace />
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="SQLiteCommand.bmp" />
+    <None Remove="SQLiteConnection.bmp" />
+    <None Remove="SQLiteDataAdapter.bmp" />
+    <EmbeddedResource Include="SQLiteCommand.bmp" LogicalName="SQLiteCommand.bmp" />
+    <EmbeddedResource Include="SQLiteConnection.bmp" LogicalName="SQLiteConnection.bmp" />
+    <EmbeddedResource Include="SQLiteDataAdapter.bmp" LogicalName="SQLiteDataAdapter.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Data">
+      <HintPath>../../android/assets/bin/Data/Managed/System.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Transactions">
+      <HintPath>../../android/assets/bin/Data/Managed/System.Transactions.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="@color/coach_ai_bg_color" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:layout_width="match_parent" android:layout_height="@dimen/rpx_50" app:layout_constraintTop_toTopOf="parent" />
+    <ImageView android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/tt__login_gene" app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:textSize="@dimen/text_30" android:textStyle="bold" android:textColor="#232529" android:gravity="center_vertical" android:id="@id/closeIv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/rpx_30" android:layout_marginTop="@dimen/rpx_68" android:text="返回" android:drawablePadding="@dimen/rpx_12" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:textSize="@dimen/text_40" android:textStyle="bold" android:textColor="#232529" android:gravity="center_vertical" android:id="@id/titleIv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/rpx_68" android:text="阿尔法Ai机器人教练员签到" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/camera_container" android:padding="@dimen/rpx_25" android:layout_width="0.0dp" android:layout_height="@dimen/rpx_528" app:layout_constraintBottom_toBottomOf="@id/clCamera" app:layout_constraintDimensionRatio="w,204:115" app:layout_constraintLeft_toLeftOf="@id/clCamera" app:layout_constraintRight_toRightOf="@id/clCamera" app:layout_constraintTop_toTopOf="@id/clCamera">
+        <cn.mucang.sundial.library.widget.CornerPathFrameLayout android:background="@color/black" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextureView android:id="@id/camera_view" android:layout_width="match_parent" android:layout_height="match_parent" />
+        </cn.mucang.sundial.library.widget.CornerPathFrameLayout>
+        <FrameLayout android:id="@id/cameraLayout" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView android:id="@id/placeholder1" android:background="@color/coach_ai_bg_color" android:layout_width="@dimen/rpx_400" android:layout_height="@dimen/rpx_528" android:layout_marginRight="@dimen/_rpx_25" app:layout_constraintRight_toLeftOf="@id/clCamera" app:layout_constraintTop_toTopOf="@id/clCamera" />
+    <ImageView android:id="@id/placeholder2" android:background="@color/coach_ai_bg_color" android:layout_width="@dimen/rpx_400" android:layout_height="@dimen/rpx_528" android:layout_marginLeft="@dimen/_rpx_25" app:layout_constraintLeft_toRightOf="@id/clCamera" app:layout_constraintTop_toTopOf="@id/clCamera" />
+    <FrameLayout android:id="@id/clCamera" android:layout_width="@dimen/rpx_420" android:layout_height="0.0dp" android:layout_marginTop="@dimen/rpx_68" android:layout_marginEnd="@dimen/rpx_96" app:layout_constraintDimensionRatio="416:524" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toBottomOf="@id/titleIv">
+        <ImageView android:id="@id/preview_img" android:background="@color/black" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="@dimen/rpx_23" android:scaleType="centerCrop" />
+        <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/tt__camera_bg" />
+    </FrameLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/llLeft" android:background="@drawable/tt__card_info_bg" android:layout_width="0.0dp" android:layout_height="0.0dp" android:layout_marginTop="@dimen/rpx_40" android:layout_marginStart="@dimen/rpx_140" app:layout_constraintBottom_toBottomOf="@id/tvHint" app:layout_constraintEnd_toStartOf="@id/clCamera" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/titleIv">
+        <ImageView android:id="@id/avatar" android:layout_width="@dimen/rpx_330" android:layout_height="@dimen/rpx_420" android:scaleType="centerCrop" android:layout_marginStart="@dimen/rpx_25" />
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/rpx_45" android:layout_marginRight="@dimen/rpx_45" android:layout_marginHorizontal="@dimen/rpx_45">
+            <LinearLayout android:orientation="horizontal" android:id="@id/llName" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/rpx_36">
+                <TextView android:textSize="@dimen/rpx_36" android:textColor="#9fa8b4" android:id="@id/nameTip" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="教练员姓名：" android:layout_weight="1.0" />
+                <TextView android:textSize="@dimen/rpx_36" android:textStyle="bold" android:textColor="#363b40" android:id="@id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/llCardId" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/rpx_50">
+                <TextView android:textSize="@dimen/rpx_36" android:textColor="#9fa8b4" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="身份证号码：" android:layout_weight="1.0" />
+                <TextView android:textSize="@dimen/rpx_36" android:textStyle="bold" android:textColor="#363b40" android:id="@id/tvCardId" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/llCarType" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/rpx_50">
+                <TextView android:textSize="@dimen/rpx_36" android:textColor="#9fa8b4" android:id="@id/typeTip" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="培训车型：" android:layout_weight="1.0" />
+                <TextView android:textSize="@dimen/rpx_36" android:textStyle="bold" android:textColor="#363b40" android:id="@id/tvCarType" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/rpx_50">
+                <TextView android:textSize="@dimen/rpx_36" android:textColor="#9fa8b4" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="备案编号：" android:layout_weight="1.0" />
+                <TextView android:textSize="@dimen/rpx_36" android:textStyle="bold" android:textColor="#363b40" android:id="@id/tvNo" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/rlLayout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_rpx_25" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/llLeft">
+        <TextView android:textSize="@dimen/rpx_32" android:textStyle="bold" android:textColor="#ff4a40" android:id="@id/tvDelayNum" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="3秒" />
+        <TextView android:textSize="@dimen/rpx_32" android:textStyle="bold" android:textColor="#363b40" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="后进行拍照" android:layout_marginStart="4.0dp" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/rpx_32" android:textStyle="bold" android:textColor="#008aff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/rpx_30" android:text="提示：请将脸部正对摄像头拍摄" android:layout_marginStart="4.0dp" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/rlLayout" />
+    <TextView android:textSize="@dimen/rpx_32" android:textColor="#ff4a40" android:id="@id/tvHint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/rpx_29" app:layout_constraintLeft_toLeftOf="@id/clCamera" app:layout_constraintRight_toRightOf="@id/clCamera" app:layout_constraintTop_toBottomOf="@id/clCamera" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/image_error_layout" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/rpx_65" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent">
+        <TextView android:textSize="@dimen/rpx_33" android:textColor="@android:color/white" android:gravity="center" android:id="@id/retry" android:background="@drawable/shape_008aff_r60" android:layout_width="@dimen/rpx_360" android:layout_height="@dimen/rpx_108" android:text="重拍" />
+        <TextView android:textSize="@dimen/rpx_33" android:textColor="@android:color/white" android:gravity="center" android:id="@id/ok" android:background="@drawable/shape_008aff_r60" android:layout_width="@dimen/rpx_360" android:layout_height="@dimen/rpx_108" android:text="确定 (10s)" android:layout_marginStart="@dimen/rpx_38" />
+        <TextView android:textSize="@dimen/rpx_33" android:textColor="@android:color/white" android:gravity="center" android:id="@id/exit" android:background="@drawable/shape_008aff_r60" android:layout_width="@dimen/rpx_360" android:layout_height="@dimen/rpx_108" android:text="退出拍照" android:layout_marginStart="@dimen/rpx_38" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

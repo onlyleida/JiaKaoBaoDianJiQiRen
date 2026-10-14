@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="right|bottom" android:orientation="vertical" android:background="@color/purple_500" android:layout_width="@dimen/rpx_200" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:id="@id/btn_start" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="开始自动接驳车" />
+    <Button android:id="@id/btn_cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:text="取消自动接驳车" />
+    <Button android:id="@id/btn_send_req_ret" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:text="发送请求结果" />
+    <Button android:id="@id/btn_send_dis" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:text="发送路线距离" />
+    <Button android:id="@id/btn_send_state" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:text="发送驾驶状态" />
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="#aabbcc" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditText android:id="@id/password" android:layout_width="300.0dp" android:layout_height="50.0dp" android:hint="请输入code" android:inputType="numberSigned" />
+    <Button android:id="@id/btn_ok" android:layout_width="300.0dp" android:layout_height="50.0dp" android:text="芝麻开门" />
+</LinearLayout>

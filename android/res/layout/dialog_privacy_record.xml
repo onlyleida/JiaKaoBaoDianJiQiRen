@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="如您在练车结束后想要查看您的练车过程并进行分享，可授权开启中控摄像头。启用后将会对主驾操作过程进行视频录制（该过程可能会采集您的人脸信息），训练结束后您可在“精彩时刻”中查看与分享。如您不同意开启，仅无法查看与分享练车过程，并不影响其他功能的使用。\n\n在练车过程中若您想要停止录制，可在首页进入“关于我们”，关闭录像授权。" style="@style/privacy_agreement_content" />
+</LinearLayout>

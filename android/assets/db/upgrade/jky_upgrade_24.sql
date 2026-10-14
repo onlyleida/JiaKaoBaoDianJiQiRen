@@ -1,0 +1,1 @@
+alter table t_highlight_video add column zip_path TEXT;

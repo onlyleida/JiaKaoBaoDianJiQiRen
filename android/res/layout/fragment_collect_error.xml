@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/text_27" android:textColor="#fff" android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="@dimen/rpx_81" android:layout_marginLeft="@dimen/rpx_30" android:text="错误提示语音" />
+        <EditText android:textSize="@dimen/text_21" android:textColor="#eee" android:textColorHint="#ccc" android:gravity="top" android:id="@id/errorEt" android:background="@color/collectInputBg" android:padding="@dimen/rpx_15" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/rpx_30" android:layout_marginRight="@dimen/rpx_30" android:minHeight="@dimen/rpx_90" android:hint="请输入错误提示语音" android:maxLength="100" />
+        <TextView android:textSize="@dimen/text_24" android:textColor="#fff" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/rpx_30" android:layout_marginTop="@dimen/rpx_23" android:text="错误检测距离（厘米）" />
+        <EditText android:textSize="@dimen/text_24" android:textColor="#cccccc" android:gravity="center" android:id="@id/distanceEt" android:background="@drawable/shape_212429_r3" android:layout_width="@dimen/rpx_150" android:layout_height="@dimen/rpx_50" android:layout_marginLeft="@dimen/rpx_30" android:layout_marginTop="@dimen/rpx_15" android:text="23" android:maxLength="4" android:inputType="number" android:imeOptions="actionDone" />
+        <View android:background="#212429" android:layout_width="match_parent" android:layout_height="@dimen/rpx_12" android:layout_marginTop="@dimen/rpx_12" />
+        <TextView android:textSize="@dimen/text_27" android:textColor="#fff" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/rpx_30" android:layout_marginTop="@dimen/rpx_30" android:text="检测项" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/actionRv" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+</ScrollView>

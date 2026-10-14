@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="#fff" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:id="@id/gears_item_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_20" android:layout_marginTop="@dimen/dp_20" android:text="档位区域" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/gears__zone_title" />
+    <TextView android:textSize="@dimen/dp_14" android:textColor="#ffffff" android:gravity="center" android:id="@id/switch_gears_category" android:background="@drawable/gears__blue_btn_selector" android:layout_width="@dimen/dp_86" android:layout_height="@dimen/dp_28" android:layout_marginTop="@dimen/dp_20" android:layout_marginRight="@dimen/dp_20" android:text="学习自动挡" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <FrameLayout android:layout_width="0.0dp" android:layout_height="0.0dp" android:layout_marginLeft="@dimen/dp_10" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="@id/switch_gears_category" app:layout_constraintTop_toBottomOf="@id/gears_item_tip">
+        <cn.mucang.jiakaoyi.uilib.ui.setting.gear.celibration.view.GearSketchViewGroup android:id="@id/gears_sketch" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

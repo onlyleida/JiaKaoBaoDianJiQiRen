@@ -1,0 +1,1 @@
+ALTER TABLE `t_download` ADD COLUMN `notification` INTEGER;

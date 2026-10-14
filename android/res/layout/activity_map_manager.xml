@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/titleLayout" layout="@layout/common_title" />
+    <View android:background="#e8e8e8" android:layout_width="match_parent" android:layout_height="@dimen/dp_1" />
+    <FrameLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <cn.mucang.android.core.widget.StateLayout android:id="@id/stateLayout" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="@dimen/dp_90">
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/recyclerView" android:layout_width="match_parent" android:layout_height="match_parent" />
+        </cn.mucang.android.core.widget.StateLayout>
+        <TextView android:textSize="@dimen/font_23" android:textColor="#fff" android:gravity="center" android:layout_gravity="center|bottom" android:id="@id/newSiteTv" android:background="@drawable/shape_008aff_r100" android:paddingLeft="@dimen/dp_28" android:paddingRight="@dimen/dp_28" android:layout_width="wrap_content" android:layout_height="@dimen/dp_54" android:layout_marginBottom="@dimen/dp_24" android:text="采集新地图" />
+    </FrameLayout>
+</LinearLayout>

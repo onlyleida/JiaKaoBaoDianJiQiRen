@@ -1,0 +1,15 @@
+package cn.mucang.android.jiakaoyi.framework.qrcode.zxing;
+
+/* JADX INFO: loaded from: classes2.dex */
+public final class FormatException extends ReaderException {
+    private static final FormatException INSTANCE;
+
+    static {
+        FormatException formatException = new FormatException();
+        INSTANCE = formatException;
+        formatException.setStackTrace(ReaderException.NO_TRACE);
+    }
+
+    private FormatException() {
+    }
+}

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="bottom" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/x_recyclerview_header_content" android:paddingTop="10.0dp" android:layout_width="match_parent" android:layout_height="60.0dp">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/x_recyclerview_header_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="100.0dp" android:layout_centerInParent="true">
+            <TextView android:id="@id/refresh_status_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ui_framework__x_recycler_view_pull_refresh_label" />
+            <LinearLayout android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dp">
+                <TextView android:textSize="12.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ui_framework__x_recycler_view_pull_refresh_tip" />
+                <TextView android:textSize="12.0sp" android:id="@id/last_refresh_time" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+        <RelativeLayout android:clipChildren="false" android:layout_width="100.0dp" android:layout_height="60.0dp" android:layout_toLeftOf="@id/x_recyclerview_header_text">
+            <ImageView android:id="@id/refresh_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <ProgressBar android:id="@id/loading_progress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="?android:progressBarStyleSmall" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

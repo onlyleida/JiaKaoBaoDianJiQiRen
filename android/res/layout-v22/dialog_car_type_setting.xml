@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@drawable/shape_e6ecf2_ffffff_r15" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dialog_desc_margin" android:layout_marginTop="@dimen/dialog_title_top" android:layout_marginRight="@dimen/dialog_desc_margin" android:layout_marginHorizontal="@dimen/dialog_desc_margin">
+            <ProgressBar android:id="@id/progress" android:layout_width="@dimen/dp_40" android:layout_height="@dimen/dp_40" android:indeterminate="true" android:indeterminateDrawable="@drawable/account__loading_animation" />
+            <TextView android:textSize="@dimen/dialog_desc_font_size" android:textColor="@color/dialog_desc_color" android:layout_gravity="center_vertical" android:id="@id/descTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="正在设置车型 。。。" android:layout_marginStart="@dimen/dp_20" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/dialog_button_height" android:layout_marginTop="@dimen/dialog_button_top" android:layout_marginBottom="@dimen/dialog_button_bottom">
+            <TextView android:textSize="@dimen/dialog_button_font_size" android:textColor="@color/dialog_button_main_color" android:gravity="center" android:id="@id/rightTv" android:background="@drawable/shape_008aff_r100" android:layout_width="@dimen/dialog_button_width" android:layout_height="match_parent" android:text="放弃设置" android:layout_marginStart="@dimen/dialog_button_margin" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

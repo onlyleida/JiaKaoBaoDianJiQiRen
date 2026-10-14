@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="@dimen/dp_88"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/font_20" android:textColor="#333" android:ellipsize="end" android:id="@id/siteTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="总部小区场地总部小区场地总部小区场地总部小区场地" android:singleLine="true" android:layout_marginStart="@dimen/dp_16" android:layout_marginEnd="@dimen/dp_16" app:layout_constrainedWidth="true" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintHorizontal_bias="0.0" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <ImageView android:id="@id/isChoose" android:layout_width="@dimen/dp_20" android:layout_height="@dimen/dp_20" android:src="@drawable/selector_choice" android:layout_marginEnd="@dimen/dp_16" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <View android:background="#e8e8e8" android:layout_width="match_parent" android:layout_height="1.0px" app:layout_constraintBottom_toBottomOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

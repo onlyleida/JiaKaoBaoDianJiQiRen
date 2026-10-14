@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="wrap_content" android:layout_height="@dimen/rpx_210"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/leftDivider" android:layout_width="@dimen/rpx_100" android:layout_height="@dimen/rpx_8" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/smallIv" app:layout_constraintTop_toTopOf="parent" />
+    <View android:id="@id/rightDivider" android:layout_width="@dimen/rpx_100" android:layout_height="@dimen/rpx_8" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toRightOf="@id/smallIv" app:layout_constraintTop_toTopOf="parent" />
+    <ImageView android:id="@id/smallIv" android:layout_width="@dimen/rpx_48" android:layout_height="@dimen/rpx_48" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <ImageView android:id="@id/bigIv" android:layout_width="@dimen/rpx_124" android:layout_height="@dimen/rpx_124" android:src="@drawable/ic_level_guide_robot" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="@id/smallIv" app:layout_constraintStart_toStartOf="@id/smallIv" app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:textSize="@dimen/text_27" android:id="@id/titleTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/rpx_4" app:layout_constraintEnd_toEndOf="@id/smallIv" app:layout_constraintStart_toStartOf="@id/smallIv" app:layout_constraintTop_toBottomOf="@id/smallIv" />
+</androidx.constraintlayout.widget.ConstraintLayout>

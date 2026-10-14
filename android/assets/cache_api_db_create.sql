@@ -1,0 +1,2 @@
+CREATE TABLE `t_db_cache`(`_id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `cache_key` TEXT, `cache_value` TEXT, `cache_time` INTEGER, `check_time` INTEGER);
+CREATE UNIQUE INDEX t_db_cache_key_index ON t_db_cache(cache_key);

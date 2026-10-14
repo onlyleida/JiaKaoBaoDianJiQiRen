@@ -1,0 +1,30 @@
+.class Lcom/blankj/utilcode/util/SpanUtils$SerializableSpannableStringBuilder;
+.super Landroid/text/SpannableStringBuilder;
+.source "SourceFile"
+
+# interfaces
+.implements Ljava/io/Serializable;
+
+
+# static fields
+.field private static final serialVersionUID:J = 0x442249c430a62a3bL
+
+
+# direct methods
+.method private constructor <init>()V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Landroid/text/SpannableStringBuilder;-><init>()V
+
+    return-void
+.end method
+
+.method synthetic constructor <init>(Lcom/blankj/utilcode/util/i;)V
+    .locals 0
+
+    .line 2
+    invoke-direct {p0}, Lcom/blankj/utilcode/util/SpanUtils$SerializableSpannableStringBuilder;-><init>()V
+
+    return-void
+.end method

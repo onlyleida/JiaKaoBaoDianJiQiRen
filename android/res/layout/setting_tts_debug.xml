@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#f2f5fa" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/titleLayout" layout="@layout/common_title" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/recyclerView" android:background="#fff" android:layout_width="match_parent" android:layout_height="@dimen/dp_0" android:layout_weight="1.0" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/dp_70" android:layout_marginLeft="@dimen/dp_20" android:layout_marginRight="@dimen/dp_20">
+        <EditText android:id="@id/editTv" android:layout_width="@dimen/dp_0" android:layout_height="@dimen/dp_50" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/dp_23" android:textColor="#fff" android:gravity="center" android:id="@id/playTv" android:background="@drawable/shape_008aff_r100" android:layout_width="@dimen/dp_172" android:layout_height="@dimen/dp_54" android:text="播放" />
+    </LinearLayout>
+</LinearLayout>

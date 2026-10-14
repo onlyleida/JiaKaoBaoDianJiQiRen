@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dialog_button_bottom">24.0px</dimen>
+    <dimen name="dialog_button_font_size">15.0px</dimen>
+    <dimen name="dialog_button_height">46.0px</dimen>
+    <dimen name="dialog_button_margin">11.0px</dimen>
+    <dimen name="dialog_button_top">26.0px</dimen>
+    <dimen name="dialog_button_width">166.0px</dimen>
+    <dimen name="dialog_countdown_time_font_size">22.0px</dimen>
+    <dimen name="dialog_default_width">414.0px</dimen>
+    <dimen name="dialog_desc_font_size">15.0px</dimen>
+    <dimen name="dialog_desc_top">11.0px</dimen>
+    <dimen name="dialog_exam_result_desc_font_size">15.0px</dimen>
+    <dimen name="dialog_exam_result_height">128.0px</dimen>
+    <dimen name="dialog_exam_result_score_bg_width">70.0px</dimen>
+    <dimen name="dialog_exam_result_score_font_size">53.0px</dimen>
+    <dimen name="dialog_exam_result_score_margin">-35.0px</dimen>
+    <dimen name="dialog_exam_result_score_min_width">86.0px</dimen>
+    <dimen name="dialog_exam_result_score_top">14.0px</dimen>
+    <dimen name="dialog_exam_result_score_txt_font_size">14.0px</dimen>
+    <dimen name="dialog_exam_result_title_font_size">20.0px</dimen>
+    <dimen name="dialog_exam_result_top">16.0px</dimen>
+    <dimen name="dialog_password_edit_font_size">15.0px</dimen>
+    <dimen name="dialog_password_edit_height">35.0px</dimen>
+    <dimen name="dialog_password_top">16.0px</dimen>
+    <dimen name="dialog_radius">8.0px</dimen>
+    <dimen name="dialog_title_font_size">20.0px</dimen>
+    <dimen name="dialog_title_top">35.0px</dimen>
+</resources>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rl_title" android:background="@color/core__date_picker_content_color" android:layout_width="match_parent" android:layout_height="44.0dp">
+        <TextView android:textSize="18.0dp" android:textColor="#ffffff" android:gravity="center_vertical" android:id="@id/tv_sure" android:paddingLeft="15.0dp" android:paddingRight="15.0dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="确定" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:paddingLeft="15.0dp" android:paddingRight="15.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <cn.mucang.android.core.widget.datepick.SelectDateView android:id="@id/year" android:layout_width="0.0dp" android:layout_height="160.0dp" android:layout_weight="1.0" />
+        <TextView android:textSize="18.0dp" android:textColor="@color/core__date_picker_content_color" android:id="@id/tv_year" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="年" />
+        <cn.mucang.android.core.widget.datepick.SelectDateView android:id="@id/month" android:layout_width="0.0dp" android:layout_height="160.0dp" android:layout_weight="1.0" />
+        <TextView android:textSize="18.0dp" android:textColor="@color/core__date_picker_content_color" android:id="@id/tv_month" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="月" />
+        <cn.mucang.android.core.widget.datepick.SelectDateView android:id="@id/day" android:layout_width="0.0dp" android:layout_height="160.0dp" android:layout_weight="1.0" />
+        <TextView android:textSize="18.0dp" android:textColor="@color/core__date_picker_content_color" android:id="@id/tv_day" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="日" />
+        <cn.mucang.android.core.widget.datepick.SelectDateView android:id="@id/hour" android:layout_width="0.0dp" android:layout_height="160.0dp" android:layout_weight="1.0" />
+        <TextView android:textSize="18.0dp" android:textColor="@color/core__date_picker_content_color" android:id="@id/tv_hour" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="时" />
+        <cn.mucang.android.core.widget.datepick.SelectDateView android:id="@id/minute" android:layout_width="0.0dp" android:layout_height="160.0dp" android:layout_weight="1.0" />
+        <TextView android:textSize="18.0dp" android:textColor="@color/core__date_picker_content_color" android:id="@id/tv_minute" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="分" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,38 @@
+[
+  {
+    "dex": "classes.dex",
+    "original_class_defs": 4996,
+    "rebuilt_class_defs": 4996,
+    "match": true
+  },
+  {
+    "dex": "classes2.dex",
+    "original_class_defs": 3187,
+    "rebuilt_class_defs": 3187,
+    "match": true
+  },
+  {
+    "dex": "classes3.dex",
+    "original_class_defs": 4473,
+    "rebuilt_class_defs": 4473,
+    "match": true
+  },
+  {
+    "dex": "classes4.dex",
+    "original_class_defs": 6019,
+    "rebuilt_class_defs": 6019,
+    "match": true
+  },
+  {
+    "dex": "classes5.dex",
+    "original_class_defs": 7185,
+    "rebuilt_class_defs": 7185,
+    "match": true
+  },
+  {
+    "dex": "classes6.dex",
+    "original_class_defs": 7438,
+    "rebuilt_class_defs": 7438,
+    "match": true
+  }
+]

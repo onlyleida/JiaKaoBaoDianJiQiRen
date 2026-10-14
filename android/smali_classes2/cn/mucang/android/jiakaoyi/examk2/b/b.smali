@@ -1,0 +1,149 @@
+.class public Lcn/mucang/android/jiakaoyi/examk2/b/b;
+.super Lcn/mucang/android/jiakaoyi/examk2/b/g;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lcn/mucang/android/jiakaoyi/examk2/b/g<",
+        "Lcn/mucang/android/jiakaoyi/examk2/config/K2DaoCheRuKuConfig;",
+        "Lcn/mucang/android/jiakaoyi/hpmap/a/a/g/c;",
+        "Lcn/mucang/android/jiakaoyi/examk2/collision/DaoKuChecker;",
+        ">;"
+    }
+.end annotation
+
+
+# instance fields
+.field private b:Z
+
+
+# direct methods
+.method public constructor <init>(Lcn/mucang/android/jiakaoyi/examk2/config/K2DaoCheRuKuConfig;Lcn/mucang/android/jiakaoyi/examk2/collision/DaoKuChecker;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0, p1, p2}, Lcn/mucang/android/jiakaoyi/examk2/b/g;-><init>(Lcn/mucang/android/jiakaoyi/engine/config/BaseStepConfig;Lcn/mucang/android/jiakaoyi/hpmap/collision/k2/checker/b;)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public onChange(Lcn/mucang/android/jiakaoyi/signal/c/e;Lcn/mucang/android/jiakaoyi/engine/processor/exam/step/b;Lcn/mucang/android/jiakaoyi/engine/processor/exam/ExamProcessor;)V
+    .locals 6
+
+    .line 1
+    invoke-super {p0, p1, p2, p3}, Lcn/mucang/android/jiakaoyi/examk2/b/g;->onChange(Lcn/mucang/android/jiakaoyi/signal/c/e;Lcn/mucang/android/jiakaoyi/engine/processor/exam/step/b;Lcn/mucang/android/jiakaoyi/engine/processor/exam/ExamProcessor;)V
+
+    .line 2
+    iget-object p1, p0, Lcn/mucang/android/jiakaoyi/engine/processor/exam/step/d;->config:Lcn/mucang/android/jiakaoyi/engine/config/BaseStepConfig;
+
+    check-cast p1, Lcn/mucang/android/jiakaoyi/examk2/config/K2DaoCheRuKuConfig;
+
+    iget-object p1, p1, Lcn/mucang/android/jiakaoyi/examk2/config/K2DaoCheRuKuConfig;->p402107:Lcn/mucang/android/jiakaoyi/engine/config/route/value/IntegerValue;
+
+    iget-object p1, p1, Lcn/mucang/android/jiakaoyi/engine/config/route/RuleConfig;->value:Ljava/lang/Object;
+
+    check-cast p1, Ljava/lang/Integer;
+
+    invoke-virtual {p1}, Ljava/lang/Integer;->intValue()I
+
+    move-result p1
+
+    mul-int/lit16 p1, p1, 0x3e8
+
+    int-to-long p1, p1
+
+    .line 3
+    iget-object v0, p0, Lcn/mucang/android/jiakaoyi/engine/processor/exam/step/d;->config:Lcn/mucang/android/jiakaoyi/engine/config/BaseStepConfig;
+
+    check-cast v0, Lcn/mucang/android/jiakaoyi/examk2/config/K2DaoCheRuKuConfig;
+
+    iget-object v0, v0, Lcn/mucang/android/jiakaoyi/examk2/config/K2DaoCheRuKuConfig;->p402117:Lcn/mucang/android/jiakaoyi/engine/config/route/value/BooleanValue;
+
+    iget-object v0, v0, Lcn/mucang/android/jiakaoyi/engine/config/route/RuleConfig;->value:Ljava/lang/Object;
+
+    check-cast v0, Ljava/lang/Boolean;
+
+    invoke-virtual {v0}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    iget-boolean v0, p0, Lcn/mucang/android/jiakaoyi/examk2/b/b;->b:Z
+
+    if-nez v0, :cond_0
+
+    .line 4
+    iget-object v0, p0, Lcn/mucang/android/jiakaoyi/examk2/b/g;->a:Lcn/mucang/android/jiakaoyi/hpmap/collision/k2/checker/b;
+
+    move-object v1, v0
+
+    check-cast v1, Lcn/mucang/android/jiakaoyi/examk2/collision/DaoKuChecker;
+
+    iget-wide v1, v1, Lcn/mucang/android/jiakaoyi/examk2/collision/DaoKuChecker;->t0:J
+
+    const-wide/16 v3, 0x0
+
+    cmp-long v5, v1, v3
+
+    if-eqz v5, :cond_0
+
+    .line 5
+    check-cast v0, Lcn/mucang/android/jiakaoyi/examk2/collision/DaoKuChecker;
+
+    iget-wide v0, v0, Lcn/mucang/android/jiakaoyi/examk2/collision/DaoKuChecker;->t0:J
+
+    add-long/2addr v0, p1
+
+    iget-wide p1, p3, Lcn/mucang/android/jiakaoyi/engine/processor/exam/ExamProcessor;->i:J
+
+    sub-long/2addr v0, p1
+
+    const-wide/16 p1, 0x2710
+
+    cmp-long v2, v0, p1
+
+    if-gtz v2, :cond_0
+
+    .line 6
+    sget p1, Lcn/mucang/android/jiakaoyi/examk2/R$string;->daoku_countdown:I
+
+    invoke-static {p1}, Lcn/mucang/android/jiakaoyi/framework/utils/k0;->a(I)Ljava/lang/String;
+
+    move-result-object p1
+
+    const/4 p2, 0x1
+
+    new-array v2, p2, [Ljava/lang/Object;
+
+    const/4 v3, 0x0
+
+    const-wide/16 v4, 0x3e8
+
+    div-long/2addr v0, v4
+
+    invoke-static {v0, v1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+
+    move-result-object v0
+
+    aput-object v0, v2, v3
+
+    invoke-static {p1, v2}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object p1
+
+    .line 7
+    sget-object v0, Lcn/mucang/android/jiakaoyi/framework/tts/TtsGrade;->SpecialVoice:Lcn/mucang/android/jiakaoyi/framework/tts/TtsGrade;
+
+    invoke-virtual {p3, p1, v0}, Lcn/mucang/android/jiakaoyi/engine/processor/exam/ExamProcessor;->H(Ljava/lang/String;Lcn/mucang/android/jiakaoyi/framework/tts/TtsGrade;)V
+
+    .line 8
+    iput-boolean p2, p0, Lcn/mucang/android/jiakaoyi/examk2/b/b;->b:Z
+
+    :cond_0
+    return-void
+.end method

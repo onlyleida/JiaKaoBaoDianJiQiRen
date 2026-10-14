@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <cn.mucang.android.ui.widget.xrecyclerview.XRecyclerView android:orientation="vertical" android:id="@id/base_x_recycler_view" android:background="@android:color/white" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior"
+      xmlns:app="http://schemas.android.com/apk/res-auto" />
+    <FrameLayout android:id="@id/ui_framework__loading_container" android:layout_width="match_parent" android:layout_height="match_parent" />
+</FrameLayout>

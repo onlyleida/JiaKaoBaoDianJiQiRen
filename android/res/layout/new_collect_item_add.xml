@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/divider" android:background="#222529" android:layout_width="match_parent" android:layout_height="@dimen/rpx_12" app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:textSize="@dimen/text_27" android:textColor="#ccc" android:gravity="center_vertical" android:id="@id/name" android:layout_width="wrap_content" android:layout_height="@dimen/rpx_81" android:layout_marginLeft="@dimen/rpx_30" android:layout_marginTop="@dimen/rpx_12" android:text="相对位置" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <ImageView android:id="@id/addIv" android:padding="@dimen/rpx_15" android:layout_width="@dimen/rpx_66" android:layout_height="@dimen/rpx_66" android:layout_marginRight="@dimen/rpx_15" android:src="@drawable/ic_add" app:layout_constraintBottom_toBottomOf="@id/name" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="@id/name" />
+</androidx.constraintlayout.widget.ConstraintLayout>

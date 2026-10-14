@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#fff" android:layout_width="match_parent" android:layout_height="@dimen/rpx_74" android:layoutDirection="ltr" android:paddingStart="@dimen/rpx_24" android:paddingEnd="@dimen/rpx_24"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_27" android:textColor="#333" android:id="@id/text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="是否开启库位项目切换" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/stepCb" android:layout_width="@dimen/rpx_66" android:layout_height="@dimen/rpx_33" android:src="@drawable/common_toggle_selector" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <ImageView android:background="#ffe8e8e8" android:layout_width="match_parent" android:layout_height="@dimen/rpx_divider" android:layout_alignParentBottom="true" />
+</RelativeLayout>

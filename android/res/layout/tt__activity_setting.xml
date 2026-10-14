@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="horizontal" android:background="@drawable/tt__bg_round_white" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/tt__include_bottom_mountain" />
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:paddingStart="@dimen/tt__main_coach_padding" android:paddingEnd="@dimen/tt__main_coach_padding">
+        <TextView android:textSize="@dimen/tt__text_size_title" android:textColor="#ff333333" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dp" android:text="终端设置" />
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="19.0dp" android:layout_below="@id/title">
+            <RelativeLayout android:id="@id/terminal_register" android:background="@drawable/tt__bg_btn_blue_10_corner" android:layout_width="0.0dp" android:layout_height="@dimen/tt__button_height_setting" android:layout_marginRight="11.0dp" android:layout_weight="1.0">
+                <TextView android:textSize="@dimen/tt__text_size_button_register" android:textColor="#ffffffff" android:id="@id/register" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="19.0dp" android:layout_marginTop="19.0dp" android:text="手动注册" />
+                <TextView android:textSize="@dimen/tt__text_size_button_register_state" android:textColor="#b3ffffff" android:id="@id/terminal_register_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="19.0dp" android:text="已注册" android:layout_below="@id/register" />
+                <ImageView android:layout_width="81.0dp" android:layout_height="81.0dp" android:src="@drawable/tt__ic_setting_register" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+            <FrameLayout android:id="@id/terminal_unregister" android:background="@drawable/tt__bg_btn_green_10_corner" android:layout_width="0.0dp" android:layout_height="@dimen/tt__button_height_setting" android:layout_marginLeft="11.0dp" android:layout_weight="1.0">
+                <TextView android:textSize="@dimen/tt__text_size_button_register" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="19.0dp" android:layout_marginTop="19.0dp" android:text="终端注销" />
+                <ImageView android:layout_gravity="right|bottom" android:layout_width="81.0dp" android:layout_height="81.0dp" android:src="@drawable/tt__ic_setting_logout" />
+            </FrameLayout>
+        </LinearLayout>
+        <TextView android:textSize="@dimen/tt__text_size_button" android:textColor="#ffffffff" android:gravity="center" android:id="@id/back" android:background="@drawable/tt__bg_btn_green_2_corner" android:layout_width="@dimen/tt__button_width_register" android:layout_height="@dimen/tt__button_height_register" android:layout_marginBottom="19.0dp" android:text="返回主页" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</FrameLayout>

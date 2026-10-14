@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:paddingBottom="9.0dp" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rl_quxiao" android:background="@drawable/account__round_12_white" android:layout_width="match_parent" android:layout_height="57.0dp" android:layout_marginLeft="15.0dp" android:layout_marginRight="15.0dp" android:layout_alignParentBottom="true">
+        <TextView android:textSize="20.0sp" android:textColor="#0088f9" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="取消" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <RelativeLayout android:background="@drawable/account__round_12_white" android:layout_width="match_parent" android:layout_height="115.0dp" android:layout_marginLeft="15.0dp" android:layout_marginRight="15.0dp" android:layout_marginBottom="8.0dp" android:layout_above="@id/rl_quxiao">
+        <RelativeLayout android:id="@id/rl_select_camera" android:background="@null" android:layout_width="match_parent" android:layout_height="57.0dp" android:layout_alignParentTop="true">
+            <TextView android:textSize="20.0sp" android:textColor="#0088f9" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="拍照上传" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <View android:background="#c74d4d4d" android:layout_width="match_parent" android:layout_height="1.0dp" android:layout_centerInParent="true" />
+        <RelativeLayout android:id="@id/rl_select_photo" android:background="@null" android:layout_width="match_parent" android:layout_height="57.0dp" android:layout_alignParentBottom="true">
+            <TextView android:textSize="20.0sp" android:textColor="#0088f9" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="从相册选择 " android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

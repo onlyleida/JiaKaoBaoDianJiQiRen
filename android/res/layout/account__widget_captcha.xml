@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cn.mucang.android.account.ui.CaptchaView android:id="@id/captcha" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/captcha_rl" android:layout_width="match_parent" android:layout_height="46.5dp" android:layout_marginLeft="20.0dp" android:layout_marginRight="20.0dp">
+        <View android:background="#d8d8d8" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_alignParentBottom="true" />
+        <FrameLayout android:id="@id/captcha_container" android:layout_width="74.0dp" android:layout_height="30.0dp" android:layout_centerVertical="true">
+            <ImageView android:id="@id/captcha_view" android:background="#f3f3f3" android:padding="0.5dp" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY" />
+            <ProgressBar android:layout_gravity="center" android:id="@id/captcha_progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" android:indeterminateDrawable="@drawable/account__loading_juhua" />
+            <TextView android:textSize="12.0sp" android:textColor="#c7c7c7" android:gravity="center_vertical" android:layout_gravity="center" android:id="@id/captcha_error" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableLeft="@drawable/core__ic_login_jzsb" android:drawablePadding="4.0dp" />
+        </FrameLayout>
+        <TextView android:textSize="16.0sp" android:textColor="@color/core_account_login_text_normal_color" android:gravity="center_vertical" android:id="@id/captcha_refresh" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dp" android:text="@string/account__captcha_refresh" android:layout_toRightOf="@id/captcha_container" android:layout_alignTop="@id/captcha_container" android:layout_alignBottom="@id/captcha_container" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="46.5dp" android:layout_marginLeft="20.0dp" android:layout_marginRight="20.0dp" android:layout_below="@id/captcha_rl">
+        <View android:background="#d8d8d8" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_alignParentBottom="true" />
+        <ImageView android:id="@id/iv_phone_code" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dp" android:src="@drawable/core__ic_login_zhmm_yanzhen" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <EditText android:textSize="16.0sp" android:textColor="#333333" android:textColorHint="#999999" android:gravity="left|center" android:id="@id/captcha_code" android:background="@null" android:longClickable="false" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="22.0dp" android:layout_marginRight="10.0dp" android:button="@null" android:hint="输入图片中的字符" android:maxLength="11" android:layout_toLeftOf="@id/code_divider_line" android:layout_toRightOf="@id/iv_phone_code" android:layout_centerVertical="true" android:inputType="numberDecimal" />
+    </RelativeLayout>
+</cn.mucang.android.account.ui.CaptchaView>

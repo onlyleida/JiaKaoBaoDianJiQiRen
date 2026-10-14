@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:elevation="@dimen/dp_10" app:cardBackgroundColor="@android:color/white" app:cardMaxElevation="@dimen/dp_10"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/dp_15" android:paddingTop="@dimen/dp_20" android:paddingRight="@dimen/dp_15" android:paddingBottom="@dimen/dp_15" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/font_18" android:textColor="#008aff" android:gravity="center" android:id="@id/tv_delete_pos" android:background="@drawable/shape_r2_s1_008aff" android:layout_width="match_parent" android:layout_height="@dimen/dp_36" android:layout_marginBottom="@dimen/dp_20" android:foreground="?selectableItemBackground" android:text="删除当前点" />
+        <TextView android:textSize="@dimen/font_18" android:textColor="#008aff" android:gravity="center" android:id="@id/tv_split" android:background="@drawable/shape_r2_s1_008aff" android:layout_width="match_parent" android:layout_height="@dimen/dp_36" android:layout_marginBottom="@dimen/dp_20" android:foreground="?selectableItemBackground" android:text="分割成两条" />
+        <TextView android:textSize="@dimen/font_18" android:textColor="#008aff" android:gravity="center" android:id="@id/tv_delete_line" android:background="@drawable/shape_r2_s1_008aff" android:layout_width="match_parent" android:layout_height="@dimen/dp_36" android:foreground="?selectableItemBackground" android:text="删除当前线段" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

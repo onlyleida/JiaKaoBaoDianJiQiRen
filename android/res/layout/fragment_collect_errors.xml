@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/text_27" android:textColor="#ccc" android:gravity="center_vertical" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="@dimen/rpx_81" android:layout_marginLeft="@dimen/rpx_30" android:text="错误检测项" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <ImageView android:id="@id/addIv" android:padding="@dimen/rpx_15" android:layout_width="@dimen/rpx_66" android:layout_height="@dimen/rpx_66" android:layout_marginRight="@dimen/rpx_15" android:src="@drawable/ic_add" app:layout_constraintBottom_toBottomOf="@id/title" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="@id/title" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/errorRv" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_marginLeft="@dimen/rpx_30" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@id/title" />
+</androidx.constraintlayout.widget.ConstraintLayout>

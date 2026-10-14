@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textSize="@dimen/text_20" android:textColor="@color/color_fff_666" android:gravity="center" android:id="@id/stepName" android:background="@drawable/selector_sub_step" android:layout_width="match_parent" android:layout_height="match_parent" android:text="我的路线"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

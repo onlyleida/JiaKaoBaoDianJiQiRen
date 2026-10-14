@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:paddingLeft="5.0dp" android:paddingRight="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0sp" android:textColor="@color/select_city__selected_city_text_color" android:id="@id/city_item" android:background="@drawable/select_city__bg_selected_item" android:paddingLeft="15.0dp" android:paddingTop="7.0dp" android:paddingRight="15.0dp" android:paddingBottom="7.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:layout_marginRight="5.0dp" android:text="北京" />
+    <ImageView android:layout_gravity="right|top" android:id="@id/iv_delete" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/select_city__ic_del" />
+</FrameLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="@dimen/dp_60"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/dp_19" android:textColor="@color/color_008aff_333" android:layout_gravity="center" android:id="@id/nameTv" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <View android:layout_gravity="bottom" android:background="#e8e8e8" android:layout_width="match_parent" android:layout_height="@dimen/dp_1" />
+</FrameLayout>

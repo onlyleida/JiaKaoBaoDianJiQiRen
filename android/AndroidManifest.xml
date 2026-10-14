@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="30" android:compileSdkVersionCodename="11" package="cn.mucang.android.jiakaoyi.teachingk2" platformBuildVersionCode="30" platformBuildVersionName="11">
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:resizeable="true" android:smallScreens="true" android:xlargeScreens="true"/>
+    <uses-feature android:name="android.hardware.usb.host" android:required="true"/>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="true"/>
+    <uses-feature android:name="android.hardware.telephony" android:required="false"/>
+    <uses-feature android:name="android.hardware.telephony.cdma" android:required="false"/>
+    <uses-feature android:name="android.hardware.telephony.gsm" android:required="false"/>
+    <uses-feature android:name="android.hardware.wifi" android:required="false"/>
+    <uses-feature android:name="android.hardware.microphone" android:required="false"/>
+    <uses-feature android:name="android.hardware.touchscreen" android:required="false"/>
+    <uses-feature android:name="android.hardware.location" android:required="false"/>
+    <uses-feature android:name="android.hardware.location.gps" android:required="false"/>
+    <uses-feature android:name="android.hardware.location.network" android:required="false"/>
+    <uses-feature android:name="android.hardware.screen.landscape" android:required="false"/>
+    <uses-feature android:name="android.hardware.screen.portrait" android:required="false"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-feature android:glEsVersion="0x30000"/>
+    <uses-feature android:name="android.hardware.vulkan.version" android:required="false"/>
+    <uses-feature android:name="android.hardware.touchscreen.multitouch" android:required="false"/>
+    <uses-feature android:name="android.hardware.touchscreen.multitouch.distinct" android:required="false"/>
+    <uses-permission android:name="android.permission.READ_PHONE_NUMBERS"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.REORDER_TASKS"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES"/>
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <queries>
+        <package android:name="com.tencent.mm"/>
+        <package android:name="com.eg.android.AlipayGphone"/>
+        <package android:name="com.sina.weibo"/>
+        <package android:name="com.weico.international"/>
+        <package android:name="com.qzone"/>
+        <package android:name="com.tencent.mobileqq"/>
+        <package android:name="com.tencent.tim"/>
+        <intent>
+            <action android:name="com.huawei.hms.core.aidlservice"/>
+        </intent>
+    </queries>
+    <uses-permission android:name="cn.mucang.android.jiakaoyi.teachingk2.app.broadcast.permission"/>
+    <permission android:name="cn.mucang.android.jiakaoyi.teachingk2.permission.core.download.NOTIFICATION_EVENT" android:protectionLevel="signatureOrSystem"/>
+    <permission android:name="cn.mucang.android.jiakaoyi.teachingk2.app.broadcast.permission" android:protectionLevel="signature"/>
+    <uses-permission android:name="cn.mucang.android.jiakaoyi.teachingk2.permission.core.download.NOTIFICATION_EVENT"/>
+    <uses-feature android:name="android.hardware.camera"/>
+    <permission android:name="cn.mucang.android.jiakaoyi.teachingk2.permission.MIPUSH_RECEIVE" android:protectionLevel="signature"/>
+    <uses-permission android:name="cn.mucang.android.jiakaoyi.teachingk2.permission.MIPUSH_RECEIVE"/>
+    <uses-permission android:name="com.coloros.mcs.permission.RECIEVE_MCS_MESSAGE"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="com.asus.msa.SupplementaryDID.ACCESS"/>
+    <uses-permission android:name="freemme.permission.msa"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <application android:allowBackup="true" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:icon="@mipmap/ic_launcher" android:label="@string/app_name" android:largeHeap="true" android:name="cn.mucang.android.jiakaoyi.teachingk2.TeachK2Application" android:networkSecurityConfig="@xml/core__network_security_config" android:requestLegacyExternalStorage="true" android:roundIcon="@mipmap/ic_launcher" android:supportsRtl="true" android:theme="@style/jiakaoyi_theme">
+        <meta-data android:name="BUGLY_APPID" android:value="6da82d3280"/>
+        <meta-data android:name="BUGLY_ENABLE_DEBUG" android:value="true"/>
+        <activity android:name="cn.mucang.android.jiakaoyi.teachingk2.ui.splash.TeachSplashActivity" android:theme="@style/jiakaoyi_splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+                <action android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED"/>
+            </intent-filter>
+        </activity>
+        <service android:enabled="true" android:exported="false" android:foregroundServiceType="mediaProjection" android:name="cn.mucang.android.jiakaoyi.teachingk2.highlight.MediaService"/>
+        <activity android:name="cn.mucang.android.jiakaoyi.teachingk2.ui.test.DebugProtocolActivity" android:theme="@style/jiakaoyi_theme"/>
+        <activity android:name="cn.mucang.android.jiakaoyi.teachingk2.ui.CheckActivity" android:theme="@style/jiakaoyi_theme"/>
+        <activity android:name="cn.mucang.android.jiakaoyi.teachingk2.ui.HardwareLogActivity" android:theme="@style/jiakaoyi_theme"/>
+        <activity android:name="cn.mucang.android.jiakaoyi.teachingk2.login.ui.LoginActivity" android:theme="@style/jiakaoyi_theme"/>
+        <activity android:name="cn.mucang.android.jiakaoyi.teachingk2.login.ui.CoachLoginActivity" android:theme="@style/jiakaoyi_theme"/>
+        <activity android:name="cn.mucang.android.jiakaoyi.teachingk2.collectsite.SiteDataPage" android:theme="@style/jiakaoyi_theme"/>
+        <activity android:name="cn.mucang.android.jiakaoyi.teachingk2.collectsite.SiteCollectPage" android:theme="@style/jiakaoyi_theme"/>
+        <activity android:name="cn.mucang.android.jiakaoyi.teachingk2.ui.TrainingSiteManageActivity" android:theme="@style/jiakaoyi_theme"/>
+        <activity android:name="cn.mucang.android.jiakaoyi.teachingk2.safe.ui.SafeDataManageActivity" android:theme="@style/jiakaoyi_theme"/>
+        <activity android:name="cn.mucang.android.jiakaoyi.teachingk2.calibration.CalibartionActivity" android:theme="@style/jiakaoyi_theme"/>
+        <activity android:name="cn.mucang.android.jiakaoyi.teachingk2.safe.ui.RadarDebugActivity" android:theme="@style/jiakaoyi_theme"/>
+        <activity android:name="cn.mucang.android.jiakaoyi.teachingk2.ui.SpecialRadarDataActivity" android:theme="@style/jiakaoyi_theme"/>
+        <activity android:name="cn.mucang.android.jiakaoyi.teachingk2.ui.car.CarBindActivity" android:theme="@style/jiakaoyi_theme"/>
+        <activity android:name="cn.mucang.android.jiakaoyi.teachingk2.ui.car.RobotCarDataActivity" android:theme="@style/jiakaoyi_theme"/>
+        <activity android:name="cn.mucang.android.jiakaoyi.teachingk2.ui.car.CarListActivity" android:theme="@style/jiakaoyi_theme"/>
+        <activity android:name="cn.mucang.android.jiakaoyi.teachingk2.ui.TeachProgrammeManagerActivity" android:theme="@style/jiakaoyi_theme"/>
+        <activity android:name="cn.mucang.android.jiakaoyi.teachingk2.ui.RobotGuideActivity" android:theme="@style/jiakaoyi_theme"/>
+        <activity android:name="cn.mucang.android.jiakaoyi.teachingk2.ota.RobotFirmWareManagerActivity" android:theme="@style/jiakaoyi_theme"/>
+        <activity android:name="cn.mucang.android.jiakaoyi.teachingk2.setting.ai.AISignalActivity" android:theme="@style/jiakaoyi_theme"/>
+        <activity android:name="cn.mucang.android.jiakaoyi.teachingk2.ui.settings.TeachingSettingActivity" android:theme="@style/jiakaoyi_theme"/>
+        <activity android:name="cn.mucang.android.jiakaoyi.teachingk2.ui.settings.CheckModuleSettingActivity" android:theme="@style/jiakaoyi_theme"/>
+        <activity android:name="cn.mucang.android.jiakaoyi.teachingk2.ui.settings.DrivingSettingActivity" android:theme="@style/jiakaoyi_theme"/>
+        <activity android:name="cn.mucang.android.jiakaoyi.teachingk2.ui.test.TestFencePage"/>
+        <service android:name="cn.mucang.android.jiakaoyi.teachingk2.safe.floatwindow.FloatSafeAlterViewService"/>
+        <activity android:name="cn.mucang.android.jiakaoyi.teachingk2.setting.CameraPushSettingActivity" android:theme="@style/jiakaoyi_theme"/>
+        <activity android:name="cn.mucang.android.jiakaoyi.teachingk2.setting.FaceSettingActivity" android:theme="@style/jiakaoyi_theme" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="cn.mucang.android.jiakaoyi.teachingk2.setting.SundialCameraSettingActivity" android:theme="@style/jiakaoyi_theme"/>
+        <activity android:name="cn.mucang.android.jiakaoyi.teachingk2.setting.CameraManageActivity" android:theme="@style/jiakaoyi_theme"/>
+        <activity android:name="cn.mucang.android.jiakaoyi.teachingk2.safe.detector.fencepage.FenceDetectorPage" android:theme="@style/jiakaoyi_theme"/>
+        <activity android:name="cn.mucang.android.jiakaoyi.teachingk2.safe.detector.test.BrakeDistanceTestPage" android:theme="@style/jiakaoyi_theme"/>
+        <activity android:name="cn.mucang.android.jiakaoyi.teachingk2.autoteach.test.BackCenterTestPage" android:theme="@style/jiakaoyi_theme"/>
+        <activity android:name="cn.mucang.android.jiakaoyi.teachingk2.setting.AutoTeachDebugActivity" android:theme="@style/jiakaoyi_theme"/>
+        <activity android:name="cn.mucang.android.jiakaoyi.teachingk2.login.ui.FaceRegisterActivity" android:theme="@style/jiakaoyi_theme"/>
+        <activity android:name="cn.mucang.android.jiakaoyi.teachingk2.collect.v2.TraceAutoCreateActivity" android:theme="@style/jiakaoyi_theme"/>
+        <activity android:name="cn.mucang.android.jiakaoyi.teachingk2.safe.stop.test.TestStopPage" android:theme="@style/jiakaoyi_theme"/>
+        <activity android:name="cn.mucang.android.jiakaoyi.teachingk2.safe.stop.test.TestSpeedControllerPage" android:theme="@style/jiakaoyi_theme"/>
+        <activity android:name="cn.mucang.android.jiakaoyi.teachingk2.collect.K2TeachCollectActivity" android:theme="@style/jiakaoyi_theme"/>
+        <activity android:name="cn.mucang.android.jiakaoyi.teachingk2.collect.TeachBindStepActivity" android:theme="@style/jiakaoyi_theme"/>
+        <activity android:name="cn.mucang.android.jiakaoyi.teachingk2.collect.monitor.MonitorActivity" android:theme="@style/jiakaoyi_theme"/>
+        <activity android:name="cn.mucang.android.jiakaoyi.teachingk2.collect.MaterialSelectActivity" android:theme="@style/jiakaoyi_theme"/>
+        <activity android:name="cn.mucang.android.jiakaoyi.teachingk2.collect.v2.SelectStepActivity" android:theme="@style/jiakaoyi_theme"/>
+        <activity android:name="cn.mucang.android.jiakaoyi.teachingk2.collect.v2.StepTeachModelActivity" android:theme="@style/jiakaoyi_theme"/>
+        <activity android:name="cn.mucang.android.jiakaoyi.teachingk2.collect.v2.ShowTeachModelActivity" android:theme="@style/jiakaoyi_theme"/>
+        <activity android:name="cn.mucang.android.jiakaoyi.teachingk2.collect.v2.EditTeachModelActivity" android:theme="@style/jiakaoyi_theme"/>
+        <activity android:name="cn.mucang.android.jiakaoyi.teachingk2.collect.v2.CollectTraceActivity" android:theme="@style/jiakaoyi_theme"/>
+        <activity android:name="cn.mucang.android.jiakaoyi.teachingk2.acceptance.AcceptanceMainActivity" android:theme="@style/jiakaoyi_theme"/>
+        <activity android:name="cn.mucang.android.jiakaoyi.teachingk2.acceptance.AcceptanceChildActivity" android:theme="@style/jiakaoyi_theme"/>
+        <activity android:name="cn.mucang.android.jiakaoyi.teachingk2.acceptance.AcceptanceMapActivity" android:theme="@style/jiakaoyi_theme"/>
+        <activity android:name="cn.mucang.android.jiakaoyi.teachingk2.collect.v2.TeachVerifyActivity" android:theme="@style/jiakaoyi_theme"/>
+        <activity android:name="cn.mucang.android.jiakaoyi.teachingk2.collect.v2.CollectGlobalActivity" android:theme="@style/jiakaoyi_theme"/>
+        <activity android:exported="false" android:name="cn.mucang.android.jiakaoyi.k3setting.teach.K3TeachSettingActivity" android:windowSoftInputMode="stateHidden|adjustPan"/>
+        <activity android:name="cn.mucang.android.jiakaoyi.k3setting.route.manager.RouteActivity" android:theme="@style/jiakaoyi_theme" android:windowSoftInputMode="stateHidden|adjustPan"/>
+        <activity android:name="cn.mucang.android.jiakaoyi.k3setting.route.detail.RouteDetailActivity" android:theme="@style/jiakaoyi_theme" android:windowSoftInputMode="stateHidden|adjustPan"/>
+        <activity android:name="cn.mucang.android.jiakaoyi.k3setting.route.edit.RouteEditActivity" android:theme="@style/jiakaoyi_theme" android:windowSoftInputMode="stateHidden|adjustPan"/>
+        <activity android:name="cn.mucang.android.jiakaoyi.k3setting.order.ManualOrderSettingActivity" android:theme="@style/jiakaoyi_theme"/>
+        <activity android:name="cn.mucang.android.jiakaoyi.k3setting.order.K3RouteSettingActivity" android:theme="@style/jiakaoyi_theme"/>
+        <activity android:name="cn.mucang.android.jiakaoyi.k3setting.order.OrderSettingActivity" android:theme="@style/jiakaoyi_theme"/>
+        <activity android:name="cn.mucang.android.jiakaoyi.k3setting.order.LightOrderActivity" android:theme="@style/jiakaoyi_theme"/>
+        <activity android:name="cn.mucang.android.jiakaoyi.k3setting.order.LightAssembleActivity" android:theme="@style/jiakaoyi_theme"/>
+        <activity android:name="cn.mucang.android.jiakaoyi.k3setting.order.LightAssembleAddActivity" android:theme="@style/jiakaoyi_theme"/>
+        <activity android:name="cn.mucang.android.jiakaoyi.k3setting.order.OrderEditActivity" android:theme="@style/jiakaoyi_theme"/>
+        <activity android:name="cn.mucang.android.jiakaoyi.k3setting.order.K3RouteStepEditActivity" android:theme="@style/jiakaoyi_theme"/>
+        <activity android:name="cn.mucang.android.jiakaoyi.k3setting.order.LightOrderStandardListActivity" android:theme="@style/jiakaoyi_theme"/>
+        <activity android:name="cn.mucang.android.jiakaoyi.k3setting.order.K3OrderStandardListActivity" android:theme="@style/jiakaoyi_theme"/>
+        <activity android:name="cn.mucang.android.jiakaoyi.k3setting.order.OrderPositionSelectActivity" android:theme="@style/jiakaoyi_theme"/>
+        <activity android:name="cn.mucang.android.jiakaoyi.k3setting.order.OrderVoiceCodeSelectActivity" android:theme="@style/jiakaoyi_theme"/>
+        <activity android:name="cn.mucang.android.jiakaoyi.k3setting.backup.K3RuleDeductOrderDiffActivity" android:theme="@style/jiakaoyi_theme"/>
+        <activity android:name="com.amap.api.maps.offlinemap.OfflineMapActivity" android:theme="@style/jiakaoyi_theme"/>
+        <activity android:name="cn.mucang.android.jiakaoyi.k3setting.route.manager.RouteResetActivity" android:theme="@style/jiakaoyi_theme" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="cn.mucang.android.jiakaoyi.k3collect.manager.map.K3MapManagerActivity" android:theme="@style/jiakaoyi_theme"/>
+        <activity android:name="cn.mucang.android.jiakaoyi.k3collect.manager.K3HpDataManagerActivity" android:theme="@style/jiakaoyi_theme"/>
+        <activity android:name="cn.mucang.android.jiakaoyi.k3collect.K3PosCollectActivity" android:theme="@style/jiakaoyi_theme" android:windowSoftInputMode="stateHidden|adjustPan"/>
+        <activity android:name="cn.mucang.android.jiakaoyi.k3collect.manager.map.examSite.K3ExamSiteSelectActivity" android:theme="@style/jiakaoyi_theme"/>
+        <activity android:name="cn.mucang.android.jiakaoyi.k3collect.manager.map.preview.K3MapPreviewActivity" android:theme="@style/jiakaoyi_theme"/>
+        <activity android:name="cn.mucang.android.jiakaoyi.k3collect.ui.MultilaneCollectActivity" android:theme="@style/jiakaoyi_theme" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="cn.mucang.android.jiakaoyi.k3collect.manager.map.migrate.K3MigrateActivity" android:theme="@style/jiakaoyi_theme"/>
+        <activity android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale" android:name="cn.mucang.android.jiakaoyi.mapcollect.collect.PosCollectActivity" android:theme="@style/core__base_fullScreen" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:name="cn.mucang.android.jiakaoyi.mapcollect.manager.map.MapManagerActivity" android:theme="@style/jiakaoyi_theme"/>
+        <activity android:name="cn.mucang.android.jiakaoyi.mapcollect.manager.car.CarDataManagerActivity" android:theme="@style/jiakaoyi_theme"/>
+        <activity android:name="cn.mucang.android.jiakaoyi.mapcollect.manager.map.MapPreviewActivity" android:theme="@style/jiakaoyi_theme"/>
+        <activity android:name="cn.mucang.android.jiakaoyi.mapcollect.manager.map.gpsbase.GpsBaseSelectActivity" android:theme="@style/jiakaoyi_theme"/>
+        <activity android:name="cn.mucang.android.jiakaoyi.mapcollect.select.SelectSchoolCarActivity" android:theme="@style/jiakaoyi_theme"/>
+        <activity android:name="cn.mucang.android.jiakaoyi.mapcollect.manager.car.model.CarModelDbActivity" android:theme="@style/jiakaoyi_theme"/>
+        <activity android:name="cn.mucang.android.jiakaoyi.mapcollect.manager.car.admin.CarAdminActivity" android:theme="@style/jiakaoyi_theme"/>
+        <activity android:name="cn.mucang.android.jiakaoyi.mapcollect.select.brand.CarCollectSelectActivity" android:theme="@style/jiakaoyi_theme"/>
+        <activity android:name="cn.mucang.android.jiakaoyi.mapcollect.manager.car.admin.AgentManageActivity" android:theme="@style/jiakaoyi_theme"/>
+        <activity android:name="cn.mucang.android.jiakaoyi.mapcollect.manager.map.ExamModeSettingActivity" android:theme="@style/jiakaoyi_theme"/>
+        <activity android:name="cn.mucang.android.jiakaoyi.mapcollect.migrate.K2MigrateActivity" android:theme="@style/jiakaoyi_theme"/>
+        <activity android:name="cn.mucang.android.jiakaoyi.mapcollect.manager.map.ProjectMapPreviewActivity" android:theme="@style/jiakaoyi_theme"/>
+        <activity android:name="cn.mucang.android.jiakaoyi.mapcollect.manager.car.model.CarCodeManagerActivity" android:theme="@style/jiakaoyi_theme"/>
+        <activity android:name="cn.mucang.android.jiakaoyi.mapcollect.manager.car.CarPreviewActivity" android:theme="@style/jiakaoyi_theme"/>
+        <activity android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|density|layoutDirection|fontScale" android:hardwareAccelerated="false" android:launchMode="singleTask" android:name="cn.mucang.android.jiakaoyi.unity.activity.UnityMainActivity" android:screenOrientation="landscape" android:theme="@style/jiakaoyi_theme">
+            <meta-data android:name="unityplayer.UnityActivity" android:value="true"/>
+            <meta-data android:name="android.notch_support" android:value="true"/>
+        </activity>
+        <meta-data android:name="unity.splash-mode" android:value="0"/>
+        <meta-data android:name="unity.splash-enable" android:value="true"/>
+        <meta-data android:name="notch.config" android:value="portrait|landscape"/>
+        <meta-data android:name="unity.build-id" android:value="4d2e0137-d5cd-444f-9c69-ecf7a587d386"/>
+        <activity android:name="cn.mucang.jiakaoyi.uilib.siterule.SwitchExamSiteRuleActivity" android:theme="@style/jiakaoyi_theme"/>
+        <activity android:name="cn.mucang.jiakaoyi.uilib.splash.StatusCheckActivity" android:theme="@style/jiakaoyi_theme"/>
+        <activity android:launchMode="singleTop" android:name="cn.mucang.jiakaoyi.uilib.ui.check.SelfCheckActivity" android:theme="@style/jiakaoyi_theme"/>
+        <activity android:name="cn.mucang.jiakaoyi.uilib.ui.setting.SettingActivity" android:theme="@style/jiakaoyi_theme"/>
+        <activity android:name="cn.mucang.jiakaoyi.uilib.ui.setting.signal.SignalCheckActivity" android:theme="@style/jiakaoyi_theme"/>
+        <activity android:name="cn.mucang.jiakaoyi.uilib.ui.setting.ota.FirmWareManagerActivity" android:theme="@style/jiakaoyi_theme"/>
+        <activity android:name="cn.mucang.jiakaoyi.uilib.ui.setting.signal.SignalReverseActivity" android:theme="@style/jiakaoyi_theme"/>
+        <activity android:name="cn.mucang.jiakaoyi.uilib.ui.setting.DebugSettingActivity" android:theme="@style/jiakaoyi_theme"/>
+        <activity android:name="cn.mucang.jiakaoyi.uilib.ui.setting.signal.ExtensionSelectActivity" android:theme="@style/jiakaoyi_theme"/>
+        <activity android:name="cn.mucang.jiakaoyi.uilib.ui.setting.gear.GearLearnActivity" android:theme="@style/jiakaoyi_theme" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="cn.mucang.jiakaoyi.uilib.ui.setting.tts.TtsSettingActivity" android:theme="@style/jiakaoyi_theme"/>
+        <activity android:name="cn.mucang.jiakaoyi.uilib.ui.setting.tts.TtsDebugActivity" android:theme="@style/jiakaoyi_theme"/>
+        <activity android:name="cn.mucang.jiakaoyi.uilib.ui.setting.tts.VoicePackPreviewActivity" android:theme="@style/jiakaoyi_theme"/>
+        <activity android:name="cn.mucang.jiakaoyi.uilib.ui.setting.BroadcastSettingActivity" android:theme="@style/jiakaoyi_theme"/>
+        <activity android:name="cn.mucang.jiakaoyi.uilib.ui.setting.AboutActivity" android:theme="@style/jiakaoyi_theme"/>
+        <activity android:launchMode="singleTop" android:name="cn.mucang.jiakaoyi.uilib.ui.setting.car.CarSelectActivity" android:theme="@style/jiakaoyi_theme"/>
+        <activity android:name="cn.mucang.jiakaoyi.uilib.activate.BindDeviceActivity" android:theme="@style/jiakaoyi_theme"/>
+        <activity android:name="cn.mucang.jiakaoyi.uilib.rule.RuleSettingActivity" android:theme="@style/jiakaoyi_theme" android:windowSoftInputMode="stateHidden|adjustPan"/>
+        <activity android:name="cn.mucang.jiakaoyi.uilib.deduct.DeductSettingActivity" android:theme="@style/jiakaoyi_theme" android:windowSoftInputMode="stateHidden|adjustPan"/>
+        <activity android:name="cn.mucang.jiakaoyi.uilib.ui.backup.BackupActivity" android:theme="@style/jiakaoyi_theme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="cn.mucang.android.core.webview.HTML5Activity" android:screenOrientation="landscape" android:theme="@style/jiakaoyi_theme"/>
+        <activity android:name="cn.mucang.android.selectcity.SelectCityStartupActivity" android:screenOrientation="landscape" android:theme="@style/jiakaoyi_theme"/>
+        <activity android:launchMode="singleTop" android:name="cn.mucang.android.account.activity.AccountSafeActivity" android:screenOrientation="landscape" android:theme="@style/jiakaoyi_theme"/>
+        <activity android:launchMode="singleTop" android:name="cn.mucang.android.account.activity.AuthRealNameActivity" android:screenOrientation="landscape" android:theme="@style/jiakaoyi_theme" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="cn.mucang.android.account.activity.BindThirdActivity" android:screenOrientation="landscape" android:theme="@style/jiakaoyi_theme"/>
+        <activity android:launchMode="singleTop" android:name="cn.mucang.android.account.activity.ChangePasswordActivity" android:screenOrientation="landscape" android:theme="@style/jiakaoyi_theme" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="cn.mucang.android.account.activity.ChangePhoneTransferActivity" android:screenOrientation="landscape" android:theme="@style/jiakaoyi_theme"/>
+        <activity android:name="cn.mucang.android.account.activity.CheckUserActivity" android:screenOrientation="landscape" android:theme="@style/jiakaoyi_theme"/>
+        <activity android:launchMode="singleTop" android:name="cn.mucang.android.account.activity.ForgotPasswordActivity" android:screenOrientation="landscape" android:theme="@style/jiakaoyi_theme" android:windowSoftInputMode="adjustPan"/>
+        <activity android:launchMode="singleTop" android:name="cn.mucang.android.account.activity.LoginActivity" android:screenOrientation="landscape" android:theme="@style/jiakaoyi_theme" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="cn.mucang.android.account.activity.LoginHtml5Activity" android:screenOrientation="landscape" android:theme="@style/jiakaoyi_theme"/>
+        <activity android:launchMode="singleTask" android:name="cn.mucang.android.account.activity.LoginMultiDefaultSmsActivity" android:screenOrientation="landscape" android:theme="@style/jiakaoyi_theme" android:windowSoftInputMode="adjustPan"/>
+        <activity android:launchMode="singleTop" android:name="cn.mucang.android.account.activity.SetPasswordActivity" android:screenOrientation="landscape" android:theme="@style/jiakaoyi_theme" android:windowSoftInputMode="adjustPan"/>
+        <activity android:launchMode="singleTop" android:name="cn.mucang.android.account.activity.ValidationActivity" android:screenOrientation="landscape" android:theme="@style/jiakaoyi_theme" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="cn.mucang.jiakaoyi.uilib.ui.setting.gps.HpGpsTestActivity" android:screenOrientation="landscape" android:theme="@style/jiakaoyi_theme"/>
+        <activity android:name="cn.mucang.jiakaoyi.uilib.ui.setting.gear.GearGyroLearningPage" android:theme="@style/jiakaoyi_theme"/>
+        <activity android:name="cn.mucang.jiakaoyi.uilib.ui.setting.gear.celibration.HardwareGearGyroLearningPage" android:theme="@style/jiakaoyi_theme"/>
+        <activity android:name="cn.mucang.jiakaoyi.uilib.sso.SsoLoginActivity" android:theme="@style/jiakaoyi_theme"/>
+        <activity android:name="cn.mucang.jiakaoyi.uilib.ui.setting.BrakeStateDebugActivity" android:theme="@style/jiakaoyi_theme"/>
+        <activity android:name="cn.mucang.jiakaoyi.uilib.siterule.InstructChangeActivity" android:theme="@style/jiakaoyi_theme"/>
+        <activity android:name="cn.mucang.jiakaoyi.uilib.ui.setting.VoiceTestActivity" android:theme="@style/jiakaoyi_theme"/>
+        <activity android:name="cn.mucang.jiakaoyi.uilib.ui.setting.GpsDebugInfoActivity" android:theme="@style/jiakaoyi_theme"/>
+        <activity android:name="cn.mucang.jiakaoyi.uilib.diff.RuleDeductDiffActivity" android:theme="@style/jiakaoyi_theme"/>
+        <activity android:name="cn.mucang.jiakaoyi.uilib.rule.RuleHistoryModifyLogActivity" android:theme="@style/jiakaoyi_theme"/>
+        <activity android:name="cn.mucang.jiakaoyi.uilib.rule.RulePersonalModifyActivity" android:theme="@style/jiakaoyi_theme"/>
+        <activity android:name="cn.mucang.jiakaoyi.uilib.deduct.DeductHistoryModifyLogActivity" android:theme="@style/jiakaoyi_theme"/>
+        <activity android:name="cn.mucang.jiakaoyi.uilib.deduct.DeductPersonalModifyActivity" android:theme="@style/jiakaoyi_theme"/>
+        <activity android:name="cn.mucang.jiakaoyi.uilib.actionlog.ActionLogActivity" android:theme="@style/jiakaoyi_theme"/>
+        <activity android:name="cn.mucang.jiakaoyi.uilib.ui.setting.gear.GearAutoGyroLearningPage" android:theme="@style/jiakaoyi_theme"/>
+        <activity android:launchMode="singleTask" android:name="cn.mucang.jiakaoyi.uilib.debug.DebugActivity" android:theme="@style/jiakaoyi_theme" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="cn.mucang.jiakaoyi.uilib.ui.setting.CollectGpsPage" android:theme="@style/jiakaoyi_theme"/>
+        <activity android:name="cn.mucang.jiakaoyi.uilib.ui.setting.gear.celibration.GearCalibrationActivity" android:screenOrientation="landscape" android:theme="@style/jiakaoyi_theme"/>
+        <activity android:name="cn.mucang.jiakaoyi.uilib.ui.setting.car.RealCarSelectActivity" android:theme="@style/jiakaoyi_theme"/>
+        <activity android:name="cn.mucang.jiakaoyi.uilib.ui.setting.DebugToolsActivity" android:theme="@style/jiakaoyi_theme"/>
+        <activity android:name="cn.mucang.jiakaoyi.uilib.ui.skin.ExamSkinActivity" android:theme="@style/jiakaoyi_theme"/>
+        <activity android:name="cn.mucang.jiakaoyi.sundial.client.CameraActivity" android:theme="@style/jiakaoyi_theme"/>
+        <activity android:name="cn.mucang.jiakaoyi.sundial.client.CameraTestActivity" android:theme="@style/jiakaoyi_theme"/>
+        <activity android:name="cn.mucang.android.jky.usbcamera.adjust.AdjustSideActivity" android:theme="@style/jiakaoyi_theme"/>
+        <activity android:name="cn.mucang.android.jky.usbcamera.detectside.USBCameraActivity" android:theme="@style/jiakaoyi_theme"/>
+        <activity android:name="cn.mucang.android.jky.usbcamera.detectside.USBCameraNoViewActivity" android:theme="@style/jiakaoyi_theme"/>
+        <service android:exported="false" android:name="cn.mucang.android.jiakaoyi.signal.handle.gps.debug.DebugGpsService"/>
+        <activity android:name="cn.mucang.sundial.library.activity.BaseActivity" android:screenOrientation="landscape" android:theme="@style/Theme.TimingTerminal"/>
+        <activity android:launchMode="singleTask" android:name="cn.mucang.sundial.library.activity.MainActivity" android:screenOrientation="landscape" android:theme="@style/Theme.TimingTerminal"/>
+        <activity android:launchMode="singleTask" android:name="cn.mucang.sundial.library.activity.LoginActivity" android:screenOrientation="landscape" android:theme="@style/Theme.TimingTerminal"/>
+        <activity android:launchMode="singleTask" android:name="cn.mucang.sundial.library.activity.LoginStudentActivity" android:screenOrientation="landscape" android:theme="@style/Theme.TimingTerminal"/>
+        <activity android:launchMode="singleTask" android:name="cn.mucang.sundial.library.activity.StudentInfoActivity" android:screenOrientation="landscape" android:theme="@style/Theme.TimingTerminal"/>
+        <activity android:name="cn.mucang.sundial.library.activity.FaceCheckActivity" android:screenOrientation="landscape" android:theme="@style/Theme.TimingTerminal"/>
+        <activity android:name="cn.mucang.sundial.library.activity.TrainingFaceCheckActivity" android:screenOrientation="landscape" android:theme="@style/Theme.TimingTerminal"/>
+        <activity android:launchMode="singleTask" android:name="cn.mucang.sundial.library.activity.CoachInfoActivity" android:screenOrientation="landscape" android:theme="@style/Theme.TimingTerminal"/>
+        <activity android:name="cn.mucang.sundial.library.activity.InputIdCardActivity" android:screenOrientation="landscape" android:theme="@style/Theme.TimingTerminal" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name="cn.mucang.sundial.library.activity.SettingActivity" android:screenOrientation="landscape" android:theme="@style/Theme.TimingTerminal"/>
+        <activity android:name="cn.mucang.sundial.library.activity.AdminCheckActivity" android:screenOrientation="landscape" android:theme="@style/Theme.TimingTerminal"/>
+        <activity android:name="cn.mucang.sundial.library.activity.RegisterActivity" android:screenOrientation="landscape" android:theme="@style/Theme.TimingTerminal" android:windowSoftInputMode="stateHidden|adjustPan"/>
+        <activity android:name="cn.mucang.sundial.library.activity.DebugActivity2" android:screenOrientation="landscape" android:theme="@style/Theme.TimingTerminal"/>
+        <activity android:name="cn.mucang.sundial.library.activity.DebugActivity" android:screenOrientation="landscape" android:theme="@style/Theme.TimingTerminal"/>
+        <activity android:name="cn.mucang.sundial.library.activity.CameTestActivity" android:screenOrientation="landscape" android:theme="@style/Theme.TimingTerminal"/>
+        <activity android:name="cn.mucang.sundial.library.activity.SelfCheckActivity" android:screenOrientation="landscape" android:theme="@style/Theme.TimingTerminal"/>
+        <activity android:name="cn.mucang.sundial.library.activity.AnalogVoiceBroadcastActivity" android:screenOrientation="landscape" android:theme="@style/Theme.TimingTerminal"/>
+        <activity android:launchMode="singleTask" android:name="cn.mucang.sundial.library.sdk.coach.CoachLoginActivity" android:screenOrientation="landscape" android:theme="@style/Theme.TimingTerminal"/>
+        <activity android:name="cn.mucang.sundial.library.sdk.coach.CoachFaceCheckActivity" android:screenOrientation="landscape" android:theme="@style/Theme.TimingTerminal"/>
+        <activity android:launchMode="singleTop" android:name="cn.mucang.android.account.qrcode.activity.QrCodeAuthActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:launchMode="singleTop" android:name="com.mobile.auth.gatewayauth.LoginAuthActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:launchMode="singleTop" android:name="com.mobile.auth.gatewayauth.activity.AuthWebVeiwActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:launchMode="singleTop" android:name="com.cmic.sso.sdk.activity.LoginAuthActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTask" android:name="cn.mucang.android.account.third.QQLoginAssistActivity" android:theme="@style/mucang.activity.transparent.no_anim"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTask" android:name="cn.mucang.android.account.third.WXLoginAssistActivity" android:theme="@style/mucang.activity.transparent.no_anim"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="cn.mucang.android.account.activity.SMSVerifyActivity" android:theme="@style/core__error_action_translucent" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="cn.mucang.android.selectcity.SelectCityByProvinceActivity" android:screenOrientation="portrait" android:theme="@style/core__base_theme"/>
+        <activity android:name="cn.mucang.android.selectcity.SelectRegionByCityActivity" android:screenOrientation="portrait" android:theme="@style/core__base_theme"/>
+        <activity android:name="cn.mucang.android.selectcity.CityListActivity" android:screenOrientation="portrait" android:theme="@style/core__base_theme"/>
+        <activity android:configChanges="screenLayout|screenSize|smallestScreenSize" android:name="cn.mucang.android.core.ui.page.PageActivity" android:screenOrientation="portrait"/>
+        <activity android:name="cn.mucang.android.download.ui.DownloadListActivity"/>
+        <service android:name="cn.mucang.android.download.service.DownloadService" android:process=":swb"/>
+        <service android:name="cn.mucang.android.download.service.DownloadMonitorService"/>
+        <provider android:authorities="cn.mucang.android.jiakaoyi.teachingk2.download" android:exported="false" android:name="cn.mucang.android.download.provider.DownloadParamProvider" android:process=":swb"/>
+        <receiver android:exported="true" android:name="cn.mucang.android.download.notification.DownloadNotificationEventReceiver" android:permission="cn.mucang.android.jiakaoyi.teachingk2.permission.core.download.NOTIFICATION_EVENT">
+            <intent-filter>
+                <action android:name="cn.mucang.android.core.download.notification.clicked"/>
+                <action android:name="cn.mucang.android.core.download.notification.deleted"/>
+            </intent-filter>
+        </receiver>
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+        <provider android:authorities="cn.mucang.android.jiakaoyi.teachingk2.file.provider" android:exported="false" android:grantUriPermissions="true" android:name="cn.mucang.android.core.misc.McFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/core__provider_paths"/>
+        </provider>
+        <provider android:authorities="cn.mucang.android.jiakaoyi.teachingk2.deviceId" android:exported="false" android:multiprocess="false" android:name="cn.mucang.android.core.identity.internal.DeviceIdProvider"/>
+        <meta-data android:name="BaiduMobAd_CHANNEL" android:value="please-change-me"/>
+        <meta-data android:name="qudao" android:value="testBaiduStatics"/>
+        <meta-data android:name="renyuan" android:value="renyuan"/>
+        <provider android:authorities="cn.mucang.android.jiakaoyi.teachingk2.oaid.no.one.use" android:exported="false" android:name="cn.mucang.android.core.identity.OaidProviderForInit" android:process=":swb2"/>
+        <activity android:name="cn.mucang.android.core.config.YourActivity" android:screenOrientation="portrait" android:theme="@style/core__base_theme" android:windowSoftInputMode="stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="cn.mucang.android.core.api.verify.ErrorDialogActivity" android:theme="@style/core__error_action_translucent" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="cn.mucang.android.core.api.verify.GeetestVerifyActivity" android:theme="@style/core__error_action_translucent" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="cn.mucang.android.core.api.verify.captcha.CaptchaVerifyActivity" android:theme="@style/core__error_action_translucent" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="true" android:launchMode="singleTask" android:name="cn.mucang.android.push.activity.PushActivity" android:screenOrientation="behind" android:theme="@style/core__base_theme">
+            <intent-filter>
+                <action android:name="com.coloros.push.MESSAGE_CLICK"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="gateway" android:scheme="mucang"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="com.vivo.push.notifysdk" android:path="/jump" android:scheme="mucang-push"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="cn.mucang.android.core.permission.setting.PermissionDetailActivity" android:screenOrientation="portrait" android:theme="@style/core__base_theme"/>
+        <activity android:name="cn.mucang.android.core.permission.setting.PermissionSettingActivity" android:screenOrientation="portrait" android:theme="@style/core__base_theme"/>
+        <activity android:name="cn.mucang.android.core.config.StartServiceBridgeActivity"/>
+        <receiver android:exported="false" android:name="cn.mucang.android.core.identity.internal.DeviceIdReceiver">
+            <intent-filter>
+                <action android:name="cn.mucang.action.core.uim"/>
+                <data android:scheme="mucang"/>
+            </intent-filter>
+        </receiver>
+        <provider android:authorities="cn.mucang.android.jiakaoyi.teachingk2.org.libpag.contextprovider" android:exported="false" android:name="org.extra.tools.ContextProvider"/>
+        <meta-data android:name="com.bumptech.glide.integration.okhttp3.OkHttpGlideModule" android:value="GlideModule"/>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.mlkit.common.internal.MlKitComponentDiscoveryService">
+            <meta-data android:name="com.google.firebase.components:com.google.mlkit.vision.face.internal.FaceRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.mlkit.vision.common.internal.VisionCommonRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.mlkit.common.internal.CommonComponentRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <provider android:authorities="cn.mucang.android.jiakaoyi.teachingk2.mlkitinitprovider" android:exported="false" android:initOrder="99" android:name="com.google.mlkit.common.internal.MlKitInitProvider"/>
+        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery">
+            <meta-data android:name="backend:com.google.android.datatransport.cct.CctBackendFactory" android:value="cct"/>
+        </service>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"/>
+        <provider android:authorities="cn.mucang.android.jiakaoyi.teachingk2.lifecycle-process" android:exported="false" android:multiprocess="true" android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"/>
+        <provider android:authorities="cn.mucang.android.jiakaoyi.teachingk2.backgroundLibrary" android:exported="false" android:multiprocess="true" android:name="com.noober.background.BackgroundContentProvider"/>
+        <meta-data android:name="com.bumptech.glide.integration.webp.WebpGlideModule" android:value="GlideModule"/>
+        <service android:name="com.amap.api.location.APSService"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:multiprocess="true" android:name="com.blankj.utilcode.util.PermissionUtils$PermissionActivity" android:theme="@style/ActivityTranslucent" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <provider android:authorities="cn.mucang.android.jiakaoyi.teachingk2.utilcode.provider" android:exported="false" android:grantUriPermissions="true" android:multiprocess="true" android:name="com.blankj.utilcode.util.Utils$FileProvider4UtilCode">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/util_code_provider_paths"/>
+        </provider>
+        <service android:name="com.blankj.utilcode.util.MessengerUtils$ServerService">
+            <intent-filter>
+                <action android:name="cn.mucang.android.jiakaoyi.teachingk2.messenger"/>
+            </intent-filter>
+        </service>
+    </application>
+</manifest>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/titleLayout" layout="@layout/common_title" />
+    <cn.mucang.android.core.widget.StateLayout android:id="@id/stateLayout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:background="#ffe8e8" android:paddingTop="@dimen/dp_8" android:paddingBottom="@dimen/dp_8" android:layout_width="match_parent" android:layout_height="@dimen/dp_60" android:paddingStart="@dimen/dp_16" android:paddingEnd="@dimen/dp_16">
+                <TextView android:textSize="@dimen/dp_16" android:textColor="#ff2e2e" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="备注：" />
+                <TextView android:textSize="@dimen/dp_16" android:textColor="#ff2e2e" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="1.重置后，路线将恢复为本设备代理报备的默认参数，且无法撤回，请谨慎操作。\n2.不是本设备代理报备的路线（自定义采集、附近添加的路线）将会删除。" />
+            </LinearLayout>
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/recyclerView" android:layout_width="match_parent" android:layout_height="match_parent" />
+        </LinearLayout>
+    </cn.mucang.android.core.widget.StateLayout>
+</LinearLayout>

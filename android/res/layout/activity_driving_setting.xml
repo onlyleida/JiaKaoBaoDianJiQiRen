@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:background="#f2f5fa" android:layout_width="match_parent" android:layout_height="match_parent" android:layoutDirection="ltr"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/title" layout="@layout/teaching_title" />
+    <androidx.cardview.widget.CardView android:id="@id/scanCard" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_marginTop="@dimen/rpx_30" android:layout_marginBottom="@dimen/rpx_30" android:layout_marginStart="@dimen/rpx_36" android:layout_marginEnd="@dimen/rpx_36" app:cardBackgroundColor="@android:color/white" app:cardCornerRadius="3.0dp" app:cardElevation="0.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@id/title">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/dataRv" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,44 @@
+.class public final synthetic Lcn/mucang/jiakaoyi/uilib/ui/setting/gear/t;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lcn/mucang/android/jiakaoyi/framework/h/b;
+
+
+# static fields
+.field public static final synthetic a:Lcn/mucang/jiakaoyi/uilib/ui/setting/gear/t;
+
+
+# direct methods
+.method static synthetic constructor <clinit>()V
+    .locals 1
+
+    new-instance v0, Lcn/mucang/jiakaoyi/uilib/ui/setting/gear/t;
+
+    invoke-direct {v0}, Lcn/mucang/jiakaoyi/uilib/ui/setting/gear/t;-><init>()V
+
+    sput-object v0, Lcn/mucang/jiakaoyi/uilib/ui/setting/gear/t;->a:Lcn/mucang/jiakaoyi/uilib/ui/setting/gear/t;
+
+    return-void
+.end method
+
+.method private synthetic constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final callback(Ljava/lang/Object;)V
+    .locals 0
+
+    check-cast p1, Ljava/lang/Integer;
+
+    invoke-static {p1}, Lcn/mucang/jiakaoyi/uilib/ui/setting/gear/GearGyroLearningPage;->V(Ljava/lang/Integer;)V
+
+    return-void
+.end method

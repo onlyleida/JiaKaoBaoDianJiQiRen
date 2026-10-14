@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="@dimen/dp_16" android:paddingTop="@dimen/dp_8" android:paddingBottom="@dimen/dp_8" android:layout_width="match_parent" android:layout_height="wrap_content" android:layoutDirection="ltr"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/checkCb" android:padding="@dimen/dp_5" android:layout_width="@dimen/dp_31" android:layout_height="@dimen/dp_31" android:src="@drawable/ic__signal_unchecked" />
+    <ImageView android:id="@id/stateIv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_8" android:src="@drawable/signal_ic_off" />
+    <TextView android:textSize="@dimen/dp_18" android:textColor="#ff333333" android:id="@id/nameTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_8" android:text="车门-" />
+</LinearLayout>

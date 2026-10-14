@@ -1,0 +1,411 @@
+.class final Lcn/mucang/jiakaoyi/uilib/rule/RuleHistoryModifyLogActivity$init$2$1;
+.super Lkotlin/coroutines/jvm/internal/SuspendLambda;
+.source "SourceFile"
+
+# interfaces
+.implements Lkotlin/jvm/b/p;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcn/mucang/jiakaoyi/uilib/rule/RuleHistoryModifyLogActivity$init$2;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x18
+    name = null
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lkotlin/coroutines/jvm/internal/SuspendLambda;",
+        "Lkotlin/jvm/b/p<",
+        "Lkotlinx/coroutines/i0;",
+        "Lkotlin/coroutines/c<",
+        "-",
+        "Lkotlin/v;",
+        ">;",
+        "Ljava/lang/Object;",
+        ">;"
+    }
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\u008a@"
+    }
+    d2 = {
+        "<anonymous>",
+        "",
+        "Lkotlinx/coroutines/CoroutineScope;"
+    }
+    k = 0x3
+    mv = {
+        0x1,
+        0x5,
+        0x1
+    }
+    xi = 0x30
+.end annotation
+
+.annotation runtime Lkotlin/coroutines/jvm/internal/d;
+    c = "cn.mucang.jiakaoyi.uilib.rule.RuleHistoryModifyLogActivity$init$2$1"
+    f = "RuleHistoryModifyLogActivity.kt"
+    l = {}
+    m = "invokeSuspend"
+.end annotation
+
+
+# instance fields
+.field final synthetic $dataAdapter:Lcn/mucang/jiakaoyi/uilib/rule/RuleHistoryModifyLogActivity$b;
+
+.field final synthetic $loadingDialog:Lcn/mucang/android/account/ui/a;
+
+.field final synthetic $logs:Lkotlin/jvm/internal/Ref$ObjectRef;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lkotlin/jvm/internal/Ref$ObjectRef<",
+            "Ljava/util/List<",
+            "Ljava/lang/Object;",
+            ">;>;"
+        }
+    .end annotation
+.end field
+
+.field final synthetic $ruleModifyLogs:Ljava/util/List;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/List<",
+            "Lcn/mucang/android/jiakaoyi/framework/d/c;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field label:I
+
+.field final synthetic this$0:Lcn/mucang/jiakaoyi/uilib/rule/RuleHistoryModifyLogActivity;
+
+
+# direct methods
+.method constructor <init>(Lcn/mucang/android/account/ui/a;Ljava/util/List;Lkotlin/jvm/internal/Ref$ObjectRef;Lcn/mucang/jiakaoyi/uilib/rule/RuleHistoryModifyLogActivity;Lcn/mucang/jiakaoyi/uilib/rule/RuleHistoryModifyLogActivity$b;Lkotlin/coroutines/c;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lcn/mucang/android/account/ui/a;",
+            "Ljava/util/List<",
+            "+",
+            "Lcn/mucang/android/jiakaoyi/framework/d/c;",
+            ">;",
+            "Lkotlin/jvm/internal/Ref$ObjectRef<",
+            "Ljava/util/List<",
+            "Ljava/lang/Object;",
+            ">;>;",
+            "Lcn/mucang/jiakaoyi/uilib/rule/RuleHistoryModifyLogActivity;",
+            "Lcn/mucang/jiakaoyi/uilib/rule/RuleHistoryModifyLogActivity$b;",
+            "Lkotlin/coroutines/c<",
+            "-",
+            "Lcn/mucang/jiakaoyi/uilib/rule/RuleHistoryModifyLogActivity$init$2$1;",
+            ">;)V"
+        }
+    .end annotation
+
+    iput-object p1, p0, Lcn/mucang/jiakaoyi/uilib/rule/RuleHistoryModifyLogActivity$init$2$1;->$loadingDialog:Lcn/mucang/android/account/ui/a;
+
+    iput-object p2, p0, Lcn/mucang/jiakaoyi/uilib/rule/RuleHistoryModifyLogActivity$init$2$1;->$ruleModifyLogs:Ljava/util/List;
+
+    iput-object p3, p0, Lcn/mucang/jiakaoyi/uilib/rule/RuleHistoryModifyLogActivity$init$2$1;->$logs:Lkotlin/jvm/internal/Ref$ObjectRef;
+
+    iput-object p4, p0, Lcn/mucang/jiakaoyi/uilib/rule/RuleHistoryModifyLogActivity$init$2$1;->this$0:Lcn/mucang/jiakaoyi/uilib/rule/RuleHistoryModifyLogActivity;
+
+    iput-object p5, p0, Lcn/mucang/jiakaoyi/uilib/rule/RuleHistoryModifyLogActivity$init$2$1;->$dataAdapter:Lcn/mucang/jiakaoyi/uilib/rule/RuleHistoryModifyLogActivity$b;
+
+    const/4 p1, 0x2
+
+    invoke-direct {p0, p1, p6}, Lkotlin/coroutines/jvm/internal/SuspendLambda;-><init>(ILkotlin/coroutines/c;)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final create(Ljava/lang/Object;Lkotlin/coroutines/c;)Lkotlin/coroutines/c;
+    .locals 7
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/Object;",
+            "Lkotlin/coroutines/c<",
+            "*>;)",
+            "Lkotlin/coroutines/c<",
+            "Lkotlin/v;",
+            ">;"
+        }
+    .end annotation
+
+    new-instance p1, Lcn/mucang/jiakaoyi/uilib/rule/RuleHistoryModifyLogActivity$init$2$1;
+
+    iget-object v1, p0, Lcn/mucang/jiakaoyi/uilib/rule/RuleHistoryModifyLogActivity$init$2$1;->$loadingDialog:Lcn/mucang/android/account/ui/a;
+
+    iget-object v2, p0, Lcn/mucang/jiakaoyi/uilib/rule/RuleHistoryModifyLogActivity$init$2$1;->$ruleModifyLogs:Ljava/util/List;
+
+    iget-object v3, p0, Lcn/mucang/jiakaoyi/uilib/rule/RuleHistoryModifyLogActivity$init$2$1;->$logs:Lkotlin/jvm/internal/Ref$ObjectRef;
+
+    iget-object v4, p0, Lcn/mucang/jiakaoyi/uilib/rule/RuleHistoryModifyLogActivity$init$2$1;->this$0:Lcn/mucang/jiakaoyi/uilib/rule/RuleHistoryModifyLogActivity;
+
+    iget-object v5, p0, Lcn/mucang/jiakaoyi/uilib/rule/RuleHistoryModifyLogActivity$init$2$1;->$dataAdapter:Lcn/mucang/jiakaoyi/uilib/rule/RuleHistoryModifyLogActivity$b;
+
+    move-object v0, p1
+
+    move-object v6, p2
+
+    invoke-direct/range {v0 .. v6}, Lcn/mucang/jiakaoyi/uilib/rule/RuleHistoryModifyLogActivity$init$2$1;-><init>(Lcn/mucang/android/account/ui/a;Ljava/util/List;Lkotlin/jvm/internal/Ref$ObjectRef;Lcn/mucang/jiakaoyi/uilib/rule/RuleHistoryModifyLogActivity;Lcn/mucang/jiakaoyi/uilib/rule/RuleHistoryModifyLogActivity$b;Lkotlin/coroutines/c;)V
+
+    return-object p1
+.end method
+
+.method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
+
+    check-cast p1, Lkotlinx/coroutines/i0;
+
+    check-cast p2, Lkotlin/coroutines/c;
+
+    invoke-virtual {p0, p1, p2}, Lcn/mucang/jiakaoyi/uilib/rule/RuleHistoryModifyLogActivity$init$2$1;->invoke(Lkotlinx/coroutines/i0;Lkotlin/coroutines/c;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public final invoke(Lkotlinx/coroutines/i0;Lkotlin/coroutines/c;)Ljava/lang/Object;
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lkotlinx/coroutines/i0;",
+            "Lkotlin/coroutines/c<",
+            "-",
+            "Lkotlin/v;",
+            ">;)",
+            "Ljava/lang/Object;"
+        }
+    .end annotation
+
+    invoke-virtual {p0, p1, p2}, Lcn/mucang/jiakaoyi/uilib/rule/RuleHistoryModifyLogActivity$init$2$1;->create(Ljava/lang/Object;Lkotlin/coroutines/c;)Lkotlin/coroutines/c;
+
+    move-result-object p1
+
+    check-cast p1, Lcn/mucang/jiakaoyi/uilib/rule/RuleHistoryModifyLogActivity$init$2$1;
+
+    sget-object p2, Lkotlin/v;->a:Lkotlin/v;
+
+    invoke-virtual {p1, p2}, Lcn/mucang/jiakaoyi/uilib/rule/RuleHistoryModifyLogActivity$init$2$1;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public final invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 4
+
+    invoke-static {}, Lkotlin/coroutines/intrinsics/a;->d()Ljava/lang/Object;
+
+    .line 1
+    iget v0, p0, Lcn/mucang/jiakaoyi/uilib/rule/RuleHistoryModifyLogActivity$init$2$1;->label:I
+
+    if-nez v0, :cond_4
+
+    invoke-static {p1}, Lkotlin/k;->b(Ljava/lang/Object;)V
+
+    .line 2
+    iget-object p1, p0, Lcn/mucang/jiakaoyi/uilib/rule/RuleHistoryModifyLogActivity$init$2$1;->$loadingDialog:Lcn/mucang/android/account/ui/a;
+
+    invoke-virtual {p1}, Landroid/app/Dialog;->dismiss()V
+
+    .line 3
+    iget-object p1, p0, Lcn/mucang/jiakaoyi/uilib/rule/RuleHistoryModifyLogActivity$init$2$1;->$ruleModifyLogs:Ljava/util/List;
+
+    invoke-interface {p1}, Ljava/util/Collection;->isEmpty()Z
+
+    move-result p1
+
+    xor-int/lit8 p1, p1, 0x1
+
+    if-eqz p1, :cond_3
+
+    .line 4
+    iget-object p1, p0, Lcn/mucang/jiakaoyi/uilib/rule/RuleHistoryModifyLogActivity$init$2$1;->$ruleModifyLogs:Ljava/util/List;
+
+    invoke-interface {p1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+
+    move-result-object p1
+
+    :cond_0
+    :goto_0
+    invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lcn/mucang/android/jiakaoyi/framework/d/c;
+
+    .line 5
+    iget-object v1, p0, Lcn/mucang/jiakaoyi/uilib/rule/RuleHistoryModifyLogActivity$init$2$1;->$logs:Lkotlin/jvm/internal/Ref$ObjectRef;
+
+    iget-object v1, v1, Lkotlin/jvm/internal/Ref$ObjectRef;->element:Ljava/lang/Object;
+
+    check-cast v1, Ljava/util/List;
+
+    iget-object v2, v0, Lcn/mucang/android/jiakaoyi/framework/d/c;->a:Ljava/lang/String;
+
+    const-string v3, "ruleModifyLog.time"
+
+    invoke-static {v2, v3}, Lkotlin/jvm/internal/r;->d(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-static {v2}, Ljava/lang/Long;->parseLong(Ljava/lang/String;)J
+
+    move-result-wide v2
+
+    invoke-static {v2, v3}, Lkotlin/coroutines/jvm/internal/a;->e(J)Ljava/lang/Long;
+
+    move-result-object v2
+
+    invoke-interface {v1, v2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    .line 6
+    :try_start_0
+    iget-object v0, v0, Lcn/mucang/android/jiakaoyi/framework/d/c;->b:Ljava/lang/String;
+
+    if-eqz v0, :cond_0
+
+    .line 7
+    iget-object v1, p0, Lcn/mucang/jiakaoyi/uilib/rule/RuleHistoryModifyLogActivity$init$2$1;->$logs:Lkotlin/jvm/internal/Ref$ObjectRef;
+
+    iget-object v1, v1, Lkotlin/jvm/internal/Ref$ObjectRef;->element:Ljava/lang/Object;
+
+    check-cast v1, Ljava/util/List;
+
+    const-class v2, Lcn/mucang/jiakaoyi/uilib/model/RuleConfigEntity;
+
+    invoke-static {v0, v2}, Lcom/alibaba/fastjson/JSON;->parseArray(Ljava/lang/String;Ljava/lang/Class;)Ljava/util/List;
+
+    move-result-object v0
+
+    const-string v2, "parseArray(ruleModifyLog\u2026ConfigEntity::class.java)"
+
+    invoke-static {v0, v2}, Lkotlin/jvm/internal/r;->d(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-interface {v1, v0}, Ljava/util/List;->addAll(Ljava/util/Collection;)Z
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    goto :goto_0
+
+    :catch_0
+    move-exception v0
+
+    .line 8
+    invoke-virtual {v0}, Ljava/lang/Exception;->printStackTrace()V
+
+    goto :goto_0
+
+    .line 9
+    :cond_1
+    iget-object p1, p0, Lcn/mucang/jiakaoyi/uilib/rule/RuleHistoryModifyLogActivity$init$2$1;->this$0:Lcn/mucang/jiakaoyi/uilib/rule/RuleHistoryModifyLogActivity;
+
+    invoke-virtual {p1}, Lcn/mucang/android/jiakaoyi/framework/base/m/c;->g()Landroidx/viewbinding/a;
+
+    move-result-object p1
+
+    check-cast p1, Lcom/mucang/android/jiakaoyi/uilib/databinding/ActivityModifyPersonalBinding;
+
+    iget-object p1, p1, Lcom/mucang/android/jiakaoyi/uilib/databinding/ActivityModifyPersonalBinding;->stateLayout:Lcn/mucang/android/core/widget/StateLayout;
+
+    invoke-virtual {p1}, Lcn/mucang/android/core/widget/StateLayout;->c()V
+
+    .line 10
+    iget-object p1, p0, Lcn/mucang/jiakaoyi/uilib/rule/RuleHistoryModifyLogActivity$init$2$1;->$logs:Lkotlin/jvm/internal/Ref$ObjectRef;
+
+    iget-object p1, p1, Lkotlin/jvm/internal/Ref$ObjectRef;->element:Ljava/lang/Object;
+
+    check-cast p1, Ljava/util/Collection;
+
+    invoke-interface {p1}, Ljava/util/Collection;->isEmpty()Z
+
+    move-result p1
+
+    xor-int/lit8 p1, p1, 0x1
+
+    if-eqz p1, :cond_2
+
+    .line 11
+    iget-object p1, p0, Lcn/mucang/jiakaoyi/uilib/rule/RuleHistoryModifyLogActivity$init$2$1;->$dataAdapter:Lcn/mucang/jiakaoyi/uilib/rule/RuleHistoryModifyLogActivity$b;
+
+    iget-object v0, p0, Lcn/mucang/jiakaoyi/uilib/rule/RuleHistoryModifyLogActivity$init$2$1;->$logs:Lkotlin/jvm/internal/Ref$ObjectRef;
+
+    iget-object v0, v0, Lkotlin/jvm/internal/Ref$ObjectRef;->element:Ljava/lang/Object;
+
+    check-cast v0, Ljava/util/List;
+
+    invoke-virtual {p1, v0}, Lcom/drakeet/multitype/f;->i(Ljava/util/List;)V
+
+    .line 12
+    iget-object p1, p0, Lcn/mucang/jiakaoyi/uilib/rule/RuleHistoryModifyLogActivity$init$2$1;->$dataAdapter:Lcn/mucang/jiakaoyi/uilib/rule/RuleHistoryModifyLogActivity$b;
+
+    invoke-virtual {p1}, Landroidx/recyclerview/widget/RecyclerView$Adapter;->notifyDataSetChanged()V
+
+    goto :goto_1
+
+    .line 13
+    :cond_2
+    iget-object p1, p0, Lcn/mucang/jiakaoyi/uilib/rule/RuleHistoryModifyLogActivity$init$2$1;->this$0:Lcn/mucang/jiakaoyi/uilib/rule/RuleHistoryModifyLogActivity;
+
+    invoke-virtual {p1}, Lcn/mucang/android/jiakaoyi/framework/base/m/c;->g()Landroidx/viewbinding/a;
+
+    move-result-object p1
+
+    check-cast p1, Lcom/mucang/android/jiakaoyi/uilib/databinding/ActivityModifyPersonalBinding;
+
+    iget-object p1, p1, Lcom/mucang/android/jiakaoyi/uilib/databinding/ActivityModifyPersonalBinding;->stateLayout:Lcn/mucang/android/core/widget/StateLayout;
+
+    invoke-virtual {p1}, Lcn/mucang/android/core/widget/StateLayout;->d()V
+
+    goto :goto_1
+
+    .line 14
+    :cond_3
+    iget-object p1, p0, Lcn/mucang/jiakaoyi/uilib/rule/RuleHistoryModifyLogActivity$init$2$1;->this$0:Lcn/mucang/jiakaoyi/uilib/rule/RuleHistoryModifyLogActivity;
+
+    invoke-virtual {p1}, Lcn/mucang/android/jiakaoyi/framework/base/m/c;->g()Landroidx/viewbinding/a;
+
+    move-result-object p1
+
+    check-cast p1, Lcom/mucang/android/jiakaoyi/uilib/databinding/ActivityModifyPersonalBinding;
+
+    iget-object p1, p1, Lcom/mucang/android/jiakaoyi/uilib/databinding/ActivityModifyPersonalBinding;->stateLayout:Lcn/mucang/android/core/widget/StateLayout;
+
+    invoke-virtual {p1}, Lcn/mucang/android/core/widget/StateLayout;->d()V
+
+    .line 15
+    :goto_1
+    sget-object p1, Lkotlin/v;->a:Lkotlin/v;
+
+    return-object p1
+
+    :cond_4
+    new-instance p1, Ljava/lang/IllegalStateException;
+
+    const-string v0, "call to \'resume\' before \'invoke\' with coroutine"
+
+    invoke-direct {p1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    throw p1
+.end method

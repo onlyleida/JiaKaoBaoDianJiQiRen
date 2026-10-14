@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="#efefef" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/container" android:paddingTop="16.0dp" android:paddingBottom="16.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textColor="#666666" android:gravity="center_vertical" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:layout_width="match_parent" android:layout_height="32.0dp" android:text="基本信息" />
+        <View android:background="#cccccc" android:layout_width="match_parent" android:layout_height="1.0px" />
+        <LinearLayout android:gravity="center_vertical" android:background="#fff" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:layout_width="match_parent" android:layout_height="42.0dp">
+            <TextView android:textColor="#333333" android:layout_width="80.0dp" android:layout_height="wrap_content" android:text="调试状态" />
+            <RadioGroup android:gravity="right" android:orientation="horizontal" android:paddingLeft="8.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <RadioButton android:textSize="14.0sp" android:textColor="#333333" android:id="@id/debug_on" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="开启" />
+                <RadioButton android:textSize="14.0sp" android:textColor="#333333" android:id="@id/debug_off" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dp" android:text="关闭" />
+            </RadioGroup>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:background="#fff" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:layout_width="match_parent" android:layout_height="42.0dp">
+            <TextView android:textColor="#333333" android:layout_width="80.0dp" android:layout_height="wrap_content" android:text="WebView\n调试状态" />
+            <RadioGroup android:gravity="right" android:orientation="horizontal" android:paddingLeft="8.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <RadioButton android:textSize="14.0sp" android:textColor="#333333" android:id="@id/webview_debug_on" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="开启" />
+                <RadioButton android:textSize="14.0sp" android:textColor="#333333" android:id="@id/webview_debug_off" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dp" android:text="关闭" />
+            </RadioGroup>
+        </LinearLayout>
+        <View android:background="#cccccc" android:layout_width="match_parent" android:layout_height="1.0px" />
+        <LinearLayout android:gravity="center_vertical" android:background="#fff" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:layout_width="match_parent" android:layout_height="42.0dp">
+            <TextView android:textColor="#333333" android:layout_width="120.0dp" android:layout_height="wrap_content" android:text="加密基础参数" />
+            <androidx.appcompat.widget.SwitchCompat android:ellipsize="end" android:gravity="right" android:id="@id/sw_encode_base_params" android:paddingLeft="8.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:checked="true" android:layout_weight="1.0" />
+        </LinearLayout>
+        <View android:background="#cccccc" android:layout_width="match_parent" android:layout_height="1.0px" />
+        <LinearLayout android:gravity="center_vertical" android:id="@id/btn_appuser" android:background="#fff" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:layout_width="match_parent" android:layout_height="42.0dp">
+            <TextView android:textColor="#333333" android:layout_width="80.0dp" android:layout_height="wrap_content" android:text="appUser" />
+            <TextView android:textColor="#333333" android:ellipsize="end" android:gravity="right" android:id="@id/appuser" android:paddingLeft="8.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1.0" />
+        </LinearLayout>
+        <View android:background="#cccccc" android:layout_width="match_parent" android:layout_height="1.0px" />
+        <LinearLayout android:gravity="center_vertical" android:id="@id/btn_mucangid" android:background="#fff" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:layout_width="match_parent" android:layout_height="42.0dp">
+            <TextView android:textColor="#333333" android:layout_width="80.0dp" android:layout_height="wrap_content" android:text="mucangId" />
+            <TextView android:textColor="#333333" android:ellipsize="end" android:gravity="right" android:id="@id/mucangid" android:paddingLeft="8.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1.0" />
+        </LinearLayout>
+        <View android:background="#cccccc" android:layout_width="match_parent" android:layout_height="1.0px" />
+        <LinearLayout android:gravity="center_vertical" android:id="@id/btn_androidid" android:background="#fff" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:layout_width="match_parent" android:layout_height="42.0dp">
+            <TextView android:textColor="#333333" android:layout_width="80.0dp" android:layout_height="wrap_content" android:text="androidId" />
+            <TextView android:textColor="#333333" android:ellipsize="end" android:gravity="right" android:id="@id/androidid" android:paddingLeft="8.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1.0" />
+        </LinearLayout>
+        <View android:background="#cccccc" android:layout_width="match_parent" android:layout_height="1.0px" />
+        <LinearLayout android:gravity="center_vertical" android:background="#fff" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:layout_width="match_parent" android:layout_height="42.0dp">
+            <TextView android:textColor="#333333" android:layout_width="80.0dp" android:layout_height="wrap_content" android:text="渠道" />
+            <TextView android:textColor="#333333" android:ellipsize="end" android:gravity="right" android:id="@id/qudao" android:paddingLeft="8.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1.0" />
+        </LinearLayout>
+        <View android:background="#cccccc" android:layout_width="match_parent" android:layout_height="1.0px" />
+        <LinearLayout android:gravity="center_vertical" android:background="#fff" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:layout_width="match_parent" android:layout_height="42.0dp">
+            <TextView android:textColor="#333333" android:layout_width="80.0dp" android:layout_height="wrap_content" android:text="人员" />
+            <TextView android:textColor="#333333" android:ellipsize="end" android:gravity="right" android:id="@id/renyuan" android:paddingLeft="8.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1.0" />
+        </LinearLayout>
+        <View android:background="#cccccc" android:layout_width="match_parent" android:layout_height="1.0px" />
+        <LinearLayout android:gravity="center_vertical" android:background="#fff" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:layout_width="match_parent" android:layout_height="42.0dp">
+            <TextView android:textColor="#333333" android:layout_width="80.0dp" android:layout_height="wrap_content" android:text="是否模拟器" />
+            <TextView android:textColor="#333333" android:ellipsize="end" android:gravity="right" android:id="@id/emulator" android:paddingLeft="8.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1.0" />
+        </LinearLayout>
+        <View android:background="#cccccc" android:layout_width="match_parent" android:layout_height="1.0px" />
+        <LinearLayout android:gravity="center_vertical" android:background="#fff" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:layout_width="match_parent" android:layout_height="42.0dp">
+            <TextView android:textColor="#333333" android:layout_width="90.0dp" android:layout_height="wrap_content" android:text="是否是测试机" />
+            <TextView android:textColor="#333333" android:ellipsize="end" android:gravity="right" android:id="@id/test_device" android:paddingLeft="8.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1.0" />
+        </LinearLayout>
+        <View android:background="#cccccc" android:layout_width="match_parent" android:layout_height="1.0px" />
+        <LinearLayout android:gravity="center_vertical" android:background="#fff" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:layout_width="match_parent" android:layout_height="42.0dp">
+            <TextView android:textColor="#333333" android:layout_width="80.0dp" android:layout_height="wrap_content" android:text="推送通道" />
+            <TextView android:textColor="#333333" android:ellipsize="end" android:gravity="right" android:id="@id/push_provider" android:paddingLeft="8.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1.0" />
+        </LinearLayout>
+        <View android:background="#cccccc" android:layout_width="match_parent" android:layout_height="1.0px" />
+        <LinearLayout android:gravity="center_vertical" android:background="#fff" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:layout_width="match_parent" android:layout_height="42.0dp">
+            <TextView android:textColor="#333333" android:layout_width="80.0dp" android:layout_height="wrap_content" android:text="PushToken长按复制" />
+            <TextView android:textColor="#333333" android:ellipsize="end" android:gravity="right" android:id="@id/push_token" android:paddingLeft="8.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1.0" />
+        </LinearLayout>
+        <View android:background="#cccccc" android:layout_width="match_parent" android:layout_height="1.0px" />
+        <LinearLayout android:gravity="center_vertical" android:background="#fff" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:layout_width="match_parent" android:layout_height="42.0dp">
+            <TextView android:textColor="#333333" android:layout_width="80.0dp" android:layout_height="wrap_content" android:text="副通道PushToken" />
+            <TextView android:textColor="#333333" android:ellipsize="end" android:gravity="right" android:id="@id/push_token_backup" android:paddingLeft="8.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1.0" />
+        </LinearLayout>
+        <View android:background="#cccccc" android:layout_width="match_parent" android:layout_height="1.0px" />
+        <LinearLayout android:gravity="center_vertical" android:background="#fff" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:layout_width="match_parent" android:layout_height="42.0dp">
+            <TextView android:textColor="#333333" android:layout_width="80.0dp" android:layout_height="wrap_content" android:text="mipush标签" />
+            <TextView android:textColor="#333333" android:ellipsize="end" android:gravity="right" android:id="@id/mi_push_topics" android:paddingLeft="8.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="" android:layout_weight="1.0" />
+        </LinearLayout>
+        <View android:background="#cccccc" android:layout_width="match_parent" android:layout_height="1.0px" />
+        <TextView android:textColor="#666666" android:gravity="center_vertical" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:layout_width="match_parent" android:layout_height="32.0dp" android:layout_marginTop="16.0dp" android:text="定位信息" />
+        <View android:background="#cccccc" android:layout_width="match_parent" android:layout_height="1.0px" />
+        <LinearLayout android:gravity="center_vertical" android:id="@id/btn_select_city" android:background="#fff" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:layout_width="match_parent" android:layout_height="42.0dp">
+            <TextView android:textColor="#333333" android:layout_width="80.0dp" android:layout_height="wrap_content" android:text="城市" />
+            <TextView android:textColor="#333333" android:ellipsize="end" android:gravity="right" android:id="@id/city_name" android:paddingLeft="8.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1.0" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dp" android:src="@drawable/core__ic_arrow_right" />
+        </LinearLayout>
+        <View android:background="#cccccc" android:layout_width="match_parent" android:layout_height="1.0px" />
+        <LinearLayout android:gravity="center_vertical" android:background="#fff" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:layout_width="match_parent" android:layout_height="42.0dp">
+            <TextView android:textColor="#333333" android:id="@id/textView" android:layout_width="80.0dp" android:layout_height="wrap_content" android:text="cityCode" />
+            <EditText android:textColor="#333333" android:ellipsize="end" android:gravity="right" android:id="@id/city_code" android:paddingLeft="8.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1.0" />
+        </LinearLayout>
+        <View android:background="#cccccc" android:layout_width="match_parent" android:layout_height="1.0px" />
+        <LinearLayout android:gravity="center_vertical" android:background="#fff" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:layout_width="match_parent" android:layout_height="42.0dp">
+            <TextView android:textColor="#333333" android:layout_width="80.0dp" android:layout_height="wrap_content" android:text="经度" />
+            <EditText android:textColor="#333333" android:ellipsize="end" android:gravity="right" android:id="@id/city_longitude" android:paddingLeft="8.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1.0" />
+        </LinearLayout>
+        <View android:background="#cccccc" android:layout_width="match_parent" android:layout_height="1.0px" />
+        <LinearLayout android:gravity="center_vertical" android:background="#fff" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:layout_width="match_parent" android:layout_height="42.0dp">
+            <TextView android:textColor="#333333" android:layout_width="80.0dp" android:layout_height="wrap_content" android:text="纬度" />
+            <EditText android:textColor="#333333" android:ellipsize="end" android:gravity="right" android:id="@id/city_latitude" android:paddingLeft="8.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1.0" />
+        </LinearLayout>
+        <View android:background="#cccccc" android:layout_width="match_parent" android:layout_height="1.0px" />
+        <LinearLayout android:gravity="center_vertical" android:background="#fff" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:layout_width="match_parent" android:layout_height="42.0dp">
+            <TextView android:textColor="#333333" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="模拟定位" android:layout_weight="1.0" />
+            <Button android:id="@id/btn_submit_city" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:text="设置模拟定位" />
+        </LinearLayout>
+        <View android:background="#cccccc" android:layout_width="match_parent" android:layout_height="1.0px" />
+        <TextView android:textColor="#666666" android:gravity="center_vertical" android:id="@id/textView2" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:layout_width="match_parent" android:layout_height="32.0dp" android:layout_marginTop="16.0dp" android:text="Log日志" />
+        <View android:background="#cccccc" android:layout_width="match_parent" android:layout_height="1.0px" />
+        <LinearLayout android:gravity="center_vertical" android:background="#fff" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:layout_width="match_parent" android:layout_height="42.0dp">
+            <TextView android:textColor="#333333" android:layout_width="84.0dp" android:layout_height="wrap_content" android:text="日志级别" />
+            <EditText android:textColor="#333333" android:ellipsize="end" android:gravity="right" android:id="@id/log_level_edit" android:paddingLeft="8.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1.0" />
+            <Button android:id="@id/btn_log_level" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:text="修改日志级别" />
+        </LinearLayout>
+        <View android:background="#cccccc" android:layout_width="match_parent" android:layout_height="1.0px" />
+        <LinearLayout android:gravity="center_vertical" android:background="#fff" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:layout_width="match_parent" android:layout_height="42.0dp">
+            <TextView android:textColor="#333333" android:layout_width="84.0dp" android:layout_height="wrap_content" android:text="编辑自动打点" />
+            <RadioGroup android:gravity="right" android:orientation="horizontal" android:paddingLeft="8.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <RadioButton android:textSize="14.0sp" android:textColor="#333333" android:id="@id/edit_autoclick_on" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="开启" />
+                <RadioButton android:textSize="14.0sp" android:textColor="#333333" android:id="@id/edit_autoclick_off" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dp" android:text="关闭" />
+            </RadioGroup>
+        </LinearLayout>
+        <View android:background="#cccccc" android:layout_width="match_parent" android:layout_height="1.0px" />
+        <TextView android:textColor="#666666" android:gravity="center_vertical" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:layout_width="match_parent" android:layout_height="32.0dp" android:layout_marginTop="16.0dp" android:text="其他" />
+        <View android:background="#cccccc" android:layout_width="match_parent" android:layout_height="1.0px" />
+        <LinearLayout android:gravity="center_vertical" android:background="#fff" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:layout_width="match_parent" android:layout_height="42.0dp">
+            <EditText android:id="@id/edit_url" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            <Button android:id="@id/url_ok" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:text="打开URL/小程序" />
+        </LinearLayout>
+        <View android:background="#cccccc" android:layout_width="match_parent" android:layout_height="1.0px" />
+        <TextView android:textColor="#333333" android:gravity="center_vertical" android:id="@id/btn_test_h5_protocol" android:background="#fff" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:layout_width="match_parent" android:layout_height="42.0dp" android:text="测试WebView协议" android:drawableRight="@drawable/core__ic_arrow_right" />
+        <View android:background="#cccccc" android:layout_width="match_parent" android:layout_height="1.0px" />
+        <LinearLayout android:gravity="center_vertical" android:id="@id/btn_view_objects" android:background="#fff" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:layout_width="match_parent" android:layout_height="42.0dp">
+            <TextView android:textColor="#333333" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="查看内存对象" android:layout_weight="1.0" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/core__ic_arrow_right" />
+        </LinearLayout>
+        <View android:background="#cccccc" android:layout_width="match_parent" android:layout_height="1.0px" />
+        <LinearLayout android:gravity="center_vertical" android:id="@id/btn_view_modules" android:background="#fff" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:layout_width="match_parent" android:layout_height="42.0dp">
+            <TextView android:textColor="#333333" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="查看模块内容" android:layout_weight="1.0" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/core__ic_arrow_right" />
+        </LinearLayout>
+        <View android:background="#cccccc" android:layout_width="match_parent" android:layout_height="1.0px" />
+        <LinearLayout android:gravity="center_vertical" android:background="#fff" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:layout_width="match_parent" android:layout_height="42.0dp">
+            <EditText android:id="@id/edit_remote_config" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            <Button android:id="@id/remote_config_ok" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:text="查看远程配置" />
+        </LinearLayout>
+        <View android:background="#cccccc" android:layout_width="match_parent" android:layout_height="1.0px" />
+        <TextView android:textColor="#666666" android:gravity="center_vertical" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:layout_width="match_parent" android:layout_height="32.0dp" android:layout_marginTop="16.0dp" android:text="缓存" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:background="#fff" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:background="#fff" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <EditText android:id="@id/edit_sp_file_name" android:layout_width="0.0dp" android:layout_height="wrap_content" android:hint="Sp文件名称" android:layout_weight="1.0" />
+                <EditText android:id="@id/edit_sp_key" android:layout_width="0.0dp" android:layout_height="wrap_content" android:hint="key，可以没有" android:layout_weight="1.0" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:background="#fff" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <Button android:id="@id/btn_sp_check" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:text="查看" android:layout_weight="1.0" />
+                <Button android:id="@id/btn_sp_clear" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:text="清除" android:layout_weight="1.0" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

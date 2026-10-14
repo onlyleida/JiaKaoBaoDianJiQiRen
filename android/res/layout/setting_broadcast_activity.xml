@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#f2f5fa" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/titleLayout" layout="@layout/common_title" />
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:paddingBottom="@dimen/dp_40" android:layout_width="match_parent" android:layout_height="match_parent">
+            <FrameLayout android:background="#fff" android:layout_width="match_parent" android:layout_height="@dimen/dp_102">
+                <TextView android:textSize="@dimen/dp_20" android:textColor="#333" android:layout_gravity="bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_16" android:layout_marginBottom="@dimen/dp_16" android:text="播报距离" />
+                <cn.mucang.jiakaoyi.uilib.ui.widget.JSeekBar android:id="@id/distanceSeekBar" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/dp_162" android:layout_marginRight="@dimen/dp_16" android:layout_marginBottom="@dimen/dp_24" />
+            </FrameLayout>
+            <FrameLayout android:background="#fff" android:layout_width="match_parent" android:layout_height="@dimen/dp_102">
+                <TextView android:textSize="@dimen/dp_20" android:textColor="#333" android:layout_gravity="bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_16" android:layout_marginBottom="@dimen/dp_16" android:text="教学播报距离" />
+                <cn.mucang.jiakaoyi.uilib.ui.widget.JSeekBar android:id="@id/teachDistanceSeekBar" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/dp_162" android:layout_marginRight="@dimen/dp_16" android:layout_marginBottom="@dimen/dp_24" />
+            </FrameLayout>
+            <View android:layout_width="match_parent" android:layout_height="@dimen/dp_8" />
+            <TextView android:textSize="@dimen/dp_18" android:textColor="#333" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_16" android:text="若车辆行驶至距离（垂直距离）指令15米以内，则播报指令，建议15米左右" />
+            <View android:layout_width="match_parent" android:layout_height="@dimen/dp_16" />
+            <FrameLayout android:background="#fff" android:layout_width="match_parent" android:layout_height="@dimen/dp_102">
+                <TextView android:textSize="@dimen/dp_20" android:textColor="#333" android:layout_gravity="bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_16" android:layout_marginBottom="@dimen/dp_16" android:text="车辆容错角度" />
+                <cn.mucang.jiakaoyi.uilib.ui.widget.JSeekBar android:id="@id/angelSeekBar" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/dp_162" android:layout_marginRight="@dimen/dp_16" android:layout_marginBottom="@dimen/dp_24" />
+            </FrameLayout>
+            <FrameLayout android:background="#fff" android:layout_width="match_parent" android:layout_height="@dimen/dp_102">
+                <TextView android:textSize="@dimen/dp_20" android:textColor="#333" android:layout_gravity="bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_16" android:layout_marginBottom="@dimen/dp_16" android:text="教学车辆容错角度" />
+                <cn.mucang.jiakaoyi.uilib.ui.widget.JSeekBar android:id="@id/teachAngelSeekBar" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/dp_162" android:layout_marginRight="@dimen/dp_16" android:layout_marginBottom="@dimen/dp_24" />
+            </FrameLayout>
+            <View android:layout_width="match_parent" android:layout_height="@dimen/dp_8" />
+            <TextView android:textSize="@dimen/dp_18" android:textColor="#333" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_16" android:text="若车辆行驶过程中的GPS角度与指令角度正负偏差大于30度，则不会播报该指令，建议30度左右" />
+            <View android:layout_width="match_parent" android:layout_height="@dimen/dp_16" />
+            <androidx.constraintlayout.widget.ConstraintLayout android:background="#fff" android:layout_width="match_parent" android:layout_height="@dimen/dp_60">
+                <TextView android:textSize="@dimen/dp_20" android:textColor="#333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_16" android:text="强制按顺序播报" android:layout_marginStart="@dimen/dp_16" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" />
+                <androidx.appcompat.widget.AppCompatCheckBox android:id="@id/needOrder" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_16" android:layout_marginEnd="@dimen/dp_16" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <View android:layout_width="match_parent" android:layout_height="@dimen/dp_8" />
+            <TextView android:textSize="@dimen/dp_18" android:textColor="#333" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_16" android:text="开启表示必须按采集的指令顺序播报；如果当前项目是1，会检查触发后面的项目2和3，如果23没有触发后面的项目就不会触发" />
+            <View android:layout_width="match_parent" android:layout_height="@dimen/dp_16" />
+            <androidx.constraintlayout.widget.ConstraintLayout android:background="#fff" android:layout_width="match_parent" android:layout_height="@dimen/dp_60">
+                <TextView android:textSize="@dimen/dp_20" android:textColor="#333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_16" android:text="使用距离触发项目" android:layout_marginStart="@dimen/dp_16" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" />
+                <androidx.appcompat.widget.AppCompatCheckBox android:id="@id/onlyUseDistance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_16" android:layout_marginEnd="@dimen/dp_16" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <View android:layout_width="match_parent" android:layout_height="@dimen/dp_8" />
+            <TextView android:textSize="@dimen/dp_18" android:textColor="#333" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_16" android:layout_marginBottom="@dimen/dp_10" android:text="（两点之间距离）高精度车辆设置有效且项目点必须尽量打开道路中间,3(包含3)车道以上不适合用此设置" />
+            <TextView android:textSize="@dimen/font_18" android:textColor="#333" android:gravity="center_vertical" android:background="@color/WHITE" android:paddingLeft="@dimen/dp_16" android:layout_width="match_parent" android:layout_height="@dimen/dp_49" android:text="灯光延时设置" />
+            <androidx.constraintlayout.widget.ConstraintLayout android:background="@color/WHITE" android:paddingTop="@dimen/dp_20" android:paddingBottom="@dimen/dp_20" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:id="@id/ll_light" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+                    <TextView android:textSize="@dimen/font_20" android:textColor="#333" android:id="@id/left_light_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="左右转向灯的延迟时间" android:layout_marginStart="@dimen/dp_30" />
+                    <EditText android:textSize="@dimen/font_20" android:textColor="#333" android:textColorHint="#333" android:gravity="left|center" android:id="@id/left_light_time" android:background="@drawable/selector_et_valid" android:paddingLeft="@dimen/dp_16" android:paddingRight="@dimen/dp_16" android:layout_width="@dimen/dp_200" android:layout_height="@dimen/dp_45" android:layout_marginLeft="@dimen/dp_20" android:hint="800~1500ms之间" android:maxLength="4" android:inputType="number" android:imeOptions="actionDone" />
+                    <TextView android:textSize="@dimen/font_20" android:textColor="#333" android:id="@id/warning_light_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="应急灯的延迟时间" android:layout_marginStart="@dimen/dp_30" />
+                    <EditText android:textSize="@dimen/font_20" android:textColor="#333" android:textColorHint="#333" android:gravity="left|center" android:id="@id/warning_light_time" android:background="@drawable/selector_et_valid" android:paddingLeft="@dimen/dp_16" android:paddingRight="@dimen/dp_16" android:layout_width="@dimen/dp_200" android:layout_height="@dimen/dp_45" android:layout_marginLeft="@dimen/dp_20" android:hint="1000~1500ms之间" android:maxLength="4" android:inputType="number" android:imeOptions="actionDone" />
+                </LinearLayout>
+                <TextView android:textSize="@dimen/font_18" android:textColor="#008aff" android:gravity="center" android:id="@id/save_light_time" android:background="@drawable/selector_btn_round" android:layout_width="@dimen/dp_100" android:layout_height="@dimen/dp_40" android:layout_marginTop="@dimen/dp_10" android:layout_marginRight="@dimen/dp_16" android:text="保存" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toBottomOf="@id/ll_light" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/dp_64"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="@dimen/dp_20" android:textColor="#333" android:id="@id/codeTv" android:paddingLeft="@dimen/dp_16" android:layout_width="@dimen/dp_135" android:layout_height="wrap_content" />
+        <LinearLayout android:gravity="center_vertical" android:background="#f2f5fa" android:paddingLeft="@dimen/dp_8" android:paddingRight="@dimen/dp_8" android:layout_width="@dimen/dp_0" android:layout_height="wrap_content" android:layout_weight="2.0">
+            <ImageView android:id="@id/voice" android:layout_width="@dimen/dp_40" android:layout_height="@dimen/dp_40" android:src="@drawable/selector_deduct_voice" />
+            <TextView android:textSize="@dimen/dp_20" android:textColor="#333" android:gravity="center_vertical" android:id="@id/infoTv" android:background="#f2f5fa" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_8" android:minHeight="@dimen/dp_45" android:text="制动不平顺" android:width="@dimen/dp_0" />
+        </LinearLayout>
+        <View android:layout_width="@dimen/dp_40" android:layout_height="match_parent" />
+        <EditText android:textSize="@dimen/dp_20" android:textColor="@color/color_333_ccc" android:gravity="center" android:id="@id/scoreTv" android:background="#fff2f5fa" android:layout_width="@dimen/dp_64" android:layout_height="@dimen/dp_45" android:text="100" android:inputType="number" />
+        <View android:layout_width="@dimen/dp_40" android:layout_height="match_parent" />
+        <TextView android:textSize="@dimen/dp_20" android:textColor="@color/color_33b5e5_ccc" android:gravity="center" android:id="@id/checkRules" android:visibility="gone" android:layout_width="@dimen/dp_80" android:layout_height="wrap_content" android:text="查看" />
+        <View android:visibility="gone" android:layout_width="@dimen/dp_40" android:layout_height="match_parent" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="@dimen/dp_0" android:layout_height="match_parent" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/dp_18" android:textColor="@color/color_464646_ccc" android:gravity="center" android:id="@id/systemJudgeTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="系统" android:drawableLeft="@drawable/selector_choice" android:drawablePadding="@dimen/dp_8" />
+            <TextView android:textSize="@dimen/dp_18" android:textColor="@color/color_464646_ccc" android:gravity="center" android:id="@id/manualJudgeTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_16" android:text="人工" android:drawableLeft="@drawable/selector_choice" android:drawablePadding="@dimen/dp_8" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:layout_gravity="bottom" android:background="#e8e8e8" android:layout_width="match_parent" android:layout_height="@dimen/dp_divider" android:layout_marginLeft="@dimen/dp_16" android:layout_marginRight="@dimen/dp_16" />
+</FrameLayout>

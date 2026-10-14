@@ -1,0 +1,105 @@
+package com.serenegiant.media;
+
+import android.annotation.TargetApi;
+import android.media.MediaCodec;
+import android.media.MediaCrypto;
+import android.media.MediaFormat;
+import android.util.Log;
+import android.view.Surface;
+import java.io.IOException;
+import java.util.Locale;
+
+/* JADX INFO: loaded from: classes6.dex */
+@TargetApi(18)
+public class MediaVideoEncoder extends MediaEncoder implements ISurfaceEncoder {
+    private static final float BPP = 0.25f;
+    private static final boolean DEBUG = false;
+    private static final int FRAME_RATE = 25;
+    private static final String MIME_TYPE = "video/avc";
+    private static final String TAG = "MediaEncoder";
+    private Surface mSurface;
+    private int mVideoHeight;
+    private int mVideoWidth;
+
+    public MediaVideoEncoder(MediaMovieRecorder mediaMovieRecorder, IMediaCodecCallback iMediaCodecCallback) {
+        this(1280, 720, mediaMovieRecorder, iMediaCodecCallback);
+    }
+
+    private int calcBitRate() {
+        int i = (int) (this.mVideoWidth * 6.25f * this.mVideoHeight);
+        Log.i(TAG, String.format("bitrate=%5.2f[Mbps]", Float.valueOf((i / 1024.0f) / 1024.0f)));
+        return i;
+    }
+
+    @Override // com.serenegiant.media.IVideoEncoder
+    public int getHeight() {
+        return this.mVideoHeight;
+    }
+
+    @Override // com.serenegiant.media.ISurfaceEncoder
+    public Surface getInputSurface() throws IllegalStateException {
+        Surface surface = this.mSurface;
+        if (surface != null) {
+            return surface;
+        }
+        throw new IllegalStateException("not prepared yet");
+    }
+
+    @Override // com.serenegiant.media.IVideoEncoder
+    public int getWidth() {
+        return this.mVideoWidth;
+    }
+
+    @Override // com.serenegiant.media.IMediaCodec, com.serenegiant.media.Encoder
+    public void prepare() throws IOException {
+        this.mTrackIndex = -1;
+        this.mIsEOS = false;
+        this.mMuxerStarted = false;
+        if (MediaCodecHelper.selectVideoEncoder("video/avc") == null) {
+            Log.e(TAG, "Unable to find an appropriate codec for video/avc");
+            return;
+        }
+        MediaFormat mediaFormatCreateVideoFormat = MediaFormat.createVideoFormat("video/avc", this.mVideoWidth, this.mVideoHeight);
+        mediaFormatCreateVideoFormat.setInteger("color-format", MediaCodecHelper.OMX_COLOR_FormatAndroidOpaque);
+        mediaFormatCreateVideoFormat.setInteger("bitrate", calcBitRate());
+        mediaFormatCreateVideoFormat.setInteger("frame-rate", 25);
+        mediaFormatCreateVideoFormat.setInteger("i-frame-interval", 10);
+        MediaCodec mediaCodecCreateEncoderByType = MediaCodec.createEncoderByType("video/avc");
+        this.mMediaCodec = mediaCodecCreateEncoderByType;
+        mediaCodecCreateEncoderByType.configure(mediaFormatCreateVideoFormat, (Surface) null, (MediaCrypto) null, 1);
+        this.mSurface = this.mMediaCodec.createInputSurface();
+        this.mMediaCodec.start();
+        this.mIsPrepared = true;
+        callOnPrepared();
+    }
+
+    @Override // com.serenegiant.media.MediaEncoder, com.serenegiant.media.IMediaCodec, com.serenegiant.media.Encoder
+    public void release() {
+        Surface surface = this.mSurface;
+        if (surface != null) {
+            surface.release();
+            this.mSurface = null;
+        }
+        super.release();
+    }
+
+    @Override // com.serenegiant.media.IVideoEncoder
+    public void setVideoSize(int i, int i2) throws IllegalStateException, IllegalArgumentException {
+        if (i <= 0 || i2 <= 0) {
+            throw new IllegalArgumentException(String.format(Locale.US, "size(%d,%d)", Integer.valueOf(i), Integer.valueOf(i2)));
+        }
+        if (isRunning()) {
+            throw new IllegalStateException("already start capturing");
+        }
+        this.mVideoWidth = i;
+        this.mVideoHeight = i2;
+    }
+
+    public MediaVideoEncoder(int i, int i2, MediaMovieRecorder mediaMovieRecorder, IMediaCodecCallback iMediaCodecCallback) {
+        super(false, mediaMovieRecorder, iMediaCodecCallback);
+        this.mVideoWidth = 1280;
+        this.mVideoHeight = 720;
+        this.mVideoWidth = i;
+        this.mVideoHeight = i2;
+    }
+}

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/load_layout" android:background="#f5f5f5" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar android:layout_gravity="center" android:id="@id/footer_progressbar" android:layout_width="wrap_content" android:layout_height="48.0dp" android:indeterminateDrawable="@drawable/ui__widget_pull_refresh_header_loading_progress" android:indeterminateDuration="1000" android:indeterminateBehavior="repeat" style="?android:progressBarStyleSmall" />
+    <TextView android:textSize="14.0sp" android:textColor="#999999" android:gravity="center" android:layout_gravity="center" android:id="@id/footer_info" android:layout_width="wrap_content" android:layout_height="48.0dp" android:layout_marginLeft="6.0dp" android:text="正在加载..." android:singleLine="true" />
+</LinearLayout>

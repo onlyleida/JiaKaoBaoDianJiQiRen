@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/tt__bg_round_white" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="horizontal" android:id="@id/llBack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/tt__back_margin_top" android:layout_marginStart="@dimen/tt__back_margin_start">
+            <ImageView android:layout_gravity="center_vertical" android:layout_width="@dimen/tt__back_top_img_width" android:layout_height="@dimen/tt__back_top_img_width" android:src="@drawable/tt__ic_top_left_back" android:scaleType="centerCrop" />
+            <TextView android:textSize="@dimen/tt__back_top_text" android:textColor="#ff333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="返回" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/tt__check_layout_top" android:layout_marginStart="@dimen/tt__check_layout_start" android:layout_marginEnd="@dimen/tt__check_layout_end">
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/tt__info_item_height" android:layout_marginTop="6.0dp">
+                <TextView android:textSize="@dimen/tt__text_size_info_item" android:textColor="#ff333333" android:gravity="center" android:background="#fff6f8fd" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="检测类型" android:maxLines="1" android:layout_weight="1.0" />
+                <TextView android:textSize="@dimen/tt__text_size_info_item" android:textColor="#ff333333" android:gravity="center" android:background="#e8effa" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="检测结果" android:maxLines="1" android:layout_weight="1.0" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/tt__info_item_height" android:layout_marginTop="2.0dp">
+                <TextView android:textSize="@dimen/tt__text_size_info_item" android:textColor="#ff333333" android:gravity="center" android:background="#fff6f8fd" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="GPS" android:maxLines="1" android:layout_weight="1.0" />
+                <TextView android:textSize="@dimen/tt__text_size_qr_invalid" android:textColor="#ff333333" android:gravity="center" android:id="@id/ck_gps" android:background="#e8effa" android:visibility="gone" android:layout_width="0.0dp" android:layout_height="match_parent" android:maxLines="1" android:layout_weight="1.0" />
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/load1" android:background="#e8effa" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0">
+                    <ImageView android:id="@id/ivRefresh" android:layout_width="@dimen/tt__refresh_icon_width" android:layout_height="@dimen/tt__refresh_icon_width" android:src="@drawable/tt__ic_refresh" android:layout_marginEnd="3.0dp" />
+                    <TextView android:textSize="@dimen/tt__light_desc_text" android:textColor="#ffa0a9b9" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="正在刷新..." android:maxLines="1" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/tt__info_item_height" android:layout_marginTop="2.0dp">
+                <TextView android:textSize="@dimen/tt__text_size_info_item" android:textColor="#ff333333" android:gravity="center" android:background="#fff6f8fd" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="网络信号" android:maxLines="1" android:layout_weight="1.0" />
+                <TextView android:textSize="@dimen/tt__text_size_qr_invalid" android:textColor="#ff333333" android:gravity="center" android:id="@id/ck_network" android:background="#e8effa" android:visibility="gone" android:layout_width="0.0dp" android:layout_height="match_parent" android:maxLines="1" android:layout_weight="1.0" />
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/load2" android:background="#e8effa" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0">
+                    <ImageView android:id="@id/ivRefresh2" android:layout_width="@dimen/tt__refresh_icon_width" android:layout_height="@dimen/tt__refresh_icon_width" android:src="@drawable/tt__ic_refresh" android:layout_marginEnd="3.0dp" />
+                    <TextView android:textSize="@dimen/tt__light_desc_text" android:textColor="#ffa0a9b9" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="正在刷新..." android:maxLines="1" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/tt__info_item_height" android:layout_marginTop="2.0dp">
+                <TextView android:textSize="@dimen/tt__text_size_info_item" android:textColor="#ff333333" android:gravity="center" android:background="#fff6f8fd" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="音量" android:maxLines="1" android:layout_weight="1.0" />
+                <TextView android:textSize="@dimen/tt__text_size_qr_invalid" android:textColor="#ff333333" android:gravity="center" android:id="@id/ck_volume" android:background="#e8effa" android:visibility="gone" android:layout_width="0.0dp" android:layout_height="match_parent" android:maxLines="1" android:layout_weight="1.0" />
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/load4" android:background="#e8effa" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0">
+                    <ImageView android:id="@id/ivRefresh4" android:layout_width="@dimen/tt__refresh_icon_width" android:layout_height="@dimen/tt__refresh_icon_width" android:src="@drawable/tt__ic_refresh" android:layout_marginEnd="3.0dp" />
+                    <TextView android:textSize="@dimen/tt__light_desc_text" android:textColor="#ffa0a9b9" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="正在刷新..." android:maxLines="1" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/tt__info_item_height" android:layout_marginTop="2.0dp">
+                <TextView android:textSize="@dimen/tt__text_size_info_item" android:textColor="#ff333333" android:gravity="center" android:background="#fff6f8fd" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="摄像头" android:maxLines="1" android:layout_weight="1.0" />
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/load3" android:background="#e8effa" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0">
+                    <TextView android:textSize="@dimen/tt__text_size_qr_invalid" android:textColor="@android:color/white" android:gravity="center" android:id="@id/ck_camera" android:background="@drawable/tt__bg_btn_blue_2_corner" android:clickable="true" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginTop="4.0dp" android:layout_marginBottom="4.0dp" android:text="测试摄像头" android:maxLines="1" android:paddingStart="16.0dp" android:paddingEnd="16.0dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <TextureView android:id="@id/camera_view" android:layout_width="1.0dp" android:layout_height="1.0dp" />
+        <TextView android:textSize="@dimen/tt__text_size_button" android:textColor="#ffffffff" android:gravity="center" android:id="@id/re_check" android:background="@drawable/tt__bg_btn_blue_2_corner" android:layout_width="@dimen/tt__button_width_register" android:layout_height="@dimen/tt__button_height_register" android:layout_marginBottom="20.0dp" android:text="重新自检" android:layout_alignParentBottom="true" android:layout_marginEnd="@dimen/tt__check_layout_start" android:layout_alignParentEnd="true" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:layout_marginEnd="@dimen/tt__check_layout_start" android:layout_alignParentEnd="true">
+            <RadioGroup android:orientation="horizontal" android:id="@id/radio_gps" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="30.0dp">
+                <TextView android:textColor="#222" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="GPS启动模式" />
+                <RadioButton android:textColor="#222" android:id="@id/rb_cold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="冷启动" />
+                <RadioButton android:textColor="#222" android:id="@id/rb_warm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="温启动" />
+                <RadioButton android:textColor="#222" android:id="@id/rb_hot" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="热启动" />
+            </RadioGroup>
+            <TextView android:textSize="@dimen/tt__text_size_top_info" android:textColor="#ffffffff" android:gravity="center" android:id="@id/reboot" android:background="@drawable/tt__bg_btn_blue_2_corner" android:layout_width="wrap_content" android:layout_height="@dimen/tt__button_height_base" android:text="重启APP" android:paddingStart="10.0dp" android:paddingEnd="10.0dp" android:layout_marginStart="32.0dp" />
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

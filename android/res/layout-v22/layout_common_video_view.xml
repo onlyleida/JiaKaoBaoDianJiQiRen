@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/videoContainer" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.exoplayer2.ui.PlayerView android:id="@id/videoView" android:layout_width="match_parent" android:layout_height="match_parent" app:player_layout_id="@layout/b2_exo_player_view" />
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/videoComp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@id/iv_center_icon" android:layout_width="@dimen/rpx_128" android:layout_height="@dimen/rpx_116" android:src="@drawable/icon_shipin_bofang" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <FrameLayout android:id="@id/iv_overlay" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="@dimen/rpx_80" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/controlView" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" app:layout_constraintBottom_toBottomOf="parent">
+            <FrameLayout android:layout_width="wrap_content" android:layout_height="match_parent" android:paddingStart="@dimen/rpx_28" android:paddingEnd="@dimen/rpx_13" android:layout_marginEnd="@dimen/dp_5">
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/buttonPlay" android:layout_width="@dimen/rpx_24" android:layout_height="@dimen/rpx_24" android:src="@drawable/icon_play_small" />
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/buttonStop" android:visibility="gone" android:layout_width="@dimen/rpx_24" android:layout_height="@dimen/rpx_24" android:src="@drawable/icon_pause_small" />
+            </FrameLayout>
+            <TextView android:textSize="@dimen/rpx_21" android:textColor="@color/white" android:id="@id/textViewCurrentPosition" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="00:00" android:layout_marginEnd="@dimen/rpx_30" />
+            <SeekBar android:id="@id/seekBar" android:paddingTop="@dimen/rpx_22" android:paddingBottom="@dimen/rpx_22" android:layout_width="0.0dp" android:layout_height="wrap_content" android:maxHeight="@dimen/rpx_9" android:progressDrawable="@drawable/seek_bar_bg" android:minHeight="@dimen/rpx_9" android:thumb="@drawable/seek_bar_thumb" android:layout_weight="1.0" android:paddingVertical="@dimen/rpx_22" />
+            <TextView android:textSize="@dimen/rpx_21" android:textColor="@color/white" android:id="@id/textViewTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="00:00" android:layout_marginStart="@dimen/rpx_30" android:layout_marginEnd="@dimen/rpx_20" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView android:textSize="@dimen/rpx_50" android:textColor="#fff" android:layout_gravity="center" android:id="@id/tvVideoStatus" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="暂无视频" />
+</FrameLayout>

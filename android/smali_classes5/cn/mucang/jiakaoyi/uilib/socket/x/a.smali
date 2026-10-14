@@ -1,0 +1,9 @@
+.class public Lcn/mucang/jiakaoyi/uilib/socket/x/a;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# instance fields
+.field public a:I
+
+.field public b:Ljava/lang/String;

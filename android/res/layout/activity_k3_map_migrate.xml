@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/titleLayout" layout="@layout/common_title" />
+    <cn.mucang.android.jiakaoyi.hpmap.view.MapView android:id="@id/mapView" android:layout_width="@dimen/dp_0" android:layout_height="@dimen/dp_0" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/titleLayout" />
+    <ProgressBar android:id="@id/pbPreview" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="@id/mapView" app:layout_constraintEnd_toEndOf="@id/mapView" app:layout_constraintStart_toStartOf="@id/mapView" app:layout_constraintTop_toTopOf="@id/mapView" />
+    <LinearLayout android:orientation="horizontal" android:background="#4fff" android:layout_width="match_parent" android:layout_height="@dimen/dp_80" android:layout_margin="@dimen/dp_10" app:layout_constraintBottom_toBottomOf="parent">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="@dimen/dp_0" android:layout_height="match_parent" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/font_20" android:textColor="#fff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="地图点" />
+            <TextView android:textSize="@dimen/font_12" android:textColor="#fff" android:id="@id/mapPoint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/chooseNewStation" android:layout_width="@dimen/dp_0" android:layout_height="match_parent" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/font_20" android:textColor="#fff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="选择当前基站点" />
+            <TextView android:textSize="@dimen/font_12" android:textColor="#fff" android:id="@id/newStationPoint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="@dimen/dp_0" android:layout_height="match_parent" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/font_16" android:textStyle="bold" android:textColor="#fff" android:gravity="center" android:id="@id/migrate" android:background="@drawable/selector_base_btn_blue" android:layout_width="@dimen/dp_100" android:layout_height="@dimen/dp_40" android:text="迁移" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

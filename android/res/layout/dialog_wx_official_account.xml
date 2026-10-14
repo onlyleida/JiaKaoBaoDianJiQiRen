@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:background="#fff" android:layout_width="@dimen/dp_430" android:layout_height="@dimen/dp_478">
+        <FrameLayout android:layout_width="match_parent" android:layout_height="@dimen/dp_64">
+            <TextView android:textSize="@dimen/dp_23" android:textColor="#333" android:layout_gravity="center" android:id="@id/dialog_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="扫码关注" />
+            <ImageView android:layout_gravity="right" android:id="@id/close_dialog" android:layout_width="@dimen/dp_64" android:layout_height="match_parent" android:src="@drawable/dialog_close" android:scaleType="centerInside" />
+        </FrameLayout>
+        <View android:background="#e8e8e8" android:layout_width="match_parent" android:layout_height="@dimen/dp_1" />
+        <FrameLayout android:id="@id/web_view_container" android:layout_width="match_parent" android:layout_height="@dimen/dp_0" android:layout_weight="1.0">
+            <cn.mucang.android.image.view.MucangImageView android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/wx__account_qr" />
+        </FrameLayout>
+    </LinearLayout>
+</FrameLayout>

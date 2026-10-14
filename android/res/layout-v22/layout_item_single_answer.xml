@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/dp_32" android:paddingTop="@dimen/dp_7" android:paddingRight="@dimen/dp_32" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/dp_32"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/dp_17" android:textColor="#b2deff" android:id="@id/text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="在倒车入库项目开始线往后倒车开始计时" android:lineSpacingMultiplier="1.4" />
+</LinearLayout>

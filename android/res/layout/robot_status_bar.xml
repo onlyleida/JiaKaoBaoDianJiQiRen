@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="@dimen/rpx_50"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_20" android:textColor="@color/color_e6e7ec_232529" android:id="@id/timeTv" android:layout_width="@dimen/rpx_55" android:layout_height="wrap_content" android:lines="1" android:layout_marginStart="@dimen/rpx_30" />
+    <ImageView android:id="@id/netIv" android:layout_width="@dimen/rpx_24" android:layout_height="@dimen/rpx_24" android:src="@drawable/status_bar_net_selector" android:layout_marginStart="@dimen/rpx_20" />
+    <Space android:layout_width="0.0dp" android:layout_height="0.0dp" android:layout_weight="1.0" />
+    <TextView android:textSize="@dimen/text_20" android:textColor="@color/color_e6e7ec_232529" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/teakingk2_gps" />
+    <TextView android:textSize="@dimen/text_20" android:textColor="@color/color_e6e7ec_232529" android:id="@id/gpsTv" android:layout_width="@dimen/rpx_30" android:layout_height="wrap_content" android:lines="1" />
+    <TextView android:textSize="@dimen/text_20" android:textColor="@color/color_e6e7ec_232529" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/teakingk2_satellite" android:layout_marginStart="@dimen/rpx_30" />
+    <TextView android:textSize="@dimen/text_20" android:textColor="@color/color_e6e7ec_232529" android:id="@id/satelliteTv" android:layout_width="@dimen/rpx_30" android:layout_height="wrap_content" android:lines="1" />
+    <TextView android:textSize="@dimen/text_20" android:textColor="@color/color_e6e7ec_232529" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/teakingk2_video_stream" android:layout_marginStart="@dimen/rpx_30" />
+    <TextView android:textSize="@dimen/text_20" android:textColor="@color/color_e6e7ec_232529" android:id="@id/videoTv" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <TextView android:textSize="@dimen/text_20" android:textColor="@color/color_e6e7ec_232529" android:id="@id/brakeDesc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/teakingk2_brake_system" android:layout_marginStart="@dimen/rpx_30" />
+    <TextView android:textSize="@dimen/text_20" android:textColor="@color/color_e6e7ec_232529" android:id="@id/brakeTv" android:layout_width="@dimen/rpx_40" android:layout_height="wrap_content" android:lines="1" />
+    <TextView android:textSize="@dimen/text_20" android:textColor="@color/color_e6e7ec_232529" android:id="@id/noVisionLogin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="无感登录：开启" android:lines="1" android:layout_marginStart="@dimen/rpx_30" android:layout_marginEnd="@dimen/rpx_30" />
+    <TextView android:textSize="@dimen/text_20" android:textColor="@color/color_e6e7ec_232529" android:id="@id/rain_mode" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/teachingk2_rain_mode" android:lines="1" android:layout_marginEnd="@dimen/rpx_30" />
+</LinearLayout>

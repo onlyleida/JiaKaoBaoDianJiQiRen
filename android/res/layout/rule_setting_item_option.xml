@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/dp_88"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/dp_20" android:textColor="@android:color/holo_blue_light" android:id="@id/checkDeducts" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_24" android:text="查看扣分" android:layout_centerVertical="true" />
+    <TextView android:textSize="@dimen/dp_20" android:textColor="#333" android:id="@id/descTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_24" android:maxWidth="@dimen/dp_480" android:text="项目开始语音" android:layout_toRightOf="@id/checkDeducts" android:layout_centerVertical="true" />
+    <FrameLayout android:background="#fff2f5fa" android:paddingLeft="@dimen/dp_12" android:layout_width="match_parent" android:layout_height="@dimen/dp_45" android:layout_marginLeft="@dimen/dp_16" android:layout_marginRight="@dimen/dp_24" android:layout_toRightOf="@id/descTv" android:layout_centerVertical="true">
+        <Spinner android:id="@id/valueSpinner" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerVertical="true" />
+    </FrameLayout>
+    <View android:background="#ffe8e8e8" android:layout_width="match_parent" android:layout_height="@dimen/dp_divider" android:layout_alignParentBottom="true" />
+</RelativeLayout>

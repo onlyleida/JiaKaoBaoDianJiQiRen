@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/iconIv" android:layout_width="@dimen/rpx_560" android:layout_height="@dimen/rpx_184" android:src="@drawable/login_bg_timing" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:textSize="@dimen/text_30" android:textColor="#41474d" android:id="@id/tipTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/rpx_50" android:text="@string/teachbase_click_one_click_login" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/iconIv" />
+    <TextView android:textSize="@dimen/text_30" android:textColor="#fff" android:gravity="center" android:id="@id/loginTv" android:background="@drawable/shape_0da2ff_0095ff" android:layout_width="@dimen/rpx_320" android:layout_height="@dimen/rpx_80" android:layout_marginTop="@dimen/rpx_80" android:text="@string/teachbase_one_click_login" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/tipTv" />
+</androidx.constraintlayout.widget.ConstraintLayout>

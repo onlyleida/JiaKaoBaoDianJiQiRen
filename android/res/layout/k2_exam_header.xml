@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="@dimen/dp_40" app:layout_constraintTop_toTopOf="parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/dp_23" android:textStyle="bold" android:textColor="#333" android:gravity="center" android:id="@id/projectNameTv" android:layout_width="@dimen/dp_232" android:layout_height="match_parent" android:text="未进入项目" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" />
+    <LinearLayout android:gravity="center_vertical" android:id="@id/clutchLl" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_marginStart="@dimen/dp_16" app:layout_constraintEnd_toStartOf="@id/gearLl" app:layout_constraintStart_toStartOf="parent">
+        <TextView android:textSize="@dimen/font_18" android:textColor="#333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="离合：" />
+        <TextView android:textSize="@dimen/font_18" android:textColor="@color/color_ff4a40" android:id="@id/clutchTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="抬起" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:id="@id/gearLl" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_marginStart="@dimen/dp_16" app:layout_constraintEnd_toStartOf="@id/handbrakeLl" app:layout_constraintStart_toEndOf="@id/clutchLl">
+        <TextView android:textSize="@dimen/font_18" android:textColor="#333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="挡位：" />
+        <TextView android:textSize="@dimen/font_18" android:textColor="@color/color_ff4a40" android:id="@id/gearTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="空挡" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:id="@id/handbrakeLl" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_marginStart="@dimen/dp_16" app:layout_constraintEnd_toStartOf="@id/projectNameTv" app:layout_constraintStart_toEndOf="@id/gearLl">
+        <TextView android:textSize="@dimen/font_18" android:textColor="#333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="手刹：" />
+        <TextView android:textSize="@dimen/font_18" android:textColor="@color/color_ff4a40" android:id="@id/handbrakeTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="抬起" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:id="@id/beltLl" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_marginStart="@dimen/dp_16" app:layout_constraintEnd_toStartOf="@id/doorLl" app:layout_constraintStart_toEndOf="@id/projectNameTv">
+        <TextView android:textSize="@dimen/font_18" android:textColor="#333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="安全带：" />
+        <TextView android:textSize="@dimen/font_18" android:textColor="@color/color_ff4a40" android:id="@id/beltTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="扣上" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:id="@id/doorLl" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_marginStart="@dimen/dp_16" app:layout_constraintEnd_toStartOf="@id/footBrakeLl" app:layout_constraintStart_toEndOf="@id/beltLl">
+        <TextView android:textSize="@dimen/font_18" android:textColor="#333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="车门：" />
+        <TextView android:textSize="@dimen/font_18" android:textColor="@color/color_ff4a40" android:id="@id/doorTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="打开" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:id="@id/footBrakeLl" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_marginStart="@dimen/dp_16" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/doorLl">
+        <TextView android:textSize="@dimen/font_18" android:textColor="#333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="脚刹：" />
+        <TextView android:textSize="@dimen/font_18" android:textColor="@color/color_ff4a40" android:id="@id/footBrakeTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="抬起" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

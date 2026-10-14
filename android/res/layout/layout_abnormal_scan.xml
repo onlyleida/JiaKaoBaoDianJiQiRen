@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:paddingBottom="@dimen/rpx_50" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/qrCodeFl" android:background="@drawable/shape_e6e6e6_r8" android:layout_width="@dimen/rpx_400" android:layout_height="@dimen/rpx_400" android:layout_marginTop="@dimen/rpx_20" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <ImageView android:id="@id/qrCodeIv" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="@dimen/rpx_20" />
+        <FrameLayout android:id="@id/qrCodeErrorFl" android:background="@drawable/shape_99000000_r8" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textSize="@dimen/text_33" android:textColor="#fff" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/login_timeout" android:drawableTop="@drawable/login_ic_refresh" android:drawablePadding="@dimen/rpx_12" />
+        </FrameLayout>
+    </FrameLayout>
+    <TextView android:textSize="@dimen/text_30" android:textColor="#008aff" android:gravity="center_vertical" android:id="@id/tipTv" android:background="@drawable/bd_bonormal_scan_tip" android:layout_width="wrap_content" android:layout_height="@dimen/rpx_80" android:layout_marginTop="@dimen/rpx_58" android:text="驾考宝典APP ＞ 我的 ＞ 右上角扫一扫 ＞ 授权登录" android:paddingStart="@dimen/rpx_85" android:paddingEnd="@dimen/rpx_30" app:layout_constraintEnd_toEndOf="@id/qrCodeFl" app:layout_constraintStart_toStartOf="@id/qrCodeFl" app:layout_constraintTop_toBottomOf="@id/qrCodeFl" />
+    <ImageView android:layout_width="@dimen/rpx_105" android:layout_height="@dimen/rpx_105" android:src="@drawable/ic_check_tip" android:layout_marginEnd="@dimen/rpx_122" app:layout_constraintBottom_toBottomOf="@id/tipTv" app:layout_constraintEnd_toStartOf="@id/qrCodeFl" app:layout_constraintTop_toTopOf="@id/tipTv" />
+</androidx.constraintlayout.widget.ConstraintLayout>

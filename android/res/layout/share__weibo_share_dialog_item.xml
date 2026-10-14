@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cn.mucang.android.share.refactor.view.ShareDialogItemView android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/share_item_image" android:layout_width="50.0dp" android:layout_height="50.0dp" />
+    <TextView android:textSize="11.0dp" android:textColor="@color/share__dialog_text_color" android:gravity="center" android:id="@id/share_item_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dp" />
+</cn.mucang.android.share.refactor.view.ShareDialogItemView>

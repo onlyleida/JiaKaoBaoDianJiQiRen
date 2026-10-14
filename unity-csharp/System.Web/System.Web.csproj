@@ -1,0 +1,157 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>System.Web</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>net40</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>14.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace />
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="WebUIValidation.js" />
+    <None Remove="folder.gif" />
+    <None Remove="file.gif" />
+    <None Remove="computer.gif" />
+    <None Remove="arrow_minus.gif" />
+    <None Remove="arrow_noexpand.gif" />
+    <None Remove="arrow_plus.gif" />
+    <None Remove="arrow_up.gif" />
+    <None Remove="arrow_down.gif" />
+    <None Remove="box_full.gif" />
+    <None Remove="box_empty.gif" />
+    <None Remove="box_minus.gif" />
+    <None Remove="box_noexpand.gif" />
+    <None Remove="box_plus.gif" />
+    <None Remove="contact.gif" />
+    <None Remove="dot_empty.gif" />
+    <None Remove="dot_full.gif" />
+    <None Remove="dots.gif" />
+    <None Remove="inbox.gif" />
+    <None Remove="star_empty.gif" />
+    <None Remove="star_full.gif" />
+    <None Remove="warning.gif" />
+    <None Remove="TreeView_noexpand.gif" />
+    <None Remove="TreeView_dash.gif" />
+    <None Remove="TreeView_dashminus.gif" />
+    <None Remove="TreeView_dashplus.gif" />
+    <None Remove="TreeView_i.gif" />
+    <None Remove="TreeView_l.gif" />
+    <None Remove="TreeView_lminus.gif" />
+    <None Remove="TreeView_lplus.gif" />
+    <None Remove="TreeView_minus.gif" />
+    <None Remove="TreeView_plus.gif" />
+    <None Remove="TreeView_r.gif" />
+    <None Remove="TreeView_rminus.gif" />
+    <None Remove="TreeView_rplus.gif" />
+    <None Remove="TreeView_t.gif" />
+    <None Remove="TreeView_tminus.gif" />
+    <None Remove="TreeView_tplus.gif" />
+    <None Remove="transparent.gif" />
+    <None Remove="webform.js" />
+    <None Remove="WebUIValidation_2.0.js" />
+    <None Remove="ErrorTemplateCommon_Top.html" />
+    <None Remove="DefaultErrorTemplate_CustomErrorDefault.html" />
+    <None Remove="ErrorTemplateCommon_Bottom.html" />
+    <None Remove="DefaultErrorTemplate_StandardPage.html" />
+    <None Remove="HtmlizedExceptionPage_Top.html" />
+    <None Remove="HtmlizedExceptionPage_FileLongSource.html" />
+    <None Remove="HtmlizedExceptionPage_FileShortSource.html" />
+    <None Remove="HtmlizedExceptionPage_CompilerOutput.html" />
+    <None Remove="GridView.js" />
+    <None Remove="DetailsView.js" />
+    <None Remove="TreeView.js" />
+    <None Remove="Menu.js" />
+    <None Remove="MenuModern.js" />
+    <EmbeddedResource Include="WebUIValidation.js" LogicalName="WebUIValidation.js" />
+    <EmbeddedResource Include="folder.gif" LogicalName="folder.gif" />
+    <EmbeddedResource Include="file.gif" LogicalName="file.gif" />
+    <EmbeddedResource Include="computer.gif" LogicalName="computer.gif" />
+    <EmbeddedResource Include="arrow_minus.gif" LogicalName="arrow_minus.gif" />
+    <EmbeddedResource Include="arrow_noexpand.gif" LogicalName="arrow_noexpand.gif" />
+    <EmbeddedResource Include="arrow_plus.gif" LogicalName="arrow_plus.gif" />
+    <EmbeddedResource Include="arrow_up.gif" LogicalName="arrow_up.gif" />
+    <EmbeddedResource Include="arrow_down.gif" LogicalName="arrow_down.gif" />
+    <EmbeddedResource Include="box_full.gif" LogicalName="box_full.gif" />
+    <EmbeddedResource Include="box_empty.gif" LogicalName="box_empty.gif" />
+    <EmbeddedResource Include="box_minus.gif" LogicalName="box_minus.gif" />
+    <EmbeddedResource Include="box_noexpand.gif" LogicalName="box_noexpand.gif" />
+    <EmbeddedResource Include="box_plus.gif" LogicalName="box_plus.gif" />
+    <EmbeddedResource Include="contact.gif" LogicalName="contact.gif" />
+    <EmbeddedResource Include="dot_empty.gif" LogicalName="dot_empty.gif" />
+    <EmbeddedResource Include="dot_full.gif" LogicalName="dot_full.gif" />
+    <EmbeddedResource Include="dots.gif" LogicalName="dots.gif" />
+    <EmbeddedResource Include="inbox.gif" LogicalName="inbox.gif" />
+    <EmbeddedResource Include="star_empty.gif" LogicalName="star_empty.gif" />
+    <EmbeddedResource Include="star_full.gif" LogicalName="star_full.gif" />
+    <EmbeddedResource Include="warning.gif" LogicalName="warning.gif" />
+    <EmbeddedResource Include="TreeView_noexpand.gif" LogicalName="TreeView_noexpand.gif" />
+    <EmbeddedResource Include="TreeView_dash.gif" LogicalName="TreeView_dash.gif" />
+    <EmbeddedResource Include="TreeView_dashminus.gif" LogicalName="TreeView_dashminus.gif" />
+    <EmbeddedResource Include="TreeView_dashplus.gif" LogicalName="TreeView_dashplus.gif" />
+    <EmbeddedResource Include="TreeView_i.gif" LogicalName="TreeView_i.gif" />
+    <EmbeddedResource Include="TreeView_l.gif" LogicalName="TreeView_l.gif" />
+    <EmbeddedResource Include="TreeView_lminus.gif" LogicalName="TreeView_lminus.gif" />
+    <EmbeddedResource Include="TreeView_lplus.gif" LogicalName="TreeView_lplus.gif" />
+    <EmbeddedResource Include="TreeView_minus.gif" LogicalName="TreeView_minus.gif" />
+    <EmbeddedResource Include="TreeView_plus.gif" LogicalName="TreeView_plus.gif" />
+    <EmbeddedResource Include="TreeView_r.gif" LogicalName="TreeView_r.gif" />
+    <EmbeddedResource Include="TreeView_rminus.gif" LogicalName="TreeView_rminus.gif" />
+    <EmbeddedResource Include="TreeView_rplus.gif" LogicalName="TreeView_rplus.gif" />
+    <EmbeddedResource Include="TreeView_t.gif" LogicalName="TreeView_t.gif" />
+    <EmbeddedResource Include="TreeView_tminus.gif" LogicalName="TreeView_tminus.gif" />
+    <EmbeddedResource Include="TreeView_tplus.gif" LogicalName="TreeView_tplus.gif" />
+    <EmbeddedResource Include="transparent.gif" LogicalName="transparent.gif" />
+    <EmbeddedResource Include="webform.js" LogicalName="webform.js" />
+    <EmbeddedResource Include="WebUIValidation_2.0.js" LogicalName="WebUIValidation_2.0.js" />
+    <EmbeddedResource Include="ErrorTemplateCommon_Top.html" LogicalName="ErrorTemplateCommon_Top.html" />
+    <EmbeddedResource Include="DefaultErrorTemplate_CustomErrorDefault.html" LogicalName="DefaultErrorTemplate_CustomErrorDefault.html" />
+    <EmbeddedResource Include="ErrorTemplateCommon_Bottom.html" LogicalName="ErrorTemplateCommon_Bottom.html" />
+    <EmbeddedResource Include="DefaultErrorTemplate_StandardPage.html" LogicalName="DefaultErrorTemplate_StandardPage.html" />
+    <EmbeddedResource Include="HtmlizedExceptionPage_Top.html" LogicalName="HtmlizedExceptionPage_Top.html" />
+    <EmbeddedResource Include="HtmlizedExceptionPage_FileLongSource.html" LogicalName="HtmlizedExceptionPage_FileLongSource.html" />
+    <EmbeddedResource Include="HtmlizedExceptionPage_FileShortSource.html" LogicalName="HtmlizedExceptionPage_FileShortSource.html" />
+    <EmbeddedResource Include="HtmlizedExceptionPage_CompilerOutput.html" LogicalName="HtmlizedExceptionPage_CompilerOutput.html" />
+    <EmbeddedResource Include="GridView.js" LogicalName="GridView.js" />
+    <EmbeddedResource Include="DetailsView.js" LogicalName="DetailsView.js" />
+    <EmbeddedResource Include="TreeView.js" LogicalName="TreeView.js" />
+    <EmbeddedResource Include="Menu.js" LogicalName="Menu.js" />
+    <EmbeddedResource Include="MenuModern.js" LogicalName="MenuModern.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Configuration">
+      <HintPath>../../android/assets/bin/Data/Managed/System.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml">
+      <HintPath>../../android/assets/bin/Data/Managed/System.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap">
+      <HintPath>../../android/assets/bin/Data/Managed/System.Runtime.Serialization.Formatters.Soap.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data">
+      <HintPath>../../android/assets/bin/Data/Managed/System.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core">
+      <HintPath>../../android/assets/bin/Data/Managed/System.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.EnterpriseServices">
+      <HintPath>../../android/assets/bin/Data/Managed/System.EnterpriseServices.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.ApplicationServices">
+      <HintPath>../../android/assets/bin/Data/Managed/System.Web.ApplicationServices.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations">
+      <HintPath>../../android/assets/bin/Data/Managed/System.ComponentModel.DataAnnotations.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Data.Sqlite">
+      <HintPath>../../android/assets/bin/Data/Managed/Mono.Data.Sqlite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Services">
+      <HintPath>../../android/assets/bin/Data/Managed/System.Web.Services.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="@dimen/rpx_86"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:background="#e8e8e8" android:layout_width="match_parent" android:layout_height="@dimen/rpx_1" app:layout_constraintBottom_toBottomOf="parent" />
+    <ImageView android:id="@id/iconIv" android:layout_width="@dimen/rpx_36" android:layout_height="@dimen/rpx_36" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:textSize="@dimen/text_27" android:textColor="#06162d" android:id="@id/intentTv" android:layout_width="@dimen/rpx_150" android:layout_height="wrap_content" android:layout_marginStart="@dimen/rpx_20" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toEndOf="@id/iconIv" app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:textSize="@dimen/text_27" android:textColor="#333" android:gravity="center_vertical" android:id="@id/usbTv" android:background="@drawable/selector_usb_camera" android:layout_width="0.0dp" android:layout_height="@dimen/rpx_56" android:paddingStart="@dimen/rpx_16" android:layout_marginStart="@dimen/rpx_20" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/intentTv" app:layout_constraintTop_toTopOf="parent" />
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_arrow_down" android:layout_marginEnd="@dimen/rpx_16" app:layout_constraintBottom_toBottomOf="@id/usbTv" app:layout_constraintEnd_toEndOf="@id/usbTv" app:layout_constraintTop_toTopOf="@id/usbTv" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/tt__info_item_height" android:layout_marginTop="6.0dp">
+        <TextView android:textSize="@dimen/tt__text_size_info_item" android:textColor="#ff333333" android:gravity="center_vertical" android:background="#fff6f8fd" android:paddingLeft="19.0dp" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="学员" android:maxLines="1" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/tt__text_size_info_item" android:textColor="#ff333333" android:gravity="center_vertical" android:id="@id/student_info" android:background="#e8effa" android:paddingLeft="19.0dp" android:layout_width="0.0dp" android:layout_height="match_parent" android:maxLines="1" android:layout_weight="3.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/tt__info_item_height" android:layout_marginTop="2.0dp">
+        <TextView android:textSize="@dimen/tt__text_size_info_item" android:textColor="#ff333333" android:gravity="center_vertical" android:background="#fff6f8fd" android:paddingLeft="19.0dp" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="教练" android:maxLines="1" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/tt__text_size_info_item" android:textColor="#ff333333" android:gravity="center_vertical" android:id="@id/coach_info" android:background="#e8effa" android:paddingLeft="19.0dp" android:layout_width="0.0dp" android:layout_height="match_parent" android:maxLines="1" android:layout_weight="3.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/tt__info_item_height" android:layout_marginTop="2.0dp">
+        <TextView android:textSize="@dimen/tt__text_size_info_item" android:textColor="#ff333333" android:gravity="center_vertical" android:background="#fff6f8fd" android:paddingLeft="19.0dp" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="培训科目" android:maxLines="1" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/tt__text_size_info_item" android:textColor="#ff333333" android:gravity="center_vertical" android:id="@id/subject" android:background="#e8effa" android:paddingLeft="19.0dp" android:layout_width="0.0dp" android:layout_height="match_parent" android:maxLines="1" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/tt__text_size_info_item" android:textColor="#ff333333" android:gravity="center_vertical" android:background="#fff6f8fd" android:paddingLeft="19.0dp" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="培训车型" android:maxLines="1" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/tt__text_size_info_item" android:textColor="#ff333333" android:gravity="center_vertical" android:id="@id/drive_type" android:background="#e8effa" android:paddingLeft="19.0dp" android:layout_width="0.0dp" android:layout_height="match_parent" android:maxLines="1" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_marginTop="2.0dp" android:layout_weight="1.0">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:background="#fff6f8fd" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_marginRight="1.0dp" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/tt__text_size_training_time_label" android:textColor="#ff333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="本次培训时长" android:includeFontPadding="false" />
+            <TextView android:textSize="@dimen/tt__text_size_training_time" android:textStyle="bold" android:textColor="#ff008aff" android:id="@id/course_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:includeFontPadding="false" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:background="#fff6f8fd" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_marginLeft="1.0dp" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/tt__text_size_training_time_label" android:textColor="#ff333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="本次培训里程" android:includeFontPadding="false" />
+            <TextView android:textSize="@dimen/tt__text_size_training_time" android:textStyle="bold" android:textColor="#ff008aff" android:id="@id/course_distance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:includeFontPadding="false" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

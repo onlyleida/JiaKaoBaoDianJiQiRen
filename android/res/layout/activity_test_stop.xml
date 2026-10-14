@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="#000" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <cn.mucang.android.jiakaoyi.hpmap.view.MapView android:id="@id/map" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <LinearLayout android:layout_gravity="bottom" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dp">
+        <Button android:layout_gravity="left|bottom" android:id="@id/linestop" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="直线定点停车" android:layout_marginEnd="@dimen/dp_10" />
+        <Button android:layout_gravity="left|bottom" android:id="@id/turnStop" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="转弯定点停车" />
+        <Button android:layout_gravity="left|bottom" android:id="@id/controlSpeed" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="控速测试" />
+    </LinearLayout>
+    <TextView android:textSize="18.0sp" android:textColor="#0f0" android:layout_gravity="left|top" android:id="@id/info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:text="提示" />
+    <TextView android:textSize="18.0sp" android:textColor="#0f0" android:layout_gravity="right|top" android:id="@id/infoStop" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dp" android:text="提示" />
+    <LinearLayout android:layout_gravity="right|bottom" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dp">
+        <LinearLayout android:gravity="center" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="16.0sp" android:textColor="#fff" android:layout_width="100.0dp" android:layout_height="wrap_content" android:text="系数1: 0-10" />
+            <SeekBar android:id="@id/factor1" android:layout_width="300.0dp" android:layout_height="30.0dp" android:max="100" />
+            <TextView android:textSize="16.0sp" android:textColor="#fff" android:id="@id/factor1V" android:layout_width="60.0dp" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="16.0sp" android:textColor="#fff" android:layout_width="100.0dp" android:layout_height="wrap_content" android:text="系数2: 0-10" />
+            <SeekBar android:id="@id/factor2" android:layout_width="300.0dp" android:layout_height="30.0dp" android:max="100" />
+            <TextView android:textSize="16.0sp" android:textColor="#fff" android:id="@id/factor2V" android:layout_width="60.0dp" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="16.0sp" android:textColor="#fff" android:layout_width="100.0dp" android:layout_height="wrap_content" android:text="系数3: 0-10" />
+            <SeekBar android:id="@id/factor3" android:layout_width="300.0dp" android:layout_height="30.0dp" android:max="100" />
+            <TextView android:textSize="16.0sp" android:textColor="#fff" android:id="@id/factor3V" android:layout_width="60.0dp" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="16.0sp" android:textColor="#fff" android:layout_width="140.0dp" android:layout_height="wrap_content" android:text="速度系数:    0-6" />
+            <SeekBar android:id="@id/factor4" android:layout_width="200.0dp" android:layout_height="30.0dp" android:max="100" />
+            <TextView android:textSize="16.0sp" android:textColor="#fff" android:id="@id/factor4V" android:layout_width="60.0dp" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="16.0sp" android:textColor="#fff" android:layout_width="140.0dp" android:layout_height="wrap_content" android:text="加速度系数:0-5" />
+            <SeekBar android:id="@id/factor5" android:layout_width="200.0dp" android:layout_height="30.0dp" android:max="100" />
+            <TextView android:textSize="16.0sp" android:textColor="#fff" android:id="@id/factor5V" android:layout_width="60.0dp" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

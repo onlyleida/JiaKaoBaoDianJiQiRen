@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>net40</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>14.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>../../android/assets/bin/Data/Managed/UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>../../android/assets/bin/Data/Managed/UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="mct">
+      <HintPath>../../android/assets/bin/Data/Managed/mct.dll</HintPath>
+    </Reference>
+    <Reference Include="simple-messge">
+      <HintPath>../../android/assets/bin/Data/Managed/simple-messge.dll</HintPath>
+    </Reference>
+    <Reference Include="simple-json">
+      <HintPath>../../android/assets/bin/Data/Managed/simple-json.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

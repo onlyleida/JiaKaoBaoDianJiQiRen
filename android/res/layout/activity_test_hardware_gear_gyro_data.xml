@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="#fff" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <cn.mucang.jiakaoyi.uilib.ui.setting.gear.celibration.HardwareGearCalibView android:layout_gravity="right|top" android:id="@id/mapView" android:layout_width="@dimen/dp_600" android:layout_height="@dimen/dp_440" android:layout_marginTop="@dimen/dp_10" />
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/dp_18" android:textStyle="bold" android:textColor="#333" android:gravity="center" android:layout_gravity="center" android:id="@id/value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/dp_30" android:text="0" />
+            <Button android:layout_gravity="left|center" android:id="@id/finish" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_22" android:text="返回" />
+        </FrameLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_30" android:layout_marginTop="@dimen/dp_10">
+            <TextView android:textSize="@dimen/dp_22" android:textColor="#053eec" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="空挡 : " />
+            <TextView android:textSize="@dimen/dp_22" android:textColor="#053eec" android:gravity="center" android:layout_gravity="center" android:id="@id/g0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_22" android:text="学习" />
+            <TextView android:textSize="@dimen/dp_22" android:textColor="#053eec" android:gravity="center" android:layout_gravity="center" android:id="@id/g0_stop" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_22" android:text="停止" />
+            <TextView android:textSize="@dimen/dp_22" android:textColor="#333" android:gravity="center" android:layout_gravity="center" android:id="@id/g0_path1" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_22" android:text="路径1" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_30" android:layout_marginTop="@dimen/dp_10">
+            <TextView android:textSize="@dimen/dp_22" android:textColor="#053eec" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1挡 : " />
+            <TextView android:textSize="@dimen/dp_22" android:textColor="#053eec" android:gravity="center" android:layout_gravity="center" android:id="@id/g1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_28" android:text="学习" />
+            <TextView android:textSize="@dimen/dp_22" android:textColor="#053eec" android:gravity="center" android:layout_gravity="center" android:id="@id/g1_stop" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_22" android:text="停止" />
+            <TextView android:textSize="@dimen/dp_22" android:textColor="#333" android:gravity="center" android:layout_gravity="center" android:id="@id/g1_path1" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_22" android:text="路径1" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_30" android:layout_marginTop="@dimen/dp_10">
+            <TextView android:textSize="@dimen/dp_22" android:textColor="#053eec" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2挡 : " />
+            <TextView android:textSize="@dimen/dp_22" android:textColor="#053eec" android:gravity="center" android:layout_gravity="center" android:id="@id/g2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_28" android:text="学习" />
+            <TextView android:textSize="@dimen/dp_22" android:textColor="#053eec" android:gravity="center" android:layout_gravity="center" android:id="@id/g2_stop" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_22" android:text="停止" />
+            <TextView android:textSize="@dimen/dp_22" android:textColor="#333" android:gravity="center" android:layout_gravity="center" android:id="@id/g2_path1" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_22" android:text="路径1" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_30" android:layout_marginTop="@dimen/dp_10">
+            <TextView android:textSize="@dimen/dp_22" android:textColor="#053eec" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="3挡 : " />
+            <TextView android:textSize="@dimen/dp_22" android:textColor="#053eec" android:gravity="center" android:layout_gravity="center" android:id="@id/g3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_28" android:text="学习" />
+            <TextView android:textSize="@dimen/dp_22" android:textColor="#053eec" android:gravity="center" android:layout_gravity="center" android:id="@id/g3_stop" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_22" android:text="停止" />
+            <TextView android:textSize="@dimen/dp_22" android:textColor="#333" android:gravity="center" android:layout_gravity="center" android:id="@id/g3_path1" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_22" android:text="路径1" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_30" android:layout_marginTop="@dimen/dp_10">
+            <TextView android:textSize="@dimen/dp_22" android:textColor="#053eec" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="4挡 : " />
+            <TextView android:textSize="@dimen/dp_22" android:textColor="#053eec" android:gravity="center" android:layout_gravity="center" android:id="@id/g4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_28" android:text="学习" />
+            <TextView android:textSize="@dimen/dp_22" android:textColor="#053eec" android:gravity="center" android:layout_gravity="center" android:id="@id/g4_stop" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_22" android:text="停止" />
+            <TextView android:textSize="@dimen/dp_22" android:textColor="#333" android:gravity="center" android:layout_gravity="center" android:id="@id/g4_path1" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_22" android:text="路径1" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_30" android:layout_marginTop="@dimen/dp_10">
+            <TextView android:textSize="@dimen/dp_22" android:textColor="#053eec" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="5挡 : " />
+            <TextView android:textSize="@dimen/dp_22" android:textColor="#053eec" android:gravity="center" android:layout_gravity="center" android:id="@id/g5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_28" android:text="学习" />
+            <TextView android:textSize="@dimen/dp_22" android:textColor="#053eec" android:gravity="center" android:layout_gravity="center" android:id="@id/g5_stop" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_22" android:text="停止" />
+            <TextView android:textSize="@dimen/dp_22" android:textColor="#333" android:gravity="center" android:layout_gravity="center" android:id="@id/g5_path1" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_22" android:text="路径1" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_30" android:layout_marginTop="@dimen/dp_10">
+            <TextView android:textSize="@dimen/dp_22" android:textColor="#053eec" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="倒挡 : " />
+            <TextView android:textSize="@dimen/dp_22" android:textColor="#053eec" android:gravity="center" android:layout_gravity="center" android:id="@id/gb" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_22" android:text="学习" />
+            <TextView android:textSize="@dimen/dp_22" android:textColor="#053eec" android:gravity="center" android:layout_gravity="center" android:id="@id/gb_stop" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_22" android:text="停止" />
+            <TextView android:textSize="@dimen/dp_22" android:textColor="#333" android:gravity="center" android:layout_gravity="center" android:id="@id/gb_path1" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_22" android:text="路径1" />
+        </LinearLayout>
+        <FrameLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_22">
+            <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <Button android:textSize="@dimen/dp_26" android:layout_gravity="right|bottom" android:id="@id/sendToMaster" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="设置挡位数据到硬件" />
+                <Button android:textSize="@dimen/dp_26" android:id="@id/getHardwareData" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="获取硬件挡位数据" />
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+</FrameLayout>

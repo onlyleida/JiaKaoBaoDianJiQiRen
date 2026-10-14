@@ -1,0 +1,32 @@
+version: 3.0.3
+apkFileName: input.apk
+usesFramework:
+  ids:
+  - 1
+sdkInfo:
+  minSdkVersion: 21
+  targetSdkVersion: 30
+versionInfo:
+  versionCode: 110605
+  versionName: 11.6.5
+resourcesInfo:
+  packageId: 127
+doNotCompress:
+- aac
+- arsc
+- gif
+- jet
+- jpeg
+- jpg
+- m4a
+- mp3
+- mp4
+- png
+- wav
+- webp
+- assets/face_mask_detect_usetf.tflite
+- assets/mobile_face_net.tflite
+- assets/models_bundled/fssd_25_8bit_gray_v2.tflite
+- assets/models_bundled/fssd_25_8bit_v2.tflite
+- assets/models_bundled/fssd_medium_8bit_gray_v5.tflite
+- assets/models_bundled/fssd_medium_8bit_v5.tflite

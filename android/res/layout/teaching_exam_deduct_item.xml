@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:paddingTop="@dimen/rpx_16" android:paddingBottom="@dimen/rpx_16" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/text_30" android:textColor="#707c8c" android:ellipsize="end" android:id="@id/nameTv" android:layout_width="@dimen/rpx_368" android:layout_height="wrap_content" android:singleLine="true" android:paddingStart="@dimen/rpx_30" />
+    <TextView android:textSize="@dimen/text_30" android:textColor="#ff4d4d" android:ellipsize="end" android:id="@id/scoreTv" android:layout_width="@dimen/rpx_182" android:layout_height="wrap_content" android:singleLine="true" android:paddingStart="@dimen/rpx_30" />
+    <TextView android:textSize="@dimen/text_30" android:textColor="#707c8c" android:ellipsize="end" android:id="@id/reasonTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:paddingStart="@dimen/rpx_30" android:paddingEnd="@dimen/rpx_20" />
+</LinearLayout>

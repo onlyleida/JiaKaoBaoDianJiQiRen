@@ -1,0 +1,42 @@
+.class public final synthetic Lcn/mucang/android/jiakaoyi/k3setting/order/w0;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Landroidx/lifecycle/a0;
+
+
+# instance fields
+.field public final synthetic a:Lcom/drakeet/multitype/f;
+
+.field public final synthetic b:Lcn/mucang/android/jiakaoyi/k3setting/order/LightOrderStandardListActivity;
+
+
+# direct methods
+.method public synthetic constructor <init>(Lcom/drakeet/multitype/f;Lcn/mucang/android/jiakaoyi/k3setting/order/LightOrderStandardListActivity;)V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lcn/mucang/android/jiakaoyi/k3setting/order/w0;->a:Lcom/drakeet/multitype/f;
+
+    iput-object p2, p0, Lcn/mucang/android/jiakaoyi/k3setting/order/w0;->b:Lcn/mucang/android/jiakaoyi/k3setting/order/LightOrderStandardListActivity;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final onChanged(Ljava/lang/Object;)V
+    .locals 2
+
+    iget-object v0, p0, Lcn/mucang/android/jiakaoyi/k3setting/order/w0;->a:Lcom/drakeet/multitype/f;
+
+    iget-object v1, p0, Lcn/mucang/android/jiakaoyi/k3setting/order/w0;->b:Lcn/mucang/android/jiakaoyi/k3setting/order/LightOrderStandardListActivity;
+
+    check-cast p1, Ljava/util/List;
+
+    invoke-static {v0, v1, p1}, Lcn/mucang/android/jiakaoyi/k3setting/order/LightOrderStandardListActivity;->q(Lcom/drakeet/multitype/f;Lcn/mucang/android/jiakaoyi/k3setting/order/LightOrderStandardListActivity;Ljava/util/List;)V
+
+    return-void
+.end method

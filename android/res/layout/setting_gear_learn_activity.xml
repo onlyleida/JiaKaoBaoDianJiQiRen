@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#fff2f5fa" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/titleLayout" android:background="#fff" android:layout_width="match_parent" android:layout_height="@dimen/dp_72">
+        <ImageView android:id="@id/backIv" android:paddingLeft="@dimen/dp_28" android:paddingRight="@dimen/dp_28" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/ic_back" android:scaleType="fitCenter" />
+        <TextView android:textSize="@dimen/dp_23" android:textColor="#333" android:ellipsize="end" android:gravity="center" android:id="@id/titleTv" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="@dimen/dp_100" android:layout_marginRight="@dimen/dp_100" android:text="标题" android:maxLines="1" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="@dimen/dp_18" android:textColor="#333333" android:gravity="center_vertical" android:id="@id/tv_enable" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_16" android:layout_marginRight="@dimen/dp_124" android:src="@drawable/common_toggle_selector" android:text="启用" android:drawableRight="@drawable/common_toggle_selector" android:drawablePadding="@dimen/dp_6" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/dp_20" android:textColor="#fff" android:gravity="center" android:id="@id/actionTv" android:background="#ff02ccb4" android:paddingLeft="@dimen/dp_16" android:paddingRight="@dimen/dp_16" android:layout_width="wrap_content" android:layout_height="@dimen/dp_40" android:layout_marginRight="@dimen/dp_19" android:text="保存" android:includeFontPadding="false" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <View android:id="@id/divider" android:background="#ffe8e8e8" android:layout_width="match_parent" android:layout_height="@dimen/dp_divider" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:background="#fff" android:layout_width="match_parent" android:layout_height="@dimen/dp_64">
+        <FrameLayout android:layout_width="@dimen/dp_0" android:layout_height="match_parent" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/dp_20" android:textColor="#ff333333" android:gravity="center" android:layout_gravity="center" android:id="@id/speedTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="车速:0码" android:drawableLeft="@drawable/ic_car_speed" android:drawablePadding="@dimen/dp_2" />
+        </FrameLayout>
+        <FrameLayout android:layout_width="@dimen/dp_0" android:layout_height="match_parent" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/dp_20" android:textColor="#ff333333" android:gravity="center" android:layout_gravity="center" android:id="@id/rotateTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="转速:0转" android:drawableLeft="@drawable/ic_car_rotate" android:drawablePadding="@dimen/dp_2" />
+        </FrameLayout>
+        <FrameLayout android:layout_width="@dimen/dp_0" android:layout_height="match_parent" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/dp_20" android:textColor="#ff333333" android:gravity="center" android:layout_gravity="center" android:id="@id/gearTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="学习值:XXX" android:drawableLeft="@drawable/ic_car_gear" android:drawablePadding="@dimen/dp_2" />
+        </FrameLayout>
+    </LinearLayout>
+    <ImageView android:background="#fff" android:layout_width="match_parent" android:layout_height="@dimen/dp_divider" android:layout_marginLeft="@dimen/dp_16" android:layout_marginRight="@dimen/dp_16" android:src="#ffe8e8e8" />
+    <include android:id="@id/gearLayout1" layout="@layout/setting_gear_learn_item" />
+    <include android:id="@id/gearLayout2" layout="@layout/setting_gear_learn_item" />
+    <include android:id="@id/gearLayout3" layout="@layout/setting_gear_learn_item" />
+    <include android:id="@id/gearLayout4" layout="@layout/setting_gear_learn_item" />
+    <include android:id="@id/gearLayout5" layout="@layout/setting_gear_learn_item" />
+    <TextView android:textSize="@dimen/dp_18" android:textColor="#333333" android:gravity="center_vertical" android:layout_gravity="right" android:id="@id/tv_gps_enable" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_16" android:layout_marginTop="@dimen/dp_10" android:layout_marginRight="@dimen/dp_20" android:src="@drawable/common_toggle_selector" android:text="启用Gps速度进行挡位学习" android:drawableRight="@drawable/common_toggle_selector" android:drawablePadding="@dimen/dp_6" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</LinearLayout>

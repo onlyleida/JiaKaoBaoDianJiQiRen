@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="abc_action_bar_embed_tabs">true</bool>
+    <bool name="abc_config_actionMenuItemAllCaps">true</bool>
+    <bool name="account__show_bind_third_after_login">false</bool>
+    <bool name="account__show_sms_code_help">false</bool>
+    <bool name="account__sms_login_skip_captcha">false</bool>
+    <bool name="core__mc_main_page_value">true</bool>
+    <bool name="core__share_channel_q_zone_enable">true</bool>
+    <bool name="core__share_channel_qq_enable">true</bool>
+    <bool name="core__share_channel_sina_enable">true</bool>
+    <bool name="core__share_channel_weixin_friend_enable">true</bool>
+    <bool name="core__share_channel_weixin_moment_enable">true</bool>
+    <bool name="core__swipe_back_enabled">false</bool>
+    <bool name="default_circle_indicator_centered">true</bool>
+    <bool name="default_circle_indicator_snap">false</bool>
+    <bool name="default_line_indicator_centered">true</bool>
+    <bool name="default_title_indicator_selected_bold">true</bool>
+    <bool name="default_underline_indicator_fades">true</bool>
+    <bool name="glideAllowHardwareConfig">false</bool>
+    <bool name="mtrl_btn_textappearance_all_caps">true</bool>
+</resources>

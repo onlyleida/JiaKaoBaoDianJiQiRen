@@ -1,0 +1,3 @@
+namespace System.Web.ModelBinding;
+
+public delegate ModelValidator DataAnnotationsValidatableObjectAdapterFactory(ModelMetadata metadata, ModelBindingExecutionContext context);

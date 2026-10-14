@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:paddingBottom="@dimen/rpx_23" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/text_27" android:textColor="#ccc" android:gravity="center_vertical" android:id="@id/brakeTv" android:layout_width="wrap_content" android:layout_height="@dimen/rpx_81" android:layout_marginLeft="@dimen/rpx_30" android:text="脚刹" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <CheckBox android:gravity="center" android:id="@id/selectCb" android:paddingTop="@dimen/rpx_3" android:paddingRight="@dimen/rpx_3" android:layout_width="@dimen/rpx_48" android:layout_height="@dimen/rpx_30" android:layout_marginRight="@dimen/rpx_30" android:checked="false" android:button="@drawable/selector_collect_checkbox" app:layout_constraintBottom_toBottomOf="@id/brakeTv" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="@id/brakeTv" />
+    <RadioGroup android:orientation="horizontal" android:id="@id/brakeRg" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintLeft_toLeftOf="@id/brakeTv" app:layout_constraintTop_toBottomOf="@id/brakeTv">
+        <RadioButton android:textSize="@dimen/text_25" android:textColor="#999999" android:id="@id/brakeRb" android:paddingLeft="@dimen/rpx_15" android:layout_width="@dimen/rpx_132" android:layout_height="@dimen/rpx_33" android:layout_marginRight="@dimen/rpx_6" android:checked="true" android:button="@drawable/selector_collect_radio" android:text="刹车" />
+        <RadioButton android:textSize="@dimen/text_25" android:textColor="#999999" android:id="@id/notBrakeRb" android:paddingLeft="@dimen/rpx_15" android:layout_width="@dimen/rpx_132" android:layout_height="@dimen/rpx_33" android:button="@drawable/selector_collect_radio" android:text="未刹车" />
+    </RadioGroup>
+</androidx.constraintlayout.widget.ConstraintLayout>

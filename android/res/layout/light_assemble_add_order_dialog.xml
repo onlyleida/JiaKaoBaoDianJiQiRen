@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="#b3000000" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:background="#fff" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/dp_32" android:layout_marginBottom="@dimen/dp_32" android:layout_marginStart="@dimen/dp_40" android:layout_marginEnd="@dimen/dp_40">
+        <ImageView android:id="@id/closeIv" android:paddingLeft="@dimen/dp_18" android:paddingRight="@dimen/dp_18" android:layout_width="wrap_content" android:layout_height="@dimen/dp_64" android:src="@drawable/ic_dialog_close" android:scaleType="fitCenter" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <TextView android:textSize="@dimen/dp_23" android:textColor="#333" android:gravity="center" android:layout_width="wrap_content" android:layout_height="@dimen/dp_64" android:text="插入灯光指令" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <View android:id="@id/divider" android:background="#e8e8e8" android:layout_width="match_parent" android:layout_height="@dimen/dp_1" app:layout_constraintBottom_toBottomOf="@id/closeIv" />
+        <cn.mucang.android.core.widget.StateLayout android:id="@id/stateLayout" android:layout_width="match_parent" android:layout_height="0.0dp" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@id/closeIv">
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/recyclerView" android:layout_width="match_parent" android:layout_height="match_parent" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+        </cn.mucang.android.core.widget.StateLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

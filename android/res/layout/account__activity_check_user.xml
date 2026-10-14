@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/core__bg_login" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/title_bar" layout="@layout/account__include_title_bar" />
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="48.0dp" android:layout_marginTop="15.0dp">
+        <TextView android:textSize="16.0sp" android:textColor="@color/core_account_login_text_normal_color" android:id="@id/real_name_tv" android:layout_width="80.0dp" android:layout_height="wrap_content" android:layout_marginLeft="20.0dp" android:text="姓名" android:singleLine="true" android:layout_centerVertical="true" />
+        <EditText android:textSize="16.0sp" android:textColor="@color/core_account_login_text_normal_color" android:textColorHint="@color/core_account_login_text_hint_color" android:gravity="left" android:id="@id/real_name" android:background="@null" android:layout_width="match_parent" android:layout_height="wrap_content" android:button="@null" android:hint="输入真实姓名" android:maxLines="1" android:singleLine="true" android:layout_toRightOf="@id/real_name_tv" android:layout_centerVertical="true" />
+        <View android:background="@color/core_account_login_underline" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginLeft="20.0dp" android:layout_marginRight="20.0dp" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="48.0dp">
+        <TextView android:textSize="16.0sp" android:textColor="@color/core_account_login_text_normal_color" android:id="@id/card_tv" android:layout_width="80.0dp" android:layout_height="wrap_content" android:layout_marginLeft="20.0dp" android:text="证件号" android:singleLine="true" android:layout_centerVertical="true" />
+        <EditText android:textSize="16.0sp" android:textColor="@color/core_account_login_text_normal_color" android:textColorHint="@color/core_account_login_text_hint_color" android:gravity="left" android:id="@id/id_card_number" android:background="@null" android:layout_width="match_parent" android:layout_height="wrap_content" android:button="@null" android:hint="输入证件号码" android:maxLines="1" android:singleLine="true" android:maxLength="18" android:digits="@string/account__input_number_letters" android:layout_toRightOf="@id/card_tv" android:layout_centerVertical="true" />
+        <View android:background="@color/core_account_login_underline" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginLeft="20.0dp" android:layout_marginRight="20.0dp" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <TextView android:textSize="12.0sp" android:textColor="@color/core_account_login_text_hint_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dp" android:layout_marginTop="15.0dp" android:text="请输实名认证信息进行身份验证" android:drawableLeft="@drawable/account__auth_tishi" android:drawablePadding="10.0dp" />
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="100.0dp">
+        <TextView android:textSize="14.0sp" android:textColor="@color/core_account_login_text_normal_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="还没实名认证？" />
+        <TextView android:textSize="14.0sp" android:textColor="#2cadf6" android:id="@id/to_auth_real_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="去认证" />
+    </LinearLayout>
+    <Button android:textSize="18.0sp" android:textColor="@color/white" android:id="@id/ok_btn" android:background="@drawable/account__login_querenqian" android:layout_width="match_parent" android:layout_height="44.0dp" android:layout_marginLeft="20.0dp" android:layout_marginTop="20.0dp" android:layout_marginRight="20.0dp" android:text="下一步" />
+</LinearLayout>

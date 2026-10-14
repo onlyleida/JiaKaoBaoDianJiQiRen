@@ -1,0 +1,1 @@
+ALTER TABLE "t_photo_record" ADD COLUMN "gnss_data" text;

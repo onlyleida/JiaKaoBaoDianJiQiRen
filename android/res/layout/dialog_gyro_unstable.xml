@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/apk_update_dialog_bg_shape" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="陀螺仪信号不稳定" android:layout_centerInParent="true" style="@style/gyro_unstable_title" />
+    </RelativeLayout>
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="\n请重新开启一次OBD开关，\n重启后，请10秒内不要动挡位和开动车辆。\n" style="@style/gyro_unstable_content" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="match_parent" style="@style/privacy_agreement_bottom">
+        <TextView android:textColor="#ffffff" android:gravity="center" android:id="@id/agree" android:background="@drawable/shape_008aff_r100" android:layout_width="match_parent" android:layout_marginLeft="@dimen/dp_40" android:layout_marginRight="@dimen/dp_40" android:text="知道了" style="@style/privacy_agreement_button" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/titleLayout" layout="@layout/common_title" />
+    <cn.mucang.android.core.widget.StateLayout android:id="@id/stateLayout" android:layout_width="match_parent" android:layout_height="@dimen/dp_0" android:layout_weight="1.0">
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:id="@id/icon_qr" android:layout_width="@dimen/dp_240" android:layout_height="@dimen/dp_240" android:src="@drawable/wx__account_qr" app:layout_constraintBottom_toTopOf="@id/tip" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_chainStyle="packed" />
+            <TextView android:textSize="@dimen/dp_25" android:textColor="#333" android:id="@id/tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_24" android:text="请使用微信扫描二维码，填写信息完成绑定！" app:layout_constraintBottom_toTopOf="@id/refresh" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toBottomOf="@id/icon_qr" />
+            <TextView android:textSize="@dimen/dp_23" android:textColor="#fff" android:gravity="center" android:id="@id/refresh" android:background="@drawable/shape_008aff_r100" android:layout_width="@dimen/dp_172" android:layout_height="@dimen/dp_54" android:layout_marginBottom="@dimen/dp_36" android:text="刷新" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </cn.mucang.android.core.widget.StateLayout>
+</LinearLayout>

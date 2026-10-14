@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cn.mucang.jiakaoyi.sundial.client.view.DraggableView android:id="@id/dragView" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/dp_16" android:textColor="#fff" android:gravity="center" android:id="@id/tvLogout" android:background="@drawable/shape_sundial_float_circle" android:visibility="gone" android:layout_width="@dimen/dp_44" android:layout_height="@dimen/dp_44" android:layout_marginRight="@dimen/dp_7" android:text="签退" />
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@id/llDetail" android:background="@drawable/shape_sundial_float_w" android:layout_width="@dimen/dp_117" android:layout_height="@dimen/dp_44">
+        <ImageView android:layout_width="@dimen/dp_21" android:layout_height="@dimen/dp_21" android:src="@drawable/ic_stopwatch_start" />
+        <TextView android:textSize="@dimen/dp_16" android:textColor="@color/WHITE" android:id="@id/tvTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_6" android:text="练车计时" />
+    </LinearLayout>
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</cn.mucang.jiakaoyi.sundial.client.view.DraggableView>

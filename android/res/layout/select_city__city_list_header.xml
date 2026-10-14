@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="#fff" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <cn.mucang.android.selectcity.ui.SectionHeaderView android:id="@id/header_title" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <cn.mucang.android.selectcity.ui.CityFlowLayout android:id="@id/city_flow_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="15.0dp" />
+</LinearLayout>

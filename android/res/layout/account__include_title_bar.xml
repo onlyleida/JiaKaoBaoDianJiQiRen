@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@drawable/core__title_bar_drawable_bg_new" android:layout_width="match_parent" android:layout_height="@dimen/core__title_bar_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:id="@id/title_bar_left" android:layout_width="@dimen/core__title_bar_height" android:layout_height="match_parent" android:layout_alignParentStart="true">
+        <ImageView android:layout_width="@dimen/core__title_bar_height" android:layout_height="@dimen/core__title_bar_height" android:src="@drawable/core__title_bar_back_icon" android:scaleType="centerInside" android:tint="@color/core__title_bar_icon_tint_color" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/core__title_bar_text_size" android:textColor="@color/core__title_bar_text_color" android:id="@id/title_bar_center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="登录" android:layout_centerInParent="true" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/account__selector_btn_resend_color" android:id="@id/tv_unknown_send_sms_code" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="不会填验证码？" android:layout_centerVertical="true" android:layout_marginEnd="20.0dp" android:layout_alignParentEnd="true" />
+</RelativeLayout>

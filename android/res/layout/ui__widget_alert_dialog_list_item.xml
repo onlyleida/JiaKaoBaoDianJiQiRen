@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textSize="15.0sp" android:textColor="@drawable/ui__widget_dialog_text_color" android:gravity="left|center" android:id="@id/text_of_list" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:layout_width="match_parent" android:layout_height="48.0dp" android:text="单行列表项的选择内容" android:singleLine="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

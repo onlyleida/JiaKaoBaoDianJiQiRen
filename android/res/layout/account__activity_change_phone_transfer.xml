@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/core__bg_login" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/title_bar" layout="@layout/account__include_title_bar" />
+    <RelativeLayout android:id="@id/change_mobile" android:layout_width="match_parent" android:layout_height="48.0dp" android:layout_marginTop="15.0dp">
+        <TextView android:textSize="16.0sp" android:textColor="@color/core_account_login_text_normal_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dp" android:text="用户原手机能接收验证码" android:singleLine="true" android:layout_centerVertical="true" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dp" android:src="@drawable/account__arrow_right" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <View android:background="@color/core_account_login_underline" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginLeft="20.0dp" android:layout_marginRight="20.0dp" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/to_auth_real_name" android:visibility="gone" android:layout_width="match_parent" android:layout_height="48.0dp">
+        <TextView android:textSize="16.0sp" android:textColor="@color/core_account_login_text_normal_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dp" android:text="用户原手机不能接收验证码" android:singleLine="true" android:layout_centerVertical="true" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dp" android:src="@drawable/account__arrow_right" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <View android:background="@color/core_account_login_underline" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginLeft="20.0dp" android:layout_marginRight="20.0dp" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <TextView android:textSize="12.0sp" android:textColor="@color/core_account_login_text_hint_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dp" android:layout_marginTop="15.0dp" android:text="您正在对原绑定手机号进行修改，请进行身份验证" android:drawableLeft="@drawable/account__auth_tishi" android:drawablePadding="10.0dp" />
+</LinearLayout>

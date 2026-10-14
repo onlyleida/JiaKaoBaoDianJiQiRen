@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="@drawable/selector_keybord_press" android:layout_width="match_parent" android:layout_height="@dimen/rpx_86"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/text_34" android:textColor="#40464d" android:gravity="center" android:id="@id/numberTv" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <View android:background="#ebebeb" android:layout_width="@dimen/rpx_2" android:layout_height="match_parent" app:layout_constraintEnd_toEndOf="parent" />
+    <View android:background="#ebebeb" android:layout_width="match_parent" android:layout_height="@dimen/rpx_2" app:layout_constraintBottom_toBottomOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

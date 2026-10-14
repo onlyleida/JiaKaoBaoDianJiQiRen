@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="#efefef" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:paddingTop="16.0dp" android:paddingBottom="16.0dp" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textColor="#666666" android:gravity="center_vertical" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:layout_width="match_parent" android:layout_height="32.0dp" android:text="点击事件ID" />
+        <View android:background="#cccccc" android:layout_width="match_parent" android:layout_height="1.0px" />
+        <LinearLayout android:gravity="center_vertical" android:background="#fff" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:layout_width="match_parent" android:layout_height="42.0dp">
+            <TextView android:textColor="#333333" android:id="@id/event_id" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="com.xx.xxx.xxx.xx.xxx.xxxxx.xxx.xxxxx.xxx.xxxxx.xxx.xxxxx.xxx.xxx.xx|xxx" />
+        </LinearLayout>
+        <View android:background="#cccccc" android:layout_width="match_parent" android:layout_height="1.0px" />
+        <TextView android:textColor="#666666" android:gravity="center_vertical" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:layout_width="match_parent" android:layout_height="32.0dp" android:layout_marginTop="16.0dp" android:text="点击事件名称" />
+        <View android:background="#cccccc" android:layout_width="match_parent" android:layout_height="1.0px" />
+        <LinearLayout android:gravity="center_vertical" android:background="#fff" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:layout_width="match_parent" android:layout_height="42.0dp">
+            <TextView android:textColor="#333333" android:id="@id/event_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="点击XXX" />
+            <EditText android:textColor="#333333" android:ellipsize="end" android:gravity="right" android:id="@id/event_name_input" android:paddingLeft="8.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1.0" />
+            <Button android:id="@id/add" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:text="添加点击事件" />
+        </LinearLayout>
+        <View android:background="#cccccc" android:layout_width="match_parent" android:layout_height="1.0px" />
+        <FrameLayout android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0">
+            <Button android:textSize="17.0sp" android:textColor="#ffffff" android:gravity="center" android:layout_gravity="bottom" android:id="@id/disable" android:layout_width="match_parent" android:layout_height="48.0dp" android:layout_margin="32.0dp" android:text="暂时禁用编辑模式（持续30秒）" />
+        </FrameLayout>
+    </LinearLayout>
+    <TextView android:gravity="center" android:id="@id/loading" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent" android:text="loading..." />
+</FrameLayout>

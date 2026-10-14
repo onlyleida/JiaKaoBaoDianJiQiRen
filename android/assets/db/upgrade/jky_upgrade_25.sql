@@ -1,0 +1,1 @@
+alter table t_rule_config add column level INTEGER;

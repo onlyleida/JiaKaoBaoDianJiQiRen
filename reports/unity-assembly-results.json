@@ -1,0 +1,32 @@
+[
+  {
+    "assembly": "Assembly-CSharp.dll",
+    "exit_code": 0,
+    "csharp_files": 6
+  },
+  {
+    "assembly": "simple-json.dll",
+    "exit_code": 0,
+    "csharp_files": 23
+  },
+  {
+    "assembly": "simple-touch.dll",
+    "exit_code": 0,
+    "csharp_files": 5
+  },
+  {
+    "assembly": "MC.MeshMaker.dll",
+    "exit_code": 0,
+    "csharp_files": 155
+  },
+  {
+    "assembly": "mct.dll",
+    "exit_code": 0,
+    "csharp_files": 10
+  },
+  {
+    "assembly": "simple-messge.dll",
+    "exit_code": 0,
+    "csharp_files": 4
+  }
+]

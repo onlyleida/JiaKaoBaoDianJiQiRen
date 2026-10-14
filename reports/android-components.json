@@ -1,0 +1,1292 @@
+[
+  {
+    "kind": "activity",
+    "name": "cn.mucang.android.jiakaoyi.teachingk2.ui.splash.TeachSplashActivity",
+    "exported_declaration": null,
+    "launcher": true
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.android.jiakaoyi.teachingk2.ui.test.DebugProtocolActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.android.jiakaoyi.teachingk2.ui.CheckActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.android.jiakaoyi.teachingk2.ui.HardwareLogActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.android.jiakaoyi.teachingk2.login.ui.LoginActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.android.jiakaoyi.teachingk2.login.ui.CoachLoginActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.android.jiakaoyi.teachingk2.collectsite.SiteDataPage",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.android.jiakaoyi.teachingk2.collectsite.SiteCollectPage",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.android.jiakaoyi.teachingk2.ui.TrainingSiteManageActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.android.jiakaoyi.teachingk2.safe.ui.SafeDataManageActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.android.jiakaoyi.teachingk2.calibration.CalibartionActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.android.jiakaoyi.teachingk2.safe.ui.RadarDebugActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.android.jiakaoyi.teachingk2.ui.SpecialRadarDataActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.android.jiakaoyi.teachingk2.ui.car.CarBindActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.android.jiakaoyi.teachingk2.ui.car.RobotCarDataActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.android.jiakaoyi.teachingk2.ui.car.CarListActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.android.jiakaoyi.teachingk2.ui.TeachProgrammeManagerActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.android.jiakaoyi.teachingk2.ui.RobotGuideActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.android.jiakaoyi.teachingk2.ota.RobotFirmWareManagerActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.android.jiakaoyi.teachingk2.setting.ai.AISignalActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.android.jiakaoyi.teachingk2.ui.settings.TeachingSettingActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.android.jiakaoyi.teachingk2.ui.settings.CheckModuleSettingActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.android.jiakaoyi.teachingk2.ui.settings.DrivingSettingActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.android.jiakaoyi.teachingk2.ui.test.TestFencePage",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.android.jiakaoyi.teachingk2.setting.CameraPushSettingActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.android.jiakaoyi.teachingk2.setting.FaceSettingActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.android.jiakaoyi.teachingk2.setting.SundialCameraSettingActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.android.jiakaoyi.teachingk2.setting.CameraManageActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.android.jiakaoyi.teachingk2.safe.detector.fencepage.FenceDetectorPage",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.android.jiakaoyi.teachingk2.safe.detector.test.BrakeDistanceTestPage",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.android.jiakaoyi.teachingk2.autoteach.test.BackCenterTestPage",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.android.jiakaoyi.teachingk2.setting.AutoTeachDebugActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.android.jiakaoyi.teachingk2.login.ui.FaceRegisterActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.android.jiakaoyi.teachingk2.collect.v2.TraceAutoCreateActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.android.jiakaoyi.teachingk2.safe.stop.test.TestStopPage",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.android.jiakaoyi.teachingk2.safe.stop.test.TestSpeedControllerPage",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.android.jiakaoyi.teachingk2.collect.K2TeachCollectActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.android.jiakaoyi.teachingk2.collect.TeachBindStepActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.android.jiakaoyi.teachingk2.collect.monitor.MonitorActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.android.jiakaoyi.teachingk2.collect.MaterialSelectActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.android.jiakaoyi.teachingk2.collect.v2.SelectStepActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.android.jiakaoyi.teachingk2.collect.v2.StepTeachModelActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.android.jiakaoyi.teachingk2.collect.v2.ShowTeachModelActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.android.jiakaoyi.teachingk2.collect.v2.EditTeachModelActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.android.jiakaoyi.teachingk2.collect.v2.CollectTraceActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.android.jiakaoyi.teachingk2.acceptance.AcceptanceMainActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.android.jiakaoyi.teachingk2.acceptance.AcceptanceChildActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.android.jiakaoyi.teachingk2.acceptance.AcceptanceMapActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.android.jiakaoyi.teachingk2.collect.v2.TeachVerifyActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.android.jiakaoyi.teachingk2.collect.v2.CollectGlobalActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.android.jiakaoyi.k3setting.teach.K3TeachSettingActivity",
+    "exported_declaration": "false",
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.android.jiakaoyi.k3setting.route.manager.RouteActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.android.jiakaoyi.k3setting.route.detail.RouteDetailActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.android.jiakaoyi.k3setting.route.edit.RouteEditActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.android.jiakaoyi.k3setting.order.ManualOrderSettingActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.android.jiakaoyi.k3setting.order.K3RouteSettingActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.android.jiakaoyi.k3setting.order.OrderSettingActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.android.jiakaoyi.k3setting.order.LightOrderActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.android.jiakaoyi.k3setting.order.LightAssembleActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.android.jiakaoyi.k3setting.order.LightAssembleAddActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.android.jiakaoyi.k3setting.order.OrderEditActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.android.jiakaoyi.k3setting.order.K3RouteStepEditActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.android.jiakaoyi.k3setting.order.LightOrderStandardListActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.android.jiakaoyi.k3setting.order.K3OrderStandardListActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.android.jiakaoyi.k3setting.order.OrderPositionSelectActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.android.jiakaoyi.k3setting.order.OrderVoiceCodeSelectActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.android.jiakaoyi.k3setting.backup.K3RuleDeductOrderDiffActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "com.amap.api.maps.offlinemap.OfflineMapActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.android.jiakaoyi.k3setting.route.manager.RouteResetActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.android.jiakaoyi.k3collect.manager.map.K3MapManagerActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.android.jiakaoyi.k3collect.manager.K3HpDataManagerActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.android.jiakaoyi.k3collect.K3PosCollectActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.android.jiakaoyi.k3collect.manager.map.examSite.K3ExamSiteSelectActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.android.jiakaoyi.k3collect.manager.map.preview.K3MapPreviewActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.android.jiakaoyi.k3collect.ui.MultilaneCollectActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.android.jiakaoyi.k3collect.manager.map.migrate.K3MigrateActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.android.jiakaoyi.mapcollect.collect.PosCollectActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.android.jiakaoyi.mapcollect.manager.map.MapManagerActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.android.jiakaoyi.mapcollect.manager.car.CarDataManagerActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.android.jiakaoyi.mapcollect.manager.map.MapPreviewActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.android.jiakaoyi.mapcollect.manager.map.gpsbase.GpsBaseSelectActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.android.jiakaoyi.mapcollect.select.SelectSchoolCarActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.android.jiakaoyi.mapcollect.manager.car.model.CarModelDbActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.android.jiakaoyi.mapcollect.manager.car.admin.CarAdminActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.android.jiakaoyi.mapcollect.select.brand.CarCollectSelectActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.android.jiakaoyi.mapcollect.manager.car.admin.AgentManageActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.android.jiakaoyi.mapcollect.manager.map.ExamModeSettingActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.android.jiakaoyi.mapcollect.migrate.K2MigrateActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.android.jiakaoyi.mapcollect.manager.map.ProjectMapPreviewActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.android.jiakaoyi.mapcollect.manager.car.model.CarCodeManagerActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.android.jiakaoyi.mapcollect.manager.car.CarPreviewActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.android.jiakaoyi.unity.activity.UnityMainActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.jiakaoyi.uilib.siterule.SwitchExamSiteRuleActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.jiakaoyi.uilib.splash.StatusCheckActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.jiakaoyi.uilib.ui.check.SelfCheckActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.jiakaoyi.uilib.ui.setting.SettingActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.jiakaoyi.uilib.ui.setting.signal.SignalCheckActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.jiakaoyi.uilib.ui.setting.ota.FirmWareManagerActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.jiakaoyi.uilib.ui.setting.signal.SignalReverseActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.jiakaoyi.uilib.ui.setting.DebugSettingActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.jiakaoyi.uilib.ui.setting.signal.ExtensionSelectActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.jiakaoyi.uilib.ui.setting.gear.GearLearnActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.jiakaoyi.uilib.ui.setting.tts.TtsSettingActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.jiakaoyi.uilib.ui.setting.tts.TtsDebugActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.jiakaoyi.uilib.ui.setting.tts.VoicePackPreviewActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.jiakaoyi.uilib.ui.setting.BroadcastSettingActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.jiakaoyi.uilib.ui.setting.AboutActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.jiakaoyi.uilib.ui.setting.car.CarSelectActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.jiakaoyi.uilib.activate.BindDeviceActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.jiakaoyi.uilib.rule.RuleSettingActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.jiakaoyi.uilib.deduct.DeductSettingActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.jiakaoyi.uilib.ui.backup.BackupActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.android.core.webview.HTML5Activity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.android.selectcity.SelectCityStartupActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.android.account.activity.AccountSafeActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.android.account.activity.AuthRealNameActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.android.account.activity.BindThirdActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.android.account.activity.ChangePasswordActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.android.account.activity.ChangePhoneTransferActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.android.account.activity.CheckUserActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.android.account.activity.ForgotPasswordActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.android.account.activity.LoginActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.android.account.activity.LoginHtml5Activity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.android.account.activity.LoginMultiDefaultSmsActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.android.account.activity.SetPasswordActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.android.account.activity.ValidationActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.jiakaoyi.uilib.ui.setting.gps.HpGpsTestActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.jiakaoyi.uilib.ui.setting.gear.GearGyroLearningPage",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.jiakaoyi.uilib.ui.setting.gear.celibration.HardwareGearGyroLearningPage",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.jiakaoyi.uilib.sso.SsoLoginActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.jiakaoyi.uilib.ui.setting.BrakeStateDebugActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.jiakaoyi.uilib.siterule.InstructChangeActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.jiakaoyi.uilib.ui.setting.VoiceTestActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.jiakaoyi.uilib.ui.setting.GpsDebugInfoActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.jiakaoyi.uilib.diff.RuleDeductDiffActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.jiakaoyi.uilib.rule.RuleHistoryModifyLogActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.jiakaoyi.uilib.rule.RulePersonalModifyActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.jiakaoyi.uilib.deduct.DeductHistoryModifyLogActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.jiakaoyi.uilib.deduct.DeductPersonalModifyActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.jiakaoyi.uilib.actionlog.ActionLogActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.jiakaoyi.uilib.ui.setting.gear.GearAutoGyroLearningPage",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.jiakaoyi.uilib.debug.DebugActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.jiakaoyi.uilib.ui.setting.CollectGpsPage",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.jiakaoyi.uilib.ui.setting.gear.celibration.GearCalibrationActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.jiakaoyi.uilib.ui.setting.car.RealCarSelectActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.jiakaoyi.uilib.ui.setting.DebugToolsActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.jiakaoyi.uilib.ui.skin.ExamSkinActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.jiakaoyi.sundial.client.CameraActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.jiakaoyi.sundial.client.CameraTestActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.android.jky.usbcamera.adjust.AdjustSideActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.android.jky.usbcamera.detectside.USBCameraActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.android.jky.usbcamera.detectside.USBCameraNoViewActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.sundial.library.activity.BaseActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.sundial.library.activity.MainActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.sundial.library.activity.LoginActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.sundial.library.activity.LoginStudentActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.sundial.library.activity.StudentInfoActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.sundial.library.activity.FaceCheckActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.sundial.library.activity.TrainingFaceCheckActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.sundial.library.activity.CoachInfoActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.sundial.library.activity.InputIdCardActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.sundial.library.activity.SettingActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.sundial.library.activity.AdminCheckActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.sundial.library.activity.RegisterActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.sundial.library.activity.DebugActivity2",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.sundial.library.activity.DebugActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.sundial.library.activity.CameTestActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.sundial.library.activity.SelfCheckActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.sundial.library.activity.AnalogVoiceBroadcastActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.sundial.library.sdk.coach.CoachLoginActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.sundial.library.sdk.coach.CoachFaceCheckActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.android.account.qrcode.activity.QrCodeAuthActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "com.mobile.auth.gatewayauth.LoginAuthActivity",
+    "exported_declaration": "false",
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "com.mobile.auth.gatewayauth.activity.AuthWebVeiwActivity",
+    "exported_declaration": "false",
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "com.cmic.sso.sdk.activity.LoginAuthActivity",
+    "exported_declaration": "false",
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.android.account.third.QQLoginAssistActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.android.account.third.WXLoginAssistActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.android.account.activity.SMSVerifyActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.android.selectcity.SelectCityByProvinceActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.android.selectcity.SelectRegionByCityActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.android.selectcity.CityListActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.android.core.ui.page.PageActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.android.download.ui.DownloadListActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.android.core.config.YourActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.android.core.api.verify.ErrorDialogActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.android.core.api.verify.GeetestVerifyActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.android.core.api.verify.captcha.CaptchaVerifyActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.android.push.activity.PushActivity",
+    "exported_declaration": "true",
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.android.core.permission.setting.PermissionDetailActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.android.core.permission.setting.PermissionSettingActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "cn.mucang.android.core.config.StartServiceBridgeActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "com.google.android.gms.common.api.GoogleApiActivity",
+    "exported_declaration": "false",
+    "launcher": false
+  },
+  {
+    "kind": "activity",
+    "name": "com.blankj.utilcode.util.PermissionUtils$PermissionActivity",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "service",
+    "name": "cn.mucang.android.jiakaoyi.teachingk2.highlight.MediaService",
+    "exported_declaration": "false",
+    "launcher": false
+  },
+  {
+    "kind": "service",
+    "name": "cn.mucang.android.jiakaoyi.teachingk2.safe.floatwindow.FloatSafeAlterViewService",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "service",
+    "name": "cn.mucang.android.jiakaoyi.signal.handle.gps.debug.DebugGpsService",
+    "exported_declaration": "false",
+    "launcher": false
+  },
+  {
+    "kind": "service",
+    "name": "cn.mucang.android.download.service.DownloadService",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "service",
+    "name": "cn.mucang.android.download.service.DownloadMonitorService",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "service",
+    "name": "com.google.mlkit.common.internal.MlKitComponentDiscoveryService",
+    "exported_declaration": "false",
+    "launcher": false
+  },
+  {
+    "kind": "service",
+    "name": "com.google.android.datatransport.runtime.backends.TransportBackendDiscovery",
+    "exported_declaration": "false",
+    "launcher": false
+  },
+  {
+    "kind": "service",
+    "name": "com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService",
+    "exported_declaration": "false",
+    "launcher": false
+  },
+  {
+    "kind": "service",
+    "name": "com.amap.api.location.APSService",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "service",
+    "name": "com.blankj.utilcode.util.MessengerUtils$ServerService",
+    "exported_declaration": null,
+    "launcher": false
+  },
+  {
+    "kind": "receiver",
+    "name": "cn.mucang.android.download.notification.DownloadNotificationEventReceiver",
+    "exported_declaration": "true",
+    "launcher": false
+  },
+  {
+    "kind": "receiver",
+    "name": "cn.mucang.android.core.identity.internal.DeviceIdReceiver",
+    "exported_declaration": "false",
+    "launcher": false
+  },
+  {
+    "kind": "receiver",
+    "name": "com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver",
+    "exported_declaration": "false",
+    "launcher": false
+  },
+  {
+    "kind": "provider",
+    "name": "cn.mucang.android.download.provider.DownloadParamProvider",
+    "exported_declaration": "false",
+    "launcher": false
+  },
+  {
+    "kind": "provider",
+    "name": "cn.mucang.android.core.misc.McFileProvider",
+    "exported_declaration": "false",
+    "launcher": false
+  },
+  {
+    "kind": "provider",
+    "name": "cn.mucang.android.core.identity.internal.DeviceIdProvider",
+    "exported_declaration": "false",
+    "launcher": false
+  },
+  {
+    "kind": "provider",
+    "name": "cn.mucang.android.core.identity.OaidProviderForInit",
+    "exported_declaration": "false",
+    "launcher": false
+  },
+  {
+    "kind": "provider",
+    "name": "org.extra.tools.ContextProvider",
+    "exported_declaration": "false",
+    "launcher": false
+  },
+  {
+    "kind": "provider",
+    "name": "com.google.mlkit.common.internal.MlKitInitProvider",
+    "exported_declaration": "false",
+    "launcher": false
+  },
+  {
+    "kind": "provider",
+    "name": "androidx.lifecycle.ProcessLifecycleOwnerInitializer",
+    "exported_declaration": "false",
+    "launcher": false
+  },
+  {
+    "kind": "provider",
+    "name": "com.noober.background.BackgroundContentProvider",
+    "exported_declaration": "false",
+    "launcher": false
+  },
+  {
+    "kind": "provider",
+    "name": "com.blankj.utilcode.util.Utils$FileProvider4UtilCode",
+    "exported_declaration": "false",
+    "launcher": false
+  }
+]

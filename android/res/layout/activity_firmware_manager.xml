@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/titleLayout" layout="@layout/common_title" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/firmwares" android:layout_width="match_parent" android:layout_height="@dimen/dp_0" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@id/titleLayout" />
+    <TextView android:gravity="center" android:id="@id/state" android:layout_width="wrap_content" android:layout_height="@dimen/dp_80" android:text="状态" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" />
+    <TextView android:gravity="center" android:id="@id/packIndex" android:layout_width="wrap_content" android:layout_height="@dimen/dp_80" android:layout_marginRight="@dimen/dp_20" android:text="状态" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintRight_toRightOf="parent" />
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/clLayout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <cn.mucang.jiakaoyi.uilib.ui.widget.ArcProgress android:id="@id/arcProgress" android:layout_width="@dimen/dp_200" android:layout_height="@dimen/dp_200" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
