@@ -1,0 +1,34 @@
+package com.google.android.gms.internal.mlkit_vision_face_bundled;
+
+import com.amap.api.maps.model.MyLocationStyle;
+import com.google.firebase.encoders.FieldDescriptor;
+import com.google.firebase.encoders.ObjectEncoder;
+import com.google.firebase.encoders.ObjectEncoderContext;
+import com.tencent.open.SocialConstants;
+import java.io.IOException;
+
+/* JADX INFO: loaded from: classes2.dex */
+final class zzfh implements ObjectEncoder {
+    static final zzfh zza = new zzfh();
+    private static final FieldDescriptor zzb;
+    private static final FieldDescriptor zzc;
+
+    static {
+        FieldDescriptor.Builder builder = FieldDescriptor.builder(SocialConstants.PARAM_SOURCE);
+        zzbz zzbzVar = new zzbz();
+        zzbzVar.zza(1);
+        zzb = builder.withProperty(zzbzVar.zzb()).build();
+        FieldDescriptor.Builder builder2 = FieldDescriptor.builder(MyLocationStyle.ERROR_CODE);
+        zzbz zzbzVar2 = new zzbz();
+        zzbzVar2.zza(2);
+        zzc = builder2.withProperty(zzbzVar2.zzb()).build();
+    }
+
+    private zzfh() {
+    }
+
+    @Override // com.google.firebase.encoders.ObjectEncoder, com.google.firebase.encoders.Encoder
+    public final /* bridge */ /* synthetic */ void encode(Object obj, ObjectEncoderContext objectEncoderContext) throws IOException {
+        throw null;
+    }
+}
