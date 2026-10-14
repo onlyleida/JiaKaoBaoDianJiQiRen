@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@android:color/white" android:paddingLeft="@dimen/dp_12" android:paddingRight="@dimen/dp_8" android:layout_width="match_parent" android:layout_height="@dimen/dp_56"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/dp_18" android:textColor="@color/color_008aff" android:ellipsize="marquee" android:layout_gravity="center_vertical" android:id="@id/text" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="随机播放" android:singleLine="true" android:textAlignment="inherit" />
+    <ImageView android:layout_gravity="right|center" android:id="@id/iv" android:layout_width="@dimen/dp_20" android:layout_height="@dimen/dp_20" android:src="@drawable/ic_right" />
+</FrameLayout>
