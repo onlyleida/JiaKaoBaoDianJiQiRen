@@ -1,0 +1,3 @@
+drop table if exists message_center;
+create table if not exists message_center (_id integer primary key autoincrement,msg_id text,msg_type text,show_style text,title text,summary text,icon text,content text,action text,flags integer,native_create_time integer,server_create_time text,is_delete integer,start_time integer,end_time integer,expired_time integer,show_count integer,frequency_days integer,frequency_times integer,after text,last_show_time integer);
+create table if not exists message_record (_id integer primary key autoincrement,msg_id text,show_time integer,receive_time integer);

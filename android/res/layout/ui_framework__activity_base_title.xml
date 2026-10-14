@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/ui_framework__base_title_container" android:layout_width="match_parent" android:layout_height="48.0dp" />
+    <FrameLayout android:id="@id/ui_framework__fragment_container" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/ui_framework__base_title_container" />
+    <View android:id="@id/ui_framework__title_shadow" android:background="@drawable/ui_framework__title_shadow" android:layout_width="match_parent" android:layout_height="5.0dp" android:layout_below="@id/ui_framework__base_title_container" />
+</RelativeLayout>

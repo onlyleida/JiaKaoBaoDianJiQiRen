@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/select_city__line_item_background_color_normal" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/select_city__top_bar" />
+    <ListView android:id="@id/cities" android:layout_width="match_parent" android:layout_height="match_parent" android:divider="@color/select_city__list_divider_color" android:dividerHeight="@dimen/select_city__list_divider_height" />
+</LinearLayout>
