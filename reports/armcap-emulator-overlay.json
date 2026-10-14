@@ -1,0 +1,20 @@
+{
+  "base": "local-backend overlay",
+  "originalModified": false,
+  "files": [
+    {
+      "file": "android/smali/cn/mucang/android/core/jni/Riddle.smali",
+      "originalSha256": "49f12c448d757154706f8e39036aaca132546b76bbf9f23af1c90673c1874fb6",
+      "patchedSha256": "3f6cb77cc1f4ed93fcdbae7fb7ba5bf39cedbd8d576dde964e1d2518f52e6acc"
+    }
+  ],
+  "scope": "Set OPENSSL_armcap=0 before loading libtnpn to avoid ARM CPU probes",
+  "nativeLibrariesUnchanged": true,
+  "nativeMethodsUnchanged": true,
+  "limits": [
+    "Compatibility setting still requires runtime verification",
+    "CPU acceleration disabled for process OpenSSL ARM routines",
+    "Original activation, hardware and resource checks remain",
+    "Use the local backend and guest network isolation for testing"
+  ]
+}

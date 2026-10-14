@@ -17,13 +17,13 @@ EXPECTED_BASE = 'a11eee996432ec7748761c684f223d3ba7eb2fb399d76a5b14dde4588d4e518
 EXPECTED_TARGET = '16d0c167b5509609fb795cab3a6271aa76b03a82333da1f5d2ffb3fdf08560ea'
 
 
-def restore(base, delta, output):
+def restore(base, delta, output, expected_target=EXPECTED_TARGET):
     original = Path(base).read_bytes()
     if hashlib.sha256(original).hexdigest() != EXPECTED_BASE:
         raise ValueError('Wrong base APK; expected the verified release APK')
     with zipfile.ZipFile(delta) as bundle, zipfile.ZipFile(base) as apk:
         manifest = json.loads(bundle.read('manifest.json'))
-        if manifest['base_sha256'] != EXPECTED_BASE or manifest['target_sha256'] != EXPECTED_TARGET:
+        if manifest['base_sha256'] != EXPECTED_BASE or manifest['target_sha256'] != expected_target:
             raise ValueError('Unexpected delta target')
         literal = bundle.read('literal.bin')
         rebuilt = bytearray()
@@ -44,12 +44,12 @@ def restore(base, delta, output):
                 rebuilt.extend(compressed)
             else:
                 raise ValueError('Unsupported segment type')
-    if len(rebuilt) != manifest['target_size'] or hashlib.sha256(rebuilt).hexdigest() != EXPECTED_TARGET:
+    if len(rebuilt) != manifest['target_size'] or hashlib.sha256(rebuilt).hexdigest() != expected_target:
         raise ValueError('Restored APK checksum mismatch')
     output = Path(output)
     output.parent.mkdir(parents=True, exist_ok=True)
     output.write_bytes(rebuilt)
-    print('Verified exact local APK:', EXPECTED_TARGET)
+    print('Verified exact local APK:', expected_target)
 
 
 if __name__ == '__main__':
@@ -57,5 +57,7 @@ if __name__ == '__main__':
     parser.add_argument('--base', type=Path, required=True)
     parser.add_argument('--delta', type=Path, required=True)
     parser.add_argument('--output', type=Path, required=True)
+    parser.add_argument('--expected-sha256', default=EXPECTED_TARGET,
+                        help='Expected target identity; defaults to the original local-backend APK')
     args = parser.parse_args()
-    restore(args.base, args.delta, args.output)
+    restore(args.base, args.delta, args.output, args.expected_sha256)

@@ -1,0 +1,21 @@
+--- local/android/smali/cn/mucang/android/core/jni/Riddle.smali
++++ emulator/android/smali/cn/mucang/android/core/jni/Riddle.smali
+@@ -5,7 +5,17 @@
+ 
+ # direct methods
+ .method static constructor <clinit>()V
+-    .locals 1
++    .locals 3
++
++    # Use OpenSSL's portable ARM path; avoid SIGILL CPU probing in translation.
++    const-string v0, "OPENSSL_armcap"
++    const-string v1, "0"
++    const/4 v2, 0x1
++    invoke-static {v0, v1, v2}, Landroid/system/Os;->setenv(Ljava/lang/String;Ljava/lang/String;Z)V
++
++    const-string v0, "JiaKaoLocal"
++    const-string v1, "ARM emulator compatibility: OPENSSL_armcap=0"
++    invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
+ 
+     const-string v0, "tnpn"
+ 
