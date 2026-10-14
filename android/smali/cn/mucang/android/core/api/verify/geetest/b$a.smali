@@ -1,0 +1,14 @@
+.class synthetic Lcn/mucang/android/core/api/verify/geetest/b$a;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcn/mucang/android/core/api/verify/geetest/b;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1008
+    name = null
+.end annotation
