@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="horizontal" android:background="@drawable/tt__bg_round_white" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/mountain" layout="@layout/tt__include_bottom_mountain" />
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:paddingStart="@dimen/tt__main_coach_padding">
+        <TextView android:textSize="@dimen/tt__text_size_title" android:textColor="#ff333333" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/tt__login_top_margin" android:text="学员登录" />
+        <TextView android:textSize="@dimen/tt__text_size_insert_ic_tip" android:textColor="#ff333333" android:id="@id/inert_ic_card_tip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/tt__login_input_gap" android:text="请插卡" android:layout_below="@id/title" />
+        <EditText android:textSize="@dimen/tt__text_size_input" android:textColor="#ff333333" android:textColorHint="#ffa0a0a0" android:id="@id/id_card_number" android:background="@drawable/tt__bg_input" android:paddingLeft="10.0dp" android:paddingRight="10.0dp" android:focusable="false" android:layout_width="@dimen/tt__login_input_width" android:layout_height="@dimen/tt__input_height" android:layout_marginTop="@dimen/tt__login_input_gap" android:hint="输入手机号或证件号进行登录" android:maxLines="1" android:maxLength="18" android:layout_below="@id/title" />
+        <TextView android:textSize="@dimen/tt__text_size_button" android:textColor="#ffffffff" android:gravity="center" android:id="@id/login" android:background="@drawable/tt__bg_btn_blue_2_corner" android:layout_width="@dimen/tt__button_width_long" android:layout_height="@dimen/tt__button_height" android:layout_marginTop="@dimen/tt__login_input_gap" android:text="登录" android:layout_below="@id/id_card_number" />
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/qr_code_layout" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/tt__login_top_margin" android:layout_marginEnd="57.0dp" android:layout_alignParentEnd="true">
+            <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@id/app_qr_code" android:layout_width="@dimen/tt__qr_size" android:layout_height="@dimen/tt__qr_size" />
+                <TextView android:textSize="@dimen/tt__text_size_qr_invalid" android:textColor="@android:color/white" android:gravity="center" android:id="@id/invalid_app_qr_code" android:background="#7f000000" android:visibility="gone" android:layout_width="@dimen/tt__qr_size" android:layout_height="@dimen/tt__qr_size" android:text="二维码已失效，点击重新生成" />
+            </FrameLayout>
+            <TextView android:textSize="@dimen/tt__text_size_qr_invalid" android:textColor="#ff333333" android:id="@id/app_qr_code_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="13.0dp" android:text="请使用 驾考宝典 或 教练宝典 扫码登录" />
+        </LinearLayout>
+        <TextView android:id="@id/back" android:paddingLeft="17.0dp" android:paddingTop="10.0dp" android:paddingRight="17.0dp" android:paddingBottom="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="19.0dp" android:text="返回上一步" android:drawablePadding="1.0dp" android:layout_alignParentBottom="true" style="@style/Sundial.Button" />
+    </RelativeLayout>
+</FrameLayout>
