@@ -1,0 +1,22 @@
+{
+  "app_name": "驾考宝典AI教练",
+  "package": "cn.mucang.android.jiakaoyi.teachingk2",
+  "version_name": "11.6.5",
+  "version_code": 110605,
+  "input_sha256": "a52da069ad1fa88a35923b003b68f4d9c240679d4cde386985999dff133a7349",
+  "java_files": 17450,
+  "java_initial_error_files": 124,
+  "java_initial_unreconstructed_method_placeholders": 195,
+  "java_fallback_files": 124,
+  "java_fallback_remaining_method_placeholders": 4,
+  "smali_files": 33298,
+  "csharp_files": 15202,
+  "native_libraries_preserved": 42,
+  "managed_assemblies_preserved": 105,
+  "executed_apk": false,
+  "original_unchanged": true,
+  "managed_assemblies_decompiled": 105,
+  "apk_rebuilt": true,
+  "rebuilt_signature_verified": true,
+  "runtime_validation": "Not executed: API34 install rejected with NO_MATCHING_ABIS; official API30 ARM64 r16 also has empty 32-bit ABI list."
+}
