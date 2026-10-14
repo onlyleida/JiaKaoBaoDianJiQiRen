@@ -1,0 +1,45 @@
+namespace System.Web.Profile;
+
+public class ProfileGroupBase
+{
+	private string _MyName;
+
+	private ProfileBase _Parent;
+
+	public object this[string propertyName]
+	{
+		get
+		{
+			return _Parent[_MyName + propertyName];
+		}
+		set
+		{
+			_Parent[_MyName + propertyName] = value;
+		}
+	}
+
+	public object GetPropertyValue(string propertyName)
+	{
+		return _Parent[_MyName + propertyName];
+	}
+
+	public void SetPropertyValue(string propertyName, object propertyValue)
+	{
+		_Parent[_MyName + propertyName] = propertyValue;
+	}
+
+	public ProfileGroupBase()
+	{
+		_Parent = null;
+		_MyName = null;
+	}
+
+	public void Init(ProfileBase parent, string myName)
+	{
+		if (_Parent == null)
+		{
+			_Parent = parent;
+			_MyName = myName + ".";
+		}
+	}
+}
