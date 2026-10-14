@@ -5,6 +5,7 @@ import json
 import os
 from pathlib import Path
 import re
+import select
 import shutil
 import subprocess
 import sys
@@ -132,10 +133,34 @@ def main():
             else:
                 raise RuntimeError("Local backend did not become ready")
             run(adb + ["reverse", "tcp:8765", "tcp:8765"], "adb-reverse")
-            probe = run(adb + ["shell", "toybox", "nc", "-w", "5", "127.0.0.1", "8765"],
-                        "guest-backend-health", timeout=15,
-                        stdin="GET /__local/health HTTP/1.0\r\nHost: localhost\r\n\r\n")
-            if '"success":true' not in probe.stdout:
+            # Toybox nc can quit immediately on stdin EOF. Keep stdin open until
+            # the response arrives instead of using subprocess.run(input=...).
+            probe = subprocess.Popen(adb + ["shell", "toybox", "nc", "-w", "5", "127.0.0.1", "8765"],
+                                     env=env, stdin=subprocess.PIPE, stdout=subprocess.PIPE,
+                                     stderr=subprocess.STDOUT)
+            received = bytearray()
+            try:
+                probe.stdin.write(b"GET /__local/health HTTP/1.0\r\nHost: localhost\r\n\r\n")
+                probe.stdin.flush()
+                deadline = time.monotonic() + 15
+                while time.monotonic() < deadline:
+                    readable, _, _ = select.select([probe.stdout], [], [], 0.5)
+                    if readable:
+                        chunk = os.read(probe.stdout.fileno(), 65536)
+                        if not chunk:
+                            break
+                        received.extend(chunk)
+                        if b'"success":true' in received:
+                            break
+                    if probe.poll() is not None:
+                        break
+            finally:
+                probe.stdin.close()
+                if probe.poll() is None:
+                    probe.terminate()
+                probe.wait(timeout=5)
+            (out / "guest-backend-health.txt").write_bytes(received)
+            if b'"success":true' not in received:
                 raise RuntimeError("Guest cannot reach local backend")
             report["guest_backend_reachable"] = True
             report["network_controls"].append("only loopback backend via adb reverse; other guest egress blocked")
