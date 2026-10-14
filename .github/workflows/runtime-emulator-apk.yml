@@ -48,7 +48,7 @@ jobs:
         run: |
           sdkmanager 'build-tools;35.0.0' > /dev/null
           python3 server/prepare_emulator_apk.py --output .cache/emulator-build
-          python3 .cache/emulator-build/scripts/build.py
+          python3 .cache/emulator-build/scripts/build.py --payload-overrides .cache/emulator-build/reports/payload-overrides.json
           mkdir -p dist
           cp .cache/emulator-build/dist/jiakaoyi-coach-11.6.5-rebuilt-debug.apk "$JIAKAO_RUNTIME_APK"
           cp .cache/emulator-build/dist/build-verification.json dist/emulator-build-verification.json

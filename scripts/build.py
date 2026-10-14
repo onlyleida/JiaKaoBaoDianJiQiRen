@@ -40,6 +40,8 @@ def main():
     parser.add_argument("--build-tools", default="35.0.0")
     parser.add_argument("--apktool", type=Path, help="Existing, checksum-matching Apktool 3.0.3 JAR")
     parser.add_argument("--output-dir", type=Path, default=ROOT / "dist")
+    parser.add_argument("--payload-overrides", type=Path,
+                        help="Explicit original/patched SHA256 manifest for intentional compatibility patches")
     args = parser.parse_args()
     if not args.sdk:
         parser.error("Set ANDROID_HOME or pass --sdk (Android SDK with build-tools 35.0.0).")
@@ -102,21 +104,32 @@ def main():
         if dex != ["classes.dex"] + [f"classes{i}.dex" for i in range(2, 7)]:
             raise ValueError(f"Unexpected DEX files: {dex}")
         coverage = json.loads((ROOT / "reports" / "apk-entry-coverage.json").read_text())
+        overrides = json.loads(args.payload_overrides.read_text()) if args.payload_overrides else {}
+        applied = []
         changed = []
         for entry in coverage["entries"]:
             if entry["category"] == "preserved_file":
                 name = entry["apk_entry"]
-                if hashlib.sha256(apk.read(name)).hexdigest() != entry["sha256"]:
+                actual = hashlib.sha256(apk.read(name)).hexdigest()
+                if name in overrides:
+                    override = overrides[name]
+                    if override["originalSha256"] != entry["sha256"] or actual != override["patchedSha256"]:
+                        raise ValueError(f"Intentional payload patch hash mismatch: {name}")
+                    applied.append(name)
+                elif actual != entry["sha256"]:
                     changed.append(name)
         if changed:
             raise ValueError(f"Original payload changed: {changed}")
+        if set(applied) != set(overrides):
+            raise ValueError("Unverified payload override entries")
     sha = digest(signed)
     (output / (APK_NAME + ".sha256")).write_text(f"{sha}  {APK_NAME}\n")
     report = {"apk": APK_NAME, "sha256": sha, "bytes": signed.stat().st_size,
               "apktool": APKTOOL_VERSION, "build_tools": args.build_tools,
               "signature_verified": True, "zip_alignment_verified": True,
               "packaged_files_byte_identical_to_extraction": counts, "dex_files": dex,
-              "original_preserved_payload_verified": True,
+              "original_preserved_payload_verified": not bool(applied),
+              "intentional_payload_patches_verified": overrides,
               "signing": "local debug key; different from original vendor certificate",
               "runtime_test": "not performed by this build script"}
     (output / "build-verification.json").write_text(json.dumps(report, indent=2) + "\n")
