@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#fff" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/titleLayout" layout="@layout/simple_title" />
+    <FrameLayout android:id="@id/video_container" android:layout_width="640.0px" android:layout_height="480.0px" android:layout_below="@id/titleLayout">
+        <com.serenegiant.usb.widget.UVCCameraTextureView android:id="@id/camera_view" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <com.serenegiant.usb.widget.MoveView android:id="@id/point1" android:layout_width="80.0px" android:layout_height="80.0px" android:src="@drawable/pos_icon1" android:tint="@android:color/holo_red_dark" />
+        <com.serenegiant.usb.widget.MoveView android:id="@id/point2" android:layout_width="80.0px" android:layout_height="80.0px" android:src="@drawable/pos_icon2" android:tint="@android:color/holo_red_dark" />
+        <com.serenegiant.usb.widget.MoveView android:id="@id/point3" android:layout_width="80.0px" android:layout_height="80.0px" android:src="@drawable/pos_icon3" android:tint="@android:color/holo_red_dark" />
+        <com.serenegiant.usb.widget.MoveView android:id="@id/point4" android:layout_width="80.0px" android:layout_height="80.0px" android:src="@drawable/pos_icon4" android:tint="@android:color/holo_red_dark" />
+    </FrameLayout>
+    <TextView android:textColor="#333" android:id="@id/memory" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20.0px" android:text="内存信息" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
+    <TextView android:textSize="16.0px" android:textColor="#333" android:id="@id/tips" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="12.0px" android:text=" 1.  将校准布放在车右侧，3、4号点贴近车身对齐，4号点靠近前方车轮边缘。\n2.  将屏幕中1、2、3、4四个图标拖动到与校准布1、2、3、4号点大概对齐。\n3.  大概对齐后，使用下方的方位图标进行微调，最终达到精准对齐。\n4.  精准对齐后，点击校准即可。" android:layout_toRightOf="@id/video_container" android:layout_below="@id/titleLayout" android:layout_alignParentRight="true" />
+    <FrameLayout android:id="@id/adjust_container" android:layout_width="260.0px" android:layout_height="230.0px" android:layout_marginRight="50.0px" android:layout_below="@id/tips" android:layout_alignParentRight="true">
+        <FrameLayout android:layout_width="120.0px" android:layout_height="120.0px" android:scaleX="0.85" android:scaleY="0.85">
+            <ImageView android:layout_gravity="center|bottom" android:id="@id/down1" android:layout_width="72.0px" android:layout_height="38.0px" android:src="@drawable/move_down" />
+            <ImageView android:layout_gravity="center|top" android:id="@id/up1" android:layout_width="72.0px" android:layout_height="38.0px" android:src="@drawable/move_up" />
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/left1" android:layout_width="38.0px" android:layout_height="72.0px" android:src="@drawable/move_left" />
+            <ImageView android:layout_gravity="right|center" android:id="@id/right1" android:layout_width="38.0px" android:layout_height="72.0px" android:src="@drawable/move_right" />
+            <TextView android:textSize="30.0px" android:textColor="#008aff" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1" />
+        </FrameLayout>
+        <FrameLayout android:layout_gravity="right" android:layout_width="120.0px" android:layout_height="120.0px" android:scaleX="0.85" android:scaleY="0.85">
+            <ImageView android:layout_gravity="center|bottom" android:id="@id/down2" android:layout_width="72.0px" android:layout_height="38.0px" android:src="@drawable/move_down" />
+            <ImageView android:layout_gravity="center|top" android:id="@id/up2" android:layout_width="72.0px" android:layout_height="38.0px" android:src="@drawable/move_up" />
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/left2" android:layout_width="38.0px" android:layout_height="72.0px" android:src="@drawable/move_left" />
+            <ImageView android:layout_gravity="right|center" android:id="@id/right2" android:layout_width="38.0px" android:layout_height="72.0px" android:src="@drawable/move_right" />
+            <TextView android:textSize="30.0px" android:textColor="#008aff" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2" />
+        </FrameLayout>
+        <FrameLayout android:layout_gravity="bottom" android:layout_width="120.0px" android:layout_height="120.0px" android:scaleX="0.85" android:scaleY="0.85">
+            <ImageView android:layout_gravity="center|bottom" android:id="@id/down4" android:layout_width="72.0px" android:layout_height="38.0px" android:src="@drawable/move_down" />
+            <ImageView android:layout_gravity="center|top" android:id="@id/up4" android:layout_width="72.0px" android:layout_height="38.0px" android:src="@drawable/move_up" />
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/left4" android:layout_width="38.0px" android:layout_height="72.0px" android:src="@drawable/move_left" />
+            <ImageView android:layout_gravity="right|center" android:id="@id/right4" android:layout_width="38.0px" android:layout_height="72.0px" android:src="@drawable/move_right" />
+            <TextView android:textSize="30.0px" android:textColor="#008aff" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="4" />
+        </FrameLayout>
+        <FrameLayout android:layout_gravity="right|bottom" android:layout_width="120.0px" android:layout_height="120.0px" android:scaleX="0.85" android:scaleY="0.85">
+            <ImageView android:layout_gravity="center|bottom" android:id="@id/down3" android:layout_width="72.0px" android:layout_height="38.0px" android:src="@drawable/move_down" />
+            <ImageView android:layout_gravity="center|top" android:id="@id/up3" android:layout_width="72.0px" android:layout_height="38.0px" android:src="@drawable/move_up" />
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/left3" android:layout_width="38.0px" android:layout_height="72.0px" android:src="@drawable/move_left" />
+            <ImageView android:layout_gravity="right|center" android:id="@id/right3" android:layout_width="38.0px" android:layout_height="72.0px" android:src="@drawable/move_right" />
+            <TextView android:textSize="30.0px" android:textColor="#008aff" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="3" />
+        </FrameLayout>
+    </FrameLayout>
+    <TextView android:textSize="23.0px" android:textColor="@color/WHITE" android:gravity="center" android:id="@id/toAdjust" android:background="@drawable/shape_008aff_r100" android:padding="0.0dp" android:layout_width="130.0px" android:layout_height="45.0px" android:layout_marginTop="10.0px" android:layout_marginRight="105.0px" android:text="校准" android:layout_below="@id/adjust_container" android:layout_alignParentRight="true" />
+    <Button android:textSize="20.0px" android:id="@id/toTest" android:padding="0.0dp" android:layout_width="100.0px" android:layout_height="50.0px" android:layout_marginTop="2.0px" android:layout_marginRight="105.0px" android:text="测试" android:layout_below="@id/toAdjust" android:layout_alignParentRight="true" />
+</RelativeLayout>
