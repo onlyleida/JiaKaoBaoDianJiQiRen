@@ -1,34 +1,7 @@
 [
   {
-    "id": 14,
-    "created": 1791995102313,
-    "device": "unknown",
-    "method": "GET",
-    "path": "/api/open/route/get-area-code.htm",
-    "status": 200,
-    "error_code": 0
-  },
-  {
-    "id": 13,
-    "created": 1791995102312,
-    "device": "unknown",
-    "method": "POST",
-    "path": "/api/open/fault-code/upload.htm",
-    "status": 200,
-    "error_code": 0
-  },
-  {
-    "id": 12,
-    "created": 1791995077318,
-    "device": "unknown",
-    "method": "GET",
-    "path": "/api/open/route/get-area-code.htm",
-    "status": 200,
-    "error_code": 0
-  },
-  {
-    "id": 11,
-    "created": 1791995077251,
+    "id": 34,
+    "created": 1792030701092,
     "device": "unknown",
     "method": "GET",
     "path": "/api/open/login-time/report.htm",
@@ -36,8 +9,215 @@
     "error_code": 0
   },
   {
+    "id": 33,
+    "created": 1792030701088,
+    "device": "unknown",
+    "method": "GET",
+    "path": "/api/open/route/get-area-code.htm",
+    "status": 200,
+    "error_code": 0
+  },
+  {
+    "id": 32,
+    "created": 1792030680435,
+    "device": "local-device",
+    "method": "GET",
+    "path": "/__local/health",
+    "status": 200,
+    "error_code": 0
+  },
+  {
+    "id": 31,
+    "created": 1792030680357,
+    "device": "unknown",
+    "method": "GET",
+    "path": "/api/open/route/get-area-code.htm",
+    "status": 200,
+    "error_code": 0
+  },
+  {
+    "id": 30,
+    "created": 1792030680350,
+    "device": "unknown",
+    "method": "POST",
+    "path": "/api/open/upgrade/check-upgrade.htm",
+    "status": 200,
+    "error_code": 0
+  },
+  {
+    "id": 29,
+    "created": 1792030677938,
+    "device": "unknown",
+    "method": "GET",
+    "path": "/api/open/route/get-area-code.htm",
+    "status": 200,
+    "error_code": 0
+  },
+  {
+    "id": 28,
+    "created": 1792030677827,
+    "device": "unknown",
+    "method": "POST",
+    "path": "/api/open/update/check-update.htm",
+    "status": 200,
+    "error_code": 0
+  },
+  {
+    "id": 27,
+    "created": 1792030665887,
+    "device": "unknown",
+    "method": "POST",
+    "path": "/api/open/fault-code/upload.htm",
+    "status": 200,
+    "error_code": 0
+  },
+  {
+    "id": 26,
+    "created": 1792030665878,
+    "device": "unknown",
+    "method": "GET",
+    "path": "/api/open/route/get-area-code.htm",
+    "status": 200,
+    "error_code": 0
+  },
+  {
+    "id": 25,
+    "created": 1792030659971,
+    "device": "unknown",
+    "method": "GET",
+    "path": "/api/open/user-config/get-login-config.htm",
+    "status": 200,
+    "error_code": 0
+  },
+  {
+    "id": 24,
+    "created": 1792030659949,
+    "device": "unknown",
+    "method": "GET",
+    "path": "/api/open/route/get-area-code.htm",
+    "status": 200,
+    "error_code": 0
+  },
+  {
+    "id": 23,
+    "created": 1792030659878,
+    "device": "unknown",
+    "method": "POST",
+    "path": "/api/open/device/save-device-config.htm",
+    "status": 200,
+    "error_code": 0
+  },
+  {
+    "id": 22,
+    "created": 1792030659835,
+    "device": "unknown",
+    "method": "GET",
+    "path": "/api/open/route/get-area-code.htm",
+    "status": 200,
+    "error_code": 0
+  },
+  {
+    "id": 21,
+    "created": 1792030659833,
+    "device": "unknown",
+    "method": "GET",
+    "path": "/api/open/user/check-logout.htm",
+    "status": 401,
+    "error_code": 44
+  },
+  {
+    "id": 20,
+    "created": 1792030641079,
+    "device": "unknown",
+    "method": "GET",
+    "path": "/api/open/route/get-area-code.htm",
+    "status": 200,
+    "error_code": 0
+  },
+  {
+    "id": 19,
+    "created": 1792030641077,
+    "device": "unknown",
+    "method": "GET",
+    "path": "/api/open/login-time/report.htm",
+    "status": 200,
+    "error_code": 0
+  },
+  {
+    "id": 18,
+    "created": 1792030606709,
+    "device": "local-workbench",
+    "method": "GET",
+    "path": "/api/open/login/logout.htm",
+    "status": 200,
+    "error_code": 0
+  },
+  {
+    "id": 17,
+    "created": 1792030605747,
+    "device": "unknown",
+    "method": "POST",
+    "path": "/api/open/fault-code/upload.htm",
+    "status": 200,
+    "error_code": 0
+  },
+  {
+    "id": 16,
+    "created": 1792030605743,
+    "device": "unknown",
+    "method": "GET",
+    "path": "/api/open/route/get-area-code.htm",
+    "status": 200,
+    "error_code": 0
+  },
+  {
+    "id": 15,
+    "created": 1792030601228,
+    "device": "local-workbench",
+    "method": "GET",
+    "path": "/api/open/user/check-logout.htm",
+    "status": 200,
+    "error_code": 0
+  },
+  {
+    "id": 14,
+    "created": 1792030595699,
+    "device": "local-workbench",
+    "method": "POST",
+    "path": "/api/open/login/submit.htm",
+    "status": 200,
+    "error_code": 0
+  },
+  {
+    "id": 13,
+    "created": 1792030581066,
+    "device": "unknown",
+    "method": "GET",
+    "path": "/api/open/route/get-area-code.htm",
+    "status": 200,
+    "error_code": 0
+  },
+  {
+    "id": 12,
+    "created": 1792030581064,
+    "device": "unknown",
+    "method": "GET",
+    "path": "/api/open/login-time/report.htm",
+    "status": 200,
+    "error_code": 0
+  },
+  {
+    "id": 11,
+    "created": 1792030547455,
+    "device": "local-device",
+    "method": "GET",
+    "path": "/__local/health",
+    "status": 200,
+    "error_code": 0
+  },
+  {
     "id": 10,
-    "created": 1791995045012,
+    "created": 1792030547337,
     "device": "unknown",
     "method": "GET",
     "path": "/api/open/route/get-area-code.htm",
@@ -46,7 +226,7 @@
   },
   {
     "id": 9,
-    "created": 1791995044977,
+    "created": 1792030547332,
     "device": "unknown",
     "method": "POST",
     "path": "/api/open/upgrade/check-upgrade.htm",
@@ -55,7 +235,7 @@
   },
   {
     "id": 8,
-    "created": 1791995042523,
+    "created": 1792030544915,
     "device": "unknown",
     "method": "GET",
     "path": "/api/open/route/get-area-code.htm",
@@ -64,7 +244,7 @@
   },
   {
     "id": 7,
-    "created": 1791995042492,
+    "created": 1792030544835,
     "device": "unknown",
     "method": "POST",
     "path": "/api/open/update/check-update.htm",
@@ -73,7 +253,7 @@
   },
   {
     "id": 6,
-    "created": 1791995017609,
+    "created": 1792030521787,
     "device": "unknown",
     "method": "GET",
     "path": "/api/open/user-config/get-login-config.htm",
@@ -82,16 +262,7 @@
   },
   {
     "id": 5,
-    "created": 1791995017589,
-    "device": "unknown",
-    "method": "GET",
-    "path": "/api/open/route/get-area-code.htm",
-    "status": 200,
-    "error_code": 0
-  },
-  {
-    "id": 4,
-    "created": 1791995017535,
+    "created": 1792030521785,
     "device": "unknown",
     "method": "GET",
     "path": "/api/open/user/check-logout.htm",
@@ -99,8 +270,17 @@
     "error_code": 44
   },
   {
+    "id": 4,
+    "created": 1792030521781,
+    "device": "unknown",
+    "method": "GET",
+    "path": "/api/open/route/get-area-code.htm",
+    "status": 200,
+    "error_code": 0
+  },
+  {
     "id": 3,
-    "created": 1791995017531,
+    "created": 1792030521767,
     "device": "unknown",
     "method": "POST",
     "path": "/api/open/device/save-device-config.htm",
@@ -109,7 +289,7 @@
   },
   {
     "id": 2,
-    "created": 1791995002009,
+    "created": 1792030492515,
     "device": "local-device",
     "method": "GET",
     "path": "/__local/health",
@@ -118,7 +298,7 @@
   },
   {
     "id": 1,
-    "created": 1791995001836,
+    "created": 1792030492358,
     "device": "local-device",
     "method": "GET",
     "path": "/__local/health",

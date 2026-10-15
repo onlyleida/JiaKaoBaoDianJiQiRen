@@ -1,18 +1,28 @@
 {
   "status": "evidence_collected",
-  "source_commit": "5b71a1893782008016c9aa76e67d79a0f09a3758",
+  "source_commit": "e7bf0e5bf85b13b3fd1834df039bc55156f8f50f",
   "image": "system-images;android-28;google_apis;x86",
   "serial": "emulator-5562",
   "package": "cn.mucang.android.jiakaoyi.teachingk2",
-  "apk_sha256": "bbc2b51c01f57fba8f50ec8fd688cbf42baddb153eade0f5dd3c27bb253e49ac",
+  "apk_sha256": "522a611529284fd7a0679c891bc365aeabfbde9b427e2457ba36305e1c632d32",
   "screenshots_saved": [
     "screen-after-10s.png",
-    "screen-before-action-0.png",
-    "screen-before-action-1.png",
+    "screen-startup-before-action-0.png",
+    "screen-startup-before-action-1.png",
     "screen-after-45s.png",
+    "screen-workbench-normal-start.png",
+    "screen-workbench-logged-in.png",
+    "screen-workbench-session-valid.png",
+    "screen-workbench-logged-out.png",
+    "screen-workbench-session-cleared.png",
     "screen-native-settings.png",
     "screen-native-voice-settings.png",
-    "screen-native-settings-returned.png"
+    "screen-native-settings-returned.png",
+    "screen-workbench-returned-from-settings.png",
+    "screen-native-login.png",
+    "screen-workbench-returned-from-login.png",
+    "screen-retry-before-action-0.png",
+    "screen-workbench-after-retry.png"
   ],
   "screenshot_errors": [],
   "first_screen_verified": false,
@@ -25,6 +35,7 @@
   ],
   "display": {
     "size": "1280x720",
+    "framebuffer_skin": "1280x720",
     "density": 160
   },
   "network_controls": [
@@ -41,58 +52,98 @@
       "missingUnityTypes": [
         100,
         101
-      ]
+      ],
+      "unityResources": [
+        {
+          "type": 100,
+          "status": "missing"
+        },
+        {
+          "type": 101,
+          "status": "missing"
+        }
+      ],
+      "unityCompatibilityValidated": false
     }
   },
   "guest_backend_reachable": true,
   "installation_success": true,
   "launch_command_exit_code": 0,
   "launch_accepted": true,
-  "app_pid_at_first_capture": "4652",
+  "app_pid_at_first_capture": "4710",
   "startup_ui_actions": [
     {
+      "phase": "startup",
       "text": "\u540c\u610f\u5e76\u4f7f\u7528",
       "package": "cn.mucang.android.jiakaoyi.teachingk2",
       "x": 717,
       "y": 459
     },
     {
+      "phase": "startup",
+      "text": "START NOW",
+      "package": "com.android.systemui",
+      "x": 913,
+      "y": 396
+    },
+    {
+      "phase": "retry",
       "text": "START NOW",
       "package": "com.android.systemui",
       "x": 913,
       "y": 396
     }
   ],
-  "app_pid_after_45s": "4652",
+  "app_pid_after_45s": "4710",
   "process_alive_after_45s": true,
   "resumed_activity_lines": [
-    "mResumedActivity: ActivityRecord{e7ee4b3 u0 cn.mucang.android.jiakaoyi.teachingk2/.ui.splash.TeachSplashActivity t6}",
-    "ResumedActivity: ActivityRecord{e7ee4b3 u0 cn.mucang.android.jiakaoyi.teachingk2/.ui.splash.TeachSplashActivity t6}"
+    "mResumedActivity: ActivityRecord{5ccb1f u0 cn.mucang.android.jiakaoyi.teachingk2/local.jiakao.LocalWorkbenchActivity t6}",
+    "ResumedActivity: ActivityRecord{5ccb1f u0 cn.mucang.android.jiakaoyi.teachingk2/local.jiakao.LocalWorkbenchActivity t6}"
   ],
   "app_resumed_after_45s": true,
   "crash_buffer_contains_package": false,
   "process_death_count": 0,
   "process_death_lines": [],
-  "observed_seconds_since_launch": 67.7,
+  "observed_seconds_since_launch": 66.9,
   "same_process_across_captures": true,
   "stable_process_observed": true,
   "speech_native_loaded": true,
+  "workbench_reached_through_normal_start": true,
+  "workbench_actions": [
+    "\u672c\u5730\u63a5\u53e3\u767b\u5f55",
+    "\u767b\u5f55",
+    "\u68c0\u67e5\u63a5\u53e3\u4f1a\u8bdd",
+    "\u9000\u51fa\u63a5\u53e3\u4f1a\u8bdd",
+    "\u68c0\u67e5\u63a5\u53e3\u4f1a\u8bdd",
+    "\u539f\u751f\u8bbe\u7f6e",
+    "\u539f\u751f\u767b\u5f55\u9875",
+    "\u91cd\u8bd5\u539f\u542f\u52a8"
+  ],
+  "workbench_login_check_logout_ui_verified": true,
+  "workbench_post_logout_check": "UI observes cleared token; server revocation verified separately by HTTP contract tests",
   "native_settings": {
-    "navigation": "explicit root adb activity start for native UI debugging",
-    "launch_exit_code": 0,
-    "pid": "4652",
+    "navigation": "local workbench button",
+    "launch_exit_code": null,
+    "pid": "4710",
     "same_process": true,
     "resumed_lines": [
-      "mResumedActivity: ActivityRecord{73d93e7 u0 cn.mucang.android.jiakaoyi.teachingk2/cn.mucang.jiakaoyi.uilib.ui.setting.SettingActivity t6}",
-      "ResumedActivity: ActivityRecord{73d93e7 u0 cn.mucang.android.jiakaoyi.teachingk2/cn.mucang.jiakaoyi.uilib.ui.setting.SettingActivity t6}"
+      "mResumedActivity: ActivityRecord{b8bbaf3 u0 cn.mucang.android.jiakaoyi.teachingk2/cn.mucang.jiakaoyi.uilib.ui.setting.SettingActivity t6}",
+      "ResumedActivity: ActivityRecord{b8bbaf3 u0 cn.mucang.android.jiakaoyi.teachingk2/cn.mucang.jiakaoyi.uilib.ui.setting.SettingActivity t6}"
     ],
     "interaction": {
       "tapped": "\u8bed\u97f3\u8bbe\u7f6e",
       "resumed_lines": [
-        "mResumedActivity: ActivityRecord{80dfec3 u0 cn.mucang.android.jiakaoyi.teachingk2/cn.mucang.jiakaoyi.uilib.ui.setting.tts.TtsSettingActivity t6}",
-        "ResumedActivity: ActivityRecord{80dfec3 u0 cn.mucang.android.jiakaoyi.teachingk2/cn.mucang.jiakaoyi.uilib.ui.setting.tts.TtsSettingActivity t6}"
+        "mResumedActivity: ActivityRecord{b5d476c u0 cn.mucang.android.jiakaoyi.teachingk2/cn.mucang.jiakaoyi.uilib.ui.setting.tts.TtsSettingActivity t6}",
+        "ResumedActivity: ActivityRecord{b5d476c u0 cn.mucang.android.jiakaoyi.teachingk2/cn.mucang.jiakaoyi.uilib.ui.setting.tts.TtsSettingActivity t6}"
       ]
     },
-    "pid_after_interaction": "4652"
-  }
+    "pid_after_interaction": "4710"
+  },
+  "native_login_return_verified": true,
+  "workbench_retry_return_verified": true,
+  "app_pid_after_workbench_cycle": "4710",
+  "same_process_after_workbench_cycle": true,
+  "workbench_crash_buffer_contains_package": false,
+  "workbench_process_death_count": 0,
+  "workbench_observed_seconds": 190.4
 }

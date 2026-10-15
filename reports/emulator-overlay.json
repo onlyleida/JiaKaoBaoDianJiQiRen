@@ -5,8 +5,8 @@
     {
       "file": "android/lib/armeabi-v7a/libtnpn.so",
       "originalSha256": "a644d6800f2732798185741da30d8ced39c6f0d7acb67192d384cee6e425dd44",
-      "patchedSha256": "26dfe812376c7ef2a83b6993c514f459a80707cdff09f9443d654804522e27f7",
-      "debugCertificateSha256": "282fdbfec01cd0d99aeb8fda3a807301b77e42c8f6cbbd894e4753c211cdec84",
+      "patchedSha256": "ef28466691f2f62b67ed7141c69b98a8ea41e1e52e155be932ec17f50e08ffb4",
+      "debugCertificateSha256": "d67a1b698b2d4c99ab65bfb5d662d3b1328766ebe200bb6dc9d0370f088e7699",
       "patches": [
         {
           "offset": 587312,
@@ -32,12 +32,28 @@
       "file": "android/smali_classes2/cn/mucang/android/jiakaoyi/framework/utils/n.smali",
       "originalSha256": "5e7dae6f6cbf352f5b4715a19f2cb838629139fd05f06e171c57bdbde6d1eaf7",
       "patchedSha256": "16bf6e5e3158564d0b89f67a397811725d2ea06cd65efaddabf64541e45ccb75"
+    },
+    {
+      "file": "android/smali_classes4/cn/mucang/android/jiakaoyi/teachingk2/ui/splash/impl/l1.smali",
+      "originalSha256": "a8780bc90b1fe793ba987796427057bb27739419ff5c424a8678c804c11243ab",
+      "patchedSha256": "5db7a514663be509fbc4eef4431596df1965ac2a94bc020dd5063b788aa9dc1c"
+    },
+    {
+      "file": "android/smali_classes4/cn/mucang/android/jiakaoyi/teachingk2/login/ui/LoginActivity.smali",
+      "originalSha256": "bc6cb5c9420e73760c6aa57eaed9cff7193a4647a1ec37edc60549eae2e5a081",
+      "patchedSha256": "2023217a920470ff0c6d8de752d36fc578c1e814d6bec7b0e35273b54b40b859"
+    },
+    {
+      "file": "android/AndroidManifest.xml",
+      "originalSha256": "40103640f70f5ce4fe6bda08a9cc9cecb7a6882e9339b5533d5a34e0496c6272",
+      "patchedSha256": "7578714c78d439d39fb4a0ca2cb2645669a810a92511e93acf5601826c67e48c"
     }
   ],
   "scope": "Native CPU/certificate compatibility; loopback ping; existing Bluetooth simulation default enabled",
   "speechInitializationDisabled": false,
   "hardwareSimulationDefault": true,
   "networkProbe": "127.0.0.1",
+  "localWorkbench": true,
   "nativeLibrariesUnchanged": false,
   "nativeMethodsUnchanged": true,
   "limits": [
@@ -46,7 +62,7 @@
     "Private debug key stays in this build directory and is never published",
     "Original speech initialization retained; spoken output and cloud recognition unverified",
     "Built-in Bluetooth simulation replaces physical signal-box startup; real hardware untested",
-    "Original login and external Unity resource checks remain",
+    "Unity download checks remain; failure opens explicitly new local workbench, never signals successful load",
     "Use local backend and guest network isolation for testing"
   ]
 }

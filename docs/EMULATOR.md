@@ -30,13 +30,13 @@ python3 .cache/my-emulator-build/scripts/build.py \
 
 ## 运行和证据
 
-推荐执行仓库的手动工作流 `Run ARM compatibility APK`，选择 API 28。它创建一次性 Linux Android 9 x86/ARM32 转译模拟器、启动本地服务、安装 APK、完成可识别的隐私及录屏确认，以 1280×720 逻辑显示区域验证原生设置和语音设置页面，并保存截图、完整 logcat、tombstone、后端请求记录。
+推荐执行仓库的手动工作流 `Run ARM compatibility APK`，选择 API 28。它创建一次性 Linux Android 9 x86/ARM32 转译模拟器、启动本地服务、安装 APK、完成可识别的隐私及录屏确认，以 1280×720 实际横屏验证工作台、原生登录和设置往返，并保存截图、完整 logcat、tombstone、后端请求记录。
 
 ```sh
 gh workflow run runtime-emulator-apk.yml --ref main -f api=28
 ```
 
-工作流成功只表示证据收集完成。检查 `stable_process_observed`、连续 PID、进程死亡记录和真实截图；不得用一次 PID 采样或绿色 CI 判断正常启动。原生设置页面通过 root ADB 显式调试入口打开，与正常启动进入 Unity 教学首页分别记录。
+工作流成功只表示证据收集完成。检查 `stable_process_observed`、连续 PID、进程死亡记录和真实截图；不得用一次 PID 采样或绿色 CI 判断正常启动。启用工作台后，设置通过可见按钮打开；不启用时仍保留旧 root ADB 诊断入口。二者都不能视为原版 Unity 教学首页已恢复。
 
 本机现有 ARM64-only 镜像无法安装此 APK 的 ARM32 库。运行前实际检查 `ro.product.cpu.abilist` 必须包含 `armeabi-v7a`，不要仅凭 Android 版本或电脑为 Apple Silicon 推断兼容。
 
@@ -45,7 +45,7 @@ gh workflow run runtime-emulator-apk.yml --ref main -f api=28
 
 ## 当前可用范围
 
-2026-10-15 运行38597306444已核对真实截图：原生设置页、点击后的语音设置页和返回操作通过，同一进程没有退出或崩溃。正常启动仍在type100 Unity包加载阶段停止；这些包不在已提取的APK中。设置页是调试入口，不能当作恢复完整教学首页。
+2026-10-15 [运行38669665831](https://github.com/onlyleida/JiaKaoBaoDianJiQiRen/actions/runs/38669665831) 已核对真实截图：正常启动经原隐私/权限流程，在 Unity 加载失败后进入本地工作台。接口登录/检查/退出、原生设置与语音设置往返、原生登录页返回、重试原启动及再次录屏确认均通过；同一PID4710连续190.4秒，零进程死亡，三份崩溃日志为空。30条业务请求中28条200、2条原客户端未登录401/44，无其他业务错误。完整教学尚未恢复。
 
 安装包：[API28 模拟器兼容 APK](https://github.com/onlyleida/JiaKaoBaoDianJiQiRen/releases/download/apk-11.6.5-rebuild/jiakaoyi-coach-11.6.5-emulator-api28-debug.apk)。SHA256以同名`.sha256`及`reports/emulator-runtime-review.json`为准。
 

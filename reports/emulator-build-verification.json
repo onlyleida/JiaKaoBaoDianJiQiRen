@@ -1,11 +1,11 @@
 {
   "apk": "jiakaoyi-coach-11.6.5-rebuilt-debug.apk",
-  "sha256": "bbc2b51c01f57fba8f50ec8fd688cbf42baddb153eade0f5dd3c27bb253e49ac",
-  "bytes": 111990129,
+  "sha256": "522a611529284fd7a0679c891bc365aeabfbde9b427e2457ba36305e1c632d32",
+  "bytes": 112002475,
   "apktool": "3.0.3",
   "build_tools": "35.0.0",
   "signature_verified": true,
-  "signer_certificate_sha256": "282fdbfec01cd0d99aeb8fda3a807301b77e42c8f6cbbd894e4753c211cdec84",
+  "signer_certificate_sha256": "d67a1b698b2d4c99ab65bfb5d662d3b1328766ebe200bb6dc9d0370f088e7699",
   "zip_alignment_verified": true,
   "packaged_files_byte_identical_to_extraction": {
     "assets": 309,
@@ -17,14 +17,22 @@
     "classes3.dex",
     "classes4.dex",
     "classes5.dex",
-    "classes6.dex"
+    "classes6.dex",
+    "classes7.dex"
   ],
+  "added_local_code": {
+    "entry": "classes7.dex",
+    "sha256": "de97fba521abc083615cc2c61b5b53b31037d28a90dd0421d14ce79c28261d91",
+    "source": "local-workbench/LocalWorkbenchActivity.java",
+    "source_sha256": "4adfb9b8583bd5a530bd7f9e5451dd63cd4661ef2d063421e88e27be9d9ebf8c",
+    "purpose": "New local debug UI; not recovered Unity teaching code"
+  },
   "original_preserved_payload_verified": false,
   "intentional_payload_patches_verified": {
     "lib/armeabi-v7a/libtnpn.so": {
       "originalSha256": "a644d6800f2732798185741da30d8ced39c6f0d7acb67192d384cee6e425dd44",
-      "patchedSha256": "26dfe812376c7ef2a83b6993c514f459a80707cdff09f9443d654804522e27f7",
-      "debugCertificateSha256": "282fdbfec01cd0d99aeb8fda3a807301b77e42c8f6cbbd894e4753c211cdec84",
+      "patchedSha256": "ef28466691f2f62b67ed7141c69b98a8ea41e1e52e155be932ec17f50e08ffb4",
+      "debugCertificateSha256": "d67a1b698b2d4c99ab65bfb5d662d3b1328766ebe200bb6dc9d0370f088e7699",
       "patches": [
         {
           "offset": 587312,

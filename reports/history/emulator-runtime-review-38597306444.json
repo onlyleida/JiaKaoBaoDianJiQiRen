@@ -1,0 +1,63 @@
+{
+  "date": "2026-10-15",
+  "run_id": 38597306444,
+  "run_url": "https://github.com/onlyleida/JiaKaoBaoDianJiQiRen/actions/runs/38597306444",
+  "tested_commit": "5b71a1893782008016c9aa76e67d79a0f09a3758",
+  "apk_sha256": "bbc2b51c01f57fba8f50ec8fd688cbf42baddb153eade0f5dd3c27bb253e49ac",
+  "apk_release_asset": "jiakaoyi-coach-11.6.5-emulator-api28-debug.apk",
+  "environment": "system-images;android-28;google_apis;x86",
+  "installation_verified": true,
+  "native_ui_verified": true,
+  "manual_visual_review": true,
+  "observed_same_process_seconds_before_settings": 67.7,
+  "pid": "4652",
+  "process_deaths_in_full_capture": 0,
+  "crash_buffers_empty": true,
+  "verified_ui": [
+    "Original privacy confirmation",
+    "Screen recording consent",
+    "Unity package missing dialog",
+    "Original SettingActivity",
+    "Tap voice settings opens original TtsSettingActivity",
+    "Back returns to Settings with same PID"
+  ],
+  "settings_navigation": "Explicit root ADB diagnostic activity start; not reached through completed normal startup",
+  "normal_startup_complete": false,
+  "normal_startup_blocker": "Unity包加载失败; no actual type100 package or type101 UI resource available in APK/local backend",
+  "unity_stage_percent_from_static_source": 80,
+  "full_teaching_functionality_tested": false,
+  "real_vehicle_hardware_tested": false,
+  "speech_sdk_initialized_and_library_loaded": true,
+  "spoken_audio_or_recognition_verified": false,
+  "backend_routes": 42,
+  "backend_contract_tests_passed": 10,
+  "business_requests": 12,
+  "business_http_200": 11,
+  "expected_unauthenticated_request": [
+    {
+      "id": 4,
+      "created": 1791995017535,
+      "device": "unknown",
+      "method": "GET",
+      "path": "/api/open/user/check-logout.htm",
+      "status": 401,
+      "error_code": 44
+    }
+  ],
+  "other_business_errors": [],
+  "network": "Guest non-loopback IPv4/IPv6 blocked; backend only through adb reverse; no vendor service contacted",
+  "original_android_tree_unchanged": true,
+  "raw_report_note": "first_screen_verified=false in automated capture is its unreviewed default; this separate report records actual visual review",
+  "screenshots": {
+    "screen-after-45s.png": "35a291ceb19745c37fbe70d1878faf94ddf7e209282ba565195e724122cfec34",
+    "screen-native-settings.png": "8903295a66680cc8d5291bd11d78c0892d70f8e1f1b3638ee56b9a8634cdb8fb",
+    "screen-native-voice-settings.png": "0c43ad289c6fe58a4ac6fc87d1dd98a640ae1c02c2b07054991391c5d1c38aa5",
+    "screen-native-settings-returned.png": "8903295a66680cc8d5291bd11d78c0892d70f8e1f1b3638ee56b9a8634cdb8fb"
+  },
+  "limits": [
+    "Missing external Unity100/101 and site assets",
+    "Physical signal box replaced by built-in debug simulation",
+    "No full login/teaching validation",
+    "API30 still fails in ARM native translation"
+  ]
+}

@@ -11,7 +11,7 @@
 | Android | minSdk 21 / targetSdk 30 |
 | 原生架构 | 仅 `armeabi-v7a`，运行设备必须支持 32 位 ARM |
 | 原包 SHA256 | `a52da069ad1fa88a35923b003b68f4d9c240679d4cde386985999dff133a7349` |
-| DEX | 6 个，33,298 个类定义，重建前后数量一致 |
+| DEX | 原包/常规重建为 6 个、33,298 个类；工作台版另加新编译的 classes7.dex |
 | Java | 17,450 个正常模式文件，另有 124 个问题文件的 simple 模式输出 |
 | C# | 包内 105/105 个程序集已导出，共 15,202 个 `.cs` 文件 |
 | 原生库 | 42 个 `.so` 原样保留；未还原为可编译 C/C++ 工程 |
@@ -26,9 +26,9 @@ adb -s YOUR_DEVICE_SERIAL install jiakaoyi-coach-11.6.5-rebuilt-debug.apk
 adb -s YOUR_DEVICE_SERIAL shell am start -n cn.mucang.android.jiakaoyi.teachingk2/cn.mucang.android.jiakaoyi.teachingk2.ui.splash.TeachSplashActivity
 ```
 
-先用 `adb -s YOUR_DEVICE_SERIAL shell getprop ro.product.cpu.abilist` 确认其中包含 `armeabi-v7a`。仅 ARM64 的系统不能加载这些 32 位原生库。**普通重建包在云端 Android 9/11 可以安装，但原生初始化/证书检查导致运行失败。2026-10-15 新增模拟器兼容版已在 Android 9 稳定显示原生界面，并完成“设置 → 语音设置 → 返回”操作；正常启动仍因包外 Unity 动态资源缺失而停止。** 详细结果见 [docs/VALIDATION.md](docs/VALIDATION.md)。
+先用 `adb -s YOUR_DEVICE_SERIAL shell getprop ro.product.cpu.abilist` 确认其中包含 `armeabi-v7a`。仅 ARM64 的系统不能加载这些 32 位原生库。**普通重建包在云端 Android 9/11 可以安装，但原生初始化/证书检查导致运行失败。2026-10-15 模拟器兼容版已在 Android 9 正常启动进入新增本地工作台，完成接口登录/检查/退出、原生设置及语音设置往返、原生登录页返回和重试启动。连续190.4秒同一进程，无崩溃；原版 Unity 教学仍缺少包外资源。** 详细结果见 [docs/VALIDATION.md](docs/VALIDATION.md)。
 
-模拟器测试请使用 Release 中的 **`jiakaoyi-coach-11.6.5-emulator-api28-debug.apk`**；构建与复现方法见 [docs/EMULATOR.md](docs/EMULATOR.md)。原生设置是通过 root ADB 调试入口打开，不代表已经进入完整教学首页。
+模拟器测试请使用 Release 中的 **`jiakaoyi-coach-11.6.5-emulator-api28-debug.apk`**；构建与复现方法见 [docs/EMULATOR.md](docs/EMULATOR.md)。原生设置现在可直接从工作台按钮打开。工作台是新增本地界面，不代表已恢复原版教学首页；默认本地接口测试码 `12345678`。
 
 完整教学流程依赖机器人硬件通信、设备绑定、后台服务和另行下载的 Unity/场地资源。用户目前没有已运行设备，因此本仓库交付范围为 **原 APK 内的全部内容及可重建安装包**，不能据此宣称完整教学功能已经运行。详细缺失项与代码位置见 [docs/RUNTIME_DEPENDENCIES.md](docs/RUNTIME_DEPENDENCIES.md)。
 
@@ -60,6 +60,7 @@ macOS 的 SDK 通常位于 `$HOME/Library/Android/sdk`。也可传入 `--sdk`、
 | `java/sources/` | JADX 常规反编译代码，便于阅读和定位业务 |
 | `java-fallback/` | 124 个有反编译问题的文件的 simple 模式补充 |
 | `unity-csharp/` | 全部 105 个托管程序集的 C# 参考代码与项目文件 |
+| `local-workbench/` | 新增本地 Android 调试页源码；只在显式启用的兼容覆盖中编译 |
 | `scripts/build.py` | 实际验证过的打包、签名、内容校验脚本 |
 | `scripts/runtime_smoke.py` | 专用云端模拟器中的安装、启动与截图证据采集 |
 | `reports/` | 原包/重建包覆盖率、签名、工具结果和完整 REA 证据 |

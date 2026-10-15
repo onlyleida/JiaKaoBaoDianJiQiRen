@@ -1,0 +1,98 @@
+{
+  "status": "evidence_collected",
+  "source_commit": "5b71a1893782008016c9aa76e67d79a0f09a3758",
+  "image": "system-images;android-28;google_apis;x86",
+  "serial": "emulator-5562",
+  "package": "cn.mucang.android.jiakaoyi.teachingk2",
+  "apk_sha256": "bbc2b51c01f57fba8f50ec8fd688cbf42baddb153eade0f5dd3c27bb253e49ac",
+  "screenshots_saved": [
+    "screen-after-10s.png",
+    "screen-before-action-0.png",
+    "screen-before-action-1.png",
+    "screen-after-45s.png",
+    "screen-native-settings.png",
+    "screen-native-voice-settings.png",
+    "screen-native-settings-returned.png"
+  ],
+  "screenshot_errors": [],
+  "first_screen_verified": false,
+  "full_teaching_functionality_tested": false,
+  "local_backend_requested": true,
+  "abis": [
+    "x86",
+    "armeabi-v7a",
+    "armeabi"
+  ],
+  "display": {
+    "size": "1280x720",
+    "density": 160
+  },
+  "network_controls": [
+    "guest IPv4/IPv6 non-loopback OUTPUT rejected before APK installation",
+    "only loopback backend via adb reverse; other guest egress blocked"
+  ],
+  "backend_health": {
+    "success": true,
+    "errorCode": 0,
+    "message": "Local compatibility server",
+    "data": {
+      "mode": "local",
+      "implementedRoutes": 42,
+      "missingUnityTypes": [
+        100,
+        101
+      ]
+    }
+  },
+  "guest_backend_reachable": true,
+  "installation_success": true,
+  "launch_command_exit_code": 0,
+  "launch_accepted": true,
+  "app_pid_at_first_capture": "4652",
+  "startup_ui_actions": [
+    {
+      "text": "\u540c\u610f\u5e76\u4f7f\u7528",
+      "package": "cn.mucang.android.jiakaoyi.teachingk2",
+      "x": 717,
+      "y": 459
+    },
+    {
+      "text": "START NOW",
+      "package": "com.android.systemui",
+      "x": 913,
+      "y": 396
+    }
+  ],
+  "app_pid_after_45s": "4652",
+  "process_alive_after_45s": true,
+  "resumed_activity_lines": [
+    "mResumedActivity: ActivityRecord{e7ee4b3 u0 cn.mucang.android.jiakaoyi.teachingk2/.ui.splash.TeachSplashActivity t6}",
+    "ResumedActivity: ActivityRecord{e7ee4b3 u0 cn.mucang.android.jiakaoyi.teachingk2/.ui.splash.TeachSplashActivity t6}"
+  ],
+  "app_resumed_after_45s": true,
+  "crash_buffer_contains_package": false,
+  "process_death_count": 0,
+  "process_death_lines": [],
+  "observed_seconds_since_launch": 67.7,
+  "same_process_across_captures": true,
+  "stable_process_observed": true,
+  "speech_native_loaded": true,
+  "native_settings": {
+    "navigation": "explicit root adb activity start for native UI debugging",
+    "launch_exit_code": 0,
+    "pid": "4652",
+    "same_process": true,
+    "resumed_lines": [
+      "mResumedActivity: ActivityRecord{73d93e7 u0 cn.mucang.android.jiakaoyi.teachingk2/cn.mucang.jiakaoyi.uilib.ui.setting.SettingActivity t6}",
+      "ResumedActivity: ActivityRecord{73d93e7 u0 cn.mucang.android.jiakaoyi.teachingk2/cn.mucang.jiakaoyi.uilib.ui.setting.SettingActivity t6}"
+    ],
+    "interaction": {
+      "tapped": "\u8bed\u97f3\u8bbe\u7f6e",
+      "resumed_lines": [
+        "mResumedActivity: ActivityRecord{80dfec3 u0 cn.mucang.android.jiakaoyi.teachingk2/cn.mucang.jiakaoyi.uilib.ui.setting.tts.TtsSettingActivity t6}",
+        "ResumedActivity: ActivityRecord{80dfec3 u0 cn.mucang.android.jiakaoyi.teachingk2/cn.mucang.jiakaoyi.uilib.ui.setting.tts.TtsSettingActivity t6}"
+      ]
+    },
+    "pid_after_interaction": "4652"
+  }
+}

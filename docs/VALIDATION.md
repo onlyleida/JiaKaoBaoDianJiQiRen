@@ -80,8 +80,30 @@ Java 导出不是经过修复的可编译源码；C# 项目没有源码构建验
 - 正常启动到达“Unity包加载失败”对话框；源码对应 type100 / 80% 阶段。后台明确没有100/101包，无法进入完整教学首页。没有用假文件或删除检查掩盖缺失资源。
 - 全程阻止 guest 非回环 IPv4/IPv6，只允许通过 adb reverse 访问本地服务，未访问原厂服务。真实车辆硬件和完整登录/教学业务未验证。
 
-完整判读见 `reports/emulator-runtime-review.json`；原始自动报告保留 `first_screen_verified=false` 的未人工判读缺省值，人工截图判断单独记录，不篡改原始证据。Release 中 `emulator-api28-runtime-evidence.zip` 保存本轮完整日志、XML、截图和构建记录。
+此历史运行判读见 `reports/history/emulator-runtime-review-38597306444.json`。自动报告保留 `first_screen_verified=false` 的未人工判读缺省值，人工截图判断单独记录，不篡改原始证据。Release 中同名证据文件现在对应后续最新运行。
 
 ![原生设置页](../reports/emulator-screen-native-settings.png)
+
+## 2026-10-15 本地工作台正常启动与往返验证
+
+[运行38669665831](https://github.com/onlyleida/JiaKaoBaoDianJiQiRen/actions/runs/38669665831)，测试代码 `e7bf0e5bf85b13b3fd1834df039bc55156f8f50f`，Android9/API28，APK SHA256：
+
+```text
+522a611529284fd7a0679c891bc365aeabfbde9b427e2457ba36305e1c632d32
+```
+
+- 正常启动、原隐私与录屏确认后，Unity下载失败进入明确标注的新增本地工作台。没有虚构Unity文件，也不调用加载成功回调。
+- 工作台实际调用本地服务完成登录、会话检查和退出；退出后页面确认已清空token。服务端撤销与两个deviceNum会话隔离由13项HTTP契约测试中的对应测试验证，不把本地清空token冒充服务端验收。
+- 从按钮打开原生设置，点击语音设置，再返回工作台；原生登录页显示数字键盘，Android Back正常返回而不退出进程。此处没有声称完成原版教学登录。
+- 点击重试原启动，再次完成系统录屏确认，正常回到工作台。
+- PID4710连续190.4秒保持不变；完整日志零目标进程死亡、无Fatal signal/FATAL EXCEPTION，三份崩溃buffer为空。
+- 30条业务请求：28条HTTP200，2条原客户端未登录会话检查HTTP401/error44，无其他错误。
+- 489个原始保留载荷未改，1个native库两处已声明修改；新增Java源码编译为classes7.dex并核对哈希。下载的精确实测APK再次通过CRC、SHA256、签名、对齐和载荷校验。
+
+首轮38668814682已通过工作台/接口/设置，原生登录页截图正常，但结构导出未产生XML导致采集脚本提前停止；未观察到应用崩溃。最终测试使用登录页真实截图、前台Activity记录及Android Back，不依赖持续动画页面的idle检测。自动报告中的first_screen_verified=false仍是未人工判读缺省值，人工复核另见 `reports/emulator-runtime-review.json`，原始报告不改写。
+
+外部Unity100/101、场地和教学数据仍未提供，真实车辆控制及语音效果未验证。工作台是本地调试实现，不是原版Unity教学恢复。完整原始证据在Release的 `emulator-api28-runtime-evidence.zip`。
+
+![本地工作台实际运行](../reports/workbench-screen-workbench-logged-in.png)
 
 复现和完整兼容变体边界见 [EMULATOR.md](EMULATOR.md)。

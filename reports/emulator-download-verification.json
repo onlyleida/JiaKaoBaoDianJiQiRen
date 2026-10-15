@@ -1,11 +1,20 @@
 {
-  "apk_sha256": "bbc2b51c01f57fba8f50ec8fd688cbf42baddb153eade0f5dd3c27bb253e49ac",
-  "bytes": 111990129,
+  "sha256": "522a611529284fd7a0679c891bc365aeabfbde9b427e2457ba36305e1c632d32",
+  "bytes": 112002475,
+  "exact_tested_apk": true,
   "zip_crc_verified": true,
   "signature_verified": true,
-  "zip_alignment_verified": true,
-  "original_payloads_unchanged": 489,
-  "intentional_native_overrides": 1,
-  "native_unmodified_ranges_verified": true,
-  "embedded_certificate_matches_apk_signer": true
+  "signer_certificate_sha256": "d67a1b698b2d4c99ab65bfb5d662d3b1328766ebe200bb6dc9d0370f088e7699",
+  "alignment_verified": true,
+  "unchanged_original_payloads": 489,
+  "explicit_patched_payloads": [
+    "lib/armeabi-v7a/libtnpn.so"
+  ],
+  "added_dex_verified": {
+    "entry": "classes7.dex",
+    "sha256": "de97fba521abc083615cc2c61b5b53b31037d28a90dd0421d14ce79c28261d91",
+    "source": "local-workbench/LocalWorkbenchActivity.java",
+    "source_sha256": "4adfb9b8583bd5a530bd7f9e5451dd63cd4661ef2d063421e88e27be9d9ebf8c",
+    "purpose": "New local debug UI; not recovered Unity teaching code"
+  }
 }
