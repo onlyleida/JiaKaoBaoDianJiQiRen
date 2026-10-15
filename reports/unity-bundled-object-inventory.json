@@ -1,0 +1,5521 @@
+{
+  "file": "/Users/leida/Documents/Codex/2026-10-14/ne/work/JiaKaoBaoDianJiQiRen/android/assets/bin/Data/data.unity3d",
+  "files": [
+    "/Users/leida/Documents/Codex/2026-10-14/ne/work/JiaKaoBaoDianJiQiRen/android/assets/bin/Data/data.unity3d"
+  ],
+  "count": 557,
+  "types": {
+    "PlayerSettings": 1,
+    "InputManager": 1,
+    "TagManager": 1,
+    "AudioManager": 1,
+    "ScriptMapper": 1,
+    "MonoManager": 1,
+    "GraphicsSettings": 1,
+    "TimeManager": 1,
+    "DelayedCallManager": 1,
+    "PhysicsManager": 1,
+    "BuildSettings": 1,
+    "QualitySettings": 1,
+    "ResourceManager": 1,
+    "NavMeshProjectSettings": 1,
+    "Physics2DSettings": 1,
+    "RuntimeInitializeOnLoadManager": 1,
+    "StreamingManager": 1,
+    "VFXManager": 1,
+    "Shader": 55,
+    "PreloadData": 2,
+    "Material": 2,
+    "MonoScript": 417,
+    "Texture2D": 3,
+    "Sprite": 3,
+    "GameObject": 17,
+    "Transform": 9,
+    "RenderSettings": 1,
+    "Light": 1,
+    "LightmapSettings": 1,
+    "NavMeshSettings": 1,
+    "CanvasRenderer": 6,
+    "Canvas": 1,
+    "RectTransform": 8,
+    "MonoBehaviour": 12
+  },
+  "objects": [
+    {
+      "id": 1,
+      "type": "PlayerSettings",
+      "serialized_file": "globalgamemanagers",
+      "tree": {
+        "productGUID": {
+          "data[0]": 1455832652,
+          "data[1]": 1221424092,
+          "data[2]": 1608137099,
+          "data[3]": 2374324607
+        },
+        "AndroidProfiler": false,
+        "AndroidFilterTouchesWhenObscured": false,
+        "AndroidEnableSustainedPerformanceMode": false,
+        "defaultScreenOrientation": 4,
+        "targetDevice": 2,
+        "useOnDemandResources": false,
+        "accelerometerFrequency": 60,
+        "companyName": "DefaultCompany",
+        "productName": "jiakaoyi_unity",
+        "defaultCursor": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "cursorHotspot": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "m_SplashScreenBackgroundColor": {
+          "r": 0.13725490868091583,
+          "g": 0.12156862765550613,
+          "b": 0.125490203499794,
+          "a": 1.0
+        },
+        "m_ShowUnitySplashScreen": false,
+        "m_ShowUnitySplashLogo": true,
+        "m_SplashScreenOverlayOpacity": 1.0,
+        "m_SplashScreenAnimation": 1,
+        "m_SplashScreenLogoStyle": 1,
+        "m_SplashScreenDrawMode": 0,
+        "m_SplashScreenBackgroundAnimationZoom": 1.0,
+        "m_SplashScreenLogoAnimationZoom": 1.0,
+        "m_SplashScreenBackgroundLandscapeAspect": 1.0,
+        "m_SplashScreenBackgroundPortraitAspect": 1.0,
+        "m_SplashScreenBackgroundLandscapeUvs": {
+          "x": 0.0,
+          "y": 0.0,
+          "width": 1.0,
+          "height": 1.0
+        },
+        "m_SplashScreenBackgroundPortraitUvs": {
+          "x": 0.0,
+          "y": 0.0,
+          "width": 1.0,
+          "height": 1.0
+        },
+        "m_SplashScreenLogos": [],
+        "m_SplashScreenBackgroundLandscape": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "m_SplashScreenBackgroundPortrait": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "m_VirtualRealitySplashScreen": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "m_HolographicTrackingLossScreen": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "defaultScreenWidth": 1024,
+        "defaultScreenHeight": 768,
+        "defaultScreenWidthWeb": 960,
+        "defaultScreenHeightWeb": 600,
+        "m_StereoRenderingPath": 0,
+        "m_ActiveColorSpace": 0,
+        "m_MTRendering": true,
+        "mobileMTRenderingBaked": true,
+        "m_StackTraceTypes": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "iosShowActivityIndicatorOnLoading": -1,
+        "androidShowActivityIndicatorOnLoading": -1,
+        "iosUseCustomAppBackgroundBehavior": false,
+        "iosAllowHTTPDownload": true,
+        "allowedAutorotateToPortrait": true,
+        "allowedAutorotateToPortraitUpsideDown": true,
+        "allowedAutorotateToLandscapeRight": true,
+        "allowedAutorotateToLandscapeLeft": true,
+        "useOSAutorotation": true,
+        "use32BitDisplayBuffer": true,
+        "preserveFramebufferAlpha": false,
+        "disableDepthAndStencilBuffers": false,
+        "androidStartInFullscreen": true,
+        "androidRenderOutsideSafeArea": true,
+        "androidUseSwappy": false,
+        "androidBlitType": 0,
+        "defaultIsNativeResolution": true,
+        "macRetinaSupport": true,
+        "runInBackground": false,
+        "captureSingleScreen": false,
+        "muteOtherAudioSources": false,
+        "Prepare IOS For Recording": false,
+        "Force IOS Speakers When Recording": false,
+        "deferSystemGesturesMode": 0,
+        "hideHomeButton": false,
+        "submitAnalytics": true,
+        "usePlayerLog": true,
+        "bakeCollisionMeshes": false,
+        "forceSingleInstance": false,
+        "useFlipModelSwapchain": true,
+        "resizableWindow": false,
+        "useMacAppStoreValidation": false,
+        "macAppStoreCategory": "public.app-category.games",
+        "gpuSkinning": false,
+        "xboxPIXTextureCapture": false,
+        "xboxEnableAvatar": false,
+        "xboxEnableKinect": false,
+        "xboxEnableKinectAutoTracking": false,
+        "xboxEnableFitness": false,
+        "visibleInBackground": true,
+        "allowFullscreenSwitch": true,
+        "fullscreenMode": 1,
+        "xboxSpeechDB": 0,
+        "xboxEnableHeadOrientation": false,
+        "xboxEnableGuest": false,
+        "xboxEnablePIXSampling": false,
+        "metalFramebufferOnly": false,
+        "xboxOneResolution": 0,
+        "xboxOneSResolution": 0,
+        "xboxOneXResolution": 3,
+        "xboxOneMonoLoggingLevel": 0,
+        "xboxOneLoggingLevel": 1,
+        "xboxOneDisableEsram": false,
+        "xboxOneEnableTypeOptimization": false,
+        "xboxOnePresentImmediateThreshold": 0,
+        "switchQueueCommandMemory": 1048576,
+        "switchQueueControlMemory": 16384,
+        "switchQueueComputeMemory": 262144,
+        "switchNVNShaderPoolsGranularity": 33554432,
+        "switchNVNDefaultPoolsGranularity": 16777216,
+        "switchNVNOtherPoolsGranularity": 16777216,
+        "switchNVNMaxPublicTextureIDCount": 0,
+        "switchNVNMaxPublicSamplerIDCount": 0,
+        "stadiaPresentMode": 0,
+        "stadiaTargetFramerate": 0,
+        "vulkanNumSwapchainBuffers": 3,
+        "vulkanEnableSetSRGBWrite": false,
+        "vulkanEnableLateAcquireNextImage": false,
+        "m_SupportedAspectRatios": {
+          "4:3": true,
+          "5:4": true,
+          "16:10": true,
+          "16:9": true,
+          "Others": true
+        },
+        "bundleVersion": "1.0",
+        "preloadedAssets": [],
+        "metroInputSource": 0,
+        "wsaTransparentSwapchain": false,
+        "m_HolographicPauseOnTrackingLoss": true,
+        "xboxOneDisableKinectGpuReservation": true,
+        "xboxOneEnable7thCore": true,
+        "vrSettings": {
+          "none": {},
+          "cardboard": {
+            "depthFormat": 0,
+            "enableTransitionView": false
+          },
+          "daydream": {
+            "depthFormat": 0,
+            "useSustainedPerformanceMode": false,
+            "enableVideoLayer": false,
+            "useProtectedVideoMemory": false,
+            "minimumSupportedHeadTracking": 0,
+            "maximumSupportedHeadTracking": 1
+          },
+          "hololens": {
+            "depthFormat": 1,
+            "depthBufferSharingEnabled": true
+          },
+          "lumin": {
+            "depthFormat": 0,
+            "frameTiming": 2,
+            "enableGLCache": false,
+            "glCacheMaxBlobSize": 524288,
+            "glCacheMaxFileSize": 8388608
+          },
+          "oculus": {
+            "sharedDepthBuffer": true,
+            "dashSupport": true,
+            "lowOverheadMode": false,
+            "protectedContext": false,
+            "v2Signing": true
+          },
+          "enable360StereoCapture": false
+        },
+        "isWsaHolographicRemotingEnabled": false,
+        "enableFrameTimingStats": false,
+        "useHDRDisplay": false,
+        "D3DHDRBitDepth": 0,
+        "m_ColorGamuts": [
+          0
+        ],
+        "targetPixelDensity": 30,
+        "resolutionScalingMode": 0,
+        "androidSupportedAspectRatio": 1,
+        "androidMaxAspectRatio": 2.0999999046325684,
+        "cloudProjectId": "",
+        "framebufferDepthMemorylessMode": 0,
+        "projectName": "",
+        "organizationId": "",
+        "cloudEnabled": false,
+        "enableNativePlatformBackendsForNewInputSystem": false,
+        "disableOldInputManagerSupport": false,
+        "legacyClampBlendShapeWeights": false
+      }
+    },
+    {
+      "id": 2,
+      "type": "InputManager",
+      "serialized_file": "globalgamemanagers"
+    },
+    {
+      "id": 3,
+      "type": "TagManager",
+      "serialized_file": "globalgamemanagers"
+    },
+    {
+      "id": 4,
+      "type": "AudioManager",
+      "serialized_file": "globalgamemanagers"
+    },
+    {
+      "id": 5,
+      "type": "ScriptMapper",
+      "serialized_file": "globalgamemanagers"
+    },
+    {
+      "id": 6,
+      "type": "MonoManager",
+      "serialized_file": "globalgamemanagers"
+    },
+    {
+      "id": 7,
+      "type": "GraphicsSettings",
+      "serialized_file": "globalgamemanagers"
+    },
+    {
+      "id": 8,
+      "type": "TimeManager",
+      "serialized_file": "globalgamemanagers"
+    },
+    {
+      "id": 9,
+      "type": "DelayedCallManager",
+      "serialized_file": "globalgamemanagers"
+    },
+    {
+      "id": 10,
+      "type": "PhysicsManager",
+      "serialized_file": "globalgamemanagers"
+    },
+    {
+      "id": 11,
+      "type": "BuildSettings",
+      "serialized_file": "globalgamemanagers",
+      "tree": {
+        "scenes": [
+          "Assets/[Game]/Scenes/game.unity"
+        ],
+        "m_Version": "2019.4.17f1"
+      }
+    },
+    {
+      "id": 12,
+      "type": "QualitySettings",
+      "serialized_file": "globalgamemanagers"
+    },
+    {
+      "id": 13,
+      "type": "ResourceManager",
+      "serialized_file": "globalgamemanagers"
+    },
+    {
+      "id": 14,
+      "type": "NavMeshProjectSettings",
+      "serialized_file": "globalgamemanagers"
+    },
+    {
+      "id": 15,
+      "type": "Physics2DSettings",
+      "serialized_file": "globalgamemanagers"
+    },
+    {
+      "id": 17,
+      "type": "RuntimeInitializeOnLoadManager",
+      "serialized_file": "globalgamemanagers"
+    },
+    {
+      "id": 19,
+      "type": "StreamingManager",
+      "serialized_file": "globalgamemanagers"
+    },
+    {
+      "id": 20,
+      "type": "VFXManager",
+      "serialized_file": "globalgamemanagers"
+    },
+    {
+      "id": 6,
+      "type": "Shader",
+      "serialized_file": "unity_builtin_extra",
+      "m_Name": ""
+    },
+    {
+      "id": 7,
+      "type": "Shader",
+      "serialized_file": "unity_builtin_extra",
+      "m_Name": ""
+    },
+    {
+      "id": 19,
+      "type": "Shader",
+      "serialized_file": "unity_builtin_extra",
+      "m_Name": ""
+    },
+    {
+      "id": 62,
+      "type": "Shader",
+      "serialized_file": "unity_builtin_extra",
+      "m_Name": ""
+    },
+    {
+      "id": 63,
+      "type": "Shader",
+      "serialized_file": "unity_builtin_extra",
+      "m_Name": ""
+    },
+    {
+      "id": 64,
+      "type": "Shader",
+      "serialized_file": "unity_builtin_extra",
+      "m_Name": ""
+    },
+    {
+      "id": 65,
+      "type": "Shader",
+      "serialized_file": "unity_builtin_extra",
+      "m_Name": ""
+    },
+    {
+      "id": 66,
+      "type": "Shader",
+      "serialized_file": "unity_builtin_extra",
+      "m_Name": ""
+    },
+    {
+      "id": 67,
+      "type": "Shader",
+      "serialized_file": "unity_builtin_extra",
+      "m_Name": ""
+    },
+    {
+      "id": 68,
+      "type": "Shader",
+      "serialized_file": "unity_builtin_extra",
+      "m_Name": ""
+    },
+    {
+      "id": 69,
+      "type": "Shader",
+      "serialized_file": "unity_builtin_extra",
+      "m_Name": ""
+    },
+    {
+      "id": 74,
+      "type": "Shader",
+      "serialized_file": "unity_builtin_extra",
+      "m_Name": ""
+    },
+    {
+      "id": 75,
+      "type": "Shader",
+      "serialized_file": "unity_builtin_extra",
+      "m_Name": ""
+    },
+    {
+      "id": 102,
+      "type": "Shader",
+      "serialized_file": "unity_builtin_extra",
+      "m_Name": ""
+    },
+    {
+      "id": 105,
+      "type": "Shader",
+      "serialized_file": "unity_builtin_extra",
+      "m_Name": ""
+    },
+    {
+      "id": 107,
+      "type": "Shader",
+      "serialized_file": "unity_builtin_extra",
+      "m_Name": ""
+    },
+    {
+      "id": 109,
+      "type": "Shader",
+      "serialized_file": "unity_builtin_extra",
+      "m_Name": ""
+    },
+    {
+      "id": 110,
+      "type": "Shader",
+      "serialized_file": "unity_builtin_extra",
+      "m_Name": ""
+    },
+    {
+      "id": 9000,
+      "type": "Shader",
+      "serialized_file": "unity_builtin_extra",
+      "m_Name": ""
+    },
+    {
+      "id": 9001,
+      "type": "Shader",
+      "serialized_file": "unity_builtin_extra",
+      "m_Name": ""
+    },
+    {
+      "id": 9002,
+      "type": "Shader",
+      "serialized_file": "unity_builtin_extra",
+      "m_Name": ""
+    },
+    {
+      "id": 9003,
+      "type": "Shader",
+      "serialized_file": "unity_builtin_extra",
+      "m_Name": ""
+    },
+    {
+      "id": 9004,
+      "type": "Shader",
+      "serialized_file": "unity_builtin_extra",
+      "m_Name": ""
+    },
+    {
+      "id": 9005,
+      "type": "Shader",
+      "serialized_file": "unity_builtin_extra",
+      "m_Name": ""
+    },
+    {
+      "id": 9006,
+      "type": "Shader",
+      "serialized_file": "unity_builtin_extra",
+      "m_Name": ""
+    },
+    {
+      "id": 9007,
+      "type": "Shader",
+      "serialized_file": "unity_builtin_extra",
+      "m_Name": ""
+    },
+    {
+      "id": 10701,
+      "type": "Shader",
+      "serialized_file": "unity_builtin_extra",
+      "m_Name": ""
+    },
+    {
+      "id": 10703,
+      "type": "Shader",
+      "serialized_file": "unity_builtin_extra",
+      "m_Name": ""
+    },
+    {
+      "id": 10704,
+      "type": "Shader",
+      "serialized_file": "unity_builtin_extra",
+      "m_Name": ""
+    },
+    {
+      "id": 10753,
+      "type": "Shader",
+      "serialized_file": "unity_builtin_extra",
+      "m_Name": ""
+    },
+    {
+      "id": 10757,
+      "type": "Shader",
+      "serialized_file": "unity_builtin_extra",
+      "m_Name": ""
+    },
+    {
+      "id": 10770,
+      "type": "Shader",
+      "serialized_file": "unity_builtin_extra",
+      "m_Name": ""
+    },
+    {
+      "id": 10783,
+      "type": "Shader",
+      "serialized_file": "unity_builtin_extra",
+      "m_Name": ""
+    },
+    {
+      "id": 15104,
+      "type": "Shader",
+      "serialized_file": "unity_builtin_extra",
+      "m_Name": ""
+    },
+    {
+      "id": 15105,
+      "type": "Shader",
+      "serialized_file": "unity_builtin_extra",
+      "m_Name": ""
+    },
+    {
+      "id": 15106,
+      "type": "Shader",
+      "serialized_file": "unity_builtin_extra",
+      "m_Name": ""
+    },
+    {
+      "id": 15304,
+      "type": "Shader",
+      "serialized_file": "unity_builtin_extra",
+      "m_Name": ""
+    },
+    {
+      "id": 15308,
+      "type": "Shader",
+      "serialized_file": "unity_builtin_extra",
+      "m_Name": ""
+    },
+    {
+      "id": 15309,
+      "type": "Shader",
+      "serialized_file": "unity_builtin_extra",
+      "m_Name": ""
+    },
+    {
+      "id": 15312,
+      "type": "Shader",
+      "serialized_file": "unity_builtin_extra",
+      "m_Name": ""
+    },
+    {
+      "id": 16000,
+      "type": "Shader",
+      "serialized_file": "unity_builtin_extra",
+      "m_Name": ""
+    },
+    {
+      "id": 16001,
+      "type": "Shader",
+      "serialized_file": "unity_builtin_extra",
+      "m_Name": ""
+    },
+    {
+      "id": 16003,
+      "type": "Shader",
+      "serialized_file": "unity_builtin_extra",
+      "m_Name": ""
+    },
+    {
+      "id": 17000,
+      "type": "Shader",
+      "serialized_file": "unity_builtin_extra",
+      "m_Name": ""
+    },
+    {
+      "id": 19011,
+      "type": "Shader",
+      "serialized_file": "unity_builtin_extra",
+      "m_Name": ""
+    },
+    {
+      "id": 4800000,
+      "type": "Shader",
+      "serialized_file": "unity_builtin_extra",
+      "m_Name": ""
+    },
+    {
+      "id": 1,
+      "type": "PreloadData",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": ""
+    },
+    {
+      "id": 2,
+      "type": "Material",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "Sprites-Default"
+    },
+    {
+      "id": 3,
+      "type": "Shader",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": ""
+    },
+    {
+      "id": 4,
+      "type": "Shader",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": ""
+    },
+    {
+      "id": 5,
+      "type": "Shader",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": ""
+    },
+    {
+      "id": 6,
+      "type": "Shader",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": ""
+    },
+    {
+      "id": 7,
+      "type": "Shader",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": ""
+    },
+    {
+      "id": 8,
+      "type": "Shader",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": ""
+    },
+    {
+      "id": 9,
+      "type": "Shader",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": ""
+    },
+    {
+      "id": 10,
+      "type": "Shader",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": ""
+    },
+    {
+      "id": 11,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "MeshMakerManager",
+      "m_ClassName": "MeshMakerManager",
+      "m_Namespace": "MCT.MeshMaker",
+      "m_AssemblyName": "MC.MeshMaker.dll"
+    },
+    {
+      "id": 12,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "LayoutRebuilder",
+      "m_ClassName": "LayoutRebuilder",
+      "m_Namespace": "UnityEngine.UI",
+      "m_AssemblyName": "UnityEngine.UI.dll"
+    },
+    {
+      "id": 13,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "ScrollBarTests",
+      "m_ClassName": "ScrollBarTests",
+      "m_Namespace": "",
+      "m_AssemblyName": "UnityEngine.UI.Tests.dll"
+    },
+    {
+      "id": 14,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "AnimationPreviewUtilities",
+      "m_ClassName": "AnimationPreviewUtilities",
+      "m_Namespace": "UnityEngine.Timeline",
+      "m_AssemblyName": "Unity.Timeline.dll"
+    },
+    {
+      "id": 15,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "SceneWithNestedLayoutElementsLoads",
+      "m_ClassName": "SceneWithNestedLayoutElementsLoads",
+      "m_Namespace": "",
+      "m_AssemblyName": "UnityEngine.UI.Tests.dll"
+    },
+    {
+      "id": 16,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "PositionAsUV1",
+      "m_ClassName": "PositionAsUV1",
+      "m_Namespace": "UnityEngine.UI",
+      "m_AssemblyName": "UnityEngine.UI.dll"
+    },
+    {
+      "id": 17,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "AnimationPlayableAsset",
+      "m_ClassName": "AnimationPlayableAsset",
+      "m_Namespace": "UnityEngine.Timeline",
+      "m_AssemblyName": "Unity.Timeline.dll"
+    },
+    {
+      "id": 18,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "RemoteTestResultData",
+      "m_ClassName": "RemoteTestResultData",
+      "m_Namespace": "UnityEngine.TestRunner.TestLaunchers",
+      "m_AssemblyName": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "id": 19,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "PointerClickCallbackCheck",
+      "m_ClassName": "PointerClickCallbackCheck",
+      "m_Namespace": "",
+      "m_AssemblyName": "UnityEngine.UI.Tests.dll"
+    },
+    {
+      "id": 20,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "TMP_SubMeshUI",
+      "m_ClassName": "TMP_SubMeshUI",
+      "m_Namespace": "TMPro",
+      "m_AssemblyName": "Unity.TextMeshPro.dll"
+    },
+    {
+      "id": 21,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "TMP_SubMesh",
+      "m_ClassName": "TMP_SubMesh",
+      "m_Namespace": "TMPro",
+      "m_AssemblyName": "Unity.TextMeshPro.dll"
+    },
+    {
+      "id": 22,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "FMxStatuButton",
+      "m_ClassName": "FMxStatuButton",
+      "m_Namespace": "",
+      "m_AssemblyName": "mct.dll"
+    },
+    {
+      "id": 23,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "TMP_FontAssetUtilities",
+      "m_ClassName": "TMP_FontAssetUtilities",
+      "m_Namespace": "TMPro",
+      "m_AssemblyName": "Unity.TextMeshPro.dll"
+    },
+    {
+      "id": 24,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "UIBehaviour",
+      "m_ClassName": "UIBehaviour",
+      "m_Namespace": "UnityEngine.EventSystems",
+      "m_AssemblyName": "UnityEngine.UI.dll"
+    },
+    {
+      "id": 25,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "ExceptionUtils",
+      "m_ClassName": "ExceptionUtils",
+      "m_Namespace": "UnityEngine.UI.Tests.Utils",
+      "m_AssemblyName": "UnityEngine.UI.Tests.dll"
+    },
+    {
+      "id": 26,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "AssemblyInfo",
+      "m_ClassName": "AssemblyInfo",
+      "m_Namespace": "",
+      "m_AssemblyName": "Unity.Timeline.dll"
+    },
+    {
+      "id": 27,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "LogEvent",
+      "m_ClassName": "LogEvent",
+      "m_Namespace": "UnityEngine.TestTools.Logging",
+      "m_AssemblyName": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "id": 28,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "RaycastSortingTests",
+      "m_ClassName": "RaycastSortingTests",
+      "m_Namespace": "",
+      "m_AssemblyName": "UnityEngine.UI.Tests.dll"
+    },
+    {
+      "id": 29,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "CanvasScaler",
+      "m_ClassName": "CanvasScaler",
+      "m_Namespace": "UnityEngine.UI",
+      "m_AssemblyName": "UnityEngine.UI.dll"
+    },
+    {
+      "id": 30,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "Dropdown",
+      "m_ClassName": "Dropdown",
+      "m_Namespace": "UnityEngine.UI",
+      "m_AssemblyName": "UnityEngine.UI.dll"
+    },
+    {
+      "id": 31,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "OuterUnityTestActionCommand",
+      "m_ClassName": "OuterUnityTestActionCommand",
+      "m_Namespace": "UnityEngine.TestTools",
+      "m_AssemblyName": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "id": 32,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "AudioClipProperties",
+      "m_ClassName": "AudioClipProperties",
+      "m_Namespace": "UnityEngine.Timeline",
+      "m_AssemblyName": "Unity.Timeline.dll"
+    },
+    {
+      "id": 33,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "TextEditorTests",
+      "m_ClassName": "TextEditorTests",
+      "m_Namespace": "",
+      "m_AssemblyName": "UnityEngine.UI.Tests.dll"
+    },
+    {
+      "id": 34,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "PlaymodeTestsController",
+      "m_ClassName": "PlaymodeTestsController",
+      "m_Namespace": "UnityEngine.TestTools.TestRunner",
+      "m_AssemblyName": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "id": 35,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "CompositeWorkItem",
+      "m_ClassName": "CompositeWorkItem",
+      "m_Namespace": "UnityEngine.TestRunner.NUnitExtensions.Runner",
+      "m_AssemblyName": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "id": 36,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "MaterialReferenceManager",
+      "m_ClassName": "MaterialReferenceManager",
+      "m_Namespace": "TMPro",
+      "m_AssemblyName": "Unity.TextMeshPro.dll"
+    },
+    {
+      "id": 37,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "IAssemblyLoadProxy",
+      "m_ClassName": "IAssemblyLoadProxy",
+      "m_Namespace": "",
+      "m_AssemblyName": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "id": 38,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "RawImage",
+      "m_ClassName": "RawImage",
+      "m_Namespace": "UnityEngine.UI",
+      "m_AssemblyName": "UnityEngine.UI.dll"
+    },
+    {
+      "id": 39,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "FakeBaseInput",
+      "m_ClassName": "FakeBaseInput",
+      "m_Namespace": "",
+      "m_AssemblyName": "UnityEngine.UI.Tests.dll"
+    },
+    {
+      "id": 40,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "FontData",
+      "m_ClassName": "FontData",
+      "m_Namespace": "UnityEngine.UI",
+      "m_AssemblyName": "UnityEngine.UI.dll"
+    },
+    {
+      "id": 41,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "CanvasScalerWithChildTextObjectDoesNotCrash",
+      "m_ClassName": "CanvasScalerWithChildTextObjectDoesNotCrash",
+      "m_Namespace": "",
+      "m_AssemblyName": "UnityEngine.UI.Tests.dll"
+    },
+    {
+      "id": 42,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "ToggleTests",
+      "m_ClassName": "ToggleTests",
+      "m_Namespace": "ToggleTest",
+      "m_AssemblyName": "UnityEngine.UI.Tests.dll"
+    },
+    {
+      "id": 43,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "BaseInput",
+      "m_ClassName": "BaseInput",
+      "m_Namespace": "UnityEngine.EventSystems",
+      "m_AssemblyName": "UnityEngine.UI.dll"
+    },
+    {
+      "id": 44,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "SignalEmitter",
+      "m_ClassName": "SignalEmitter",
+      "m_Namespace": "UnityEngine.Timeline",
+      "m_AssemblyName": "Unity.Timeline.dll"
+    },
+    {
+      "id": 45,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "ControlTrack",
+      "m_ClassName": "ControlTrack",
+      "m_Namespace": "UnityEngine.Timeline",
+      "m_AssemblyName": "Unity.Timeline.dll"
+    },
+    {
+      "id": 46,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "MonoBehaviourTest",
+      "m_ClassName": "MonoBehaviourTest",
+      "m_Namespace": "",
+      "m_AssemblyName": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "id": 47,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "FakeInputModule",
+      "m_ClassName": "FakeInputModule",
+      "m_Namespace": "InputfieldTests",
+      "m_AssemblyName": "UnityEngine.UI.Tests.dll"
+    },
+    {
+      "id": 48,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "EnumerableTestMethodCommand",
+      "m_ClassName": "EnumerableTestMethodCommand",
+      "m_Namespace": "UnityEngine.TestTools",
+      "m_AssemblyName": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "id": 49,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "MouseUpdate",
+      "m_ClassName": "MouseUpdate",
+      "m_Namespace": "",
+      "m_AssemblyName": "UnityEngine.UI.Tests.dll"
+    },
+    {
+      "id": 50,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "BridgeScriptForRetainingObjects",
+      "m_ClassName": "BridgeScriptForRetainingObjects",
+      "m_Namespace": "",
+      "m_AssemblyName": "UnityEngine.UI.Tests.dll"
+    },
+    {
+      "id": 51,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "ImageFilledGenerateWork",
+      "m_ClassName": "ImageFilledGenerateWork",
+      "m_Namespace": "",
+      "m_AssemblyName": "UnityEngine.UI.Tests.dll"
+    },
+    {
+      "id": 52,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "ScrollRect",
+      "m_ClassName": "ScrollRect",
+      "m_Namespace": "UnityEngine.UI",
+      "m_AssemblyName": "UnityEngine.UI.dll"
+    },
+    {
+      "id": 53,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "AssemblyInfo",
+      "m_ClassName": "AssemblyInfo",
+      "m_Namespace": "",
+      "m_AssemblyName": "Unity.TextMeshPro.dll"
+    },
+    {
+      "id": 54,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "IAssemblyWrapper",
+      "m_ClassName": "IAssemblyWrapper",
+      "m_Namespace": "",
+      "m_AssemblyName": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "id": 55,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "TimeControlPlayable",
+      "m_ClassName": "TimeControlPlayable",
+      "m_Namespace": "UnityEngine.Timeline",
+      "m_AssemblyName": "Unity.Timeline.dll"
+    },
+    {
+      "id": 56,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "ILayerable",
+      "m_ClassName": "ILayerable",
+      "m_Namespace": "",
+      "m_AssemblyName": "Unity.Timeline.dll"
+    },
+    {
+      "id": 57,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "BaseInputModule",
+      "m_ClassName": "BaseInputModule",
+      "m_Namespace": "UnityEngine.EventSystems",
+      "m_AssemblyName": "UnityEngine.UI.dll"
+    },
+    {
+      "id": 58,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "ButtonTests",
+      "m_ClassName": "ButtonTests",
+      "m_Namespace": "",
+      "m_AssemblyName": "UnityEngine.UI.Tests.dll"
+    },
+    {
+      "id": 59,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "TimelineUndo",
+      "m_ClassName": "TimelineUndo",
+      "m_Namespace": "UnityEngine.Timeline",
+      "m_AssemblyName": "Unity.Timeline.dll"
+    },
+    {
+      "id": 60,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "TMP_SpriteCharacter",
+      "m_ClassName": "TMP_SpriteCharacter",
+      "m_Namespace": "TMPro",
+      "m_AssemblyName": "Unity.TextMeshPro.dll"
+    },
+    {
+      "id": 61,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "RemoteTestResultSender",
+      "m_ClassName": "RemoteTestResultSender",
+      "m_Namespace": "UnityEngine.TestTools.TestRunner.Callbacks",
+      "m_AssemblyName": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "id": 62,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "TMP_TextProcessingStack",
+      "m_ClassName": "TMP_TextProcessingStack",
+      "m_Namespace": "",
+      "m_AssemblyName": "Unity.TextMeshPro.dll"
+    },
+    {
+      "id": 63,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "IMaterialModifier",
+      "m_ClassName": "IMaterialModifier",
+      "m_Namespace": "",
+      "m_AssemblyName": "UnityEngine.UI.dll"
+    },
+    {
+      "id": 64,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "TMP_Compatibility",
+      "m_ClassName": "TMP_Compatibility",
+      "m_Namespace": "TMPro",
+      "m_AssemblyName": "Unity.TextMeshPro.dll"
+    },
+    {
+      "id": 65,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "ActivationTrack",
+      "m_ClassName": "ActivationTrack",
+      "m_Namespace": "UnityEngine.Timeline",
+      "m_AssemblyName": "Unity.Timeline.dll"
+    },
+    {
+      "id": 66,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "EventInterfaces",
+      "m_ClassName": "EventInterfaces",
+      "m_Namespace": "",
+      "m_AssemblyName": "UnityEngine.UI.dll"
+    },
+    {
+      "id": 67,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "CoroutineRunner",
+      "m_ClassName": "CoroutineRunner",
+      "m_Namespace": "UnityEngine.TestTools.Utils",
+      "m_AssemblyName": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "id": 68,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "SpriteState",
+      "m_ClassName": "SpriteState",
+      "m_Namespace": "",
+      "m_AssemblyName": "UnityEngine.UI.dll"
+    },
+    {
+      "id": 69,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "RaycasterManager",
+      "m_ClassName": "RaycasterManager",
+      "m_Namespace": "UnityEngine.EventSystems",
+      "m_AssemblyName": "UnityEngine.UI.dll"
+    },
+    {
+      "id": 70,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "RestoreTestContextAfterDomainReload",
+      "m_ClassName": "RestoreTestContextAfterDomainReload",
+      "m_Namespace": "UnityEngine.TestRunner.NUnitExtensions.Runner",
+      "m_AssemblyName": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "id": 71,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "TMP_Settings",
+      "m_ClassName": "TMP_Settings",
+      "m_Namespace": "TMPro",
+      "m_AssemblyName": "Unity.TextMeshPro.dll"
+    },
+    {
+      "id": 72,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "PlaymodeTestsControllerSettings",
+      "m_ClassName": "PlaymodeTestsControllerSettings",
+      "m_Namespace": "UnityEngine.TestTools.TestRunner",
+      "m_AssemblyName": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "id": 73,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "TMP_FontFeaturesCommon",
+      "m_ClassName": "TMP_FontFeaturesCommon",
+      "m_Namespace": "",
+      "m_AssemblyName": "Unity.TextMeshPro.dll"
+    },
+    {
+      "id": 74,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "TMP_ListPool",
+      "m_ClassName": "TMP_ListPool",
+      "m_Namespace": "",
+      "m_AssemblyName": "Unity.TextMeshPro.dll"
+    },
+    {
+      "id": 75,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "MarkerTrack",
+      "m_ClassName": "MarkerTrack",
+      "m_Namespace": "UnityEngine.Timeline",
+      "m_AssemblyName": "Unity.Timeline.dll"
+    },
+    {
+      "id": 76,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "Scrollbar",
+      "m_ClassName": "Scrollbar",
+      "m_Namespace": "UnityEngine.UI",
+      "m_AssemblyName": "UnityEngine.UI.dll"
+    },
+    {
+      "id": 77,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "TouchInputModule",
+      "m_ClassName": "TouchInputModule",
+      "m_Namespace": "UnityEngine.EventSystems",
+      "m_AssemblyName": "UnityEngine.UI.dll"
+    },
+    {
+      "id": 78,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "TMP_InputField",
+      "m_ClassName": "TMP_InputField",
+      "m_Namespace": "TMPro",
+      "m_AssemblyName": "Unity.TextMeshPro.dll"
+    },
+    {
+      "id": 79,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "TestActionCommand",
+      "m_ClassName": "TestActionCommand",
+      "m_Namespace": "UnityEngine.TestTools",
+      "m_AssemblyName": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "id": 80,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "AssemblyWrapper",
+      "m_ClassName": "AssemblyWrapper",
+      "m_Namespace": "UnityEngine.TestTools.Utils",
+      "m_AssemblyName": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "id": 81,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "ToggleGroup",
+      "m_ClassName": "ToggleGroup",
+      "m_Namespace": "UnityEngine.UI",
+      "m_AssemblyName": "UnityEngine.UI.dll"
+    },
+    {
+      "id": 82,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "PlatformCOMProxy",
+      "m_ClassName": "PlatformCOMProxy",
+      "m_Namespace": "MCT.PlatformCOM",
+      "m_AssemblyName": "mct.dll"
+    },
+    {
+      "id": 83,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "HorizontalLayoutGroup",
+      "m_ClassName": "HorizontalLayoutGroup",
+      "m_Namespace": "UnityEngine.UI",
+      "m_AssemblyName": "UnityEngine.UI.dll"
+    },
+    {
+      "id": 84,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "TMPro_UGUI_Private",
+      "m_ClassName": "TMPro_UGUI_Private",
+      "m_Namespace": "",
+      "m_AssemblyName": "Unity.TextMeshPro.dll"
+    },
+    {
+      "id": 85,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "LayoutElement",
+      "m_ClassName": "LayoutElement",
+      "m_Namespace": "UnityEngine.UI",
+      "m_AssemblyName": "UnityEngine.UI.dll"
+    },
+    {
+      "id": 86,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "ContentSizeFitterTests",
+      "m_ClassName": "ContentSizeFitterTests",
+      "m_Namespace": "LayoutTests",
+      "m_AssemblyName": "UnityEngine.UI.Tests.dll"
+    },
+    {
+      "id": 87,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "TMP_Style",
+      "m_ClassName": "TMP_Style",
+      "m_Namespace": "TMPro",
+      "m_AssemblyName": "Unity.TextMeshPro.dll"
+    },
+    {
+      "id": 88,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "HttpManager",
+      "m_ClassName": "HttpManager",
+      "m_Namespace": "MCT.HttpManage",
+      "m_AssemblyName": "mct.dll"
+    },
+    {
+      "id": 89,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "Mask",
+      "m_ClassName": "Mask",
+      "m_Namespace": "UnityEngine.UI",
+      "m_AssemblyName": "UnityEngine.UI.dll"
+    },
+    {
+      "id": 90,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "TMP_DefaultControls",
+      "m_ClassName": "TMP_DefaultControls",
+      "m_Namespace": "TMPro",
+      "m_AssemblyName": "Unity.TextMeshPro.dll"
+    },
+    {
+      "id": 91,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "ContentSizeFitter",
+      "m_ClassName": "ContentSizeFitter",
+      "m_Namespace": "UnityEngine.UI",
+      "m_AssemblyName": "UnityEngine.UI.dll"
+    },
+    {
+      "id": 92,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "Extrapolation",
+      "m_ClassName": "Extrapolation",
+      "m_Namespace": "UnityEngine.Timeline",
+      "m_AssemblyName": "Unity.Timeline.dll"
+    },
+    {
+      "id": 93,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "ScrollBarClamp",
+      "m_ClassName": "ScrollBarClamp",
+      "m_Namespace": "",
+      "m_AssemblyName": "UnityEngine.UI.Tests.dll"
+    },
+    {
+      "id": 94,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "TextContainer",
+      "m_ClassName": "TextContainer",
+      "m_Namespace": "TMPro",
+      "m_AssemblyName": "Unity.TextMeshPro.dll"
+    },
+    {
+      "id": 95,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "Vector4EqualityComparer",
+      "m_ClassName": "Vector4EqualityComparer",
+      "m_Namespace": "UnityEngine.TestTools.Utils",
+      "m_AssemblyName": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "id": 96,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "RectMask2D",
+      "m_ClassName": "RectMask2D",
+      "m_Namespace": "UnityEngine.UI",
+      "m_AssemblyName": "UnityEngine.UI.dll"
+    },
+    {
+      "id": 97,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "InputFieldTests",
+      "m_ClassName": "InputFieldTests",
+      "m_Namespace": "",
+      "m_AssemblyName": "UnityEngine.UI.Tests.dll"
+    },
+    {
+      "id": 98,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "TestCommandPcHelper",
+      "m_ClassName": "TestCommandPcHelper",
+      "m_Namespace": "UnityEngine.TestTools",
+      "m_AssemblyName": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "id": 99,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "TMP_ScrollbarEventHandler",
+      "m_ClassName": "TMP_ScrollbarEventHandler",
+      "m_Namespace": "TMPro",
+      "m_AssemblyName": "Unity.TextMeshPro.dll"
+    },
+    {
+      "id": 100,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "ILogScope",
+      "m_ClassName": "ILogScope",
+      "m_Namespace": "",
+      "m_AssemblyName": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "id": 101,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "RaycastResult",
+      "m_ClassName": "RaycastResult",
+      "m_Namespace": "",
+      "m_AssemblyName": "UnityEngine.UI.dll"
+    },
+    {
+      "id": 102,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "DropdownTests",
+      "m_ClassName": "DropdownTests",
+      "m_Namespace": "",
+      "m_AssemblyName": "UnityEngine.UI.Tests.dll"
+    },
+    {
+      "id": 103,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "ILayoutElement",
+      "m_ClassName": "ILayoutElement",
+      "m_Namespace": "",
+      "m_AssemblyName": "UnityEngine.UI.dll"
+    },
+    {
+      "id": 104,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "IClipRegion",
+      "m_ClassName": "IClipRegion",
+      "m_Namespace": "",
+      "m_AssemblyName": "UnityEngine.UI.dll"
+    },
+    {
+      "id": 105,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "BaseDelegator",
+      "m_ClassName": "BaseDelegator",
+      "m_Namespace": "UnityEngine.TestTools.NUnitExtensions",
+      "m_AssemblyName": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "id": 106,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "TestMustExpectAllLogsAttribute",
+      "m_ClassName": "TestMustExpectAllLogsAttribute",
+      "m_Namespace": "UnityEngine.TestTools",
+      "m_AssemblyName": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "id": 107,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "ITestRunCallback",
+      "m_ClassName": "ITestRunCallback",
+      "m_Namespace": "",
+      "m_AssemblyName": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "id": 108,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "FontUpdateTracker",
+      "m_ClassName": "FontUpdateTracker",
+      "m_Namespace": "UnityEngine.UI",
+      "m_AssemblyName": "UnityEngine.UI.dll"
+    },
+    {
+      "id": 109,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "SelectableTests",
+      "m_ClassName": "SelectableTests",
+      "m_Namespace": "UnityEngine.UI.Tests",
+      "m_AssemblyName": "UnityEngine.UI.Tests.dll"
+    },
+    {
+      "id": 110,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "TrackAsset",
+      "m_ClassName": "TrackAsset",
+      "m_Namespace": "UnityEngine.Timeline",
+      "m_AssemblyName": "Unity.Timeline.dll"
+    },
+    {
+      "id": 111,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "AnimationTrackUpgrade",
+      "m_ClassName": "AnimationTrackUpgrade",
+      "m_Namespace": "UnityEngine.Timeline.",
+      "m_AssemblyName": "Unity.Timeline.dll"
+    },
+    {
+      "id": 112,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "QuaternionEqualityComparer",
+      "m_ClassName": "QuaternionEqualityComparer",
+      "m_Namespace": "UnityEngine.TestTools.Utils",
+      "m_AssemblyName": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "id": 113,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "EnumerableApplyChangesToContextCommand",
+      "m_ClassName": "EnumerableApplyChangesToContextCommand",
+      "m_Namespace": "UnityEngine.TestTools",
+      "m_AssemblyName": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "id": 114,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "TMP_Asset",
+      "m_ClassName": "TMP_Asset",
+      "m_Namespace": "TMPro",
+      "m_AssemblyName": "Unity.TextMeshPro.dll"
+    },
+    {
+      "id": 115,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "PlayModeRunnerCallback",
+      "m_ClassName": "PlayModeRunnerCallback",
+      "m_Namespace": "UnityEngine.TestTools.TestRunner.Callbacks",
+      "m_AssemblyName": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "id": 116,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "GraphicRaycasterWorldSpaceCanvasTests",
+      "m_ClassName": "GraphicRaycasterWorldSpaceCanvasTests",
+      "m_Namespace": "",
+      "m_AssemblyName": "UnityEngine.UI.Tests.dll"
+    },
+    {
+      "id": 117,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "TimelineAttributes",
+      "m_ClassName": "TimelineAttributes",
+      "m_Namespace": "",
+      "m_AssemblyName": "Unity.Timeline.dll"
+    },
+    {
+      "id": 118,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "EventTriggerType",
+      "m_ClassName": "EventTriggerType",
+      "m_Namespace": "",
+      "m_AssemblyName": "UnityEngine.UI.dll"
+    },
+    {
+      "id": 119,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "FMxButtonBase",
+      "m_ClassName": "FMxButtonBase",
+      "m_Namespace": "",
+      "m_AssemblyName": "mct.dll"
+    },
+    {
+      "id": 120,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "RawImageTestHook",
+      "m_ClassName": "RawImageTestHook",
+      "m_Namespace": "",
+      "m_AssemblyName": "UnityEngine.UI.Tests.dll"
+    },
+    {
+      "id": 121,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "TimelineCreateUtilities",
+      "m_ClassName": "TimelineCreateUtilities",
+      "m_Namespace": "UnityEngine.Timeline",
+      "m_AssemblyName": "Unity.Timeline.dll"
+    },
+    {
+      "id": 122,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "PlayerConnectionMessageIds",
+      "m_ClassName": "PlayerConnectionMessageIds",
+      "m_Namespace": "UnityEngine.TestRunner.TestLaunchers",
+      "m_AssemblyName": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "id": 123,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "BaseRaycaster",
+      "m_ClassName": "BaseRaycaster",
+      "m_Namespace": "UnityEngine.EventSystems",
+      "m_AssemblyName": "UnityEngine.UI.dll"
+    },
+    {
+      "id": 124,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "MarkerList",
+      "m_ClassName": "MarkerList",
+      "m_Namespace": "",
+      "m_AssemblyName": "Unity.Timeline.dll"
+    },
+    {
+      "id": 125,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "PrefabControlPlayable",
+      "m_ClassName": "PrefabControlPlayable",
+      "m_Namespace": "UnityEngine.Timeline",
+      "m_AssemblyName": "Unity.Timeline.dll"
+    },
+    {
+      "id": 126,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "PlayerTestAssemblyProvider",
+      "m_ClassName": "PlayerTestAssemblyProvider",
+      "m_Namespace": "UnityEngine.TestTools.Utils",
+      "m_AssemblyName": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "id": 127,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "Vector4ComparerWithEqualsOperator",
+      "m_ClassName": "Vector4ComparerWithEqualsOperator",
+      "m_Namespace": "UnityEngine.TestTools.Utils",
+      "m_AssemblyName": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "id": 128,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "GraphicRebuildTracker",
+      "m_ClassName": "GraphicRebuildTracker",
+      "m_Namespace": "UnityEngine.UI",
+      "m_AssemblyName": "UnityEngine.UI.dll"
+    },
+    {
+      "id": 129,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "LoadingPanel",
+      "m_ClassName": "LoadingPanel",
+      "m_Namespace": "",
+      "m_AssemblyName": "Assembly-CSharp.dll"
+    },
+    {
+      "id": 130,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "Lexer",
+      "m_ClassName": "Lexer",
+      "m_Namespace": "LitJson",
+      "m_AssemblyName": "simple-json.dll"
+    },
+    {
+      "id": 131,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "RemoteTestResultDataWithTestData",
+      "m_ClassName": "RemoteTestResultDataWithTestData",
+      "m_Namespace": "UnityEngine.TestRunner.TestLaunchers",
+      "m_AssemblyName": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "id": 132,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "UnityLogCheckDelegatingCommand",
+      "m_ClassName": "UnityLogCheckDelegatingCommand",
+      "m_Namespace": "UnityEngine.TestRunner.NUnitExtensions.Runner",
+      "m_AssemblyName": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "id": 133,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "TMP_ResourcesManager",
+      "m_ClassName": "TMP_ResourcesManager",
+      "m_Namespace": "",
+      "m_AssemblyName": "Unity.TextMeshPro.dll"
+    },
+    {
+      "id": 134,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "ControlPlayableAsset",
+      "m_ClassName": "ControlPlayableAsset",
+      "m_Namespace": "UnityEngine.Timeline",
+      "m_AssemblyName": "Unity.Timeline.dll"
+    },
+    {
+      "id": 135,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "TMP_Character",
+      "m_ClassName": "TMP_Character",
+      "m_Namespace": "TMPro",
+      "m_AssemblyName": "Unity.TextMeshPro.dll"
+    },
+    {
+      "id": 136,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "TMP_TextInfo",
+      "m_ClassName": "TMP_TextInfo",
+      "m_Namespace": "TMPro",
+      "m_AssemblyName": "Unity.TextMeshPro.dll"
+    },
+    {
+      "id": 137,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "LogScope",
+      "m_ClassName": "LogScope",
+      "m_Namespace": "UnityEngine.TestTools.Logging",
+      "m_AssemblyName": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "id": 138,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "Vector3EqualityComparer",
+      "m_ClassName": "Vector3EqualityComparer",
+      "m_Namespace": "UnityEngine.TestTools.Utils",
+      "m_AssemblyName": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "id": 139,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "IMarker",
+      "m_ClassName": "IMarker",
+      "m_Namespace": "",
+      "m_AssemblyName": "Unity.Timeline.dll"
+    },
+    {
+      "id": 140,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "MoveDirection",
+      "m_ClassName": "MoveDirection",
+      "m_Namespace": "",
+      "m_AssemblyName": "UnityEngine.UI.dll"
+    },
+    {
+      "id": 141,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "ConcreteGraphic",
+      "m_ClassName": "ConcreteGraphic",
+      "m_Namespace": "UnityEngine.UI.Tests",
+      "m_AssemblyName": "UnityEngine.UI.Tests.dll"
+    },
+    {
+      "id": 142,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "Button",
+      "m_ClassName": "Button",
+      "m_Namespace": "UnityEngine.UI",
+      "m_AssemblyName": "UnityEngine.UI.dll"
+    },
+    {
+      "id": 143,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "TMP_TextUtilities",
+      "m_ClassName": "TMP_TextUtilities",
+      "m_Namespace": "TMPro",
+      "m_AssemblyName": "Unity.TextMeshPro.dll"
+    },
+    {
+      "id": 144,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "AudioPlayableAsset",
+      "m_ClassName": "AudioPlayableAsset",
+      "m_Namespace": "UnityEngine.Timeline",
+      "m_AssemblyName": "Unity.Timeline.dll"
+    },
+    {
+      "id": 145,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "StandaloneInputModule",
+      "m_ClassName": "StandaloneInputModule",
+      "m_Namespace": "UnityEngine.EventSystems",
+      "m_AssemblyName": "UnityEngine.UI.dll"
+    },
+    {
+      "id": 146,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "TestButton",
+      "m_ClassName": "TestButton",
+      "m_Namespace": "",
+      "m_AssemblyName": "UnityEngine.UI.Tests.dll"
+    },
+    {
+      "id": 147,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "ActionDelegator",
+      "m_ClassName": "ActionDelegator",
+      "m_Namespace": "UnityEngine.TestTools.NUnitExtensions",
+      "m_AssemblyName": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "id": 148,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "ToggleGroupTests",
+      "m_ClassName": "ToggleGroupTests",
+      "m_Namespace": "ToggleTest",
+      "m_AssemblyName": "UnityEngine.UI.Tests.dll"
+    },
+    {
+      "id": 149,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "INotificationOptionProvider",
+      "m_ClassName": "INotificationOptionProvider",
+      "m_Namespace": "",
+      "m_AssemblyName": "Unity.Timeline.dll"
+    },
+    {
+      "id": 150,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "GenericInputFieldTests",
+      "m_ClassName": "GenericInputFieldTests",
+      "m_Namespace": "InputfieldTests",
+      "m_AssemblyName": "UnityEngine.UI.Tests.dll"
+    },
+    {
+      "id": 151,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "TMP_Text",
+      "m_ClassName": "TMP_Text",
+      "m_Namespace": "TMPro",
+      "m_AssemblyName": "Unity.TextMeshPro.dll"
+    },
+    {
+      "id": 152,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "RectMask2DClipping",
+      "m_ClassName": "RectMask2DClipping",
+      "m_Namespace": "UnityEngine.UI.Tests",
+      "m_AssemblyName": "UnityEngine.UI.Tests.dll"
+    },
+    {
+      "id": 153,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "ITimeControl",
+      "m_ClassName": "ITimeControl",
+      "m_Namespace": "",
+      "m_AssemblyName": "Unity.Timeline.dll"
+    },
+    {
+      "id": 154,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "TMP_TextElement",
+      "m_ClassName": "TMP_TextElement",
+      "m_Namespace": "TMPro",
+      "m_AssemblyName": "Unity.TextMeshPro.dll"
+    },
+    {
+      "id": 155,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "UnityPlatformAttribute",
+      "m_ClassName": "UnityPlatformAttribute",
+      "m_Namespace": "UnityEngine.TestTools",
+      "m_AssemblyName": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "id": 156,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "TMP_ColorGradient",
+      "m_ClassName": "TMP_ColorGradient",
+      "m_Namespace": "TMPro",
+      "m_AssemblyName": "Unity.TextMeshPro.dll"
+    },
+    {
+      "id": 157,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "Physics2DRaycaster",
+      "m_ClassName": "Physics2DRaycaster",
+      "m_Namespace": "UnityEngine.EventSystems",
+      "m_AssemblyName": "UnityEngine.UI.dll"
+    },
+    {
+      "id": 158,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "LayoutGroupScaling",
+      "m_ClassName": "LayoutGroupScaling",
+      "m_Namespace": "LayoutTests",
+      "m_AssemblyName": "UnityEngine.UI.Tests.dll"
+    },
+    {
+      "id": 159,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "Vector2EqualityComparer",
+      "m_ClassName": "Vector2EqualityComparer",
+      "m_Namespace": "UnityEngine.TestTools.Utils",
+      "m_AssemblyName": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "id": 160,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "VerticalLayoutGroup",
+      "m_ClassName": "VerticalLayoutGroup",
+      "m_Namespace": "UnityEngine.UI",
+      "m_AssemblyName": "UnityEngine.UI.dll"
+    },
+    {
+      "id": 161,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "UnityTestExecutionContext",
+      "m_ClassName": "UnityTestExecutionContext",
+      "m_Namespace": "UnityEngine.TestRunner.NUnitExtensions.Runner",
+      "m_AssemblyName": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "id": 162,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "HorizonalLayoutGroupTests",
+      "m_ClassName": "HorizonalLayoutGroupTests",
+      "m_Namespace": "",
+      "m_AssemblyName": "UnityEngine.UI.Tests.dll"
+    },
+    {
+      "id": 163,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "UnexpectedLogMessageException",
+      "m_ClassName": "UnexpectedLogMessageException",
+      "m_Namespace": "UnityEngine.TestTools.TestRunner",
+      "m_AssemblyName": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "id": 164,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "UnityWorkItemDataHolder",
+      "m_ClassName": "UnityWorkItemDataHolder",
+      "m_Namespace": "UnityEngine.TestRunner.NUnitExtensions.Runner",
+      "m_AssemblyName": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "id": 165,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "TMP_SpriteGlyph",
+      "m_ClassName": "TMP_SpriteGlyph",
+      "m_Namespace": "TMPro",
+      "m_AssemblyName": "Unity.TextMeshPro.dll"
+    },
+    {
+      "id": 166,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "Vector3ComparerWithEqualsOperator",
+      "m_ClassName": "Vector3ComparerWithEqualsOperator",
+      "m_Namespace": "UnityEngine.TestTools.Utils",
+      "m_AssemblyName": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "id": 167,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "ToggleTestImageHook",
+      "m_ClassName": "ToggleTestImageHook",
+      "m_Namespace": "",
+      "m_AssemblyName": "UnityEngine.UI.Tests.dll"
+    },
+    {
+      "id": 168,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "WorkItemFactory",
+      "m_ClassName": "WorkItemFactory",
+      "m_Namespace": "UnityEngine.TestRunner.NUnitExtensions.Runner",
+      "m_AssemblyName": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "id": 169,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "ImageHook",
+      "m_ClassName": "ImageHook",
+      "m_Namespace": "UnityEngine.UI.Tests",
+      "m_AssemblyName": "UnityEngine.UI.Tests.dll"
+    },
+    {
+      "id": 170,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "TMP_FontFeatureTable",
+      "m_ClassName": "TMP_FontFeatureTable",
+      "m_Namespace": "TMPro",
+      "m_AssemblyName": "Unity.TextMeshPro.dll"
+    },
+    {
+      "id": 171,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "TestResultRenderer",
+      "m_ClassName": "TestResultRenderer",
+      "m_Namespace": "UnityEngine.TestTools.TestRunner.Callbacks",
+      "m_AssemblyName": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "id": 172,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "MultipleDisplayUtilities",
+      "m_ClassName": "MultipleDisplayUtilities",
+      "m_Namespace": "UnityEngine.UI",
+      "m_AssemblyName": "UnityEngine.UI.dll"
+    },
+    {
+      "id": 173,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "Text",
+      "m_ClassName": "Text",
+      "m_Namespace": "UnityEngine.UI",
+      "m_AssemblyName": "UnityEngine.UI.dll"
+    },
+    {
+      "id": 174,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "IStateSerializer",
+      "m_ClassName": "IStateSerializer",
+      "m_Namespace": "",
+      "m_AssemblyName": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "id": 175,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "UnityTearDownAttribute",
+      "m_ClassName": "UnityTearDownAttribute",
+      "m_Namespace": "UnityEngine.TestTools",
+      "m_AssemblyName": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "id": 176,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "IMaskable",
+      "m_ClassName": "IMaskable",
+      "m_Namespace": "",
+      "m_AssemblyName": "UnityEngine.UI.dll"
+    },
+    {
+      "id": 177,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "Navigation",
+      "m_ClassName": "Navigation",
+      "m_Namespace": "",
+      "m_AssemblyName": "UnityEngine.UI.dll"
+    },
+    {
+      "id": 178,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "GraphicTestHelper",
+      "m_ClassName": "GraphicTestHelper",
+      "m_Namespace": "UnityEngine.UI.Tests",
+      "m_AssemblyName": "UnityEngine.UI.Tests.dll"
+    },
+    {
+      "id": 179,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "PostBuildCleanupAttribute",
+      "m_ClassName": "PostBuildCleanupAttribute",
+      "m_Namespace": "UnityEngine.TestTools",
+      "m_AssemblyName": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "id": 180,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "ExecuteEvents",
+      "m_ClassName": "ExecuteEvents",
+      "m_Namespace": "UnityEngine.EventSystems",
+      "m_AssemblyName": "UnityEngine.UI.dll"
+    },
+    {
+      "id": 181,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "TMP_SpriteAnimator",
+      "m_ClassName": "TMP_SpriteAnimator",
+      "m_Namespace": "TMPro",
+      "m_AssemblyName": "Unity.TextMeshPro.dll"
+    },
+    {
+      "id": 182,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "Vector2ComparerWithEqualsOperator",
+      "m_ClassName": "Vector2ComparerWithEqualsOperator",
+      "m_Namespace": "UnityEngine.TestTools.Utils",
+      "m_AssemblyName": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "id": 183,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "TMP_CoroutineTween",
+      "m_ClassName": "TMP_CoroutineTween",
+      "m_Namespace": "",
+      "m_AssemblyName": "Unity.TextMeshPro.dll"
+    },
+    {
+      "id": 184,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "TimelineClip",
+      "m_ClassName": "TimelineClip",
+      "m_Namespace": "UnityEngine.Timeline",
+      "m_AssemblyName": "Unity.Timeline.dll"
+    },
+    {
+      "id": 185,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "TestResultExtensions",
+      "m_ClassName": "TestResultExtensions",
+      "m_Namespace": "UnityEngine.TestRunner.NUnitExtensions",
+      "m_AssemblyName": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "id": 186,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "ClipCaps",
+      "m_ClassName": "ClipCaps",
+      "m_Namespace": "",
+      "m_AssemblyName": "Unity.Timeline.dll"
+    },
+    {
+      "id": 187,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "IPropertyCollector",
+      "m_ClassName": "IPropertyCollector",
+      "m_Namespace": "",
+      "m_AssemblyName": "Unity.Timeline.dll"
+    },
+    {
+      "id": 188,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "AnimationPlayableAssetUpgrade",
+      "m_ClassName": "AnimationPlayableAssetUpgrade",
+      "m_Namespace": "UnityEngine.Timeline.:ISerializationCallbackReceiver",
+      "m_AssemblyName": "Unity.Timeline.dll"
+    },
+    {
+      "id": 189,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "Slider",
+      "m_ClassName": "Slider",
+      "m_Namespace": "UnityEngine.UI",
+      "m_AssemblyName": "UnityEngine.UI.dll"
+    },
+    {
+      "id": 190,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "Clipping",
+      "m_ClassName": "Clipping",
+      "m_Namespace": "UnityEngine.UI",
+      "m_AssemblyName": "UnityEngine.UI.dll"
+    },
+    {
+      "id": 191,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "AndroidCOM",
+      "m_ClassName": "AndroidCOM",
+      "m_Namespace": "MCT.PlatformCOM",
+      "m_AssemblyName": "mct.dll"
+    },
+    {
+      "id": 192,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "ConstraintsExtensions",
+      "m_ClassName": "ConstraintsExtensions",
+      "m_Namespace": "",
+      "m_AssemblyName": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "id": 193,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "FailCommand",
+      "m_ClassName": "FailCommand",
+      "m_Namespace": "UnityEngine.TestRunner.NUnitExtensions.Runner",
+      "m_AssemblyName": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "id": 194,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "TestRunCallbackListener",
+      "m_ClassName": "TestRunCallbackListener",
+      "m_Namespace": "UnityEngine.TestRunner.Utils",
+      "m_AssemblyName": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "id": 195,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "TMP_UpdateManager",
+      "m_ClassName": "TMP_UpdateManager",
+      "m_Namespace": "TMPro",
+      "m_AssemblyName": "Unity.TextMeshPro.dll"
+    },
+    {
+      "id": 196,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "StencilMaterial",
+      "m_ClassName": "StencilMaterial",
+      "m_Namespace": "UnityEngine.UI",
+      "m_AssemblyName": "UnityEngine.UI.dll"
+    },
+    {
+      "id": 197,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "GraphicRegistry",
+      "m_ClassName": "GraphicRegistry",
+      "m_Namespace": "UnityEngine.UI",
+      "m_AssemblyName": "UnityEngine.UI.dll"
+    },
+    {
+      "id": 198,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "ClipUpgrade",
+      "m_ClassName": "ClipUpgrade",
+      "m_Namespace": "",
+      "m_AssemblyName": "Unity.Timeline.dll"
+    },
+    {
+      "id": 199,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "TMP_TextParsingUtilities",
+      "m_ClassName": "TMP_TextParsingUtilities",
+      "m_Namespace": "TMPro",
+      "m_AssemblyName": "Unity.TextMeshPro.dll"
+    },
+    {
+      "id": 200,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "TMP_EditorResourceManager",
+      "m_ClassName": "TMP_EditorResourceManager",
+      "m_Namespace": "TMPro",
+      "m_AssemblyName": "Unity.TextMeshPro.dll"
+    },
+    {
+      "id": 201,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "TrackColorAttribute",
+      "m_ClassName": "TrackColorAttribute",
+      "m_Namespace": "UnityEngine.Timeline",
+      "m_AssemblyName": "Unity.Timeline.dll"
+    },
+    {
+      "id": 202,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "Is",
+      "m_ClassName": "Is",
+      "m_Namespace": "UnityEngine.TestTools.Constraints",
+      "m_AssemblyName": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "id": 203,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "TMP_MaterialManager",
+      "m_ClassName": "TMP_MaterialManager",
+      "m_Namespace": "TMPro",
+      "m_AssemblyName": "Unity.TextMeshPro.dll"
+    },
+    {
+      "id": 204,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "EnumerableRetryTestCommand",
+      "m_ClassName": "EnumerableRetryTestCommand",
+      "m_Namespace": "UnityEngine.TestTools",
+      "m_AssemblyName": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "id": 205,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "RuntimeClip",
+      "m_ClassName": "RuntimeClip",
+      "m_Namespace": "UnityEngine.Timeline",
+      "m_AssemblyName": "Unity.Timeline.dll"
+    },
+    {
+      "id": 206,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "RuntimeClipBase",
+      "m_ClassName": "RuntimeClipBase",
+      "m_Namespace": "UnityEngine.Timeline",
+      "m_AssemblyName": "Unity.Timeline.dll"
+    },
+    {
+      "id": 207,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "BaseMeshEffect",
+      "m_ClassName": "BaseMeshEffect",
+      "m_Namespace": "UnityEngine.UI",
+      "m_AssemblyName": "UnityEngine.UI.dll"
+    },
+    {
+      "id": 208,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "TMP_FontAsset",
+      "m_ClassName": "TMP_FontAsset",
+      "m_Namespace": "TMPro",
+      "m_AssemblyName": "Unity.TextMeshPro.dll"
+    },
+    {
+      "id": 209,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "RectMask2DWithNestedCanvasCullsUsingCorrectCanvasRect",
+      "m_ClassName": "RectMask2DWithNestedCanvasCullsUsingCorrectCanvasRect",
+      "m_Namespace": "Graphics",
+      "m_AssemblyName": "UnityEngine.UI.Tests.dll"
+    },
+    {
+      "id": 210,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "TestListenerWrapper",
+      "m_ClassName": "TestListenerWrapper",
+      "m_Namespace": "UnityEngine.TestTools.TestRunner",
+      "m_AssemblyName": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "id": 211,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "TestPlatform",
+      "m_ClassName": "TestPlatform",
+      "m_Namespace": "",
+      "m_AssemblyName": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "id": 212,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "TestEnumerator",
+      "m_ClassName": "TestEnumerator",
+      "m_Namespace": "UnityEngine.TestTools",
+      "m_AssemblyName": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "id": 213,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "AnimationPreviewUpdateCallback",
+      "m_ClassName": "AnimationPreviewUpdateCallback",
+      "m_Namespace": "UnityEngine.Timeline",
+      "m_AssemblyName": "Unity.Timeline.dll"
+    },
+    {
+      "id": 214,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "PointerEventData",
+      "m_ClassName": "PointerEventData",
+      "m_Namespace": "UnityEngine.EventSystems",
+      "m_AssemblyName": "UnityEngine.UI.dll"
+    },
+    {
+      "id": 215,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "TestRunCallbackAttribute",
+      "m_ClassName": "TestRunCallbackAttribute",
+      "m_Namespace": "UnityEngine.TestRunner",
+      "m_AssemblyName": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "id": 216,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "RuntimeElement",
+      "m_ClassName": "RuntimeElement",
+      "m_Namespace": "UnityEngine.Timeline",
+      "m_AssemblyName": "Unity.Timeline.dll"
+    },
+    {
+      "id": 217,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "EventSystem",
+      "m_ClassName": "EventSystem",
+      "m_Namespace": "UnityEngine.EventSystems",
+      "m_AssemblyName": "UnityEngine.UI.dll"
+    },
+    {
+      "id": 218,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "DragCallbackCheck",
+      "m_ClassName": "DragCallbackCheck",
+      "m_Namespace": "",
+      "m_AssemblyName": "UnityEngine.UI.Tests.dll"
+    },
+    {
+      "id": 219,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "TMPro_ExtensionMethods",
+      "m_ClassName": "TMPro_ExtensionMethods",
+      "m_Namespace": "TMPro",
+      "m_AssemblyName": "Unity.TextMeshPro.dll"
+    },
+    {
+      "id": 220,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "Timeline.deprecated",
+      "m_ClassName": "Timeline.deprecated",
+      "m_Namespace": "",
+      "m_AssemblyName": "Unity.Timeline.dll"
+    },
+    {
+      "id": 221,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "JsonWriter",
+      "m_ClassName": "JsonWriter",
+      "m_Namespace": "LitJson",
+      "m_AssemblyName": "simple-json.dll"
+    },
+    {
+      "id": 222,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "ScrollRectStableLayout",
+      "m_ClassName": "ScrollRectStableLayout",
+      "m_Namespace": "",
+      "m_AssemblyName": "UnityEngine.UI.Tests.dll"
+    },
+    {
+      "id": 223,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "UnityWorkItem",
+      "m_ClassName": "UnityWorkItem",
+      "m_Namespace": "UnityEngine.TestRunner.NUnitExtensions.Runner",
+      "m_AssemblyName": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "id": 224,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "TMP_InputValidator",
+      "m_ClassName": "TMP_InputValidator",
+      "m_Namespace": "TMPro",
+      "m_AssemblyName": "Unity.TextMeshPro.dll"
+    },
+    {
+      "id": 225,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "Selectable",
+      "m_ClassName": "Selectable",
+      "m_Namespace": "UnityEngine.UI",
+      "m_AssemblyName": "UnityEngine.UI.dll"
+    },
+    {
+      "id": 226,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "UnityCombinatorialStrategy",
+      "m_ClassName": "UnityCombinatorialStrategy",
+      "m_Namespace": "UnityEngine.TestTools",
+      "m_AssemblyName": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "id": 227,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "TMP_Dropdown",
+      "m_ClassName": "TMP_Dropdown",
+      "m_Namespace": "TMPro",
+      "m_AssemblyName": "Unity.TextMeshPro.dll"
+    },
+    {
+      "id": 228,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "MaskUtilities",
+      "m_ClassName": "MaskUtilities",
+      "m_Namespace": "UnityEngine.UI",
+      "m_AssemblyName": "UnityEngine.UI.dll"
+    },
+    {
+      "id": 229,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "CoroutineTween",
+      "m_ClassName": "CoroutineTween",
+      "m_Namespace": "",
+      "m_AssemblyName": "UnityEngine.UI.dll"
+    },
+    {
+      "id": 230,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "AssemblyInfo",
+      "m_ClassName": "AssemblyInfo",
+      "m_Namespace": "",
+      "m_AssemblyName": "UnityEngine.UI.dll"
+    },
+    {
+      "id": 231,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "PlaymodeWorkItemFactory",
+      "m_ClassName": "PlaymodeWorkItemFactory",
+      "m_Namespace": "UnityEngine.TestRunner.NUnitExtensions.Runner",
+      "m_AssemblyName": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "id": 232,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "BeforeAfterTestCommandState",
+      "m_ClassName": "BeforeAfterTestCommandState",
+      "m_Namespace": "UnityEngine.TestTools",
+      "m_AssemblyName": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "id": 233,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "TimelinePlayable",
+      "m_ClassName": "TimelinePlayable",
+      "m_Namespace": "UnityEngine.Timeline",
+      "m_AssemblyName": "Unity.Timeline.dll"
+    },
+    {
+      "id": 234,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "RectTransformValidAfterEnable",
+      "m_ClassName": "RectTransformValidAfterEnable",
+      "m_Namespace": "",
+      "m_AssemblyName": "UnityEngine.UI.Tests.dll"
+    },
+    {
+      "id": 235,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "Netstandard15Polyfill",
+      "m_ClassName": "Netstandard15Polyfill",
+      "m_Namespace": "LitJson",
+      "m_AssemblyName": "simple-json.dll"
+    },
+    {
+      "id": 236,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "RemoteTestResultDataFactory",
+      "m_ClassName": "RemoteTestResultDataFactory",
+      "m_Namespace": "UnityEngine.TestRunner.TestLaunchers",
+      "m_AssemblyName": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "id": 237,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "Misc",
+      "m_ClassName": "Misc",
+      "m_Namespace": "UnityEngine.UI",
+      "m_AssemblyName": "UnityEngine.UI.dll"
+    },
+    {
+      "id": 238,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "LayoutUtility",
+      "m_ClassName": "LayoutUtility",
+      "m_Namespace": "UnityEngine.UI",
+      "m_AssemblyName": "UnityEngine.UI.dll"
+    },
+    {
+      "id": 239,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "PlayableTrack",
+      "m_ClassName": "PlayableTrack",
+      "m_Namespace": "UnityEngine.Timeline",
+      "m_AssemblyName": "Unity.Timeline.dll"
+    },
+    {
+      "id": 240,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "ColorBlock",
+      "m_ClassName": "ColorBlock",
+      "m_Namespace": "",
+      "m_AssemblyName": "UnityEngine.UI.dll"
+    },
+    {
+      "id": 241,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "PhysicsRaycasterTests",
+      "m_ClassName": "PhysicsRaycasterTests",
+      "m_Namespace": "",
+      "m_AssemblyName": "UnityEngine.UI.Tests.dll"
+    },
+    {
+      "id": 242,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "ImmediateEnumerableCommand",
+      "m_ClassName": "ImmediateEnumerableCommand",
+      "m_Namespace": "UnityEngine.TestTools",
+      "m_AssemblyName": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "id": 243,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "DTxDispense",
+      "m_ClassName": "DTxDispense",
+      "m_Namespace": "",
+      "m_AssemblyName": "mct.dll"
+    },
+    {
+      "id": 244,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "TMP_SpriteAsset",
+      "m_ClassName": "TMP_SpriteAsset",
+      "m_Namespace": "TMPro",
+      "m_AssemblyName": "Unity.TextMeshPro.dll"
+    },
+    {
+      "id": 245,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "CoroutineWorksIfUIObjectIsAttached",
+      "m_ClassName": "CoroutineWorksIfUIObjectIsAttached",
+      "m_Namespace": "",
+      "m_AssemblyName": "UnityEngine.UI.Tests.dll"
+    },
+    {
+      "id": 246,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "IMeshModifier",
+      "m_ClassName": "IMeshModifier",
+      "m_Namespace": "",
+      "m_AssemblyName": "UnityEngine.UI.dll"
+    },
+    {
+      "id": 247,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "AspectRatioFitter",
+      "m_ClassName": "AspectRatioFitter",
+      "m_Namespace": "UnityEngine.UI",
+      "m_AssemblyName": "UnityEngine.UI.dll"
+    },
+    {
+      "id": 248,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "SinglePointTouch",
+      "m_ClassName": "SinglePointTouch",
+      "m_Namespace": "MC.Simple.Touch",
+      "m_AssemblyName": "simple-touch.dll"
+    },
+    {
+      "id": 249,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "FastAction",
+      "m_ClassName": "FastAction",
+      "m_Namespace": "TMPro",
+      "m_AssemblyName": "Unity.TextMeshPro.dll"
+    },
+    {
+      "id": 250,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "ObjectPool",
+      "m_ClassName": "ObjectPool",
+      "m_Namespace": "",
+      "m_AssemblyName": "UnityEngine.UI.dll"
+    },
+    {
+      "id": 251,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "IRemoteTestResultDataFactory",
+      "m_ClassName": "IRemoteTestResultDataFactory",
+      "m_Namespace": "",
+      "m_AssemblyName": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "id": 252,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "UnityTestAssemblyRunner",
+      "m_ClassName": "UnityTestAssemblyRunner",
+      "m_Namespace": "UnityEngine.TestRunner.NUnitExtensions.Runner",
+      "m_AssemblyName": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "id": 253,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "TMP_TextElement_Legacy",
+      "m_ClassName": "TMP_TextElement_Legacy",
+      "m_Namespace": "TMPro",
+      "m_AssemblyName": "Unity.TextMeshPro.dll"
+    },
+    {
+      "id": 254,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "IEditModeTestYieldInstruction",
+      "m_ClassName": "IEditModeTestYieldInstruction",
+      "m_Namespace": "",
+      "m_AssemblyName": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "id": 255,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "ICurvesOwner",
+      "m_ClassName": "ICurvesOwner",
+      "m_Namespace": "",
+      "m_AssemblyName": "Unity.Timeline.dll"
+    },
+    {
+      "id": 256,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "Marker",
+      "m_ClassName": "Marker",
+      "m_Namespace": "UnityEngine.Timeline",
+      "m_AssemblyName": "Unity.Timeline.dll"
+    },
+    {
+      "id": 257,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "VerticalLayoutGroupTests",
+      "m_ClassName": "VerticalLayoutGroupTests",
+      "m_Namespace": "LayoutTests",
+      "m_AssemblyName": "UnityEngine.UI.Tests.dll"
+    },
+    {
+      "id": 258,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "GridLayoutGroup",
+      "m_ClassName": "GridLayoutGroup",
+      "m_Namespace": "UnityEngine.UI",
+      "m_AssemblyName": "UnityEngine.UI.dll"
+    },
+    {
+      "id": 259,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "AudioTrack",
+      "m_ClassName": "AudioTrack",
+      "m_Namespace": "UnityEngine.Timeline",
+      "m_AssemblyName": "Unity.Timeline.dll"
+    },
+    {
+      "id": 260,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "TestExtensions",
+      "m_ClassName": "TestExtensions",
+      "m_Namespace": "UnityEngine.TestRunner.NUnitExtensions",
+      "m_AssemblyName": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "id": 261,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "DiscreteTime",
+      "m_ClassName": "DiscreteTime",
+      "m_Namespace": "",
+      "m_AssemblyName": "Unity.Timeline.dll"
+    },
+    {
+      "id": 262,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "SimpleJson",
+      "m_ClassName": "SimpleJson",
+      "m_Namespace": "MC.Simple.Json",
+      "m_AssemblyName": "simple-json.dll"
+    },
+    {
+      "id": 263,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "IntervalTree",
+      "m_ClassName": "IntervalTree",
+      "m_Namespace": "",
+      "m_AssemblyName": "Unity.Timeline.dll"
+    },
+    {
+      "id": 264,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "TMPro_Private",
+      "m_ClassName": "TMPro_Private",
+      "m_Namespace": "",
+      "m_AssemblyName": "Unity.TextMeshPro.dll"
+    },
+    {
+      "id": 265,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "Toggle",
+      "m_ClassName": "Toggle",
+      "m_Namespace": "UnityEngine.UI",
+      "m_AssemblyName": "UnityEngine.UI.dll"
+    },
+    {
+      "id": 266,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "TMP_CharacterInfo",
+      "m_ClassName": "TMP_CharacterInfo",
+      "m_Namespace": "",
+      "m_AssemblyName": "Unity.TextMeshPro.dll"
+    },
+    {
+      "id": 267,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "AssemblyNameFilter",
+      "m_ClassName": "AssemblyNameFilter",
+      "m_Namespace": "UnityEngine.TestRunner.NUnitExtensions.Filters",
+      "m_AssemblyName": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "id": 268,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "BaseEventData",
+      "m_ClassName": "BaseEventData",
+      "m_Namespace": "UnityEngine.EventSystems",
+      "m_AssemblyName": "UnityEngine.UI.dll"
+    },
+    {
+      "id": 269,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "IGraphicEnabledDisabled",
+      "m_ClassName": "IGraphicEnabledDisabled",
+      "m_Namespace": "",
+      "m_AssemblyName": "UnityEngine.UI.dll"
+    },
+    {
+      "id": 270,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "TimelineAsset_CreateRemove",
+      "m_ClassName": "TimelineAsset_CreateRemove",
+      "m_Namespace": "",
+      "m_AssemblyName": "Unity.Timeline.dll"
+    },
+    {
+      "id": 271,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "CheckMeshColorsAndColors32Match",
+      "m_ClassName": "CheckMeshColorsAndColors32Match",
+      "m_Namespace": "",
+      "m_AssemblyName": "UnityEngine.UI.Tests.dll"
+    },
+    {
+      "id": 272,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "Utils",
+      "m_ClassName": "Utils",
+      "m_Namespace": "UnityEngine.TestTools.Utils",
+      "m_AssemblyName": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "id": 273,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "TextMeshPro",
+      "m_ClassName": "TextMeshPro",
+      "m_Namespace": "TMPro",
+      "m_AssemblyName": "Unity.TextMeshPro.dll"
+    },
+    {
+      "id": 274,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "TimelineUpgrade",
+      "m_ClassName": "TimelineUpgrade",
+      "m_Namespace": "",
+      "m_AssemblyName": "Unity.Timeline.dll"
+    },
+    {
+      "id": 275,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "InvalidSignatureException",
+      "m_ClassName": "InvalidSignatureException",
+      "m_Namespace": "UnityEngine.TestTools.TestRunner",
+      "m_AssemblyName": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "id": 276,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "TMP_Sprite",
+      "m_ClassName": "TMP_Sprite",
+      "m_Namespace": "TMPro",
+      "m_AssemblyName": "Unity.TextMeshPro.dll"
+    },
+    {
+      "id": 277,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "TMPro_EventManager",
+      "m_ClassName": "TMPro_EventManager",
+      "m_Namespace": "TMPro",
+      "m_AssemblyName": "Unity.TextMeshPro.dll"
+    },
+    {
+      "id": 278,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "TestableImage",
+      "m_ClassName": "TestableImage",
+      "m_Namespace": "",
+      "m_AssemblyName": "UnityEngine.UI.Tests.dll"
+    },
+    {
+      "id": 279,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "MaskableGraphic",
+      "m_ClassName": "MaskableGraphic",
+      "m_Namespace": "UnityEngine.UI",
+      "m_AssemblyName": "UnityEngine.UI.dll"
+    },
+    {
+      "id": 280,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "NotificationFlags",
+      "m_ClassName": "NotificationFlags",
+      "m_Namespace": "",
+      "m_AssemblyName": "Unity.Timeline.dll"
+    },
+    {
+      "id": 281,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "UnityTestAssemblyBuilder",
+      "m_ClassName": "UnityTestAssemblyBuilder",
+      "m_Namespace": "UnityEngine.TestTools.NUnitExtensions",
+      "m_AssemblyName": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "id": 282,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "LogMatch",
+      "m_ClassName": "LogMatch",
+      "m_Namespace": "UnityEngine.TestTools.Logging",
+      "m_AssemblyName": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "id": 283,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "JsonException",
+      "m_ClassName": "JsonException",
+      "m_Namespace": "LitJson",
+      "m_AssemblyName": "simple-json.dll"
+    },
+    {
+      "id": 284,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "TestEnumeratorWrapper",
+      "m_ClassName": "TestEnumeratorWrapper",
+      "m_Namespace": "UnityEngine.TestTools.TestRunner",
+      "m_AssemblyName": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "id": 285,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "InfiniteRuntimeClip",
+      "m_ClassName": "InfiniteRuntimeClip",
+      "m_Namespace": "UnityEngine.Timeline",
+      "m_AssemblyName": "Unity.Timeline.dll"
+    },
+    {
+      "id": 286,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "NoActiveCameraInSceneDoesNotCrashEditor",
+      "m_ClassName": "NoActiveCameraInSceneDoesNotCrashEditor",
+      "m_Namespace": "",
+      "m_AssemblyName": "UnityEngine.UI.Tests.dll"
+    },
+    {
+      "id": 287,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "JsonMockWrapper",
+      "m_ClassName": "JsonMockWrapper",
+      "m_Namespace": "LitJson",
+      "m_AssemblyName": "simple-json.dll"
+    },
+    {
+      "id": 288,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "TMP_RuntimeTests",
+      "m_ClassName": "TMP_RuntimeTests",
+      "m_Namespace": "TMPro",
+      "m_AssemblyName": "Unity.TextMeshPro.Tests.dll"
+    },
+    {
+      "id": 289,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "ClipperRegistry",
+      "m_ClassName": "ClipperRegistry",
+      "m_Namespace": "UnityEngine.UI",
+      "m_AssemblyName": "UnityEngine.UI.dll"
+    },
+    {
+      "id": 290,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "IMonoBehaviourTest",
+      "m_ClassName": "IMonoBehaviourTest",
+      "m_Namespace": "",
+      "m_AssemblyName": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "id": 291,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "SceneWithNestedLayoutElementsLoadScript",
+      "m_ClassName": "SceneWithNestedLayoutElementsLoadScript",
+      "m_Namespace": "",
+      "m_AssemblyName": "UnityEngine.UI.Tests.dll"
+    },
+    {
+      "id": 292,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "RuntimeTestRunnerFilter",
+      "m_ClassName": "RuntimeTestRunnerFilter",
+      "m_Namespace": "UnityEngine.TestTools.TestRunner.GUI",
+      "m_AssemblyName": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "id": 293,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "JsonMapper",
+      "m_ClassName": "JsonMapper",
+      "m_Namespace": "LitJson",
+      "m_AssemblyName": "simple-json.dll"
+    },
+    {
+      "id": 294,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "ImageTests",
+      "m_ClassName": "ImageTests",
+      "m_Namespace": "UnityEngine.UI.Tests",
+      "m_AssemblyName": "UnityEngine.UI.Tests.dll"
+    },
+    {
+      "id": 295,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "CanvasGroupInheritedAlpha",
+      "m_ClassName": "CanvasGroupInheritedAlpha",
+      "m_Namespace": "",
+      "m_AssemblyName": "UnityEngine.UI.Tests.dll"
+    },
+    {
+      "id": 296,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "AnimationOutputWeightProcessor",
+      "m_ClassName": "AnimationOutputWeightProcessor",
+      "m_Namespace": "UnityEngine.Timeline",
+      "m_AssemblyName": "Unity.Timeline.dll"
+    },
+    {
+      "id": 297,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "TMP_UpdateRegistery",
+      "m_ClassName": "TMP_UpdateRegistery",
+      "m_Namespace": "",
+      "m_AssemblyName": "Unity.TextMeshPro.dll"
+    },
+    {
+      "id": 298,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "ImageTests",
+      "m_ClassName": "ImageTests",
+      "m_Namespace": "",
+      "m_AssemblyName": "UnityEngine.UI.Tests.dll"
+    },
+    {
+      "id": 299,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "HorizontalOrVerticalLayoutGroup",
+      "m_ClassName": "HorizontalOrVerticalLayoutGroup",
+      "m_Namespace": "UnityEngine.UI",
+      "m_AssemblyName": "UnityEngine.UI.dll"
+    },
+    {
+      "id": 300,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "Graphic",
+      "m_ClassName": "Graphic",
+      "m_Namespace": "UnityEngine.UI",
+      "m_AssemblyName": "UnityEngine.UI.dll"
+    },
+    {
+      "id": 301,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "CustomSignalEventDrawer",
+      "m_ClassName": "CustomSignalEventDrawer",
+      "m_Namespace": "UnityEngine.Timeline",
+      "m_AssemblyName": "Unity.Timeline.dll"
+    },
+    {
+      "id": 302,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "IndexedSet",
+      "m_ClassName": "IndexedSet",
+      "m_Namespace": "",
+      "m_AssemblyName": "UnityEngine.UI.dll"
+    },
+    {
+      "id": 303,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "UnhandledLogMessageException",
+      "m_ClassName": "UnhandledLogMessageException",
+      "m_Namespace": "UnityEngine.TestTools.TestRunner",
+      "m_AssemblyName": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "id": 304,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "JsonData",
+      "m_ClassName": "JsonData",
+      "m_Namespace": "LitJson",
+      "m_AssemblyName": "simple-json.dll"
+    },
+    {
+      "id": 305,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "TMP_StyleSheet",
+      "m_ClassName": "TMP_StyleSheet",
+      "m_Namespace": "TMPro",
+      "m_AssemblyName": "Unity.TextMeshPro.dll"
+    },
+    {
+      "id": 306,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "IPrebuildSceneSetup",
+      "m_ClassName": "IPrebuildSceneSetup",
+      "m_Namespace": "",
+      "m_AssemblyName": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "id": 307,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "RawImageTest",
+      "m_ClassName": "RawImageTest",
+      "m_Namespace": "Graphics",
+      "m_AssemblyName": "UnityEngine.UI.Tests.dll"
+    },
+    {
+      "id": 308,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "AttributeHelper",
+      "m_ClassName": "AttributeHelper",
+      "m_Namespace": "UnityEngine.TestTools",
+      "m_AssemblyName": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "id": 309,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "FloatEqualityComparer",
+      "m_ClassName": "FloatEqualityComparer",
+      "m_Namespace": "UnityEngine.TestTools.Utils",
+      "m_AssemblyName": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "id": 310,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "ITextPreProcessor",
+      "m_ClassName": "ITextPreProcessor",
+      "m_Namespace": "",
+      "m_AssemblyName": "Unity.TextMeshPro.dll"
+    },
+    {
+      "id": 311,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "TimeNotificationBehaviour",
+      "m_ClassName": "TimeNotificationBehaviour",
+      "m_Namespace": "UnityEngine.Timeline",
+      "m_AssemblyName": "Unity.Timeline.dll"
+    },
+    {
+      "id": 312,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "RemoteTestData",
+      "m_ClassName": "RemoteTestData",
+      "m_Namespace": "UnityEngine.TestRunner.TestLaunchers",
+      "m_AssemblyName": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "id": 313,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "AxisEventData",
+      "m_ClassName": "AxisEventData",
+      "m_Namespace": "UnityEngine.EventSystems",
+      "m_AssemblyName": "UnityEngine.UI.dll"
+    },
+    {
+      "id": 314,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "ParserToken",
+      "m_ClassName": "ParserToken",
+      "m_Namespace": "",
+      "m_AssemblyName": "simple-json.dll"
+    },
+    {
+      "id": 315,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "ScheduleRuntimeClip",
+      "m_ClassName": "ScheduleRuntimeClip",
+      "m_Namespace": "UnityEngine.Timeline",
+      "m_AssemblyName": "Unity.Timeline.dll"
+    },
+    {
+      "id": 316,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "PlatformMenu",
+      "m_ClassName": "PlatformMenu",
+      "m_Namespace": "MCT.PlatformCOM",
+      "m_AssemblyName": "mct.dll"
+    },
+    {
+      "id": 317,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "ConstructDelegator",
+      "m_ClassName": "ConstructDelegator",
+      "m_Namespace": "UnityEngine.TestTools.NUnitExtensions",
+      "m_AssemblyName": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "id": 318,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "TMP_RichTextTagsCommon",
+      "m_ClassName": "TMP_RichTextTagsCommon",
+      "m_Namespace": "",
+      "m_AssemblyName": "Unity.TextMeshPro.dll"
+    },
+    {
+      "id": 319,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "SignalTrack",
+      "m_ClassName": "SignalTrack",
+      "m_Namespace": "UnityEngine.Timeline",
+      "m_AssemblyName": "Unity.Timeline.dll"
+    },
+    {
+      "id": 320,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "CoroutineTestWorkItem",
+      "m_ClassName": "CoroutineTestWorkItem",
+      "m_Namespace": "UnityEngine.TestRunner.NUnitExtensions.Runner",
+      "m_AssemblyName": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "id": 321,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "IPropertyPreview",
+      "m_ClassName": "IPropertyPreview",
+      "m_Namespace": "",
+      "m_AssemblyName": "Unity.Timeline.dll"
+    },
+    {
+      "id": 322,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "TextEditorBackspaceDelete",
+      "m_ClassName": "TextEditorBackspaceDelete",
+      "m_Namespace": "",
+      "m_AssemblyName": "UnityEngine.UI.Tests.dll"
+    },
+    {
+      "id": 323,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "MaskTests",
+      "m_ClassName": "MaskTests",
+      "m_Namespace": "Graphics",
+      "m_AssemblyName": "UnityEngine.UI.Tests.dll"
+    },
+    {
+      "id": 324,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "TMP_LineInfo",
+      "m_ClassName": "TMP_LineInfo",
+      "m_Namespace": "",
+      "m_AssemblyName": "Unity.TextMeshPro.dll"
+    },
+    {
+      "id": 325,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "NotificationUtilities",
+      "m_ClassName": "NotificationUtilities",
+      "m_Namespace": "UnityEngine.Timeline",
+      "m_AssemblyName": "Unity.Timeline.dll"
+    },
+    {
+      "id": 326,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "SynchronousFilter",
+      "m_ClassName": "SynchronousFilter",
+      "m_Namespace": "UnityEngine.TestTools.TestRunner.GUI",
+      "m_AssemblyName": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "id": 327,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "SetPropertyUtility",
+      "m_ClassName": "SetPropertyUtility",
+      "m_Namespace": "UnityEngine.UI",
+      "m_AssemblyName": "UnityEngine.UI.dll"
+    },
+    {
+      "id": 328,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "IOuterUnityTestAction",
+      "m_ClassName": "IOuterUnityTestAction",
+      "m_Namespace": "",
+      "m_AssemblyName": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "id": 329,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "GridLayoutGroupTests",
+      "m_ClassName": "GridLayoutGroupTests",
+      "m_Namespace": "",
+      "m_AssemblyName": "UnityEngine.UI.Tests.dll"
+    },
+    {
+      "id": 330,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "SimpleTouch",
+      "m_ClassName": "SimpleTouch",
+      "m_Namespace": "MC.Simple.Touch",
+      "m_AssemblyName": "simple-touch.dll"
+    },
+    {
+      "id": 331,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "NestedCanvasMaintainsCorrectSize",
+      "m_ClassName": "NestedCanvasMaintainsCorrectSize",
+      "m_Namespace": "",
+      "m_AssemblyName": "UnityEngine.UI.Tests.dll"
+    },
+    {
+      "id": 332,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "DirectorControlPlayable",
+      "m_ClassName": "DirectorControlPlayable",
+      "m_Namespace": "UnityEngine.Timeline",
+      "m_AssemblyName": "Unity.Timeline.dll"
+    },
+    {
+      "id": 333,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "DefaultControls",
+      "m_ClassName": "DefaultControls",
+      "m_Namespace": "UnityEngine.UI",
+      "m_AssemblyName": "UnityEngine.UI.dll"
+    },
+    {
+      "id": 334,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "CanvasUpdateRegistry",
+      "m_ClassName": "CanvasUpdateRegistry",
+      "m_Namespace": "UnityEngine.UI",
+      "m_AssemblyName": "UnityEngine.UI.dll"
+    },
+    {
+      "id": 335,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "TimelineAsset",
+      "m_ClassName": "TimelineAsset",
+      "m_Namespace": "UnityEngine.Timeline",
+      "m_AssemblyName": "Unity.Timeline.dll"
+    },
+    {
+      "id": 336,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "SiblingOrderChangesLayout",
+      "m_ClassName": "SiblingOrderChangesLayout",
+      "m_Namespace": "",
+      "m_AssemblyName": "UnityEngine.UI.Tests.dll"
+    },
+    {
+      "id": 337,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "IAsyncTestAssemblyBuilder",
+      "m_ClassName": "IAsyncTestAssemblyBuilder",
+      "m_Namespace": "",
+      "m_AssemblyName": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "id": 338,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "VertexHelper",
+      "m_ClassName": "VertexHelper",
+      "m_Namespace": "UnityEngine.UI",
+      "m_AssemblyName": "UnityEngine.UI.dll"
+    },
+    {
+      "id": 339,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "ListPool",
+      "m_ClassName": "ListPool",
+      "m_Namespace": "",
+      "m_AssemblyName": "UnityEngine.UI.dll"
+    },
+    {
+      "id": 340,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "PhysicsRaycaster",
+      "m_ClassName": "PhysicsRaycaster",
+      "m_Namespace": "UnityEngine.EventSystems",
+      "m_AssemblyName": "UnityEngine.UI.dll"
+    },
+    {
+      "id": 341,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "ITestAssemblyProvider",
+      "m_ClassName": "ITestAssemblyProvider",
+      "m_Namespace": "",
+      "m_AssemblyName": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "id": 342,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "RectangularVertexClipper",
+      "m_ClassName": "RectangularVertexClipper",
+      "m_Namespace": "UnityEngine.UI",
+      "m_AssemblyName": "UnityEngine.UI.dll"
+    },
+    {
+      "id": 343,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "AnimationTriggers",
+      "m_ClassName": "AnimationTriggers",
+      "m_Namespace": "UnityEngine.UI",
+      "m_AssemblyName": "UnityEngine.UI.dll"
+    },
+    {
+      "id": 344,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "TrackUpgrade",
+      "m_ClassName": "TrackUpgrade",
+      "m_Namespace": "",
+      "m_AssemblyName": "Unity.Timeline.dll"
+    },
+    {
+      "id": 345,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "DefaultTestWorkItem",
+      "m_ClassName": "DefaultTestWorkItem",
+      "m_Namespace": "UnityEngine.TestRunner.NUnitExtensions.Runner",
+      "m_AssemblyName": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "id": 346,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "ConditionalIgnoreAttribute",
+      "m_ClassName": "ConditionalIgnoreAttribute",
+      "m_Namespace": "UnityEngine.TestTools",
+      "m_AssemblyName": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "id": 347,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "LogAssert",
+      "m_ClassName": "LogAssert",
+      "m_Namespace": "UnityEngine.TestTools",
+      "m_AssemblyName": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "id": 348,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "TMP_SelectionCaret",
+      "m_ClassName": "TMP_SelectionCaret",
+      "m_Namespace": "TMPro",
+      "m_AssemblyName": "Unity.TextMeshPro.dll"
+    },
+    {
+      "id": 349,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "LayoutGroup",
+      "m_ClassName": "LayoutGroup",
+      "m_Namespace": "UnityEngine.UI",
+      "m_AssemblyName": "UnityEngine.UI.dll"
+    },
+    {
+      "id": 350,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "PointerInputModule",
+      "m_ClassName": "PointerInputModule",
+      "m_Namespace": "UnityEngine.EventSystems",
+      "m_AssemblyName": "UnityEngine.UI.dll"
+    },
+    {
+      "id": 351,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "BeforeAfterTestCommandBase",
+      "m_ClassName": "BeforeAfterTestCommandBase",
+      "m_Namespace": "",
+      "m_AssemblyName": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "id": 352,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "AssemblyInfo",
+      "m_ClassName": "AssemblyInfo",
+      "m_Namespace": "",
+      "m_AssemblyName": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "id": 353,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "UnitySetUpAttribute",
+      "m_ClassName": "UnitySetUpAttribute",
+      "m_Namespace": "UnityEngine.TestTools",
+      "m_AssemblyName": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "id": 354,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "IMask",
+      "m_ClassName": "IMask",
+      "m_Namespace": "",
+      "m_AssemblyName": "UnityEngine.UI.dll"
+    },
+    {
+      "id": 355,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "TMP_PackageResourceImporter",
+      "m_ClassName": "TMP_PackageResourceImporter",
+      "m_Namespace": "TMPro",
+      "m_AssemblyName": "Unity.TextMeshPro.dll"
+    },
+    {
+      "id": 356,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "Shadow",
+      "m_ClassName": "Shadow",
+      "m_Namespace": "UnityEngine.UI",
+      "m_AssemblyName": "UnityEngine.UI.dll"
+    },
+    {
+      "id": 357,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "AnimatorBindingCache",
+      "m_ClassName": "AnimatorBindingCache",
+      "m_Namespace": "UnityEngine.Timeline",
+      "m_AssemblyName": "Unity.Timeline.dll"
+    },
+    {
+      "id": 358,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "AllocatingGCMemoryConstraint",
+      "m_ClassName": "AllocatingGCMemoryConstraint",
+      "m_Namespace": "UnityEngine.TestTools.Constraints",
+      "m_AssemblyName": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "id": 359,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "EventTrigger",
+      "m_ClassName": "EventTrigger",
+      "m_Namespace": "UnityEngine.EventSystems",
+      "m_AssemblyName": "UnityEngine.UI.dll"
+    },
+    {
+      "id": 360,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "JsonReader",
+      "m_ClassName": "JsonReader",
+      "m_Namespace": "LitJson",
+      "m_AssemblyName": "simple-json.dll"
+    },
+    {
+      "id": 361,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "HashUtility",
+      "m_ClassName": "HashUtility",
+      "m_Namespace": "UnityEngine.Timeline",
+      "m_AssemblyName": "Unity.Timeline.dll"
+    },
+    {
+      "id": 362,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "GroupTrack",
+      "m_ClassName": "GroupTrack",
+      "m_Namespace": "UnityEngine.Timeline",
+      "m_AssemblyName": "Unity.Timeline.dll"
+    },
+    {
+      "id": 363,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "InputField",
+      "m_ClassName": "InputField",
+      "m_Namespace": "UnityEngine.UI",
+      "m_AssemblyName": "UnityEngine.UI.dll"
+    },
+    {
+      "id": 364,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "ITestRunnerListener",
+      "m_ClassName": "ITestRunnerListener",
+      "m_Namespace": "",
+      "m_AssemblyName": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "id": 365,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "PrebuildSceneSetupAttribute",
+      "m_ClassName": "PrebuildSceneSetupAttribute",
+      "m_Namespace": "",
+      "m_AssemblyName": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "id": 366,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "ActivationControlPlayable",
+      "m_ClassName": "ActivationControlPlayable",
+      "m_Namespace": "UnityEngine.Timeline",
+      "m_AssemblyName": "Unity.Timeline.dll"
+    },
+    {
+      "id": 367,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "AnimationTrack",
+      "m_ClassName": "AnimationTrack",
+      "m_Namespace": "UnityEngine.Timeline",
+      "m_AssemblyName": "Unity.Timeline.dll"
+    },
+    {
+      "id": 368,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "TrackExtensions",
+      "m_ClassName": "TrackExtensions",
+      "m_Namespace": "",
+      "m_AssemblyName": "Unity.Timeline.dll"
+    },
+    {
+      "id": 369,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "UIBehaviourExtensions",
+      "m_ClassName": "UIBehaviourExtensions",
+      "m_Namespace": "UnityEngine.UI.Tests",
+      "m_AssemblyName": "UnityEngine.UI.Tests.dll"
+    },
+    {
+      "id": 370,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "ScrollRectClamp",
+      "m_ClassName": "ScrollRectClamp",
+      "m_Namespace": "",
+      "m_AssemblyName": "UnityEngine.UI.Tests.dll"
+    },
+    {
+      "id": 371,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "ColorEqualityComparer",
+      "m_ClassName": "ColorEqualityComparer",
+      "m_Namespace": "UnityEngine.TestTools.Utils",
+      "m_AssemblyName": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "id": 372,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "SignalAsset",
+      "m_ClassName": "SignalAsset",
+      "m_Namespace": "UnityEngine.Timeline",
+      "m_AssemblyName": "Unity.Timeline.dll"
+    },
+    {
+      "id": 373,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "AudioMixerProperties",
+      "m_ClassName": "AudioMixerProperties",
+      "m_Namespace": "UnityEngine.Timeline",
+      "m_AssemblyName": "Unity.Timeline.dll"
+    },
+    {
+      "id": 374,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "ScrollRectTests",
+      "m_ClassName": "ScrollRectTests",
+      "m_Namespace": "",
+      "m_AssemblyName": "UnityEngine.UI.Tests.dll"
+    },
+    {
+      "id": 375,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "CreateSceneUtility",
+      "m_ClassName": "CreateSceneUtility",
+      "m_Namespace": "",
+      "m_AssemblyName": "UnityEngine.UI.Tests.dll"
+    },
+    {
+      "id": 376,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "EventHandle",
+      "m_ClassName": "EventHandle",
+      "m_Namespace": "",
+      "m_AssemblyName": "UnityEngine.UI.dll"
+    },
+    {
+      "id": 377,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "IEnumerableTestMethodCommand",
+      "m_ClassName": "IEnumerableTestMethodCommand",
+      "m_Namespace": "",
+      "m_AssemblyName": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "id": 378,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "GraphicRaycaster",
+      "m_ClassName": "GraphicRaycaster",
+      "m_Namespace": "UnityEngine.UI",
+      "m_AssemblyName": "UnityEngine.UI.dll"
+    },
+    {
+      "id": 379,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "EnumerableSetUpTearDownCommand",
+      "m_ClassName": "EnumerableSetUpTearDownCommand",
+      "m_Namespace": "UnityEngine.TestTools",
+      "m_AssemblyName": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "id": 380,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "CanvasSizeCorrectInAwakeAndStartScript",
+      "m_ClassName": "CanvasSizeCorrectInAwakeAndStartScript",
+      "m_Namespace": "",
+      "m_AssemblyName": "UnityEngine.UI.Tests.dll"
+    },
+    {
+      "id": 381,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "TestResultRendererCallback",
+      "m_ClassName": "TestResultRendererCallback",
+      "m_Namespace": "UnityEngine.TestTools.TestRunner.Callbacks",
+      "m_AssemblyName": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "id": 382,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "SetUpTearDownCommand",
+      "m_ClassName": "SetUpTearDownCommand",
+      "m_Namespace": "UnityEngine.TestTools",
+      "m_AssemblyName": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "id": 383,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "TestableToggleGroup",
+      "m_ClassName": "TestableToggleGroup",
+      "m_Namespace": "ToggleTest",
+      "m_AssemblyName": "UnityEngine.UI.Tests.dll"
+    },
+    {
+      "id": 384,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "ActivationMixerPlayable",
+      "m_ClassName": "ActivationMixerPlayable",
+      "m_Namespace": "UnityEngine.Timeline",
+      "m_AssemblyName": "Unity.Timeline.dll"
+    },
+    {
+      "id": 385,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "Outline",
+      "m_ClassName": "Outline",
+      "m_Namespace": "UnityEngine.UI",
+      "m_AssemblyName": "UnityEngine.UI.dll"
+    },
+    {
+      "id": 386,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "DesktopInputFieldTests",
+      "m_ClassName": "DesktopInputFieldTests",
+      "m_Namespace": "InputfieldTests",
+      "m_AssemblyName": "UnityEngine.UI.Tests.dll"
+    },
+    {
+      "id": 387,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "TMP_MeshInfo",
+      "m_ClassName": "TMP_MeshInfo",
+      "m_Namespace": "",
+      "m_AssemblyName": "Unity.TextMeshPro.dll"
+    },
+    {
+      "id": 388,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "EnumerableRepeatedTestCommand",
+      "m_ClassName": "EnumerableRepeatedTestCommand",
+      "m_Namespace": "UnityEngine.TestTools",
+      "m_AssemblyName": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "id": 389,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "PrefabLightmapData",
+      "m_ClassName": "PrefabLightmapData",
+      "m_Namespace": "MC.Simple.Utils",
+      "m_AssemblyName": "Assembly-CSharp.dll"
+    },
+    {
+      "id": 390,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "TMP_SpriteAssetImportFormats",
+      "m_ClassName": "TMP_SpriteAssetImportFormats",
+      "m_Namespace": "",
+      "m_AssemblyName": "Unity.TextMeshPro.dll"
+    },
+    {
+      "id": 391,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "InputModuleTests",
+      "m_ClassName": "InputModuleTests",
+      "m_Namespace": "",
+      "m_AssemblyName": "UnityEngine.UI.Tests.dll"
+    },
+    {
+      "id": 392,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "SignalReceiver",
+      "m_ClassName": "SignalReceiver",
+      "m_Namespace": "UnityEngine.Timeline",
+      "m_AssemblyName": "Unity.Timeline.dll"
+    },
+    {
+      "id": 393,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "GraphicRaycasterTests",
+      "m_ClassName": "GraphicRaycasterTests",
+      "m_Namespace": "",
+      "m_AssemblyName": "UnityEngine.UI.Tests.dll"
+    },
+    {
+      "id": 394,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "TMP_ObjectPool",
+      "m_ClassName": "TMP_ObjectPool",
+      "m_Namespace": "",
+      "m_AssemblyName": "Unity.TextMeshPro.dll"
+    },
+    {
+      "id": 395,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "IJsonWrapper",
+      "m_ClassName": "IJsonWrapper",
+      "m_Namespace": "",
+      "m_AssemblyName": "simple-json.dll"
+    },
+    {
+      "id": 396,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "WeightUtility",
+      "m_ClassName": "WeightUtility",
+      "m_Namespace": "UnityEngine.Timeline",
+      "m_AssemblyName": "Unity.Timeline.dll"
+    },
+    {
+      "id": 397,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "GraphicTests",
+      "m_ClassName": "GraphicTests",
+      "m_Namespace": "Graphics",
+      "m_AssemblyName": "UnityEngine.UI.Tests.dll"
+    },
+    {
+      "id": 398,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "TouchInputFieldTests",
+      "m_ClassName": "TouchInputFieldTests",
+      "m_Namespace": "InputfieldTests",
+      "m_AssemblyName": "UnityEngine.UI.Tests.dll"
+    },
+    {
+      "id": 399,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "LayoutGroupArrangement",
+      "m_ClassName": "LayoutGroupArrangement",
+      "m_Namespace": "",
+      "m_AssemblyName": "UnityEngine.UI.Tests.dll"
+    },
+    {
+      "id": 400,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "ScrollRectScale",
+      "m_ClassName": "ScrollRectScale",
+      "m_Namespace": "",
+      "m_AssemblyName": "UnityEngine.UI.Tests.dll"
+    },
+    {
+      "id": 401,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "PrivateFieldSetter",
+      "m_ClassName": "PrivateFieldSetter",
+      "m_Namespace": "",
+      "m_AssemblyName": "UnityEngine.UI.Tests.dll"
+    },
+    {
+      "id": 402,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "DoublePointTouch",
+      "m_ClassName": "DoublePointTouch",
+      "m_Namespace": "MC.Simple.Touch",
+      "m_AssemblyName": "simple-touch.dll"
+    },
+    {
+      "id": 403,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "CategoryFilterExtended",
+      "m_ClassName": "CategoryFilterExtended",
+      "m_Namespace": "UnityEngine.TestRunner.NUnitExtensions.Filters",
+      "m_AssemblyName": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "id": 404,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "CanvasSizeCorrectInAwakeAndStart",
+      "m_ClassName": "CanvasSizeCorrectInAwakeAndStart",
+      "m_Namespace": "",
+      "m_AssemblyName": "UnityEngine.UI.Tests.dll"
+    },
+    {
+      "id": 405,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "StartMamager",
+      "m_ClassName": "StartMamager",
+      "m_Namespace": "",
+      "m_AssemblyName": "Assembly-CSharp.dll"
+    },
+    {
+      "id": 406,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "TMPro_MeshUtilities",
+      "m_ClassName": "TMPro_MeshUtilities",
+      "m_Namespace": "",
+      "m_AssemblyName": "Unity.TextMeshPro.dll"
+    },
+    {
+      "id": 407,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "ScriptingRuntimeProxy",
+      "m_ClassName": "ScriptingRuntimeProxy",
+      "m_Namespace": "UnityEngine.TestTools.Utils",
+      "m_AssemblyName": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "id": 408,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "TestCommandBuilder",
+      "m_ClassName": "TestCommandBuilder",
+      "m_Namespace": "UnityEngine.TestRunner.NUnitExtensions.Runner",
+      "m_AssemblyName": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "id": 409,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "TextMeshProUGUI",
+      "m_ClassName": "TextMeshProUGUI",
+      "m_Namespace": "TMPro",
+      "m_AssemblyName": "Unity.TextMeshPro.dll"
+    },
+    {
+      "id": 410,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "ParticleControlPlayable",
+      "m_ClassName": "ParticleControlPlayable",
+      "m_Namespace": "UnityEngine.Timeline",
+      "m_AssemblyName": "Unity.Timeline.dll"
+    },
+    {
+      "id": 411,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "TMP_FontAssetCommon",
+      "m_ClassName": "TMP_FontAssetCommon",
+      "m_Namespace": "",
+      "m_AssemblyName": "Unity.TextMeshPro.dll"
+    },
+    {
+      "id": 412,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "TimeUtility",
+      "m_ClassName": "TimeUtility",
+      "m_Namespace": "UnityEngine.Timeline",
+      "m_AssemblyName": "Unity.Timeline.dll"
+    },
+    {
+      "id": 413,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "PlayerQuitHandler",
+      "m_ClassName": "PlayerQuitHandler",
+      "m_Namespace": "UnityEngine.TestTools.TestRunner.Callbacks",
+      "m_AssemblyName": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "id": 414,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "AssemblyLoadProxy",
+      "m_ClassName": "AssemblyLoadProxy",
+      "m_Namespace": "UnityEngine.TestTools.Utils",
+      "m_AssemblyName": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "id": 415,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "SliderTests",
+      "m_ClassName": "SliderTests",
+      "m_Namespace": "",
+      "m_AssemblyName": "UnityEngine.UI.Tests.dll"
+    },
+    {
+      "id": 416,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "StacktraceFilter",
+      "m_ClassName": "StacktraceFilter",
+      "m_Namespace": "",
+      "m_AssemblyName": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "id": 417,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "NestedCanvas",
+      "m_ClassName": "NestedCanvas",
+      "m_Namespace": "",
+      "m_AssemblyName": "UnityEngine.UI.Tests.dll"
+    },
+    {
+      "id": 418,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "ReflectionMethodsCache",
+      "m_ClassName": "ReflectionMethodsCache",
+      "m_Namespace": "UnityEngine.UI",
+      "m_AssemblyName": "UnityEngine.UI.dll"
+    },
+    {
+      "id": 419,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "ActivationPlayableAsset",
+      "m_ClassName": "ActivationPlayableAsset",
+      "m_Namespace": "UnityEngine.Timeline",
+      "m_AssemblyName": "Unity.Timeline.dll"
+    },
+    {
+      "id": 420,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "BasicScriptPlayable",
+      "m_ClassName": "BasicScriptPlayable",
+      "m_Namespace": "",
+      "m_AssemblyName": "Unity.Timeline.dll"
+    },
+    {
+      "id": 421,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "IScriptingRuntimeProxy",
+      "m_ClassName": "IScriptingRuntimeProxy",
+      "m_Namespace": "",
+      "m_AssemblyName": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "id": 422,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "MessageCenter",
+      "m_ClassName": "MessageCenter",
+      "m_Namespace": "",
+      "m_AssemblyName": "simple-messge.dll"
+    },
+    {
+      "id": 423,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "Image",
+      "m_ClassName": "Image",
+      "m_Namespace": "UnityEngine.UI",
+      "m_AssemblyName": "UnityEngine.UI.dll"
+    },
+    {
+      "id": 424,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "TMP_ShaderUtilities",
+      "m_ClassName": "TMP_ShaderUtilities",
+      "m_Namespace": "",
+      "m_AssemblyName": "Unity.TextMeshPro.dll"
+    },
+    {
+      "id": 425,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "UnityTestAttribute",
+      "m_ClassName": "UnityTestAttribute",
+      "m_Namespace": "UnityEngine.TestTools",
+      "m_AssemblyName": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "id": 426,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "IPostBuildCleanup",
+      "m_ClassName": "IPostBuildCleanup",
+      "m_Namespace": "",
+      "m_AssemblyName": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "id": 427,
+      "type": "MonoScript",
+      "serialized_file": "globalgamemanagers.assets",
+      "m_Name": "UnityTestTimeoutException",
+      "m_ClassName": "UnityTestTimeoutException",
+      "m_Namespace": "UnityEngine.TestTools.TestRunner",
+      "m_AssemblyName": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "id": 1,
+      "type": "PreloadData",
+      "serialized_file": "sharedassets0.assets",
+      "m_Name": ""
+    },
+    {
+      "id": 2,
+      "type": "Material",
+      "serialized_file": "sharedassets0.assets",
+      "m_Name": "Default-Skybox"
+    },
+    {
+      "id": 3,
+      "type": "Texture2D",
+      "serialized_file": "sharedassets0.assets",
+      "m_Name": "main_11"
+    },
+    {
+      "id": 4,
+      "type": "Texture2D",
+      "serialized_file": "sharedassets0.assets",
+      "m_Name": "common_7"
+    },
+    {
+      "id": 5,
+      "type": "Texture2D",
+      "serialized_file": "sharedassets0.assets",
+      "m_Name": "main_8"
+    },
+    {
+      "id": 6,
+      "type": "Shader",
+      "serialized_file": "sharedassets0.assets",
+      "m_Name": ""
+    },
+    {
+      "id": 7,
+      "type": "Sprite",
+      "serialized_file": "sharedassets0.assets",
+      "m_Name": "main_11"
+    },
+    {
+      "id": 8,
+      "type": "Sprite",
+      "serialized_file": "sharedassets0.assets",
+      "m_Name": "common_7"
+    },
+    {
+      "id": 9,
+      "type": "Sprite",
+      "serialized_file": "sharedassets0.assets",
+      "m_Name": "main_8"
+    },
+    {
+      "id": 1,
+      "type": "GameObject",
+      "serialized_file": "level0",
+      "m_Name": "Test"
+    },
+    {
+      "id": 2,
+      "type": "GameObject",
+      "serialized_file": "level0",
+      "m_Name": "Manager"
+    },
+    {
+      "id": 3,
+      "type": "GameObject",
+      "serialized_file": "level0",
+      "m_Name": "AndroidCOM"
+    },
+    {
+      "id": 4,
+      "type": "GameObject",
+      "serialized_file": "level0",
+      "m_Name": "Directional Light"
+    },
+    {
+      "id": 5,
+      "type": "GameObject",
+      "serialized_file": "level0",
+      "m_Name": "EventSystem"
+    },
+    {
+      "id": 6,
+      "type": "GameObject",
+      "serialized_file": "level0",
+      "m_Name": "loadingLevel"
+    },
+    {
+      "id": 7,
+      "type": "GameObject",
+      "serialized_file": "level0",
+      "m_Name": "scene"
+    },
+    {
+      "id": 8,
+      "type": "GameObject",
+      "serialized_file": "level0",
+      "m_Name": "Text"
+    },
+    {
+      "id": 9,
+      "type": "GameObject",
+      "serialized_file": "level0",
+      "m_Name": "LoadingPanel"
+    },
+    {
+      "id": 10,
+      "type": "GameObject",
+      "serialized_file": "level0",
+      "m_Name": "bar"
+    },
+    {
+      "id": 11,
+      "type": "GameObject",
+      "serialized_file": "level0",
+      "m_Name": "Image"
+    },
+    {
+      "id": 12,
+      "type": "GameObject",
+      "serialized_file": "level0",
+      "m_Name": "alertLevel"
+    },
+    {
+      "id": 13,
+      "type": "GameObject",
+      "serialized_file": "level0",
+      "m_Name": "Canvas"
+    },
+    {
+      "id": 14,
+      "type": "GameObject",
+      "serialized_file": "level0",
+      "m_Name": "panelLevel"
+    },
+    {
+      "id": 15,
+      "type": "GameObject",
+      "serialized_file": "level0",
+      "m_Name": "windowLevel"
+    },
+    {
+      "id": 16,
+      "type": "GameObject",
+      "serialized_file": "level0",
+      "m_Name": "barbg"
+    },
+    {
+      "id": 17,
+      "type": "GameObject",
+      "serialized_file": "level0",
+      "m_Name": "bg"
+    },
+    {
+      "id": 18,
+      "type": "Transform",
+      "serialized_file": "level0",
+      "tree": {
+        "m_GameObject": {
+          "m_FileID": 0,
+          "m_PathID": 2
+        },
+        "m_LocalRotation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 1.0
+        },
+        "m_LocalPosition": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "m_LocalScale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "m_Children": [
+          {
+            "m_FileID": 0,
+            "m_PathID": 38
+          }
+        ],
+        "m_Father": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        }
+      }
+    },
+    {
+      "id": 19,
+      "type": "Transform",
+      "serialized_file": "level0",
+      "tree": {
+        "m_GameObject": {
+          "m_FileID": 0,
+          "m_PathID": 3
+        },
+        "m_LocalRotation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 1.0
+        },
+        "m_LocalPosition": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "m_LocalScale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "m_Children": [],
+        "m_Father": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        }
+      }
+    },
+    {
+      "id": 20,
+      "type": "Transform",
+      "serialized_file": "level0",
+      "tree": {
+        "m_GameObject": {
+          "m_FileID": 0,
+          "m_PathID": 4
+        },
+        "m_LocalRotation": {
+          "x": 0.6946583390235901,
+          "y": -0.0,
+          "z": -0.0,
+          "w": 0.7193398475646973
+        },
+        "m_LocalPosition": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "m_LocalScale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "m_Children": [],
+        "m_Father": {
+          "m_FileID": 0,
+          "m_PathID": 23
+        }
+      }
+    },
+    {
+      "id": 21,
+      "type": "Transform",
+      "serialized_file": "level0",
+      "tree": {
+        "m_GameObject": {
+          "m_FileID": 0,
+          "m_PathID": 5
+        },
+        "m_LocalRotation": {
+          "x": -0.0,
+          "y": -0.0,
+          "z": -0.0,
+          "w": 1.0
+        },
+        "m_LocalPosition": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "m_LocalScale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "m_Children": [],
+        "m_Father": {
+          "m_FileID": 0,
+          "m_PathID": 23
+        }
+      }
+    },
+    {
+      "id": 22,
+      "type": "Transform",
+      "serialized_file": "level0",
+      "tree": {
+        "m_GameObject": {
+          "m_FileID": 0,
+          "m_PathID": 6
+        },
+        "m_LocalRotation": {
+          "x": -0.0,
+          "y": -0.0,
+          "z": -0.0,
+          "w": 1.0
+        },
+        "m_LocalPosition": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "m_LocalScale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "m_Children": [
+          {
+            "m_FileID": 0,
+            "m_PathID": 42
+          }
+        ],
+        "m_Father": {
+          "m_FileID": 0,
+          "m_PathID": 41
+        }
+      }
+    },
+    {
+      "id": 23,
+      "type": "Transform",
+      "serialized_file": "level0",
+      "tree": {
+        "m_GameObject": {
+          "m_FileID": 0,
+          "m_PathID": 7
+        },
+        "m_LocalRotation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 1.0
+        },
+        "m_LocalPosition": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "m_LocalScale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "m_Children": [
+          {
+            "m_FileID": 0,
+            "m_PathID": 21
+          },
+          {
+            "m_FileID": 0,
+            "m_PathID": 20
+          }
+        ],
+        "m_Father": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        }
+      }
+    },
+    {
+      "id": 24,
+      "type": "Transform",
+      "serialized_file": "level0",
+      "tree": {
+        "m_GameObject": {
+          "m_FileID": 0,
+          "m_PathID": 14
+        },
+        "m_LocalRotation": {
+          "x": -0.0,
+          "y": -0.0,
+          "z": -0.0,
+          "w": 1.0
+        },
+        "m_LocalPosition": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "m_LocalScale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "m_Children": [],
+        "m_Father": {
+          "m_FileID": 0,
+          "m_PathID": 41
+        }
+      }
+    },
+    {
+      "id": 25,
+      "type": "Transform",
+      "serialized_file": "level0",
+      "tree": {
+        "m_GameObject": {
+          "m_FileID": 0,
+          "m_PathID": 12
+        },
+        "m_LocalRotation": {
+          "x": -0.0,
+          "y": -0.0,
+          "z": -0.0,
+          "w": 1.0
+        },
+        "m_LocalPosition": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "m_LocalScale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "m_Children": [],
+        "m_Father": {
+          "m_FileID": 0,
+          "m_PathID": 41
+        }
+      }
+    },
+    {
+      "id": 26,
+      "type": "Transform",
+      "serialized_file": "level0",
+      "tree": {
+        "m_GameObject": {
+          "m_FileID": 0,
+          "m_PathID": 15
+        },
+        "m_LocalRotation": {
+          "x": -0.0,
+          "y": -0.0,
+          "z": -0.0,
+          "w": 1.0
+        },
+        "m_LocalPosition": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "m_LocalScale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "m_Children": [],
+        "m_Father": {
+          "m_FileID": 0,
+          "m_PathID": 41
+        }
+      }
+    },
+    {
+      "id": 27,
+      "type": "RenderSettings",
+      "serialized_file": "level0"
+    },
+    {
+      "id": 28,
+      "type": "Light",
+      "serialized_file": "level0"
+    },
+    {
+      "id": 29,
+      "type": "LightmapSettings",
+      "serialized_file": "level0"
+    },
+    {
+      "id": 30,
+      "type": "NavMeshSettings",
+      "serialized_file": "level0"
+    },
+    {
+      "id": 31,
+      "type": "CanvasRenderer",
+      "serialized_file": "level0"
+    },
+    {
+      "id": 32,
+      "type": "CanvasRenderer",
+      "serialized_file": "level0"
+    },
+    {
+      "id": 33,
+      "type": "CanvasRenderer",
+      "serialized_file": "level0"
+    },
+    {
+      "id": 34,
+      "type": "CanvasRenderer",
+      "serialized_file": "level0"
+    },
+    {
+      "id": 35,
+      "type": "CanvasRenderer",
+      "serialized_file": "level0"
+    },
+    {
+      "id": 36,
+      "type": "CanvasRenderer",
+      "serialized_file": "level0"
+    },
+    {
+      "id": 37,
+      "type": "Canvas",
+      "serialized_file": "level0"
+    },
+    {
+      "id": 38,
+      "type": "RectTransform",
+      "serialized_file": "level0",
+      "tree": {
+        "m_GameObject": {
+          "m_FileID": 0,
+          "m_PathID": 1
+        },
+        "m_LocalRotation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 1.0
+        },
+        "m_LocalPosition": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "m_LocalScale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "m_Children": [],
+        "m_Father": {
+          "m_FileID": 0,
+          "m_PathID": 18
+        },
+        "m_AnchorMin": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "m_AnchorMax": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "m_AnchoredPosition": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "m_SizeDelta": {
+          "x": 100.0,
+          "y": 100.0
+        },
+        "m_Pivot": {
+          "x": 0.5,
+          "y": 0.5
+        }
+      }
+    },
+    {
+      "id": 39,
+      "type": "RectTransform",
+      "serialized_file": "level0",
+      "tree": {
+        "m_GameObject": {
+          "m_FileID": 0,
+          "m_PathID": 10
+        },
+        "m_LocalRotation": {
+          "x": -0.0,
+          "y": -0.0,
+          "z": -0.0,
+          "w": 1.0
+        },
+        "m_LocalPosition": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "m_LocalScale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "m_Children": [],
+        "m_Father": {
+          "m_FileID": 0,
+          "m_PathID": 40
+        },
+        "m_AnchorMin": {
+          "x": 0.0,
+          "y": 0.5
+        },
+        "m_AnchorMax": {
+          "x": 0.0,
+          "y": 0.5
+        },
+        "m_AnchoredPosition": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "m_SizeDelta": {
+          "x": 533.0,
+          "y": 16.0
+        },
+        "m_Pivot": {
+          "x": 0.0,
+          "y": 0.5
+        }
+      }
+    },
+    {
+      "id": 40,
+      "type": "RectTransform",
+      "serialized_file": "level0",
+      "tree": {
+        "m_GameObject": {
+          "m_FileID": 0,
+          "m_PathID": 16
+        },
+        "m_LocalRotation": {
+          "x": -0.0,
+          "y": -0.0,
+          "z": -0.0,
+          "w": 1.0
+        },
+        "m_LocalPosition": {
+          "x": -266.5,
+          "y": -269.0,
+          "z": 0.0
+        },
+        "m_LocalScale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "m_Children": [
+          {
+            "m_FileID": 0,
+            "m_PathID": 39
+          }
+        ],
+        "m_Father": {
+          "m_FileID": 0,
+          "m_PathID": 43
+        },
+        "m_AnchorMin": {
+          "x": 0.0,
+          "y": 0.5
+        },
+        "m_AnchorMax": {
+          "x": 0.0,
+          "y": 0.5
+        },
+        "m_AnchoredPosition": {
+          "x": 1155.719970703125,
+          "y": -269.0
+        },
+        "m_SizeDelta": {
+          "x": 533.0,
+          "y": 16.0
+        },
+        "m_Pivot": {
+          "x": 0.0,
+          "y": 0.5
+        }
+      }
+    },
+    {
+      "id": 41,
+      "type": "RectTransform",
+      "serialized_file": "level0",
+      "tree": {
+        "m_GameObject": {
+          "m_FileID": 0,
+          "m_PathID": 13
+        },
+        "m_LocalRotation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 1.0
+        },
+        "m_LocalPosition": {
+          "x": 960.0,
+          "y": 540.0,
+          "z": 0.0
+        },
+        "m_LocalScale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "m_Children": [
+          {
+            "m_FileID": 0,
+            "m_PathID": 24
+          },
+          {
+            "m_FileID": 0,
+            "m_PathID": 26
+          },
+          {
+            "m_FileID": 0,
+            "m_PathID": 25
+          },
+          {
+            "m_FileID": 0,
+            "m_PathID": 22
+          }
+        ],
+        "m_Father": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "m_AnchorMin": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "m_AnchorMax": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "m_AnchoredPosition": {
+          "x": 960.0,
+          "y": 540.0
+        },
+        "m_SizeDelta": {
+          "x": 1920.0,
+          "y": 1080.0
+        },
+        "m_Pivot": {
+          "x": 0.5,
+          "y": 0.5
+        }
+      }
+    },
+    {
+      "id": 42,
+      "type": "RectTransform",
+      "serialized_file": "level0",
+      "tree": {
+        "m_GameObject": {
+          "m_FileID": 0,
+          "m_PathID": 9
+        },
+        "m_LocalRotation": {
+          "x": -0.0,
+          "y": -0.0,
+          "z": -0.0,
+          "w": 1.0
+        },
+        "m_LocalPosition": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "m_LocalScale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "m_Children": [
+          {
+            "m_FileID": 0,
+            "m_PathID": 43
+          }
+        ],
+        "m_Father": {
+          "m_FileID": 0,
+          "m_PathID": 22
+        },
+        "m_AnchorMin": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "m_AnchorMax": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "m_AnchoredPosition": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "m_SizeDelta": {
+          "x": 100.0,
+          "y": 100.0
+        },
+        "m_Pivot": {
+          "x": 0.5,
+          "y": 0.5
+        }
+      }
+    },
+    {
+      "id": 43,
+      "type": "RectTransform",
+      "serialized_file": "level0",
+      "tree": {
+        "m_GameObject": {
+          "m_FileID": 0,
+          "m_PathID": 17
+        },
+        "m_LocalRotation": {
+          "x": -0.0,
+          "y": -0.0,
+          "z": -0.0,
+          "w": 1.0
+        },
+        "m_LocalPosition": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "m_LocalScale": {
+          "x": 0.675000011920929,
+          "y": 0.675000011920929,
+          "z": 0.675000011920929
+        },
+        "m_Children": [
+          {
+            "m_FileID": 0,
+            "m_PathID": 45
+          },
+          {
+            "m_FileID": 0,
+            "m_PathID": 40
+          },
+          {
+            "m_FileID": 0,
+            "m_PathID": 44
+          }
+        ],
+        "m_Father": {
+          "m_FileID": 0,
+          "m_PathID": 42
+        },
+        "m_AnchorMin": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "m_AnchorMax": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "m_AnchoredPosition": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "m_SizeDelta": {
+          "x": 2844.43994140625,
+          "y": 1600.0
+        },
+        "m_Pivot": {
+          "x": 0.5,
+          "y": 0.5
+        }
+      }
+    },
+    {
+      "id": 44,
+      "type": "RectTransform",
+      "serialized_file": "level0",
+      "tree": {
+        "m_GameObject": {
+          "m_FileID": 0,
+          "m_PathID": 11
+        },
+        "m_LocalRotation": {
+          "x": -0.0,
+          "y": -0.0,
+          "z": -0.0,
+          "w": 1.0
+        },
+        "m_LocalPosition": {
+          "x": 0.0,
+          "y": 134.0,
+          "z": 0.0
+        },
+        "m_LocalScale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "m_Children": [],
+        "m_Father": {
+          "m_FileID": 0,
+          "m_PathID": 43
+        },
+        "m_AnchorMin": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "m_AnchorMax": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "m_AnchoredPosition": {
+          "x": 0.0,
+          "y": 134.0
+        },
+        "m_SizeDelta": {
+          "x": 355.0,
+          "y": 453.0
+        },
+        "m_Pivot": {
+          "x": 0.5,
+          "y": 0.5
+        }
+      }
+    },
+    {
+      "id": 45,
+      "type": "RectTransform",
+      "serialized_file": "level0",
+      "tree": {
+        "m_GameObject": {
+          "m_FileID": 0,
+          "m_PathID": 8
+        },
+        "m_LocalRotation": {
+          "x": -0.0,
+          "y": -0.0,
+          "z": -0.0,
+          "w": 1.0
+        },
+        "m_LocalPosition": {
+          "x": 0.0,
+          "y": -352.0,
+          "z": 0.0
+        },
+        "m_LocalScale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "m_Children": [],
+        "m_Father": {
+          "m_FileID": 0,
+          "m_PathID": 43
+        },
+        "m_AnchorMin": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "m_AnchorMax": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "m_AnchoredPosition": {
+          "x": 0.0,
+          "y": -352.0
+        },
+        "m_SizeDelta": {
+          "x": 461.89697265625,
+          "y": 111.06488037109375
+        },
+        "m_Pivot": {
+          "x": 0.5,
+          "y": 0.5
+        }
+      }
+    },
+    {
+      "id": 46,
+      "type": "MonoBehaviour",
+      "serialized_file": "level0",
+      "read_error": "Expected to read 52 bytes, but only read 32 bytes"
+    },
+    {
+      "id": 47,
+      "type": "MonoBehaviour",
+      "serialized_file": "level0",
+      "m_Name": "",
+      "tree": {
+        "m_GameObject": {
+          "m_FileID": 0,
+          "m_PathID": 2
+        },
+        "m_Enabled": 1,
+        "m_Script": {
+          "m_FileID": 1,
+          "m_PathID": 405
+        },
+        "m_Name": ""
+      }
+    },
+    {
+      "id": 48,
+      "type": "MonoBehaviour",
+      "serialized_file": "level0",
+      "m_Name": "",
+      "tree": {
+        "m_GameObject": {
+          "m_FileID": 0,
+          "m_PathID": 3
+        },
+        "m_Enabled": 1,
+        "m_Script": {
+          "m_FileID": 1,
+          "m_PathID": 191
+        },
+        "m_Name": ""
+      }
+    },
+    {
+      "id": 49,
+      "type": "MonoBehaviour",
+      "serialized_file": "level0",
+      "read_error": "Expected to read 96 bytes, but only read 32 bytes"
+    },
+    {
+      "id": 50,
+      "type": "MonoBehaviour",
+      "serialized_file": "level0",
+      "read_error": "Expected to read 120 bytes, but only read 32 bytes"
+    },
+    {
+      "id": 51,
+      "type": "MonoBehaviour",
+      "serialized_file": "level0",
+      "read_error": "Expected to read 120 bytes, but only read 32 bytes"
+    },
+    {
+      "id": 52,
+      "type": "MonoBehaviour",
+      "serialized_file": "level0",
+      "read_error": "Expected to read 120 bytes, but only read 32 bytes"
+    },
+    {
+      "id": 53,
+      "type": "MonoBehaviour",
+      "serialized_file": "level0",
+      "read_error": "Expected to read 52 bytes, but only read 32 bytes"
+    },
+    {
+      "id": 54,
+      "type": "MonoBehaviour",
+      "serialized_file": "level0",
+      "read_error": "Expected to read 76 bytes, but only read 32 bytes"
+    },
+    {
+      "id": 55,
+      "type": "MonoBehaviour",
+      "serialized_file": "level0",
+      "read_error": "Expected to read 44 bytes, but only read 32 bytes"
+    },
+    {
+      "id": 56,
+      "type": "MonoBehaviour",
+      "serialized_file": "level0",
+      "read_error": "Expected to read 164 bytes, but only read 32 bytes"
+    },
+    {
+      "id": 57,
+      "type": "MonoBehaviour",
+      "serialized_file": "level0",
+      "read_error": "Expected to read 120 bytes, but only read 32 bytes"
+    }
+  ]
+}

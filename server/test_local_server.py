@@ -105,7 +105,7 @@ class Contracts(unittest.TestCase):
         config = self.ok("/api/open/user-config/get-login-config.htm")
         self.assertEqual(config["configs"][0]["loginMethod"], "MOBILE_OR_IDCARD")
         login = "/api/open/login/submit.htm"
-        form = dict(loginType="MOBILE_OR_IDCARD", deviceType="ROBOT", data=json.dumps({"value": "local-demo"}))
+        form = dict(loginType="MOBILE_OR_IDCARD", deviceType="ROBOT", data=json.dumps({"value": "12345678"}))
         user = self.ok(login, "POST", form=form)
         self.assertLess(user["studentId"], 0)
         notice = self.ok("/api/open/user/login-notice.htm", "POST", form={
@@ -127,6 +127,65 @@ class Contracts(unittest.TestCase):
         self.assertEqual(self.request(login, "POST", form=form)[0], 401)
         form["loginType"] = "FACE"
         self.assertEqual(self.request(login, "POST", form=form)[0], 501)
+
+    def test_workbench_login_and_logout_do_not_replace_client_session(self):
+        form = dict(loginType="MOBILE_OR_IDCARD", deviceType="ROBOT", data=json.dumps({"value": "12345678"}))
+        client = self.ok("/api/open/login/submit.htm", "POST", form=form)
+        workbench = self.ok("/api/open/login/submit.htm", "POST", form=form, device="local-workbench")
+        self.assertNotEqual(client["xyToken"], workbench["xyToken"])
+        self.ok("/api/open/user/check-logout.htm", query={"xyToken": client["xyToken"]})
+        self.ok("/api/open/user/check-logout.htm", query={"xyToken": workbench["xyToken"]}, device="local-workbench")
+        self.ok("/api/open/login/logout.htm", device="local-workbench")
+        self.ok("/api/open/user/check-logout.htm", query={"xyToken": client["xyToken"]})
+        self.assertEqual(self.request("/api/open/user/check-logout.htm",
+                         query={"xyToken": workbench["xyToken"]}, device="local-workbench")[0], 401)
+
+    def test_health_reports_missing_deleted_and_corrupt_unity_files(self):
+        health = self.ok("/__local/health")
+        self.assertEqual(health["implementedRoutes"], 42)
+        self.assertEqual(health["missingUnityTypes"], [100, 101])
+        self.assertEqual([r["status"] for r in health["unityResources"]], ["missing", "missing"])
+        source = self.directory / "unity-test.bin"
+        payload = b"contract fixture; not a compatible Unity module"
+        source.write_bytes(payload)
+        info = self.backend.add_resource(source, "upgrade", 100, 1)
+        health = self.ok("/__local/health")
+        state = health["unityResources"][0]
+        self.assertEqual(state["status"], "registered_unvalidated")
+        self.assertFalse(health["unityCompatibilityValidated"])
+        self.assertEqual(state["actualBytes"], len(payload))
+        self.assertEqual(state["actualSha256"], info["sha256"])
+        self.assertEqual(health["missingUnityTypes"], [101])
+        stored = self.backend.files / info["sha256"]
+        stored.unlink()
+        health = self.ok("/__local/health")
+        self.assertEqual(health["unityResources"][0]["status"], "file_missing")
+        self.assertEqual(health["missingUnityTypes"], [100, 101])
+        self.assertEqual(self.request("/files/" + info["sha256"])[0], 404)
+        for changed in (b"X" * len(payload), payload[:-1]):
+            with self.subTest(length=len(changed)):
+                stored.write_bytes(changed)
+                health = self.ok("/__local/health")
+                state = health["unityResources"][0]
+                self.assertEqual(state["status"], "corrupt")
+                self.assertEqual(state["actualBytes"], len(changed))
+                self.assertNotEqual(state["actualSha256"], state["expectedSha256"])
+                self.assertEqual(health["missingUnityTypes"], [100, 101])
+        stored.write_bytes(payload)
+        self.assertEqual(self.ok("/__local/health")["unityResources"][0]["status"], "registered_unvalidated")
+
+    def test_health_checks_latest_selected_version_not_older_available_file(self):
+        source = self.directory / "unity-test.bin"
+        source.write_bytes(b"older contract fixture")
+        self.backend.add_resource(source, "upgrade", 101, 1)
+        source.write_bytes(b"newer contract fixture")
+        latest = self.backend.add_resource(source, "upgrade", 101, 2)
+        (self.backend.files / latest["sha256"]).unlink()
+        health = self.ok("/__local/health")
+        state = health["unityResources"][1]
+        self.assertEqual(state["version"], 2)
+        self.assertEqual(state["status"], "file_missing")
+        self.assertEqual(health["missingUnityTypes"], [100, 101])
 
     def test_resource_version_scope_bytes_md5_range_and_missing_unity(self):
         upgrade = "/api/open/upgrade/check-upgrade.htm"

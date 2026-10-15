@@ -1,0 +1,2135 @@
+{
+  "sha256": "ce9591e922e06ed395719bb31a34b96b94d754dc733ccbdba9ecf47a3e476696",
+  "size": 923545,
+  "types": {
+    "PlayerSettings": 1,
+    "InputManager": 1,
+    "TagManager": 1,
+    "AudioManager": 1,
+    "ScriptMapper": 1,
+    "MonoManager": 1,
+    "GraphicsSettings": 1,
+    "TimeManager": 1,
+    "DelayedCallManager": 1,
+    "PhysicsManager": 1,
+    "BuildSettings": 1,
+    "QualitySettings": 1,
+    "ResourceManager": 1,
+    "NavMeshProjectSettings": 1,
+    "Physics2DSettings": 1,
+    "RuntimeInitializeOnLoadManager": 1,
+    "StreamingManager": 1,
+    "VFXManager": 1,
+    "Shader": 55,
+    "PreloadData": 2,
+    "Material": 2,
+    "MonoScript": 417,
+    "Texture2D": 3,
+    "Sprite": 3,
+    "GameObject": 17,
+    "Transform": 9,
+    "RenderSettings": 1,
+    "Light": 1,
+    "LightmapSettings": 1,
+    "NavMeshSettings": 1,
+    "CanvasRenderer": 6,
+    "Canvas": 1,
+    "RectTransform": 8,
+    "MonoBehaviour": 12
+  },
+  "scenes": [
+    "Assets/[Game]/Scenes/game.unity"
+  ],
+  "gameObjects": [
+    {
+      "id": 1,
+      "name": "Test",
+      "active": true
+    },
+    {
+      "id": 2,
+      "name": "Manager",
+      "active": true
+    },
+    {
+      "id": 3,
+      "name": "AndroidCOM",
+      "active": true
+    },
+    {
+      "id": 4,
+      "name": "Directional Light",
+      "active": true
+    },
+    {
+      "id": 5,
+      "name": "EventSystem",
+      "active": true
+    },
+    {
+      "id": 6,
+      "name": "loadingLevel",
+      "active": true
+    },
+    {
+      "id": 7,
+      "name": "scene",
+      "active": true
+    },
+    {
+      "id": 8,
+      "name": "Text",
+      "active": true
+    },
+    {
+      "id": 9,
+      "name": "LoadingPanel",
+      "active": true
+    },
+    {
+      "id": 10,
+      "name": "bar",
+      "active": true
+    },
+    {
+      "id": 11,
+      "name": "Image",
+      "active": true
+    },
+    {
+      "id": 12,
+      "name": "alertLevel",
+      "active": true
+    },
+    {
+      "id": 13,
+      "name": "Canvas",
+      "active": true
+    },
+    {
+      "id": 14,
+      "name": "panelLevel",
+      "active": true
+    },
+    {
+      "id": 15,
+      "name": "windowLevel",
+      "active": true
+    },
+    {
+      "id": 16,
+      "name": "barbg",
+      "active": true
+    },
+    {
+      "id": 17,
+      "name": "bg",
+      "active": true
+    }
+  ],
+  "scripts": [
+    {
+      "class": "MCT.MeshMaker.MeshMakerManager",
+      "assembly": "MC.MeshMaker.dll"
+    },
+    {
+      "class": "UnityEngine.UI.LayoutRebuilder",
+      "assembly": "UnityEngine.UI.dll"
+    },
+    {
+      "class": ".ScrollBarTests",
+      "assembly": "UnityEngine.UI.Tests.dll"
+    },
+    {
+      "class": "UnityEngine.Timeline.AnimationPreviewUtilities",
+      "assembly": "Unity.Timeline.dll"
+    },
+    {
+      "class": ".SceneWithNestedLayoutElementsLoads",
+      "assembly": "UnityEngine.UI.Tests.dll"
+    },
+    {
+      "class": "UnityEngine.UI.PositionAsUV1",
+      "assembly": "UnityEngine.UI.dll"
+    },
+    {
+      "class": "UnityEngine.Timeline.AnimationPlayableAsset",
+      "assembly": "Unity.Timeline.dll"
+    },
+    {
+      "class": "UnityEngine.TestRunner.TestLaunchers.RemoteTestResultData",
+      "assembly": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "class": ".PointerClickCallbackCheck",
+      "assembly": "UnityEngine.UI.Tests.dll"
+    },
+    {
+      "class": "TMPro.TMP_SubMeshUI",
+      "assembly": "Unity.TextMeshPro.dll"
+    },
+    {
+      "class": "TMPro.TMP_SubMesh",
+      "assembly": "Unity.TextMeshPro.dll"
+    },
+    {
+      "class": ".FMxStatuButton",
+      "assembly": "mct.dll"
+    },
+    {
+      "class": "TMPro.TMP_FontAssetUtilities",
+      "assembly": "Unity.TextMeshPro.dll"
+    },
+    {
+      "class": "UnityEngine.EventSystems.UIBehaviour",
+      "assembly": "UnityEngine.UI.dll"
+    },
+    {
+      "class": "UnityEngine.UI.Tests.Utils.ExceptionUtils",
+      "assembly": "UnityEngine.UI.Tests.dll"
+    },
+    {
+      "class": ".AssemblyInfo",
+      "assembly": "Unity.Timeline.dll"
+    },
+    {
+      "class": "UnityEngine.TestTools.Logging.LogEvent",
+      "assembly": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "class": ".RaycastSortingTests",
+      "assembly": "UnityEngine.UI.Tests.dll"
+    },
+    {
+      "class": "UnityEngine.UI.CanvasScaler",
+      "assembly": "UnityEngine.UI.dll"
+    },
+    {
+      "class": "UnityEngine.UI.Dropdown",
+      "assembly": "UnityEngine.UI.dll"
+    },
+    {
+      "class": "UnityEngine.TestTools.OuterUnityTestActionCommand",
+      "assembly": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "class": "UnityEngine.Timeline.AudioClipProperties",
+      "assembly": "Unity.Timeline.dll"
+    },
+    {
+      "class": ".TextEditorTests",
+      "assembly": "UnityEngine.UI.Tests.dll"
+    },
+    {
+      "class": "UnityEngine.TestTools.TestRunner.PlaymodeTestsController",
+      "assembly": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "class": "UnityEngine.TestRunner.NUnitExtensions.Runner.CompositeWorkItem",
+      "assembly": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "class": "TMPro.MaterialReferenceManager",
+      "assembly": "Unity.TextMeshPro.dll"
+    },
+    {
+      "class": ".IAssemblyLoadProxy",
+      "assembly": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "class": "UnityEngine.UI.RawImage",
+      "assembly": "UnityEngine.UI.dll"
+    },
+    {
+      "class": ".FakeBaseInput",
+      "assembly": "UnityEngine.UI.Tests.dll"
+    },
+    {
+      "class": "UnityEngine.UI.FontData",
+      "assembly": "UnityEngine.UI.dll"
+    },
+    {
+      "class": ".CanvasScalerWithChildTextObjectDoesNotCrash",
+      "assembly": "UnityEngine.UI.Tests.dll"
+    },
+    {
+      "class": "ToggleTest.ToggleTests",
+      "assembly": "UnityEngine.UI.Tests.dll"
+    },
+    {
+      "class": "UnityEngine.EventSystems.BaseInput",
+      "assembly": "UnityEngine.UI.dll"
+    },
+    {
+      "class": "UnityEngine.Timeline.SignalEmitter",
+      "assembly": "Unity.Timeline.dll"
+    },
+    {
+      "class": "UnityEngine.Timeline.ControlTrack",
+      "assembly": "Unity.Timeline.dll"
+    },
+    {
+      "class": ".MonoBehaviourTest",
+      "assembly": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "class": "InputfieldTests.FakeInputModule",
+      "assembly": "UnityEngine.UI.Tests.dll"
+    },
+    {
+      "class": "UnityEngine.TestTools.EnumerableTestMethodCommand",
+      "assembly": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "class": ".MouseUpdate",
+      "assembly": "UnityEngine.UI.Tests.dll"
+    },
+    {
+      "class": ".BridgeScriptForRetainingObjects",
+      "assembly": "UnityEngine.UI.Tests.dll"
+    },
+    {
+      "class": ".ImageFilledGenerateWork",
+      "assembly": "UnityEngine.UI.Tests.dll"
+    },
+    {
+      "class": "UnityEngine.UI.ScrollRect",
+      "assembly": "UnityEngine.UI.dll"
+    },
+    {
+      "class": ".AssemblyInfo",
+      "assembly": "Unity.TextMeshPro.dll"
+    },
+    {
+      "class": ".IAssemblyWrapper",
+      "assembly": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "class": "UnityEngine.Timeline.TimeControlPlayable",
+      "assembly": "Unity.Timeline.dll"
+    },
+    {
+      "class": ".ILayerable",
+      "assembly": "Unity.Timeline.dll"
+    },
+    {
+      "class": "UnityEngine.EventSystems.BaseInputModule",
+      "assembly": "UnityEngine.UI.dll"
+    },
+    {
+      "class": ".ButtonTests",
+      "assembly": "UnityEngine.UI.Tests.dll"
+    },
+    {
+      "class": "UnityEngine.Timeline.TimelineUndo",
+      "assembly": "Unity.Timeline.dll"
+    },
+    {
+      "class": "TMPro.TMP_SpriteCharacter",
+      "assembly": "Unity.TextMeshPro.dll"
+    },
+    {
+      "class": "UnityEngine.TestTools.TestRunner.Callbacks.RemoteTestResultSender",
+      "assembly": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "class": ".TMP_TextProcessingStack",
+      "assembly": "Unity.TextMeshPro.dll"
+    },
+    {
+      "class": ".IMaterialModifier",
+      "assembly": "UnityEngine.UI.dll"
+    },
+    {
+      "class": "TMPro.TMP_Compatibility",
+      "assembly": "Unity.TextMeshPro.dll"
+    },
+    {
+      "class": "UnityEngine.Timeline.ActivationTrack",
+      "assembly": "Unity.Timeline.dll"
+    },
+    {
+      "class": ".EventInterfaces",
+      "assembly": "UnityEngine.UI.dll"
+    },
+    {
+      "class": "UnityEngine.TestTools.Utils.CoroutineRunner",
+      "assembly": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "class": ".SpriteState",
+      "assembly": "UnityEngine.UI.dll"
+    },
+    {
+      "class": "UnityEngine.EventSystems.RaycasterManager",
+      "assembly": "UnityEngine.UI.dll"
+    },
+    {
+      "class": "UnityEngine.TestRunner.NUnitExtensions.Runner.RestoreTestContextAfterDomainReload",
+      "assembly": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "class": "TMPro.TMP_Settings",
+      "assembly": "Unity.TextMeshPro.dll"
+    },
+    {
+      "class": "UnityEngine.TestTools.TestRunner.PlaymodeTestsControllerSettings",
+      "assembly": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "class": ".TMP_FontFeaturesCommon",
+      "assembly": "Unity.TextMeshPro.dll"
+    },
+    {
+      "class": ".TMP_ListPool",
+      "assembly": "Unity.TextMeshPro.dll"
+    },
+    {
+      "class": "UnityEngine.Timeline.MarkerTrack",
+      "assembly": "Unity.Timeline.dll"
+    },
+    {
+      "class": "UnityEngine.UI.Scrollbar",
+      "assembly": "UnityEngine.UI.dll"
+    },
+    {
+      "class": "UnityEngine.EventSystems.TouchInputModule",
+      "assembly": "UnityEngine.UI.dll"
+    },
+    {
+      "class": "TMPro.TMP_InputField",
+      "assembly": "Unity.TextMeshPro.dll"
+    },
+    {
+      "class": "UnityEngine.TestTools.TestActionCommand",
+      "assembly": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "class": "UnityEngine.TestTools.Utils.AssemblyWrapper",
+      "assembly": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "class": "UnityEngine.UI.ToggleGroup",
+      "assembly": "UnityEngine.UI.dll"
+    },
+    {
+      "class": "MCT.PlatformCOM.PlatformCOMProxy",
+      "assembly": "mct.dll"
+    },
+    {
+      "class": "UnityEngine.UI.HorizontalLayoutGroup",
+      "assembly": "UnityEngine.UI.dll"
+    },
+    {
+      "class": ".TMPro_UGUI_Private",
+      "assembly": "Unity.TextMeshPro.dll"
+    },
+    {
+      "class": "UnityEngine.UI.LayoutElement",
+      "assembly": "UnityEngine.UI.dll"
+    },
+    {
+      "class": "LayoutTests.ContentSizeFitterTests",
+      "assembly": "UnityEngine.UI.Tests.dll"
+    },
+    {
+      "class": "TMPro.TMP_Style",
+      "assembly": "Unity.TextMeshPro.dll"
+    },
+    {
+      "class": "MCT.HttpManage.HttpManager",
+      "assembly": "mct.dll"
+    },
+    {
+      "class": "UnityEngine.UI.Mask",
+      "assembly": "UnityEngine.UI.dll"
+    },
+    {
+      "class": "TMPro.TMP_DefaultControls",
+      "assembly": "Unity.TextMeshPro.dll"
+    },
+    {
+      "class": "UnityEngine.UI.ContentSizeFitter",
+      "assembly": "UnityEngine.UI.dll"
+    },
+    {
+      "class": "UnityEngine.Timeline.Extrapolation",
+      "assembly": "Unity.Timeline.dll"
+    },
+    {
+      "class": ".ScrollBarClamp",
+      "assembly": "UnityEngine.UI.Tests.dll"
+    },
+    {
+      "class": "TMPro.TextContainer",
+      "assembly": "Unity.TextMeshPro.dll"
+    },
+    {
+      "class": "UnityEngine.TestTools.Utils.Vector4EqualityComparer",
+      "assembly": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "class": "UnityEngine.UI.RectMask2D",
+      "assembly": "UnityEngine.UI.dll"
+    },
+    {
+      "class": ".InputFieldTests",
+      "assembly": "UnityEngine.UI.Tests.dll"
+    },
+    {
+      "class": "UnityEngine.TestTools.TestCommandPcHelper",
+      "assembly": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "class": "TMPro.TMP_ScrollbarEventHandler",
+      "assembly": "Unity.TextMeshPro.dll"
+    },
+    {
+      "class": ".ILogScope",
+      "assembly": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "class": ".RaycastResult",
+      "assembly": "UnityEngine.UI.dll"
+    },
+    {
+      "class": ".DropdownTests",
+      "assembly": "UnityEngine.UI.Tests.dll"
+    },
+    {
+      "class": ".ILayoutElement",
+      "assembly": "UnityEngine.UI.dll"
+    },
+    {
+      "class": ".IClipRegion",
+      "assembly": "UnityEngine.UI.dll"
+    },
+    {
+      "class": "UnityEngine.TestTools.NUnitExtensions.BaseDelegator",
+      "assembly": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "class": "UnityEngine.TestTools.TestMustExpectAllLogsAttribute",
+      "assembly": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "class": ".ITestRunCallback",
+      "assembly": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "class": "UnityEngine.UI.FontUpdateTracker",
+      "assembly": "UnityEngine.UI.dll"
+    },
+    {
+      "class": "UnityEngine.UI.Tests.SelectableTests",
+      "assembly": "UnityEngine.UI.Tests.dll"
+    },
+    {
+      "class": "UnityEngine.Timeline.TrackAsset",
+      "assembly": "Unity.Timeline.dll"
+    },
+    {
+      "class": "UnityEngine.Timeline..AnimationTrackUpgrade",
+      "assembly": "Unity.Timeline.dll"
+    },
+    {
+      "class": "UnityEngine.TestTools.Utils.QuaternionEqualityComparer",
+      "assembly": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "class": "UnityEngine.TestTools.EnumerableApplyChangesToContextCommand",
+      "assembly": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "class": "TMPro.TMP_Asset",
+      "assembly": "Unity.TextMeshPro.dll"
+    },
+    {
+      "class": "UnityEngine.TestTools.TestRunner.Callbacks.PlayModeRunnerCallback",
+      "assembly": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "class": ".GraphicRaycasterWorldSpaceCanvasTests",
+      "assembly": "UnityEngine.UI.Tests.dll"
+    },
+    {
+      "class": ".TimelineAttributes",
+      "assembly": "Unity.Timeline.dll"
+    },
+    {
+      "class": ".EventTriggerType",
+      "assembly": "UnityEngine.UI.dll"
+    },
+    {
+      "class": ".FMxButtonBase",
+      "assembly": "mct.dll"
+    },
+    {
+      "class": ".RawImageTestHook",
+      "assembly": "UnityEngine.UI.Tests.dll"
+    },
+    {
+      "class": "UnityEngine.Timeline.TimelineCreateUtilities",
+      "assembly": "Unity.Timeline.dll"
+    },
+    {
+      "class": "UnityEngine.TestRunner.TestLaunchers.PlayerConnectionMessageIds",
+      "assembly": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "class": "UnityEngine.EventSystems.BaseRaycaster",
+      "assembly": "UnityEngine.UI.dll"
+    },
+    {
+      "class": ".MarkerList",
+      "assembly": "Unity.Timeline.dll"
+    },
+    {
+      "class": "UnityEngine.Timeline.PrefabControlPlayable",
+      "assembly": "Unity.Timeline.dll"
+    },
+    {
+      "class": "UnityEngine.TestTools.Utils.PlayerTestAssemblyProvider",
+      "assembly": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "class": "UnityEngine.TestTools.Utils.Vector4ComparerWithEqualsOperator",
+      "assembly": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "class": "UnityEngine.UI.GraphicRebuildTracker",
+      "assembly": "UnityEngine.UI.dll"
+    },
+    {
+      "class": ".LoadingPanel",
+      "assembly": "Assembly-CSharp.dll"
+    },
+    {
+      "class": "LitJson.Lexer",
+      "assembly": "simple-json.dll"
+    },
+    {
+      "class": "UnityEngine.TestRunner.TestLaunchers.RemoteTestResultDataWithTestData",
+      "assembly": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "class": "UnityEngine.TestRunner.NUnitExtensions.Runner.UnityLogCheckDelegatingCommand",
+      "assembly": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "class": ".TMP_ResourcesManager",
+      "assembly": "Unity.TextMeshPro.dll"
+    },
+    {
+      "class": "UnityEngine.Timeline.ControlPlayableAsset",
+      "assembly": "Unity.Timeline.dll"
+    },
+    {
+      "class": "TMPro.TMP_Character",
+      "assembly": "Unity.TextMeshPro.dll"
+    },
+    {
+      "class": "TMPro.TMP_TextInfo",
+      "assembly": "Unity.TextMeshPro.dll"
+    },
+    {
+      "class": "UnityEngine.TestTools.Logging.LogScope",
+      "assembly": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "class": "UnityEngine.TestTools.Utils.Vector3EqualityComparer",
+      "assembly": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "class": ".IMarker",
+      "assembly": "Unity.Timeline.dll"
+    },
+    {
+      "class": ".MoveDirection",
+      "assembly": "UnityEngine.UI.dll"
+    },
+    {
+      "class": "UnityEngine.UI.Tests.ConcreteGraphic",
+      "assembly": "UnityEngine.UI.Tests.dll"
+    },
+    {
+      "class": "UnityEngine.UI.Button",
+      "assembly": "UnityEngine.UI.dll"
+    },
+    {
+      "class": "TMPro.TMP_TextUtilities",
+      "assembly": "Unity.TextMeshPro.dll"
+    },
+    {
+      "class": "UnityEngine.Timeline.AudioPlayableAsset",
+      "assembly": "Unity.Timeline.dll"
+    },
+    {
+      "class": "UnityEngine.EventSystems.StandaloneInputModule",
+      "assembly": "UnityEngine.UI.dll"
+    },
+    {
+      "class": ".TestButton",
+      "assembly": "UnityEngine.UI.Tests.dll"
+    },
+    {
+      "class": "UnityEngine.TestTools.NUnitExtensions.ActionDelegator",
+      "assembly": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "class": "ToggleTest.ToggleGroupTests",
+      "assembly": "UnityEngine.UI.Tests.dll"
+    },
+    {
+      "class": ".INotificationOptionProvider",
+      "assembly": "Unity.Timeline.dll"
+    },
+    {
+      "class": "InputfieldTests.GenericInputFieldTests",
+      "assembly": "UnityEngine.UI.Tests.dll"
+    },
+    {
+      "class": "TMPro.TMP_Text",
+      "assembly": "Unity.TextMeshPro.dll"
+    },
+    {
+      "class": "UnityEngine.UI.Tests.RectMask2DClipping",
+      "assembly": "UnityEngine.UI.Tests.dll"
+    },
+    {
+      "class": ".ITimeControl",
+      "assembly": "Unity.Timeline.dll"
+    },
+    {
+      "class": "TMPro.TMP_TextElement",
+      "assembly": "Unity.TextMeshPro.dll"
+    },
+    {
+      "class": "UnityEngine.TestTools.UnityPlatformAttribute",
+      "assembly": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "class": "TMPro.TMP_ColorGradient",
+      "assembly": "Unity.TextMeshPro.dll"
+    },
+    {
+      "class": "UnityEngine.EventSystems.Physics2DRaycaster",
+      "assembly": "UnityEngine.UI.dll"
+    },
+    {
+      "class": "LayoutTests.LayoutGroupScaling",
+      "assembly": "UnityEngine.UI.Tests.dll"
+    },
+    {
+      "class": "UnityEngine.TestTools.Utils.Vector2EqualityComparer",
+      "assembly": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "class": "UnityEngine.UI.VerticalLayoutGroup",
+      "assembly": "UnityEngine.UI.dll"
+    },
+    {
+      "class": "UnityEngine.TestRunner.NUnitExtensions.Runner.UnityTestExecutionContext",
+      "assembly": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "class": ".HorizonalLayoutGroupTests",
+      "assembly": "UnityEngine.UI.Tests.dll"
+    },
+    {
+      "class": "UnityEngine.TestTools.TestRunner.UnexpectedLogMessageException",
+      "assembly": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "class": "UnityEngine.TestRunner.NUnitExtensions.Runner.UnityWorkItemDataHolder",
+      "assembly": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "class": "TMPro.TMP_SpriteGlyph",
+      "assembly": "Unity.TextMeshPro.dll"
+    },
+    {
+      "class": "UnityEngine.TestTools.Utils.Vector3ComparerWithEqualsOperator",
+      "assembly": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "class": ".ToggleTestImageHook",
+      "assembly": "UnityEngine.UI.Tests.dll"
+    },
+    {
+      "class": "UnityEngine.TestRunner.NUnitExtensions.Runner.WorkItemFactory",
+      "assembly": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "class": "UnityEngine.UI.Tests.ImageHook",
+      "assembly": "UnityEngine.UI.Tests.dll"
+    },
+    {
+      "class": "TMPro.TMP_FontFeatureTable",
+      "assembly": "Unity.TextMeshPro.dll"
+    },
+    {
+      "class": "UnityEngine.TestTools.TestRunner.Callbacks.TestResultRenderer",
+      "assembly": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "class": "UnityEngine.UI.MultipleDisplayUtilities",
+      "assembly": "UnityEngine.UI.dll"
+    },
+    {
+      "class": "UnityEngine.UI.Text",
+      "assembly": "UnityEngine.UI.dll"
+    },
+    {
+      "class": ".IStateSerializer",
+      "assembly": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "class": "UnityEngine.TestTools.UnityTearDownAttribute",
+      "assembly": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "class": ".IMaskable",
+      "assembly": "UnityEngine.UI.dll"
+    },
+    {
+      "class": ".Navigation",
+      "assembly": "UnityEngine.UI.dll"
+    },
+    {
+      "class": "UnityEngine.UI.Tests.GraphicTestHelper",
+      "assembly": "UnityEngine.UI.Tests.dll"
+    },
+    {
+      "class": "UnityEngine.TestTools.PostBuildCleanupAttribute",
+      "assembly": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "class": "UnityEngine.EventSystems.ExecuteEvents",
+      "assembly": "UnityEngine.UI.dll"
+    },
+    {
+      "class": "TMPro.TMP_SpriteAnimator",
+      "assembly": "Unity.TextMeshPro.dll"
+    },
+    {
+      "class": "UnityEngine.TestTools.Utils.Vector2ComparerWithEqualsOperator",
+      "assembly": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "class": ".TMP_CoroutineTween",
+      "assembly": "Unity.TextMeshPro.dll"
+    },
+    {
+      "class": "UnityEngine.Timeline.TimelineClip",
+      "assembly": "Unity.Timeline.dll"
+    },
+    {
+      "class": "UnityEngine.TestRunner.NUnitExtensions.TestResultExtensions",
+      "assembly": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "class": ".ClipCaps",
+      "assembly": "Unity.Timeline.dll"
+    },
+    {
+      "class": ".IPropertyCollector",
+      "assembly": "Unity.Timeline.dll"
+    },
+    {
+      "class": "UnityEngine.Timeline.:ISerializationCallbackReceiver.AnimationPlayableAssetUpgrade",
+      "assembly": "Unity.Timeline.dll"
+    },
+    {
+      "class": "UnityEngine.UI.Slider",
+      "assembly": "UnityEngine.UI.dll"
+    },
+    {
+      "class": "UnityEngine.UI.Clipping",
+      "assembly": "UnityEngine.UI.dll"
+    },
+    {
+      "class": "MCT.PlatformCOM.AndroidCOM",
+      "assembly": "mct.dll"
+    },
+    {
+      "class": ".ConstraintsExtensions",
+      "assembly": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "class": "UnityEngine.TestRunner.NUnitExtensions.Runner.FailCommand",
+      "assembly": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "class": "UnityEngine.TestRunner.Utils.TestRunCallbackListener",
+      "assembly": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "class": "TMPro.TMP_UpdateManager",
+      "assembly": "Unity.TextMeshPro.dll"
+    },
+    {
+      "class": "UnityEngine.UI.StencilMaterial",
+      "assembly": "UnityEngine.UI.dll"
+    },
+    {
+      "class": "UnityEngine.UI.GraphicRegistry",
+      "assembly": "UnityEngine.UI.dll"
+    },
+    {
+      "class": ".ClipUpgrade",
+      "assembly": "Unity.Timeline.dll"
+    },
+    {
+      "class": "TMPro.TMP_TextParsingUtilities",
+      "assembly": "Unity.TextMeshPro.dll"
+    },
+    {
+      "class": "TMPro.TMP_EditorResourceManager",
+      "assembly": "Unity.TextMeshPro.dll"
+    },
+    {
+      "class": "UnityEngine.Timeline.TrackColorAttribute",
+      "assembly": "Unity.Timeline.dll"
+    },
+    {
+      "class": "UnityEngine.TestTools.Constraints.Is",
+      "assembly": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "class": "TMPro.TMP_MaterialManager",
+      "assembly": "Unity.TextMeshPro.dll"
+    },
+    {
+      "class": "UnityEngine.TestTools.EnumerableRetryTestCommand",
+      "assembly": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "class": "UnityEngine.Timeline.RuntimeClip",
+      "assembly": "Unity.Timeline.dll"
+    },
+    {
+      "class": "UnityEngine.Timeline.RuntimeClipBase",
+      "assembly": "Unity.Timeline.dll"
+    },
+    {
+      "class": "UnityEngine.UI.BaseMeshEffect",
+      "assembly": "UnityEngine.UI.dll"
+    },
+    {
+      "class": "TMPro.TMP_FontAsset",
+      "assembly": "Unity.TextMeshPro.dll"
+    },
+    {
+      "class": "Graphics.RectMask2DWithNestedCanvasCullsUsingCorrectCanvasRect",
+      "assembly": "UnityEngine.UI.Tests.dll"
+    },
+    {
+      "class": "UnityEngine.TestTools.TestRunner.TestListenerWrapper",
+      "assembly": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "class": ".TestPlatform",
+      "assembly": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "class": "UnityEngine.TestTools.TestEnumerator",
+      "assembly": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "class": "UnityEngine.Timeline.AnimationPreviewUpdateCallback",
+      "assembly": "Unity.Timeline.dll"
+    },
+    {
+      "class": "UnityEngine.EventSystems.PointerEventData",
+      "assembly": "UnityEngine.UI.dll"
+    },
+    {
+      "class": "UnityEngine.TestRunner.TestRunCallbackAttribute",
+      "assembly": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "class": "UnityEngine.Timeline.RuntimeElement",
+      "assembly": "Unity.Timeline.dll"
+    },
+    {
+      "class": "UnityEngine.EventSystems.EventSystem",
+      "assembly": "UnityEngine.UI.dll"
+    },
+    {
+      "class": ".DragCallbackCheck",
+      "assembly": "UnityEngine.UI.Tests.dll"
+    },
+    {
+      "class": "TMPro.TMPro_ExtensionMethods",
+      "assembly": "Unity.TextMeshPro.dll"
+    },
+    {
+      "class": ".Timeline.deprecated",
+      "assembly": "Unity.Timeline.dll"
+    },
+    {
+      "class": "LitJson.JsonWriter",
+      "assembly": "simple-json.dll"
+    },
+    {
+      "class": ".ScrollRectStableLayout",
+      "assembly": "UnityEngine.UI.Tests.dll"
+    },
+    {
+      "class": "UnityEngine.TestRunner.NUnitExtensions.Runner.UnityWorkItem",
+      "assembly": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "class": "TMPro.TMP_InputValidator",
+      "assembly": "Unity.TextMeshPro.dll"
+    },
+    {
+      "class": "UnityEngine.UI.Selectable",
+      "assembly": "UnityEngine.UI.dll"
+    },
+    {
+      "class": "UnityEngine.TestTools.UnityCombinatorialStrategy",
+      "assembly": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "class": "TMPro.TMP_Dropdown",
+      "assembly": "Unity.TextMeshPro.dll"
+    },
+    {
+      "class": "UnityEngine.UI.MaskUtilities",
+      "assembly": "UnityEngine.UI.dll"
+    },
+    {
+      "class": ".CoroutineTween",
+      "assembly": "UnityEngine.UI.dll"
+    },
+    {
+      "class": ".AssemblyInfo",
+      "assembly": "UnityEngine.UI.dll"
+    },
+    {
+      "class": "UnityEngine.TestRunner.NUnitExtensions.Runner.PlaymodeWorkItemFactory",
+      "assembly": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "class": "UnityEngine.TestTools.BeforeAfterTestCommandState",
+      "assembly": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "class": "UnityEngine.Timeline.TimelinePlayable",
+      "assembly": "Unity.Timeline.dll"
+    },
+    {
+      "class": ".RectTransformValidAfterEnable",
+      "assembly": "UnityEngine.UI.Tests.dll"
+    },
+    {
+      "class": "LitJson.Netstandard15Polyfill",
+      "assembly": "simple-json.dll"
+    },
+    {
+      "class": "UnityEngine.TestRunner.TestLaunchers.RemoteTestResultDataFactory",
+      "assembly": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "class": "UnityEngine.UI.Misc",
+      "assembly": "UnityEngine.UI.dll"
+    },
+    {
+      "class": "UnityEngine.UI.LayoutUtility",
+      "assembly": "UnityEngine.UI.dll"
+    },
+    {
+      "class": "UnityEngine.Timeline.PlayableTrack",
+      "assembly": "Unity.Timeline.dll"
+    },
+    {
+      "class": ".ColorBlock",
+      "assembly": "UnityEngine.UI.dll"
+    },
+    {
+      "class": ".PhysicsRaycasterTests",
+      "assembly": "UnityEngine.UI.Tests.dll"
+    },
+    {
+      "class": "UnityEngine.TestTools.ImmediateEnumerableCommand",
+      "assembly": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "class": ".DTxDispense",
+      "assembly": "mct.dll"
+    },
+    {
+      "class": "TMPro.TMP_SpriteAsset",
+      "assembly": "Unity.TextMeshPro.dll"
+    },
+    {
+      "class": ".CoroutineWorksIfUIObjectIsAttached",
+      "assembly": "UnityEngine.UI.Tests.dll"
+    },
+    {
+      "class": ".IMeshModifier",
+      "assembly": "UnityEngine.UI.dll"
+    },
+    {
+      "class": "UnityEngine.UI.AspectRatioFitter",
+      "assembly": "UnityEngine.UI.dll"
+    },
+    {
+      "class": "MC.Simple.Touch.SinglePointTouch",
+      "assembly": "simple-touch.dll"
+    },
+    {
+      "class": "TMPro.FastAction",
+      "assembly": "Unity.TextMeshPro.dll"
+    },
+    {
+      "class": ".ObjectPool",
+      "assembly": "UnityEngine.UI.dll"
+    },
+    {
+      "class": ".IRemoteTestResultDataFactory",
+      "assembly": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "class": "UnityEngine.TestRunner.NUnitExtensions.Runner.UnityTestAssemblyRunner",
+      "assembly": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "class": "TMPro.TMP_TextElement_Legacy",
+      "assembly": "Unity.TextMeshPro.dll"
+    },
+    {
+      "class": ".IEditModeTestYieldInstruction",
+      "assembly": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "class": ".ICurvesOwner",
+      "assembly": "Unity.Timeline.dll"
+    },
+    {
+      "class": "UnityEngine.Timeline.Marker",
+      "assembly": "Unity.Timeline.dll"
+    },
+    {
+      "class": "LayoutTests.VerticalLayoutGroupTests",
+      "assembly": "UnityEngine.UI.Tests.dll"
+    },
+    {
+      "class": "UnityEngine.UI.GridLayoutGroup",
+      "assembly": "UnityEngine.UI.dll"
+    },
+    {
+      "class": "UnityEngine.Timeline.AudioTrack",
+      "assembly": "Unity.Timeline.dll"
+    },
+    {
+      "class": "UnityEngine.TestRunner.NUnitExtensions.TestExtensions",
+      "assembly": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "class": ".DiscreteTime",
+      "assembly": "Unity.Timeline.dll"
+    },
+    {
+      "class": "MC.Simple.Json.SimpleJson",
+      "assembly": "simple-json.dll"
+    },
+    {
+      "class": ".IntervalTree",
+      "assembly": "Unity.Timeline.dll"
+    },
+    {
+      "class": ".TMPro_Private",
+      "assembly": "Unity.TextMeshPro.dll"
+    },
+    {
+      "class": "UnityEngine.UI.Toggle",
+      "assembly": "UnityEngine.UI.dll"
+    },
+    {
+      "class": ".TMP_CharacterInfo",
+      "assembly": "Unity.TextMeshPro.dll"
+    },
+    {
+      "class": "UnityEngine.TestRunner.NUnitExtensions.Filters.AssemblyNameFilter",
+      "assembly": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "class": "UnityEngine.EventSystems.BaseEventData",
+      "assembly": "UnityEngine.UI.dll"
+    },
+    {
+      "class": ".IGraphicEnabledDisabled",
+      "assembly": "UnityEngine.UI.dll"
+    },
+    {
+      "class": ".TimelineAsset_CreateRemove",
+      "assembly": "Unity.Timeline.dll"
+    },
+    {
+      "class": ".CheckMeshColorsAndColors32Match",
+      "assembly": "UnityEngine.UI.Tests.dll"
+    },
+    {
+      "class": "UnityEngine.TestTools.Utils.Utils",
+      "assembly": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "class": "TMPro.TextMeshPro",
+      "assembly": "Unity.TextMeshPro.dll"
+    },
+    {
+      "class": ".TimelineUpgrade",
+      "assembly": "Unity.Timeline.dll"
+    },
+    {
+      "class": "UnityEngine.TestTools.TestRunner.InvalidSignatureException",
+      "assembly": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "class": "TMPro.TMP_Sprite",
+      "assembly": "Unity.TextMeshPro.dll"
+    },
+    {
+      "class": "TMPro.TMPro_EventManager",
+      "assembly": "Unity.TextMeshPro.dll"
+    },
+    {
+      "class": ".TestableImage",
+      "assembly": "UnityEngine.UI.Tests.dll"
+    },
+    {
+      "class": "UnityEngine.UI.MaskableGraphic",
+      "assembly": "UnityEngine.UI.dll"
+    },
+    {
+      "class": ".NotificationFlags",
+      "assembly": "Unity.Timeline.dll"
+    },
+    {
+      "class": "UnityEngine.TestTools.NUnitExtensions.UnityTestAssemblyBuilder",
+      "assembly": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "class": "UnityEngine.TestTools.Logging.LogMatch",
+      "assembly": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "class": "LitJson.JsonException",
+      "assembly": "simple-json.dll"
+    },
+    {
+      "class": "UnityEngine.TestTools.TestRunner.TestEnumeratorWrapper",
+      "assembly": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "class": "UnityEngine.Timeline.InfiniteRuntimeClip",
+      "assembly": "Unity.Timeline.dll"
+    },
+    {
+      "class": ".NoActiveCameraInSceneDoesNotCrashEditor",
+      "assembly": "UnityEngine.UI.Tests.dll"
+    },
+    {
+      "class": "LitJson.JsonMockWrapper",
+      "assembly": "simple-json.dll"
+    },
+    {
+      "class": "TMPro.TMP_RuntimeTests",
+      "assembly": "Unity.TextMeshPro.Tests.dll"
+    },
+    {
+      "class": "UnityEngine.UI.ClipperRegistry",
+      "assembly": "UnityEngine.UI.dll"
+    },
+    {
+      "class": ".IMonoBehaviourTest",
+      "assembly": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "class": ".SceneWithNestedLayoutElementsLoadScript",
+      "assembly": "UnityEngine.UI.Tests.dll"
+    },
+    {
+      "class": "UnityEngine.TestTools.TestRunner.GUI.RuntimeTestRunnerFilter",
+      "assembly": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "class": "LitJson.JsonMapper",
+      "assembly": "simple-json.dll"
+    },
+    {
+      "class": "UnityEngine.UI.Tests.ImageTests",
+      "assembly": "UnityEngine.UI.Tests.dll"
+    },
+    {
+      "class": ".CanvasGroupInheritedAlpha",
+      "assembly": "UnityEngine.UI.Tests.dll"
+    },
+    {
+      "class": "UnityEngine.Timeline.AnimationOutputWeightProcessor",
+      "assembly": "Unity.Timeline.dll"
+    },
+    {
+      "class": ".TMP_UpdateRegistery",
+      "assembly": "Unity.TextMeshPro.dll"
+    },
+    {
+      "class": ".ImageTests",
+      "assembly": "UnityEngine.UI.Tests.dll"
+    },
+    {
+      "class": "UnityEngine.UI.HorizontalOrVerticalLayoutGroup",
+      "assembly": "UnityEngine.UI.dll"
+    },
+    {
+      "class": "UnityEngine.UI.Graphic",
+      "assembly": "UnityEngine.UI.dll"
+    },
+    {
+      "class": "UnityEngine.Timeline.CustomSignalEventDrawer",
+      "assembly": "Unity.Timeline.dll"
+    },
+    {
+      "class": ".IndexedSet",
+      "assembly": "UnityEngine.UI.dll"
+    },
+    {
+      "class": "UnityEngine.TestTools.TestRunner.UnhandledLogMessageException",
+      "assembly": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "class": "LitJson.JsonData",
+      "assembly": "simple-json.dll"
+    },
+    {
+      "class": "TMPro.TMP_StyleSheet",
+      "assembly": "Unity.TextMeshPro.dll"
+    },
+    {
+      "class": ".IPrebuildSceneSetup",
+      "assembly": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "class": "Graphics.RawImageTest",
+      "assembly": "UnityEngine.UI.Tests.dll"
+    },
+    {
+      "class": "UnityEngine.TestTools.AttributeHelper",
+      "assembly": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "class": "UnityEngine.TestTools.Utils.FloatEqualityComparer",
+      "assembly": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "class": ".ITextPreProcessor",
+      "assembly": "Unity.TextMeshPro.dll"
+    },
+    {
+      "class": "UnityEngine.Timeline.TimeNotificationBehaviour",
+      "assembly": "Unity.Timeline.dll"
+    },
+    {
+      "class": "UnityEngine.TestRunner.TestLaunchers.RemoteTestData",
+      "assembly": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "class": "UnityEngine.EventSystems.AxisEventData",
+      "assembly": "UnityEngine.UI.dll"
+    },
+    {
+      "class": ".ParserToken",
+      "assembly": "simple-json.dll"
+    },
+    {
+      "class": "UnityEngine.Timeline.ScheduleRuntimeClip",
+      "assembly": "Unity.Timeline.dll"
+    },
+    {
+      "class": "MCT.PlatformCOM.PlatformMenu",
+      "assembly": "mct.dll"
+    },
+    {
+      "class": "UnityEngine.TestTools.NUnitExtensions.ConstructDelegator",
+      "assembly": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "class": ".TMP_RichTextTagsCommon",
+      "assembly": "Unity.TextMeshPro.dll"
+    },
+    {
+      "class": "UnityEngine.Timeline.SignalTrack",
+      "assembly": "Unity.Timeline.dll"
+    },
+    {
+      "class": "UnityEngine.TestRunner.NUnitExtensions.Runner.CoroutineTestWorkItem",
+      "assembly": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "class": ".IPropertyPreview",
+      "assembly": "Unity.Timeline.dll"
+    },
+    {
+      "class": ".TextEditorBackspaceDelete",
+      "assembly": "UnityEngine.UI.Tests.dll"
+    },
+    {
+      "class": "Graphics.MaskTests",
+      "assembly": "UnityEngine.UI.Tests.dll"
+    },
+    {
+      "class": ".TMP_LineInfo",
+      "assembly": "Unity.TextMeshPro.dll"
+    },
+    {
+      "class": "UnityEngine.Timeline.NotificationUtilities",
+      "assembly": "Unity.Timeline.dll"
+    },
+    {
+      "class": "UnityEngine.TestTools.TestRunner.GUI.SynchronousFilter",
+      "assembly": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "class": "UnityEngine.UI.SetPropertyUtility",
+      "assembly": "UnityEngine.UI.dll"
+    },
+    {
+      "class": ".IOuterUnityTestAction",
+      "assembly": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "class": ".GridLayoutGroupTests",
+      "assembly": "UnityEngine.UI.Tests.dll"
+    },
+    {
+      "class": "MC.Simple.Touch.SimpleTouch",
+      "assembly": "simple-touch.dll"
+    },
+    {
+      "class": ".NestedCanvasMaintainsCorrectSize",
+      "assembly": "UnityEngine.UI.Tests.dll"
+    },
+    {
+      "class": "UnityEngine.Timeline.DirectorControlPlayable",
+      "assembly": "Unity.Timeline.dll"
+    },
+    {
+      "class": "UnityEngine.UI.DefaultControls",
+      "assembly": "UnityEngine.UI.dll"
+    },
+    {
+      "class": "UnityEngine.UI.CanvasUpdateRegistry",
+      "assembly": "UnityEngine.UI.dll"
+    },
+    {
+      "class": "UnityEngine.Timeline.TimelineAsset",
+      "assembly": "Unity.Timeline.dll"
+    },
+    {
+      "class": ".SiblingOrderChangesLayout",
+      "assembly": "UnityEngine.UI.Tests.dll"
+    },
+    {
+      "class": ".IAsyncTestAssemblyBuilder",
+      "assembly": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "class": "UnityEngine.UI.VertexHelper",
+      "assembly": "UnityEngine.UI.dll"
+    },
+    {
+      "class": ".ListPool",
+      "assembly": "UnityEngine.UI.dll"
+    },
+    {
+      "class": "UnityEngine.EventSystems.PhysicsRaycaster",
+      "assembly": "UnityEngine.UI.dll"
+    },
+    {
+      "class": ".ITestAssemblyProvider",
+      "assembly": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "class": "UnityEngine.UI.RectangularVertexClipper",
+      "assembly": "UnityEngine.UI.dll"
+    },
+    {
+      "class": "UnityEngine.UI.AnimationTriggers",
+      "assembly": "UnityEngine.UI.dll"
+    },
+    {
+      "class": ".TrackUpgrade",
+      "assembly": "Unity.Timeline.dll"
+    },
+    {
+      "class": "UnityEngine.TestRunner.NUnitExtensions.Runner.DefaultTestWorkItem",
+      "assembly": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "class": "UnityEngine.TestTools.ConditionalIgnoreAttribute",
+      "assembly": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "class": "UnityEngine.TestTools.LogAssert",
+      "assembly": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "class": "TMPro.TMP_SelectionCaret",
+      "assembly": "Unity.TextMeshPro.dll"
+    },
+    {
+      "class": "UnityEngine.UI.LayoutGroup",
+      "assembly": "UnityEngine.UI.dll"
+    },
+    {
+      "class": "UnityEngine.EventSystems.PointerInputModule",
+      "assembly": "UnityEngine.UI.dll"
+    },
+    {
+      "class": ".BeforeAfterTestCommandBase",
+      "assembly": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "class": ".AssemblyInfo",
+      "assembly": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "class": "UnityEngine.TestTools.UnitySetUpAttribute",
+      "assembly": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "class": ".IMask",
+      "assembly": "UnityEngine.UI.dll"
+    },
+    {
+      "class": "TMPro.TMP_PackageResourceImporter",
+      "assembly": "Unity.TextMeshPro.dll"
+    },
+    {
+      "class": "UnityEngine.UI.Shadow",
+      "assembly": "UnityEngine.UI.dll"
+    },
+    {
+      "class": "UnityEngine.Timeline.AnimatorBindingCache",
+      "assembly": "Unity.Timeline.dll"
+    },
+    {
+      "class": "UnityEngine.TestTools.Constraints.AllocatingGCMemoryConstraint",
+      "assembly": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "class": "UnityEngine.EventSystems.EventTrigger",
+      "assembly": "UnityEngine.UI.dll"
+    },
+    {
+      "class": "LitJson.JsonReader",
+      "assembly": "simple-json.dll"
+    },
+    {
+      "class": "UnityEngine.Timeline.HashUtility",
+      "assembly": "Unity.Timeline.dll"
+    },
+    {
+      "class": "UnityEngine.Timeline.GroupTrack",
+      "assembly": "Unity.Timeline.dll"
+    },
+    {
+      "class": "UnityEngine.UI.InputField",
+      "assembly": "UnityEngine.UI.dll"
+    },
+    {
+      "class": ".ITestRunnerListener",
+      "assembly": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "class": ".PrebuildSceneSetupAttribute",
+      "assembly": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "class": "UnityEngine.Timeline.ActivationControlPlayable",
+      "assembly": "Unity.Timeline.dll"
+    },
+    {
+      "class": "UnityEngine.Timeline.AnimationTrack",
+      "assembly": "Unity.Timeline.dll"
+    },
+    {
+      "class": ".TrackExtensions",
+      "assembly": "Unity.Timeline.dll"
+    },
+    {
+      "class": "UnityEngine.UI.Tests.UIBehaviourExtensions",
+      "assembly": "UnityEngine.UI.Tests.dll"
+    },
+    {
+      "class": ".ScrollRectClamp",
+      "assembly": "UnityEngine.UI.Tests.dll"
+    },
+    {
+      "class": "UnityEngine.TestTools.Utils.ColorEqualityComparer",
+      "assembly": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "class": "UnityEngine.Timeline.SignalAsset",
+      "assembly": "Unity.Timeline.dll"
+    },
+    {
+      "class": "UnityEngine.Timeline.AudioMixerProperties",
+      "assembly": "Unity.Timeline.dll"
+    },
+    {
+      "class": ".ScrollRectTests",
+      "assembly": "UnityEngine.UI.Tests.dll"
+    },
+    {
+      "class": ".CreateSceneUtility",
+      "assembly": "UnityEngine.UI.Tests.dll"
+    },
+    {
+      "class": ".EventHandle",
+      "assembly": "UnityEngine.UI.dll"
+    },
+    {
+      "class": ".IEnumerableTestMethodCommand",
+      "assembly": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "class": "UnityEngine.UI.GraphicRaycaster",
+      "assembly": "UnityEngine.UI.dll"
+    },
+    {
+      "class": "UnityEngine.TestTools.EnumerableSetUpTearDownCommand",
+      "assembly": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "class": ".CanvasSizeCorrectInAwakeAndStartScript",
+      "assembly": "UnityEngine.UI.Tests.dll"
+    },
+    {
+      "class": "UnityEngine.TestTools.TestRunner.Callbacks.TestResultRendererCallback",
+      "assembly": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "class": "UnityEngine.TestTools.SetUpTearDownCommand",
+      "assembly": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "class": "ToggleTest.TestableToggleGroup",
+      "assembly": "UnityEngine.UI.Tests.dll"
+    },
+    {
+      "class": "UnityEngine.Timeline.ActivationMixerPlayable",
+      "assembly": "Unity.Timeline.dll"
+    },
+    {
+      "class": "UnityEngine.UI.Outline",
+      "assembly": "UnityEngine.UI.dll"
+    },
+    {
+      "class": "InputfieldTests.DesktopInputFieldTests",
+      "assembly": "UnityEngine.UI.Tests.dll"
+    },
+    {
+      "class": ".TMP_MeshInfo",
+      "assembly": "Unity.TextMeshPro.dll"
+    },
+    {
+      "class": "UnityEngine.TestTools.EnumerableRepeatedTestCommand",
+      "assembly": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "class": "MC.Simple.Utils.PrefabLightmapData",
+      "assembly": "Assembly-CSharp.dll"
+    },
+    {
+      "class": ".TMP_SpriteAssetImportFormats",
+      "assembly": "Unity.TextMeshPro.dll"
+    },
+    {
+      "class": ".InputModuleTests",
+      "assembly": "UnityEngine.UI.Tests.dll"
+    },
+    {
+      "class": "UnityEngine.Timeline.SignalReceiver",
+      "assembly": "Unity.Timeline.dll"
+    },
+    {
+      "class": ".GraphicRaycasterTests",
+      "assembly": "UnityEngine.UI.Tests.dll"
+    },
+    {
+      "class": ".TMP_ObjectPool",
+      "assembly": "Unity.TextMeshPro.dll"
+    },
+    {
+      "class": ".IJsonWrapper",
+      "assembly": "simple-json.dll"
+    },
+    {
+      "class": "UnityEngine.Timeline.WeightUtility",
+      "assembly": "Unity.Timeline.dll"
+    },
+    {
+      "class": "Graphics.GraphicTests",
+      "assembly": "UnityEngine.UI.Tests.dll"
+    },
+    {
+      "class": "InputfieldTests.TouchInputFieldTests",
+      "assembly": "UnityEngine.UI.Tests.dll"
+    },
+    {
+      "class": ".LayoutGroupArrangement",
+      "assembly": "UnityEngine.UI.Tests.dll"
+    },
+    {
+      "class": ".ScrollRectScale",
+      "assembly": "UnityEngine.UI.Tests.dll"
+    },
+    {
+      "class": ".PrivateFieldSetter",
+      "assembly": "UnityEngine.UI.Tests.dll"
+    },
+    {
+      "class": "MC.Simple.Touch.DoublePointTouch",
+      "assembly": "simple-touch.dll"
+    },
+    {
+      "class": "UnityEngine.TestRunner.NUnitExtensions.Filters.CategoryFilterExtended",
+      "assembly": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "class": ".CanvasSizeCorrectInAwakeAndStart",
+      "assembly": "UnityEngine.UI.Tests.dll"
+    },
+    {
+      "class": ".StartMamager",
+      "assembly": "Assembly-CSharp.dll"
+    },
+    {
+      "class": ".TMPro_MeshUtilities",
+      "assembly": "Unity.TextMeshPro.dll"
+    },
+    {
+      "class": "UnityEngine.TestTools.Utils.ScriptingRuntimeProxy",
+      "assembly": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "class": "UnityEngine.TestRunner.NUnitExtensions.Runner.TestCommandBuilder",
+      "assembly": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "class": "TMPro.TextMeshProUGUI",
+      "assembly": "Unity.TextMeshPro.dll"
+    },
+    {
+      "class": "UnityEngine.Timeline.ParticleControlPlayable",
+      "assembly": "Unity.Timeline.dll"
+    },
+    {
+      "class": ".TMP_FontAssetCommon",
+      "assembly": "Unity.TextMeshPro.dll"
+    },
+    {
+      "class": "UnityEngine.Timeline.TimeUtility",
+      "assembly": "Unity.Timeline.dll"
+    },
+    {
+      "class": "UnityEngine.TestTools.TestRunner.Callbacks.PlayerQuitHandler",
+      "assembly": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "class": "UnityEngine.TestTools.Utils.AssemblyLoadProxy",
+      "assembly": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "class": ".SliderTests",
+      "assembly": "UnityEngine.UI.Tests.dll"
+    },
+    {
+      "class": ".StacktraceFilter",
+      "assembly": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "class": ".NestedCanvas",
+      "assembly": "UnityEngine.UI.Tests.dll"
+    },
+    {
+      "class": "UnityEngine.UI.ReflectionMethodsCache",
+      "assembly": "UnityEngine.UI.dll"
+    },
+    {
+      "class": "UnityEngine.Timeline.ActivationPlayableAsset",
+      "assembly": "Unity.Timeline.dll"
+    },
+    {
+      "class": ".BasicScriptPlayable",
+      "assembly": "Unity.Timeline.dll"
+    },
+    {
+      "class": ".IScriptingRuntimeProxy",
+      "assembly": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "class": ".MessageCenter",
+      "assembly": "simple-messge.dll"
+    },
+    {
+      "class": "UnityEngine.UI.Image",
+      "assembly": "UnityEngine.UI.dll"
+    },
+    {
+      "class": ".TMP_ShaderUtilities",
+      "assembly": "Unity.TextMeshPro.dll"
+    },
+    {
+      "class": "UnityEngine.TestTools.UnityTestAttribute",
+      "assembly": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "class": ".IPostBuildCleanup",
+      "assembly": "UnityEngine.TestRunner.dll"
+    },
+    {
+      "class": "UnityEngine.TestTools.TestRunner.UnityTestTimeoutException",
+      "assembly": "UnityEngine.TestRunner.dll"
+    }
+  ],
+  "textures": [
+    {
+      "name": "main_11",
+      "width": 1024,
+      "height": 640
+    },
+    {
+      "name": "common_7",
+      "width": 512,
+      "height": 15
+    },
+    {
+      "name": "main_8",
+      "width": 401,
+      "height": 512
+    }
+  ],
+  "monoBehaviours": [
+    {
+      "id": 46,
+      "gameObject": "EventSystem",
+      "class": "UnityEngine.EventSystems.EventSystem",
+      "assembly": "UnityEngine.UI.dll"
+    },
+    {
+      "id": 47,
+      "gameObject": "Manager",
+      "class": ".StartMamager",
+      "assembly": "Assembly-CSharp.dll"
+    },
+    {
+      "id": 48,
+      "gameObject": "AndroidCOM",
+      "class": "MCT.PlatformCOM.AndroidCOM",
+      "assembly": "mct.dll"
+    },
+    {
+      "id": 49,
+      "gameObject": "EventSystem",
+      "class": "UnityEngine.EventSystems.StandaloneInputModule",
+      "assembly": "UnityEngine.UI.dll"
+    },
+    {
+      "id": 50,
+      "gameObject": "bg",
+      "class": "UnityEngine.UI.Image",
+      "assembly": "UnityEngine.UI.dll"
+    },
+    {
+      "id": 51,
+      "gameObject": "Image",
+      "class": "UnityEngine.UI.Image",
+      "assembly": "UnityEngine.UI.dll"
+    },
+    {
+      "id": 52,
+      "gameObject": "bar",
+      "class": "UnityEngine.UI.Image",
+      "assembly": "UnityEngine.UI.dll"
+    },
+    {
+      "id": 53,
+      "gameObject": "LoadingPanel",
+      "class": ".LoadingPanel",
+      "assembly": "Assembly-CSharp.dll"
+    },
+    {
+      "id": 54,
+      "gameObject": "Canvas",
+      "class": "UnityEngine.UI.CanvasScaler",
+      "assembly": "UnityEngine.UI.dll"
+    },
+    {
+      "id": 55,
+      "gameObject": "Canvas",
+      "class": "UnityEngine.UI.GraphicRaycaster",
+      "assembly": "UnityEngine.UI.dll"
+    },
+    {
+      "id": 56,
+      "gameObject": "Text",
+      "class": "UnityEngine.UI.Text",
+      "assembly": "UnityEngine.UI.dll"
+    },
+    {
+      "id": 57,
+      "gameObject": "barbg",
+      "class": "UnityEngine.UI.Image",
+      "assembly": "UnityEngine.UI.dll"
+    }
+  ],
+  "unityVersion": "2019.4.17f1",
+  "defaultResources": {
+    "types": {
+      "Shader": 5,
+      "ComputeShader": 2,
+      "Texture2D": 41,
+      "Material": 2,
+      "Font": 1,
+      "Mesh": 13,
+      "Sprite": 1,
+      "MonoBehaviour": 1,
+      "MonoScript": 12
+    },
+    "customNamed": [
+      {
+        "type": "Texture2D",
+        "name": "Soft"
+      },
+      {
+        "type": "Material",
+        "name": "Font Material"
+      },
+      {
+        "type": "Font",
+        "name": "Arial"
+      },
+      {
+        "type": "Texture2D",
+        "name": "Font Texture"
+      },
+      {
+        "type": "Mesh",
+        "name": "pSphere1"
+      },
+      {
+        "type": "Mesh",
+        "name": "Cube"
+      },
+      {
+        "type": "Mesh",
+        "name": "pCylinder1"
+      },
+      {
+        "type": "Mesh",
+        "name": "pPlane1"
+      },
+      {
+        "type": "Mesh",
+        "name": "polySurface2"
+      },
+      {
+        "type": "Mesh",
+        "name": "Cylinder"
+      },
+      {
+        "type": "Mesh",
+        "name": "Sphere"
+      },
+      {
+        "type": "Mesh",
+        "name": "Capsule"
+      },
+      {
+        "type": "Mesh",
+        "name": "Plane"
+      },
+      {
+        "type": "Mesh",
+        "name": "Quad"
+      },
+      {
+        "type": "Mesh",
+        "name": "Icosphere"
+      },
+      {
+        "type": "Mesh",
+        "name": "icosahedron"
+      },
+      {
+        "type": "Mesh",
+        "name": "pyramid"
+      },
+      {
+        "type": "Texture2D",
+        "name": "UnityWatermark-small"
+      },
+      {
+        "type": "Texture2D",
+        "name": "EscToExit_back"
+      },
+      {
+        "type": "Texture2D",
+        "name": "EscToExit_Text"
+      },
+      {
+        "type": "Texture2D",
+        "name": "UnitySplash-cube"
+      },
+      {
+        "type": "Texture2D",
+        "name": "UnityWatermark-trial-big"
+      },
+      {
+        "type": "Texture2D",
+        "name": "UnityWatermark-trial"
+      },
+      {
+        "type": "Texture2D",
+        "name": "UnityWatermark-beta"
+      },
+      {
+        "type": "Texture2D",
+        "name": "UnityWatermark-edu"
+      },
+      {
+        "type": "Texture2D",
+        "name": "UnityWatermark-dev"
+      },
+      {
+        "type": "Texture2D",
+        "name": "WarningSign"
+      },
+      {
+        "type": "Texture2D",
+        "name": "UnityWatermark-proto"
+      },
+      {
+        "type": "Texture2D",
+        "name": "UnityWatermarkPlugin-beta"
+      },
+      {
+        "type": "Material",
+        "name": "FrameDebuggerRenderTargetDisplay"
+      },
+      {
+        "type": "Texture2D",
+        "name": "box"
+      },
+      {
+        "type": "Texture2D",
+        "name": "button active"
+      },
+      {
+        "type": "Texture2D",
+        "name": "button hover"
+      },
+      {
+        "type": "Texture2D",
+        "name": "button on hover"
+      },
+      {
+        "type": "Texture2D",
+        "name": "button on"
+      },
+      {
+        "type": "Texture2D",
+        "name": "button"
+      },
+      {
+        "type": "Texture2D",
+        "name": "horizontal scrollbar thumb"
+      },
+      {
+        "type": "Texture2D",
+        "name": "horizontal scrollbar"
+      },
+      {
+        "type": "Texture2D",
+        "name": "horizontalslider"
+      },
+      {
+        "type": "Texture2D",
+        "name": "slider thumb active"
+      },
+      {
+        "type": "Texture2D",
+        "name": "slider thumb"
+      },
+      {
+        "type": "Texture2D",
+        "name": "slidert humb hover"
+      },
+      {
+        "type": "Texture2D",
+        "name": "toggle active"
+      },
+      {
+        "type": "Texture2D",
+        "name": "toggle hover"
+      },
+      {
+        "type": "Texture2D",
+        "name": "toggle on hover"
+      },
+      {
+        "type": "Texture2D",
+        "name": "toggle on"
+      },
+      {
+        "type": "Texture2D",
+        "name": "toggle on active"
+      },
+      {
+        "type": "Texture2D",
+        "name": "toggle"
+      },
+      {
+        "type": "Texture2D",
+        "name": "vertical scrollbar thumb"
+      },
+      {
+        "type": "Texture2D",
+        "name": "vertical scrollbar"
+      },
+      {
+        "type": "Texture2D",
+        "name": "verticalslider"
+      },
+      {
+        "type": "Texture2D",
+        "name": "window on"
+      },
+      {
+        "type": "Texture2D",
+        "name": "window"
+      },
+      {
+        "type": "Texture2D",
+        "name": "textfield"
+      },
+      {
+        "type": "Texture2D",
+        "name": "textfield on"
+      },
+      {
+        "type": "Texture2D",
+        "name": "textfield hover"
+      },
+      {
+        "type": "Texture2D",
+        "name": "UnitySplash-HolographicTrackingLoss"
+      }
+    ]
+  }
+}

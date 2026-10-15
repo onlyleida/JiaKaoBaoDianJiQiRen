@@ -1,0 +1,14 @@
+{
+  "scope": [
+    "android/assets",
+    "android/res/raw"
+  ],
+  "files_scanned": 335,
+  "unity_bundle_header_matches": [
+    {
+      "path": "assets/bin/Data/data.unity3d",
+      "size": 923545,
+      "signature": "UnityFS"
+    }
+  ]
+}

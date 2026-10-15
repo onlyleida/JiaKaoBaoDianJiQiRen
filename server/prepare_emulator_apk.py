@@ -22,7 +22,7 @@ CERT_SLOT_BYTES = 1755
 ORIGINAL_DEBUG_CERT = "c9911ef8e4a38b748d914688866a82e68577d0a1ec89450e9f39dc2c24059695"
 
 
-def prepare_emulator(output, root=ROOT, disable_speech=False):
+def prepare_emulator(output, root=ROOT, disable_speech=False, local_workbench=False):
     output = Path(output).resolve()
     original = (Path(root) / "android" / LIB).read_bytes()
     if hashlib.sha256(original).hexdigest() != ORIGINAL or original[0x8f630:0x8f634].hex() != "30482de9":
@@ -82,7 +82,39 @@ def prepare_emulator(output, root=ROOT, disable_speech=False):
         if before.count(before_text) != 1:
             raise ValueError("Unexpected emulator setting: " + relative)
         changes.append((relative, before, before.replace(before_text, after_text, 1)))
+    if local_workbench:
+        relative = "smali_classes4/cn/mucang/android/jiakaoyi/teachingk2/ui/splash/impl/l1.smali"
+        before = (Path(root) / "android" / relative).read_text()
+        instructions = "\n".join([
+            "    iget-object v0, p0, Lcn/mucang/android/jiakaoyi/teachingk2/ui/splash/k;->b:Lcn/mucang/android/jiakaoyi/framework/base/m/a;",
+            "    iget v1, p0, Lcn/mucang/android/jiakaoyi/teachingk2/ui/splash/impl/l1;->i:I",
+            "    invoke-static {v0, v1}, Llocal/jiakao/LocalWorkbenchActivity;->open(Landroid/app/Activity;I)V",
+            "    return-void"])
+        after = replace_method(before, "private p()V", instructions).replace(
+            ".method private p()V\n    .locals 1", ".method private p()V\n    .locals 2", 1)
+        changes.append((relative, before, after))
+        relative = "smali_classes4/cn/mucang/android/jiakaoyi/teachingk2/login/ui/LoginActivity.smali"
+        before = (Path(root) / "android" / relative).read_text()
+        anchor = ".method public onBackPressed()V\n    .locals 1"
+        if before.count(anchor) != 1:
+            raise ValueError("Unexpected LoginActivity back handler")
+        after = before.replace(anchor, "\n".join([
+            ".method public onBackPressed()V", "    .locals 1", "",
+            "    invoke-static {p0}, Llocal/jiakao/LocalWorkbenchActivity;->handleBack(Landroid/app/Activity;)Z",
+            "    move-result v0", "    if-eqz v0, :original_back", "    return-void", "    :original_back"]), 1)
+        changes.append((relative, before, after))
+        relative = "AndroidManifest.xml"
+        before = (Path(root) / "android" / relative).read_text()
+        if before.count("</application>") != 1:
+            raise ValueError("Unexpected application manifest")
+        after = before.replace("</application>", '<activity android:name="local.jiakao.LocalWorkbenchActivity" '
+                               'android:exported="false" android:screenOrientation="landscape" '
+                               'android:theme="@android:style/Theme.Material.Light.NoActionBar"/>'
+                               '\n    </application>')
+        changes.append((relative, before, after))
     prepare(output, "http://127.0.0.1:8765", root)
+    if local_workbench:
+        shutil.copytree(Path(root) / "local-workbench", output / "local-workbench")
     java_manifest, patch = [], []
     for relative, before, after in changes:
         (output / "android" / relative).write_text(after)
@@ -129,6 +161,7 @@ def prepare_emulator(output, root=ROOT, disable_speech=False):
     report = dict(base="local-backend overlay", originalModified=False, files=[dict(file="android/" + LIB, **entry)] + java_manifest,
                   scope="Native CPU/certificate compatibility; loopback ping; existing Bluetooth simulation default enabled",
                   speechInitializationDisabled=disable_speech, hardwareSimulationDefault=True, networkProbe="127.0.0.1",
+                  localWorkbench=local_workbench,
                   nativeLibrariesUnchanged=False, nativeMethodsUnchanged=True,
                   limits=["CPU acceleration and timestamp probing disabled; runtime validation still required",
                           "All other original native bytes and packaged resources remain unchanged",
@@ -136,7 +169,8 @@ def prepare_emulator(output, root=ROOT, disable_speech=False):
                           ("Speech synthesis/recognition unavailable; original SDK libraries remain packaged" if disable_speech else
                            "Original speech initialization retained; spoken output and cloud recognition unverified"),
                           "Built-in Bluetooth simulation replaces physical signal-box startup; real hardware untested",
-                          "Original login and external Unity resource checks remain",
+                          ("Unity download checks remain; failure opens explicitly new local workbench, never signals successful load" if local_workbench else
+                           "Original login and external Unity resource checks remain"),
                           "Use local backend and guest network isolation for testing"])
     (output / "emulator-overlay.json").write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n")
     return report
@@ -146,6 +180,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--output", required=True, type=Path)
     parser.add_argument("--disable-speech", action="store_true", help="Experimental API30 speech fallback; unnecessary on validated API28")
+    parser.add_argument("--local-workbench", action="store_true", help="Add a labelled local native fallback when Unity loading fails")
     args = parser.parse_args()
-    prepare_emulator(args.output, disable_speech=args.disable_speech)
+    prepare_emulator(args.output, disable_speech=args.disable_speech, local_workbench=args.local_workbench)
     print("Prepared portable ARM emulator variant in", args.output.resolve())

@@ -16,10 +16,10 @@
 
 ## 重建
 
-需要 Python 3.9+、JDK 21、Android SDK build-tools 35.0.0。设置好 JAVA_HOME、PATH、ANDROID_HOME 后，在仓库根目录执行：
+需要 Python 3.9+、JDK 21、Android SDK build-tools 35.0.0 和 platforms;android-28（编译新增 Java 页面）。设置好 JAVA_HOME、PATH、ANDROID_HOME 后，在仓库根目录执行：
 
 ```sh
-python3 server/prepare_emulator_apk.py --output .cache/my-emulator-build
+python3 server/prepare_emulator_apk.py --output .cache/my-emulator-build --local-workbench
 python3 .cache/my-emulator-build/scripts/build.py \
   --payload-overrides .cache/my-emulator-build/reports/payload-overrides.json
 ```
@@ -48,3 +48,14 @@ gh workflow run runtime-emulator-apk.yml --ref main -f api=28
 2026-10-15 运行38597306444已核对真实截图：原生设置页、点击后的语音设置页和返回操作通过，同一进程没有退出或崩溃。正常启动仍在type100 Unity包加载阶段停止；这些包不在已提取的APK中。设置页是调试入口，不能当作恢复完整教学首页。
 
 安装包：[API28 模拟器兼容 APK](https://github.com/onlyleida/JiaKaoBaoDianJiQiRen/releases/download/apk-11.6.5-rebuild/jiakaoyi-coach-11.6.5-emulator-api28-debug.apk)。SHA256以同名`.sha256`及`reports/emulator-runtime-review.json`为准。
+
+
+## 本地调试工作台
+
+`--local-workbench` 在隔离副本中新增纯 Android 页面：原启动检查仍会尝试下载 Unity；仅在 100/101 加载失败时进入工作台，既不调用成功回调，也不制造占位资源。工作台提供服务/资源状态、独立接口登录/检查/退出、原生设置和原生登录页、重试原启动。默认测试码为 `12345678`，此接口会话不代表原版教学登录完成。
+
+Java 源码位于 `local-workbench/LocalWorkbenchActivity.java`；JDK 21 编译为 Java 8 字节码，SDK d8 转成单独的 `classes7.dex`，打包后校验哈希。原六份 DEX 仍由 Smali 重建。常规构建未声明该页面时不会编译/注入此 DEX。原生登录页只有带工作台返回标记时才使用 finish 返回；其他入口保留原退出行为。
+
+本地服务启动后执行 `adb -s YOUR_DEVICE_SERIAL reverse tcp:8765 tcp:8765`，再从应用图标正常启动。无法连接时，工作台给出服务启动与连接提示。资源状态按最新登记文件的实际长度及 SHA256 核对；文件存在仍不代表格式和运行兼容。
+
+导入真正兼容的文件使用 server/README.md 的资源命令。APK 内 Unity 对象的进一步核验见 `reports/unity-external-modules-findings.md`：内置包仅有加载场景，不能还原缺失原版教学。新增工作台的运行结果以最新截图和审阅报告为准。

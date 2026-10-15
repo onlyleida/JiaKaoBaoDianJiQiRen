@@ -80,6 +80,34 @@ def main():
     print("Assembling all six DEX files and packaged resources...", flush=True)
     run([java, "-Xmx4g", "-jar", apktool, "build", "-f", "-j", "4",
          "-p", cache / "framework", "-o", unsigned, ROOT / "android"], env, output / "build.log")
+    # Only the explicit emulator overlay declares this activity. Original/local
+    # rebuilds keep their original six DEX files even though source is in the repo.
+    addon = None
+    if 'android:name="local.jiakao.LocalWorkbenchActivity"' in (ROOT / "android/AndroidManifest.xml").read_text():
+        source = ROOT / "local-workbench/LocalWorkbenchActivity.java"
+        platform = sdk / "platforms/android-28/android.jar"
+        javac = shutil.which("javac", path=env.get("PATH"))
+        d8 = build_tools / ("d8" + suffix)
+        if not source.is_file() or not platform.is_file() or not javac or not d8.is_file():
+            raise ValueError("Local workbench needs its Java source, javac, d8 and SDK platforms;android-28")
+        classes, dex_dir = cache / "workbench-classes", cache / "workbench-dex"
+        for folder in (classes, dex_dir):
+            if folder.exists():
+                shutil.rmtree(folder)
+            folder.mkdir()
+        run([javac, "-encoding", "UTF-8", "--release", "8", "-classpath", platform,
+             "-d", classes, source], env, output / "workbench-javac.log")
+        run([d8, "--min-api", "21", "--lib", platform, "--output", dex_dir,
+             *sorted(classes.rglob("*.class"))], env, output / "workbench-d8.log")
+        if sorted(p.name for p in dex_dir.iterdir()) != ["classes.dex"]:
+            raise ValueError("Unexpected local workbench DEX output")
+        addon = {"entry": "classes7.dex", "sha256": digest(dex_dir / "classes.dex"),
+                 "source": "local-workbench/LocalWorkbenchActivity.java", "source_sha256": digest(source),
+                 "purpose": "New local debug UI; not recovered Unity teaching code"}
+        with zipfile.ZipFile(unsigned, "a", compression=zipfile.ZIP_DEFLATED) as archive:
+            if "classes7.dex" in archive.namelist():
+                raise ValueError("Refusing to overwrite an existing seventh DEX")
+            archive.write(dex_dir / "classes.dex", "classes7.dex")
     run([zipalign, "-f", "4", unsigned, aligned], env)
     keystore = cache / "reconstruction-debug.p12"
     if not keystore.exists():
@@ -102,8 +130,10 @@ def main():
                         raise ValueError(f"Packaged content changed: {name}")
                     counts[folder] += 1
         dex = sorted(n for n in apk.namelist() if n.endswith(".dex") and "/" not in n)
-        if dex != ["classes.dex"] + [f"classes{i}.dex" for i in range(2, 7)]:
+        if dex != ["classes.dex"] + [f"classes{i}.dex" for i in range(2, 8 if addon else 7)]:
             raise ValueError(f"Unexpected DEX files: {dex}")
+        if addon and hashlib.sha256(apk.read(addon["entry"])).hexdigest() != addon["sha256"]:
+            raise ValueError("Packaged local workbench DEX does not match compiled source output")
         coverage = json.loads((ROOT / "reports" / "apk-entry-coverage.json").read_text())
         overrides = json.loads(args.payload_overrides.read_text()) if args.payload_overrides else {}
         signature_text = (output / "signature.txt").read_text()
@@ -136,6 +166,7 @@ def main():
               "apktool": APKTOOL_VERSION, "build_tools": args.build_tools,
               "signature_verified": True, "signer_certificate_sha256": signer_sha, "zip_alignment_verified": True,
               "packaged_files_byte_identical_to_extraction": counts, "dex_files": dex,
+              "added_local_code": addon,
               "original_preserved_payload_verified": not bool(applied),
               "intentional_payload_patches_verified": overrides,
               "signing": "local debug key; different from original vendor certificate",

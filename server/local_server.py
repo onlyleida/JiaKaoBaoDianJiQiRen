@@ -82,7 +82,7 @@ for path, codec, handler, description in [
     ("/api/open/device/bind-car.htm", "form", "bind", "persist plateNum"),
     ("/api/open/device/settings.htm", "form", "settings", "persist payFirst/forceEnd; boolean data"),
     ("/api/open/device/save-device-config.htm", "json", "save_configs", "merge/replace string configs"),
-    ("/api/open/login/submit.htm", "form", "login", "MOBILE_OR_IDCARD local-demo login"),
+    ("/api/open/login/submit.htm", "form", "login", "MOBILE_OR_IDCARD configured local test code"),
     ("/api/open/user/admin-login.htm", "form", "admin_login", "local loginInfo fixture only"),
     ("/api/open/user/login-notice.htm", "form", "login_notice", "confirm pending local login; class time object"),
     ("/api/open/upgrade/check-upgrade.htm", "json", "upgrade", "registered Unity 100/101 only"),
@@ -208,7 +208,7 @@ class Backend:
                          (token, device, int(time.time() * 1000))).fetchone()
         if row is None:
             # 44 is observed by GlobalResponseInterceptor as expired login.
-            raise ApiError(401, "Local session missing or expired; log in with local-demo", 44)
+            raise ApiError(401, "Local session missing or expired; use the configured local test code", 44)
         return row
 
     def login(self, db, device, credential):
@@ -228,6 +228,39 @@ class Backend:
     def resource_row(self, db, family, scope, typ, programme):
         return db.execute("SELECT * FROM resources WHERE family=? AND scope=? AND type=? AND programme=? "
                           "ORDER BY version DESC LIMIT 1", (family, scope, typ, programme)).fetchone()
+
+    def health(self):
+        """Check the selected Unity files, without claiming their formats are compatible."""
+        with self.connect() as db:
+            rows = [self.resource_row(db, "upgrade", "0", typ, "0") for typ in (100, 101)]
+        resources = []
+        for typ, row in zip((100, 101), rows):
+            state = dict(type=typ, status="missing")
+            if row is not None:
+                state.update(version=row["version"], expectedBytes=row["size"],
+                             expectedSha256=row["digest"])
+                path = self.files / row["digest"]
+                try:
+                    if not path.is_file():
+                        state["status"] = "file_missing"
+                    else:
+                        sha, size = hashlib.sha256(), 0
+                        with path.open("rb") as source:
+                            for chunk in iter(lambda: source.read(1024 * 1024), b""):
+                                sha.update(chunk)
+                                size += len(chunk)
+                        state.update(actualBytes=size, actualSha256=sha.hexdigest())
+                        state["status"] = ("registered_unvalidated" if size == row["size"]
+                                           and sha.hexdigest() == row["digest"] else "corrupt")
+                except FileNotFoundError:
+                    state["status"] = "file_missing"
+                except OSError:
+                    state.update(status="corrupt", reason="file_unreadable")
+            resources.append(state)
+        return dict(mode="local", implementedRoutes=len(ROUTES),
+                    missingUnityTypes=[r["type"] for r in resources
+                                       if r["status"] != "registered_unvalidated"],
+                    unityResources=resources, unityCompatibilityValidated=False)
 
     def resource_data(self, row):
         if not (self.files / row["digest"]).is_file():
@@ -480,10 +513,7 @@ class Handler(BaseHTTPRequestHandler):
                 self.download(path)
                 return
             if path == "/__local/health" and self.command == "GET":
-                with app.connect() as db:
-                    available = [r[0] for r in db.execute("SELECT DISTINCT type FROM resources WHERE family='upgrade'")]
-                self.send_json(200, dict(mode="local", implementedRoutes=len(ROUTES),
-                                        missingUnityTypes=[t for t in (100, 101) if t not in available]))
+                self.send_json(200, app.health())
                 return
             spec = ROUTES.get(path)
             if spec is None:

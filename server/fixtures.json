@@ -1,6 +1,6 @@
 {
   "description": "Synthetic local fixtures, not recovered vendor data",
-  "loginCode": "local-demo",
+  "loginCode": "12345678",
   "user": {
     "name": "本地调试学员",
     "studentId": -1,

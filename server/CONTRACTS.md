@@ -23,7 +23,7 @@
 | POST | `/api/open/fault-code/upload.htm` | text | persist upload only; no billing/control/grading | [DeviceReportApi.java:41](../java/sources/cn/mucang/android/jiakaoyi/teachingk2/safe/api/DeviceReportApi.java#L41) |
 | GET | `/api/open/login-time/report.htm` | none | persist event despite GET method | [UserRecordApi.java:76](../java/sources/cn/mucang/android/jiakaoyi/teachingk2/record/UserRecordApi.java#L76) |
 | GET | `/api/open/login/logout.htm` | none | revoke local session | [XyLoginApi.java:41](../java/sources/cn/mucang/jiakaoyi/uilib/login/api/XyLoginApi.java#L41) |
-| POST | `/api/open/login/submit.htm` | form | MOBILE_OR_IDCARD local-demo login | [XyLoginApi.java:35](../java/sources/cn/mucang/jiakaoyi/uilib/login/api/XyLoginApi.java#L35) |
+| POST | `/api/open/login/submit.htm` | form | MOBILE_OR_IDCARD 配置的本地测试码（默认 12345678） | [XyLoginApi.java:35](../java/sources/cn/mucang/jiakaoyi/uilib/login/api/XyLoginApi.java#L35) |
 | GET | `/api/open/owner/exam-site-map/get-map.htm` | none | exam site fixture or null | [GeneralBusinessApi.java:73](../java/sources/cn/mucang/jiakaoyi/uilib/api/GeneralBusinessApi.java#L73) |
 | GET | `/api/open/owner/exam-site-map/list.htm` | none | paged exam site fixtures | [GeneralBusinessApi.java:81](../java/sources/cn/mucang/jiakaoyi/uilib/api/GeneralBusinessApi.java#L81) |
 | GET | `/api/open/owner/exam-site/list-public-site.htm` | none | paged public site fixtures | [GeneralBusinessApi.java:97](../java/sources/cn/mucang/jiakaoyi/uilib/api/GeneralBusinessApi.java#L97) |
@@ -54,6 +54,10 @@
 只在本地确认已经持久化上报才返回成功；上传接口没有实现教学评分、统计、计费或硬件控制。训练历史/统计查询读取 fixtures，不会自动从上传数据推导结果。组配置必须先导入真实本地资源才允许选择；瓦片登记需要地图 MD5。
 
 本地新增 HTTP：GET `/__local/health`；GET/HEAD `/files/<sha256>`。命令行 `inspect` 读取 SQLite，不提供网络管理写入接口。
+
+健康检查不计入 42 条业务路由。`data.unityResources` 为 type=100/101 的状态数组，选取与升级查询一致的最高版本，实际核对文件存在、长度和 SHA256；`status` 为 `missing`、`file_missing`、`corrupt` 或 `registered_unvalidated`。已登记项带 `version/expectedBytes/expectedSha256`，完成文件读取的项还带 `actualBytes/actualSha256`。无法读取时为 `corrupt` 并带 `reason=file_unreadable`。前三类状态计入 `data.missingUnityTypes`。`unityCompatibilityValidated:false` 明确表示不验证 Unity 格式或运行兼容性；登记完整字节不代表资源可加载。此完整校验只在 health 请求执行，不增加普通资源查询的哈希成本。
+
+工作台接口验证固定以 `deviceNum=local-workbench` 建立独立会话；原客户端使用自己的设备键。相同设备的新登录替换该设备旧会话。默认测试码为纯数字 `12345678`；此登录测试不会补齐原生业务要求的考场、教学方案或 Unity 文件。
 
 失败约定：400 参数/格式错误，401 本地凭据/会话错误，404 文件缺失，405 方法不符，409 组资源未导入，413 超过 8 MiB，415 不支持 tnpn2 等编码，416 Range 无效，501 未实现，500 本地异常。均返回 JSON 错误信封，错误码通常为 90000+HTTP状态，仅会话失效使用客户端已识别的 44。它们不是恢复的原厂错误码表。
 

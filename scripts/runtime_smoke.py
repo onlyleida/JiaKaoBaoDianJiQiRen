@@ -23,6 +23,7 @@ IMAGE = f"system-images;android-{API};google_apis;x86"
 SERIAL = "emulator-5562"
 LOCAL_BACKEND = os.environ.get("JIAKAO_LOCAL_BACKEND") == "1"
 INTERACT = os.environ.get("JIAKAO_STARTUP_INTERACT") == "1"
+WORKBENCH = os.environ.get("JIAKAO_LOCAL_WORKBENCH") == "1"
 
 
 def main():
@@ -104,6 +105,35 @@ def main():
             report["startup_ui_actions"].append(dict(text=node.get("text"), package=node.get("package"), x=x, y=y))
             time.sleep(4)
 
+    def ui_tree(name):
+        run(adb + ["shell", "uiautomator", "dump", "/sdcard/ci-local.xml"], check=False, timeout=25)
+        xml = run(adb + ["shell", "cat", "/sdcard/ci-local.xml"], check=False).stdout
+        (out / (name + ".xml")).write_text(xml)
+        return ET.fromstring(xml)
+
+    def tap_text(text, name):
+        tree = ui_tree(name)
+        for node in tree.iter("node"):
+            if node.get("package") != PACKAGE or node.get("text") != text or node.get("enabled") != "true":
+                continue
+            match = re.fullmatch(r"\[(\d+),(\d+)\]\[(\d+),(\d+)\]", node.get("bounds", ""))
+            if match:
+                x1, y1, x2, y2 = map(int, match.groups())
+                if x2 > x1 and y2 > y1:
+                    run(adb + ["shell", "input", "tap", str((x1 + x2) // 2), str((y1 + y2) // 2)])
+                    report.setdefault("workbench_actions", []).append(text)
+                    time.sleep(3)
+                    return
+        raise RuntimeError("Expected visible local UI button not found: " + text)
+
+    def require_text(prefix, name):
+        tree = ui_tree(name)
+        if not any(node.get("package") == PACKAGE and node.get("text", "").startswith(prefix)
+                   for node in tree.iter("node")):
+            screenshot(name + ".png")
+            raise RuntimeError("Expected UI state not found: " + prefix)
+        screenshot(name + ".png")
+
     try:
         run([sdk / "emulator/emulator", "-version"], "emulator-version", check=False)
         properties = sdk / f"system-images/android-{API}/google_apis/x86/source.properties"
@@ -115,7 +145,7 @@ def main():
         run([manager, "create", "avd", "--force", "--name", "JiaKaoRebuildSmoke",
              "--package", IMAGE, "--device", "pixel_2"], "avd-create", stdin="no\n")
         command = [str(sdk / "emulator/emulator"), "-avd", "JiaKaoRebuildSmoke",
-                   "-port", "5562", "-no-window", "-no-audio", "-no-boot-anim",
+                   "-port", "5562", "-skin", "1280x720", "-no-window", "-no-audio", "-no-boot-anim",
                    "-no-snapshot", "-wipe-data", "-gpu", "swiftshader",
                    "-memory", "2048", "-cores", "2", "-no-metrics",
                    "-camera-front", "emulated", "-camera-back", "emulated"]
@@ -147,7 +177,7 @@ def main():
             run(adb + ["shell", "svc", "data", "disable"])
         run(adb + ["shell", "wm", "size", "1280x720"], "display-size")
         run(adb + ["shell", "wm", "density", "160"], "display-density")
-        report["display"] = {"size": "1280x720", "density": 160}
+        report["display"] = {"size": "1280x720", "framebuffer_skin": "1280x720", "density": 160}
         run(adb + ["shell", "input", "keyevent", "82"])
         for tool in ["iptables", "ip6tables"]:
             run(adb + ["shell", tool, "-I", "OUTPUT", "1", "!", "-o", "lo",
@@ -271,12 +301,39 @@ def main():
             maps = run(adb + ["shell", "cat", "/proc/" + report["app_pid_after_45s"] + "/maps"],
                        "application-memory-maps", check=False).stdout
             report["speech_native_loaded"] = "/libmsc.so" in maps
+        if WORKBENCH and report["stable_process_observed"]:
+            require_text("本地调试工作台", "screen-workbench-normal-start")
+            report["workbench_reached_through_normal_start"] = True
+            tap_text("本地接口登录", "workbench-before-login")
+            tree = ui_tree("workbench-login-form")
+            inputs = [node for node in tree.iter("node") if node.get("class") == "android.widget.EditText"]
+            if len(inputs) != 1:
+                raise RuntimeError("Expected one local credential input")
+            bounds = re.fullmatch(r"\[(\d+),(\d+)\]\[(\d+),(\d+)\]", inputs[0].get("bounds", ""))
+            if not bounds:
+                raise RuntimeError("Local credential input has no bounds")
+            x1, y1, x2, y2 = map(int, bounds.groups())
+            run(adb + ["shell", "input", "tap", str((x1 + x2) // 2), str((y1 + y2) // 2)])
+            run(adb + ["shell", "input", "text", "12345678"])
+            tap_text("登录", "workbench-submit-login")
+            require_text("接口会话：已登录", "screen-workbench-logged-in")
+            tap_text("检查接口会话", "workbench-check-session")
+            require_text("接口会话：有效", "screen-workbench-session-valid")
+            tap_text("退出接口会话", "workbench-logout")
+            require_text("接口会话：已退出", "screen-workbench-logged-out")
+            tap_text("检查接口会话", "workbench-check-after-logout")
+            require_text("接口会话：未登录或已过期", "screen-workbench-session-revoked")
+            report["workbench_api_session_cycle_verified"] = True
         if os.environ.get("JIAKAO_NATIVE_PAGES") == "1" and report["stable_process_observed"]:
             # Inspect an existing native page independently of the unavailable
             # Unity assets. This is diagnostic navigation, not normal startup.
             settings_component = PACKAGE + "/cn.mucang.jiakaoyi.uilib.ui.setting.SettingActivity"
-            result = run(adb + ["shell", "am", "start", "-W", "-n", settings_component,
-                                "--ei", "key.loadType", "0"], "native-settings-launch", check=False)
+            if WORKBENCH:
+                tap_text("原生设置", "workbench-open-native-settings")
+                result = None
+            else:
+                result = run(adb + ["shell", "am", "start", "-W", "-n", settings_component,
+                                    "--ei", "key.loadType", "0"], "native-settings-launch", check=False)
             time.sleep(10)
             screenshot("screen-native-settings.png")
             run(adb + ["shell", "uiautomator", "dump", "/sdcard/ci-settings.xml"],
@@ -284,8 +341,8 @@ def main():
             run(adb + ["pull", "/sdcard/ci-settings.xml", str(out / "native-settings-ui.xml")], check=False)
             after = run(adb + ["shell", "dumpsys", "activity", "activities"], "native-settings-activity", check=False).stdout
             pid = run(adb + ["shell", "pidof", PACKAGE], check=False).stdout.strip()
-            report["native_settings"] = dict(navigation="explicit root adb activity start for native UI debugging",
-                                             launch_exit_code=result.returncode, pid=pid,
+            report["native_settings"] = dict(navigation="local workbench button" if WORKBENCH else "explicit root adb activity start for native UI debugging",
+                                             launch_exit_code=None if result is None else result.returncode, pid=pid,
                                              same_process=pid == report["app_pid_after_45s"] and bool(pid),
                                              resumed_lines=[line.strip() for line in after.splitlines()
                                                             if "ResumedActivity" in line])
@@ -315,6 +372,34 @@ def main():
                 report["native_settings"]["interaction_error"] = str(error)
             report["native_settings"]["pid_after_interaction"] = run(adb + ["shell", "pidof", PACKAGE], check=False).stdout.strip()
             run(adb + ["logcat", "-b", "crash", "-d", "-v", "threadtime"], "crash-after-native-settings", check=False)
+        if WORKBENCH and report.get("workbench_api_session_cycle_verified"):
+            run(adb + ["shell", "input", "keyevent", "4"])
+            time.sleep(2)
+            require_text("本地调试工作台", "screen-workbench-returned-from-settings")
+            tap_text("原生登录页", "workbench-open-native-login")
+            time.sleep(6)
+            screenshot("screen-native-login.png")
+            ui_tree("native-login-ui")
+            after = run(adb + ["shell", "dumpsys", "activity", "activities"], "native-login-activity").stdout
+            if not any("LoginActivity" in line and "ResumedActivity" in line for line in after.splitlines()):
+                raise RuntimeError("Original native LoginActivity did not resume")
+            run(adb + ["shell", "input", "keyevent", "4"])
+            time.sleep(3)
+            require_text("本地调试工作台", "screen-workbench-returned-from-login")
+            report["native_login_return_verified"] = True
+            tap_text("重试原启动", "workbench-retry-original")
+            time.sleep(30)
+            require_text("本地调试工作台", "screen-workbench-after-retry")
+            report["workbench_retry_return_verified"] = True
+            pid = run(adb + ["shell", "pidof", PACKAGE], check=False).stdout.strip()
+            report["app_pid_after_workbench_cycle"] = pid
+            report["same_process_after_workbench_cycle"] = bool(pid) and pid == report["app_pid_after_45s"]
+            crash = run(adb + ["logcat", "-b", "crash", "-d", "-v", "threadtime"], "crash-after-workbench", check=False).stdout
+            report["workbench_crash_buffer_contains_package"] = PACKAGE in crash
+            deaths = [line for line in (out / "logcat-live.txt").read_text().splitlines()
+                      if "Process " + PACKAGE in line and "has died" in line]
+            report["workbench_process_death_count"] = len(deaths)
+            report["workbench_observed_seconds"] = round(time.monotonic() - launch_started, 1)
         report["status"] = "evidence_collected"
     except (OSError, RuntimeError, subprocess.TimeoutExpired) as error:
         report["status"] = "check_error"

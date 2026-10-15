@@ -32,13 +32,13 @@ python3 server/local_server.py serve --host 0.0.0.0 --public-url http://192.168.
 
 ## 测试账号与协议
 
-`fixtures.json` 提供名为“本地调试学员”的合成用户，登录码 `local-demo`。账号登录界面允许非空文本，发出的请求为 `MOBILE_OR_IDCARD` / `ROBOT`；本服务只接受配置中的本地登录码。用户 `studentId=-1`，在原客户端会标为调试用户；没有使用真实身份证、手机号或原厂账号。接口测试：
+`fixtures.json` 提供名为“本地调试学员”的合成用户，默认登录码 `12345678`，可用原生登录页的数字键盘输入。发出的请求为 `MOBILE_OR_IDCARD` / `ROBOT`；本服务只接受配置中的本地登录码。用户 `studentId=-1`，在原客户端会标为调试用户；没有使用真实身份证、手机号或原厂账号。接口测试：
 
 ```sh
 curl --fail http://127.0.0.1:8765/api/open/login/submit.htm?deviceNum=local-device \
   --data-urlencode loginType=MOBILE_OR_IDCARD \
   --data-urlencode deviceType=ROBOT \
-  --data-urlencode 'data={"value":"local-demo"}'
+  --data-urlencode 'data={"value":"12345678"}'
 
 curl --fail 'http://127.0.0.1:8765/api/open/device/save-device-config.htm?deviceNum=local-device&isFull=false' \
   -H 'Content-Type: application/octet-stream' \
@@ -50,6 +50,8 @@ curl --fail 'http://127.0.0.1:8765/api/open/device/get-device-config.htm?deviceN
 成功响应包含 `success/errorCode/message/data`。普通列表位于 `data.itemList`，登录配置位于 `data.configs`，设备 settings 返回布尔 data。表单是 UTF-8 urlencoded；配置和升级接口是 octet-stream 内的 JSON。当前版本不解密 `tnpn2`，收到会返回 415 和原因。
 
 会话保存 24 小时，按设备隔离。客户端在存入新 token **之前**发送 login-notice，因此此通知用设备当前会话和 `studentId/mucangId` 验证，返回 `RobotClassTimeModel`，没有虚构课时订单。客户端退出时先清除 token，因此无 token 的 logout 会撤销该本地设备的会话。`admin-login` 也只认本地登录码，不实现原厂管理员扫码/SSO。
+
+本地工作台的独立接口登录验证固定使用 `deviceNum=local-workbench`，与原客户端的设备会话分开。同一设备号的新登录会撤销旧会话，因此其他手动接口验证也应使用独立设备号。接口验证成功只说明本地凭据和会话可用；原生登录还要求已选择考场、启用教学方案，当前空 fixtures 不满足这些条件。
 
 设备键采用第一个非空的 `deviceNum → deviceSn → serialNumber → hardwareId`，都没有时使用 `local-device`。这是本地约定，字段之间没有自动合并关系；设备号变化或多个设备使用 `UNKNOWN` 时，需要自行提供稳定设备号。保存配置是设备级的：`isFull=false` 按 code 合并，true 替换整组；GET 的 examSiteId 暂不增加场地覆盖层。值始终是字符串。
 
@@ -85,6 +87,17 @@ python3 server/local_server.py add-resource /path/to/actual-unity-ui \
 
 Unity 100/101 缺失时返回空 `itemList`，场地资源缺失/无更新时返回 `data:null`。客户端冷启动仍可能提示缺文件，服务不会用空 DLL 冒充缺失模块。普通场地资源的 type=3 与独立升级 type=100/101 是不同协议。
 
+`GET /__local/health` 每次实际读取业务查询将选中的最高版本 Unity 100/101 文件，核对长度和 SHA256。`data.unityResources` 分别返回以下状态：
+
+| status | 含义 |
+|---|---|
+| `missing` | 未登记此类资源 |
+| `file_missing` | 已登记，但对应文件不存在或不是普通文件 |
+| `corrupt` | 文件长度或 SHA256 不符，或文件无法读取 |
+| `registered_unvalidated` | 文件长度和 SHA256 与登记一致，Unity 格式和运行兼容性仍未验证 |
+
+前三种状态计入 `data.missingUnityTypes`；此列表为空也不代表教学功能恢复。`data.unityCompatibilityValidated` 始终为 false。健康检查会完整读取这两个资源，应按需触发；普通资源查询不增加全文件哈希扫描。
+
 ## 将 APK 接到本机
 
 仅部署服务端不会改变 APK 中的原地址。配套脚本在新目录复制构建输入，覆盖 **23 个已核对的业务 API 主机方法**，并让普通表单加密开关 `c0.a()` 返回 false。原仓库 `android/` 不变，可查看生成的 `local-backend.patch` 和 `local-backend-overlay.json`。
@@ -114,7 +127,7 @@ adb -s YOUR_TEST_DEVICE install ../JiaKao-local-apk/dist/jiakaoyi-coach-11.6.5-r
 PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s server -v
 ```
 
-测试使用临时 SQLite 和回环 HTTP 端口，覆盖配置合并/替换与重启、设备隔离、登录通知的真实先后顺序、无 token 退出、资源版本/字节/校验和/Range、组资源与瓦片查询、分页、未实现接口和错误体、独立 Smali 覆盖。测试用的资源字节仅用于协议测试，不会导入交付数据目录。
+测试使用临时 SQLite 和回环 HTTP 端口，覆盖配置合并/替换与重启、设备和工作台会话隔离、登录通知的真实先后顺序、无 token 退出、资源版本/字节/校验和/Range、健康检查对缺失及篡改文件的识别、组资源与瓦片查询、分页、未实现接口和错误体、独立 Smali 覆盖。测试用的资源字节仅用于协议测试，不会导入交付数据目录。
 
 完整已实现列表见 [CONTRACTS.md](CONTRACTS.md)。静态候选接口清单见 [endpoint-inventory.json](endpoint-inventory.json)，它包含未实现路由，也可能遗漏动态拼接路径；不能把候选数当成可用接口数。
 
