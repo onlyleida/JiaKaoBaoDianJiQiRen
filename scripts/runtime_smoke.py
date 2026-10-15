@@ -75,15 +75,17 @@ def main():
             report["screenshot_errors"].append({"file": name, "exit_code": result.returncode,
                                                 "stderr": result.stderr.decode(errors="replace")[-600:]})
 
-    def startup_clicks():
+    def startup_clicks(phase="startup"):
         # Match observed UI nodes; never guess coordinates or tap other dialogs.
         report.setdefault("startup_ui_actions", [])
         allowed = {(PACKAGE, "同意并使用"), ("com.android.systemui", "Start now"),
                    ("com.android.systemui", "START NOW"), ("com.android.systemui", "立即开始")}
         for index in range(6):
-            run(adb + ["shell", "uiautomator", "dump", "/sdcard/ci-step.xml"], check=False, timeout=25)
-            xml = run(adb + ["shell", "cat", "/sdcard/ci-step.xml"], check=False).stdout
-            (out / ("ui-step-%d.xml" % index)).write_text(xml)
+            remote = "/sdcard/ci-%s-step-%d.xml" % (phase, index)
+            run(adb + ["shell", "rm", "-f", remote])
+            run(adb + ["shell", "uiautomator", "dump", remote], check=False, timeout=25)
+            xml = run(adb + ["shell", "cat", remote], check=False).stdout
+            (out / ("ui-%s-step-%d.xml" % (phase, index))).write_text(xml)
             try:
                 tree = ET.fromstring(xml)
             except ET.ParseError:
@@ -100,9 +102,9 @@ def main():
             if match is None:
                 return
             node, x, y = match
-            screenshot("screen-before-action-%d.png" % index)
+            screenshot("screen-%s-before-action-%d.png" % (phase, index))
             run(adb + ["shell", "input", "tap", str(x), str(y)])
-            report["startup_ui_actions"].append(dict(text=node.get("text"), package=node.get("package"), x=x, y=y))
+            report["startup_ui_actions"].append(dict(phase=phase, text=node.get("text"), package=node.get("package"), x=x, y=y))
             time.sleep(4)
 
     def ui_tree(name):
@@ -396,7 +398,9 @@ def main():
             require_text("本地调试工作台", "screen-workbench-returned-from-login")
             report["native_login_return_verified"] = True
             tap_text("重试原启动", "workbench-retry-original")
-            time.sleep(30)
+            time.sleep(12)
+            startup_clicks("retry")
+            time.sleep(25)
             require_text("本地调试工作台", "screen-workbench-after-retry")
             report["workbench_retry_return_verified"] = True
             pid = run(adb + ["shell", "pidof", PACKAGE], check=False).stdout.strip()
