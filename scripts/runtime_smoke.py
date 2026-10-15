@@ -385,7 +385,9 @@ def main():
             tap_text("原生登录页", "workbench-open-native-login")
             time.sleep(6)
             screenshot("screen-native-login.png")
-            ui_tree("native-login-ui")
+            # The original login page animates continuously; UIAutomator can
+            # fail its idle wait without creating XML. We do not tap this page:
+            # retain real pixels + foreground activity, then send Android Back.
             after = run(adb + ["shell", "dumpsys", "activity", "activities"], "native-login-activity").stdout
             if not any("LoginActivity" in line and "ResumedActivity" in line for line in after.splitlines()):
                 raise RuntimeError("Original native LoginActivity did not resume")
