@@ -106,10 +106,15 @@ def main():
             time.sleep(4)
 
     def ui_tree(name):
-        run(adb + ["shell", "uiautomator", "dump", "/sdcard/ci-local.xml"], check=False, timeout=25)
-        xml = run(adb + ["shell", "cat", "/sdcard/ci-local.xml"], check=False).stdout
+        remote = "/sdcard/" + name + ".xml"
+        run(adb + ["shell", "rm", "-f", remote])
+        run(adb + ["shell", "uiautomator", "dump", remote], timeout=25)
+        xml = run(adb + ["shell", "cat", remote]).stdout
         (out / (name + ".xml")).write_text(xml)
-        return ET.fromstring(xml)
+        try:
+            return ET.fromstring(xml)
+        except ET.ParseError as error:
+            raise RuntimeError("Invalid current UI XML: " + name) from error
 
     def tap_text(text, name):
         tree = ui_tree(name)
@@ -322,8 +327,9 @@ def main():
             tap_text("退出接口会话", "workbench-logout")
             require_text("接口会话：已退出", "screen-workbench-logged-out")
             tap_text("检查接口会话", "workbench-check-after-logout")
-            require_text("接口会话：未登录或已过期", "screen-workbench-session-revoked")
-            report["workbench_api_session_cycle_verified"] = True
+            require_text("接口会话：未登录或已过期", "screen-workbench-session-cleared")
+            report["workbench_login_check_logout_ui_verified"] = True
+            report["workbench_post_logout_check"] = "UI observes cleared token; server revocation verified separately by HTTP contract tests"
         if os.environ.get("JIAKAO_NATIVE_PAGES") == "1" and report["stable_process_observed"]:
             # Inspect an existing native page independently of the unavailable
             # Unity assets. This is diagnostic navigation, not normal startup.
@@ -372,7 +378,7 @@ def main():
                 report["native_settings"]["interaction_error"] = str(error)
             report["native_settings"]["pid_after_interaction"] = run(adb + ["shell", "pidof", PACKAGE], check=False).stdout.strip()
             run(adb + ["logcat", "-b", "crash", "-d", "-v", "threadtime"], "crash-after-native-settings", check=False)
-        if WORKBENCH and report.get("workbench_api_session_cycle_verified"):
+        if WORKBENCH and report.get("workbench_login_check_logout_ui_verified"):
             run(adb + ["shell", "input", "keyevent", "4"])
             time.sleep(2)
             require_text("本地调试工作台", "screen-workbench-returned-from-settings")
